@@ -41,8 +41,8 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	246
-		VY:	97
+		VX:	-405
+		VY:	122
 	EWSiz
 		W:	1062
 		H:	286
@@ -159,12 +159,18 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\FindTheRedex.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\NotationFunctions.prj
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\Scrabble.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\Start.prj
 FileHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\FarmerWantsAWife.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\EnglishWords.txt
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ArithmeticSequences.icl
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.icl
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.dcl
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\FindTheRedex.icl
@@ -172,11 +178,6 @@ FileHist
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\English\language.icl
 	Path:	C:\Program Files\Clean 2.4\Libraries\StdEnv\StdOverloaded.dcl
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\English\language.dcl
-	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\scrabble.icl
-	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\board.dcl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\Start.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\WordFrequency.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\BinSearchTree.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0
