@@ -1,0 +1,708 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "dictionary" "20170131202624"
+.depend "types" "20170131202624"
+.depend "board" "20170131202624"
+.depend "StdSystem" "20170131202631"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "language" "20170131202624"
+.module m_language "language" "20170131202624"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_StdList_d++
+.implab e_StdList_s++
+.implab e_StdList_n++ e_StdList_ea++
+.impdesc e_StdList_drepeatn
+.implab e_StdList_srepeatn
+.implab e_StdList_nrepeatn e_StdList_earepeatn
+.implab e_StdList_sisMember;52
+.implab e_StdString_s+++;11
+.implab e_StdChar_s==;18
+.export e_language_stoString;6
+.descexp e_language_dtoString;6 e_language_ntoString;6 e_language_ltoString;6 3 0 "toString;6"
+.a 0 a7
+.o 2 0
+e_language_ltoString;6
+	repl_args 2 2
+.o 3 0
+a7
+.d 3 0
+	jsr ea7
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 3 e_language_dtoString;6
+.o 1 0
+e_language_ntoString;6
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea7
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 3 0
+ea7
+	push_a 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 3
+	jsr_eval 2
+	push_r_args 3 1 0
+	push_r_args 3 1 0
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 1 4
+	pop_a 3
+.o 4 0
+e_language_stoString;6
+.o 4 0
+s7
+	push_a 1
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 4 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 1
+	push_array 0
+	updatepop_a 0 1
+	buildAC ")"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC ","
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 4
+	pop_a 1
+	jsr_ap 1
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "("
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_language_stoString;5
+.descexp e_language_dtoString;5 e_language_ntoString;5 e_language_ltoString;5 1 0 "toString;5"
+.o 2 0
+e_language_ltoString;5
+	pop_a 1
+.d 1 0
+	jsr ea6
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_language_dtoString;5
+.o 1 0
+e_language_ntoString;5
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea6
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea6
+	jsr_eval 0
+.o 1 0
+e_language_stoString;5
+.o 1 0
+s6
+	pushD_a 0
+	eqD_b e_types_dMaximum 0
+	jmp_true case.1
+	eqD_b e_types_dFirst 0
+	jmp_true case.2
+	jmp case.3
+case.1
+	pop_b 1
+	pop_a 1
+	buildAC "Maximum"
+.d 1 0
+	rtn
+case.2
+	pop_b 1
+	pop_a 1
+	buildAC "First"
+.d 1 0
+	rtn
+case.3
+	pop_b 1
+	repl_args 1 1
+	jsr_eval 0
+	eqR_a 0.5 0
+	jmp_true case.4
+	eqR_a 0.25 0
+	jmp_true case.5
+	eqR_a 0.125 0
+	jmp_true case.6
+	jmp s6.1
+case.4
+	pop_a 1
+	buildAC "Medium"
+.d 1 0
+	rtn
+case.5
+	pop_a 1
+	buildAC "Easy"
+.d 1 0
+	rtn
+case.6
+	pop_a 1
+	buildAC "Very Easy"
+.d 1 0
+	rtn
+s6.1
+	pop_a 1
+	pushD m_language
+	pushD e_language_dtoString;5
+.d 0 2 ii
+	jmp _match_error
+.export e_language_stoString;4
+.descexp e_language_dtoString;4 e_language_ntoString;4 e_language_ltoString;4 1 0 "toString;4"
+.o 2 0
+e_language_ltoString;4
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_language_dtoString;4
+.o 1 0
+e_language_ntoString;4
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea5
+	jsr_eval 0
+.o 1 0
+e_language_stoString;4
+.o 1 0
+s5
+	eq_desc e_types_dComputer 0 0
+	jmp_true case.7
+	jmp case.8
+case.7
+	pop_a 1
+	buildAC "Computer"
+.d 1 0
+	rtn
+case.8
+	pop_a 1
+	buildAC "Person"
+.d 1 0
+	rtn
+.export e_language_stoString;3
+.descexp e_language_dtoString;3 e_language_ntoString;3 e_language_ltoString;3 1 0 "toString;3"
+.o 2 0
+e_language_ltoString;3
+	pop_a 1
+.d 1 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_language_dtoString;3
+.o 1 0
+e_language_ntoString;3
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea4
+	jsr_eval 0
+.o 1 0
+e_language_stoString;3
+.o 1 0
+s4
+	eq_desc e_types_dPlayer1 0 0
+	jmp_true case.9
+	jmp case.10
+case.9
+	pop_a 1
+	buildAC "Player 1"
+.d 1 0
+	rtn
+case.10
+	pop_a 1
+	buildAC "Player 2"
+.d 1 0
+	rtn
+.export e_language_sDirectionToString
+.descexp e_language_dDirectionToString e_language_nDirectionToString e_language_lDirectionToString 1 0 "DirectionToString"
+.o 2 0
+e_language_lDirectionToString
+	pop_a 1
+.d 1 0
+	jsr ea3
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_language_dDirectionToString
+.o 1 0
+e_language_nDirectionToString
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea3
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea3
+	jsr_eval 0
+.o 1 0
+e_language_sDirectionToString
+.o 1 0
+s3
+	eq_desc e_StdIOCommon_dHorizontal 0 0
+	jmp_true case.11
+	jmp case.12
+case.11
+	pop_a 1
+	buildAC "Across"
+.d 1 0
+	rtn
+case.12
+	pop_a 1
+	buildAC "Down"
+.d 1 0
+	rtn
+.export e_language_slettervalue
+.descexp e_language_dlettervalue e_language_nlettervalue e_language_llettervalue 1 0 "lettervalue"
+.o 2 0
+e_language_llettervalue
+	pop_a 1
+.d 1 0
+	jsr ea2
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_language_dlettervalue
+.o 1 0
+e_language_nlettervalue
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea2
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea2
+	jsr_eval 0
+	pushC_a 0
+	pop_a 1
+.o 0 1 c
+e_language_slettervalue
+.o 0 1 c
+s2
+	buildh _Nil 0
+	buildC 'u'
+	buildh _Cons 2
+	buildC 't'
+	buildh _Cons 2
+	buildC 's'
+	buildh _Cons 2
+	buildC 'r'
+	buildh _Cons 2
+	buildC 'o'
+	buildh _Cons 2
+	buildC 'n'
+	buildh _Cons 2
+	buildC 'l'
+	buildh _Cons 2
+	buildC 'i'
+	buildh _Cons 2
+	buildC 'e'
+	buildh _Cons 2
+	buildC 'a'
+	buildh _Cons 2
+	buildC_b 0
+.d 2 0
+	jsr e_StdList_sisMember;52
+.o 0 1 b
+	jmp_false else.13
+	pop_b 1
+	pushI 1
+.d 0 1 i
+	rtn
+else.13
+	pushC 'd'
+	push_b 1
+	eqC
+	jmp_true then.14
+	pushC 'g'
+	push_b 1
+	eqC
+	jmp_false else.14
+then.14
+	pop_b 1
+	pushI 2
+.d 0 1 i
+	rtn
+else.14
+	pushC 'b'
+	push_b 1
+	eqC
+	jmp_true then.16
+	pushC 'm'
+	push_b 1
+	eqC
+	jmp_true then.16
+	pushC 'p'
+	push_b 1
+	eqC
+	jmp_true then.16
+	pushC 'w'
+	push_b 1
+	eqC
+	jmp_false else.16
+then.16
+	pop_b 1
+	pushI 3
+.d 0 1 i
+	rtn
+else.16
+	pushC 'c'
+	push_b 1
+	eqC
+	jmp_true then.20
+	pushC 'f'
+	push_b 1
+	eqC
+	jmp_true then.20
+	pushC 'h'
+	push_b 1
+	eqC
+	jmp_true then.20
+	pushC 'y'
+	push_b 1
+	eqC
+	jmp_false else.20
+then.20
+	pop_b 1
+	pushI 4
+.d 0 1 i
+	rtn
+else.20
+	pushC 'v'
+	push_b 1
+	eqC
+	jmp_false else.24
+	pop_b 1
+	pushI 5
+.d 0 1 i
+	rtn
+else.24
+	pushC 'j'
+	push_b 1
+	eqC
+	jmp_true then.25
+	pushC 'k'
+	push_b 1
+	eqC
+	jmp_false else.25
+then.25
+	pop_b 1
+	pushI 7
+.d 0 1 i
+	rtn
+else.25
+	pushC 'x'
+	push_b 1
+	eqC
+	jmp_false else.27
+	pop_b 1
+	pushI 8
+.d 0 1 i
+	rtn
+else.27
+	pushC 'q'
+	push_b 1
+	eqC
+	jmp_true then.28
+	pushC 'z'
+	push_b 1
+	eqC
+	jmp_false else.28
+then.28
+	pop_b 1
+	pushI 10
+.d 0 1 i
+	rtn
+else.28
+	pop_b 1
+	pushI 0
+.d 0 1 i
+	rtn
+.export e_language_sletterbox
+.export e_language_ealetterbox
+.descexp e_language_dletterbox e_language_nletterbox e_language_lletterbox 0 0 "letterbox"
+.o 1 0
+e_language_lletterbox
+	halt
+.n 0 e_language_dletterbox e_language_ealetterbox
+.o 1 0
+e_language_nletterbox
+	push_node _cycle_in_spine 0
+.o 1 0
+e_language_ealetterbox
+.o 1 0
+e_language_sletterbox
+.o 1 0
+s1
+	testcaf c1
+	jmp_false m.30
+	pushcaf c1 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.caf c1 1 0
+m.30
+.d 1 0
+	jsr s1.1
+.o 1 0
+	fillcaf c1 1 0
+.d 1 0
+	rtn
+.o 1 0
+s1.1
+	buildC 'z'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	buildC 'y'
+	buildI 2
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'x'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'w'
+	buildI 2
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'v'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'u'
+	buildI 3
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 't'
+	buildI 5
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 's'
+	buildI 5
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'r'
+	buildI 4
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'q'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'p'
+	buildI 2
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'o'
+	buildI 7
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'n'
+	buildI 4
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'm'
+	buildI 2
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'l'
+	buildI 4
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'k'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'j'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'i'
+	buildI 5
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'h'
+	buildI 3
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'g'
+	buildI 3
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'f'
+	buildI 2
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'e'
+	buildI 10
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'd'
+	buildI 4
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'c'
+	buildI 1
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	buildC 'b'
+	buildI 2
+	build e_StdList_drepeatn 2 e_StdList_nrepeatn
+	build e_StdList_d++ 2 e_StdList_n++
+	create
+	buildC 'a'
+	pushI 7
+.d 2 1 i
+	jsr e_StdList_srepeatn
+.o 1 0
+.d 3 0
+	jmp e_StdList_s++

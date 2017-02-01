@@ -1,0 +1,657 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdLibMisc" "20170131202635"
+.module m_StdLibMisc "StdLibMisc" "20170131202635"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_StdList_smap
+.implab e_StdReal_s/;5
+.implab e_StdReal_s<;12
+.implab e_StdInt_s+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_sone;11
+.implab e_StdInt_s<;17
+.implab e_StdBool_snot
+.export e_StdLibMisc_rTime
+.record e_StdLibMisc_rTime iii 0 3 "Time"
+.descexp e_StdLibMisc_tTime e_StdLibMisc_cTime _hnf 3 1 "Time"
+.n 3 e_StdLibMisc_tTime
+.o 1 0
+e_StdLibMisc_cTime
+	push_node _cycle_in_spine 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 2
+	pushI_a 1
+	pushI_a 0
+	pop_a 3
+	fill_r e_StdLibMisc_rTime 0 3 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_StdLibMisc_dTime.hours
+.export e_StdLibMisc_nTime.hours
+.descs e_StdLibMisc_dTime.hours e_StdLibMisc_nTime.hours INT 1 0 "Time.hours"
+.n -3 e_StdLibMisc_dTime.hours
+.o 1 0
+e_StdLibMisc_nTime.hours
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 3 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dTime.minutes
+.export e_StdLibMisc_nTime.minutes
+.descs e_StdLibMisc_dTime.minutes e_StdLibMisc_nTime.minutes INT 3 0 "Time.minutes"
+.n -3 e_StdLibMisc_dTime.minutes
+.o 1 0
+e_StdLibMisc_nTime.minutes
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 3 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dTime.seconds
+.export e_StdLibMisc_nTime.seconds
+.descs e_StdLibMisc_dTime.seconds e_StdLibMisc_nTime.seconds INT 4 0 "Time.seconds"
+.n -3 e_StdLibMisc_dTime.seconds
+.o 1 0
+e_StdLibMisc_nTime.seconds
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 3 3 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_rDate
+.record e_StdLibMisc_rDate iiii 0 4 "Date"
+.descexp e_StdLibMisc_tDate e_StdLibMisc_cDate _hnf 4 1 "Date"
+.n 4 e_StdLibMisc_tDate
+.o 1 0
+e_StdLibMisc_cDate
+	push_node _cycle_in_spine 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 3
+	pushI_a 2
+	pushI_a 1
+	pushI_a 0
+	pop_a 4
+	fill_r e_StdLibMisc_rDate 0 4 0 0 0
+	pop_b 4
+.d 1 0
+	rtn
+.export e_StdLibMisc_dDate.year
+.export e_StdLibMisc_nDate.year
+.descs e_StdLibMisc_dDate.year e_StdLibMisc_nDate.year INT 1 0 "Date.year"
+.n -3 e_StdLibMisc_dDate.year
+.o 1 0
+e_StdLibMisc_nDate.year
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dDate.month
+.export e_StdLibMisc_nDate.month
+.descs e_StdLibMisc_dDate.month e_StdLibMisc_nDate.month INT 3 0 "Date.month"
+.n -3 e_StdLibMisc_dDate.month
+.o 1 0
+e_StdLibMisc_nDate.month
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dDate.day
+.export e_StdLibMisc_nDate.day
+.descs e_StdLibMisc_dDate.day e_StdLibMisc_nDate.day INT 4 0 "Date.day"
+.n -3 e_StdLibMisc_dDate.day
+.o 1 0
+e_StdLibMisc_nDate.day
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 3 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dDate.dayNr
+.export e_StdLibMisc_nDate.dayNr
+.descs e_StdLibMisc_dDate.dayNr e_StdLibMisc_nDate.dayNr INT 5 0 "Date.dayNr"
+.n -3 e_StdLibMisc_dDate.dayNr
+.o 1 0
+e_StdLibMisc_nDate.dayNr
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 4 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dLeft
+.desc e_StdLibMisc_dLeft _hnf _add_arg 1 0 "Left"
+.export e_StdLibMisc_dRight
+.desc e_StdLibMisc_dRight _hnf _add_arg 1 0 "Right"
+.export e_StdLibMisc_rgMap;
+.record e_StdLibMisc_rgMap; a 1 0 "gMap;"
+.descexp e_StdLibMisc_tgMap; e_StdLibMisc_cgMap; _hnf 1 1 "gMap;"
+.n 1 e_StdLibMisc_tgMap;
+.o 1 0
+e_StdLibMisc_cgMap;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_StdLibMisc_rgMap; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_dgMap;.gMap
+.export e_StdLibMisc_ngMap;.gMap
+.export e_StdLibMisc_eagMap;.gMap
+.descs e_StdLibMisc_dgMap;.gMap e_StdLibMisc_ngMap;.gMap _ 1 0 "gMap;.gMap"
+.n -4 e_StdLibMisc_dgMap;.gMap e_StdLibMisc_eagMap;.gMap
+.o 1 0
+e_StdLibMisc_ngMap;.gMap
+	push_node _cycle_in_spine 1
+.o 2 0
+e_StdLibMisc_eagMap;.gMap
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_sgMap;4
+.descexp e_StdLibMisc_dgMap;4 e_StdLibMisc_ngMap;4 e_StdLibMisc_lgMap;4 2 0 "gMap;4"
+.a 0 a5
+.o 2 0
+e_StdLibMisc_lgMap;4
+	repl_args 1 1
+.o 2 0
+a5
+.d 2 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 2 e_StdLibMisc_dgMap;4
+.o 1 0
+e_StdLibMisc_ngMap;4
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+ea5
+	jsr_eval 1
+	push_array 1
+	update_a 0 2
+	pop_a 1
+.o 2 0
+e_StdLibMisc_sgMap;4
+.o 2 0
+s5
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 0
+	push_arraysize _ 1 0
+	pushI 1
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	subI
+	pushI 1
+	push_b 1
+	addI
+	create_array_ _ 1 0
+	push_a 1
+	push_b 0
+	pushI 0
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 1 2
+	updatepop_b 0 1
+.d 3 2 ii
+	jmp s13
+.o 3 2 ii
+s13
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.1
+	push_b 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 0
+	select _ 1 0
+	pushI 1
+	push_b 1
+	addI
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	jsr_ap 1
+	push_b 1
+	push_a 3
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update _ 1 0
+	push_a 1
+	push_b 2
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 1 3
+	updatepop_b 0 2
+.d 3 2 ii
+	jmp s13
+else.1
+	updatepop_a 1 2
+	pop_b 2
+.d 1 0
+	rtn
+.export e_StdLibMisc_sgMap;3
+.descexp e_StdLibMisc_dgMap;3 e_StdLibMisc_ngMap;3 e_StdLibMisc_lgMap;3 2 0 "gMap;3"
+.a 0 a4
+.o 2 0
+e_StdLibMisc_lgMap;3
+	repl_args 1 1
+.o 2 0
+a4
+.d 2 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 2 e_StdLibMisc_dgMap;3
+.o 1 0
+e_StdLibMisc_ngMap;3
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+ea4
+	jsr_eval 1
+	push_array 1
+	update_a 0 2
+	pop_a 1
+.o 2 0
+e_StdLibMisc_sgMap;3
+.o 2 0
+s4
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 0
+	push_arraysize _ 1 0
+	pushI 1
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	subI
+	pushI 1
+	push_b 1
+	addI
+	create_array_ _ 1 0
+	push_a 1
+	push_b 0
+	pushI 0
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 1 2
+	updatepop_b 0 1
+.d 3 2 ii
+	jmp s11
+.o 3 2 ii
+s11
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.2
+	push_b 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 0
+	select _ 1 0
+	pushI 1
+	push_b 1
+	addI
+	push_a 0
+	push_a 3
+	build e_system_dAP 2 e_system_nAP
+	push_b 1
+	push_a 4
+	update_a 4 6
+	update_a 3 5
+	update_a 1 4
+	updatepop_a 0 3
+	update _ 1 0
+	push_a 1
+	push_b 2
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 1 3
+	updatepop_b 0 2
+.d 3 2 ii
+	jmp s11
+else.2
+	updatepop_a 1 2
+	pop_b 2
+.d 1 0
+	rtn
+.export e_StdLibMisc_sgMap;2
+.export e_StdLibMisc_eagMap;2
+.descexp e_StdLibMisc_dgMap;2 e_StdLibMisc_ngMap;2 e_StdLibMisc_lgMap;2 2 0 "gMap;2"
+.a 2 e_StdLibMisc_eagMap;2
+.o 2 0
+e_StdLibMisc_lgMap;2
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_StdLibMisc_eagMap;2
+.n 2 e_StdLibMisc_dgMap;2 e_StdLibMisc_eagMap;2
+.o 1 0
+e_StdLibMisc_ngMap;2
+	push_node _cycle_in_spine 2
+.o 3 0
+e_StdLibMisc_eagMap;2
+	jsr_eval 1
+.o 3 0
+e_StdLibMisc_sgMap;2
+.o 3 0
+s3
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdList_smap
+.export e_StdLibMisc_ssseq
+.descexp e_StdLibMisc_dsseq e_StdLibMisc_nsseq e_StdLibMisc_lsseq 2 0 "sseq"
+.a 0 ea2
+.o 2 0
+e_StdLibMisc_lsseq
+	repl_args 1 1
+.d 2 0
+	jmp ea2
+.n 2 e_StdLibMisc_dsseq _
+.o 1 0
+e_StdLibMisc_nsseq
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea2
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+ea2
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_StdLibMisc_ssseq
+.o 2 0
+s2
+	eq_desc _Cons 2 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 1
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jmp s2
+case.4
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdLibMisc_sisFinite
+.descexp e_StdLibMisc_disFinite e_StdLibMisc_nisFinite e_StdLibMisc_lisFinite 1 0 "isFinite"
+.o 2 0
+e_StdLibMisc_lisFinite
+	pop_a 1
+.d 1 0
+	jsr ea1
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_StdLibMisc_disFinite
+.o 1 0
+e_StdLibMisc_nisFinite
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea1
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea1
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 0 1 r
+e_StdLibMisc_sisFinite
+.o 0 1 r
+s1
+.d 0 0
+	jsr s7
+.o 0 1 r
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	ltR
+	jmp_false else.5
+.d 0 0
+	jsr s6
+.o 0 1 r
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	ltR
+.d 0 1 b
+	rtn
+else.5
+	pop_b 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.o 0 0
+s7
+	testcaf c7
+	jmp_false m.6
+	pushcaf c7 0 1
+.d 0 1 r
+	rtn
+.caf c7 0 1
+m.6
+.d 0 0
+	jsr s7.1
+.o 0 1 r
+	fillcaf c7 0 1
+.d 0 1 r
+	rtn
+.o 0 0
+s7.1
+	pushR 0.0
+	pushR -1.0
+	divR
+.d 0 1 r
+	rtn
+.o 0 0
+s6
+	testcaf c6
+	jmp_false m.7
+	pushcaf c6 0 1
+.d 0 1 r
+	rtn
+.caf c6 0 1
+m.7
+.d 0 0
+	jsr s6.1
+.o 0 1 r
+	fillcaf c6 0 1
+.d 0 1 r
+	rtn
+.o 0 0
+s6.1
+	pushR 0.0
+	pushR 1.0
+	divR
+.d 0 1 r
+	rtn

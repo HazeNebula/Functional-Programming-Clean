@@ -1,0 +1,811 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "Random" "20170131202623"
+.depend "language" "20170131202624"
+.depend "graphics" "20170131202624"
+.depend "dictionary" "20170131202624"
+.depend "types" "20170131202624"
+.depend "board" "20170131202624"
+.depend "StdSystem" "20170131202631"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "StdFileSelect" "20170131202630"
+.depend "StdPStClass" "20170131202630"
+.depend "StdPSt" "20170131202630"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "state" "20170131202624"
+.module m_state "state" "20170131202624"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_Random_sgetNewRandomSeed
+.impdesc e_Random_drandom
+.implab e_Random_nrandom
+.impdesc e_language_dletterbox
+.implab e_language_nletterbox e_language_ealetterbox
+.impdesc e_types_dinitplacing
+.implab e_types_ninitplacing
+.impdesc e_board_dinitboard
+.implab e_board_ninitboard
+.impdesc e_board_dgetplacedletters
+.implab e_board_ngetplacedletters e_board_eagetplacedletters
+.impdesc e_board_dgrab
+.implab e_board_ngrab
+.impdesc e_StdTime_rTimeEnv;
+.impdesc e_StdPStClass_dgetBlinkInterval;19
+.impdesc e_StdPStClass_dgetCurrentDate;20
+.impdesc e_StdPStClass_dgetCurrentTick;21
+.impdesc e_StdPStClass_dgetCurrentTime;22
+.impdesc e_StdIOBasic_rPoint2
+.impdesc e_StdIOBasic_tPoint2
+.implab e_StdIOBasic_cPoint2
+.impdesc e_iostate_rPSt
+.implab e_StdList_sisEmpty
+.impdesc e_StdInt_d/;10
+.implab e_StdInt_n/;10
+.implab e_StdBool_snot
+.export e_state_rState
+.record e_state_rState aaaaaaaaaaaaaa 14 0 "State"
+.export e_state_dState.playmode
+.export e_state_nState.playmode
+.export e_state_eaState.playmode
+.descs e_state_dState.playmode e_state_nState.playmode _ 1 0 "State.playmode"
+.n -4 e_state_dState.playmode e_state_eaState.playmode
+.o 1 0
+e_state_nState.playmode
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.playmode
+	jsr_eval 0
+	repl_r_args_a 14 0 1 1
+	jmp_eval_upd
+.export e_state_dState.board
+.export e_state_nState.board
+.descs e_state_dState.board e_state_nState.board _ 3 0 "State.board"
+.n -4 e_state_dState.board
+.o 1 0
+e_state_nState.board
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 14 0 2 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_dState.player
+.export e_state_nState.player
+.export e_state_eaState.player
+.descs e_state_dState.player e_state_nState.player _ 4 0 "State.player"
+.n -4 e_state_dState.player e_state_eaState.player
+.o 1 0
+e_state_nState.player
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.player
+	jsr_eval 0
+	repl_r_args_a 14 0 3 1
+	jmp_eval_upd
+.export e_state_dState.player1
+.export e_state_nState.player1
+.descs e_state_dState.player1 e_state_nState.player1 _ 5 0 "State.player1"
+.n -4 e_state_dState.player1
+.o 1 0
+e_state_nState.player1
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 14 0 4 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_dState.player2
+.export e_state_nState.player2
+.descs e_state_dState.player2 e_state_nState.player2 _ 6 0 "State.player2"
+.n -4 e_state_dState.player2
+.o 1 0
+e_state_nState.player2
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 14 0 5 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_dState.direction
+.export e_state_nState.direction
+.export e_state_eaState.direction
+.descs e_state_dState.direction e_state_nState.direction _ 7 0 "State.direction"
+.n -4 e_state_dState.direction e_state_eaState.direction
+.o 1 0
+e_state_nState.direction
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.direction
+	jsr_eval 0
+	repl_r_args_a 14 0 6 1
+	jmp_eval_upd
+.export e_state_dState.letterbox
+.export e_state_nState.letterbox
+.export e_state_eaState.letterbox
+.descs e_state_dState.letterbox e_state_nState.letterbox _ 8 0 "State.letterbox"
+.n -4 e_state_dState.letterbox e_state_eaState.letterbox
+.o 1 0
+e_state_nState.letterbox
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.letterbox
+	jsr_eval 0
+	repl_r_args_a 14 0 7 1
+	jmp_eval_upd
+.export e_state_dState.lexicon
+.export e_state_nState.lexicon
+.export e_state_eaState.lexicon
+.descs e_state_dState.lexicon e_state_nState.lexicon _ 9 0 "State.lexicon"
+.n -4 e_state_dState.lexicon e_state_eaState.lexicon
+.o 1 0
+e_state_nState.lexicon
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.lexicon
+	jsr_eval 0
+	repl_r_args_a 14 0 8 1
+	jmp_eval_upd
+.export e_state_dState.wordsadded
+.export e_state_nState.wordsadded
+.descs e_state_dState.wordsadded e_state_nState.wordsadded _ 10 0 "State.wordsadded"
+.n -4 e_state_dState.wordsadded
+.o 1 0
+e_state_nState.wordsadded
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 14 0 9 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_dState.dimensions
+.export e_state_nState.dimensions
+.descs e_state_dState.dimensions e_state_nState.dimensions _ 11 0 "State.dimensions"
+.n -4 e_state_dState.dimensions
+.o 1 0
+e_state_nState.dimensions
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 14 0 10 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_dState.strength
+.export e_state_nState.strength
+.export e_state_eaState.strength
+.descs e_state_dState.strength e_state_nState.strength _ 12 0 "State.strength"
+.n -4 e_state_dState.strength e_state_eaState.strength
+.o 1 0
+e_state_nState.strength
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.strength
+	jsr_eval 0
+	repl_r_args_a 14 0 11 1
+	jmp_eval_upd
+.export e_state_dState.progress
+.export e_state_nState.progress
+.export e_state_eaState.progress
+.descs e_state_dState.progress e_state_nState.progress _ 13 0 "State.progress"
+.n -4 e_state_dState.progress e_state_eaState.progress
+.o 1 0
+e_state_nState.progress
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.progress
+	jsr_eval 0
+	repl_r_args_a 14 0 12 1
+	jmp_eval_upd
+.export e_state_dState.random
+.export e_state_nState.random
+.export e_state_eaState.random
+.descs e_state_dState.random e_state_nState.random _ 14 0 "State.random"
+.n -4 e_state_dState.random e_state_eaState.random
+.o 1 0
+e_state_nState.random
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaState.random
+	jsr_eval 0
+	repl_r_args_a 14 0 13 1
+	jmp_eval_upd
+.export e_state_dState.boardinput
+.export e_state_nState.boardinput
+.descs e_state_dState.boardinput e_state_nState.boardinput _ 15 0 "State.boardinput"
+.n -4 e_state_dState.boardinput
+.o 1 0
+e_state_nState.boardinput
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 14 0 14 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_rPlayerinfo
+.record e_state_rPlayerinfo aaaa 4 0 "Playerinfo"
+.export e_state_dPlayerinfo.kind
+.export e_state_nPlayerinfo.kind
+.export e_state_eaPlayerinfo.kind
+.descs e_state_dPlayerinfo.kind e_state_nPlayerinfo.kind _ 1 0 "Playerinfo.kind"
+.n -4 e_state_dPlayerinfo.kind e_state_eaPlayerinfo.kind
+.o 1 0
+e_state_nPlayerinfo.kind
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaPlayerinfo.kind
+	jsr_eval 0
+	repl_r_args_a 4 0 1 1
+	jmp_eval_upd
+.export e_state_dPlayerinfo.letters
+.export e_state_nPlayerinfo.letters
+.export e_state_eaPlayerinfo.letters
+.descs e_state_dPlayerinfo.letters e_state_nPlayerinfo.letters _ 3 0 "Playerinfo.letters"
+.n -4 e_state_dPlayerinfo.letters e_state_eaPlayerinfo.letters
+.o 1 0
+e_state_nPlayerinfo.letters
+	push_node _cycle_in_spine 1
+.o 2 0
+e_state_eaPlayerinfo.letters
+	jsr_eval 0
+	repl_r_args_a 4 0 2 1
+	jmp_eval_upd
+.export e_state_dPlayerinfo.points
+.export e_state_nPlayerinfo.points
+.descs e_state_dPlayerinfo.points e_state_nPlayerinfo.points _ 4 0 "Playerinfo.points"
+.n -4 e_state_dPlayerinfo.points
+.o 1 0
+e_state_nPlayerinfo.points
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 4 0 3 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_dPlayerinfo.placedword
+.export e_state_nPlayerinfo.placedword
+.descs e_state_dPlayerinfo.placedword e_state_nPlayerinfo.placedword _ 5 0 "Playerinfo.placedword"
+.n -4 e_state_dPlayerinfo.placedword
+.o 1 0
+e_state_nPlayerinfo.placedword
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 4 0 4 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_state_sgetboardletters
+.descexp e_state_dgetboardletters e_state_ngetboardletters e_state_lgetboardletters 1 0 "getboardletters"
+.o 2 0
+e_state_lgetboardletters
+	pop_a 1
+.d 1 0
+	jsr ea3
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_state_dgetboardletters
+.o 1 0
+e_state_ngetboardletters
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea3
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+e_state_sgetboardletters
+.o 1 0
+ea3
+	jsr_eval 0
+	repl_r_args 14 0
+.o 14 0
+s3
+	build_r e_state_rState 14 0 0 0
+	push_a 2
+	build e_board_dgetplacedletters 1 e_board_ngetplacedletters
+	update_a 1 15
+	updatepop_a 0 14
+.d 2 0
+	rtn
+.export e_state_sinitialisestate
+.descexp e_state_dinitialisestate e_state_ninitialisestate e_state_linitialisestate 1 0 "initialisestate"
+.o 2 0
+e_state_linitialisestate
+	pop_a 1
+.d 1 0
+	jsr ea2
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_state_dinitialisestate
+.o 1 0
+e_state_ninitialisestate
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea2
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+e_state_sinitialisestate
+.o 1 0
+ea2
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+s2
+	push_args_u 0 14 14
+	update_a 12 13
+	update_a 4 12
+	update_a 3 11
+	pop_a 11
+	push_a 2
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 2 0
+	jsr s7
+.o 2 0
+	build e_language_dletterbox 0 e_language_nletterbox
+	push_a 1
+	buildI 7
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_board_dgrab 3 e_board_ngrab
+	push_a 0
+	build d_S.3 -1 n_S.3
+	push_a 1
+	build d_S.1 -1 n_S.1
+	buildI 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_board_dgrab 3 e_board_ngrab
+	push_a 0
+	build d_S.3 -1 n_S.3
+	build _ 0 n4
+	push_a 2
+	build d_S.1 -1 n_S.1
+	push_a 3
+	build d_S.2 -1 n_S.2
+	buildI 0
+	push_a 10
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	build _ 3 n30
+	push_a 5
+	build d_S.2 -1 n_S.2
+	buildI 0
+	push_a 10
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	build _ 3 n31
+	buildh e_types_dPlayer2 0
+	build e_board_dinitboard 0 e_board_ninitboard
+	buildh e_types_dEndPlayer2 0
+	push_r_args 15 14 0
+	update_a 14 0
+	update_a 15 1
+	update_a 16 2
+	update_a 17 3
+	update_a 18 4
+	update_a 19 6
+	update_a 20 9
+	update_a 21 12
+	update_a 13 21
+	update_a 12 20
+	update_a 11 19
+	update_a 10 18
+	update_a 9 17
+	update_a 8 16
+	update_a 7 15
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+	build_r e_state_rState 14 0 0 0
+	update_a 0 14
+	pop_a 14
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_a 10
+	push_a 10
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+	update_a 2 0
+	update_a 3 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.n 3 _
+.o 1 0
+n30
+	push_node _cycle_in_spine 3
+.o 3 0
+ea30
+	push_a 2
+	push_a 2
+	push_a 2
+	jsr_eval 0
+	repl_r_args 4 0
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_a 4 1
+	update_a 5 2
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	fill_r e_state_rPlayerinfo 4 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+.n 3 _
+.o 1 0
+n31
+	push_node _cycle_in_spine 3
+.o 3 0
+ea31
+	push_a 2
+	push_a 2
+	push_a 2
+	jsr_eval 0
+	repl_r_args 4 0
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_a 4 1
+	update_a 5 2
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	fill_r e_state_rPlayerinfo 4 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+.o 2 0
+s7
+	push_a 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	notB
+	jmp_false else.1
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+else.1
+	buildh e_StdPStClass_dgetCurrentTime;22 0
+	buildh e_StdPStClass_dgetCurrentTick;21 0
+	buildh e_StdPStClass_dgetCurrentDate;20 0
+	buildh e_StdPStClass_dgetBlinkInterval;19 0
+	push_a 5
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 0
+	jsr e_Random_sgetNewRandomSeed
+.o 2 0
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s5
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.n 1 _ ea5
+.o 1 0
+n5
+	push_node _cycle_in_spine 1
+.o 2 0
+ea5
+	jsr_eval 0
+.o 2 0
+s5
+	push_a 0
+	build e_Random_drandom 1 e_Random_nrandom
+	push_a 0
+	build d_S.2 -1 n_S.2
+	build _ 1 n5
+	push_a 1
+	build d_S.1 -1 n_S.1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.export e_state_sinitstate
+.descexp e_state_dinitstate e_state_ninitstate e_state_linitstate 1 0 "initstate"
+.o 2 0
+e_state_linitstate
+	pop_a 1
+.d 1 0
+	jsr ea1
+.o 14 0
+	build_r e_state_rState 14 0 0 0
+	updatepop_a 0 14
+.d 1 0
+	rtn
+.n 1 e_state_dinitstate
+.o 1 0
+e_state_ninitstate
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea1
+.o 14 0
+	fill_r e_state_rState 14 0 14 0 0
+	pop_a 14
+.d 1 0
+	rtn
+.o 1 0
+ea1
+.o 1 0
+e_state_sinitstate
+.o 1 0
+s1
+	buildI 2
+	buildI 391
+	build _ 2 e_StdInt_n/;10
+	buildI 2
+	buildI 391
+	build _ 2 e_StdInt_n/;10
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	buildh _Nil 0
+	build e_types_dinitplacing 0 e_types_ninitplacing
+	buildC 'a'
+	buildh e_types_dLetter 2
+	buildh e_types_dMaximum 0
+	build _ 0 n4
+	build e_language_dletterbox 0 e_language_nletterbox
+	buildh e_StdIOCommon_dHorizontal 0
+	buildh _Nil 0
+	buildh e_types_dComputer 0
+	buildB TRUE
+	buildI 0
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	build_r e_state_rPlayerinfo 4 0 0 0
+	update_a 0 4
+	pop_a 4
+	buildh _Nil 0
+	buildh e_types_dPerson 0
+	buildB TRUE
+	buildI 0
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	build_r e_state_rPlayerinfo 4 0 0 0
+	update_a 0 4
+	pop_a 4
+	buildh e_types_dPlayer2 0
+	build e_board_dinitboard 0 e_board_ninitboard
+	buildh e_types_dEndPlayer2 0
+	buildB FALSE
+	push_a 13
+	push_a 8
+	update_a 2 9
+	update_a 4 2
+	update_a 6 4
+	update_a 8 6
+	update_a 1 8
+	update_a 3 1
+	update_a 5 3
+	update_a 7 5
+	update_a 0 7
+	pop_a 1
+	update_a 13 14
+	update_a 12 13
+	update_a 11 12
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 14 0
+	rtn
+.n 0 _
+.o 1 0
+n4
+	push_node _cycle_in_spine 0
+.o 0 0
+ea4
+	buildI 6
+	buildI 8
+	buildI 6
+	buildI 8
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	fillh _Tuple 4 8
+	pop_a 4
+.d 1 0
+	rtn

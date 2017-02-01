@@ -1,0 +1,4196 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdWindow" "20170131202631"
+.depend "StdReceiver" "20170131202630"
+.depend "StdControl" "20170131202630"
+.depend "StdReceiverDef" "20170131202630"
+.depend "StdControlReceiver" "20170131202630"
+.depend "StdControlClass" "20170131202630"
+.depend "StdPSt" "20170131202630"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "StdId" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "ListBox" "20170131202623"
+.module m_ListBox "ListBox" "20170131202623"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_StdReceiver_ssyncSend2
+.implab e_StdControl_sshowControls
+.implab e_StdControl_shideControls
+.implab e_StdControl_senableControls
+.implab e_StdControl_sdisableControls
+.impdesc e_StdControl_dsetControlLooks
+.impdesc e_StdControlReceiver_dcontrolToHandles;2
+.impdesc e_StdControlReceiver_dgetControlType;3
+.implab e_StdControlClass_scontrolToHandles;0
+.impdesc e_StdControlClass_dcontrolToHandles;8
+.impdesc e_StdControlClass_dgetControlType;9
+.impdesc e_StdControlClass_dcontrolToHandles;14
+.impdesc e_StdControlClass_dgetControlType;15
+.impdesc e_StdControlClass_dcontrolToHandles;18
+.impdesc e_StdControlClass_dgetControlType;19
+.impdesc e_StdControlClass_rControls;
+.impdesc e_StdControlClass_tControls;
+.implab e_StdControlClass_cControls;
+.impdesc e_StdPSt_dappPIO
+.implab e_StdPSt_nappPIO
+.impdesc e_StdPSt_daccScreenPicture;.accScreenPicture
+.implab e_StdPSt_naccScreenPicture;.accScreenPicture e_StdPSt_eaaccScreenPicture;.accScreenPicture
+.impdesc e_StdPicture_dsetPenFont
+.implab e_StdPicture_nsetPenFont e_StdPicture_easetPenFont
+.impdesc e_StdPicture_dopenDialogFont
+.impdesc e_StdPicture_dgetFontStringWidths
+.impdesc e_StdPicture_dgetFontMetrics
+.impdesc e_StdPicture_dhilite;55
+.impdesc e_StdPicture_ddrawAt;62
+.impdesc e_StdPicture_ddraw;97
+.impdesc e_StdPicture_dunfill;103
+.implab e_StdPicture_nunfill;103 e_StdPicture_eaunfill;103
+.impdesc e_StdIOBasic_dzero;21
+.implab e_StdIOBasic_nzero;21
+.impdesc e_StdIOBasic_rAddLS
+.impdesc e_StdIOBasic_rSize
+.impdesc e_StdIOBasic_tSize
+.implab e_StdIOBasic_cSize
+.impdesc e_StdIOBasic_dSize.w
+.implab e_StdIOBasic_nSize.w
+.impdesc e_StdIOBasic_dSize.h
+.implab e_StdIOBasic_nSize.h
+.impdesc e_StdIOBasic_rPoint2
+.impdesc e_StdIOBasic_tPoint2
+.implab e_StdIOBasic_cPoint2
+.impdesc e_StdIOBasic_dPoint2.x
+.implab e_StdIOBasic_nPoint2.x
+.impdesc e_StdIOBasic_dPoint2.y
+.implab e_StdIOBasic_nPoint2.y
+.impdesc e_StdIOBasic_rRectangle
+.impdesc e_StdIOBasic_tRectangle
+.implab e_StdIOBasic_cRectangle
+.impdesc e_StdIOBasic_dRectangle.corner1
+.implab e_StdIOBasic_nRectangle.corner1
+.impdesc e_StdIOBasic_dRectangle.corner2
+.implab e_StdIOBasic_nRectangle.corner2
+.impdesc e_StdPictureDef_dFontMetrics.fAscent
+.implab e_StdPictureDef_nFontMetrics.fAscent
+.impdesc e_StdPictureDef_dFontMetrics.fDescent
+.implab e_StdPictureDef_nFontMetrics.fDescent
+.impdesc e_StdPictureDef_dFontMetrics.fLeading
+.implab e_StdPictureDef_nFontMetrics.fLeading
+.impdesc e_StdIOCommon_dzero;32
+.implab e_StdIOCommon_nzero;32 e_StdIOCommon_eazero;32
+.implab e_StdMaybe_sisNothing
+.implab e_StdMaybe_sfromJust
+.impdesc e_StdMisc_dundef
+.implab e_StdMisc_sundef
+.implab e_StdMisc_nundef _
+.impdesc e_StdFunc_did
+.impdesc e_StdFunc_dseq
+.implab e_StdFunc_sseq
+.implab e_StdFunc_nseq _
+.impdesc e_StdOrdList_dsort;9
+.implab e_StdOrdList_nsort;9 e_StdOrdList_easort;9
+.implab e_StdOrdList_smerge;12
+.implab e_StdOrdList_smaxList;15
+.implab e_StdList_s!!
+.impdesc e_StdList_d++
+.implab e_StdList_s++
+.implab e_StdList_n++ e_StdList_ea++
+.implab e_StdList_sflatten
+.implab e_StdList_sisEmpty
+.impdesc e_StdList_dspan
+.implab e_StdList_nspan
+.impdesc e_StdList_dfilter
+.implab e_StdList_sfilter
+.implab e_StdList_nfilter e_StdList_eafilter
+.implab e_StdList_ssplitAt
+.impdesc e_StdList_dmap
+.implab e_StdList_smap
+.implab e_StdList_nmap e_StdList_eamap
+.implab e_StdList_sany
+.impdesc e_StdList_dlength;47
+.implab e_StdList_slength;47
+.implab e_StdList_nlength;47
+.implab e_StdList_s%;48
+.implab e_StdList_sisMember;51
+.impdesc e_StdList_dremoveMembers;60
+.implab e_StdList_sremoveMembers;60
+.implab e_StdList_nremoveMembers;60 e_StdList_earemoveMembers;60
+.implab e_StdList_sremoveDup;63
+.impdesc e_StdInt_d+;6
+.implab e_StdInt_s+;6
+.implab e_StdInt_n+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_s*;9
+.implab e_StdInt_s/;10
+.implab e_StdInt_sone;11
+.implab e_StdInt_sabs;13
+.implab e_StdInt_s==;16
+.implab e_StdInt_s<;17
+.implab e_StdBool_snot
+.export e_ListBox_rListBoxControl
+.record e_ListBox_rListBoxControl aa 2 0 "ListBoxControl"
+.export e_ListBox_dListBoxControl.listboxState
+.export e_ListBox_nListBoxControl.listboxState
+.export e_ListBox_eaListBoxControl.listboxState
+.descs e_ListBox_dListBoxControl.listboxState e_ListBox_nListBoxControl.listboxState _ 1 0 "ListBoxControl.listboxState"
+.n -4 e_ListBox_dListBoxControl.listboxState e_ListBox_eaListBoxControl.listboxState
+.o 1 0
+e_ListBox_nListBoxControl.listboxState
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ListBox_eaListBoxControl.listboxState
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_ListBox_dListBoxControl.listboxAtts
+.export e_ListBox_nListBoxControl.listboxAtts
+.export e_ListBox_eaListBoxControl.listboxAtts
+.descs e_ListBox_dListBoxControl.listboxAtts e_ListBox_nListBoxControl.listboxAtts _ 2 0 "ListBoxControl.listboxAtts"
+.n -4 e_ListBox_dListBoxControl.listboxAtts e_ListBox_eaListBoxControl.listboxAtts
+.o 1 0
+e_ListBox_nListBoxControl.listboxAtts
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ListBox_eaListBoxControl.listboxAtts
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	jmp_eval_upd
+.export e_ListBox_rListBoxState
+.record e_ListBox_rListBoxState aaaaaa 6 0 "ListBoxState"
+.descs d80 n80 _ 3 0 "ListBoxState.items"
+.n -4 d80 ea80
+.o 1 0
+n80
+	push_node _cycle_in_spine 1
+.o 2 0
+ea80
+	jsr_eval 0
+	repl_r_args_a 6 0 2 1
+	jmp_eval_upd
+.descs d83 n83 _ 6 0 "ListBoxState.listboxId"
+.n -4 d83
+.o 1 0
+n83
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 6 0 5 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.descs d84 n84 _ 7 0 "ListBoxState.fontInfo"
+.n -4 d84
+.o 1 0
+n84
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 6 0 6 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_ListBox_rListBoxId
+.record e_ListBox_rListBoxId aaaa 4 0 "ListBoxId"
+.descexp e_ListBox_tListBoxId e_ListBox_cListBoxId _hnf 4 1 "ListBoxId"
+.n 4 e_ListBox_tListBoxId
+.o 1 0
+e_ListBox_cListBoxId
+	push_node _cycle_in_spine 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_ListBox_rListBoxId 4 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+.descs d86 n86 _ 1 0 "ListBoxId.outerCompoundId"
+.n -4 d86 ea86
+.o 1 0
+n86
+	push_node _cycle_in_spine 1
+.o 2 0
+ea86
+	jsr_eval 0
+	repl_r_args_a 4 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.descs d87 n87 _ 3 0 "ListBoxId.innerCompoundId"
+.n -4 d87 ea87
+.o 1 0
+n87
+	push_node _cycle_in_spine 1
+.o 2 0
+ea87
+	jsr_eval 0
+	repl_r_args_a 4 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.descs d88 n88 _ 4 0 "ListBoxId.customId"
+.n -4 d88 ea88
+.o 1 0
+n88
+	push_node _cycle_in_spine 1
+.o 2 0
+ea88
+	jsr_eval 0
+	repl_r_args_a 4 0 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.descs d89 n89 _ 5 0 "ListBoxId.r2Id"
+.n -4 d89 ea89
+.o 1 0
+n89
+	push_node _cycle_in_spine 1
+.o 2 0
+ea89
+	jsr_eval 0
+	repl_r_args_a 4 0 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d95 _hnf _hnf 0 0 "InGetSelection"
+.desc d96 _hnf _add_arg 1 0 "InSetSelection"
+.desc d97 _hnf _hnf 0 0 "InGetItems"
+.desc d98 _hnf _add_arg 2 0 "InOpenItems"
+.desc d99 _hnf _add_arg 1 0 "InCloseItems"
+.desc d100 _hnf _add_arg 1 0 "OutGetSelection"
+.desc d101 _hnf _hnf 0 0 "OutSetSelection"
+.desc d102 _hnf _add_arg 1 0 "OutGetItems"
+.desc d103 _hnf _hnf 0 0 "OutOpenItems"
+.desc d104 _hnf _hnf 0 0 "OutCloseItems"
+.record r92 aa 2 0 "ListBoxFontInfo"
+.descs d93 n93 _ 1 0 "ListBoxFontInfo.font"
+.n -4 d93 ea93
+.o 1 0
+n93
+	push_node _cycle_in_spine 1
+.o 2 0
+ea93
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	jmp_eval_upd
+.descs d94 n94 _ 2 0 "ListBoxFontInfo.metrics"
+.n -4 d94
+.o 1 0
+n94
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_ListBox_sgetControlType;12
+.descexp e_ListBox_dgetControlType;12 e_ListBox_ngetControlType;12 e_ListBox_lgetControlType;12 1 0 "getControlType;12"
+.o 2 0
+e_ListBox_lgetControlType;12
+	pop_a 1
+.d 1 0
+	jsr ea13
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_ListBox_dgetControlType;12
+.o 1 0
+e_ListBox_ngetControlType;12
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea13
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea13
+.o 1 0
+e_ListBox_sgetControlType;12
+.o 1 0
+s13
+	pop_a 1
+	buildAC "ListBoxControl"
+.d 1 0
+	rtn
+.export e_ListBox_scontrolToHandles;11
+.descexp e_ListBox_dcontrolToHandles;11 e_ListBox_ncontrolToHandles;11 e_ListBox_lcontrolToHandles;11 2 0 "controlToHandles;11"
+.a 0 a12
+.o 2 0
+e_ListBox_lcontrolToHandles;11
+	repl_args 1 1
+.o 2 0
+a12
+.d 2 0
+	jsr ea12
+.o 3 0
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 2 e_ListBox_dcontrolToHandles;11
+.o 1 0
+e_ListBox_ncontrolToHandles;11
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea12
+.o 3 0
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	fillh _Tuple 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.o 2 0
+ea12
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_ListBox_scontrolToHandles;11
+.o 4 0
+s12
+	jsr_eval 0
+	push_args 0 6 6
+	pop_a 3
+	buildh e_StdControlClass_dgetControlType;19 0
+	buildh e_StdControlClass_dcontrolToHandles;18 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;15 1
+	buildh e_StdControlClass_dgetControlType;19 0
+	buildh e_StdControlClass_dcontrolToHandles;18 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;14 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;15 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;14 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlReceiver_dgetControlType;3 0
+	buildh e_StdControlReceiver_dcontrolToHandles;2 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 5
+	build d94 -4 n94
+	buildh _Nil 0
+	buildh d39 0
+	push_a 7
+	build d89 -4 n89
+	buildh e_StdReceiverDef_dReceiver2 3
+	push_a 9
+	build _ 1 n34
+	push_a 7
+	build d86 -4 n86
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	buildI 1
+	buildI 1
+	buildh e_StdControlDef_dControlVMargin 2
+	buildh _Cons 2
+	buildI 1
+	buildI 1
+	buildh e_StdControlDef_dControlHMargin 2
+	buildh _Cons 2
+	buildh d20 0
+	buildB TRUE
+	buildh e_StdControlDef_dControlLook 2
+	buildh _Cons 2
+	push_a 10
+	build _ 1 n33
+	push_a 7
+	build e_StdIOBasic_dSize.h -3 e_StdIOBasic_nSize.h
+	push_a 8
+	build e_StdIOBasic_dSize.w -3 e_StdIOBasic_nSize.w
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	build e_StdIOBasic_dzero;21 0 e_StdIOBasic_nzero;21
+	build e_StdIOBasic_tRectangle 2 e_StdIOBasic_cRectangle
+	buildh e_StdControlDef_dControlViewDomain 1
+	buildh _Cons 2
+	push_a 3
+	build e_StdPictureDef_dFontMetrics.fDescent -3 e_StdPictureDef_nFontMetrics.fDescent
+	push_a 4
+	build e_StdPictureDef_dFontMetrics.fAscent -3 e_StdPictureDef_nFontMetrics.fAscent
+	push_a 5
+	build e_StdPictureDef_dFontMetrics.fLeading -3 e_StdPictureDef_nFontMetrics.fLeading
+	build _ 3 n106
+	buildh d36 1
+	buildh e_StdControlDef_dControlVScroll 1
+	buildh _Cons 2
+	buildh d35 0
+	buildh e_StdControlDef_dControlHScroll 1
+	buildh _Cons 2
+	buildI 0
+	buildI 0
+	buildh e_StdControlDef_dControlVMargin 2
+	buildh _Cons 2
+	buildI 0
+	buildI 0
+	buildh e_StdControlDef_dControlHMargin 2
+	buildh _Cons 2
+	buildI 0
+	buildI 0
+	buildh e_StdControlDef_dControlItemSpace 2
+	buildh _Cons 2
+	push_a 8
+	build d87 -4 n87
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dFix 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 12
+	build _ 1 n32
+	buildh d38 1
+	buildh e_StdIOCommon_dAble 0
+	buildh d37 0
+	buildh e_StdControlDef_dControlMouse 3
+	buildh _Cons 2
+	push_a 9
+	build d88 -4 n88
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	push_a 11
+	buildh d31 1
+	push_a 9
+	buildh e_StdControlDef_dCustomControl 3
+	buildh e_StdControlDef_dCompoundControl 2
+	buildh e_StdControlDef_dCompoundControl 2
+	buildh e_StdIOBasic_d:+: 2
+	push_a 8
+	build _ 1 n18
+	push_a 3
+	push_a 5
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 4
+	push_a 6
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 14
+	push_a 14
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 6 0
+	jmp e_StdControlClass_scontrolToHandles;0
+.n 3 _ ea106
+.o 1 0
+n106
+	push_node _cycle_in_spine 3
+.o 4 0
+ea106
+.o 4 0
+s106
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	addI
+	pop_a 3
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d37 _hnf l37 1 0 "mouseFilter;36"
+.o 2 0
+l37
+	pop_a 1
+.d 1 0
+	jsr ea37
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea37
+	jsr_eval 0
+.o 1 0
+s37
+	eq_desc e_StdIOCommon_dMouseDown 3 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	repl_args 3 3
+	pop_a 2
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	pop_a 1
+	eqI
+.d 0 1 b
+	rtn
+case.2
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d38 _hnf l38 3 0 "mouse;37"
+.a 0 a38
+.o 2 0
+l38
+	repl_args 2 2
+.o 3 0
+a38
+.o 3 0
+ea38
+	push_a 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 4
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	eq_desc e_StdIOCommon_dMouseDown 3 1
+	jmp_true case.3
+	jmp s38.1
+case.3
+	push_args 1 3 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	jsr_eval 1
+	push_r_args_u 1 0 5
+	update_b 0 4
+	pop_b 4
+	push_a 0
+	push_a 5
+	push_b 0
+	build_u _ 2 1 n120
+	push_a 5
+	build d80 -4 n80
+	build e_StdList_dlength;47 1 e_StdList_nlength;47
+	buildI 1
+	buildh d40 2
+	build e_StdList_dfilter 2 e_StdList_nfilter
+	push_a 5
+	build _ 2 n127
+	buildh _Nil 0
+	push_a 1
+	buildh d31 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 7
+	build d83 -4 n83
+	build d88 -4 n88
+	buildB TRUE
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 3
+	buildh _Cons 2
+	buildh e_StdControl_dsetControlLooks 1
+	push_a 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPSt_dappPIO 2 e_StdPSt_nappPIO
+	push_a 7
+	buildh _Tuple 2
+	push_a 4
+	build e_system_dAP 2 e_system_nAP
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	push_a 3
+	build _ 1 n18
+	buildh _Tuple 2
+	update_a 1 10
+	updatepop_a 0 9
+	pop_b 1
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+s38.1
+	pop_a 5
+	pushD m_ListBox
+	pushD d38
+.d 0 2 ii
+	jmp _match_error
+.n 2 _
+.o 1 0
+n127
+	push_node _cycle_in_spine 2
+.o 2 0
+ea127
+	push_a 1
+	push_a 1
+	jsr_eval 0
+	repl_r_args 6 0
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 6 2
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	fill_r e_ListBox_rListBoxState 6 0 6 0 0
+	pop_a 6
+.d 1 0
+	rtn
+.nu 2 1 _ _
+.o 1 0
+n120
+	push_node_u _cycle_in_spine 2 1
+.o 3 1 b
+ea120
+.o 3 1 b
+s120
+	push_b 0
+	notB
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	updatepop_b 0 1
+.d 3 1 b
+	jmp s72
+.o 3 1 b
+s72
+	eqB_b TRUE 0
+	jmp_true case.4
+	jmp case.5
+case.4
+	push_a 0
+	build d84 -4 n84
+	build d94 -4 n94
+	buildh _Nil 0
+	push_a 1
+	build e_StdPictureDef_dFontMetrics.fDescent -3 e_StdPictureDef_nFontMetrics.fDescent
+	push_a 2
+	build e_StdPictureDef_dFontMetrics.fAscent -3 e_StdPictureDef_nFontMetrics.fAscent
+	push_a 3
+	build e_StdPictureDef_dFontMetrics.fLeading -3 e_StdPictureDef_nFontMetrics.fLeading
+	push_a 6
+	build e_StdIOBasic_dPoint2.y -3 e_StdIOBasic_nPoint2.y
+	build _ 4 n121
+	fillh _Cons 2 5
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+case.5
+	push_a 0
+	build d84 -4 n84
+	build d94 -4 n94
+	push_a 0
+	build e_StdPictureDef_dFontMetrics.fDescent -3 e_StdPictureDef_nFontMetrics.fDescent
+	push_a 1
+	build e_StdPictureDef_dFontMetrics.fAscent -3 e_StdPictureDef_nFontMetrics.fAscent
+	push_a 2
+	build e_StdPictureDef_dFontMetrics.fLeading -3 e_StdPictureDef_nFontMetrics.fLeading
+	push_a 5
+	build e_StdIOBasic_dPoint2.y -3 e_StdIOBasic_nPoint2.y
+	build _ 4 n122
+	jsr_eval 2
+	push_r_args_a 2 6 0 3 1
+	jsr_eval 0
+	push_a 0
+	push_a 2
+	pop_b 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr e_StdList_sisMember;51
+.o 0 1 b
+	jmp_false else.6
+	buildh _Nil 0
+	push_a 2
+	buildh _Cons 2
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdList_sremoveMembers;60
+else.6
+	buildh _Nil 0
+	push_a 2
+	buildh _Cons 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdOrdList_smerge;12
+.n 4 _ ea122
+.o 1 0
+n122
+	push_node _cycle_in_spine 4
+.o 5 0
+ea122
+.o 5 0
+s122
+	push_a 3
+	jsr_eval 0
+	pushI_a 4
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	addI
+	addI
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	divI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	pop_a 4
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 4 _ ea121
+.o 1 0
+n121
+	push_node _cycle_in_spine 4
+.o 5 0
+ea121
+.o 5 0
+s121
+	push_a 3
+	jsr_eval 0
+	pushI_a 4
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	addI
+	addI
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	divI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	pop_a 4
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea32
+.o 1 0
+n32
+	push_node _cycle_in_spine 1
+.o 2 0
+ea32
+	jsr_eval 0
+.o 2 0
+s32
+	build _ 0 e_StdMisc_nundef
+	buildh d23 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr s105
+.o 1 1 b
+	push_b 0
+	jmp_false else.7
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+	pop_b 1
+.d 2 0
+	jmp s71
+else.7
+	fillh e_StdFunc_did 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+s71
+	eq_desc e_StdControlDef_dControlFunction 1 0
+	jmp_true case.8
+	jmp case.9
+case.8
+	repl_args 1 1
+	jmp_eval_upd
+case.9
+	fillh e_StdFunc_did 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d23 _hnf l23 1 0 "<lambda>[line:145];47;22"
+.o 2 0
+l23
+	pop_a 1
+.d 1 0
+	jsr ea23
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea23
+	jsr_eval 0
+.o 1 0
+s23
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s70
+.o 1 0
+s70
+	eq_desc e_StdControlDef_dControlFunction 1 0
+	jmp_true case.10
+	jmp case.11
+case.10
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.11
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d35 _hnf l35 3 0 "hscroll;34"
+.a 0 a35
+.o 2 0
+l35
+	repl_args 2 2
+.o 3 0
+a35
+.d 3 0
+	jsr ea35
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea35
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 0 3
+	repl_r_args 2 0
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.o 3 3 iii
+s35
+	push_a 0
+	push_a 2
+	push_b 2
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	updatepop_b 0 3
+.d 3 1 i
+	jmp s69
+.o 3 1 i
+s69
+	pushD_a 0
+	eqD_b e_StdIOCommon_dSliderIncSmall 0
+	jmp_true case.12
+	eqD_b e_StdIOCommon_dSliderDecSmall 0
+	jmp_true case.13
+	eqD_b e_StdIOCommon_dSliderIncLarge 0
+	jmp_true case.14
+	eqD_b e_StdIOCommon_dSliderDecLarge 0
+	jmp_true case.15
+	jmp case.16
+case.12
+	pop_b 1
+	pushI 10
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 3
+	addI
+.d 0 1 i
+	rtn
+case.13
+	pop_b 1
+	pushI 10
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 3
+	subI
+.d 0 1 i
+	rtn
+case.14
+	pop_b 1
+	push_r_args_b 2 0 2 1 1
+	push_r_args_b 1 0 2 1 1
+	subI
+	pushI 10
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pop_a 3
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	addI
+.d 0 1 i
+	rtn
+case.15
+	pop_b 1
+	push_r_args_b 2 0 2 1 1
+	push_r_args_b 1 0 2 1 1
+	subI
+	pushI 10
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pop_a 3
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	subI
+.d 0 1 i
+	rtn
+case.16
+	pop_b 1
+	repl_args 1 1
+	pop_b 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 3
+.d 0 1 i
+	rtn
+.desc d36 _hnf l36 4 0 "vscroll;35"
+.a 0 a36
+.o 2 0
+l36
+	repl_args 3 3
+.o 4 0
+a36
+.d 4 0
+	jsr ea36
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 4 0
+ea36
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 0 3
+	push_r_args 1 2 0
+	pushI_a 2
+	update_a 1 4
+	update_a 0 3
+	pop_a 3
+.o 3 4 iiii
+s36
+	push_a 0
+	push_a 2
+	push_b 0
+	push_b 4
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_b 1 5
+	updatepop_b 0 4
+.d 3 2 ii
+	jmp s68
+.o 3 2 ii
+s68
+	pushD_a 0
+	eqD_b e_StdIOCommon_dSliderIncSmall 0
+	jmp_true case.17
+	eqD_b e_StdIOCommon_dSliderDecSmall 0
+	jmp_true case.18
+	eqD_b e_StdIOCommon_dSliderIncLarge 0
+	jmp_true case.19
+	eqD_b e_StdIOCommon_dSliderDecLarge 0
+	jmp_true case.20
+	jmp case.21
+case.17
+	pop_b 1
+	push_b 1
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 3
+	addI
+.d 0 1 i
+	rtn
+case.18
+	pop_b 1
+	push_b 1
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 3
+	subI
+.d 0 1 i
+	rtn
+case.19
+	pop_b 1
+	push_r_args_b 2 0 2 2 1
+	push_r_args_b 1 0 2 2 1
+	subI
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pop_a 3
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	addI
+.d 0 1 i
+	rtn
+case.20
+	pop_b 1
+	push_r_args_b 2 0 2 2 1
+	push_r_args_b 1 0 2 2 1
+	subI
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pop_a 3
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	subI
+.d 0 1 i
+	rtn
+case.21
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 3
+	mulI
+.d 0 1 i
+	rtn
+.n 1 _ ea33
+.o 1 0
+n33
+	push_node _cycle_in_spine 1
+.o 2 0
+ea33
+	jsr_eval 0
+.o 2 0
+s33
+	build _ 0 e_StdMisc_nundef
+	buildh d24 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr s105
+.o 1 1 b
+	push_b 0
+	jmp_false else.22
+	buildh _Nil 0
+	push_a 1
+	build _ 1 n67
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+else.22
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea67
+.o 1 0
+n67
+	push_node _cycle_in_spine 1
+.o 2 0
+ea67
+	jsr_eval 0
+.o 2 0
+s67
+	eq_desc e_StdControlDef_dControlViewSize 1 0
+	jmp_true case.23
+	jmp case.24
+case.23
+	repl_args 1 1
+	push_a 0
+	fillh e_StdControlDef_dControlViewSize 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.24
+	pop_a 1
+.d 0 0
+	jsr e_StdMisc_sundef
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d24 _hnf l24 1 0 "<lambda>[line:153];47;23"
+.o 2 0
+l24
+	pop_a 1
+.d 1 0
+	jsr ea24
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea24
+	jsr_eval 0
+.o 1 0
+s24
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s66
+.o 1 0
+s66
+	eq_desc e_StdControlDef_dControlViewSize 1 0
+	jmp_true case.25
+	jmp case.26
+case.25
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.26
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d20 _hnf l20 2 0 "<lambda>[line:111];59;19"
+.a 2 ea20
+.o 2 0
+l20
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea20
+	jsr_eval 1
+	push_r_args 1 3 0
+	update_a 2 4
+	update_a 0 2
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 5 0
+s20
+	push_a 2
+	fillh e_StdPicture_ddraw;97 1 5
+	pop_a 4
+.d 1 0
+	rtn
+.n 1 _ ea34
+.o 1 0
+n34
+	push_node _cycle_in_spine 1
+.o 2 0
+ea34
+.o 2 0
+s34
+	build _ 0 e_StdMisc_nundef
+	buildh d25 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n15
+	build _ 0 e_StdMisc_nundef
+	buildh d26 0
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n15
+	buildh _Nil 0
+	buildh d27 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n119
+	buildh _Cons 2
+	push_a 1
+	build d_S.2 -1 n_S.2
+	push_a 2
+	build d_S.1 -1 n_S.1
+	build _ 2 n64
+	buildh _Cons 2
+	push_a 2
+	build d_S.2 -1 n_S.2
+	push_a 3
+	build d_S.1 -1 n_S.1
+	build _ 2 n62
+	buildh _Cons 2
+	updatepop_a 0 3
+.d 2 0
+	jmp e_StdList_sflatten
+.n 2 _ ea119
+.o 1 0
+n119
+	push_node _cycle_in_spine 2
+.o 3 0
+ea119
+.o 3 0
+s119
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdList_sany
+.o 0 1 b
+.d 1 1 b
+	jmp s65
+.o 1 1 b
+s65
+	eqB_b TRUE 0
+	jmp_true case.27
+	jmp case.28
+case.27
+	buildh _Nil 0
+	buildh e_StdControlDef_dControlHide 0
+	fillh _Cons 2 2
+	pop_b 1
+.d 1 0
+	rtn
+case.28
+	fillh _Nil 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea64
+.o 1 0
+n64
+	push_node _cycle_in_spine 2
+.o 3 0
+ea64
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+.o 2 1 b
+s64
+	eqB_b TRUE 0
+	jmp_true case.29
+	jmp case.30
+case.29
+	buildh _Nil 0
+	push_a 1
+	build _ 1 n63
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.30
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea63
+.o 1 0
+n63
+	push_node _cycle_in_spine 1
+.o 2 0
+ea63
+	jsr_eval 0
+.o 2 0
+s63
+	eq_desc e_StdControlDef_dControlPos 1 0
+	jmp_true case.31
+	jmp case.32
+case.31
+	repl_args 1 1
+	push_a 0
+	fillh e_StdControlDef_dControlPos 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.32
+	pop_a 1
+.d 0 0
+	jsr e_StdMisc_sundef
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea62
+.o 1 0
+n62
+	push_node _cycle_in_spine 2
+.o 3 0
+ea62
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+.o 2 1 b
+s62
+	eqB_b TRUE 0
+	jmp_true case.33
+	jmp case.34
+case.33
+	buildh _Nil 0
+	push_a 1
+	build _ 1 n61
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.34
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea61
+.o 1 0
+n61
+	push_node _cycle_in_spine 1
+.o 2 0
+ea61
+	jsr_eval 0
+.o 2 0
+s61
+	eq_desc e_StdControlDef_dControlSelectState 1 0
+	jmp_true case.35
+	jmp case.36
+case.35
+	repl_args 1 1
+	push_a 0
+	fillh e_StdControlDef_dControlSelectState 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.36
+	pop_a 1
+.d 0 0
+	jsr e_StdMisc_sundef
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d27 _hnf l27 1 0 "<lambda>[line:165];36;26"
+.o 2 0
+l27
+	pop_a 1
+.d 1 0
+	jsr ea27
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea27
+	jsr_eval 0
+.o 1 0
+s27
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s60
+.o 1 0
+s60
+	eq_desc e_StdControlDef_dControlHide 0 0
+	jmp_true case.37
+	jmp case.38
+case.37
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.38
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d26 _hnf l26 1 0 "<lambda>[line:163];39;25"
+.o 2 0
+l26
+	pop_a 1
+.d 1 0
+	jsr ea26
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea26
+	jsr_eval 0
+.o 1 0
+s26
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s59
+.o 1 0
+s59
+	eq_desc e_StdControlDef_dControlPos 1 0
+	jmp_true case.39
+	jmp case.40
+case.39
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.40
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d25 _hnf l25 1 0 "<lambda>[line:161];39;24"
+.o 2 0
+l25
+	pop_a 1
+.d 1 0
+	jsr ea25
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea25
+	jsr_eval 0
+.o 1 0
+s25
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s58
+.o 1 0
+s58
+	eq_desc e_StdControlDef_dControlSelectState 1 0
+	jmp_true case.41
+	jmp case.42
+case.41
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.42
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d39 _hnf l39 2 0 "receiver;38"
+.a 0 a39
+.o 2 0
+l39
+	repl_args 1 1
+.o 2 0
+a39
+.d 2 0
+	jsr ea39
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 2 0
+ea39
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 3
+	update_a 2 4
+	update_a 0 2
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+s39
+	pushD_a 0
+	eqD_b d95 0
+	jmp_true case.43
+	eqD_b d96 1
+	jmp_true case.44
+	eqD_b d97 0
+	jmp_true case.45
+	eqD_b d98 2
+	jmp_true case.46
+	jmp case.47
+case.43
+	pop_b 1
+	jsr_eval 1
+	push_args_u 1 6 6
+	update_a 2 5
+	update_a 1 4
+	update_a 0 3
+	pop_a 3
+	push_a 5
+	push_a 5
+	buildh _Tuple 2
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	push_a 2
+	buildh d28 1
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	buildh d100 1
+	update_a 1 8
+	updatepop_a 0 7
+.d 2 0
+	rtn
+case.44
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+	push_a 2
+	build _ 2 n128
+	buildh _Nil 0
+	push_a 1
+	buildh d31 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 4
+	build d83 -4 n83
+	build d88 -4 n88
+	buildB TRUE
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 3
+	buildh _Cons 2
+	buildh e_StdControl_dsetControlLooks 1
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPSt_dappPIO 2 e_StdPSt_nappPIO
+	push_a 1
+	build _ 1 n18
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	buildh _Tuple 2
+	buildh d101 0
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	rtn
+case.45
+	pop_b 1
+	jsr_eval 1
+	push_args_u 1 6 6
+	update_a 2 5
+	update_a 1 4
+	update_a 0 3
+	pop_a 3
+	push_a 5
+	push_a 5
+	buildh _Tuple 2
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	push_a 2
+	buildh d102 1
+	update_a 1 8
+	updatepop_a 0 7
+.d 2 0
+	rtn
+case.46
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	push_args_u 2 6 6
+	update_a 2 5
+	update_a 1 4
+	update_a 0 3
+	pop_a 3
+	push_a 1
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	subI
+	push_a 3
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_b 0
+	push_b 2
+	ltI
+	push_b 1
+	push_b 3
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 3 bii
+	jsr s56
+.o 0 1 i
+	pushI 0
+	push_b 1
+	eqI
+	jmp_false else.48
+	push_a 5
+	push_a 5
+	buildh _Tuple 2
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	buildh d103 0
+	update_a 1 8
+	updatepop_a 0 7
+	pop_b 1
+.d 2 0
+	rtn
+else.48
+	push_a 0
+	build e_StdList_dlength;47 1 e_StdList_nlength;47
+	push_a 3
+	buildI 0
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	build _ 3 n43
+	push_a 2
+	build e_StdOrdList_dsort;9 1 e_StdOrdList_nsort;9
+	push_a 1
+	buildh d42 1
+	build e_StdList_dspan 2 e_StdList_nspan
+	push_a 0
+	build d_S.2 -1 n_S.2
+	buildI_b 0
+	buildh e_StdInt_d+;6 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	push_a 1
+	build d_S.1 -1 n_S.1
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 3
+	push_b 0
+	push_a 7
+	push_a 4
+	build_u _ 3 1 n114
+	fill2_r e_ListBox_rListBoxState 6 0 8 0011000
+	push_a 6
+	buildh _Nil 0
+	push_a 1
+	buildh d31 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_r_args_a 9 6 0 5 1
+	build d88 -4 n88
+	buildB TRUE
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 3
+	buildh _Cons 2
+	buildh e_StdControl_dsetControlLooks 1
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPSt_dappPIO 2 e_StdPSt_nappPIO
+	push_a 1
+	build _ 1 n18
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	buildh _Tuple 2
+	buildh d103 0
+	update_a 1 11
+	updatepop_a 0 10
+	pop_b 1
+.d 2 0
+	rtn
+case.47
+	pop_b 1
+	repl_args 1 1
+	jsr_eval 1
+	push_args_u 1 6 6
+	update_a 2 5
+	update_a 1 4
+	pop_a 4
+	push_a 2
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	jmp_false else.49
+	push_a 4
+	push_a 4
+	buildh _Tuple 2
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	buildh d104 0
+	update_a 1 7
+	updatepop_a 0 6
+.d 2 0
+	rtn
+else.49
+	push_a 2
+	push_a 2
+	build e_StdList_dremoveMembers;60 2 e_StdList_nremoveMembers;60
+	buildI 1
+	push_a 2
+	push_a 5
+	build _ 3 n46
+	fill2_r e_ListBox_rListBoxState 6 0 5 0011000
+	push_a 3
+	buildh _Nil 0
+	push_a 1
+	buildh d31 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_r_args_a 6 6 0 5 1
+	build d88 -4 n88
+	buildB TRUE
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 3
+	buildh _Cons 2
+	buildh e_StdControl_dsetControlLooks 1
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPSt_dappPIO 2 e_StdPSt_nappPIO
+	push_a 1
+	build _ 1 n18
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	buildh _Tuple 2
+	buildh d104 0
+	update_a 1 8
+	updatepop_a 0 7
+.d 2 0
+	rtn
+.n 2 _
+.o 1 0
+n128
+	push_node _cycle_in_spine 2
+.o 2 0
+ea128
+	push_a 1
+	push_a 1
+	jsr_eval 0
+	repl_r_args 6 0
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 6 2
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	fill_r e_ListBox_rListBoxState 6 0 6 0 0
+	pop_a 6
+.d 1 0
+	rtn
+.nu 3 1 _ _
+.o 1 0
+n114
+	push_node_u _cycle_in_spine 3 1
+.o 4 1 i
+ea114
+.o 4 1 i
+s114
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	push_a 0
+	push_a 3
+	push_b 1
+	push_a 3
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 4 2 bi
+	jmp s57
+.o 4 2 bi
+s57
+	eqB_b TRUE 0
+	jmp_true case.50
+	jmp case.51
+case.50
+	pushI 1
+	push_b 2
+	subI
+	pushI 0
+	push_a 0
+	jsr_eval 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 3 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 2 ii
+	jsr e_StdList_s%;48
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdList_s++
+case.51
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	push_a 1
+	updatepop_b 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 1 1 i
+	jsr e_StdList_ssplitAt
+.o 2 0
+	buildI_b 0
+	push_a 3
+	build _ 2 n115
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 1
+	jsr_eval 0
+	update_a 1 4
+	updatepop_a 0 3
+	pop_b 1
+.d 3 0
+	jmp e_StdList_s++
+.n 2 _ ea115
+.o 1 0
+n115
+	push_node _cycle_in_spine 2
+.o 3 0
+ea115
+.o 3 0
+s115
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 2
+.d 2 2 ii
+	jmp e_StdList_s%;48
+.o 0 3 bii
+s56
+	eqB_b TRUE 0
+	jmp_true case.52
+	jmp case.53
+case.52
+	update_b 1 2
+	pop_b 2
+.d 0 1 i
+	rtn
+case.53
+	pop_b 2
+.d 0 1 i
+	rtn
+.n 3 _ ea46
+.o 1 0
+n46
+	push_node _cycle_in_spine 3
+.o 4 0
+ea46
+	jsr_eval 1
+.o 4 0
+s46
+	push_a 0
+	push_a 3
+	push_a 3
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s55
+.o 4 0
+s55
+	eq_desc _Cons 2 0
+	jmp_true case.54
+	jmp case.55
+case.54
+	repl_args 2 2
+	push_a 3
+	jsr_eval 0
+	push_a 3
+.d 2 0
+	jsr e_StdList_sisMember;51
+.o 0 1 b
+	notB
+	jmp_false else.56
+	push_a 2
+	build _ 1 n116
+	push_a 2
+	push_a 5
+	build _ 3 n46
+	push_a 1
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+else.56
+	push_a 2
+	build _ 1 n117
+	push_a 2
+	jsr_eval 0
+	push_a 5
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jmp s46
+case.55
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.n 1 _ ea117
+.o 1 0
+n117
+	push_node _cycle_in_spine 1
+.o 2 0
+ea117
+.o 2 0
+s117
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea116
+.o 1 0
+n116
+	push_node _cycle_in_spine 1
+.o 2 0
+ea116
+.o 2 0
+s116
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d42 _hnf l42 2 0 "<lambda>[line:261];45;41"
+.a 0 a42
+.o 2 0
+l42
+	repl_args 1 1
+.o 2 0
+a42
+.d 2 0
+	jsr ea42
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea42
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	pushI_a 0
+	pop_a 2
+.o 0 2 ii
+s42
+	push_b 1
+	push_b 1
+	ltI
+	updatepop_b 0 2
+	notB
+.d 0 1 b
+	rtn
+.n 3 _
+.o 1 0
+n43
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea43
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea43
+	jsr_eval 2
+	pushI_a 2
+	pushI_a 0
+	update_a 1 2
+	pop_a 2
+.o 1 2 ii
+s43
+	push_b 0
+	push_b 2
+	ltI
+	jmp_false else.57
+	update_b 0 1
+	pop_a 1
+	pop_b 1
+.d 0 1 i
+	rtn
+else.57
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	push_b 2
+	ltI
+	jmp_false else.58
+	pop_a 1
+	pop_b 1
+.d 0 1 i
+	rtn
+else.58
+	pop_b 2
+	pushI_a 0
+	pop_a 1
+.d 0 1 i
+	rtn
+.desc d31 _hnf l31 4 0 "customlook;30"
+.a 4 ea31
+.o 2 0
+l31
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea31
+	jsr_eval 2
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 3 6 0
+	update_a 8 11
+	update_a 10 8
+	update_a 7 10
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 6 9
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 12 0
+s31
+	push_r_args_a 8 2 0 2 1
+	push_r_args_b 0 0 2 1 1
+	pop_a 1
+	buildI_b 0
+	pop_b 1
+	push_r_args_a 9 2 0 1 1
+	push_r_args_b 0 0 2 1 1
+	pop_a 1
+	buildI_b 0
+	pop_b 1
+	buildh _Tuple 2
+	push_a 6
+	build d94 -4 n94
+	push_a 0
+	build e_StdPictureDef_dFontMetrics.fDescent -3 e_StdPictureDef_nFontMetrics.fDescent
+	push_a 1
+	build e_StdPictureDef_dFontMetrics.fAscent -3 e_StdPictureDef_nFontMetrics.fAscent
+	push_a 2
+	build e_StdPictureDef_dFontMetrics.fLeading -3 e_StdPictureDef_nFontMetrics.fLeading
+	build _ 3 n123
+	push_a 13
+	push_a 12
+	build e_StdPicture_dunfill;103 2 e_StdPicture_nunfill;103
+	push_a 9
+	build d93 -4 n93
+	build e_StdPicture_dsetPenFont 2 e_StdPicture_nsetPenFont
+	push_a 2
+	build e_StdPictureDef_dFontMetrics.fLeading -3 e_StdPictureDef_nFontMetrics.fLeading
+	push_a 3
+	build e_StdPictureDef_dFontMetrics.fAscent -3 e_StdPictureDef_nFontMetrics.fAscent
+	build e_StdInt_d+;6 2 e_StdInt_n+;6
+	push_a 2
+	buildh d41 1
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 3 n14
+	build d_S.1 -1 n_S.1
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 6
+	jsr_eval 0
+	push_arg 4 2 1
+	push_arg 5 2 2
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh d22 3
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 7
+	update_a 0 10
+	update_a 0 9
+	update_a 0 6
+	update_a 0 13
+	update_a 0 16
+	update_a 0 18
+	pop_a 1
+.d 3 0
+	jsr e_StdList_smap
+.o 1 0
+	update_a 1 15
+	updatepop_a 0 14
+.d 2 0
+	jsr e_StdFunc_sseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea123
+.o 1 0
+n123
+	push_node _cycle_in_spine 3
+.o 4 0
+ea123
+.o 4 0
+s123
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	addI
+	pop_a 3
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d41 _hnf l41 3 0 "<lambda>[line:138];47;40"
+.a 0 a41
+.o 2 0
+l41
+	repl_args 2 2
+.o 3 0
+a41
+.o 3 0
+ea41
+	push_a 0
+	push_a 3
+	build e_StdInt_d+;6 2 e_StdInt_n+;6
+	push_a 3
+	buildI 0
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh e_StdPicture_ddrawAt;62 2
+	update_a 1 4
+	updatepop_a 0 3
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.desc d22 _hnf l22 4 0 "<lambda>[line:140];41;21"
+.a 4 ea22
+.o 2 0
+l22
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea22
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 3
+	pushI_a 2
+	pushI_a 1
+	pushI_a 0
+	pop_a 4
+.o 1 4 iiii
+s22
+	push_b 1
+	push_b 4
+	build_u _ 0 2 n126
+	buildI_b 0
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	push_b 1
+	push_b 4
+	build_u _ 0 2 n125
+	buildI_b 2
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	build e_StdIOBasic_tRectangle 2 e_StdIOBasic_cRectangle
+	fillh e_StdPicture_dhilite;55 1 1
+	pop_b 4
+.d 1 0
+	rtn
+.nu 0 2 _ _
+.o 1 0
+n126
+	push_node_u _cycle_in_spine 0 2
+.o 1 2 ii
+ea126
+.o 1 2 ii
+s126
+	push_b 1
+	push_b 1
+	mulI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	subI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.nu 0 2 _ _
+.o 1 0
+n125
+	push_node_u _cycle_in_spine 0 2
+.o 1 2 ii
+ea125
+.o 1 2 ii
+s125
+	pushI 1
+	push_b 1
+	subI
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d28 _hnf l28 2 0 "<lambda>[line:226];38;27"
+.a 0 a28
+.o 2 0
+l28
+	repl_args 1 1
+.o 2 0
+a28
+.o 2 0
+ea28
+	push_a 1
+	push_a 1
+	build _ 2 n118
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 _ ea118
+.o 1 0
+n118
+	push_node _cycle_in_spine 2
+.o 3 0
+ea118
+.o 3 0
+s118
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 2
+.d 1 1 i
+	jsr e_StdList_s!!
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _
+.o 1 0
+n18
+	push_node _cycle_in_spine 1
+.o 1 0
+ea18
+	jsr_eval 0
+	repl_r_args 6 0
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	fill_r e_ListBox_rListBoxState 6 0 6 0 0
+	pop_a 6
+.d 1 0
+	rtn
+.n 3 _
+.o 1 0
+n15
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea15
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea15
+	jsr_eval 2
+.o 3 0
+s15
+	eq_desc _Cons 2 2
+	jmp_true case.59
+	jmp case.60
+case.59
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	jsr_ap 1
+	pushB_a 0
+	pop_a 1
+	jmp_false else.61
+	push_a 0
+	buildB TRUE
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	rtn
+else.61
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	push_a 4
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp s15
+case.60
+	push_a 1
+	buildB FALSE
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	rtn
+.n 3 _
+.o 1 0
+n14
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea14
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea14
+	jsr_eval 1
+.o 3 0
+s14
+	eq_desc _Cons 2 1
+	jmp_true case.62
+	jmp case.63
+case.62
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 4
+	push_a 1
+	push_a 4
+	build _ 3 n124
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 3
+	push_a 5
+	build _ 3 n14
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	push_a 3
+	build d_S.1 -1 n_S.1
+	buildh _Cons 2
+	update_a 1 8
+	updatepop_a 0 7
+.d 2 0
+	rtn
+case.63
+	buildh _Nil 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	rtn
+.n 3 _ ea124
+.o 1 0
+n124
+	push_node _cycle_in_spine 3
+.o 4 0
+ea124
+.o 4 0
+s124
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_ListBox_sdisableListBoxControl
+.export e_ListBox_eadisableListBoxControl
+.descexp e_ListBox_ddisableListBoxControl e_ListBox_ndisableListBoxControl e_ListBox_ldisableListBoxControl 2 0 "disableListBoxControl"
+.a 2 e_ListBox_eadisableListBoxControl
+.o 2 0
+e_ListBox_ldisableListBoxControl
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ListBox_eadisableListBoxControl
+.n 2 e_ListBox_ddisableListBoxControl e_ListBox_eadisableListBoxControl
+.o 1 0
+e_ListBox_ndisableListBoxControl
+	push_node _cycle_in_spine 2
+.d 3 0
+	jmp e_ListBox_eadisableListBoxControl
+.o 3 0
+e_ListBox_sdisableListBoxControl
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 6 0
+	jmp s11
+.o 3 0
+e_ListBox_eadisableListBoxControl
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 4 0
+.o 6 0
+s11
+	buildh _Nil 0
+	push_a 1
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp e_StdControl_sdisableControls
+.export e_ListBox_senableListBoxControl
+.export e_ListBox_eaenableListBoxControl
+.descexp e_ListBox_denableListBoxControl e_ListBox_nenableListBoxControl e_ListBox_lenableListBoxControl 2 0 "enableListBoxControl"
+.a 2 e_ListBox_eaenableListBoxControl
+.o 2 0
+e_ListBox_lenableListBoxControl
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ListBox_eaenableListBoxControl
+.n 2 e_ListBox_denableListBoxControl e_ListBox_eaenableListBoxControl
+.o 1 0
+e_ListBox_nenableListBoxControl
+	push_node _cycle_in_spine 2
+.d 3 0
+	jmp e_ListBox_eaenableListBoxControl
+.o 3 0
+e_ListBox_senableListBoxControl
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 6 0
+	jmp s10
+.o 3 0
+e_ListBox_eaenableListBoxControl
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 4 0
+.o 6 0
+s10
+	buildh _Nil 0
+	push_a 1
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp e_StdControl_senableControls
+.export e_ListBox_shideListBoxControl
+.export e_ListBox_eahideListBoxControl
+.descexp e_ListBox_dhideListBoxControl e_ListBox_nhideListBoxControl e_ListBox_lhideListBoxControl 2 0 "hideListBoxControl"
+.a 2 e_ListBox_eahideListBoxControl
+.o 2 0
+e_ListBox_lhideListBoxControl
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ListBox_eahideListBoxControl
+.n 2 e_ListBox_dhideListBoxControl e_ListBox_eahideListBoxControl
+.o 1 0
+e_ListBox_nhideListBoxControl
+	push_node _cycle_in_spine 2
+.d 3 0
+	jmp e_ListBox_eahideListBoxControl
+.o 3 0
+e_ListBox_shideListBoxControl
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 6 0
+	jmp s9
+.o 3 0
+e_ListBox_eahideListBoxControl
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 4 0
+.o 6 0
+s9
+	buildh _Nil 0
+	push_a 1
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp e_StdControl_shideControls
+.export e_ListBox_sshowListBoxControl
+.export e_ListBox_eashowListBoxControl
+.descexp e_ListBox_dshowListBoxControl e_ListBox_nshowListBoxControl e_ListBox_lshowListBoxControl 2 0 "showListBoxControl"
+.a 2 e_ListBox_eashowListBoxControl
+.o 2 0
+e_ListBox_lshowListBoxControl
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ListBox_eashowListBoxControl
+.n 2 e_ListBox_dshowListBoxControl e_ListBox_eashowListBoxControl
+.o 1 0
+e_ListBox_nshowListBoxControl
+	push_node _cycle_in_spine 2
+.d 3 0
+	jmp e_ListBox_eashowListBoxControl
+.o 3 0
+e_ListBox_sshowListBoxControl
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 6 0
+	jmp s8
+.o 3 0
+e_ListBox_eashowListBoxControl
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 4 0
+.o 6 0
+s8
+	buildh _Nil 0
+	push_a 1
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp e_StdControl_sshowControls
+.export e_ListBox_scloseListBoxItems
+.descexp e_ListBox_dcloseListBoxItems e_ListBox_ncloseListBoxItems e_ListBox_lcloseListBoxItems 3 0 "closeListBoxItems"
+.a 0 a7
+.o 2 0
+e_ListBox_lcloseListBoxItems
+	repl_args 2 2
+.o 3 0
+a7
+.d 3 0
+	jsr ea7
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_ListBox_dcloseListBoxItems
+.o 1 0
+e_ListBox_ncloseListBoxItems
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea7
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 4 0
+e_ListBox_scloseListBoxItems
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 7 0
+	jmp s7
+.o 3 0
+ea7
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 2 4 0
+	update_a 5 8
+	update_a 3 5
+	update_a 1 3
+	update_a 7 6
+	update_a 4 7
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 7 0
+s7
+	push_a 4
+	buildh d99 1
+	push_a 7
+	push_a 7
+	push_a 6
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+	pop_a 2
+.d 2 0
+	rtn
+.export e_ListBox_sopenListBoxItems
+.descexp e_ListBox_dopenListBoxItems e_ListBox_nopenListBoxItems e_ListBox_lopenListBoxItems 4 0 "openListBoxItems"
+.a 0 a6
+.o 2 0
+e_ListBox_lopenListBoxItems
+	repl_args 3 3
+.o 4 0
+a6
+.d 4 0
+	jsr ea6
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 4 e_ListBox_dopenListBoxItems
+.o 1 0
+e_ListBox_nopenListBoxItems
+	push_node _cycle_in_spine 4
+.d 4 0
+	jsr ea6
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 4 1 i
+e_ListBox_sopenListBoxItems
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 7 1 i
+	jmp s6
+.o 4 0
+ea6
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 2 0
+	pushI_a 3
+	push_r_args 2 4 0
+	update_a 5 9
+	update_a 2 5
+	update_a 8 7
+	update_a 4 8
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	pop_a 3
+.o 7 1 i
+s6
+	push_a 4
+	buildI_b 0
+	buildh d98 2
+	push_a 7
+	push_a 7
+	push_a 6
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	pop_b 1
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+	pop_a 2
+.d 2 0
+	rtn
+.export e_ListBox_sgetListBoxItems
+.descexp e_ListBox_dgetListBoxItems e_ListBox_ngetListBoxItems e_ListBox_lgetListBoxItems 2 0 "getListBoxItems"
+.a 0 a5
+.o 2 0
+e_ListBox_lgetListBoxItems
+	repl_args 1 1
+.o 2 0
+a5
+.d 2 0
+	jsr ea5
+.o 3 1 b
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	buildB_b 0
+	buildh _Tuple 2
+	buildh _Tuple 2
+	updatepop_a 0 3
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_ListBox_dgetListBoxItems
+.o 1 0
+e_ListBox_ngetListBoxItems
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea5
+.o 3 1 b
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	buildB_b 0
+	buildh _Tuple 2
+	fillh _Tuple 2 5
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+e_ListBox_sgetListBoxItems
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 6 0
+	jmp s5
+.o 2 0
+ea5
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 4 0
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 6 0
+s5
+	buildh d97 0
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+	push_a 1
+	push_a 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 1 0
+	jsr e_StdMaybe_sisNothing
+.o 0 1 b
+	jmp_false else.64
+	buildh _Nil 0
+	pushB FALSE
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 1 b
+	rtn
+else.64
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdMaybe_sfromJust
+.o 1 0
+.d 1 0
+	jsr s51
+.o 1 1 b
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	rtn
+.o 1 0
+s51
+	eq_desc d102 1 0
+	jmp_true case.65
+	jmp case.66
+case.65
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	pushB TRUE
+	updatepop_a 0 1
+.d 1 1 b
+	rtn
+case.66
+	buildh _Nil 0
+	pushB FALSE
+	updatepop_a 0 1
+.d 1 1 b
+	rtn
+.export e_ListBox_ssetListBoxSelection
+.descexp e_ListBox_dsetListBoxSelection e_ListBox_nsetListBoxSelection e_ListBox_lsetListBoxSelection 3 0 "setListBoxSelection"
+.a 0 a4
+.o 2 0
+e_ListBox_lsetListBoxSelection
+	repl_args 2 2
+.o 3 0
+a4
+.d 3 0
+	jsr ea4
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_ListBox_dsetListBoxSelection
+.o 1 0
+e_ListBox_nsetListBoxSelection
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea4
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 4 0
+e_ListBox_ssetListBoxSelection
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 7 0
+	jmp s4
+.o 3 0
+ea4
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 2 4 0
+	update_a 5 8
+	update_a 3 5
+	update_a 1 3
+	update_a 7 6
+	update_a 4 7
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 7 0
+s4
+	push_a 4
+	buildh d96 1
+	push_a 7
+	push_a 7
+	push_a 6
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+	pop_a 2
+.d 2 0
+	rtn
+.export e_ListBox_sgetListBoxSelection
+.descexp e_ListBox_dgetListBoxSelection e_ListBox_ngetListBoxSelection e_ListBox_lgetListBoxSelection 2 0 "getListBoxSelection"
+.a 0 a3
+.o 2 0
+e_ListBox_lgetListBoxSelection
+	repl_args 1 1
+.o 2 0
+a3
+.d 2 0
+	jsr ea3
+.o 3 1 b
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	buildB_b 0
+	buildh _Tuple 2
+	buildh _Tuple 2
+	updatepop_a 0 3
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_ListBox_dgetListBoxSelection
+.o 1 0
+e_ListBox_ngetListBoxSelection
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea3
+.o 3 1 b
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	buildB_b 0
+	buildh _Tuple 2
+	fillh _Tuple 2 5
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+e_ListBox_sgetListBoxSelection
+	push_r_args 0 4 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 6 0
+	jmp s3
+.o 2 0
+ea3
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 4 0
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 6 0
+s3
+	buildh d95 0
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+	push_a 1
+	push_a 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 1 0
+	jsr e_StdMaybe_sisNothing
+.o 0 1 b
+	jmp_false else.67
+	buildh _Nil 0
+	pushB FALSE
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 1 b
+	rtn
+else.67
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdMaybe_sfromJust
+.o 1 0
+.d 1 0
+	jsr s50
+.o 1 1 b
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	rtn
+.o 1 0
+s50
+	eq_desc d100 1 0
+	jmp_true case.68
+	jmp case.69
+case.68
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	pushB TRUE
+	updatepop_a 0 1
+.d 1 1 b
+	rtn
+case.69
+	buildh _Nil 0
+	pushB FALSE
+	updatepop_a 0 1
+.d 1 1 b
+	rtn
+.export e_ListBox_sopenListBoxId
+.descexp e_ListBox_dopenListBoxId e_ListBox_nopenListBoxId e_ListBox_lopenListBoxId 2 0 "openListBoxId"
+.a 0 a2
+.o 2 0
+e_ListBox_lopenListBoxId
+	repl_args 1 1
+.o 2 0
+a2
+.d 2 0
+	jsr ea2
+.o 5 0
+	push_a 4
+	build_r e_ListBox_rListBoxId 4 0 1 0
+	buildh _Tuple 2
+	updatepop_a 0 5
+.d 1 0
+	rtn
+.n 2 e_ListBox_dopenListBoxId
+.o 1 0
+e_ListBox_nopenListBoxId
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea2
+.o 5 0
+	push_a 4
+	build_r e_ListBox_rListBoxId 4 0 1 0
+	fillh _Tuple 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.o 7 0
+e_ListBox_sopenListBoxId
+.d 7 0
+	jsr s2
+.o 5 0
+	build_r e_ListBox_rListBoxId 4 0 0 0
+	update_a 0 4
+	pop_a 4
+.d 2 0
+	rtn
+.o 2 0
+ea2
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 6 0
+.o 7 0
+s2
+	push_a 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+	jsr_ap 1
+	push_arg 0 2 2
+	push_a 2
+	jsr_ap 1
+	push_arg 0 2 2
+	push_a 3
+	jsr_ap 1
+	push_arg 0 2 2
+	push_a 6
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jsr_ap 1
+	push_arg 0 2 2
+	jsr_eval 0
+	push_arg 1 2 1
+	jsr_eval 0
+	push_arg 3 2 1
+	jsr_eval 0
+	push_arg 5 2 1
+	jsr_eval 0
+	push_arg 7 2 1
+	jsr_eval 0
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	rtn
+.export e_ListBox_sListBoxControl
+.descexp e_ListBox_dListBoxControl e_ListBox_nListBoxControl e_ListBox_lListBoxControl 7 0 "ListBoxControl"
+.a 0 a1
+.o 2 0
+e_ListBox_lListBoxControl
+	repl_args 6 6
+.o 7 0
+a1
+.d 7 0
+	jsr ea1
+.o 3 0
+	push_a 2
+	build_r e_ListBox_rListBoxControl 2 0 1 0
+	buildh _Tuple 2
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 7 e_ListBox_dListBoxControl
+.o 1 0
+e_ListBox_nListBoxControl
+	push_node _cycle_in_spine 7
+.d 7 0
+	jsr ea1
+.o 3 0
+	push_a 2
+	build_r e_ListBox_rListBoxControl 2 0 1 0
+	fillh _Tuple 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.o 7 0
+ea1
+	jsr_eval 6
+	jsr_eval 0
+	repl_r_args 1 0
+.o 7 0
+e_ListBox_sListBoxControl
+.o 7 0
+s1
+	buildI 1
+	push_a 2
+	push_a 1
+	build _ 2 n107
+	push_a 0
+	push_a 5
+	build _ 2 n108
+	push_a 0
+	build e_StdList_dlength;47 1 e_StdList_nlength;47
+	buildh e_StdPicture_dopenDialogFont 0
+	push_a 5
+	push_a 12
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n109
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	push_a 1
+	buildh e_StdPicture_dgetFontMetrics 1
+	push_a 8
+	build _ 3 n110
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 5
+	push_a 3
+	buildh e_StdPicture_dgetFontStringWidths 2
+	push_a 9
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 6
+	update_a 0 17
+	update_a 0 13
+	pop_a 1
+	jsr_ap 2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	push_arg 1 2 2
+	jsr_eval 0
+	buildh d19 0
+	push_a 16
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dfilter 2 e_StdList_nfilter
+	push_a 2
+	push_a 6
+	build_r r92 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	push_a 3
+	build e_StdPictureDef_dFontMetrics.fDescent -3 e_StdPictureDef_nFontMetrics.fDescent
+	push_a 4
+	build e_StdPictureDef_dFontMetrics.fAscent -3 e_StdPictureDef_nFontMetrics.fAscent
+	push_a 5
+	build e_StdPictureDef_dFontMetrics.fLeading -3 e_StdPictureDef_nFontMetrics.fLeading
+	push_a 13
+	build _ 4 n113
+	push_arg 5 2 1
+	push_a 11
+	build _ 2 n112
+	build e_StdIOBasic_tSize 2 e_StdIOBasic_cSize
+	push_a 16
+	push_a 10
+	build _ 2 n111
+	push_a 18
+	push_a 12
+	push_a 14
+	push_a 4
+	update_a 3 5
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	build_r e_ListBox_rListBoxState 6 0 0 0
+	update_a 0 6
+	pop_a 6
+	update_a 2 18
+	update_a 1 17
+	updatepop_a 0 16
+.d 3 0
+	rtn
+.n 4 _ ea113
+.o 1 0
+n113
+	push_node _cycle_in_spine 4
+.o 5 0
+ea113
+.o 5 0
+s113
+	push_a 3
+	jsr_eval 0
+	pushI_a 4
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	addI
+	addI
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 4
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea112
+.o 1 0
+n112
+	push_node _cycle_in_spine 2
+.o 3 0
+ea112
+.o 3 0
+s112
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 b
+	jsr s49
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea111
+.o 1 0
+n111
+	push_node _cycle_in_spine 2
+.o 3 0
+ea111
+.o 3 0
+s111
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s48
+.n 3 _ ea110
+.o 1 0
+n110
+	push_node _cycle_in_spine 3
+.o 4 0
+ea110
+.o 4 0
+s110
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea109
+.o 1 0
+n109
+	push_node _cycle_in_spine 3
+.o 4 0
+ea109
+.o 4 0
+s109
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea108
+.o 1 0
+n108
+	push_node _cycle_in_spine 2
+.o 3 0
+ea108
+.o 3 0
+s108
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 2
+.d 2 2 ii
+	jmp e_StdList_s%;48
+.n 2 _ ea107
+.o 1 0
+n107
+	push_node _cycle_in_spine 2
+.o 3 0
+ea107
+.o 3 0
+s107
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	pushI_a 0
+	ltI
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 b
+	jsr s47
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 1 b
+s49
+	eqB_b TRUE 0
+	jmp_true case.70
+	jmp case.71
+case.70
+	pop_a 1
+	pop_b 1
+	pushI 100
+.d 0 1 i
+	rtn
+case.71
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	jmp e_StdOrdList_smaxList;15
+.o 3 1 b
+s48
+	eqB_b TRUE 0
+	jmp_true case.72
+	jmp case.73
+case.72
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.73
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	buildI 1
+	buildh d40 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdList_sfilter
+.o 1 0
+.d 2 0
+	jmp e_StdList_sremoveDup;63
+.o 2 1 b
+s47
+	eqB_b TRUE 0
+	jmp_true case.74
+	jmp case.75
+case.74
+	pop_b 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 2
+.d 0 1 i
+	rtn
+case.75
+	pop_b 1
+	pushI_a 1
+	pop_a 2
+.d 0 1 i
+	rtn
+.desc d40 _hnf l40 3 0 "isBetween;39"
+.a 0 a40
+.o 2 0
+l40
+	repl_args 2 2
+.o 3 0
+a40
+.d 3 0
+	jsr ea40
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea40
+	jsr_eval 2
+	jsr_eval 0
+	pushI_a 2
+	pushI_a 0
+	update_a 1 2
+	pop_a 2
+.o 1 2 ii
+s40
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.76
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	ltI
+	updatepop_b 0 2
+	pop_a 1
+	notB
+.d 0 1 b
+	rtn
+else.76
+	pop_a 1
+	pop_b 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d19 _hnf l19 1 0 "isListBoxControlAttribute;18"
+.o 2 0
+l19
+	pop_a 1
+.d 1 0
+	jsr ea19
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea19
+	jsr_eval 0
+.o 1 0
+s19
+	pushD_a 0
+	eqD_b e_StdControlDef_dControlFunction 1
+	jmp_true case.77
+	eqD_b e_StdControlDef_dControlHide 0
+	jmp_true case.78
+	eqD_b e_StdControlDef_dControlPos 1
+	jmp_true case.79
+	eqD_b e_StdControlDef_dControlSelectState 1
+	jmp_true case.80
+	eqD_b e_StdControlDef_dControlViewSize 1
+	jmp_true case.81
+	pop_b 1
+	jmp case.82
+case.77
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.78
+	pop_b 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.79
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.80
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.81
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.82
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.o 3 0
+s105
+	eq_desc _Cons 2 2
+	jmp_true case.83
+	jmp case.84
+case.83
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	jsr_ap 1
+	pushB_a 0
+	pop_a 1
+	jmp_false else.85
+	push_a 0
+	pushB TRUE
+	updatepop_a 0 5
+.d 1 1 b
+	rtn
+else.85
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	push_a 4
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp s105
+case.84
+	push_a 1
+	pushB FALSE
+	updatepop_a 0 3
+.d 1 1 b
+	rtn

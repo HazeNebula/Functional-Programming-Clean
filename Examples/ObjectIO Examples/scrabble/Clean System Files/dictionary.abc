@@ -1,0 +1,880 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "dictionary" "20170131202624"
+.module m_dictionary "dictionary" "20170131202624"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_StdList_s++
+.implab e_StdList_sisEmpty
+.implab e_StdList_shd
+.implab e_StdList_ssplitAt
+.implab e_StdList_slength;47
+.implab e_StdString_s==;2
+.implab e_StdString_s<;3
+.implab e_StdString_stoString;9
+.implab e_StdChar_s==;18
+.implab e_StdChar_s<;19
+.implab e_StdInt_s+;6
+.implab e_StdInt_s/;10
+.implab e_StdInt_s==;16
+.implab e_StdInt_s<;17
+.implab e_StdBool_snot
+.record k14 da 1 0 "Leaf"
+.record k15 daaa 3 0 "Node"
+.export e_dictionary_ssizeDictionary
+.descexp e_dictionary_dsizeDictionary e_dictionary_nsizeDictionary e_dictionary_lsizeDictionary 1 0 "sizeDictionary"
+.o 2 0
+e_dictionary_lsizeDictionary
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_dictionary_dsizeDictionary
+.o 1 0
+e_dictionary_nsizeDictionary
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea7
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+.o 1 0
+e_dictionary_ssizeDictionary
+.o 1 0
+s7
+	eq_desc k14 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	repl_args 1 1
+	pop_a 1
+	pushI 1
+.d 0 1 i
+	rtn
+case.2
+	repl_args 3 3
+	update_a 0 1
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s7
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s7
+.o 0 1 i
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+.d 0 1 i
+	rtn
+.export e_dictionary_sisMemberDictionary
+.descexp e_dictionary_disMemberDictionary e_dictionary_nisMemberDictionary e_dictionary_lisMemberDictionary 2 0 "isMemberDictionary"
+.a 0 a6
+.o 2 0
+e_dictionary_lisMemberDictionary
+	repl_args 1 1
+.o 2 0
+a6
+.d 2 0
+	jsr ea6
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_dictionary_disMemberDictionary
+.o 1 0
+e_dictionary_nisMemberDictionary
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea6
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea6
+	jsr_eval 1
+	jsr_eval 0
+	push_array 0
+	update_a 0 1
+	pop_a 1
+.o 2 0
+e_dictionary_sisMemberDictionary
+.o 2 0
+s6
+	eq_desc k14 0 1
+	jmp_true case.3
+	jmp case.4
+case.3
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	push_a 1
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+.d 0 1 b
+	rtn
+case.4
+	push_args 1 3 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 3
+	push_a 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.5
+	pop_a 5
+	pushB TRUE
+.d 0 1 b
+	rtn
+else.5
+	push_a 1
+	push_a 4
+.d 2 0
+	jsr cmpAC
+.o 0 1 i
+	pushI 0
+	gtI
+	jmp_false else.6
+	push_a 0
+	jsr_eval 0
+	push_a 4
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s6
+.o 0 1 b
+	buildh _Nil 0
+	jmp_false else.6
+	pop_a 5
+	pushB TRUE
+.d 0 1 b
+	rtn
+else.6
+	push_a 3
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr cmpAC
+.o 0 1 i
+	pushI 0
+	gtI
+	jmp_false else.8
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jmp s6
+else.8
+	pop_a 3
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_dictionary_saddToDictionary
+.export e_dictionary_eaaddToDictionary
+.descexp e_dictionary_daddToDictionary e_dictionary_naddToDictionary e_dictionary_laddToDictionary 2 0 "addToDictionary"
+.a 2 e_dictionary_eaaddToDictionary
+.o 2 0
+e_dictionary_laddToDictionary
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_dictionary_eaaddToDictionary
+.n 2 e_dictionary_daddToDictionary e_dictionary_eaaddToDictionary
+.o 1 0
+e_dictionary_naddToDictionary
+	push_node _cycle_in_spine 2
+.o 3 0
+e_dictionary_eaaddToDictionary
+	jsr_eval 1
+	jsr_eval 0
+	push_array 0
+	update_a 0 1
+	pop_a 1
+.o 3 0
+e_dictionary_saddToDictionary
+.o 3 0
+s5
+	eq_desc k15 0 1
+	jmp_true case.9
+	jmp case.10
+case.9
+	push_args 1 3 3
+	push_a 1
+	push_a 4
+.d 2 0
+	jsr cmpAC
+.o 0 1 i
+	pushI 0
+	gtI
+	jmp_false else.11
+	push_a 0
+	push_a 4
+	buildh ARRAY 1
+	build e_dictionary_daddToDictionary 2 e_dictionary_naddToDictionary
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fill_r k15 3 0 8 0 0
+	pop_a 8
+.d 1 0
+	rtn
+else.11
+	push_a 3
+	push_a 2
+.d 2 0
+	jsr cmpAC
+.o 0 1 i
+	pushI 0
+	gtI
+	jmp_false else.12
+	push_a 2
+	push_a 4
+	buildh ARRAY 1
+	build e_dictionary_daddToDictionary 2 e_dictionary_naddToDictionary
+	push_a 2
+	push_a 2
+	fill_r k15 3 0 8 0 0
+	pop_a 8
+.d 1 0
+	rtn
+else.12
+	fill_a 4 5
+	pop_a 5
+.d 1 0
+	rtn
+case.10
+	push_args 1 1 1
+	push_a 0
+	push_a 2
+.d 2 0
+	jsr cmpAC
+.o 0 1 i
+	pushI 0
+	gtI
+	jmp_false else.13
+	buildAC ""
+	build_r k14 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	push_a 2
+	build_r k14 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fill_r k15 3 0 6 0 0
+	pop_a 6
+.d 1 0
+	rtn
+else.13
+	push_a 1
+	push_a 1
+.d 2 0
+	jsr cmpAC
+.o 0 1 i
+	pushI 0
+	gtI
+	jmp_false else.14
+	push_a 1
+	build_r k14 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	buildAC ""
+	build_r k14 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fill_r k15 3 0 6 0 0
+	pop_a 6
+.d 1 0
+	rtn
+else.14
+	fill_a 2 3
+	pop_a 3
+.d 1 0
+	rtn
+.n 2 _ ea9
+.o 1 0
+n9
+	push_node _cycle_in_spine 2
+.o 3 0
+ea9
+	jsr_eval 1
+	jsr_eval 0
+	pushC_a 0
+	pop_a 1
+.o 2 1 c
+s9
+	eq_desc k15 0 0
+	jmp_true case.15
+	jmp case.16
+case.15
+	repl_args 3 3
+	pushI 0
+	push_a 1
+	select CHAR 0 1
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqC
+	jmp_false else.17
+	push_a 2
+	buildC_b 0
+	build _ 2 n9
+	push_a 2
+	buildh ARRAY 1
+	buildh _Cons 2
+	push_a 1
+	jsr_eval 0
+	update_a 1 4
+	updatepop_a 0 3
+	pop_b 1
+.d 3 0
+	jmp s10
+else.17
+	push_a 0
+	jsr_eval 0
+	push_b 0
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 2 1 c
+	jmp s9
+case.16
+	push_a 0
+	push_b 0
+	updatepop_a 0 1
+	updatepop_b 0 1
+.d 2 1 c
+	jmp s4
+.export e_dictionary_smembersStartingWith
+.export e_dictionary_eamembersStartingWith
+.descexp e_dictionary_dmembersStartingWith e_dictionary_nmembersStartingWith e_dictionary_lmembersStartingWith 2 0 "membersStartingWith"
+.a 2 e_dictionary_eamembersStartingWith
+.o 2 0
+e_dictionary_lmembersStartingWith
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_dictionary_eamembersStartingWith
+.n 2 e_dictionary_dmembersStartingWith e_dictionary_eamembersStartingWith
+.o 1 0
+e_dictionary_nmembersStartingWith
+	push_node _cycle_in_spine 2
+.o 3 0
+e_dictionary_eamembersStartingWith
+	jsr_eval 1
+	jsr_eval 0
+	pushC_a 0
+	pop_a 1
+.o 2 1 c
+e_dictionary_smembersStartingWith
+.o 2 1 c
+s4
+	eq_desc k15 0 0
+	jmp_true case.18
+	jmp case.19
+case.18
+	repl_args 3 3
+	pushI 0
+	push_a 1
+	select CHAR 0 1
+	push_b 1
+	ltC
+	jmp_false else.20
+	push_a 0
+	jsr_eval 0
+	push_b 0
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 2 1 c
+	jmp s4
+else.20
+	pushI 0
+	push_a 1
+	select CHAR 0 1
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	ltC
+	jmp_false else.21
+	push_a 2
+	jsr_eval 0
+	push_b 0
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 2 1 c
+	jmp s4
+else.21
+	push_a 2
+	buildC_b 0
+	build _ 2 n9
+	push_a 2
+	buildh ARRAY 1
+	buildh _Cons 2
+	push_a 1
+	jsr_eval 0
+	push_b 0
+	update_a 1 4
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 3 1 c
+	jmp s8
+case.19
+	repl_args 1 1
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 0
+	ltI
+	jmp_false else.22
+	pushI 0
+	push_a 0
+	select CHAR 0 1
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqC
+	jmp_false else.22
+	buildh _Nil 0
+	push_a 1
+	buildh ARRAY 1
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+else.22
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 1 c
+s8
+	eq_desc k15 0 0
+	jmp_true case.24
+	jmp case.25
+case.24
+	repl_args 3 3
+	pushI 0
+	push_a 1
+	select CHAR 0 1
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqC
+	jmp_false else.26
+	push_a 3
+	push_a 3
+	build _ 2 n10
+	push_a 2
+	buildh ARRAY 1
+	buildh _Cons 2
+	push_a 1
+	jsr_eval 0
+	push_b 0
+	update_a 1 5
+	updatepop_a 0 4
+	updatepop_b 0 1
+.d 3 1 c
+	jmp s8
+else.26
+	push_a 2
+	jsr_eval 0
+	push_a 4
+	push_b 0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 5
+	updatepop_a 0 4
+	updatepop_b 0 1
+.d 3 1 c
+	jmp s8
+case.25
+	repl_args 1 1
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 0
+	ltI
+	jmp_false else.27
+	pushI 0
+	push_a 0
+	select CHAR 0 1
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqC
+	jmp_false else.27
+	push_a 1
+	push_a 1
+	buildh ARRAY 1
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+else.27
+	pop_b 1
+	fill_a 1 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _ ea10
+.o 1 0
+n10
+	push_node _cycle_in_spine 2
+.o 3 0
+ea10
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+s10
+	eq_desc k15 0 0
+	jmp_true case.29
+	jmp case.30
+case.29
+	repl_args 3 3
+	push_a 3
+	push_a 3
+	build _ 2 n10
+	push_a 2
+	buildh ARRAY 1
+	buildh _Cons 2
+	push_a 1
+	jsr_eval 0
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jmp s10
+case.30
+	repl_args 1 1
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	notB
+	jmp_false else.31
+	push_a 1
+	push_a 1
+	buildh ARRAY 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.31
+	fill_a 1 2
+	pop_a 2
+.d 1 0
+	rtn
+.export e_dictionary_sallMembers
+.export e_dictionary_eaallMembers
+.descexp e_dictionary_dallMembers e_dictionary_nallMembers e_dictionary_lallMembers 1 0 "allMembers"
+.o 2 0
+e_dictionary_lallMembers
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_dictionary_eaallMembers
+.n 1 e_dictionary_dallMembers e_dictionary_eaallMembers
+.o 1 0
+e_dictionary_nallMembers
+	push_node _cycle_in_spine 1
+.o 2 0
+e_dictionary_eaallMembers
+	jsr_eval 0
+.o 2 0
+e_dictionary_sallMembers
+.o 2 0
+s3
+	eq_desc k14 0 0
+	jmp_true case.32
+	jmp case.33
+case.32
+	repl_args 1 1
+	buildAC ""
+	push_a 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.34
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+else.34
+	buildh _Nil 0
+	push_a 1
+	buildh ARRAY 1
+	fillh _Cons 2 3
+	pop_a 1
+.d 1 0
+	rtn
+case.33
+	repl_args 3 3
+	buildAC ""
+	push_a 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.35
+	push_a 2
+	build e_dictionary_dallMembers 1 e_dictionary_nallMembers
+	push_a 1
+	jsr_eval 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 6
+	update_a 0 5
+	pop_a 1
+.d 2 0
+	jsr s3
+.o 1 0
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_StdList_s++
+else.35
+	push_a 2
+	build e_dictionary_dallMembers 1 e_dictionary_nallMembers
+	push_a 2
+	buildh ARRAY 1
+	buildh _Cons 2
+	push_a 1
+	jsr_eval 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr s3
+.o 1 0
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_StdList_s++
+.export e_dictionary_ssortlistToDictionary
+.export e_dictionary_easortlistToDictionary
+.descexp e_dictionary_dsortlistToDictionary e_dictionary_nsortlistToDictionary e_dictionary_lsortlistToDictionary 1 0 "sortlistToDictionary"
+.o 2 0
+e_dictionary_lsortlistToDictionary
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_dictionary_easortlistToDictionary
+.n 1 e_dictionary_dsortlistToDictionary e_dictionary_easortlistToDictionary
+.o 1 0
+e_dictionary_nsortlistToDictionary
+	push_node _cycle_in_spine 1
+.o 2 0
+e_dictionary_easortlistToDictionary
+	jsr_eval 0
+.o 2 0
+e_dictionary_ssortlistToDictionary
+.o 2 0
+s2
+	push_a 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.36
+	buildAC ""
+	fill_r k14 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+else.36
+	push_a 0
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 1
+	push_b 1
+	eqI
+	jmp_false else.37
+	push_a 0
+	pop_b 1
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	push_array 0
+	updatepop_a 0 1
+	no_op
+	fill_r k14 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+else.37
+	pushI 2
+	push_b 1
+	divI
+	push_a 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr e_StdList_ssplitAt
+.o 2 0
+	push_a 1
+	jsr_eval 0
+	eq_desc _Cons 2 0
+	exit_false selector_m_error
+	repl_args 2 2
+	jsr_eval 0
+	push_array 0
+	update_a 0 1
+	pop_a 1
+	push_a 1
+	build e_dictionary_dsortlistToDictionary 1 e_dictionary_nsortlistToDictionary
+	push_a 3
+	build e_dictionary_dsortlistToDictionary 1 e_dictionary_nsortlistToDictionary
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fill_r k15 3 0 7 0 0
+	pop_a 7
+.d 1 0
+	rtn
+.export e_dictionary_snewDictionary
+.export e_dictionary_eanewDictionary
+.descexp e_dictionary_dnewDictionary e_dictionary_nnewDictionary e_dictionary_lnewDictionary 0 0 "newDictionary"
+.o 1 0
+e_dictionary_lnewDictionary
+	halt
+.n 0 e_dictionary_dnewDictionary e_dictionary_eanewDictionary
+.o 1 0
+e_dictionary_nnewDictionary
+	push_node _cycle_in_spine 0
+.o 1 0
+e_dictionary_eanewDictionary
+.o 1 0
+e_dictionary_snewDictionary
+.o 1 0
+s1
+	buildAC ""
+	fill_r k14 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn

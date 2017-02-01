@@ -1,0 +1,4239 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "systemsettings" "20170131202624"
+.depend "language" "20170131202624"
+.depend "dictionary" "20170131202624"
+.depend "types" "20170131202624"
+.depend "board" "20170131202624"
+.depend "StdControl" "20170131202630"
+.depend "StdControlClass" "20170131202630"
+.depend "StdSystem" "20170131202631"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "StdPSt" "20170131202630"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "graphics" "20170131202624"
+.module m_graphics "graphics" "20170131202624"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_language_slettervalue
+.implab e_language_stoString;3
+.implab e_language_stoString;6
+.impdesc e_types_dPlacing.pos
+.implab e_types_nPlacing.pos
+.impdesc e_board_ddoubleletterpositions
+.implab e_board_ndoubleletterpositions e_board_eadoubleletterpositions
+.impdesc e_board_dtripleletterpositions
+.implab e_board_ntripleletterpositions e_board_eatripleletterpositions
+.impdesc e_board_ddoublewordpositions
+.implab e_board_ndoublewordpositions e_board_eadoublewordpositions
+.impdesc e_board_dtriplewordpositions
+.implab e_board_ntriplewordpositions e_board_eatriplewordpositions
+.implab e_StdControl_ssetControlText
+.implab e_StdControl_ssetControlLook
+.implab e_StdPicture_ssetPenPos
+.impdesc e_StdPicture_dsetPenColour
+.implab e_StdPicture_ssetPenColour
+.implab e_StdPicture_nsetPenColour e_StdPicture_easetPenColour
+.impdesc e_StdPicture_dsetPenFont
+.implab e_StdPicture_ssetPenFont
+.implab e_StdPicture_nsetPenFont e_StdPicture_easetPenFont
+.impdesc e_StdPicture_dopenFont
+.implab e_StdPicture_sopenFont
+.implab e_StdPicture_nopenFont
+.implab e_StdPicture_sgetFontStringWidth
+.implab e_StdPicture_sdrawLineTo
+.implab e_StdPicture_smovePenPos;47
+.implab e_StdPicture_sdraw;57
+.implab e_StdPicture_sdraw;61
+.impdesc e_StdPicture_ddrawAt;62
+.implab e_StdPicture_sdrawAt;62
+.implab e_StdPicture_sdraw;69
+.impdesc e_StdPicture_ddrawAt;70
+.implab e_StdPicture_sfill;101
+.impdesc e_StdPicture_dunfill;103
+.implab e_StdPicture_sunfill;103
+.implab e_StdPicture_nunfill;103 e_StdPicture_eaunfill;103
+.implab e_StdPicture_sfillAt;110
+.impdesc e_StdIOBasic_drectangleSize
+.implab e_StdIOBasic_nrectangleSize
+.impdesc e_StdIOBasic_dzero;11
+.implab e_StdIOBasic_nzero;11
+.implab e_StdIOBasic_szero;21
+.impdesc e_StdIOBasic_rVector2
+.impdesc e_StdIOBasic_tVector2
+.implab e_StdIOBasic_cVector2
+.impdesc e_StdIOBasic_rSize
+.impdesc e_StdIOBasic_tSize
+.implab e_StdIOBasic_cSize
+.impdesc e_StdIOBasic_dSize.w
+.implab e_StdIOBasic_nSize.w
+.impdesc e_StdIOBasic_dSize.h
+.implab e_StdIOBasic_nSize.h
+.impdesc e_StdIOBasic_rPoint2
+.impdesc e_StdIOBasic_tPoint2
+.implab e_StdIOBasic_cPoint2
+.impdesc e_StdIOBasic_rRectangle
+.impdesc e_StdPictureDef_dSerifFontDef
+.implab e_StdPictureDef_sSerifFontDef
+.implab e_StdPictureDef_nSerifFontDef
+.impdesc e_StdPictureDef_dSansSerifFontDef
+.implab e_StdPictureDef_sSansSerifFontDef
+.implab e_StdPictureDef_nSansSerifFontDef
+.implab e_StdPictureDef_sSmallFontDef
+.impdesc e_StdPictureDef_rPolygon
+.impdesc e_StdPictureDef_rRGBColour
+.implab e_StdIOCommon_senabled
+.implab e_StdIOCommon_stoString;36
+.impdesc e__SystemEnum_d_from_to;6
+.implab e__SystemEnum_n_from_to;6 e__SystemEnum_ea_from_to;6
+.implab e__SystemEnum_s_from_then;8
+.impdesc e_StdFunc_dseq
+.implab e_StdFunc_sseq
+.implab e_StdFunc_nseq _
+.impdesc e_StdOrdList_dsort;8
+.implab e_StdOrdList_nsort;8 e_StdOrdList_easort;8
+.impdesc e_StdList_d!!
+.implab e_StdList_n!! _
+.implab e_StdList_ssplitAt
+.impdesc e_StdList_dmap
+.implab e_StdList_nmap e_StdList_eamap
+.impdesc e_StdList_dunzip
+.implab e_StdList_sunzip
+.implab e_StdList_nunzip
+.impdesc e_StdList_dzip2
+.implab e_StdList_szip2
+.implab e_StdList_nzip2 e_StdList_eazip2
+.implab e_StdString_s==;2
+.impdesc e_StdString_dtoString;5
+.implab e_StdString_stoString;5
+.implab e_StdString_s%;10
+.implab e_StdString_s+++;11
+.impdesc e__SystemArray_dselect;19
+.implab e__SystemArray_nselect;19
+.implab e_StdChar_stoUpper
+.implab e_StdChar_s==;18
+.implab e_StdReal_s*;4
+.implab e_StdReal_stoReal;13
+.impdesc e_StdInt_d+;6
+.implab e_StdInt_s+;6
+.implab e_StdInt_n+;6
+.impdesc e_StdInt_d-;7
+.implab e_StdInt_s-;7
+.implab e_StdInt_n-;7
+.implab e_StdInt_s*;9
+.implab e_StdInt_s/;10
+.implab e_StdInt_sone;11
+.implab e_StdInt_s<;17
+.implab e_StdInt_stoInt;20
+.implab e_StdInt_stoInt;22
+.impdesc e_StdOverloaded_rtoString;
+.implab e_StdBool_snot
+.export e_graphics_sdrawprogress
+.export e_graphics_eadrawprogress
+.descexp e_graphics_ddrawprogress e_graphics_ndrawprogress e_graphics_ldrawprogress 5 0 "drawprogress"
+.a 5 e_graphics_eadrawprogress
+.o 2 0
+e_graphics_ldrawprogress
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.d 6 0
+	jmp e_graphics_eadrawprogress
+.n 5 e_graphics_ddrawprogress e_graphics_eadrawprogress
+.o 1 0
+e_graphics_ndrawprogress
+	push_node _cycle_in_spine 5
+.o 6 0
+e_graphics_eadrawprogress
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 4 0
+	update_a 3 7
+	update_a 6 3
+	update_a 2 6
+	update_a 5 2
+	update_a 1 5
+	update_a 4 1
+	update_a 0 4
+	pop_a 1
+.o 9 0
+e_graphics_sdrawprogress
+.o 9 0
+s16
+	build _ 0 n64
+	build _ 0 n63
+	build e_StdIOBasic_tSize 2 e_StdIOBasic_cSize
+	build_r e_types_rPlacing 4 0 4 0
+	push_a 4
+	push_a 4
+	buildh d38 4
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 8
+	pushB TRUE
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 4 1 b
+	jmp e_StdControl_ssetControlLook
+.n 0 _ ea64
+.o 1 0
+n64
+	push_node _cycle_in_spine 0
+.o 1 0
+ea64
+.o 1 0
+s64
+	pushI 130
+	pushI 2
+	addI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 0 _ ea63
+.o 1 0
+n63
+	push_node _cycle_in_spine 0
+.o 1 0
+ea63
+.o 1 0
+s63
+	pushI 250
+	pushI 2
+	addI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d38 _hnf l38 7 0 "progresslook;37"
+.a 7 ea38
+.o 2 0
+l38
+	push_args 0 6 6
+	update_a 7 6
+	create
+	update_a 0 8
+	pop_a 1
+.o 8 0
+ea38
+	jsr_eval 6
+	jsr_eval 3
+	push_r_args 3 0 2
+	push_r_args 2 4 0
+	update_a 3 7
+	update_a 5 3
+	update_a 1 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	pop_a 2
+.o 10 2 ii
+s38
+	eq_desc e_types_dLetter 2 1
+	jmp_true case.1
+	jmp case.2
+case.1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	update_a 0 1
+	pop_a 1
+	jsr_eval 8
+	push_args_u 8 3 3
+	update_a 1 2
+	pop_a 2
+	push_b 0
+	ItoR
+	pushR 0.05
+	mulR
+	RtoI
+	push_r_args 0 2 0
+	create
+	push_a 13
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	buildh _Nil 0
+	update_a 0 14
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sunfill;103
+.o 1 0
+.d 0 0
+	jsr e_StdPictureDef_sSansSerifFontDef
+.o 2 1 i
+	pushI 8
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 0
+	updatepop_b 0 1
+.d 3 1 i
+	jsr e_StdPicture_sopenFont
+.o 2 1 b
+	push_a 0
+	push_a 2
+	buildAC "found word up to now:"
+	push_a 2
+	pop_b 1
+	update_a 7 8
+	update_a 6 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdPicture_sgetFontStringWidth
+.o 1 1 i
+	push_b 0
+	push_b 2
+	update_b 1 2
+	updatepop_b 0 1
+	addI
+	push_a 0
+	buildAC "at:"
+	push_a 3
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_sgetFontStringWidth
+.o 1 1 i
+	push_a 0
+	buildAC "score up to now:"
+	push_a 3
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_sgetFontStringWidth
+.o 1 1 i
+	push_b 5
+	ItoR
+	push_a 5
+	push_b 0
+	pushR 0.35
+	mulR
+	RtoI
+	push_b 5
+	pushC 'a'
+	CtoI
+	push_a 3
+	jsr_eval 0
+	pushC_a 4
+	pop_a 1
+	CtoI
+	subI
+	create
+	push_a 2
+	push_b 9
+	push_b 9
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 2 ii
+	jsr s18
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_ssetPenFont
+.o 1 0
+	buildh e_StdPictureDef_dGrey 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	create
+	buildAC "abcdefghijklmnopqrstuvwxyz"
+	push_b 2
+	push_b 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 2 ii
+	jsr e_StdPicture_sdrawAt;62
+.o 1 0
+	buildh e_StdPictureDef_dGreen 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 0
+	pushI 0
+	buildAC "abcdefghijklmnopqrstuvwxyz"
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+	create
+	push_b 2
+	push_b 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 2 ii
+	jsr e_StdPicture_sdrawAt;62
+.o 1 0
+	buildh e_StdPictureDef_dRed 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	pushC 'a'
+	pushC_a 2
+	eqC
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 0 2 bi
+	jsr s59
+.o 1 0
+	create
+	push_b 1
+	push_b 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 2 ii
+	jsr e_StdPicture_sdrawAt;62
+.o 1 0
+	buildh e_StdPictureDef_dGreen 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr e_language_stoString;3
+.o 1 0
+	buildAC " determines a new word"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_b 0
+	pushR 0.15
+	mulR
+	RtoI
+	push_b 5
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 2 ii
+	jsr e_StdPicture_sdrawAt;62
+.o 1 0
+	push_b 0
+	pushR 0.60
+	mulR
+	RtoI
+	push_b 5
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	create
+	buildAC "found word up to now:"
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_sdraw;61
+.o 1 0
+	pushI 0
+	pushI 10
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_smovePenPos;47
+.o 1 0
+	push_a 2
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_sdraw;61
+.o 1 0
+	push_b 0
+	pushR 0.75
+	mulR
+	RtoI
+	push_b 3
+	push_b 5
+	subI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	create
+	buildAC "at:"
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_sdraw;61
+.o 1 0
+	pushI 0
+	pushI 10
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_smovePenPos;47
+.o 1 0
+	push_a 4
+	jsr_eval 0
+.d 1 0
+	jsr e_StdIOCommon_stoString;36
+.o 1 0
+	buildAC " "
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 2
+	build d_S.2 -1 n_S.2
+	push_a 3
+	build d_S.1 -1 n_S.1
+	buildh e_StdString_dtoString;5 0
+	buildh e_StdString_dtoString;5 0
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 4 0
+	jsr e_language_stoString;6
+.o 1 0
+.d 2 0
+	jsr catAC
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_sdraw;61
+.o 1 0
+	push_b 0
+	pushR 0.90
+	mulR
+	RtoI
+	push_b 2
+	push_b 5
+	subI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_b 1 6
+	updatepop_b 0 5
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	create
+	buildAC "score up to now:"
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_sdraw;61
+.o 1 0
+	pushI 0
+	pushI 10
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_smovePenPos;47
+.o 1 0
+	push_a 4
+	jsr_eval 0
+	pushI_a 5
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 2
+	update_a 0 3
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	update_a 1 8
+	updatepop_a 0 7
+	pop_b 2
+.d 3 0
+	jmp e_StdPicture_sdraw;61
+case.2
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	pop_a 1
+	buildh e_StdPictureDef_dGrey 0
+	create
+	push_a 10
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 1
+	push_b 1
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+.d 0 0
+	jsr e_StdIOBasic_szero;21
+.o 0 2 ii
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sfill;101
+.o 1 0
+.d 0 0
+	jsr e_StdPictureDef_sSansSerifFontDef
+.o 2 1 i
+	pushI 8
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 0
+	updatepop_b 0 1
+.d 3 1 i
+	jsr e_StdPicture_sopenFont
+.o 2 1 b
+	push_a 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPicture_ssetPenFont
+.o 1 0
+	buildh e_StdPictureDef_dRed 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr e_language_stoString;3
+.o 1 0
+	buildAC " has determined a new word."
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_b 1
+	ItoR
+	pushR 0.95
+	mulR
+	RtoI
+	push_b 1
+	ItoR
+	pushR 0.05
+	mulR
+	RtoI
+	update_a 1 2
+	updatepop_a 0 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 3 2 ii
+	jmp e_StdPicture_sdrawAt;62
+.o 0 2 bi
+s59
+	eqB_b TRUE 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	pop_b 2
+	buildAC ""
+.d 1 0
+	rtn
+case.4
+	pushI 1
+	push_b 2
+	subI
+	pushI 0
+	buildAC "abcdefghijklmnopqrstuvwxyz"
+	update_b 1 3
+	updatepop_b 0 2
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_graphics_sdrawcommunication
+.export e_graphics_eadrawcommunication
+.descexp e_graphics_ddrawcommunication e_graphics_ndrawcommunication e_graphics_ldrawcommunication 3 0 "drawcommunication"
+.a 3 e_graphics_eadrawcommunication
+.o 2 0
+e_graphics_ldrawcommunication
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawcommunication
+.n 3 e_graphics_ddrawcommunication e_graphics_eadrawcommunication
+.o 1 0
+e_graphics_ndrawcommunication
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawcommunication
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 4 0
+e_graphics_sdrawcommunication
+.o 4 0
+s14
+	push_a 1
+	buildh e_graphics_ddisplaylook 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 3
+	pushB TRUE
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jmp e_StdControl_ssetControlLook
+.export e_graphics_sdisplaylook
+.export e_graphics_eadisplaylook
+.descexp e_graphics_ddisplaylook e_graphics_ndisplaylook e_graphics_ldisplaylook 4 0 "displaylook"
+.a 4 e_graphics_eadisplaylook
+.o 2 0
+e_graphics_ldisplaylook
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_graphics_eadisplaylook
+.n 4 e_graphics_ddisplaylook e_graphics_eadisplaylook
+.o 1 0
+e_graphics_ndisplaylook
+	push_node _cycle_in_spine 4
+.o 5 0
+e_graphics_eadisplaylook
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 0
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+e_graphics_sdisplaylook
+.o 7 0
+s15
+	push_a 3
+	build e_StdIOBasic_drectangleSize 1 e_StdIOBasic_nrectangleSize
+	push_a 6
+	push_a 5
+	build e_StdPicture_dunfill;103 2 e_StdPicture_nunfill;103
+	push_a 1
+	build _ 2 n18
+	build e_StdPictureDef_dSansSerifFontDef 0 e_StdPictureDef_nSansSerifFontDef
+	buildI 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n75
+	build e_StdPicture_dopenFont 2 e_StdPicture_nopenFont
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	build d_S.2 -1 n_S.2
+	build e_StdPicture_dsetPenFont 2 e_StdPicture_nsetPenFont
+	buildh e_StdPictureDef_dRed 0
+	build e_StdPicture_dsetPenColour 2 e_StdPicture_nsetPenColour
+	create
+	buildI 4
+	buildI 2
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 10
+	update_a 0 12
+	pop_a 1
+.d 3 0
+	jsr e__SystemEnum_s_from_then;8
+.o 1 0
+	create
+	push_a 5
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 3 0
+	jsr e_StdList_szip2
+.o 1 0
+	push_a 3
+	build e_StdIOBasic_dSize.w -3 e_StdIOBasic_nSize.w
+	push_a 4
+	build e_StdIOBasic_dSize.h -3 e_StdIOBasic_nSize.h
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 4 0
+	jsr s39
+.o 1 0
+	update_a 1 9
+	updatepop_a 0 8
+.d 2 0
+	jsr e_StdFunc_sseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n75
+	push_node _cycle_in_spine 2
+.o 2 0
+ea75
+	jsr_eval 1
+	pushI_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 2 1
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 1 0
+	updatepop_b 0 1
+	fill_r e_StdPictureDef_rFontDef 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea39
+.o 1 0
+n39
+	push_node _cycle_in_spine 3
+.o 4 0
+ea39
+	jsr_eval 2
+.o 4 0
+s39
+	push_a 0
+	push_a 2
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s58
+.o 4 0
+s58
+	eq_desc _Cons 2 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 6
+	push_a 6
+	push_a 4
+	update_a 3 5
+	update_a 1 3
+	update_a 4 1
+	update_a 2 4
+	update_a 0 2
+	pop_a 1
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 6 0
+	jmp s57
+case.6
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.o 6 0
+s57
+case.7
+	push_a 4
+	push_a 3
+	push_a 5
+	build _ 3 n39
+	push_a 1
+	push_a 5
+	build _ 2 n74
+	push_a 4
+	build _ 1 n73
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh e_StdPicture_ddrawAt;62 2
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+case.8
+	push_a 4
+	jsr_eval 0
+	push_a 3
+	push_a 5
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 0
+	jmp s39
+.n 2 _ ea74
+.o 1 0
+n74
+	push_node _cycle_in_spine 2
+.o 3 0
+ea74
+.o 3 0
+s74
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	mulI
+	pushI 10
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+	pushI 2
+	pop_a 2
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea73
+.o 1 0
+n73
+	push_node _cycle_in_spine 1
+.o 2 0
+ea73
+.o 2 0
+s73
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 20
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+	pushI 2
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea18
+.o 1 0
+n18
+	push_node _cycle_in_spine 2
+.o 3 0
+ea18
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 0 2
+.o 2 2 ii
+s18
+	buildh e_StdPictureDef_dGrey 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	pushI 3
+	push_b 2
+	subI
+	pushI 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	pushI 1
+	pushI 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 2
+	push_b 1
+	subI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 2
+	push_b 2
+	subI
+	pushI 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+.d 0 0
+	jsr e_StdIOBasic_szero;21
+.o 0 2 ii
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 1
+	push_b 1
+	subI
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	buildh e_StdPictureDef_dWhite 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	pushI 2
+	push_b 2
+	subI
+	pushI 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	pushI 2
+	push_b 2
+	subI
+	pushI 2
+	push_b 2
+	subI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 2
+	push_b 1
+	subI
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 224
+	pushI 224
+	pushI 224
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	pushI 1
+	push_b 2
+	subI
+	pushI 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	pushI 1
+	push_b 2
+	subI
+	pushI 1
+	push_b 2
+	subI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 1
+	push_b 1
+	subI
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp e_StdPicture_sdrawLineTo
+.export e_graphics_sdrawplayer2score
+.export e_graphics_eadrawplayer2score
+.descexp e_graphics_ddrawplayer2score e_graphics_ndrawplayer2score e_graphics_ldrawplayer2score 3 0 "drawplayer2score"
+.a 3 e_graphics_eadrawplayer2score
+.o 2 0
+e_graphics_ldrawplayer2score
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawplayer2score
+.n 3 e_graphics_ddrawplayer2score e_graphics_eadrawplayer2score
+.o 1 0
+e_graphics_ndrawplayer2score
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawplayer2score
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 3 1 i
+e_graphics_sdrawplayer2score
+.o 3 1 i
+s13
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_StdControl_ssetControlText
+.export e_graphics_sdrawplayer1score
+.export e_graphics_eadrawplayer1score
+.descexp e_graphics_ddrawplayer1score e_graphics_ndrawplayer1score e_graphics_ldrawplayer1score 3 0 "drawplayer1score"
+.a 3 e_graphics_eadrawplayer1score
+.o 2 0
+e_graphics_ldrawplayer1score
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawplayer1score
+.n 3 e_graphics_ddrawplayer1score e_graphics_eadrawplayer1score
+.o 1 0
+e_graphics_ndrawplayer1score
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawplayer1score
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 3 1 i
+e_graphics_sdrawplayer1score
+.o 3 1 i
+s12
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_StdControl_ssetControlText
+.export e_graphics_sdrawplayer2letters
+.export e_graphics_eadrawplayer2letters
+.descexp e_graphics_ddrawplayer2letters e_graphics_ndrawplayer2letters e_graphics_ldrawplayer2letters 3 0 "drawplayer2letters"
+.a 3 e_graphics_eadrawplayer2letters
+.o 2 0
+e_graphics_ldrawplayer2letters
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawplayer2letters
+.n 3 e_graphics_ddrawplayer2letters e_graphics_eadrawplayer2letters
+.o 1 0
+e_graphics_ndrawplayer2letters
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawplayer2letters
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 4 0
+e_graphics_sdrawplayer2letters
+.o 4 0
+s10
+	push_a 1
+	buildh e_graphics_dplayerletterslook 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 3
+	pushB TRUE
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jmp e_StdControl_ssetControlLook
+.export e_graphics_sdrawplayer1letters
+.export e_graphics_eadrawplayer1letters
+.descexp e_graphics_ddrawplayer1letters e_graphics_ndrawplayer1letters e_graphics_ldrawplayer1letters 3 0 "drawplayer1letters"
+.a 3 e_graphics_eadrawplayer1letters
+.o 2 0
+e_graphics_ldrawplayer1letters
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawplayer1letters
+.n 3 e_graphics_ddrawplayer1letters e_graphics_eadrawplayer1letters
+.o 1 0
+e_graphics_ndrawplayer1letters
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawplayer1letters
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 4 0
+e_graphics_sdrawplayer1letters
+.o 4 0
+s9
+	push_a 1
+	buildh e_graphics_dplayerletterslook 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 3
+	pushB TRUE
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jmp e_StdControl_ssetControlLook
+.export e_graphics_splayerletterslook
+.export e_graphics_eaplayerletterslook
+.descexp e_graphics_dplayerletterslook e_graphics_nplayerletterslook e_graphics_lplayerletterslook 4 0 "playerletterslook"
+.a 4 e_graphics_eaplayerletterslook
+.o 2 0
+e_graphics_lplayerletterslook
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_graphics_eaplayerletterslook
+.n 4 e_graphics_dplayerletterslook e_graphics_eaplayerletterslook
+.o 1 0
+e_graphics_nplayerletterslook
+	push_node _cycle_in_spine 4
+.d 5 0
+	jmp e_graphics_eaplayerletterslook
+.o 5 0
+e_graphics_splayerletterslook
+	jsr_eval 2
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.d 7 0
+	jmp s11
+.o 5 0
+e_graphics_eaplayerletterslook
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 0
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s11
+	push_a 5
+	push_a 4
+	build e_StdPicture_dunfill;103 2 e_StdPicture_nunfill;103
+	create
+	buildI 0
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 8
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s36
+.o 1 0
+	update_a 1 7
+	updatepop_a 0 6
+.d 2 0
+	jsr e_StdFunc_sseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea36
+.o 1 0
+n36
+	push_node _cycle_in_spine 2
+.o 3 0
+ea36
+	jsr_eval 0
+.o 3 0
+s36
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s54
+.o 3 0
+s54
+	eq_desc _Cons 2 0
+	jmp_true case.9
+	jmp case.10
+case.9
+	repl_args 2 2
+	push_a 2
+	build _ 1 n72
+	push_a 2
+	build _ 2 n36
+	buildI 0
+	push_a 4
+	buildh _Tuple 2
+	push_a 2
+	buildh d17 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.10
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea72
+.o 1 0
+n72
+	push_node _cycle_in_spine 1
+.o 2 0
+ea72
+.o 2 0
+s72
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_graphics_sdrawletterbox
+.export e_graphics_eadrawletterbox
+.descexp e_graphics_ddrawletterbox e_graphics_ndrawletterbox e_graphics_ldrawletterbox 3 0 "drawletterbox"
+.a 3 e_graphics_eadrawletterbox
+.o 2 0
+e_graphics_ldrawletterbox
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawletterbox
+.n 3 e_graphics_ddrawletterbox e_graphics_eadrawletterbox
+.o 1 0
+e_graphics_ndrawletterbox
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawletterbox
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 4 0
+e_graphics_sdrawletterbox
+.o 4 0
+s8
+	push_a 1
+	buildh e_graphics_dletterboxlook 1
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 3
+	pushB TRUE
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jmp e_StdControl_ssetControlLook
+.export e_graphics_sletterboxlook
+.export e_graphics_ealetterboxlook
+.descexp e_graphics_dletterboxlook e_graphics_nletterboxlook e_graphics_lletterboxlook 4 0 "letterboxlook"
+.a 4 e_graphics_ealetterboxlook
+.o 2 0
+e_graphics_lletterboxlook
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_graphics_ealetterboxlook
+.n 4 e_graphics_dletterboxlook e_graphics_ealetterboxlook
+.o 1 0
+e_graphics_nletterboxlook
+	push_node _cycle_in_spine 4
+.d 5 0
+	jmp e_graphics_ealetterboxlook
+.o 5 0
+e_graphics_sletterboxlook
+	jsr_eval 2
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.d 7 0
+	jmp s7
+.o 5 0
+e_graphics_ealetterboxlook
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 0
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s7
+	push_a 0
+	build e_StdOrdList_dsort;8 1 e_StdOrdList_nsort;8
+	buildAC "abcdefghijklmnopqrstuvwxyz"
+	buildh ARRAY 1
+	build _ 2 n35
+	pushI 15
+	update_a 4 5
+	updatepop_a 0 4
+.d 1 1 i
+	jsr e_StdList_ssplitAt
+.o 2 0
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_sunzip
+.o 2 0
+	buildI 14
+	buildI 0
+	build e__SystemEnum_d_from_to;6 2 e__SystemEnum_n_from_to;6
+	push_a 3
+	build e_StdList_dunzip 1 e_StdList_nunzip
+	push_a 6
+	push_a 6
+	build e_StdPicture_dunfill;103 2 e_StdPicture_nunfill;103
+	push_a 1
+	build d_S.1 -1 n_S.1
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dzip2 2 e_StdList_nzip2
+	build _ 1 n29
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 2
+	push_a 4
+	build e_StdList_dzip2 2 e_StdList_nzip2
+	build _ 1 n30
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	buildh _Nil 0
+	buildAC "Bold"
+	buildh ARRAY 1
+	buildh _Cons 2
+	build e_StdPictureDef_dSerifFontDef 0 e_StdPictureDef_nSerifFontDef
+	buildI 9
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n76
+	build e_StdPicture_dopenFont 2 e_StdPicture_nopenFont
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	build d_S.2 -1 n_S.2
+	build e_StdPicture_dsetPenFont 2 e_StdPicture_nsetPenFont
+	buildh e_StdPictureDef_dBlack 0
+	build e_StdPicture_dsetPenColour 2 e_StdPicture_nsetPenColour
+	push_a 2
+	build d_S.2 -1 n_S.2
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dzip2 2 e_StdList_nzip2
+	build _ 1 n31
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 5
+	jsr_eval 0
+	create
+	push_a 5
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 9
+	update_a 0 6
+	update_a 0 5
+	update_a 0 8
+	update_a 0 11
+	update_a 0 12
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdList_szip2
+.o 1 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr s32
+.o 1 0
+	update_a 1 9
+	updatepop_a 0 8
+.d 2 0
+	jsr e_StdFunc_sseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _
+.o 1 0
+n76
+	push_node _cycle_in_spine 3
+.o 3 0
+ea76
+	jsr_eval 2
+	jsr_eval 1
+	pushI_a 2
+	push_a 1
+	push_a 1
+	jsr_eval 0
+	repl_r_args 2 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_a 2 1
+	update_b 1 0
+	update_a 1 2
+	updatepop_a 0 1
+	updatepop_b 0 1
+	fill_r e_StdPictureDef_rFontDef 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea35
+.o 1 0
+n35
+	push_node _cycle_in_spine 2
+.o 3 0
+ea35
+	jsr_eval 1
+	push_array 0
+	update_a 0 1
+	pop_a 1
+.o 3 0
+s35
+	buildAC ""
+	push_a 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.11
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.11
+	buildI 0
+	push_a 1
+	buildh ARRAY 1
+	build e__SystemArray_dselect;19 2 e__SystemArray_nselect;19
+	push_a 2
+	push_a 1
+	build _ 2 n33
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 3
+	build _ 2 n71
+	push_a 1
+	build d_S.1 -1 n_S.1
+	push_a 3
+	buildh _Tuple 2
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+.n 2 _ ea71
+.o 1 0
+n71
+	push_node _cycle_in_spine 2
+.o 3 0
+ea71
+.o 3 0
+s71
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 1
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s35
+.n 2 _
+.o 1 0
+n33
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea33
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea33
+	jsr_eval 0
+	pushC_a 0
+	pop_a 1
+.o 1 1 c
+s33
+	eq_desc _Cons 2 0
+	jmp_true case.12
+	jmp case.13
+case.12
+	push_args 0 2 2
+	push_a 0
+	jsr_eval 0
+	pushC_a 1
+	pop_a 1
+	push_b 1
+	eqC
+	notB
+	jmp_false else.14
+	push_a 2
+	buildI 0
+	update_a 1 4
+	updatepop_a 0 3
+	pop_b 1
+.d 2 0
+	rtn
+else.14
+	push_a 1
+	jsr_eval 0
+	push_b 0
+	updatepop_b 0 1
+	updatepop_a 0 3
+.d 1 1 c
+	jsr s33
+.o 2 0
+	buildI 1
+	push_a 1
+	build _ 2 e_StdInt_n+;6
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+case.13
+	buildh _Nil 0
+	buildI 0
+	update_a 1 2
+	updatepop_a 0 1
+	pop_b 1
+.d 2 0
+	rtn
+.n 1 _ ea32
+.o 1 0
+n32
+	push_node _cycle_in_spine 1
+.o 2 0
+ea32
+	jsr_eval 0
+.o 2 0
+s32
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s53
+.o 2 0
+s53
+	eq_desc _Cons 2 0
+	jmp_true case.15
+	jmp case.16
+case.15
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s52
+case.16
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s52
+case.17
+	push_a 2
+	build _ 1 n32
+	push_a 2
+	buildI 3
+	buildh _Tuple 2
+	push_a 2
+	buildh d34 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.18
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s32
+.n 1 _ ea31
+.o 1 0
+n31
+	push_node _cycle_in_spine 1
+.o 2 0
+ea31
+	jsr_eval 0
+.o 2 0
+s31
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s51
+.o 2 0
+s51
+	eq_desc _Cons 2 0
+	jmp_true case.19
+	jmp case.20
+case.19
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s50
+case.20
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s50
+case.21
+	push_a 2
+	build _ 1 n31
+	push_a 2
+	buildI 1
+	buildh _Tuple 2
+	push_a 2
+	buildh d34 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.22
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s31
+.desc d34 _hnf l34 3 0 "drawcount;33"
+.a 3 ea34
+.o 2 0
+l34
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea34
+	jsr_eval 2
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	jsr_eval 2
+	pushI_a 1
+	pushI_a 0
+	pushI_a 2
+	pop_a 4
+.o 2 3 iii
+s34
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	pushI 3
+	push_b 1
+	divI
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 5
+	mulI
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	subI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	pushI 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 5
+	mulI
+	addI
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	update_b 1 5
+	updatepop_b 0 4
+.d 3 2 ii
+	jmp e_StdPicture_sdrawAt;62
+.n 1 _ ea30
+.o 1 0
+n30
+	push_node _cycle_in_spine 1
+.o 2 0
+ea30
+	jsr_eval 0
+.o 2 0
+s30
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s49
+.o 2 0
+s49
+	eq_desc _Cons 2 0
+	jmp_true case.23
+	jmp case.24
+case.23
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s48
+case.24
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s48
+case.25
+	push_a 2
+	build _ 1 n30
+	push_a 2
+	buildI 2
+	buildh _Tuple 2
+	push_a 2
+	buildh d17 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.26
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s30
+.n 1 _ ea29
+.o 1 0
+n29
+	push_node _cycle_in_spine 1
+.o 2 0
+ea29
+	jsr_eval 0
+.o 2 0
+s29
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s47
+.o 2 0
+s47
+	eq_desc _Cons 2 0
+	jmp_true case.27
+	jmp case.28
+case.27
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s46
+case.28
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s46
+case.29
+	push_a 2
+	build _ 1 n29
+	push_a 2
+	buildI 0
+	buildh _Tuple 2
+	push_a 2
+	buildh d17 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.30
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s29
+.export e_graphics_sredrawboard
+.export e_graphics_earedrawboard
+.descexp e_graphics_dredrawboard e_graphics_nredrawboard e_graphics_lredrawboard 4 0 "redrawboard"
+.a 4 e_graphics_earedrawboard
+.o 2 0
+e_graphics_lredrawboard
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_graphics_earedrawboard
+.n 4 e_graphics_dredrawboard e_graphics_earedrawboard
+.o 1 0
+e_graphics_nredrawboard
+	push_node _cycle_in_spine 4
+.o 5 0
+e_graphics_earedrawboard
+	jsr_eval 3
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	jsr_eval 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.o 6 0
+e_graphics_sredrawboard
+.o 6 0
+s5
+	push_a 2
+	push_a 2
+	buildh _Tuple 2
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh e_graphics_dboardlook 2
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 5
+	pushB TRUE
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 1 b
+	jmp e_StdControl_ssetControlLook
+.export e_graphics_sboardlook
+.export e_graphics_eaboardlook
+.descexp e_graphics_dboardlook e_graphics_nboardlook e_graphics_lboardlook 5 0 "boardlook"
+.a 5 e_graphics_eaboardlook
+.o 2 0
+e_graphics_lboardlook
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.d 6 0
+	jmp e_graphics_eaboardlook
+.n 5 e_graphics_dboardlook e_graphics_eaboardlook
+.o 1 0
+e_graphics_nboardlook
+	push_node _cycle_in_spine 5
+.o 6 0
+e_graphics_eaboardlook
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 4 3 0
+	update_a 2 7
+	update_a 4 2
+	update_a 6 4
+	update_a 1 6
+	update_a 3 1
+	update_a 5 3
+	update_a 0 5
+	pop_a 1
+.o 9 0
+e_graphics_sboardlook
+.o 9 0
+s4
+	push_a 3
+	update_a 3 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 1 0
+	jsr e_StdIOCommon_senabled
+.o 0 1 b
+	jmp_false else.31
+	push_a 2
+	build e_StdIOBasic_drectangleSize 1 e_StdIOBasic_nrectangleSize
+	push_a 0
+	build e_StdIOBasic_dSize.w -3 e_StdIOBasic_nSize.w
+	buildI 15
+	buildI 0
+	build e__SystemEnum_d_from_to;6 2 e__SystemEnum_n_from_to;6
+	push_a 2
+	build e_StdIOBasic_dSize.h -3 e_StdIOBasic_nSize.h
+	buildh e_StdPictureDef_dWhite 0
+	push_a 9
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPicture_dsetPenColour 2 e_StdPicture_nsetPenColour
+	push_a 2
+	push_a 2
+	build _ 2 n19
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 2
+	push_a 4
+	build _ 2 n20
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	buildh e_StdPictureDef_dDarkGrey 0
+	build e_StdPicture_dsetPenColour 2 e_StdPicture_nsetPenColour
+	push_a 2
+	push_a 2
+	build _ 2 n21
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 2
+	push_a 4
+	build _ 2 n22
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_ddoubleletterpositions 0 e_board_ndoubleletterpositions
+	pushI 191
+	pushI 159
+	pushI 159
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_dtripleletterpositions 0 e_board_ntripleletterpositions
+	pushI 255
+	pushI 127
+	pushI 127
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_ddoublewordpositions 0 e_board_ndoublewordpositions
+	pushI 160
+	pushI 160
+	pushI 191
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_dtriplewordpositions 0 e_board_ntriplewordpositions
+	pushI 127
+	pushI 127
+	pushI 255
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build _ 1 n27
+	create
+	pushI 14
+	pushI 0
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 6
+	update_a 0 5
+	update_a 0 4
+	update_a 0 12
+	update_a 0 7
+	update_a 0 10
+	pop_a 1
+.d 2 2 ii
+	jsr s25
+.o 1 0
+	update_a 7 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 2 0
+	jsr e_StdFunc_sseq
+.o 1 0
+	push_a 1
+	jsr_eval 0
+	repl_r_args 0 2
+	pushB TRUE
+	updatepop_a 0 1
+.d 2 3 bii
+	jmp s6
+else.31
+	push_a 2
+	build e_StdIOBasic_drectangleSize 1 e_StdIOBasic_nrectangleSize
+	push_a 0
+	build e_StdIOBasic_dSize.w -3 e_StdIOBasic_nSize.w
+	buildI 15
+	buildI 0
+	build e__SystemEnum_d_from_to;6 2 e__SystemEnum_n_from_to;6
+	push_a 2
+	build e_StdIOBasic_dSize.h -3 e_StdIOBasic_nSize.h
+	buildh e_StdPictureDef_dWhite 0
+	push_a 9
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPicture_dsetPenColour 2 e_StdPicture_nsetPenColour
+	push_a 2
+	push_a 2
+	build _ 2 n19
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 2
+	push_a 4
+	build _ 2 n20
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	buildh e_StdPictureDef_dDarkGrey 0
+	build e_StdPicture_dsetPenColour 2 e_StdPicture_nsetPenColour
+	push_a 2
+	push_a 2
+	build _ 2 n21
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	push_a 2
+	push_a 4
+	build _ 2 n22
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_ddoubleletterpositions 0 e_board_ndoubleletterpositions
+	pushI 191
+	pushI 159
+	pushI 159
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_dtripleletterpositions 0 e_board_ntripleletterpositions
+	pushI 255
+	pushI 127
+	pushI 127
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_ddoublewordpositions 0 e_board_ndoublewordpositions
+	pushI 160
+	pushI 160
+	pushI 191
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build e_board_dtriplewordpositions 0 e_board_ntriplewordpositions
+	pushI 127
+	pushI 127
+	pushI 255
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	buildh d28 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdFunc_dseq 2 e_StdFunc_nseq
+	build _ 1 n27
+	create
+	pushI 14
+	pushI 0
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 6
+	update_a 0 5
+	update_a 0 4
+	update_a 0 12
+	update_a 0 7
+	update_a 0 10
+	pop_a 1
+.d 2 2 ii
+	jsr s25
+.o 1 0
+	update_a 1 10
+	updatepop_a 0 9
+.d 2 0
+	jsr e_StdFunc_sseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_graphics_sdrawfocus
+.export e_graphics_eadrawfocus
+.descexp e_graphics_ddrawfocus e_graphics_ndrawfocus e_graphics_ldrawfocus 3 0 "drawfocus"
+.a 3 e_graphics_eadrawfocus
+.o 2 0
+e_graphics_ldrawfocus
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_graphics_eadrawfocus
+.n 3 e_graphics_ddrawfocus e_graphics_eadrawfocus
+.o 1 0
+e_graphics_ndrawfocus
+	push_node _cycle_in_spine 3
+.o 4 0
+e_graphics_eadrawfocus
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 0 2
+	pushB_a 0
+	pop_a 2
+.o 2 3 bii
+e_graphics_sdrawfocus
+.o 2 3 bii
+s6
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 b
+	jsr s62
+.o 2 0
+	push_b 1
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 2 ii
+	jsr s3
+.o 0 2 ii
+	create
+	push_a 3
+	push_a 2
+	update_a 4 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	pushI 1
+	push_b 3
+	addI
+	mulI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 2
+	mulI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	subI
+	pushI 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdraw;69
+.o 1 0
+.d 0 0
+	jsr s1
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdraw;69
+.o 1 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdraw;69
+.o 1 0
+.d 0 0
+	jsr s1
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	subI
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+.d 2 2 ii
+	jmp e_StdPicture_sdraw;69
+.n 8 _ ea23
+.o 1 0
+n23
+	push_node _cycle_in_spine 8
+.o 9 0
+ea23
+	jsr_eval 7
+.o 9 0
+s23
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 11
+	push_a 9
+	push_a 14
+	update_a 7 15
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 9 0
+	jmp s44
+.o 5 2 ii
+s24
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.32
+	buildh _Nil 0
+	buildI_b 0
+	push_a 2
+	build e_StdList_d!! 2 e_StdList_n!!
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_d!! 2 e_StdList_n!!
+	buildh _Cons 2
+	buildI_b 0
+	buildI_b 1
+	buildI_b 0
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 7 11
+	update_a 6 10
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	pop_b 2
+.d 9 0
+	jmp s23
+else.32
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	pushI 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	addI
+	push_a 0
+	updatepop_a 0 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp s25
+.o 2 2 ii
+s25
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.33
+	pushI 14
+	pushI 0
+	buildI_b 2
+	buildI_b 3
+	buildI_b 2
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 5 2 ii
+	jmp s24
+else.33
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 2
+.d 1 0
+	rtn
+.o 9 0
+s44
+	eq_desc _Cons 2 0
+	jmp_true case.34
+	jmp case.35
+case.34
+	repl_args 2 2
+	push_a 1
+	push_a 4
+	push_a 10
+	push_a 10
+	push_a 6
+	push_a 11
+	push_a 11
+	push_a 11
+	build _ 8 n23
+	push_a 4
+	push_a 4
+	buildh _Tuple 2
+	push_a 2
+	buildh d17 2
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.35
+	push_a 7
+	jsr_eval 0
+	pushI_a 8
+	pop_a 1
+	pushI 1
+	push_a 6
+	jsr_eval 0
+	pushI_a 7
+	pop_a 1
+	addI
+	push_a 1
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 5 2 ii
+	jmp s24
+.desc d17 _hnf l17 3 0 "drawletter"
+.a 3 ea17
+.o 2 0
+l17
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea17
+	jsr_eval 2
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	jsr_eval 2
+	pushI_a 1
+	pushI_a 0
+	pushC_a 2
+	pop_a 4
+.o 2 3 cii
+s17
+	eqC_b ' ' 0
+	jmp_true case.36
+	jmp case.37
+case.36
+	pop_b 3
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.37
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 2
+	mulI
+.d 0 0
+	jsr e_StdPictureDef_sSmallFontDef
+.o 2 1 i
+	pushI 6
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 0
+	updatepop_b 0 1
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 1 i
+	jsr e_StdPicture_sopenFont
+.o 2 1 b
+	push_a 0
+	push_b 2
+	updatepop_b 0 1
+	update_a 0 1
+	pop_a 1
+.d 0 1 c
+	jsr e_language_slettervalue
+.o 0 1 i
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildh _Nil 0
+	buildAC "Bold"
+	buildh ARRAY 1
+	buildh _Cons 2
+.d 0 0
+	jsr e_StdPictureDef_sSerifFontDef
+.o 2 1 i
+	pushI 9
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_a 2 1
+	update_b 1 0
+	update_a 1 2
+	updatepop_a 0 1
+	updatepop_b 0 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 3 1 i
+	jsr e_StdPicture_sopenFont
+.o 2 1 b
+	push_a 1
+	push_a 3
+	push_a 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_sgetFontStringWidth
+.o 1 1 i
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 6
+	mulI
+.d 0 0
+	jsr s2
+.o 0 1 i
+	pushI 191
+	pushI 255
+	pushI 255
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 2
+	addI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 6
+	addI
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	pushI 2
+	push_b 2
+	addI
+	pushI 2
+	push_b 6
+	addI
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sfill;101
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 2
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 2
+	push_b 6
+	addI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	buildh e_StdPictureDef_dWhite 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	pushI 2
+	push_b 2
+	addI
+	pushI 2
+	push_b 6
+	addI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 2
+	push_b 2
+	addI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 6
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	buildh e_StdPictureDef_dYellow 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 2
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 6
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 2
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 2
+	push_b 6
+	addI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_sdrawLineTo
+.o 1 0
+	pushI 3
+	push_b 1
+	divI
+	push_b 1
+	push_b 3
+	addI
+	subI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	pushI 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+	push_b 6
+	addI
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 2 ii
+	jsr e_StdPicture_ssetPenPos
+.o 1 0
+	push_a 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPicture_ssetPenFont
+.o 1 0
+	buildh e_StdPictureDef_dBlack 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 5
+.d 0 1 c
+	jsr e_StdChar_stoUpper
+.o 0 1 c
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 c
+	jsr e_StdPicture_sdraw;57
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPicture_ssetPenFont
+.o 1 0
+	pushI 0
+	pushI 127
+	pushI 127
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 0
+	push_b 2
+	addI
+	pushI 3
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 6
+	addI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	push_b 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	update_b 1 9
+	updatepop_b 0 8
+.d 3 2 ii
+	jmp e_StdPicture_sdrawAt;62
+.n 1 _ ea27
+.o 1 0
+n27
+	push_node _cycle_in_spine 1
+.o 2 0
+ea27
+	jsr_eval 0
+.o 2 0
+s27
+	build _ 0 n69
+	build _ 0 n70
+	pushI 7
+	pushI 7
+	pushI 191
+	pushI 191
+	pushI 191
+	build_r e_StdPictureDef_rRGBColour 0 3 0 0
+	pop_b 3
+	buildh e_StdPictureDef_dRGB 1
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 3 2 ii
+	jsr s28
+.o 1 0
+	buildh e_StdPictureDef_dGrey 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	buildh _Nil 0
+	push_a 3
+	buildI 0
+	build _ 2 e_StdInt_n-;7
+	push_a 3
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh _Cons 2
+	push_a 3
+	buildI 0
+	build _ 2 e_StdInt_n-;7
+	push_a 3
+	buildI 0
+	build _ 2 e_StdInt_n-;7
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh _Cons 2
+	push_a 2
+	buildI 0
+	build _ 2 e_StdInt_n-;7
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh _Cons 2
+	push_a 3
+	push_a 3
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh _Cons 2
+	push_a 3
+	buildI 0
+	build _ 2 e_StdInt_n-;7
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	build _ 2 n77
+	buildh _Cons 2
+	pushR 7.5
+	pushR 7.5
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 3
+	pop_a 1
+.d 0 2 rr
+	jsr s26
+.o 0 2 ii
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 2 ii
+	jmp e_StdPicture_sfillAt;110
+.n 2 _
+.o 1 0
+n77
+	push_node _cycle_in_spine 2
+.o 2 0
+ea77
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 0 _ ea70
+.o 1 0
+n70
+	push_node _cycle_in_spine 0
+.o 1 0
+ea70
+.o 1 0
+s70
+.d 0 0
+	jsr s1
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 0 _ ea69
+.o 1 0
+n69
+	push_node _cycle_in_spine 0
+.o 1 0
+ea69
+.o 1 0
+s69
+.d 0 0
+	jsr s2
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 2 rr
+s26
+.d 0 0
+	jsr s2
+.o 0 1 i
+	ItoR
+	push_b 2
+	mulR
+	RtoI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	ItoR
+	push_b 2
+	mulR
+	RtoI
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 2 ii
+	rtn
+.desc d28 _hnf l28 3 0 "drawsquare;27"
+.a 3 ea28
+.o 2 0
+l28
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea28
+	jsr_eval 2
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	jsr_eval 2
+	pushI_a 1
+	pushI_a 0
+	update_a 2 3
+	pop_a 3
+.o 3 2 ii
+s28
+	create
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr s2
+.o 0 1 i
+	pushI 1
+	push_b 3
+	addI
+	mulI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	pushI 1
+	push_b 3
+	addI
+	mulI
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 2
+	mulI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 2
+	mulI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	pop_b 2
+.d 4 0
+	jmp e_StdPicture_sfill;101
+.n 2 _ ea22
+.o 1 0
+n22
+	push_node _cycle_in_spine 2
+.o 3 0
+ea22
+	jsr_eval 1
+.o 3 0
+s22
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s43
+.o 3 0
+s43
+	eq_desc _Cons 2 0
+	jmp_true case.38
+	jmp case.39
+case.38
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n22
+	buildI 1
+	push_a 4
+	build _ 2 e_StdInt_n-;7
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	build _ 2 n78
+	push_a 2
+	build _ 1 n68
+	buildI 1
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	buildh e_StdPicture_ddrawAt;70 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.39
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n78
+	push_node _cycle_in_spine 2
+.o 2 0
+ea78
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 0
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _ ea68
+.o 1 0
+n68
+	push_node _cycle_in_spine 1
+.o 2 0
+ea68
+.o 2 0
+s68
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+.d 0 0
+	jsr s2
+.o 0 1 i
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea21
+.o 1 0
+n21
+	push_node _cycle_in_spine 2
+.o 3 0
+ea21
+	jsr_eval 1
+.o 3 0
+s21
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s42
+.o 3 0
+s42
+	eq_desc _Cons 2 0
+	jmp_true case.40
+	jmp case.41
+case.40
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n21
+	buildI 1
+	push_a 4
+	build _ 2 e_StdInt_n-;7
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	build _ 2 n79
+	push_a 2
+	build _ 1 n67
+	buildI 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	buildh e_StdPicture_ddrawAt;70 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.41
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n79
+	push_node _cycle_in_spine 2
+.o 2 0
+ea79
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _ ea67
+.o 1 0
+n67
+	push_node _cycle_in_spine 1
+.o 2 0
+ea67
+.o 2 0
+s67
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+.d 0 0
+	jsr s1
+.o 0 1 i
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea20
+.o 1 0
+n20
+	push_node _cycle_in_spine 2
+.o 3 0
+ea20
+	jsr_eval 1
+.o 3 0
+s20
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s41
+.o 3 0
+s41
+	eq_desc _Cons 2 0
+	jmp_true case.42
+	jmp case.43
+case.42
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n20
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n80
+	push_a 2
+	build _ 1 n66
+	buildI 0
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	buildh e_StdPicture_ddrawAt;70 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.43
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n80
+	push_node _cycle_in_spine 2
+.o 2 0
+ea80
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 0
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _ ea66
+.o 1 0
+n66
+	push_node _cycle_in_spine 1
+.o 2 0
+ea66
+.o 2 0
+s66
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+.d 0 0
+	jsr s2
+.o 0 1 i
+	mulI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea19
+.o 1 0
+n19
+	push_node _cycle_in_spine 2
+.o 3 0
+ea19
+	jsr_eval 1
+.o 3 0
+s19
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s40
+.o 3 0
+s40
+	eq_desc _Cons 2 0
+	jmp_true case.44
+	jmp case.45
+case.44
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n19
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n81
+	push_a 2
+	build _ 1 n65
+	buildI 0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	buildh e_StdPicture_ddrawAt;70 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.45
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n81
+	push_node _cycle_in_spine 2
+.o 2 0
+ea81
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _ ea65
+.o 1 0
+n65
+	push_node _cycle_in_spine 1
+.o 2 0
+ea65
+.o 2 0
+s65
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+.d 0 0
+	jsr s1
+.o 0 1 i
+	mulI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_graphics_sabs2rel
+.descexp e_graphics_dabs2rel e_graphics_nabs2rel e_graphics_labs2rel 1 0 "abs2rel"
+.o 2 0
+e_graphics_labs2rel
+	pop_a 1
+.d 1 0
+	jsr ea3
+.o 0 2 ii
+	buildI_b 1
+	buildI_b 0
+	buildh _Tuple 2
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 e_graphics_dabs2rel
+.o 1 0
+e_graphics_nabs2rel
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea3
+.o 0 2 ii
+	buildI_b 1
+	buildI_b 0
+	fillh _Tuple 2 2
+	pop_b 2
+.d 1 0
+	rtn
+.o 1 0
+ea3
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	pushI_a 0
+	pop_a 2
+.o 0 2 ii
+e_graphics_sabs2rel
+.o 0 2 ii
+s3
+.d 0 0
+	jsr s2
+.o 0 1 i
+	push_b 2
+	divI
+.d 0 0
+	jsr s1
+.o 0 1 i
+	push_b 2
+	divI
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 2 ii
+	rtn
+.export e_graphics_ssquareheight
+.descexp e_graphics_dsquareheight e_graphics_nsquareheight e_graphics_lsquareheight 0 0 "squareheight"
+.o 1 0
+e_graphics_lsquareheight
+	halt
+.n 0 e_graphics_dsquareheight
+.o 1 0
+e_graphics_nsquareheight
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea2
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 0
+ea2
+.o 0 0
+e_graphics_ssquareheight
+.o 0 0
+s2
+	testcaf c2
+	jmp_false m.46
+	pushcaf c2 0 1
+.d 0 1 i
+	rtn
+.caf c2 0 1
+m.46
+.d 0 0
+	jsr s2.1
+.o 0 1 i
+	fillcaf c2 0 1
+.d 0 1 i
+	rtn
+.o 0 0
+s2.1
+	pushI 15
+	pushI 391
+	divI
+.d 0 1 i
+	rtn
+.export e_graphics_ssquarewidth
+.descexp e_graphics_dsquarewidth e_graphics_nsquarewidth e_graphics_lsquarewidth 0 0 "squarewidth"
+.o 1 0
+e_graphics_lsquarewidth
+	halt
+.n 0 e_graphics_dsquarewidth
+.o 1 0
+e_graphics_nsquarewidth
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea1
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 0
+ea1
+.o 0 0
+e_graphics_ssquarewidth
+.o 0 0
+s1
+	testcaf c1
+	jmp_false m.47
+	pushcaf c1 0 1
+.d 0 1 i
+	rtn
+.caf c1 0 1
+m.47
+.d 0 0
+	jsr s1.1
+.o 0 1 i
+	fillcaf c1 0 1
+.d 0 1 i
+	rtn
+.o 0 0
+s1.1
+	pushI 15
+	pushI 391
+	divI
+.d 0 1 i
+	rtn
+.o 0 1 b
+s62
+	eqB_b TRUE 0
+	jmp_true case.48
+	jmp case.49
+case.48
+	buildh e_StdPictureDef_dWhite 0
+	buildh e_StdPictureDef_dDarkGrey 0
+	pop_b 1
+.d 2 0
+	rtn
+case.49
+	buildh e_StdPictureDef_dDarkGrey 0
+	buildh e_StdPictureDef_dWhite 0
+	pop_b 1
+.d 2 0
+	rtn

@@ -1,0 +1,578 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "commondef" "20170131202628"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "StdFunc" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "processstack" "20170131202629"
+.module m_processstack "processstack" "20170131202629"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_commondef_sfatalError
+.implab e_systemid_snullSystemId
+.implab e_systemid_s==;5
+.export e_processstack_rProcessShowState
+.record e_processstack_rProcessShowState aba 2 1 "ProcessShowState"
+.descexp e_processstack_tProcessShowState e_processstack_cProcessShowState _hnf 3 1 "ProcessShowState"
+.n 3 e_processstack_tProcessShowState
+.o 1 0
+e_processstack_cProcessShowState
+	push_node _cycle_in_spine 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushB_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_processstack_rProcessShowState 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.export e_processstack_dProcessShowState.psId
+.export e_processstack_nProcessShowState.psId
+.export e_processstack_eaProcessShowState.psId
+.descs e_processstack_dProcessShowState.psId e_processstack_nProcessShowState.psId _ 1 0 "ProcessShowState.psId"
+.n -4 e_processstack_dProcessShowState.psId e_processstack_eaProcessShowState.psId
+.o 1 0
+e_processstack_nProcessShowState.psId
+	push_node _cycle_in_spine 1
+.o 2 0
+e_processstack_eaProcessShowState.psId
+	jsr_eval 0
+	repl_r_args_a 2 1 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_processstack_dProcessShowState.psShow
+.export e_processstack_nProcessShowState.psShow
+.descs e_processstack_dProcessShowState.psShow e_processstack_nProcessShowState.psShow BOOL 4 0 "ProcessShowState.psShow"
+.n -3 e_processstack_dProcessShowState.psShow
+.o 1 0
+e_processstack_nProcessShowState.psShow
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 2 1 1 1
+	pop_a 1
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_processstack_dProcessShowState.psKind
+.export e_processstack_nProcessShowState.psKind
+.export e_processstack_eaProcessShowState.psKind
+.descs e_processstack_dProcessShowState.psKind e_processstack_nProcessShowState.psKind _ 3 0 "ProcessShowState.psKind"
+.n -4 e_processstack_dProcessShowState.psKind e_processstack_eaProcessShowState.psKind
+.o 1 0
+e_processstack_nProcessShowState.psKind
+	push_node _cycle_in_spine 1
+.o 2 0
+e_processstack_eaProcessShowState.psKind
+	jsr_eval 0
+	repl_r_args_a 2 1 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_processstack_dInteractiveProcess
+.desc0 e_processstack_dInteractiveProcess 0 "InteractiveProcess"
+.export e_processstack_dVirtualProcess
+.desc0 e_processstack_dVirtualProcess 1 "VirtualProcess"
+.export e_processstack_s==;6
+.descexp e_processstack_d==;6 e_processstack_n==;6 e_processstack_l==;6 2 0 "==;6"
+.a 0 a7
+.o 2 0
+e_processstack_l==;6
+	repl_args 1 1
+.o 2 0
+a7
+.d 2 0
+	jsr ea7
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_processstack_d==;6
+.o 1 0
+e_processstack_n==;6
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea7
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea7
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_processstack_s==;6
+.o 2 0
+s7
+	eq_desc e_processstack_dInteractiveProcess 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	push_a 1
+	updatepop_a 0 2
+.d 1 0
+	jmp s9
+case.2
+	push_a 1
+	updatepop_a 0 2
+.d 1 0
+	jmp s10
+.o 1 0
+s10
+	eq_desc e_processstack_dVirtualProcess 0 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.4
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.o 1 0
+s9
+	eq_desc e_processstack_dInteractiveProcess 0 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.6
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_processstack_stopShowProcessShowState
+.descexp e_processstack_dtopShowProcessShowState e_processstack_ntopShowProcessShowState e_processstack_ltopShowProcessShowState 1 0 "topShowProcessShowState"
+.o 2 0
+e_processstack_ltopShowProcessShowState
+	pop_a 1
+.d 1 0
+	jsr ea6
+.o 1 1 b
+	push_a 0
+	buildB_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_processstack_dtopShowProcessShowState
+.o 1 0
+e_processstack_ntopShowProcessShowState
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea6
+.o 1 1 b
+	push_a 0
+	buildB_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea6
+	jsr_eval 0
+.o 1 0
+e_processstack_stopShowProcessShowState
+.o 1 0
+s6
+	eq_desc _Cons 2 0
+	jmp_true case.7
+	jmp case.8
+case.7
+	repl_args 2 2
+	jsr_eval 0
+	push_r_args_u 0 2 1
+	update_a 0 1
+	pop_a 1
+	push_b 0
+	jmp_false else.9
+	push_a 0
+	push_b 0
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 1 1 b
+	rtn
+else.9
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+	pop_b 1
+.d 1 0
+	jmp s6
+case.8
+	create
+	updatepop_a 0 1
+.d 1 0
+	jsr e_systemid_snullSystemId
+.o 1 0
+	pushB FALSE
+.d 1 1 b
+	rtn
+.export e_processstack_sselectProcessShowState
+.export e_processstack_easelectProcessShowState
+.descexp e_processstack_dselectProcessShowState e_processstack_nselectProcessShowState e_processstack_lselectProcessShowState 2 0 "selectProcessShowState"
+.a 2 e_processstack_easelectProcessShowState
+.o 2 0
+e_processstack_lselectProcessShowState
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_processstack_easelectProcessShowState
+.n 2 e_processstack_dselectProcessShowState e_processstack_easelectProcessShowState
+.o 1 0
+e_processstack_nselectProcessShowState
+	push_node _cycle_in_spine 2
+.o 3 0
+e_processstack_easelectProcessShowState
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_processstack_sselectProcessShowState
+.o 3 0
+s4
+	push_a 1
+	push_a 1
+	build e_processstack_dremoveProcessShowState 2 e_processstack_nremoveProcessShowState
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.export e_processstack_sremoveProcessShowState
+.descexp e_processstack_dremoveProcessShowState e_processstack_nremoveProcessShowState e_processstack_lremoveProcessShowState 2 0 "removeProcessShowState"
+.a 0 a5
+.o 2 0
+e_processstack_lremoveProcessShowState
+	repl_args 1 1
+.o 2 0
+a5
+.d 2 0
+	jsr ea5
+.o 3 1 b
+	push_a 2
+	build_r e_processstack_rProcessShowState 2 1 1 0
+	buildh _Tuple 2
+	updatepop_a 0 3
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_processstack_dremoveProcessShowState
+.o 1 0
+e_processstack_nremoveProcessShowState
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea5
+.o 3 1 b
+	push_a 2
+	build_r e_processstack_rProcessShowState 2 1 1 0
+	fillh _Tuple 2 5
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea5
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_processstack_sremoveProcessShowState
+.o 2 0
+s5
+	eq_desc _Cons 2 1
+	jmp_true case.10
+	jmp case.11
+case.10
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 0
+	push_r_args 0 2 1
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	push_a 0
+	push_a 4
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_systemid_s==;5
+.o 0 1 b
+	jmp_false else.12
+	push_a 1
+	jsr_eval 0
+	push_r_args 1 2 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 1 b
+	rtn
+else.12
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr s5
+.o 3 1 b
+	push_a 2
+	push_a 4
+	buildh _Cons 2
+	push_a 2
+	push_b 0
+	push_a 2
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	updatepop_b 0 1
+.d 3 1 b
+	rtn
+case.11
+	buildAC "Unknown SystemId"
+	buildAC "removeProcessShowState"
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr s8
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 2 1
+.d 3 1 b
+	rtn
+.export e_processstack_ssetProcessShowState
+.export e_processstack_easetProcessShowState
+.descexp e_processstack_dsetProcessShowState e_processstack_nsetProcessShowState e_processstack_lsetProcessShowState 3 0 "setProcessShowState"
+.a 3 e_processstack_easetProcessShowState
+.o 2 0
+e_processstack_lsetProcessShowState
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_processstack_easetProcessShowState
+.n 3 e_processstack_dsetProcessShowState e_processstack_easetProcessShowState
+.o 1 0
+e_processstack_nsetProcessShowState
+	push_node _cycle_in_spine 3
+.o 4 0
+e_processstack_easetProcessShowState
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushB_a 1
+	update_a 0 1
+	pop_a 1
+.o 3 1 b
+e_processstack_ssetProcessShowState
+.o 3 1 b
+s3
+	eq_desc _Cons 2 1
+	jmp_true case.13
+	jmp case.14
+case.13
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 0
+	push_r_args_u 0 2 1
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	push_a 0
+	push_a 4
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_systemid_s==;5
+.o 0 1 b
+	jmp_false else.15
+	push_b 0
+	push_r_args 0 2 1
+	update_b 1 0
+	updatepop_b 0 1
+	build_r e_processstack_rProcessShowState 2 1 0 0
+	update_a 0 2
+	pop_a 2
+	pop_b 1
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 6
+	pop_a 4
+	pop_b 1
+.d 1 0
+	rtn
+else.15
+	push_a 1
+	buildB_b 0
+	push_a 4
+	build e_processstack_dsetProcessShowState 3 e_processstack_nsetProcessShowState
+	push_a 1
+	fillh _Cons 2 6
+	pop_a 4
+	pop_b 1
+.d 1 0
+	rtn
+case.14
+	buildAC "Unknown SystemId"
+	buildAC "setProcessShowState"
+	update_a 1 3
+	updatepop_a 0 2
+	pop_b 1
+.d 2 0
+	jsr s8
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+s8
+	push_a 1
+	buildAC "processstack"
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_commondef_sfatalError
+.export e_processstack_spushProcessShowState
+.export e_processstack_eapushProcessShowState
+.descexp e_processstack_dpushProcessShowState e_processstack_npushProcessShowState e_processstack_lpushProcessShowState 2 0 "pushProcessShowState"
+.a 2 e_processstack_eapushProcessShowState
+.o 2 0
+e_processstack_lpushProcessShowState
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_processstack_eapushProcessShowState
+.n 2 e_processstack_dpushProcessShowState e_processstack_eapushProcessShowState
+.o 1 0
+e_processstack_npushProcessShowState
+	push_node _cycle_in_spine 2
+.o 3 0
+e_processstack_eapushProcessShowState
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 2 1
+.o 4 1 b
+e_processstack_spushProcessShowState
+.o 4 1 b
+s2
+	build_r e_processstack_rProcessShowState 2 1 0 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 5
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.export e_processstack_semptyProcessStack
+.export e_processstack_eaemptyProcessStack
+.descexp e_processstack_demptyProcessStack e_processstack_nemptyProcessStack e_processstack_lemptyProcessStack 0 0 "emptyProcessStack"
+.o 1 0
+e_processstack_lemptyProcessStack
+	halt
+.n 0 e_processstack_demptyProcessStack e_processstack_eaemptyProcessStack
+.o 1 0
+e_processstack_nemptyProcessStack
+	push_node _cycle_in_spine 0
+.o 1 0
+e_processstack_eaemptyProcessStack
+.o 1 0
+e_processstack_semptyProcessStack
+.o 1 0
+s1
+	fillh _Nil 0 0
+.d 1 0
+	rtn

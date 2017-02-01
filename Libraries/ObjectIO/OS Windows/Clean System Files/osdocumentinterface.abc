@@ -1,0 +1,2015 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "windowCrossCall_12" "20170131202632"
+.depend "rgnCCall_12" "20170131202632"
+.depend "pictCCall_12" "20170131202632"
+.depend "commondef" "20170131202628"
+.depend "ossystem" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "StdFunc" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "osdocumentinterface" "20170131202632"
+.impobj "cCrossCallxDI_121."
+.module m_osdocumentinterface "osdocumentinterface" "20170131202632"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_windowCrossCall_12_swinFakePaint
+.implab e_commondef_sfatalError
+.implab e_ossystem_sosGetProcessWindowDimensions
+.implab e_ossystem_sosStripOuterSize
+.implab e_clCrossCall_12_sissueCleanRequest2
+.implab e_clCrossCall_12_sreturn0Cci
+.implab e_clCrossCall_12_stoInt;19
+.impdesc e_clCrossCall_12_rCrossCallInfo
+.implab e_StdString_stoString;5
+.implab e_StdString_s+++;11
+.implab e_StdInt_s+;6
+.export e_osdocumentinterface_kOSMDInfo
+.record e_osdocumentinterface_kOSMDInfo d(ai) 1 1 "OSMDInfo"
+.export e_osdocumentinterface_eaOSMDInfo
+.descexp e_osdocumentinterface_dOSMDInfo e_osdocumentinterface_nOSMDInfo e_osdocumentinterface_lOSMDInfo 1 0 "OSMDInfo"
+.o 2 0
+e_osdocumentinterface_lOSMDInfo
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eaOSMDInfo
+.n 1 e_osdocumentinterface_dOSMDInfo e_osdocumentinterface_eaOSMDInfo
+.o 1 0
+e_osdocumentinterface_nOSMDInfo
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eaOSMDInfo
+	jsr_eval 0
+	repl_r_args 1 1
+	fill_r e_osdocumentinterface_kOSMDInfo 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_kOSSDInfo
+.record e_osdocumentinterface_kOSSDInfo d(a) 1 0 "OSSDInfo"
+.export e_osdocumentinterface_eaOSSDInfo
+.descexp e_osdocumentinterface_dOSSDInfo e_osdocumentinterface_nOSSDInfo e_osdocumentinterface_lOSSDInfo 1 0 "OSSDInfo"
+.o 2 0
+e_osdocumentinterface_lOSSDInfo
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eaOSSDInfo
+.n 1 e_osdocumentinterface_dOSSDInfo e_osdocumentinterface_eaOSSDInfo
+.o 1 0
+e_osdocumentinterface_nOSSDInfo
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eaOSSDInfo
+	jsr_eval 0
+	repl_r_args 1 0
+	fill_r e_osdocumentinterface_kOSSDInfo 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSNoInfo
+.desc e_osdocumentinterface_dOSNoInfo _hnf _hnf 0 0 "OSNoInfo"
+.export e_osdocumentinterface_rOSMDInfo
+.record e_osdocumentinterface_rOSMDInfo ai 1 1 "OSMDInfo"
+.descexp e_osdocumentinterface_tOSMDInfo e_osdocumentinterface_cOSMDInfo _hnf 2 1 "OSMDInfo"
+.n 2 e_osdocumentinterface_tOSMDInfo
+.o 1 0
+e_osdocumentinterface_cOSMDInfo
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_osdocumentinterface_rOSMDInfo 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSMDInfo.osmdOSInfo
+.export e_osdocumentinterface_nOSMDInfo.osmdOSInfo
+.descs e_osdocumentinterface_dOSMDInfo.osmdOSInfo e_osdocumentinterface_nOSMDInfo.osmdOSInfo _ 1 0 "OSMDInfo.osmdOSInfo"
+.n -4 e_osdocumentinterface_dOSMDInfo.osmdOSInfo
+.o 1 0
+e_osdocumentinterface_nOSMDInfo.osmdOSInfo
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 1 1 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSMDInfo.osmdWindowMenu
+.export e_osdocumentinterface_nOSMDInfo.osmdWindowMenu
+.descs e_osdocumentinterface_dOSMDInfo.osmdWindowMenu e_osdocumentinterface_nOSMDInfo.osmdWindowMenu INT 2 0 "OSMDInfo.osmdWindowMenu"
+.n -3 e_osdocumentinterface_dOSMDInfo.osmdWindowMenu
+.o 1 0
+e_osdocumentinterface_nOSMDInfo.osmdWindowMenu
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 1 1 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_rOSSDInfo
+.record e_osdocumentinterface_rOSSDInfo a 1 0 "OSSDInfo"
+.descexp e_osdocumentinterface_tOSSDInfo e_osdocumentinterface_cOSSDInfo _hnf 1 1 "OSSDInfo"
+.n 1 e_osdocumentinterface_tOSSDInfo
+.o 1 0
+e_osdocumentinterface_cOSSDInfo
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_osdocumentinterface_rOSSDInfo 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSSDInfo.ossdOSInfo
+.export e_osdocumentinterface_nOSSDInfo.ossdOSInfo
+.descs e_osdocumentinterface_dOSSDInfo.ossdOSInfo e_osdocumentinterface_nOSSDInfo.ossdOSInfo _ 1 0 "OSSDInfo.ossdOSInfo"
+.n -4 e_osdocumentinterface_dOSSDInfo.ossdOSInfo
+.o 1 0
+e_osdocumentinterface_nOSSDInfo.ossdOSInfo
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_rOSInfo
+.record e_osdocumentinterface_rOSInfo iaii 1 3 "OSInfo"
+.descexp e_osdocumentinterface_tOSInfo e_osdocumentinterface_cOSInfo _hnf 4 1 "OSInfo"
+.n 4 e_osdocumentinterface_tOSInfo
+.o 1 0
+e_osdocumentinterface_cOSInfo
+	push_node _cycle_in_spine 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 3
+	pushI_a 2
+	pushI_a 0
+	update_a 1 3
+	pop_a 3
+	fill_r e_osdocumentinterface_rOSInfo 1 3 1 0 0
+	pop_a 1
+	pop_b 3
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSInfo.osFrame
+.export e_osdocumentinterface_nOSInfo.osFrame
+.descs e_osdocumentinterface_dOSInfo.osFrame e_osdocumentinterface_nOSInfo.osFrame INT 3 0 "OSInfo.osFrame"
+.n -3 e_osdocumentinterface_dOSInfo.osFrame
+.o 1 0
+e_osdocumentinterface_nOSInfo.osFrame
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 1 3 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSInfo.osToolbar
+.export e_osdocumentinterface_nOSInfo.osToolbar
+.export e_osdocumentinterface_eaOSInfo.osToolbar
+.descs e_osdocumentinterface_dOSInfo.osToolbar e_osdocumentinterface_nOSInfo.osToolbar _ 1 0 "OSInfo.osToolbar"
+.n -4 e_osdocumentinterface_dOSInfo.osToolbar e_osdocumentinterface_eaOSInfo.osToolbar
+.o 1 0
+e_osdocumentinterface_nOSInfo.osToolbar
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eaOSInfo.osToolbar
+	jsr_eval 0
+	repl_r_args_a 1 3 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSInfo.osClient
+.export e_osdocumentinterface_nOSInfo.osClient
+.descs e_osdocumentinterface_dOSInfo.osClient e_osdocumentinterface_nOSInfo.osClient INT 4 0 "OSInfo.osClient"
+.n -3 e_osdocumentinterface_dOSInfo.osClient
+.o 1 0
+e_osdocumentinterface_nOSInfo.osClient
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 1 3 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSInfo.osMenuBar
+.export e_osdocumentinterface_nOSInfo.osMenuBar
+.descs e_osdocumentinterface_dOSInfo.osMenuBar e_osdocumentinterface_nOSInfo.osMenuBar INT 5 0 "OSInfo.osMenuBar"
+.n -3 e_osdocumentinterface_dOSInfo.osMenuBar
+.o 1 0
+e_osdocumentinterface_nOSInfo.osMenuBar
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 1 3 3 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_rOSMenuBar
+.record e_osdocumentinterface_rOSMenuBar iii 0 3 "OSMenuBar"
+.descexp e_osdocumentinterface_tOSMenuBar e_osdocumentinterface_cOSMenuBar _hnf 3 1 "OSMenuBar"
+.n 3 e_osdocumentinterface_tOSMenuBar
+.o 1 0
+e_osdocumentinterface_cOSMenuBar
+	push_node _cycle_in_spine 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 2
+	pushI_a 1
+	pushI_a 0
+	pop_a 3
+	fill_r e_osdocumentinterface_rOSMenuBar 0 3 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSMenuBar.menuBar
+.export e_osdocumentinterface_nOSMenuBar.menuBar
+.descs e_osdocumentinterface_dOSMenuBar.menuBar e_osdocumentinterface_nOSMenuBar.menuBar INT 1 0 "OSMenuBar.menuBar"
+.n -3 e_osdocumentinterface_dOSMenuBar.menuBar
+.o 1 0
+e_osdocumentinterface_nOSMenuBar.menuBar
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 3 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSMenuBar.menuWindow
+.export e_osdocumentinterface_nOSMenuBar.menuWindow
+.descs e_osdocumentinterface_dOSMenuBar.menuWindow e_osdocumentinterface_nOSMenuBar.menuWindow INT 3 0 "OSMenuBar.menuWindow"
+.n -3 e_osdocumentinterface_dOSMenuBar.menuWindow
+.o 1 0
+e_osdocumentinterface_nOSMenuBar.menuWindow
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 3 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_dOSMenuBar.menuClient
+.export e_osdocumentinterface_nOSMenuBar.menuClient
+.descs e_osdocumentinterface_dOSMenuBar.menuClient e_osdocumentinterface_nOSMenuBar.menuClient INT 4 0 "OSMenuBar.menuClient"
+.n -3 e_osdocumentinterface_dOSMenuBar.menuClient
+.o 1 0
+e_osdocumentinterface_nOSMenuBar.menuClient
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 3 3 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_sgetOSDInfoOffset
+.descexp e_osdocumentinterface_dgetOSDInfoOffset e_osdocumentinterface_ngetOSDInfoOffset e_osdocumentinterface_lgetOSDInfoOffset 2 0 "getOSDInfoOffset"
+.a 0 a14
+.o 2 0
+e_osdocumentinterface_lgetOSDInfoOffset
+	repl_args 1 1
+.o 2 0
+a14
+.d 2 0
+	jsr ea14
+.o 0 3 iii
+	buildI_b 2
+	buildI_b 1
+	buildI_b 0
+	buildh _Tuple 2
+	buildh _Tuple 2
+	pop_b 3
+.d 1 0
+	rtn
+.n 2 e_osdocumentinterface_dgetOSDInfoOffset
+.o 1 0
+e_osdocumentinterface_ngetOSDInfoOffset
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea14
+.o 0 3 iii
+	buildI_b 2
+	buildI_b 1
+	buildI_b 0
+	buildh _Tuple 2
+	fillh _Tuple 2 2
+	pop_b 3
+.d 1 0
+	rtn
+.o 2 0
+ea14
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 1 1 i
+e_osdocumentinterface_sgetOSDInfoOffset
+.o 1 1 i
+s14
+	eq_desc e_osdocumentinterface_dOSNoInfo 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	pushI 0
+	pushI 0
+	push_b 2
+	push_b 2
+	update_b 1 3
+	update_b 2 1
+	update_b 0 2
+	pop_b 1
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+.d 0 3 iii
+	rtn
+case.2
+	push_a 0
+.d 1 0
+	jsr s50
+.o 1 4 biii
+	push_b 4
+	pushB TRUE
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 3 bbi
+	jsr e_ossystem_sosStripOuterSize
+.o 0 3 iii
+	push_b 2
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 1 i
+	jsr e_ossystem_sosGetProcessWindowDimensions
+.o 0 5 iiiii
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s27
+.o 0 1 i
+	push_b 7
+	push_b 3
+	addI
+	pushI 19
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	addI
+	push_b 1
+	push_b 6
+	push_b 2
+	update_b 1 3
+	update_b 2 1
+	update_b 0 2
+	pop_b 1
+	update_b 2 14
+	update_b 1 13
+	updatepop_b 0 12
+.d 0 3 iii
+	rtn
+.o 1 0
+s27
+	eq_desc e_StdMaybe_dJust 1 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	repl_args 1 1
+	jsr_eval 0
+	push_r_args_u 0 0 2
+	pop_b 1
+	pop_a 1
+.d 0 1 i
+	rtn
+case.4
+	pop_a 1
+	pushI 0
+.d 0 1 i
+	rtn
+.export e_osdocumentinterface_sosOSDInfoIsActive
+.descexp e_osdocumentinterface_dosOSDInfoIsActive e_osdocumentinterface_nosOSDInfoIsActive e_osdocumentinterface_losOSDInfoIsActive 2 0 "osOSDInfoIsActive"
+.a 0 a13
+.o 2 0
+e_osdocumentinterface_losOSDInfoIsActive
+	repl_args 1 1
+.o 2 0
+a13
+.d 2 0
+	jsr ea13
+.o 0 2 bi
+	buildI_b 1
+	buildB_b 0
+	buildh _Tuple 2
+	pop_b 2
+.d 1 0
+	rtn
+.n 2 e_osdocumentinterface_dosOSDInfoIsActive
+.o 1 0
+e_osdocumentinterface_nosOSDInfoIsActive
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea13
+.o 0 2 bi
+	buildI_b 1
+	buildB_b 0
+	fillh _Tuple 2 2
+	pop_b 2
+.d 1 0
+	rtn
+.o 2 0
+ea13
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 1 1 i
+e_osdocumentinterface_sosOSDInfoIsActive
+.o 1 1 i
+s13
+	push_b 0
+	pushB TRUE
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+.d 0 2 bi
+	rtn
+.export e_osdocumentinterface_sgetOSDInfoOSToolbar
+.export e_osdocumentinterface_eagetOSDInfoOSToolbar
+.descexp e_osdocumentinterface_dgetOSDInfoOSToolbar e_osdocumentinterface_ngetOSDInfoOSToolbar e_osdocumentinterface_lgetOSDInfoOSToolbar 1 0 "getOSDInfoOSToolbar"
+.o 2 0
+e_osdocumentinterface_lgetOSDInfoOSToolbar
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eagetOSDInfoOSToolbar
+.n 1 e_osdocumentinterface_dgetOSDInfoOSToolbar e_osdocumentinterface_eagetOSDInfoOSToolbar
+.o 1 0
+e_osdocumentinterface_ngetOSDInfoOSToolbar
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eagetOSDInfoOSToolbar
+	jsr_eval 0
+.o 2 0
+e_osdocumentinterface_sgetOSDInfoOSToolbar
+.o 2 0
+s12
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.5
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.6
+	pop_b 1
+	jmp case.7
+case.5
+	pop_b 1
+	repl_r_args 1 1
+	pop_b 1
+	push_r_args_u 0 1 3
+	pop_b 3
+	fill_a 0 2
+	pop_a 2
+.d 1 0
+	rtn
+case.6
+	pop_b 1
+	repl_args 1 1
+	push_r_args_u 0 1 3
+	pop_b 3
+	fill_a 0 2
+	pop_a 2
+.d 1 0
+	rtn
+case.7
+	fillh e_StdMaybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_sosCloseOSDInfo
+.descexp e_osdocumentinterface_dosCloseOSDInfo e_osdocumentinterface_nosCloseOSDInfo e_osdocumentinterface_losCloseOSDInfo 2 0 "osCloseOSDInfo"
+.a 0 a11
+.o 2 0
+e_osdocumentinterface_losCloseOSDInfo
+	repl_args 1 1
+.o 2 0
+a11
+.d 2 0
+	jsr ea11
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_osdocumentinterface_dosCloseOSDInfo
+.o 1 0
+e_osdocumentinterface_nosCloseOSDInfo
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea11
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea11
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 1 1 i
+e_osdocumentinterface_sosCloseOSDInfo
+.o 1 1 i
+s11
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.8
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.9
+	pop_b 1
+	jmp case.10
+case.8
+	pop_b 1
+	repl_r_args 1 1
+	pop_b 1
+	push_r_args_u 0 1 3
+	update_b 0 2
+	pop_a 1
+	pop_b 2
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	push_b 5
+	pushI 1402
+	buildAC "osCloseMDI"
+	buildh ARRAY 1
+	buildh d16 1
+	push_b 8
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 9
+	update_b 6 8
+	update_b 5 7
+	update_b 4 6
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+	updatepop_a 0 1
+.d 1 8 iiiiiiii
+	jsr e_clCrossCall_12_sissueCleanRequest2
+.o 0 8 iiiiiiii
+	pop_b 7
+.d 0 1 i
+	rtn
+case.9
+	pop_b 1
+	repl_args 1 1
+	push_r_args_u 0 1 3
+	update_b 0 2
+	pop_a 1
+	pop_b 2
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	push_b 5
+	pushI 1402
+	buildAC "osCloseSDI"
+	buildh ARRAY 1
+	buildh d16 1
+	push_b 8
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 9
+	update_b 6 8
+	update_b 5 7
+	update_b 4 6
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+	updatepop_a 0 1
+.d 1 8 iiiiiiii
+	jsr e_clCrossCall_12_sissueCleanRequest2
+.o 0 8 iiiiiiii
+	pop_b 7
+.d 0 1 i
+	rtn
+case.10
+	pop_a 1
+.d 0 1 i
+	rtn
+.desc d16 _hnf l16 3 0 "osDestroyProcessWindowCallback"
+.a 0 a16
+.o 2 0
+l16
+	repl_args 2 2
+.o 3 0
+a16
+.d 3 0
+	jsr ea16
+.o 0 8 iiiiiiii
+	buildI_b 7
+	build_r e_clCrossCall_12_rCrossCallInfo 0 7 0 0
+	buildh _Tuple 2
+	pop_b 8
+.d 1 0
+	rtn
+.o 3 0
+ea16
+	jsr_eval 2
+	jsr_eval 1
+	pushI_a 2
+	push_r_args 1 0 7
+	update_a 0 2
+	pop_a 2
+.o 1 8 iiiiiiii
+s16
+	eqI_b 107 0
+	jmp_true case.11
+	eqI_b 106 0
+	jmp_true case.12
+	eqI_b 108 0
+	jmp_true case.13
+	eqI_b 100 0
+	jmp_true case.14
+	jmp case.15
+case.11
+	pop_b 7
+	pop_a 1
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.12
+	pop_b 7
+	pop_a 1
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.13
+	pop_b 7
+	pop_a 1
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.14
+	push_b 7
+	push_b 2
+	update_b 1 9
+	updatepop_b 0 8
+	pop_a 1
+.d 0 2 ii
+	jsr e_windowCrossCall_12_swinFakePaint
+.o 0 1 i
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+.d 0 8 iiiiiiii
+	rtn
+case.15
+	push_b 0
+	updatepop_b 0 8
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildAC "received message nr:"
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s15
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	repl_r_args 0 7
+	pop_a 1
+.d 0 8 iiiiiiii
+	rtn
+.export e_osdocumentinterface_sosOpenNDI
+.descexp e_osdocumentinterface_dosOpenNDI e_osdocumentinterface_nosOpenNDI e_osdocumentinterface_losOpenNDI 1 0 "osOpenNDI"
+.o 2 0
+e_osdocumentinterface_losOpenNDI
+	pop_a 1
+.d 1 0
+	jsr ea10
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_osdocumentinterface_dosOpenNDI
+.o 1 0
+e_osdocumentinterface_nosOpenNDI
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea10
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea10
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 0 1 i
+e_osdocumentinterface_sosOpenNDI
+.o 0 1 i
+s10
+	buildh e_osdocumentinterface_dOSNoInfo 0
+	push_b 0
+	updatepop_b 0 1
+.d 1 1 i
+	rtn
+.export e_osdocumentinterface_sosOpenSDI
+.descexp e_osdocumentinterface_dosOpenSDI e_osdocumentinterface_nosOpenSDI e_osdocumentinterface_losOpenSDI 2 0 "osOpenSDI"
+.a 0 a9
+.o 2 0
+e_osdocumentinterface_losOpenSDI
+	repl_args 1 1
+.o 2 0
+a9
+.d 2 0
+	jsr ea9
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_osdocumentinterface_dosOpenSDI
+.o 1 0
+e_osdocumentinterface_nosOpenSDI
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea9
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea9
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	pushB_a 0
+	pop_a 2
+.o 0 2 bi
+e_osdocumentinterface_sosOpenSDI
+.o 0 2 bi
+s9
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 b
+	jsr e_clCrossCall_12_stoInt;19
+.o 0 1 i
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 1813
+	push_b 6
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 0 2
+	pop_b 1
+	buildh d20 0
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 1 8 iiiiiiii
+	jsr e_clCrossCall_12_sissueCleanRequest2
+.o 0 8 iiiiiiii
+	build_r e_clCrossCall_12_rCrossCallInfo 0 7 0 0
+	push_b 0
+.d 1 1 i
+	jsr s49
+.o 0 2 ii
+	buildh e_StdMaybe_dNothing 0
+	push_b 1
+	pushI -1
+	push_b 2
+	build_r e_osdocumentinterface_rOSInfo 1 3 0 0
+	updatepop_a 0 1
+	pop_b 3
+	build_r e_osdocumentinterface_kOSSDInfo 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	push_b 9
+	updatepop_b 0 10
+.d 1 1 i
+	rtn
+.desc d20 _hnf l20 2 0 "osCreateSDIWindowCallback;19"
+.a 0 a20
+.o 2 0
+l20
+	repl_args 1 1
+.o 2 0
+a20
+.d 2 0
+	jsr ea20
+.o 0 8 iiiiiiii
+	buildI_b 7
+	build_r e_clCrossCall_12_rCrossCallInfo 0 7 0 0
+	buildh _Tuple 2
+	pop_b 8
+.d 1 0
+	rtn
+.o 2 0
+ea20
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	repl_r_args 0 7
+	pop_a 1
+.o 0 8 iiiiiiii
+s20
+	eqI_b 107 0
+	jmp_true case.16
+	eqI_b 106 0
+	jmp_true case.17
+	eqI_b 129 0
+	jmp_true case.18
+	jmp case.19
+case.16
+	pop_b 7
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.17
+	pop_b 7
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.18
+	pop_b 7
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.19
+	push_b 0
+	updatepop_b 0 8
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildAC "received message nr:"
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "osCreateSDIWindowCallback"
+.d 2 0
+	jsr s15
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	repl_r_args 0 7
+	pop_a 1
+.d 0 8 iiiiiiii
+	rtn
+.export e_osdocumentinterface_sosOpenMDI
+.descexp e_osdocumentinterface_dosOpenMDI e_osdocumentinterface_nosOpenMDI e_osdocumentinterface_losOpenMDI 3 0 "osOpenMDI"
+.a 0 a8
+.o 2 0
+e_osdocumentinterface_losOpenMDI
+	repl_args 2 2
+.o 3 0
+a8
+.d 3 0
+	jsr ea8
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 e_osdocumentinterface_dosOpenMDI
+.o 1 0
+e_osdocumentinterface_nosOpenMDI
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea8
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea8
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 2
+	pushB_a 1
+	pushB_a 0
+	pop_a 3
+.o 0 3 bbi
+e_osdocumentinterface_sosOpenMDI
+.o 0 3 bbi
+s8
+	push_b 1
+.d 0 1 b
+	jsr e_clCrossCall_12_stoInt;19
+.o 0 1 i
+	push_b 1
+.d 0 1 b
+	jsr e_clCrossCall_12_stoInt;19
+.o 0 1 i
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 0
+	pushI 1814
+	push_b 6
+	update_b 5 7
+	update_b 3 5
+	update_b 0 3
+	update_b 6 0
+	update_b 4 6
+	update_b 2 4
+	update_b 0 2
+	pop_b 1
+	buildh d19 0
+	push_b 9
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 10
+	update_b 6 9
+	update_b 5 8
+	update_b 4 7
+	update_b 3 6
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 1 8 iiiiiiii
+	jsr e_clCrossCall_12_sissueCleanRequest2
+.o 0 8 iiiiiiii
+	build_r e_clCrossCall_12_rCrossCallInfo 0 7 0 0
+	push_b 0
+.d 1 1 i
+	jsr s48
+.o 0 4 iiii
+	buildh e_StdMaybe_dNothing 0
+	push_b 2
+	push_b 2
+	push_b 2
+	build_r e_osdocumentinterface_rOSInfo 1 3 0 0
+	updatepop_a 0 1
+	pop_b 3
+	push_b 3
+	build_r e_osdocumentinterface_kOSMDInfo 1 1 0 0
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	push_b 11
+	updatepop_b 0 12
+.d 1 1 i
+	rtn
+.desc d19 _hnf l19 2 0 "osCreateMDIWindowCallback;18"
+.a 0 a19
+.o 2 0
+l19
+	repl_args 1 1
+.o 2 0
+a19
+.d 2 0
+	jsr ea19
+.o 0 8 iiiiiiii
+	buildI_b 7
+	build_r e_clCrossCall_12_rCrossCallInfo 0 7 0 0
+	buildh _Tuple 2
+	pop_b 8
+.d 1 0
+	rtn
+.o 2 0
+ea19
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	repl_r_args 0 7
+	pop_a 1
+.o 0 8 iiiiiiii
+s19
+	eqI_b 107 0
+	jmp_true case.20
+	eqI_b 106 0
+	jmp_true case.21
+	eqI_b 129 0
+	jmp_true case.22
+	jmp case.23
+case.20
+	pop_b 7
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.21
+	pop_b 7
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.22
+	pop_b 7
+.d 0 0
+	jsr e_clCrossCall_12_sreturn0Cci
+.o 0 7 iiiiiii
+	push_b 7
+	push_b 7
+	update_b 1 8
+	update_b 2 1
+	update_b 3 2
+	update_b 4 3
+	update_b 5 4
+	update_b 6 5
+	update_b 7 6
+	update_b 0 7
+	pop_b 1
+	update_b 7 8
+	update_b 6 7
+	update_b 5 6
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 8 iiiiiiii
+	rtn
+case.23
+	push_b 0
+	updatepop_b 0 8
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildAC "received message nr:"
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "osCreateMDIWindowCallback"
+.d 2 0
+	jsr s15
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	repl_r_args 0 7
+	pop_a 1
+.d 0 8 iiiiiiii
+	rtn
+.o 2 0
+s15
+	push_a 1
+	buildAC "osdocumentinterface"
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_commondef_sfatalError
+.export e_osdocumentinterface_ssetOSDInfoOSInfo
+.export e_osdocumentinterface_easetOSDInfoOSInfo
+.descexp e_osdocumentinterface_dsetOSDInfoOSInfo e_osdocumentinterface_nsetOSDInfoOSInfo e_osdocumentinterface_lsetOSDInfoOSInfo 2 0 "setOSDInfoOSInfo"
+.a 2 e_osdocumentinterface_easetOSDInfoOSInfo
+.o 2 0
+e_osdocumentinterface_lsetOSDInfoOSInfo
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_osdocumentinterface_easetOSDInfoOSInfo
+.n 2 e_osdocumentinterface_dsetOSDInfoOSInfo e_osdocumentinterface_easetOSDInfoOSInfo
+.o 1 0
+e_osdocumentinterface_nsetOSDInfoOSInfo
+	push_node _cycle_in_spine 2
+.o 3 0
+e_osdocumentinterface_easetOSDInfoOSInfo
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 1 3
+.o 3 3 iii
+e_osdocumentinterface_ssetOSDInfoOSInfo
+.o 3 3 iii
+s7
+	pushD_a 1
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.24
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.25
+	pop_b 1
+	jmp case.26
+case.24
+	pop_b 1
+	push_r_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	build_r e_osdocumentinterface_rOSInfo 1 3 1 1
+	push_b 0
+	push_a 1
+	update_a 1 0
+	updatepop_a 0 1
+	fill_r e_osdocumentinterface_kOSMDInfo 1 1 4 0 0
+	pop_a 4
+	pop_b 5
+.d 1 0
+	rtn
+case.25
+	pop_b 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	build_r e_osdocumentinterface_rOSInfo 1 3 1 0
+	push_a 1
+	update_a 1 0
+	updatepop_a 0 1
+	fill_r e_osdocumentinterface_kOSSDInfo 1 0 4 0 0
+	pop_a 4
+	pop_b 3
+.d 1 0
+	rtn
+case.26
+	pop_b 3
+	fill_a 1 2
+	pop_a 2
+.d 1 0
+	rtn
+.export e_osdocumentinterface_sgetOSDInfoOSInfo
+.export e_osdocumentinterface_eagetOSDInfoOSInfo
+.descexp e_osdocumentinterface_dgetOSDInfoOSInfo e_osdocumentinterface_ngetOSDInfoOSInfo e_osdocumentinterface_lgetOSDInfoOSInfo 1 0 "getOSDInfoOSInfo"
+.o 2 0
+e_osdocumentinterface_lgetOSDInfoOSInfo
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eagetOSDInfoOSInfo
+.n 1 e_osdocumentinterface_dgetOSDInfoOSInfo e_osdocumentinterface_eagetOSDInfoOSInfo
+.o 1 0
+e_osdocumentinterface_ngetOSDInfoOSInfo
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eagetOSDInfoOSInfo
+	jsr_eval 0
+.o 2 0
+e_osdocumentinterface_sgetOSDInfoOSInfo
+.o 2 0
+s6
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.27
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.28
+	pop_b 1
+	jmp case.29
+case.27
+	pop_b 1
+	repl_r_args 1 1
+	pop_b 1
+	push_a 0
+	fillh e_StdMaybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.28
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+	fillh e_StdMaybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.29
+	fillh e_StdMaybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_ssetOSDInfoOSMenuBar
+.export e_osdocumentinterface_easetOSDInfoOSMenuBar
+.descexp e_osdocumentinterface_dsetOSDInfoOSMenuBar e_osdocumentinterface_nsetOSDInfoOSMenuBar e_osdocumentinterface_lsetOSDInfoOSMenuBar 2 0 "setOSDInfoOSMenuBar"
+.a 2 e_osdocumentinterface_easetOSDInfoOSMenuBar
+.o 2 0
+e_osdocumentinterface_lsetOSDInfoOSMenuBar
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_osdocumentinterface_easetOSDInfoOSMenuBar
+.n 2 e_osdocumentinterface_dsetOSDInfoOSMenuBar e_osdocumentinterface_easetOSDInfoOSMenuBar
+.o 1 0
+e_osdocumentinterface_nsetOSDInfoOSMenuBar
+	push_node _cycle_in_spine 2
+.o 3 0
+e_osdocumentinterface_easetOSDInfoOSMenuBar
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 0 3
+.o 2 3 iii
+e_osdocumentinterface_ssetOSDInfoOSMenuBar
+.o 2 3 iii
+s5
+	push_b 1
+	push_b 3
+	push_b 2
+	push_a 0
+	updatepop_a 0 1
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 2 3 iii
+	jmp s23
+.o 2 3 iii
+s23
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.30
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.31
+	pop_b 1
+	jmp case.32
+case.30
+	pop_b 1
+	repl_r_args 1 1
+	push_a 0
+	push_b 0
+	pop_b 1
+	push_r_args 0 1 3
+	push_b 6
+	push_b 6
+	push_b 6
+	updatepop_a 0 1
+.d 1 6 iiiiii
+	jsr s18
+.o 1 3 iii
+	build_r e_osdocumentinterface_rOSInfo 1 3 0 0
+	updatepop_a 0 1
+	pop_b 3
+	push_b 0
+	push_a 1
+	update_a 1 0
+	updatepop_a 0 1
+	fill_r e_osdocumentinterface_kOSMDInfo 1 1 2 0 0
+	pop_a 2
+	pop_b 5
+.d 1 0
+	rtn
+case.31
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+	push_r_args 0 1 3
+	push_b 5
+	push_b 5
+	push_b 5
+	update_b 5 8
+	update_b 4 7
+	update_b 3 6
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+	updatepop_a 0 1
+.d 1 6 iiiiii
+	jsr s18
+.o 1 3 iii
+	build_r e_osdocumentinterface_rOSInfo 1 3 0 0
+	updatepop_a 0 1
+	pop_b 3
+	push_a 1
+	update_a 1 0
+	updatepop_a 0 1
+	fill_r e_osdocumentinterface_kOSSDInfo 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+case.32
+	pop_b 3
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 6 iiiiii
+s18
+	push_b 0
+	push_b 2
+	push_b 4
+	push_b 8
+	push_b 8
+	push_a 0
+	push_b 8
+	updatepop_a 0 1
+	update_b 5 11
+	update_b 4 10
+	update_b 3 9
+	update_b 2 8
+	update_b 1 7
+	updatepop_b 0 6
+	update_b 3 0
+	update_b 4 1
+	update_b 5 2
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 1 3 iii
+	rtn
+.export e_osdocumentinterface_sgetOSDInfoOSMenuBar
+.export e_osdocumentinterface_eagetOSDInfoOSMenuBar
+.descexp e_osdocumentinterface_dgetOSDInfoOSMenuBar e_osdocumentinterface_ngetOSDInfoOSMenuBar e_osdocumentinterface_lgetOSDInfoOSMenuBar 1 0 "getOSDInfoOSMenuBar"
+.o 2 0
+e_osdocumentinterface_lgetOSDInfoOSMenuBar
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eagetOSDInfoOSMenuBar
+.n 1 e_osdocumentinterface_dgetOSDInfoOSMenuBar e_osdocumentinterface_eagetOSDInfoOSMenuBar
+.o 1 0
+e_osdocumentinterface_ngetOSDInfoOSMenuBar
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eagetOSDInfoOSMenuBar
+	jsr_eval 0
+.o 2 0
+e_osdocumentinterface_sgetOSDInfoOSMenuBar
+.o 2 0
+s4
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s22
+.o 2 0
+s22
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.33
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.34
+	pop_b 1
+	jmp case.35
+case.33
+	pop_b 1
+	repl_r_args 1 1
+	pop_b 1
+	push_r_args 0 1 3
+	updatepop_a 0 1
+.d 2 3 iii
+	jmp s17
+case.34
+	pop_b 1
+	repl_args 1 1
+	push_r_args 0 1 3
+	updatepop_a 0 1
+.d 2 3 iii
+	jmp s17
+case.35
+	fillh e_StdMaybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 3 iii
+s17
+	push_b 1
+	push_b 1
+	push_b 4
+	build_r e_osdocumentinterface_rOSMenuBar 0 3 0 0
+	pop_b 3
+	fillh e_StdMaybe_dJust 1 2
+	pop_a 1
+	pop_b 3
+.d 1 0
+	rtn
+.export e_osdocumentinterface_sgetOSDInfoDocumentInterface
+.export e_osdocumentinterface_eagetOSDInfoDocumentInterface
+.descexp e_osdocumentinterface_dgetOSDInfoDocumentInterface e_osdocumentinterface_ngetOSDInfoDocumentInterface e_osdocumentinterface_lgetOSDInfoDocumentInterface 1 0 "getOSDInfoDocumentInterface"
+.o 2 0
+e_osdocumentinterface_lgetOSDInfoDocumentInterface
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eagetOSDInfoDocumentInterface
+.n 1 e_osdocumentinterface_dgetOSDInfoDocumentInterface e_osdocumentinterface_eagetOSDInfoDocumentInterface
+.o 1 0
+e_osdocumentinterface_ngetOSDInfoDocumentInterface
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eagetOSDInfoDocumentInterface
+	jsr_eval 0
+.o 2 0
+e_osdocumentinterface_sgetOSDInfoDocumentInterface
+.o 2 0
+s3
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.36
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.37
+	jmp case.38
+case.36
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	fillh e_StdIOCommon_dMDI 0 0
+.d 1 0
+	rtn
+case.37
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	fillh e_StdIOCommon_dSDI 0 0
+.d 1 0
+	rtn
+case.38
+	pop_b 1
+	fillh e_StdIOCommon_dNDI 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_semptyOSDInfo
+.export e_osdocumentinterface_eaemptyOSDInfo
+.descexp e_osdocumentinterface_demptyOSDInfo e_osdocumentinterface_nemptyOSDInfo e_osdocumentinterface_lemptyOSDInfo 1 0 "emptyOSDInfo"
+.o 2 0
+e_osdocumentinterface_lemptyOSDInfo
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_osdocumentinterface_eaemptyOSDInfo
+.n 1 e_osdocumentinterface_demptyOSDInfo e_osdocumentinterface_eaemptyOSDInfo
+.o 1 0
+e_osdocumentinterface_nemptyOSDInfo
+	push_node _cycle_in_spine 1
+.o 2 0
+e_osdocumentinterface_eaemptyOSDInfo
+	jsr_eval 0
+.o 2 0
+e_osdocumentinterface_semptyOSDInfo
+.o 2 0
+s2
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s21
+.o 2 0
+s21
+	pushD_a 0
+	eqD_b e_StdIOCommon_dMDI 0
+	jmp_true case.39
+	eqD_b e_StdIOCommon_dSDI 0
+	jmp_true case.40
+	jmp case.41
+case.39
+	pop_b 1
+	buildh e_StdMaybe_dNothing 0
+	pushI -1
+	pushI -1
+	pushI -1
+	build_r e_osdocumentinterface_rOSInfo 1 3 0 0
+	updatepop_a 0 1
+	pop_b 3
+	pushI -1
+	fill_r e_osdocumentinterface_kOSMDInfo 1 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.40
+	pop_b 1
+	buildh e_StdMaybe_dNothing 0
+	pushI -1
+	pushI -1
+	pushI -1
+	build_r e_osdocumentinterface_rOSInfo 1 3 0 0
+	updatepop_a 0 1
+	pop_b 3
+	fill_r e_osdocumentinterface_kOSSDInfo 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+case.41
+	pop_b 1
+	fillh e_osdocumentinterface_dOSNoInfo 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_osdocumentinterface_sosInitialiseDI
+.descexp e_osdocumentinterface_dosInitialiseDI e_osdocumentinterface_nosInitialiseDI e_osdocumentinterface_losInitialiseDI 1 0 "osInitialiseDI"
+.o 2 0
+e_osdocumentinterface_losInitialiseDI
+	pop_a 1
+.d 1 0
+	jsr ea1
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_osdocumentinterface_dosInitialiseDI
+.o 1 0
+e_osdocumentinterface_nosInitialiseDI
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea1
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 0 1 i
+e_osdocumentinterface_sosInitialiseDI
+.o 0 1 i
+s1
+.inline InstallCrossCallxDI
+	ccall InstallCrossCallxDI "I-I"
+.end
+
+.d 0 1 i
+	rtn
+.o 1 1 i
+s48
+	eqI_b 14 0
+	jmp_true case.42
+	eqI_b 1 0
+	jmp_true case.43
+	jmp case.44
+case.42
+	push_r_args_b 0 0 7 5 1
+	push_r_args_b 0 0 7 4 1
+	push_r_args_b 0 0 7 3 1
+	push_r_args_b 0 0 7 2 1
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+.d 0 4 iiii
+	rtn
+case.43
+	pushI -1
+	pushI -1
+	pushI -1
+	pushI -1
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+.d 0 4 iiii
+	rtn
+case.44
+	push_b 0
+	updatepop_b 0 1
+	pop_a 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildAC "CcRETURN4 expected instead of "
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "OSopenMDI"
+.d 2 0
+	jsr s15
+.o 1 0
+	repl_args 4 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 3
+	pushI_a 2
+	pushI_a 1
+	pushI_a 0
+	pop_a 4
+.d 0 4 iiii
+	rtn
+.o 1 1 i
+s49
+	eqI_b 12 0
+	jmp_true case.45
+	eqI_b 1 0
+	jmp_true case.46
+	jmp case.47
+case.45
+	push_r_args_b 0 0 7 3 1
+	push_r_args_b 0 0 7 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+.d 0 2 ii
+	rtn
+case.46
+	pushI -1
+	pushI -1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+.d 0 2 ii
+	rtn
+case.47
+	push_b 0
+	updatepop_b 0 1
+	pop_a 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildAC "CcRETURN2 expected instead of "
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "OSopenSDI"
+.d 2 0
+	jsr s15
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	pushI_a 0
+	pop_a 2
+.d 0 2 ii
+	rtn
+.o 1 0
+s50
+	pushD_a 0
+	eqD_b e_osdocumentinterface_kOSMDInfo 0
+	jmp_true case.48
+	eqD_b e_osdocumentinterface_kOSSDInfo 0
+	jmp_true case.49
+	pop_b 1
+	jmp case.50
+case.48
+	pop_b 1
+	repl_r_args 1 1
+	pop_b 1
+	push_r_args 0 1 3
+	pushB TRUE
+	updatepop_a 0 1
+.d 1 4 biii
+	rtn
+case.49
+	pop_b 1
+	repl_args 1 1
+	push_r_args 0 1 3
+	pushB FALSE
+	updatepop_a 0 1
+.d 1 4 biii
+	rtn
+case.50
+	buildAC "illegally applied to OSNoInfo argument"
+	buildAC "getOSDInfoHeight"
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s15
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 3
+	pushB_a 1
+	update_a 0 2
+	pop_a 2
+.d 1 4 biii
+	rtn

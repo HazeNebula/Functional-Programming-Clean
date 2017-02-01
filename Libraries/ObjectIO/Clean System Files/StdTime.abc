@@ -1,0 +1,574 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "ossystem" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "osdocumentinterface" "20170131202632"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "StdMaybe" "20170131202635"
+.depend "StdFunc" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdTime" "20170131202631"
+.module m_StdTime "StdTime" "20170131202631"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_StdLibMisc_rTime
+.impdesc e_StdLibMisc_rDate
+.implab e_ostick_spack_tick
+.implab e_ostick_sunpack_tick
+.implab e_ostick_sos_getcurrenttick
+.implab e_ostime_sosWait
+.implab e_ostime_sosGetBlinkInterval
+.implab e_ostime_sosGetCurrentTime
+.implab e_ostime_sosGetCurrentDate
+.implab e_StdReal_s/;5
+.implab e_StdReal_stoReal;13
+.implab e_StdInt_s+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_s*;9
+.implab e_StdInt_s==;16
+.implab e_StdInt_s<;17
+.implab e_StdInt_stoInt;22
+.implab e_StdBool_snot
+.export e_StdTime_rTimeEnv;
+.record e_StdTime_rTimeEnv; aaaa 4 0 "TimeEnv;"
+.descexp e_StdTime_tTimeEnv; e_StdTime_cTimeEnv; _hnf 4 1 "TimeEnv;"
+.n 4 e_StdTime_tTimeEnv;
+.o 1 0
+e_StdTime_cTimeEnv;
+	push_node _cycle_in_spine 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_StdTime_rTimeEnv; 4 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+.export e_StdTime_dTimeEnv;.getBlinkInterval
+.export e_StdTime_nTimeEnv;.getBlinkInterval
+.export e_StdTime_eaTimeEnv;.getBlinkInterval
+.descs e_StdTime_dTimeEnv;.getBlinkInterval e_StdTime_nTimeEnv;.getBlinkInterval _ 1 0 "TimeEnv;.getBlinkInterval"
+.n -4 e_StdTime_dTimeEnv;.getBlinkInterval e_StdTime_eaTimeEnv;.getBlinkInterval
+.o 1 0
+e_StdTime_nTimeEnv;.getBlinkInterval
+	push_node _cycle_in_spine 1
+.o 2 0
+e_StdTime_eaTimeEnv;.getBlinkInterval
+	jsr_eval 0
+	repl_r_args_a 4 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdTime_dTimeEnv;.getCurrentDate
+.export e_StdTime_nTimeEnv;.getCurrentDate
+.export e_StdTime_eaTimeEnv;.getCurrentDate
+.descs e_StdTime_dTimeEnv;.getCurrentDate e_StdTime_nTimeEnv;.getCurrentDate _ 3 0 "TimeEnv;.getCurrentDate"
+.n -4 e_StdTime_dTimeEnv;.getCurrentDate e_StdTime_eaTimeEnv;.getCurrentDate
+.o 1 0
+e_StdTime_nTimeEnv;.getCurrentDate
+	push_node _cycle_in_spine 1
+.o 2 0
+e_StdTime_eaTimeEnv;.getCurrentDate
+	jsr_eval 0
+	repl_r_args_a 4 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdTime_dTimeEnv;.getCurrentTick
+.export e_StdTime_nTimeEnv;.getCurrentTick
+.export e_StdTime_eaTimeEnv;.getCurrentTick
+.descs e_StdTime_dTimeEnv;.getCurrentTick e_StdTime_nTimeEnv;.getCurrentTick _ 4 0 "TimeEnv;.getCurrentTick"
+.n -4 e_StdTime_dTimeEnv;.getCurrentTick e_StdTime_eaTimeEnv;.getCurrentTick
+.o 1 0
+e_StdTime_nTimeEnv;.getCurrentTick
+	push_node _cycle_in_spine 1
+.o 2 0
+e_StdTime_eaTimeEnv;.getCurrentTick
+	jsr_eval 0
+	repl_r_args_a 4 0 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdTime_dTimeEnv;.getCurrentTime
+.export e_StdTime_nTimeEnv;.getCurrentTime
+.export e_StdTime_eaTimeEnv;.getCurrentTime
+.descs e_StdTime_dTimeEnv;.getCurrentTime e_StdTime_nTimeEnv;.getCurrentTime _ 5 0 "TimeEnv;.getCurrentTime"
+.n -4 e_StdTime_dTimeEnv;.getCurrentTime e_StdTime_eaTimeEnv;.getCurrentTime
+.o 1 0
+e_StdTime_nTimeEnv;.getCurrentTime
+	push_node _cycle_in_spine 1
+.o 2 0
+e_StdTime_eaTimeEnv;.getCurrentTime
+	jsr_eval 0
+	repl_r_args_a 4 0 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_StdTime_sgetCurrentTime;7
+.descexp e_StdTime_dgetCurrentTime;7 e_StdTime_ngetCurrentTime;7 e_StdTime_lgetCurrentTime;7 1 0 "getCurrentTime;7"
+.o 2 0
+e_StdTime_lgetCurrentTime;7
+	pop_a 1
+.d 1 0
+	jsr ea8
+.o 1 3 iii
+	push_a 0
+	build_r e_StdLibMisc_rTime 0 3 0 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 3
+.d 1 0
+	rtn
+.n 1 e_StdTime_dgetCurrentTime;7
+.o 1 0
+e_StdTime_ngetCurrentTime;7
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea8
+.o 1 3 iii
+	push_a 0
+	build_r e_StdLibMisc_rTime 0 3 0 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 3
+.d 1 0
+	rtn
+.o 1 0
+ea8
+	jsr_eval 0
+.o 1 0
+e_StdTime_sgetCurrentTime;7
+.o 1 0
+s8
+	pushI 0
+.d 0 1 i
+	jsr e_ostime_sosGetCurrentTime
+.o 0 4 iiii
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	push_b 2
+	push_b 2
+	push_b 2
+	push_a 0
+	updatepop_a 0 1
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 1 3 iii
+	rtn
+.export e_StdTime_sgetCurrentTick;6
+.descexp e_StdTime_dgetCurrentTick;6 e_StdTime_ngetCurrentTick;6 e_StdTime_lgetCurrentTick;6 1 0 "getCurrentTick;6"
+.o 2 0
+e_StdTime_lgetCurrentTick;6
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_StdTime_dgetCurrentTick;6
+.o 1 0
+e_StdTime_ngetCurrentTick;6
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea7
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+.o 1 0
+e_StdTime_sgetCurrentTick;6
+.o 1 0
+s7
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp e_ostick_sos_getcurrenttick
+.export e_StdTime_sgetCurrentDate;5
+.descexp e_StdTime_dgetCurrentDate;5 e_StdTime_ngetCurrentDate;5 e_StdTime_lgetCurrentDate;5 1 0 "getCurrentDate;5"
+.o 2 0
+e_StdTime_lgetCurrentDate;5
+	pop_a 1
+.d 1 0
+	jsr ea6
+.o 1 4 iiii
+	push_a 0
+	build_r e_StdLibMisc_rDate 0 4 0 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 4
+.d 1 0
+	rtn
+.n 1 e_StdTime_dgetCurrentDate;5
+.o 1 0
+e_StdTime_ngetCurrentDate;5
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea6
+.o 1 4 iiii
+	push_a 0
+	build_r e_StdLibMisc_rDate 0 4 0 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 4
+.d 1 0
+	rtn
+.o 1 0
+ea6
+	jsr_eval 0
+.o 1 0
+e_StdTime_sgetCurrentDate;5
+.o 1 0
+s6
+	pushI 0
+.d 0 1 i
+	jsr e_ostime_sosGetCurrentDate
+.o 0 5 iiiii
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	push_b 3
+	push_b 3
+	push_b 3
+	push_b 3
+	push_a 0
+	updatepop_a 0 1
+	update_b 3 7
+	update_b 2 6
+	update_b 1 5
+	updatepop_b 0 4
+.d 1 4 iiii
+	rtn
+.export e_StdTime_sgetBlinkInterval;4
+.descexp e_StdTime_dgetBlinkInterval;4 e_StdTime_ngetBlinkInterval;4 e_StdTime_lgetBlinkInterval;4 1 0 "getBlinkInterval;4"
+.o 2 0
+e_StdTime_lgetBlinkInterval;4
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 1 1 i
+	push_a 0
+	buildI_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_StdTime_dgetBlinkInterval;4
+.o 1 0
+e_StdTime_ngetBlinkInterval;4
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 1 1 i
+	push_a 0
+	buildI_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea5
+	jsr_eval 0
+.o 1 0
+e_StdTime_sgetBlinkInterval;4
+.o 1 0
+s5
+	pushI 1000
+	pushI 1000
+	eqI
+	jmp_false else.1
+	pushI 0
+.d 0 1 i
+	jsr e_ostime_sosGetBlinkInterval
+.o 0 2 ii
+	update_b 0 1
+	pop_b 1
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 i
+	rtn
+else.1
+	pushI 0
+.d 0 1 i
+	jsr e_ostime_sosGetBlinkInterval
+.o 0 2 ii
+	update_b 0 1
+	pop_b 1
+	ItoR
+	pushR 1000.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	RtoI
+	pushI 1000
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulI
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 i
+	rtn
+.export e_StdTime_s<;3
+.descexp e_StdTime_d<;3 e_StdTime_n<;3 e_StdTime_l<;3 2 0 "<;3"
+.a 0 a4
+.o 2 0
+e_StdTime_l<;3
+	repl_args 1 1
+.o 2 0
+a4
+.d 2 0
+	jsr ea4
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_StdTime_d<;3
+.o 1 0
+e_StdTime_n<;3
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea4
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea4
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_StdTime_s<;3
+.o 2 0
+s4
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_ostick_sunpack_tick
+.o 0 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_ostick_sunpack_tick
+.o 0 1 i
+	subI
+	pushI 0
+	ltI
+.d 0 1 b
+	rtn
+.export e_StdTime_stickDifference
+.descexp e_StdTime_dtickDifference e_StdTime_ntickDifference e_StdTime_ltickDifference 2 0 "tickDifference"
+.a 0 a3
+.o 2 0
+e_StdTime_ltickDifference
+	repl_args 1 1
+.o 2 0
+a3
+.d 2 0
+	jsr ea3
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_StdTime_dtickDifference
+.o 1 0
+e_StdTime_ntickDifference
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea3
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea3
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_StdTime_stickDifference
+.o 2 0
+s3
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_ostick_sunpack_tick
+.o 0 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_ostick_sunpack_tick
+.o 0 1 i
+	subI
+.d 0 1 i
+	rtn
+.export e_StdTime_sintPlusTick
+.export e_StdTime_eaintPlusTick
+.descexp e_StdTime_dintPlusTick e_StdTime_nintPlusTick e_StdTime_lintPlusTick 2 0 "intPlusTick"
+.a 2 e_StdTime_eaintPlusTick
+.o 2 0
+e_StdTime_lintPlusTick
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_StdTime_eaintPlusTick
+.n 2 e_StdTime_dintPlusTick e_StdTime_eaintPlusTick
+.o 1 0
+e_StdTime_nintPlusTick
+	push_node _cycle_in_spine 2
+.o 3 0
+e_StdTime_eaintPlusTick
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 2 1 i
+e_StdTime_sintPlusTick
+.o 2 1 i
+s2
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_ostick_sunpack_tick
+.o 0 1 i
+	push_b 1
+	addI
+	updatepop_b 0 1
+.d 1 1 i
+	jmp e_ostick_spack_tick
+.export e_StdTime_swait
+.descexp e_StdTime_dwait e_StdTime_nwait e_StdTime_lwait 2 0 "wait"
+.a 0 ea1
+.o 2 0
+e_StdTime_lwait
+	repl_args 1 1
+.d 2 0
+	jmp ea1
+.n 2 e_StdTime_dwait _
+.o 1 0
+e_StdTime_nwait
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea1
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+ea1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 1 1 i
+e_StdTime_swait
+.o 1 1 i
+s1
+	push_b 0
+	pushI 0
+	ltI
+	notB
+	jmp_false else.2
+	pop_b 1
+	jmp_eval
+else.2
+	pushI 0
+	push_a 0
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr e_ostime_sosWait
+.o 1 1 i
+	pop_b 1
+	jmp_eval
