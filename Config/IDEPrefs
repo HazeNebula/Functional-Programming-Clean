@@ -41,7 +41,7 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	-405
+		VX:	0
 		VY:	122
 	EWSiz
 		W:	1062
@@ -65,8 +65,8 @@ SWPrefs
 	EWFor:	0Black
 	EWBak:	RGB 143 :: 219 :: 255
 PWPos
-	VX:	0
-	VY:	132
+	VX:	358
+	VY:	16
 PWSiz
 	W:	752
 	H:	733
@@ -159,6 +159,7 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\FindTheRedex.prj
@@ -166,6 +167,7 @@ ProjHist
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\Scrabble.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\Start.prj
 FileHist
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.dcl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\FarmerWantsAWife.icl
@@ -177,7 +179,6 @@ FileHist
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\NotationFunctions.icl
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\English\language.icl
 	Path:	C:\Program Files\Clean 2.4\Libraries\StdEnv\StdOverloaded.dcl
-	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\English\language.dcl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0
