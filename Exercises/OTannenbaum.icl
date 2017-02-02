@@ -3,8 +3,8 @@ implementation module OTannenbaum
 import StdEnv
 import StdDebug
 
-Start					= triangle 5
-//Start					= christmastree 5
+//Start					= triangle 5
+Start					= christmastree 5
 
 //////////////////////////////////////////////////
 //
