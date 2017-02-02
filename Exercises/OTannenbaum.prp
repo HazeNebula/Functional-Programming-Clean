@@ -12,10 +12,10 @@ MainModule
 	Icl
 		WindowPosition
 			X:	10
-			Y:	15
-			SizeX:	980
-			SizeY:	644
-	IclOpen:	False
+			Y:	10
+			SizeX:	800
+			SizeY:	560
+	IclOpen:	True
 OtherModules
 	Module
 		Name:	StdArray
