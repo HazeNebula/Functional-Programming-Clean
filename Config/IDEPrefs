@@ -159,6 +159,7 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationFunctions.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.prj
@@ -167,6 +168,7 @@ ProjHist
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\Scrabble.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\Start.prj
 FileHist
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationFunctions.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.dcl
@@ -178,7 +180,6 @@ FileHist
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\FindTheRedex.icl
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\NotationFunctions.icl
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\English\language.icl
-	Path:	C:\Program Files\Clean 2.4\Libraries\StdEnv\StdOverloaded.dcl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0
