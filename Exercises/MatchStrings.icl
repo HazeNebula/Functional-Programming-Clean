@@ -4,10 +4,15 @@ import StdEnv
 import StdDebug
 
 head				:: String -> Char
-head _ = trace_n "head not yet implemented" zero
+head s
+| s == ""			= abort "Couldn't return head because s is an empty string."
+| otherwise			= s.[0]
 
 tail				:: String -> String
-tail _ = trace_n "tail not yet implemented" ""
+tail s
+| s == ""			= abort "Couldn't return tail because s is an empty string."
+| size s == 1		= ""
+| otherwise			= s % ( 1, size s - 1 )
 
 is_equal			:: String String -> Bool
 is_equal _ _ = trace_n "is_equal not yet implemented" False
