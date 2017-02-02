@@ -12,9 +12,15 @@ MainModule
 	Icl
 		WindowPosition
 			X:	10
+<<<<<<< HEAD
 			Y:	15
 			SizeX:	980
 			SizeY:	644
+=======
+			Y:	10
+			SizeX:	800
+			SizeY:	560
+>>>>>>> origin/master
 	IclOpen:	True
 OtherModules
 	Module
