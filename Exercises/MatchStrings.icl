@@ -15,10 +15,17 @@ tail s
 | otherwise			= s % ( 1, size s - 1 )
 
 is_equal			:: String String -> Bool
-is_equal _ _ = trace_n "is_equal not yet implemented" False
+is_equal s1 s2		= s1 == s2
 
-is_substring		:: String String -> Bool
-is_substring _ _ = trace_n "is_substring not yet implemented" False
+is_substring			:: String String -> Bool
+is_substring "" _		= True
+is_substring _ ""		= False
+is_substring s1 s2 		= is_substring` s1 s2 0
+
+is_substring`					:: String String Int -> Bool
+is_substring` s1 s2 n
+| ( n + size s1 ) <= size s2	= if ( s1 == s2 % ( n, n + size s1 - 1 ) ) True ( is_substring` s1 s2 ( n + 1 ) )
+| otherwise						= False
 
 is_sub				:: String String -> Bool
 is_sub _ _ = trace_n "is_sub not yet implemented" False
@@ -28,9 +35,9 @@ is_match _ _ = trace_n "is_match not yet implemented" False
 
 Start
 // ad-hoc tests:
-					= (head pink_floyd, tail pink_floyd)
+//					= (head pink_floyd, tail pink_floyd)
 //					= is_equal "" " "
-//					= is_substring "hello" "hello"
+					= is_substring "hello" "hello"
 //					= is_substring "there" pink_floyd
 //					= is_substring "there" marillion
 //					= is_sub "there" marillion
