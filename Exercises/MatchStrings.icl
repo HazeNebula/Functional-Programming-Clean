@@ -28,23 +28,38 @@ is_substring` s1 s2 n
 | otherwise						= False
 
 is_sub				:: String String -> Bool
-is_sub _ _ = trace_n "is_sub not yet implemented" False
+is_sub s1 s2		= is_sub` s1 s2 0 0
+
+is_sub`					:: String String Int Int -> Bool
+is_sub` s1 s2 n1 n2
+| n1 >= size s1			= True
+| n2 >= size s2			= False
+| s2.[n2] == s1.[n1]	= is_sub` s1 s2 ( n1 + 1 ) (n2 + 1 )
+| otherwise				= is_sub` s1 s2 n1 ( n2 + 1 )
 
 is_match			:: String String -> Bool
-is_match _ _ = trace_n "is_match not yet implemented" False
+is_match s1 s2		= is_match` s1 s2 0 0
+
+is_match`									:: String String Int Int -> Bool
+is_match` s1 s2 n1 n2
+| n1 >= size s1								= True
+| n2 >= size s2								= False
+| s1.[n1] == '*'							= is_match` s1 s2 ( n1 + 1 ) n2 || is_match` s1 s2 n1 ( n2 + 1 )
+| s1.[n1] == '.' || s2.[n2] == s1.[n1]		= is_match` s1 s2 ( n1 + 1 ) ( n2 + 1 )
+| otherwise									= False
 
 Start
 // ad-hoc tests:
 //					= (head pink_floyd, tail pink_floyd)
 //					= is_equal "" " "
-					= is_substring "hello" "hello"
+//					= is_substring "hello" "hello"
 //					= is_substring "there" pink_floyd
 //					= is_substring "there" marillion
 //					= is_sub "there" marillion
 //					= is_sub "she and her" pink_floyd
 //					= is_sub radiohead pink_floyd
 //					= is_match "*.here*.here*." pink_floyd
-//					= is_match ".here.here." pink_floyd
+					= is_match ".here.here." pink_floyd
 
 pink_floyd			= "Is there anybody in there?"
 marillion			= "Just for the record"
