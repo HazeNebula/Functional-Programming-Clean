@@ -3,27 +3,35 @@ implementation module Stringnum
 import StdEnv
 import StdDebug
 
+Start = equal "5" "5"
+
 isAStringnum			:: String -> Bool
-isAStringnum _ = trace_n "isAStringnum not yet implemented" False
+isAStringnum s			= isAStringNum` s ( size s - 1 )
+
+isAStringNum`			:: String Int -> Bool
+isAStringNum` s n
+| n > 0					= if ( isDigit s.[n] ) ( isAStringNum` s ( n - 1 ) ) False
+| n == 0				= if ( isDigit s.[n] ) True False
+| otherwise				= abort "Invalid index."
 
 plus					:: String String -> String
-plus _ _ = trace_n "plus not yet implemented" ""
+plus a b				= toString ( toInt a + toInt b )
 
 decrement				:: String String -> String
-decrement _ _ = trace_n "decrement not yet implemented" ""
+decrement a b			= toString ( toInt a - toInt b )
 
 times					:: String String -> String
-times _ _ = trace_n "times not yet implemented" ""
+times a b				= toString ( toInt a * toInt b )
 
 divide					:: String String -> String
-divide _ _ = trace_n "divide not yet implemented" ""
+divide a b				= toString ( toInt a / toInt b )
 
 smaller					:: String String -> Bool
-smaller _ _ = trace_n "smaller not yet implemented" False
+smaller a b				= toInt a < toInt b
 
 bigger					:: String String -> Bool
-bigger _ _ = trace_n "bigger not yet implemented" False
+bigger a b				= toInt a > toInt b
 
 equal					:: String String -> Bool
-equal _ _ = trace_n "equal not yet implemented" False
+equal a b				= toInt a == toInt b
 
