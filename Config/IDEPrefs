@@ -65,11 +65,11 @@ SWPrefs
 	EWFor:	0Black
 	EWBak:	RGB 143 :: 219 :: 255
 PWPos
-	VX:	0
-	VY:	0
+	VX:	-8
+	VY:	-31
 PWSiz
-	W:	502
-	H:	460
+	W:	1536
+	H:	749
 PWTop:	RGB 215 :: 255 :: 229
 PWFor:	RGB 109 :: 0 :: 0
 PWBak:	RGB 210 :: 210 :: 179
@@ -159,10 +159,11 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.prj
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum2.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Stringnum.prj
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationFunctions.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.prj
@@ -170,12 +171,12 @@ ProjHist
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\FindTheRedex.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\NotationFunctions.prj
 	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\Scrabble.prj
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\Start.prj
 FileHist
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum2.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Stringnum.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum2.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Stringnum.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationFunctions.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.icl
@@ -183,7 +184,6 @@ FileHist
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\FarmerWantsAWife.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\EnglishWords.txt
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ArithmeticSequences.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0

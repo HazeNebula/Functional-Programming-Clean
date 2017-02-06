@@ -1,3 +1,5 @@
+//	Exercise made by Jasper van den Bogart (4781686) and Niels van Nistelrooij (nnnnnnn)
+
 implementation module MatchStrings
 
 import StdEnv
