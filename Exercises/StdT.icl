@@ -3,23 +3,33 @@ implementation module StdT
 import StdEnv
 import StdDebug
 
-::	T  // define your implementation of T here: 
+::	T = {minutes :: Int, seconds :: Int}
 
-instance ==			T where == _ _ = trace_n "instance == T not yet implemented" False
+instance ==			T where == t0 t1	= t0.minutes == t1.minutes && t0.seconds == t1.seconds
 
-instance <			T where < _ _ = trace_n "instance < T not yet implemented" False
+instance <			T where < t0 t1		= (t0.minutes * 60 + t0.seconds) < (t1.minutes * 60 + t1.seconds) 
 
-instance zero		T where zero = abort "instance zero T not yet implemented"
+instance zero		T where zero 		= {minutes = zero, seconds = zero}
 
-instance +			T where + _ _ = trace_n "instance + T not yet implemented" zero
+instance +			T where + t0 t1		
+									| (t0.seconds + t1.seconds) > 59	
+									= {minutes = t0.minutes + t1.minutes + 1, seconds = (t0.seconds + t1.seconds) - 60}
+									| otherwise
+									= {minutes = t0.minutes + t1.minutes, seconds = t0.seconds + t1.seconds}
 
-instance -			T where - _ _ = trace_n "instance - T not yet implemented" zero
+instance -			T where - t0 t1
+									| (t0.seconds - t1.seconds) < 0
+									= {minutes = t0.minutes - t1.minutes - 1, seconds = 60 + (t0.seconds - t1.seconds)}
+									| otherwise
+									= {minutes = t0.minutes - t1.minutes, seconds = t0.seconds - t1.seconds}
 
-instance toInt		T where toInt _ = trace_n "instance toInt T not yet implemented" zero
+instance toInt		T where toInt t	= t.minutes * 60 + t.seconds
 
-instance fromInt	T where fromInt _ = trace_n "instance fromInt T not yet implemented" zero
+instance fromInt	T where fromInt int = {minutes = int / 60, seconds = int rem 60}
 
-instance toString	T where toString _ = trace_n "instance toString T not yet implemented" ""
+instance toString	T where toString t	= toString t.minutes +++ ":" +++ toString t.seconds
 
-instance fromString	T where fromString _ = trace_n "instance fromString T not yet implemented" zero
+instance fromString	T where fromString string	= {minutes = toInt (string % (0, size string - 4)), seconds = toInt (string % (size string - 2, size string - 1))}
+
+Start = toString {minutes = 8, seconds = 30}
 
