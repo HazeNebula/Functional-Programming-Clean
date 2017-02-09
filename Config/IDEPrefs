@@ -3,11 +3,11 @@ TWFnt
 	Name:	Courier New
 	Size:	10
 TWPos
-	VX:	52
-	VY:	52
+	VX:	508
+	VY:	392
 TWSiz
-	W:	518
-	H:	499
+	W:	800
+	H:	300
 TWSync
 	col_text:	0Black
 	col_back:	RGB 215 :: 255 :: 255
@@ -41,14 +41,14 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	26
-		VY:	26
+		VX:	75
+		VY:	566
 	EWSiz
-		W:	502
-		H:	441
+		W:	1093
+		H:	280
 	EWFNm:	Arial
 	EWFSz:	10
-	EWFor:	RGB 0 :: 0 :: 0
+	EWFor:	0Black
 	EWBak:	RGB 255 :: 215 :: 255
 	EWErr:	1
 	EWWrn:	1
@@ -65,11 +65,11 @@ SWPrefs
 	EWFor:	0Black
 	EWBak:	RGB 143 :: 219 :: 255
 PWPos
-	VX:	-8
-	VY:	-31
+	VX:	69
+	VY:	10
 PWSiz
-	W:	1536
-	H:	749
+	W:	752
+	H:	733
 PWTop:	RGB 215 :: 255 :: 229
 PWFor:	RGB 109 :: 0 :: 0
 PWBak:	RGB 210 :: 210 :: 179
@@ -159,31 +159,31 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.prj
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum.prj
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum2.prj
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Stringnum.prj
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationFunctions.prj
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.prj
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\StdT.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdT.prj
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\VectorOverloading.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationADT.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Stringnum.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\OTannenbaum.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.prj
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\OTannenbaum.prj
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\FindTheRedex.prj
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Exercises\NotationFunctions.prj
-	Path:	C:\Program Files\Clean 2.4\Examples\ObjectIO Examples\scrabble\Scrabble.prj
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.prj
 FileHist
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Stringnum2.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Stringnum.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationFunctions.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ThisOldMan.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\FarmerWantsAWife.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\EnglishWords.txt
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\ArithmeticSequences.icl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.dcl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.dcl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\StdT.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdT.icl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Libraries\StdEnv\StdInt.icl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\VectorOverloading.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationADT.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Stringnum.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0

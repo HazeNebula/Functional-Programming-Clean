@@ -3,8 +3,8 @@
 .depend "StdClass" "20170202141542"
 .depend "StdChar" "20170202141542"
 .depend "StdInt" "20170202141542"
-.depend "StdOverloaded" "20170202141542"
 .depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
 .depend "_SystemEnum" "20170202141542"
 .module m__SystemEnum "_SystemEnum" "20170202141542"
 .endinfo
@@ -68,6 +68,7 @@
 .implab e_StdInt_sone;11
 .impdesc e_StdInt_d<;17
 .implab e_StdInt_s<;17
+.implab e_StdBool_snot
 .impdesc e_StdOverloaded_d+;.+
 .implab e_StdOverloaded_n+;.+ e_StdOverloaded_ea+;.+
 .impdesc e_StdOverloaded_d-;.-
@@ -75,7 +76,6 @@
 .impdesc e_StdOverloaded_done;.one
 .implab e_StdOverloaded_none;.one e_StdOverloaded_eaone;.one
 .impdesc e_StdOverloaded_r<;
-.implab e_StdBool_snot
 .export e__SystemEnum_s_from_then_to;11
 .export e__SystemEnum_ea_from_then_to;11
 .descexp e__SystemEnum_d_from_then_to;11 e__SystemEnum_n_from_then_to;11 e__SystemEnum_l_from_then_to;11 3 0 "_from_then_to;11;11"

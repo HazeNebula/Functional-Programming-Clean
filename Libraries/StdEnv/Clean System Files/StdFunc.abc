@@ -3,8 +3,8 @@
 .depend "StdMisc" "20170202141542"
 .depend "StdClass" "20170202141542"
 .depend "StdInt" "20170202141542"
-.depend "StdOverloaded" "20170202141542"
 .depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
 .depend "StdFunc" "20170202141542"
 .module m_StdFunc "StdFunc" "20170202141542"
 .endinfo

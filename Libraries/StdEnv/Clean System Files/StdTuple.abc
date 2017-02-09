@@ -1,8 +1,8 @@
 .comp 920 00011101001
 .start _nostart_
 .depend "StdClass" "20170202141542"
-.depend "StdOverloaded" "20170202141542"
 .depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
 .depend "StdTuple" "20170202141542"
 .module m_StdTuple "StdTuple" "20170202141542"
 .endinfo

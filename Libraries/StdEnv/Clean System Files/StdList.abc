@@ -10,8 +10,8 @@
 .depend "StdChar" "20170202141542"
 .depend "StdReal" "20170202141542"
 .depend "StdInt" "20170202141542"
-.depend "StdOverloaded" "20170202141542"
 .depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542
 .depend "StdList" "20170202141542"
 .module m_StdList "StdList" "20170202141542"
 .endinfo
@@ -72,6 +72,7 @@
 .implab e_StdInt_sone;11
 .implab e_StdInt_s==;16
 .implab e_StdInt_s<;17
+.implab e_StdBool_snot
 .impdesc e_StdOverloaded_d+;.+
 .implab e_StdOverloaded_n+;.+ e_StdOverloaded_ea+;.+
 .impdesc e_StdOverloaded_dzero;.zero
@@ -82,7 +83,6 @@
 .implab e_StdOverloaded_none;.one e_StdOverloaded_eaone;.one
 .impdesc e_StdOverloaded_dfromChar;.fromChar
 .implab e_StdOverloaded_nfromChar;.fromChar e_StdOverloaded_eafromChar;.fromChar
-.implab e_StdBool_snot
 .export e_StdList_s==;85
 .descexp e_StdList_d==;85 e_StdList_n==;85 e_StdList_l==;85 2 0 "==;85"
 .a 0 a86

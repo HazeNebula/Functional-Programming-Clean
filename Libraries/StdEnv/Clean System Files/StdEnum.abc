@@ -4,8 +4,8 @@
 .depend "StdClass" "20170202141542"
 .depend "StdChar" "20170202141542"
 .depend "StdInt" "20170202141542"
-.depend "StdOverloaded" "20170202141542"
 .depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
 .depend "StdEnum" "20170202141542"
 .module m_StdEnum "StdEnum" "20170202141542"
 .endinfo
