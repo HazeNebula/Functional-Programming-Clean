@@ -1,13 +1,19 @@
 Version: 1.4
 MainModule
-	Name:	StdT
+	Name:	Card
 	Dir:	{Project}
+	Dcl
+		WindowPosition
+			X:	622
+			Y:	24
+			SizeX:	800
+			SizeY:	560
 	DclOpen:	False
 	Icl
 		WindowPosition
-			X:	118
-			Y:	-17
-			SizeX:	800
+			X:	224
+			Y:	87
+			SizeX:	783
 			SizeY:	560
 	IclOpen:	False
 OtherModules
