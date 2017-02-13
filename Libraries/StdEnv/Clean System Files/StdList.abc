@@ -1,17 +1,17 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "_SystemEnum" "20170202141542"
-.depend "StdEnum" "20170202141542"
-.depend "StdMisc" "20170202141542"
-.depend "StdClass" "20170202141542"
 .depend "StdString" "20170202141542"
 .depend "_SystemArray" "20170202141542"
 .depend "StdArray" "20170202141542"
-.depend "StdChar" "20170202141542"
+.depend "_SystemEnum" "20170202141542"
+.depend "StdEnum" "20170202141542"
+.depend "StdMisc" "20170202141542"
 .depend "StdReal" "20170202141542"
+.depend "StdChar" "20170202141542"
 .depend "StdInt" "20170202141542"
 .depend "StdBool" "20170202141542"
-.depend "StdOverloaded" "20170202141542
+.depend "StdOverloaded" "20170202141542"
+.depend "StdClass" "20170202141542"
 .depend "StdList" "20170202141542"
 .module m_StdList "StdList" "20170202141542"
 .endinfo
@@ -48,15 +48,9 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
-.implab e_StdMisc_sabort
-.impdesc e_StdClass_dIncDec;.zero
-.implab e_StdClass_nIncDec;.zero
 .impdesc e__SystemArray_dselect;19
 .implab e__SystemArray_nselect;19
-.implab e_StdChar_s==;18
-.implab e_StdChar_s<;19
-.implab e_StdChar_stoChar;20
-.implab e_StdChar_sfromChar;23
+.implab e_StdMisc_sabort
 .implab e_StdReal_s+;1
 .implab e_StdReal_szero;3
 .implab e_StdReal_s*;4
@@ -64,6 +58,10 @@
 .implab e_StdReal_sone;6
 .implab e_StdReal_s==;11
 .implab e_StdReal_s<;12
+.implab e_StdChar_s==;18
+.implab e_StdChar_s<;19
+.implab e_StdChar_stoChar;20
+.implab e_StdChar_sfromChar;23
 .implab e_StdInt_s+;6
 .implab e_StdInt_s-;7
 .implab e_StdInt_szero;8
@@ -83,6 +81,8 @@
 .implab e_StdOverloaded_none;.one e_StdOverloaded_eaone;.one
 .impdesc e_StdOverloaded_dfromChar;.fromChar
 .implab e_StdOverloaded_nfromChar;.fromChar e_StdOverloaded_eafromChar;.fromChar
+.impdesc e_StdClass_dIncDec;.zero
+.implab e_StdClass_nIncDec;.zero
 .export e_StdList_s==;85
 .descexp e_StdList_d==;85 e_StdList_n==;85 e_StdList_l==;85 2 0 "==;85"
 .a 0 a86

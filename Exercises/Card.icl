@@ -1,15 +1,17 @@
+// Made by: Niels van Nistelrooij (4713648); Jasper van den Bogart (4781686)
+
 implementation module Card
 
 import StdEnv
 import StdDebug
 
-Start = toString (testFromString "Five of Diamonds")
+Start	:: String
+Start 	= toString (testFromString "Five of Diamonds")
 
 testFromString				:: String -> Card
-testFromString string = fromString string
+testFromString string 		= fromString string
 
 //	1.
-// Define Card, Suit, Value here:
 :: Card = {suit :: Suit, value :: Value}
 :: Suit = Heart | Diamond | Spade | Club
 :: Value = Two | Three | Four | Five | Six | Seven | Eight | Nine | Ten
@@ -66,6 +68,7 @@ instance toString Value where
 	toString Queen	= "Queen"
 	toString King	= "King"
 	toString Ace	= "Ace"
+
 
 instance fromString Card where
 	fromString string = {value = fromString (string % (0,1)), suit = fromChar (string.[size string - 2])}
