@@ -1,3 +1,5 @@
+// Made by: Niels van Nistelrooij (4713648); Jasper van den Bogart (4781686)
+
 implementation module StdT
 
 import StdEnv

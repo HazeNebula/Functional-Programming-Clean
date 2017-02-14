@@ -11,11 +11,11 @@ MainModule
 	DclOpen:	False
 	Icl
 		WindowPosition
-			X:	224
-			Y:	87
+			X:	0
+			Y:	9
 			SizeX:	783
 			SizeY:	560
-	IclOpen:	False
+	IclOpen:	True
 OtherModules
 	Module
 		Name:	StdArray
