@@ -41,8 +41,8 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	75
-		VY:	566
+		VX:	250
+		VY:	633
 	EWSiz
 		W:	1093
 		H:	280
@@ -159,6 +159,8 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.prj
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationZF.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.prj
@@ -169,10 +171,12 @@ ProjHist
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.prj
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationADT.prj
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Stringnum.prj
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\OTannenbaum.prj
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
 FileHist
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\StdSortList.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationZF.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortListTest.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
@@ -180,10 +184,6 @@ FileHist
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.dcl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.icl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.dcl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdT.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Libraries\StdEnv\StdInt.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\VectorOverloading.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0
