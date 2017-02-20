@@ -3,7 +3,13 @@ MainModule
 	Name:	StdSortList
 	Dir:	{Project}
 	DclOpen:	False
-	IclOpen:	True
+	Icl
+		WindowPosition
+			X:	2
+			Y:	21
+			SizeX:	726
+			SizeY:	559
+	IclOpen:	False
 OtherModules
 	Module
 		Name:	StdArray
