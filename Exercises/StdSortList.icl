@@ -1,39 +1,66 @@
+//	Exercise made by Jasper van den Bogart (4781686) and Niels van Nistelrooij (4713648)
+
 implementation module StdSortList
 
 import StdEnv
 import StdDebug
 
-::  SortList a // define your implementation of SortList here
+::  SortList a = EmptySortList | SortList [a]
 
 newSortList								:: SortList a
-newSortList = trace_n "newSortList not yet implemented" (abort "SortList not yet implemented")
+newSortList								= EmptySortList
 
 memberSort								:: a (SortList a) -> Bool | Eq, Ord a
-memberSort _ _ = trace_n "memberSort not yet implemented" False
+memberSort x EmptySortList				= False
+memberSort x ( SortList [head : tail] )
+	| x == head							= True
+	| tail == []						= False
+	| otherwise							= memberSort x ( SortList tail )
 
 insertSort								:: a (SortList a) -> SortList a | Ord a
-insertSort _ _ = trace_n "insertSort not yet implemented" (abort "SortList not yet implemented")
+insertSort x EmptySortList				= SortList [x]
+insertSort x ( SortList [head : tail] )
+	| head <= x							= SortList ( [head] ++ [x] ++ tail )
+	| otherwise							= insertSort x ( SortList tail )
 
-removeFirst								:: a (SortList a) -> SortList a | Eq, Ord a
-removeFirst _ _ = trace_n "removeFirst not yet implemented" (abort "SortList not yet implemented")
+removeFirst									:: a (SortList a) -> SortList a | Eq, Ord a
+removeFirst x EmptySortList					= EmptySortList
+removeFirst x ( SortList l )				= removeFirst` x [] l
+	where
+		removeFirst` x previous [head : tail]
+			| x == head						= SortList ( previous ++ tail )
+			| otherwise						= removeFirst` x ( previous ++ [head] ) tail
 
 removeAll								:: a (SortList a) -> SortList a | Eq, Ord a
-removeAll _ _ = trace_n "removeAll not yet implemented" (abort "SortList not yet implemented")
+removeAll x EmptySortList				= EmptySortList
+removeAll x ( SortList l )
+	| memberSort x ( SortList l )		= removeAll x ( removeFirst x ( SortList l ) )
+	| otherwise							= SortList l
 
 elements								:: (SortList a) -> [a]
-elements _ = trace_n "elements not yet implemented" []
+elements EmptySortList					= []
+elements ( SortList l )					= l
 
 count									:: (SortList a) -> Int
-count _ = trace_n "count not yet implemented" zero
+count EmptySortList						= 0
+count l									= length ( elements l )
 
 minimum									:: (SortList a) -> a
-minimum _ = trace_n "minimum not yet implemented" (abort "SortList not yet implemented")
+minimum ( EmptySortList )				= abort "SortList is empty"
+minimum ( SortList l )					= l !! 0
 
 maximum									:: (SortList a) -> a
-maximum _ = trace_n "maximum not yet implemented" (abort "SortList not yet implemented")
+maximum ( EmptySortList )				= abort "SortList is empty"
+maximum ( SortList l )					= l !! ( length l - 1 )
 
-mergeSortList							:: (SortList a) (SortList a) -> SortList a | Eq, Ord a
-mergeSortList _ _ = trace_n "mergeSortList not yet implemented" (abort "SortList not yet implemented")
+mergeSortList									:: (SortList a) (SortList a) -> SortList a | Eq, Ord a
+mergeSortList EmptySortList sl2											= sl2
+mergeSortList sl1 EmptySortList											= sl1
+mergeSortList ( SortList [] ) ( SortList l2 )							= SortList l2
+mergeSortList ( SortList l1 ) ( SortList [] )							= SortList l1
+mergeSortList ( SortList [head1 : tail1] ) ( SortList [head2 : tail2] )
+	| head1 <= head2													= SortList ( [head1] ++ elements ( mergeSortList ( SortList tail1 ) ( SortList ( [head2] ++ tail2 ) ) ) )
+	| otherwise															= SortList ( [head2] ++ elements ( mergeSortList ( SortList ( [head1] ++ tail1 ) ) ( SortList tail2 ) ) )
 
 //	You can use Start to do unit testing of your functions
-Start = ""
+Start = mergeSortList ( SortList [1, 2, 3] ) ( SortList [3, 4, 5] )

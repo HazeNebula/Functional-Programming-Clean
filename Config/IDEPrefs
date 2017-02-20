@@ -159,6 +159,7 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\StdT.prj
@@ -170,8 +171,8 @@ ProjHist
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Stringnum.prj
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\OTannenbaum.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.prj
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\MatchStrings.prj
 FileHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\OTannenbaum.icl
@@ -183,7 +184,6 @@ FileHist
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Libraries\StdEnv\StdInt.icl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\VectorOverloading.icl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationADT.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0
