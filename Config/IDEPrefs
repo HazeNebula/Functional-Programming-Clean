@@ -159,31 +159,31 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationZF.prj
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationZF.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Frags.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdSet.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdSortList.prj
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationZF.prj
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationZF.prj
 	Path:	C:\Users\Niels-laptop\Desktop\Clean - LOL\LOL.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.prj
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\StdT.prj
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdT.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\VectorOverloading.prj
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\VectorOverloading.prj
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.prj
 FileHist
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationZF.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationZF.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.icl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Frags.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdSet.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdSortList.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Frags.dcl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\NotationZF.icl
+	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\NotationZF.icl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\TupleOverloading.icl
 	Path:	C:\Users\Niels-laptop\Desktop\Clean - LOL\LOL.icl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.dcl
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.icl
 	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Card.dcl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\StdT.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdT.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0

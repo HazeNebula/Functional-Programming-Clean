@@ -3,26 +3,17 @@ implementation module Frags
 import StdEnv
 import StdDebug
 
-frags					:: [a] -> [[a]]
-frags xs		= frags` xs (length xs) 0
+frags			:: [a] -> [[a]]
+frags xs		= frags` xs xs (length xs) (length xs)
+ where
+ 	frags` _ _ 0 _				= [[]]
+	frags` xs _ index1 0		= frags` (tl xs) (tl xs) (index1 - 1) (index1 - 1)
+	frags` xs xs2 index1 index2	= [xs2] ++ frags` xs (xs2 % (0, length xs2 - 2)) index1 (index2 - 1)
 
-frags`				:: [a] Int Int-> [[a]]
-frags` xs size index
-| index == size	= [[]]
-| otherwise			= frags`` xs size index ++ frags` (tl xs) size (index + 1)
 
-frags``				:: [a] Int Int -> [[a]]				
-frags`` xs size index
-| index == size - 1	= [xs]
-| otherwise			= [xs] ++ frags`` (butLast xs (length xs)) size (index + 1)
 
-butLast			:: [a] Int -> [a]
-butLast xs size
-| size == 1	= []
-| otherwise		= [hd xs] ++ butLast (tl xs) (size - 1)
 
-Start 	= frags [1,2,3,4,5,6,7]
-
+Start 	= frags [2 .. 5]
 
 // size of frags [1, 2, 3,..., n] is (0.5 * n) ^ 2 + 0.5 * n + 1
 
