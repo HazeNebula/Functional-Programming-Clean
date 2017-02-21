@@ -5,62 +5,58 @@ implementation module StdSortList
 import StdEnv
 import StdDebug
 
-::  SortList a = EmptySortList | SortList [a]
+::  SortList a :== [a]
 
-newSortList								:: SortList a
-newSortList								= EmptySortList
+newSortList							:: SortList a
+newSortList	= []
 
 memberSort								:: a (SortList a) -> Bool | Eq, Ord a
-memberSort x EmptySortList				= False
-memberSort x ( SortList [head : tail] )
-	| x == head							= True
-	| tail == []						= False
-	| otherwise							= memberSort x ( SortList tail )
+memberSort _ []			= False
+memberSort x [y:ys]
+| x == y				= True
+| otherwise				= memberSort x ys
 
 insertSort								:: a (SortList a) -> SortList a | Ord a
-insertSort x EmptySortList				= SortList [x]
-insertSort x ( SortList [head : tail] )
-	| head <= x							= SortList ( [head] ++ [x] ++ tail )
-	| otherwise							= insertSort x ( SortList tail )
+insertSort x []				= [x]
+insertSort x sortList
+| (maximum sortList) <= x	= sortList ++ [x]
+| (hd sortList) > x			= [x] ++ sortList
+| otherwise					= [hd sortList] ++ insertSort x (tl sortList)
 
-removeFirst									:: a (SortList a) -> SortList a | Eq, Ord a
-removeFirst x EmptySortList					= EmptySortList
-removeFirst x ( SortList l )				= removeFirst` x [] l
-	where
-		removeFirst` x previous [head : tail]
-			| x == head						= SortList ( previous ++ tail )
-			| otherwise						= removeFirst` x ( previous ++ [head] ) tail
+
+removeFirst								:: a (SortList a) -> SortList a | Eq, Ord a
+removeFirst _ []		= []
+removeFirst x [y:ys]
+| x == y				= ys
+| otherwise				= [y] ++ removeFirst x ys
 
 removeAll								:: a (SortList a) -> SortList a | Eq, Ord a
-removeAll x EmptySortList				= EmptySortList
-removeAll x ( SortList l )
-	| memberSort x ( SortList l )		= removeAll x ( removeFirst x ( SortList l ) )
-	| otherwise							= SortList l
+removeAll _ []			= []
+removeAll x [y:ys]
+| x == y				= removeAll x ys
+| otherwise				= [y] ++ removeAll x ys
 
 elements								:: (SortList a) -> [a]
-elements EmptySortList					= []
-elements ( SortList l )					= l
+elements sortList	= sortList
 
 count									:: (SortList a) -> Int
-count EmptySortList						= 0
-count l									= length ( elements l )
+count sortList	= length sortList
 
 minimum									:: (SortList a) -> a
-minimum ( EmptySortList )				= abort "SortList is empty"
-minimum ( SortList l )					= l !! 0
+minimum [x:_]	= x
 
 maximum									:: (SortList a) -> a
-maximum ( EmptySortList )				= abort "SortList is empty"
-maximum ( SortList l )					= l !! ( length l - 1 )
+maximum sortList	= sortList !! (length sortList - 1)
 
-mergeSortList									:: (SortList a) (SortList a) -> SortList a | Eq, Ord a
-mergeSortList EmptySortList sl2											= sl2
-mergeSortList sl1 EmptySortList											= sl1
-mergeSortList ( SortList [] ) ( SortList l2 )							= SortList l2
-mergeSortList ( SortList l1 ) ( SortList [] )							= SortList l1
-mergeSortList ( SortList [head1 : tail1] ) ( SortList [head2 : tail2] )
-	| head1 <= head2													= SortList ( [head1] ++ elements ( mergeSortList ( SortList tail1 ) ( SortList ( [head2] ++ tail2 ) ) ) )
-	| otherwise															= SortList ( [head2] ++ elements ( mergeSortList ( SortList ( [head1] ++ tail1 ) ) ( SortList tail2 ) ) )
+mergeSortList							:: (SortList a) (SortList a) -> SortList a | Eq, Ord a
+mergeSortList list1 list2	= mergeSortList` list1 list2 (length list1) (length list2) []
+
+mergeSortList`							:: (SortList a) (SortList a) Int Int (SortList a) -> SortList a | Eq, Ord a
+mergeSortList` _ _ 0 0 mergeList					= mergeList
+mergeSortList` _ list2 0 index2	mergeList			= mergeSortList` [] (tl list2) 0 (index2 - 1) (insertSort (hd list2) mergeList)
+mergeSortList` list1 _ index1 0	mergeList			= mergeSortList` (tl list1) [] (index1 - 1) 0 (insertSort (hd list1) mergeList)
+mergeSortList` list1 list2 index1 index2 mergeList	= mergeSortList` (tl list1) (tl list2) (index1 - 1) (index2 - 1) (insertSort (hd list1) (insertSort (hd list2) mergeList))
+
 
 //	You can use Start to do unit testing of your functions
-Start = mergeSortList ( SortList [1, 2, 3] ) ( SortList [3, 4, 5] )
+Start = mergeSortList [1, 5, 6, 8, 2, 4, 9, 5, 0, 1] [5, 6, 7, 2, 5, 9, 8, 2, 6]
