@@ -1,22 +1,39 @@
 Version: 1.4
 MainModule
-	Name:	Card
+	Name:	Cards
 	Dir:	{Project}
 	Dcl
 		WindowPosition
-			X:	622
-			Y:	24
+			X:	10
+			Y:	10
 			SizeX:	800
-			SizeY:	560
+			SizeY:	720
 	DclOpen:	False
 	Icl
 		WindowPosition
-			X:	222
-			Y:	237
-			SizeX:	783
-			SizeY:	560
-	IclOpen:	False
+			X:	832
+			Y:	28
+			SizeX:	930
+			SizeY:	808
+	IclOpen:	True
 OtherModules
+	Module
+		Name:	Card
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	74
+				Y:	45
+				SizeX:	800
+				SizeY:	720
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	156
+				Y:	56
+				SizeX:	783
+				SizeY:	560
+		IclOpen:	False
 	Module
 		Name:	StdArray
 		Dir:	{Application}\Libraries\StdEnv

@@ -8,26 +8,38 @@ import StdDebug
 
 Start		= and
 				  [
-//				    sum`       [1 .. 5]                 == sum       [1 .. 5]
-//				  , prod`      [1 .. 5]                 == prod      [1 .. 5]
-//				  , flatten`   [[],[1],[1,2],[1,2,3]]   == flatten   [[],[1],[1,2],[1,2,3]]
-//				  , length`    [1 .. 10]                == length    [1 .. 10]
-//				  , reverse`   [1 .. 5]                 == reverse   [1 .. 5]
-//				  , takeWhile` ((<>) 0) [1,2,3,0,4,5,6] == takeWhile ((<>) 0) [1,2,3,0,4,5,6]
-//				  , maxList`   [1 .. 5]                 == maxList   [1 .. 5]
+				    sum`       [1 .. 5]                 == sum       [1 .. 5]
+				  , prod`      [1 .. 5]                 == prod      [1 .. 5]
+				  , flatten`   [[],[1],[1,2],[1,2,3]]   == flatten   [[],[1],[1,2],[1,2,3]]
+				  , length`    [1 .. 10]                == length    [1 .. 10]
+				  , reverse`   [1 .. 5]                 == reverse   [1 .. 5]
+				  , takeWhile` ((<>) 0) [1,2,3,0,4,5,6] == takeWhile ((<>) 0) [1,2,3,0,4,5,6]
+				  , maxList`   [1 .. 5]                 == maxList   [1 .. 5]
 				  ]
 
-sum` = trace_n "sum` not yet implemented" sum
 
-prod` = trace_n "prod` not yet implemented" prod
 
-flatten` = trace_n "flatten` not yet implemented" flatten
+sum` list						= foldl (+) zero list
 
-length` = trace_n "length` not yet implemented" length
+prod` list						= foldl (*) one list
 
-reverse` = trace_n "reverse` not yet implemented" reverse
+flatten` list					= foldl (++) [] list
 
-takeWhile` = trace_n "takeWhile` not yet implemented" takeWhile
+length` list					= foldl (\ n x	= n + 1) 0 list
 
-maxList` = trace_n "maxList` not yet implemented" maxList
+reverse` list					= foldl (\ xs x	= [x:xs]) [] list
+
+takeWhile` f list				= foldr (function f) [] list
+	where
+		function				:: (a -> Bool) a [a] -> [a]
+		function f element list
+		| f element				= ([element] ++ list)
+		| otherwise				= []
+
+maxList` list	= foldl max` zero list
+	where
+		max`					:: a a -> a | Ord a
+		max` maxUntilNow element
+		| element < maxUntilNow	= maxUntilNow
+		| otherwise				= element
 
