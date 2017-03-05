@@ -1,22 +1,27 @@
 Version: 1.4
 MainModule
-	Name:	Card
+	Name:	FQL
 	Dir:	{Project}
-	Dcl
-		WindowPosition
-			X:	622
-			Y:	24
-			SizeX:	800
-			SizeY:	560
 	DclOpen:	False
 	Icl
 		WindowPosition
-			X:	222
-			Y:	237
-			SizeX:	783
-			SizeY:	560
-	IclOpen:	False
+			X:	193
+			Y:	128
+			SizeX:	793
+			SizeY:	720
+	IclOpen:	True
 OtherModules
+	Module
+		Name:	StdT
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	720
+		DclOpen:	False
+		IclOpen:	False
 	Module
 		Name:	StdArray
 		Dir:	{Application}\Libraries\StdEnv
@@ -76,6 +81,12 @@ OtherModules
 		Name:	StdList
 		Dir:	{Application}\Libraries\StdEnv
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	720
 		IclOpen:	False
 	Module
 		Name:	StdMisc

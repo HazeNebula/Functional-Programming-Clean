@@ -34,30 +34,59 @@ Start world
                                (drop (nr_of_fields+1)     // delete the headers
                                (map initString inhoud))   // remove the \n
                           ]
-= (all_groups nummersDB,world)
+= (time_albums nummersDB,world)
 where
 	nr_of_fields = 8
 
 all_groups              :: [Song] -> [String]
-all_groups _ = trace_n "all_groups not yet implemented" []
+all_groups songs	= noDuplicates [x.group \\ x <- songs]
+
+noDuplicates									:: [a] -> [a] | Eq a
+noDuplicates list	= noDuplicates` list (length list - 2) (length list - 1)
+	where
+		noDuplicates`									:: [a] Int Int -> [a] | Eq a
+		noDuplicates` list -1 0				= list
+		noDuplicates` list -1 int			= noDuplicates` (list % (0, length list - 2)) (int - 2) (int - 1)
+											++ [(list !! int)]
+		noDuplicates` list int1 int2	
+		| (list !! int2) == (list !! int1)	= noDuplicates` (list % (0, length list - 2)) (int2 - 2) (int2 - 1)
+		| otherwise							= noDuplicates` list (int1 - 1) int2
+
 
 all_periods             :: [Song] -> [String]
-all_periods _ = trace_n "all_periods not yet implemented" []
-
+all_periods songs													= all_periods` (noDuplicates (sort [x.year \\ x <- songs])) 1
+	where
+		all_periods`	:: [Int] Int -> [String]
+		all_periods` periods int
+		| length periods == 1						= [toString (hd periods)]
+		| int == (length periods)					= [toString (hd periods) +++ "-" +++ toString (periods !! (length periods - 1))]
+		| ((hd periods) + int) == (periods !! int)	= all_periods` periods (int + 1)
+		| int == 1									= [toString (hd periods)] ++ all_periods` (periods % (1, length periods - 1)) 1
+		| otherwise									= [toString (hd periods) +++ "-" +++ toString (periods !! (int - 1))] ++ all_periods` (periods % (int, length periods - 1)) 1
+		
 all_albums_of           :: String [Song] -> [(Int,String)]
-all_albums_of _ _ = trace_n "all_albums_of not yet implemented" []
+all_albums_of group songs		= noDuplicates (sort [(x.year, x.album) \\ x <- songs | x.group == group])
 
 all_tracks              :: String String [Song] -> [(Int,String,T)]
-all_tracks _ _ _ = trace_n "all_tracks not yet implemented" []
+all_tracks album group songs	= sort  [(x.track, x.title, x.time) \\ x <- songs | x.album == album && x.group == group]
 
 time_albums             :: [Song] -> [(T,String,String)]
-time_albums _ = trace_n "time_albums not yet implemented" []
+time_albums songs				=  noDuplicates (sort ([(albumPlayTime songs x.group x.album, x.group, x.album) \\ x <- songs]))
+	where
+		albumPlayTime	:: [Song] String String -> T
+		albumPlayTime songs group album	= sum [x.time \\ x <- songs | x.group == group && x.album == album]
+// shortest:	In abstenia (bonus CD) by Porcupine tree - 16:12
+// longest:  	De Standaards van Spits by De Standaards van Spits - 309:48
 
 total_time              :: [Song] -> T
-total_time _ = trace_n "total_time not yet implemented" zero
+total_time songs	= sum [x.time \\ x <- songs]
+// Total playing time is:	27976:5
 
 dutch_metal             :: [Song] -> [String]
-dutch_metal _ = trace_n "dutch_metal not yet implemented" []
+dutch_metal songs	= noDuplicates [x.group \\ x <- songs | isMember "metal" x.tags && isMember "Netherlands" x.country]
+
+
+
 
 /* The functions below are needed in the Start rule to read the file 'FQL-songs.dbs'.
  * You do not need to understand how they work.

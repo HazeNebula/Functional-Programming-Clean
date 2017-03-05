@@ -1,21 +1,15 @@
 Version: 1.4
 MainModule
-	Name:	Card
+	Name:	Origami
 	Dir:	{Project}
-	Dcl
-		WindowPosition
-			X:	622
-			Y:	24
-			SizeX:	800
-			SizeY:	560
 	DclOpen:	False
 	Icl
 		WindowPosition
-			X:	222
-			Y:	237
-			SizeX:	783
-			SizeY:	560
-	IclOpen:	False
+			X:	327
+			Y:	60
+			SizeX:	779
+			SizeY:	720
+	IclOpen:	True
 OtherModules
 	Module
 		Name:	StdArray

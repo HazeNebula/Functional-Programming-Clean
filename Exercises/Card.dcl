@@ -9,6 +9,8 @@ import StdEnv
 		 | Jack | Queen | King | Ace
 
 instance ==         Card
+instance == 		Suit
+instance ==			Value
 
 instance toString   Card
 
