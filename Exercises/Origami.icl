@@ -1,3 +1,5 @@
+// Coded by Niels van Nistelrooij (s4713648) and Jasper van den Bogart (s4781686)
+
 module Origami
 
 import StdEnv
@@ -18,17 +20,22 @@ Start		= and
 				  ]
 
 
-
+sum` 							:: [a] -> a | zero, + a
 sum` list						= foldl (+) zero list
 
+prod`							:: [a] -> a | one, * a
 prod` list						= foldl (*) one list
 
+flatten`						:: [[a]] -> [a]
 flatten` list					= foldl (++) [] list
 
+length`							:: [a] -> Int
 length` list					= foldl (\ n x	= n + 1) 0 list
 
+reverse`						:: [a] -> [a]
 reverse` list					= foldl (\ xs x	= [x:xs]) [] list
 
+takeWhile`						:: (a -> Bool) [a] -> [a]
 takeWhile` f list				= foldr (function f) [] list
 	where
 		function				:: (a -> Bool) a [a] -> [a]
@@ -36,9 +43,10 @@ takeWhile` f list				= foldr (function f) [] list
 		| f element				= ([element] ++ list)
 		| otherwise				= []
 
-maxList` list	= foldl max` zero list
+maxList`						:: [a] -> a | zero, < a		
+maxList` list					= foldl max` zero list
 	where
-		max`					:: a a -> a | Ord a
+		max`					:: a a -> a | < a
 		max` maxUntilNow element
 		| element < maxUntilNow	= maxUntilNow
 		| otherwise				= element
