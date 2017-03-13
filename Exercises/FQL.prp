@@ -5,11 +5,11 @@ MainModule
 	DclOpen:	False
 	Icl
 		WindowPosition
-			X:	193
-			Y:	128
+			X:	259
+			Y:	35
 			SizeX:	793
-			SizeY:	720
-	IclOpen:	True
+			SizeY:	608
+	IclOpen:	False
 OtherModules
 	Module
 		Name:	StdT

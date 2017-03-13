@@ -1,3 +1,5 @@
+//Coded by Niels van Nistelrooij (s4713648) and Jasper van den Bogart (s4781686)
+
 module FQL
 
 import StdEnv
@@ -39,19 +41,13 @@ where
 	nr_of_fields = 8
 
 all_groups              :: [Song] -> [String]
-all_groups songs	= noDuplicates [x.group \\ x <- songs]
+all_groups songs	= noDuplicates (sort [x.group \\ x <- songs])
 
 noDuplicates									:: [a] -> [a] | Eq a
-noDuplicates list	= noDuplicates` list (length list - 2) (length list - 1)
-	where
-		noDuplicates`									:: [a] Int Int -> [a] | Eq a
-		noDuplicates` list -1 0				= list
-		noDuplicates` list -1 int			= noDuplicates` (list % (0, length list - 2)) (int - 2) (int - 1)
-											++ [(list !! int)]
-		noDuplicates` list int1 int2	
-		| (list !! int2) == (list !! int1)	= noDuplicates` (list % (0, length list - 2)) (int2 - 2) (int2 - 1)
-		| otherwise							= noDuplicates` list (int1 - 1) int2
-
+noDuplicates [x:[]]	= [x]
+noDuplicates [x:xs]	
+| x == (hd xs)		= noDuplicates xs
+| otherwise			= [x] ++ noDuplicates xs
 
 all_periods             :: [Song] -> [String]
 all_periods songs													= all_periods` (noDuplicates (sort [x.year \\ x <- songs])) 1
@@ -62,7 +58,8 @@ all_periods songs													= all_periods` (noDuplicates (sort [x.year \\ x <-
 		| int == (length periods)					= [toString (hd periods) +++ "-" +++ toString (periods !! (length periods - 1))]
 		| ((hd periods) + int) == (periods !! int)	= all_periods` periods (int + 1)
 		| int == 1									= [toString (hd periods)] ++ all_periods` (periods % (1, length periods - 1)) 1
-		| otherwise									= [toString (hd periods) +++ "-" +++ toString (periods !! (int - 1))] ++ all_periods` (periods % (int, length periods - 1)) 1
+		| otherwise									= [toString (hd periods) +++ "-" +++ toString (periods !! (int - 1))] 
+													++ all_periods` (periods % (int, length periods - 1)) 1
 		
 all_albums_of           :: String [Song] -> [(Int,String)]
 all_albums_of group songs		= noDuplicates (sort [(x.year, x.album) \\ x <- songs | x.group == group])
@@ -71,7 +68,7 @@ all_tracks              :: String String [Song] -> [(Int,String,T)]
 all_tracks album group songs	= sort  [(x.track, x.title, x.time) \\ x <- songs | x.album == album && x.group == group]
 
 time_albums             :: [Song] -> [(T,String,String)]
-time_albums songs				=  noDuplicates (sort ([(albumPlayTime songs x.group x.album, x.group, x.album) \\ x <- songs]))
+time_albums songs				=  noDuplicates (sort [(albumPlayTime songs x.group x.album, x.group, x.album) \\ x <- songs])
 	where
 		albumPlayTime	:: [Song] String String -> T
 		albumPlayTime songs group album	= sum [x.time \\ x <- songs | x.group == group && x.album == album]
