@@ -1,0 +1,12 @@
+Version: 1.4
+MainModule
+	Name:	ProofMapFlatten
+	Dir:	{Project}
+	DclOpen:	False
+	Icl
+		WindowPosition
+			X:	40
+			Y:	10
+			SizeX:	797
+			SizeY:	588
+	IclOpen:	False
