@@ -1,0 +1,5920 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Geometry" "20170314161737"
+.module m_Geometry "Geometry" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_StdMisc_sabort
+.implab e_StdList_ssum;73
+.impdesc e_StdClass_rOrd;
+.impdesc e_StdString_dtoString;7
+.implab e_StdString_s+++;11
+.implab e_StdReal_s+;1
+.implab e_StdReal_s-;2
+.implab e_StdReal_szero;3
+.implab e_StdReal_s*;4
+.implab e_StdReal_s/;5
+.implab e_StdReal_s^;7
+.implab e_StdReal_sabs;8
+.implab e_StdReal_ssign;9
+.implab e_StdReal_s~;10
+.implab e_StdReal_s==;11
+.implab e_StdReal_s<;12
+.implab e_StdReal_stoReal;13
+.implab e_StdReal_ssqrt;22
+.implab e_StdReal_ssin;23
+.implab e_StdReal_scos;24
+.implab e_StdReal_stan;25
+.implab e_StdReal_sasin;26
+.implab e_StdReal_sacos;27
+.implab e_StdReal_satan;28
+.implab e_StdInt_s-;7
+.implab e_StdInt_stoInt;22
+.implab e_StdBool_snot
+.implab e_StdEnvExt_s+++>
+.implab e_StdEnvExt_sisbetween
+.implab e_StdEnvExt_sminmax
+.impdesc e_StdOverloaded_r<;
+.impdesc e_StdOverloaded_rtoString;
+.record k172 dr 0 1 "Metre"
+.export e_Geometry_rPosition
+.record e_Geometry_rPosition aa 2 0 "Position"
+.descexp e_Geometry_tPosition e_Geometry_cPosition _hnf 2 1 "Position"
+.n 2 e_Geometry_tPosition
+.o 1 0
+e_Geometry_cPosition
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_dPosition.px
+.export e_Geometry_nPosition.px
+.export e_Geometry_eaPosition.px
+.descs e_Geometry_dPosition.px e_Geometry_nPosition.px _ 1 0 "Position.px"
+.n -4 e_Geometry_dPosition.px e_Geometry_eaPosition.px
+.o 1 0
+e_Geometry_nPosition.px
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaPosition.px
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dPosition.py
+.export e_Geometry_nPosition.py
+.export e_Geometry_eaPosition.py
+.descs e_Geometry_dPosition.py e_Geometry_nPosition.py _ 2 0 "Position.py"
+.n -4 e_Geometry_dPosition.py e_Geometry_eaPosition.py
+.o 1 0
+e_Geometry_nPosition.py
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaPosition.py
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rPosition3D
+.record e_Geometry_rPosition3D aa 2 0 "Position3D"
+.descexp e_Geometry_tPosition3D e_Geometry_cPosition3D _hnf 2 1 "Position3D"
+.n 2 e_Geometry_tPosition3D
+.o 1 0
+e_Geometry_cPosition3D
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_dPosition3D.pxy
+.export e_Geometry_nPosition3D.pxy
+.descs e_Geometry_dPosition3D.pxy e_Geometry_nPosition3D.pxy _ 1 0 "Position3D.pxy"
+.n -4 e_Geometry_dPosition3D.pxy
+.o 1 0
+e_Geometry_nPosition3D.pxy
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dPosition3D.pz
+.export e_Geometry_nPosition3D.pz
+.export e_Geometry_eaPosition3D.pz
+.descs e_Geometry_dPosition3D.pz e_Geometry_nPosition3D.pz _ 2 0 "Position3D.pz"
+.n -4 e_Geometry_dPosition3D.pz e_Geometry_eaPosition3D.pz
+.o 1 0
+e_Geometry_nPosition3D.pz
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaPosition3D.pz
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.record k174 dr 0 1 "Radian"
+.export e_Geometry_rRVector
+.record e_Geometry_rRVector aa 2 0 "RVector"
+.descexp e_Geometry_tRVector e_Geometry_cRVector _hnf 2 1 "RVector"
+.n 2 e_Geometry_tRVector
+.o 1 0
+e_Geometry_cRVector
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_dRVector.dx
+.export e_Geometry_nRVector.dx
+.export e_Geometry_eaRVector.dx
+.descs e_Geometry_dRVector.dx e_Geometry_nRVector.dx _ 1 0 "RVector.dx"
+.n -4 e_Geometry_dRVector.dx e_Geometry_eaRVector.dx
+.o 1 0
+e_Geometry_nRVector.dx
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaRVector.dx
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dRVector.dy
+.export e_Geometry_nRVector.dy
+.export e_Geometry_eaRVector.dy
+.descs e_Geometry_dRVector.dy e_Geometry_nRVector.dy _ 2 0 "RVector.dy"
+.n -4 e_Geometry_dRVector.dy e_Geometry_eaRVector.dy
+.o 1 0
+e_Geometry_nRVector.dy
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaRVector.dy
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rRVector3D
+.record e_Geometry_rRVector3D aa 2 0 "RVector3D"
+.descexp e_Geometry_tRVector3D e_Geometry_cRVector3D _hnf 2 1 "RVector3D"
+.n 2 e_Geometry_tRVector3D
+.o 1 0
+e_Geometry_cRVector3D
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_dRVector3D.dxy
+.export e_Geometry_nRVector3D.dxy
+.descs e_Geometry_dRVector3D.dxy e_Geometry_nRVector3D.dxy _ 1 0 "RVector3D.dxy"
+.n -4 e_Geometry_dRVector3D.dxy
+.o 1 0
+e_Geometry_nRVector3D.dxy
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dRVector3D.dz
+.export e_Geometry_nRVector3D.dz
+.export e_Geometry_eaRVector3D.dz
+.descs e_Geometry_dRVector3D.dz e_Geometry_nRVector3D.dz _ 2 0 "RVector3D.dz"
+.n -4 e_Geometry_dRVector3D.dz e_Geometry_eaRVector3D.dz
+.o 1 0
+e_Geometry_nRVector3D.dz
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaRVector3D.dz
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.record k173 dr 0 1 "MetrePerSecond"
+.export e_Geometry_rSpeed
+.record e_Geometry_rSpeed aa 2 0 "Speed"
+.descexp e_Geometry_tSpeed e_Geometry_cSpeed _hnf 2 1 "Speed"
+.n 2 e_Geometry_tSpeed
+.o 1 0
+e_Geometry_cSpeed
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Geometry_rSpeed 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_dSpeed.direction
+.export e_Geometry_nSpeed.direction
+.export e_Geometry_eaSpeed.direction
+.descs e_Geometry_dSpeed.direction e_Geometry_nSpeed.direction _ 1 0 "Speed.direction"
+.n -4 e_Geometry_dSpeed.direction e_Geometry_eaSpeed.direction
+.o 1 0
+e_Geometry_nSpeed.direction
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaSpeed.direction
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dSpeed.velocity
+.export e_Geometry_nSpeed.velocity
+.export e_Geometry_eaSpeed.velocity
+.descs e_Geometry_dSpeed.velocity e_Geometry_nSpeed.velocity _ 2 0 "Speed.velocity"
+.n -4 e_Geometry_dSpeed.velocity e_Geometry_eaSpeed.velocity
+.o 1 0
+e_Geometry_nSpeed.velocity
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaSpeed.velocity
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rSpeed3D
+.record e_Geometry_rSpeed3D aa 2 0 "Speed3D"
+.descexp e_Geometry_tSpeed3D e_Geometry_cSpeed3D _hnf 2 1 "Speed3D"
+.n 2 e_Geometry_tSpeed3D
+.o 1 0
+e_Geometry_cSpeed3D
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Geometry_rSpeed3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_dSpeed3D.vxy
+.export e_Geometry_nSpeed3D.vxy
+.descs e_Geometry_dSpeed3D.vxy e_Geometry_nSpeed3D.vxy _ 1 0 "Speed3D.vxy"
+.n -4 e_Geometry_dSpeed3D.vxy
+.o 1 0
+e_Geometry_nSpeed3D.vxy
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dSpeed3D.vz
+.export e_Geometry_nSpeed3D.vz
+.export e_Geometry_eaSpeed3D.vz
+.descs e_Geometry_dSpeed3D.vz e_Geometry_nSpeed3D.vz _ 2 0 "Speed3D.vz"
+.n -4 e_Geometry_dSpeed3D.vz e_Geometry_eaSpeed3D.vz
+.o 1 0
+e_Geometry_nSpeed3D.vz
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaSpeed3D.vz
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rscale;
+.record e_Geometry_rscale; a 1 0 "scale;"
+.descexp e_Geometry_tscale; e_Geometry_cscale; _hnf 1 1 "scale;"
+.n 1 e_Geometry_tscale;
+.o 1 0
+e_Geometry_cscale;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rscale; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dscale;.scale
+.export e_Geometry_nscale;.scale
+.export e_Geometry_eascale;.scale
+.descs e_Geometry_dscale;.scale e_Geometry_nscale;.scale _ 1 0 "scale;.scale"
+.n -4 e_Geometry_dscale;.scale e_Geometry_eascale;.scale
+.o 1 0
+e_Geometry_nscale;.scale
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eascale;.scale
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rtoPosition;
+.record e_Geometry_rtoPosition; a 1 0 "toPosition;"
+.descexp e_Geometry_ttoPosition; e_Geometry_ctoPosition; _hnf 1 1 "toPosition;"
+.n 1 e_Geometry_ttoPosition;
+.o 1 0
+e_Geometry_ctoPosition;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rtoPosition; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dtoPosition;.toPosition
+.export e_Geometry_ntoPosition;.toPosition
+.export e_Geometry_eatoPosition;.toPosition
+.descs e_Geometry_dtoPosition;.toPosition e_Geometry_ntoPosition;.toPosition _ 1 0 "toPosition;.toPosition"
+.n -4 e_Geometry_dtoPosition;.toPosition e_Geometry_eatoPosition;.toPosition
+.o 1 0
+e_Geometry_ntoPosition;.toPosition
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eatoPosition;.toPosition
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rfromPosition;
+.record e_Geometry_rfromPosition; a 1 0 "fromPosition;"
+.descexp e_Geometry_tfromPosition; e_Geometry_cfromPosition; _hnf 1 1 "fromPosition;"
+.n 1 e_Geometry_tfromPosition;
+.o 1 0
+e_Geometry_cfromPosition;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rfromPosition; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dfromPosition;.fromPosition
+.export e_Geometry_nfromPosition;.fromPosition
+.export e_Geometry_eafromPosition;.fromPosition
+.descs e_Geometry_dfromPosition;.fromPosition e_Geometry_nfromPosition;.fromPosition _ 1 0 "fromPosition;.fromPosition"
+.n -4 e_Geometry_dfromPosition;.fromPosition e_Geometry_eafromPosition;.fromPosition
+.o 1 0
+e_Geometry_nfromPosition;.fromPosition
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eafromPosition;.fromPosition
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rtoPosition3D;
+.record e_Geometry_rtoPosition3D; a 1 0 "toPosition3D;"
+.descexp e_Geometry_ttoPosition3D; e_Geometry_ctoPosition3D; _hnf 1 1 "toPosition3D;"
+.n 1 e_Geometry_ttoPosition3D;
+.o 1 0
+e_Geometry_ctoPosition3D;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rtoPosition3D; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dtoPosition3D;.toPosition3D
+.export e_Geometry_ntoPosition3D;.toPosition3D
+.export e_Geometry_eatoPosition3D;.toPosition3D
+.descs e_Geometry_dtoPosition3D;.toPosition3D e_Geometry_ntoPosition3D;.toPosition3D _ 1 0 "toPosition3D;.toPosition3D"
+.n -4 e_Geometry_dtoPosition3D;.toPosition3D e_Geometry_eatoPosition3D;.toPosition3D
+.o 1 0
+e_Geometry_ntoPosition3D;.toPosition3D
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eatoPosition3D;.toPosition3D
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rfromPosition3D;
+.record e_Geometry_rfromPosition3D; a 1 0 "fromPosition3D;"
+.descexp e_Geometry_tfromPosition3D; e_Geometry_cfromPosition3D; _hnf 1 1 "fromPosition3D;"
+.n 1 e_Geometry_tfromPosition3D;
+.o 1 0
+e_Geometry_cfromPosition3D;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rfromPosition3D; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dfromPosition3D;.fromPosition3D
+.export e_Geometry_nfromPosition3D;.fromPosition3D
+.export e_Geometry_eafromPosition3D;.fromPosition3D
+.descs e_Geometry_dfromPosition3D;.fromPosition3D e_Geometry_nfromPosition3D;.fromPosition3D _ 1 0 "fromPosition3D;.fromPosition3D"
+.n -4 e_Geometry_dfromPosition3D;.fromPosition3D e_Geometry_eafromPosition3D;.fromPosition3D
+.o 1 0
+e_Geometry_nfromPosition3D;.fromPosition3D
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eafromPosition3D;.fromPosition3D
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rtoRVector;
+.record e_Geometry_rtoRVector; a 1 0 "toRVector;"
+.descexp e_Geometry_ttoRVector; e_Geometry_ctoRVector; _hnf 1 1 "toRVector;"
+.n 1 e_Geometry_ttoRVector;
+.o 1 0
+e_Geometry_ctoRVector;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rtoRVector; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dtoRVector;.toRVector
+.export e_Geometry_ntoRVector;.toRVector
+.export e_Geometry_eatoRVector;.toRVector
+.descs e_Geometry_dtoRVector;.toRVector e_Geometry_ntoRVector;.toRVector _ 1 0 "toRVector;.toRVector"
+.n -4 e_Geometry_dtoRVector;.toRVector e_Geometry_eatoRVector;.toRVector
+.o 1 0
+e_Geometry_ntoRVector;.toRVector
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eatoRVector;.toRVector
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rtoSpeed;
+.record e_Geometry_rtoSpeed; a 1 0 "toSpeed;"
+.descexp e_Geometry_ttoSpeed; e_Geometry_ctoSpeed; _hnf 1 1 "toSpeed;"
+.n 1 e_Geometry_ttoSpeed;
+.o 1 0
+e_Geometry_ctoSpeed;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rtoSpeed; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dtoSpeed;.toSpeed
+.export e_Geometry_ntoSpeed;.toSpeed
+.export e_Geometry_eatoSpeed;.toSpeed
+.descs e_Geometry_dtoSpeed;.toSpeed e_Geometry_ntoSpeed;.toSpeed _ 1 0 "toSpeed;.toSpeed"
+.n -4 e_Geometry_dtoSpeed;.toSpeed e_Geometry_eatoSpeed;.toSpeed
+.o 1 0
+e_Geometry_ntoSpeed;.toSpeed
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eatoSpeed;.toSpeed
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rfromSpeed;
+.record e_Geometry_rfromSpeed; a 1 0 "fromSpeed;"
+.descexp e_Geometry_tfromSpeed; e_Geometry_cfromSpeed; _hnf 1 1 "fromSpeed;"
+.n 1 e_Geometry_tfromSpeed;
+.o 1 0
+e_Geometry_cfromSpeed;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rfromSpeed; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dfromSpeed;.fromSpeed
+.export e_Geometry_nfromSpeed;.fromSpeed
+.export e_Geometry_eafromSpeed;.fromSpeed
+.descs e_Geometry_dfromSpeed;.fromSpeed e_Geometry_nfromSpeed;.fromSpeed _ 1 0 "fromSpeed;.fromSpeed"
+.n -4 e_Geometry_dfromSpeed;.fromSpeed e_Geometry_eafromSpeed;.fromSpeed
+.o 1 0
+e_Geometry_nfromSpeed;.fromSpeed
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eafromSpeed;.fromSpeed
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rtoSpeed3D;
+.record e_Geometry_rtoSpeed3D; a 1 0 "toSpeed3D;"
+.descexp e_Geometry_ttoSpeed3D; e_Geometry_ctoSpeed3D; _hnf 1 1 "toSpeed3D;"
+.n 1 e_Geometry_ttoSpeed3D;
+.o 1 0
+e_Geometry_ctoSpeed3D;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rtoSpeed3D; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dtoSpeed3D;.toSpeed3D
+.export e_Geometry_ntoSpeed3D;.toSpeed3D
+.export e_Geometry_eatoSpeed3D;.toSpeed3D
+.descs e_Geometry_dtoSpeed3D;.toSpeed3D e_Geometry_ntoSpeed3D;.toSpeed3D _ 1 0 "toSpeed3D;.toSpeed3D"
+.n -4 e_Geometry_dtoSpeed3D;.toSpeed3D e_Geometry_eatoSpeed3D;.toSpeed3D
+.o 1 0
+e_Geometry_ntoSpeed3D;.toSpeed3D
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eatoSpeed3D;.toSpeed3D
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_rfromSpeed3D;
+.record e_Geometry_rfromSpeed3D; a 1 0 "fromSpeed3D;"
+.descexp e_Geometry_tfromSpeed3D; e_Geometry_cfromSpeed3D; _hnf 1 1 "fromSpeed3D;"
+.n 1 e_Geometry_tfromSpeed3D;
+.o 1 0
+e_Geometry_cfromSpeed3D;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Geometry_rfromSpeed3D; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Geometry_dfromSpeed3D;.fromSpeed3D
+.export e_Geometry_nfromSpeed3D;.fromSpeed3D
+.export e_Geometry_eafromSpeed3D;.fromSpeed3D
+.descs e_Geometry_dfromSpeed3D;.fromSpeed3D e_Geometry_nfromSpeed3D;.fromSpeed3D _ 1 0 "fromSpeed3D;.fromSpeed3D"
+.n -4 e_Geometry_dfromSpeed3D;.fromSpeed3D e_Geometry_eafromSpeed3D;.fromSpeed3D
+.o 1 0
+e_Geometry_nfromSpeed3D;.fromSpeed3D
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eafromSpeed3D;.fromSpeed3D
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.record r170 a 1 0 "coords;"
+.export e_Geometry_sfromSpeed3D;96
+.descexp e_Geometry_dfromSpeed3D;96 e_Geometry_nfromSpeed3D;96 e_Geometry_lfromSpeed3D;96 1 0 "fromSpeed3D;96"
+.o 2 0
+e_Geometry_lfromSpeed3D;96
+	pop_a 1
+.d 1 0
+	jsr ea97
+.o 2 0
+	build_r e_Geometry_rSpeed 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromSpeed3D;96
+.o 1 0
+e_Geometry_nfromSpeed3D;96
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea97
+.o 2 0
+	fill_r e_Geometry_rSpeed 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea97
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromSpeed3D;96
+.o 2 0
+s97
+	updatepop_a 0 1
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.export e_Geometry_stoSpeed3D;95
+.descexp e_Geometry_dtoSpeed3D;95 e_Geometry_ntoSpeed3D;95 e_Geometry_ltoSpeed3D;95 1 0 "toSpeed3D;95"
+.o 2 0
+e_Geometry_ltoSpeed3D;95
+	pop_a 1
+.d 1 0
+	jsr ea96
+.o 2 0
+	build_r e_Geometry_rSpeed3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoSpeed3D;95
+.o 1 0
+e_Geometry_ntoSpeed3D;95
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea96
+.o 2 0
+	fill_r e_Geometry_rSpeed3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea96
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoSpeed3D;95
+.o 2 0
+s96
+	build_r e_Geometry_rSpeed 2 0 0 0
+	buildh _Nil 0
+	update_a 0 2
+	update_a 0 3
+	pop_a 1
+.d 0 0
+	jsr s89
+.o 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_sfromSpeed;94
+.descexp e_Geometry_dfromSpeed;94 e_Geometry_nfromSpeed;94 e_Geometry_lfromSpeed;94 1 0 "fromSpeed;94"
+.o 2 0
+e_Geometry_lfromSpeed;94
+	pop_a 1
+.d 1 0
+	jsr ea95
+.o 2 0
+	build_r e_Geometry_rSpeed3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromSpeed;94
+.o 1 0
+e_Geometry_nfromSpeed;94
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea95
+.o 2 0
+	fill_r e_Geometry_rSpeed3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea95
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromSpeed;94
+.o 2 0
+s95
+	build_r e_Geometry_rSpeed 2 0 0 0
+	buildh _Nil 0
+	update_a 0 2
+	update_a 0 3
+	pop_a 1
+.d 0 0
+	jsr s89
+.o 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_stoSpeed;93
+.descexp e_Geometry_dtoSpeed;93 e_Geometry_ntoSpeed;93 e_Geometry_ltoSpeed;93 1 0 "toSpeed;93"
+.o 2 0
+e_Geometry_ltoSpeed;93
+	pop_a 1
+.d 1 0
+	jsr ea94
+.o 2 0
+	build_r e_Geometry_rSpeed 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoSpeed;93
+.o 1 0
+e_Geometry_ntoSpeed;93
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea94
+.o 2 0
+	fill_r e_Geometry_rSpeed 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea94
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoSpeed;93
+.o 2 0
+s94
+	updatepop_a 0 1
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.export e_Geometry_stoString;92
+.descexp e_Geometry_dtoString;92 e_Geometry_ntoString;92 e_Geometry_ltoString;92 1 0 "toString;92"
+.o 2 0
+e_Geometry_ltoString;92
+	pop_a 1
+.d 1 0
+	jsr ea93
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;92
+.o 1 0
+e_Geometry_ntoString;92
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea93
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea93
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoString;92
+.o 2 0
+s93
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s86
+.o 1 0
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC ",vz="
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_r_args 1 2 0
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 0
+	jsr s92
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "{vxy="
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_Geometry_stoString;91
+.descexp e_Geometry_dtoString;91 e_Geometry_ntoString;91 e_Geometry_ltoString;91 1 0 "toString;91"
+.o 2 0
+e_Geometry_ltoString;91
+	pop_a 1
+.d 1 0
+	jsr ea92
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;91
+.o 1 0
+e_Geometry_ntoString;91
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea92
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea92
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoString;91
+.o 2 0
+s92
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s86
+.o 1 0
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC ",velocity="
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr s55
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "{direction="
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_Geometry_s==;90
+.descexp e_Geometry_d==;90 e_Geometry_n==;90 e_Geometry_l==;90 2 0 "==;90"
+.a 0 a91
+.o 2 0
+e_Geometry_l==;90
+	repl_args 1 1
+.o 2 0
+a91
+.d 2 0
+	jsr ea91
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;90
+.o 1 0
+e_Geometry_n==;90
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea91
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea91
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s==;90
+.o 4 0
+s91
+	push_r_args 2 2 0
+	push_r_args 2 2 0
+.d 4 0
+	jsr s90
+.o 0 1 b
+	jmp_false else.1
+	push_a 3
+	push_a 2
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jmp s83
+else.1
+	pop_a 4
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Geometry_s==;89
+.descexp e_Geometry_d==;89 e_Geometry_n==;89 e_Geometry_l==;89 2 0 "==;89"
+.a 0 a90
+.o 2 0
+e_Geometry_l==;89
+	repl_args 1 1
+.o 2 0
+a90
+.d 2 0
+	jsr ea90
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;89
+.o 1 0
+e_Geometry_n==;89
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea90
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea90
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s==;89
+.o 4 0
+s90
+	push_a 2
+	push_a 1
+.d 2 0
+	jsr s51
+.o 0 1 b
+	jmp_false else.2
+	push_a 3
+	push_a 2
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jmp s83
+else.2
+	pop_a 4
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Geometry_szero;88
+.descexp e_Geometry_dzero;88 e_Geometry_nzero;88 e_Geometry_lzero;88 0 0 "zero;88"
+.o 1 0
+e_Geometry_lzero;88
+	halt
+.n 0 e_Geometry_dzero;88
+.o 1 0
+e_Geometry_nzero;88
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea89
+.o 2 0
+	fill_r e_Geometry_rSpeed3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea89
+.o 0 0
+e_Geometry_szero;88
+.o 0 0
+s89
+	create
+.d 1 0
+	jsr s77
+.o 1 0
+.d 0 0
+	jsr s88
+.o 2 0
+	build_r e_Geometry_rSpeed 2 0 0 0
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_szero;87
+.descexp e_Geometry_dzero;87 e_Geometry_nzero;87 e_Geometry_lzero;87 0 0 "zero;87"
+.o 1 0
+e_Geometry_lzero;87
+	halt
+.n 0 e_Geometry_dzero;87
+.o 1 0
+e_Geometry_nzero;87
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea88
+.o 2 0
+	fill_r e_Geometry_rSpeed 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea88
+.o 0 0
+e_Geometry_szero;87
+.o 0 0
+s88
+	create
+.d 1 0
+	jsr s77
+.o 1 0
+	create
+.d 1 0
+	jsr s45
+.o 1 0
+.d 2 0
+	rtn
+.export e_Geometry_sscale;86
+.export e_Geometry_eascale;86
+.descexp e_Geometry_dscale;86 e_Geometry_nscale;86 e_Geometry_lscale;86 2 0 "scale;86"
+.a 2 e_Geometry_eascale;86
+.o 2 0
+e_Geometry_lscale;86
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_eascale;86
+.n 2 e_Geometry_dscale;86 e_Geometry_eascale;86
+.o 1 0
+e_Geometry_nscale;86
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_eascale;86
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 2 1 r
+e_Geometry_sscale;86
+.o 2 1 r
+s87
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	mulR
+	fill_r k173 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Geometry_stoString;85
+.descexp e_Geometry_dtoString;85 e_Geometry_ntoString;85 e_Geometry_ltoString;85 1 0 "toString;85"
+.o 2 0
+e_Geometry_ltoString;85
+	pop_a 1
+.d 1 0
+	jsr ea86
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;85
+.o 1 0
+e_Geometry_ntoString;85
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea86
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea86
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoString;85
+.o 1 0
+s86
+	repl_r_args 0 1
+	buildh e_StdString_dtoString;7 0
+	buildAC "m/s"
+	buildR_b 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+.d 3 0
+	jmp e_StdEnvExt_s+++>
+.export e_Geometry_stoReal;84
+.descexp e_Geometry_dtoReal;84 e_Geometry_ntoReal;84 e_Geometry_ltoReal;84 1 0 "toReal;84"
+.o 2 0
+e_Geometry_ltoReal;84
+	pop_a 1
+.d 1 0
+	jsr ea85
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoReal;84
+.o 1 0
+e_Geometry_ntoReal;84
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea85
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea85
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoReal;84
+.o 1 0
+s85
+	repl_r_args 0 1
+.d 0 1 r
+	rtn
+.export e_Geometry_s<;83
+.descexp e_Geometry_d<;83 e_Geometry_n<;83 e_Geometry_l<;83 2 0 "<;83"
+.a 0 a84
+.o 2 0
+e_Geometry_l<;83
+	repl_args 1 1
+.o 2 0
+a84
+.d 2 0
+	jsr ea84
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d<;83
+.o 1 0
+e_Geometry_n<;83
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea84
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea84
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_s<;83
+.o 2 0
+s84
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	ltR
+.d 0 1 b
+	rtn
+.export e_Geometry_s==;82
+.descexp e_Geometry_d==;82 e_Geometry_n==;82 e_Geometry_l==;82 2 0 "==;82"
+.a 0 a83
+.o 2 0
+e_Geometry_l==;82
+	repl_args 1 1
+.o 2 0
+a83
+.d 2 0
+	jsr ea83
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;82
+.o 1 0
+e_Geometry_n==;82
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea83
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea83
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_s==;82
+.o 2 0
+s83
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	eqR
+.d 0 1 b
+	rtn
+.export e_Geometry_s~;81
+.export e_Geometry_ea~;81
+.descexp e_Geometry_d~;81 e_Geometry_n~;81 e_Geometry_l~;81 1 0 "~;81"
+.o 2 0
+e_Geometry_l~;81
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_ea~;81
+.n 1 e_Geometry_d~;81 e_Geometry_ea~;81
+.o 1 0
+e_Geometry_n~;81
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_ea~;81
+	jsr_eval 0
+.o 2 0
+e_Geometry_s~;81
+.o 2 0
+s82
+	repl_r_args 0 1
+	push_b 0
+	negR
+	fill_r k173 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_ssign;80
+.descexp e_Geometry_dsign;80 e_Geometry_nsign;80 e_Geometry_lsign;80 1 0 "sign;80"
+.o 2 0
+e_Geometry_lsign;80
+	pop_a 1
+.d 1 0
+	jsr ea81
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dsign;80
+.o 1 0
+e_Geometry_nsign;80
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea81
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea81
+	jsr_eval 0
+.o 1 0
+e_Geometry_ssign;80
+.o 1 0
+s81
+	repl_r_args 0 1
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 r
+	jmp e_StdReal_ssign;9
+.export e_Geometry_sabs;79
+.export e_Geometry_eaabs;79
+.descexp e_Geometry_dabs;79 e_Geometry_nabs;79 e_Geometry_labs;79 1 0 "abs;79"
+.o 2 0
+e_Geometry_labs;79
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eaabs;79
+.n 1 e_Geometry_dabs;79 e_Geometry_eaabs;79
+.o 1 0
+e_Geometry_nabs;79
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaabs;79
+	jsr_eval 0
+.o 2 0
+e_Geometry_sabs;79
+.o 2 0
+s80
+	repl_r_args 0 1
+	push_b 0
+	absR
+	fill_r k173 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_s-;78
+.export e_Geometry_ea-;78
+.descexp e_Geometry_d-;78 e_Geometry_n-;78 e_Geometry_l-;78 2 0 "-;78"
+.a 2 e_Geometry_ea-;78
+.o 2 0
+e_Geometry_l-;78
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_ea-;78
+.n 2 e_Geometry_d-;78 e_Geometry_ea-;78
+.o 1 0
+e_Geometry_n-;78
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_ea-;78
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_s-;78
+.o 3 0
+s79
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	subR
+	fill_r k173 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Geometry_s+;77
+.export e_Geometry_ea+;77
+.descexp e_Geometry_d+;77 e_Geometry_n+;77 e_Geometry_l+;77 2 0 "+;77"
+.a 2 e_Geometry_ea+;77
+.o 2 0
+e_Geometry_l+;77
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_ea+;77
+.n 2 e_Geometry_d+;77 e_Geometry_ea+;77
+.o 1 0
+e_Geometry_n+;77
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_ea+;77
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_s+;77
+.o 3 0
+s78
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	addR
+	fill_r k173 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Geometry_szero;76
+.export e_Geometry_eazero;76
+.descexp e_Geometry_dzero;76 e_Geometry_nzero;76 e_Geometry_lzero;76 0 0 "zero;76"
+.o 1 0
+e_Geometry_lzero;76
+	halt
+.n 0 e_Geometry_dzero;76 e_Geometry_eazero;76
+.o 1 0
+e_Geometry_nzero;76
+	push_node _cycle_in_spine 0
+.o 1 0
+e_Geometry_eazero;76
+.o 1 0
+e_Geometry_szero;76
+.o 1 0
+s77
+	pushR 0.0
+	fill_r k173 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_sscale;75
+.descexp e_Geometry_dscale;75 e_Geometry_nscale;75 e_Geometry_lscale;75 2 0 "scale;75"
+.a 0 a76
+.o 2 0
+e_Geometry_lscale;75
+	repl_args 1 1
+.o 2 0
+a76
+.d 2 0
+	jsr ea76
+.o 2 0
+	build_r e_Geometry_rRVector3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_dscale;75
+.o 1 0
+e_Geometry_nscale;75
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea76
+.o 2 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea76
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	pushR_a 2
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 2 1 r
+e_Geometry_sscale;75
+.o 2 1 r
+s76
+	create
+	push_a 2
+	push_b 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 r
+	jsr s26
+.o 1 0
+	push_r_args 1 2 0
+	push_b 0
+	updatepop_b 0 1
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 1 r
+	jsr s75
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_s~;73
+.descexp e_Geometry_d~;73 e_Geometry_n~;73 e_Geometry_l~;73 1 0 "~;73"
+.o 2 0
+e_Geometry_l~;73
+	pop_a 1
+.d 1 0
+	jsr ea74
+.o 2 0
+	build_r e_Geometry_rRVector3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_d~;73
+.o 1 0
+e_Geometry_n~;73
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea74
+.o 2 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea74
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_s~;73
+.o 2 0
+s74
+.d 0 0
+	jsr s70
+.o 2 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s68
+.export e_Geometry_s~;72
+.descexp e_Geometry_d~;72 e_Geometry_n~;72 e_Geometry_l~;72 1 0 "~;72"
+.o 2 0
+e_Geometry_l~;72
+	pop_a 1
+.d 1 0
+	jsr ea73
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_d~;72
+.o 1 0
+e_Geometry_n~;72
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea73
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea73
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_s~;72
+.o 2 0
+s73
+.d 0 0
+	jsr s69
+.o 2 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s67
+.export e_Geometry_sone;71
+.descexp e_Geometry_done;71 e_Geometry_none;71 e_Geometry_lone;71 0 0 "one;71"
+.o 1 0
+e_Geometry_lone;71
+	halt
+.n 0 e_Geometry_done;71
+.o 1 0
+e_Geometry_none;71
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea72
+.o 2 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea72
+.o 0 0
+e_Geometry_sone;71
+.o 0 0
+s72
+	create
+	pushR 1.0
+.d 1 1 r
+	jsr s1
+.o 1 0
+.d 0 0
+	jsr s71
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_sone;70
+.descexp e_Geometry_done;70 e_Geometry_none;70 e_Geometry_lone;70 0 0 "one;70"
+.o 1 0
+e_Geometry_lone;70
+	halt
+.n 0 e_Geometry_done;70
+.o 1 0
+e_Geometry_none;70
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea71
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea71
+.o 0 0
+e_Geometry_sone;70
+.o 0 0
+s71
+	create
+	pushR 1.0
+.d 1 1 r
+	jsr s1
+.o 1 0
+	create
+	pushR 1.0
+.d 1 1 r
+	jsr s1
+.o 1 0
+.d 2 0
+	rtn
+.export e_Geometry_s-;67
+.descexp e_Geometry_d-;67 e_Geometry_n-;67 e_Geometry_l-;67 2 0 "-;67"
+.a 0 a68
+.o 2 0
+e_Geometry_l-;67
+	repl_args 1 1
+.o 2 0
+a68
+.d 2 0
+	jsr ea68
+.o 2 0
+	build_r e_Geometry_rRVector3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_d-;67
+.o 1 0
+e_Geometry_n-;67
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea68
+.o 2 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea68
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s-;67
+.o 4 0
+s68
+	push_a 3
+	push_a 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_r_args 3 2 0
+	push_r_args 3 2 0
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 4 0
+	jsr s67
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	rtn
+.export e_Geometry_s-;66
+.descexp e_Geometry_d-;66 e_Geometry_n-;66 e_Geometry_l-;66 2 0 "-;66"
+.a 0 a67
+.o 2 0
+e_Geometry_l-;66
+	repl_args 1 1
+.o 2 0
+a67
+.d 2 0
+	jsr ea67
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_d-;66
+.o 1 0
+e_Geometry_n-;66
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea67
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea67
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s-;66
+.o 4 0
+s67
+	push_a 3
+	push_a 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_a 3
+	push_a 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	rtn
+.export e_Geometry_s+;65
+.descexp e_Geometry_d+;65 e_Geometry_n+;65 e_Geometry_l+;65 2 0 "+;65"
+.a 0 a66
+.o 2 0
+e_Geometry_l+;65
+	repl_args 1 1
+.o 2 0
+a66
+.d 2 0
+	jsr ea66
+.o 2 0
+	build_r e_Geometry_rRVector3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_d+;65
+.o 1 0
+e_Geometry_n+;65
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea66
+.o 2 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea66
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s+;65
+.o 4 0
+s66
+	push_a 3
+	push_a 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s17
+.o 1 0
+	push_r_args 3 2 0
+	push_r_args 3 2 0
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 4 0
+	jsr s65
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	rtn
+.export e_Geometry_s+;64
+.descexp e_Geometry_d+;64 e_Geometry_n+;64 e_Geometry_l+;64 2 0 "+;64"
+.a 0 a65
+.o 2 0
+e_Geometry_l+;64
+	repl_args 1 1
+.o 2 0
+a65
+.d 2 0
+	jsr ea65
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_d+;64
+.o 1 0
+e_Geometry_n+;64
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea65
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea65
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s+;64
+.o 4 0
+s65
+	push_a 3
+	push_a 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s17
+.o 1 0
+	push_a 3
+	push_a 2
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s17
+.o 1 0
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	rtn
+.export e_Geometry_stoRVector;63
+.descexp e_Geometry_dtoRVector;63 e_Geometry_ntoRVector;63 e_Geometry_ltoRVector;63 1 0 "toRVector;63"
+.o 2 0
+e_Geometry_ltoRVector;63
+	pop_a 1
+.d 1 0
+	jsr ea64
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoRVector;63
+.o 1 0
+e_Geometry_ntoRVector;63
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea64
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea64
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoRVector;63
+.o 2 0
+s64
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_stoRVector;62
+.descexp e_Geometry_dtoRVector;62 e_Geometry_ntoRVector;62 e_Geometry_ltoRVector;62 1 0 "toRVector;62"
+.o 2 0
+e_Geometry_ltoRVector;62
+	pop_a 1
+.d 1 0
+	jsr ea63
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoRVector;62
+.o 1 0
+e_Geometry_ntoRVector;62
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea63
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea63
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoRVector;62
+.o 1 0
+s63
+	repl_r_args 0 1
+	push_b 0
+	sinR
+	build_r k172 0 1 0 0
+	pop_b 1
+	push_b 0
+	cosR
+	build_r k172 0 1 0 0
+	pop_b 1
+	pop_b 1
+.d 2 0
+	rtn
+.export e_Geometry_sarctangens;61
+.export e_Geometry_eaarctangens;61
+.descexp e_Geometry_darctangens;61 e_Geometry_narctangens;61 e_Geometry_larctangens;61 1 0 "arctangens;61"
+.o 2 0
+e_Geometry_larctangens;61
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eaarctangens;61
+.n 1 e_Geometry_darctangens;61 e_Geometry_eaarctangens;61
+.o 1 0
+e_Geometry_narctangens;61
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaarctangens;61
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Geometry_sarctangens;61
+.o 1 1 r
+s62
+	push_b 0
+	atanR
+	fill_r k174 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_sarccosinus;60
+.export e_Geometry_eaarccosinus;60
+.descexp e_Geometry_darccosinus;60 e_Geometry_narccosinus;60 e_Geometry_larccosinus;60 1 0 "arccosinus;60"
+.o 2 0
+e_Geometry_larccosinus;60
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eaarccosinus;60
+.n 1 e_Geometry_darccosinus;60 e_Geometry_eaarccosinus;60
+.o 1 0
+e_Geometry_narccosinus;60
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaarccosinus;60
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Geometry_sarccosinus;60
+.o 1 1 r
+s61
+	push_b 0
+	acosR
+	fill_r k174 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_sarcsinus;59
+.export e_Geometry_eaarcsinus;59
+.descexp e_Geometry_darcsinus;59 e_Geometry_narcsinus;59 e_Geometry_larcsinus;59 1 0 "arcsinus;59"
+.o 2 0
+e_Geometry_larcsinus;59
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eaarcsinus;59
+.n 1 e_Geometry_darcsinus;59 e_Geometry_eaarcsinus;59
+.o 1 0
+e_Geometry_narcsinus;59
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaarcsinus;59
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Geometry_sarcsinus;59
+.o 1 1 r
+s60
+	push_b 0
+	asinR
+	fill_r k174 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_stangens;58
+.descexp e_Geometry_dtangens;58 e_Geometry_ntangens;58 e_Geometry_ltangens;58 1 0 "tangens;58"
+.o 2 0
+e_Geometry_ltangens;58
+	pop_a 1
+.d 1 0
+	jsr ea59
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtangens;58
+.o 1 0
+e_Geometry_ntangens;58
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea59
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea59
+	jsr_eval 0
+.o 1 0
+e_Geometry_stangens;58
+.o 1 0
+s59
+	repl_r_args 0 1
+	push_b 0
+	updatepop_b 0 1
+	tanR
+.d 0 1 r
+	rtn
+.export e_Geometry_scosinus;57
+.descexp e_Geometry_dcosinus;57 e_Geometry_ncosinus;57 e_Geometry_lcosinus;57 1 0 "cosinus;57"
+.o 2 0
+e_Geometry_lcosinus;57
+	pop_a 1
+.d 1 0
+	jsr ea58
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dcosinus;57
+.o 1 0
+e_Geometry_ncosinus;57
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea58
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea58
+	jsr_eval 0
+.o 1 0
+e_Geometry_scosinus;57
+.o 1 0
+s58
+	repl_r_args 0 1
+	push_b 0
+	updatepop_b 0 1
+	cosR
+.d 0 1 r
+	rtn
+.export e_Geometry_ssinus;56
+.descexp e_Geometry_dsinus;56 e_Geometry_nsinus;56 e_Geometry_lsinus;56 1 0 "sinus;56"
+.o 2 0
+e_Geometry_lsinus;56
+	pop_a 1
+.d 1 0
+	jsr ea57
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dsinus;56
+.o 1 0
+e_Geometry_nsinus;56
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea57
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea57
+	jsr_eval 0
+.o 1 0
+e_Geometry_ssinus;56
+.o 1 0
+s57
+	repl_r_args 0 1
+	push_b 0
+	updatepop_b 0 1
+	sinR
+.d 0 1 r
+	rtn
+.export e_Geometry_sscale;55
+.export e_Geometry_eascale;55
+.descexp e_Geometry_dscale;55 e_Geometry_nscale;55 e_Geometry_lscale;55 2 0 "scale;55"
+.a 2 e_Geometry_eascale;55
+.o 2 0
+e_Geometry_lscale;55
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_eascale;55
+.n 2 e_Geometry_dscale;55 e_Geometry_eascale;55
+.o 1 0
+e_Geometry_nscale;55
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_eascale;55
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 2 1 r
+e_Geometry_sscale;55
+.o 2 1 r
+s56
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	mulR
+	updatepop_b 0 2
+.d 0 1 r
+	jsr s98
+.o 0 1 r
+	fill_r k174 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_stoString;54
+.descexp e_Geometry_dtoString;54 e_Geometry_ntoString;54 e_Geometry_ltoString;54 1 0 "toString;54"
+.o 2 0
+e_Geometry_ltoString;54
+	pop_a 1
+.d 1 0
+	jsr ea55
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;54
+.o 1 0
+e_Geometry_ntoString;54
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea55
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea55
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoString;54
+.o 1 0
+s55
+	repl_r_args 0 1
+	buildh e_StdString_dtoString;7 0
+	buildAC " rad"
+	buildR_b 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+.d 3 0
+	jmp e_StdEnvExt_s+++>
+.export e_Geometry_stoInt;53
+.descexp e_Geometry_dtoInt;53 e_Geometry_ntoInt;53 e_Geometry_ltoInt;53 1 0 "toInt;53"
+.o 2 0
+e_Geometry_ltoInt;53
+	pop_a 1
+.d 1 0
+	jsr ea54
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoInt;53
+.o 1 0
+e_Geometry_ntoInt;53
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea54
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea54
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoInt;53
+.o 1 0
+s54
+	repl_r_args 0 1
+	pushR 180.0
+	push_b 1
+	mulR
+	pushR 3.1415926535897932384
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	updatepop_b 0 1
+	RtoI
+.d 0 1 i
+	rtn
+.export e_Geometry_stoReal;52
+.descexp e_Geometry_dtoReal;52 e_Geometry_ntoReal;52 e_Geometry_ltoReal;52 1 0 "toReal;52"
+.o 2 0
+e_Geometry_ltoReal;52
+	pop_a 1
+.d 1 0
+	jsr ea53
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoReal;52
+.o 1 0
+e_Geometry_ntoReal;52
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea53
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea53
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoReal;52
+.o 1 0
+s53
+	repl_r_args 0 1
+.d 0 1 r
+	rtn
+.export e_Geometry_s<;51
+.descexp e_Geometry_d<;51 e_Geometry_n<;51 e_Geometry_l<;51 2 0 "<;51"
+.a 0 a52
+.o 2 0
+e_Geometry_l<;51
+	repl_args 1 1
+.o 2 0
+a52
+.d 2 0
+	jsr ea52
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d<;51
+.o 1 0
+e_Geometry_n<;51
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea52
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea52
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_s<;51
+.o 2 0
+s52
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	ltR
+.d 0 1 b
+	rtn
+.export e_Geometry_s==;50
+.descexp e_Geometry_d==;50 e_Geometry_n==;50 e_Geometry_l==;50 2 0 "==;50"
+.a 0 a51
+.o 2 0
+e_Geometry_l==;50
+	repl_args 1 1
+.o 2 0
+a51
+.d 2 0
+	jsr ea51
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;50
+.o 1 0
+e_Geometry_n==;50
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea51
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea51
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_s==;50
+.o 2 0
+s51
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	eqR
+.d 0 1 b
+	rtn
+.export e_Geometry_s~;49
+.export e_Geometry_ea~;49
+.descexp e_Geometry_d~;49 e_Geometry_n~;49 e_Geometry_l~;49 1 0 "~;49"
+.o 2 0
+e_Geometry_l~;49
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_ea~;49
+.n 1 e_Geometry_d~;49 e_Geometry_ea~;49
+.o 1 0
+e_Geometry_n~;49
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_ea~;49
+	jsr_eval 0
+.o 2 0
+e_Geometry_s~;49
+.o 2 0
+s50
+	repl_r_args 0 1
+	push_b 0
+	negR
+	fill_r k174 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_ssign;48
+.descexp e_Geometry_dsign;48 e_Geometry_nsign;48 e_Geometry_lsign;48 1 0 "sign;48"
+.o 2 0
+e_Geometry_lsign;48
+	pop_a 1
+.d 1 0
+	jsr ea49
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dsign;48
+.o 1 0
+e_Geometry_nsign;48
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea49
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea49
+	jsr_eval 0
+.o 1 0
+e_Geometry_ssign;48
+.o 1 0
+s49
+	repl_r_args 0 1
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 r
+	jmp e_StdReal_ssign;9
+.export e_Geometry_sabs;47
+.export e_Geometry_eaabs;47
+.descexp e_Geometry_dabs;47 e_Geometry_nabs;47 e_Geometry_labs;47 1 0 "abs;47"
+.o 2 0
+e_Geometry_labs;47
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eaabs;47
+.n 1 e_Geometry_dabs;47 e_Geometry_eaabs;47
+.o 1 0
+e_Geometry_nabs;47
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaabs;47
+	jsr_eval 0
+.o 2 0
+e_Geometry_sabs;47
+.o 2 0
+s48
+	repl_r_args 0 1
+	push_b 0
+	absR
+	fill_r k174 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_szero;44
+.export e_Geometry_eazero;44
+.descexp e_Geometry_dzero;44 e_Geometry_nzero;44 e_Geometry_lzero;44 0 0 "zero;44"
+.o 1 0
+e_Geometry_lzero;44
+	halt
+.n 0 e_Geometry_dzero;44 e_Geometry_eazero;44
+.o 1 0
+e_Geometry_nzero;44
+	push_node _cycle_in_spine 0
+.o 1 0
+e_Geometry_eazero;44
+.o 1 0
+e_Geometry_szero;44
+.o 1 0
+s45
+	pushR 0.0
+	fill_r k174 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_sfromPosition3D;43
+.descexp e_Geometry_dfromPosition3D;43 e_Geometry_nfromPosition3D;43 e_Geometry_lfromPosition3D;43 1 0 "fromPosition3D;43"
+.o 2 0
+e_Geometry_lfromPosition3D;43
+	pop_a 1
+.d 1 0
+	jsr ea44
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromPosition3D;43
+.o 1 0
+e_Geometry_nfromPosition3D;43
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea44
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea44
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromPosition3D;43
+.o 2 0
+s44
+.d 2 0
+	rtn
+.export e_Geometry_sfromPosition3D;42
+.descexp e_Geometry_dfromPosition3D;42 e_Geometry_nfromPosition3D;42 e_Geometry_lfromPosition3D;42 1 0 "fromPosition3D;42"
+.o 2 0
+e_Geometry_lfromPosition3D;42
+	pop_a 1
+.d 1 0
+	jsr ea43
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromPosition3D;42
+.o 1 0
+e_Geometry_nfromPosition3D;42
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea43
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea43
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromPosition3D;42
+.o 2 0
+s43
+	updatepop_a 0 1
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.export e_Geometry_sfromPosition3D;41
+.descexp e_Geometry_dfromPosition3D;41 e_Geometry_nfromPosition3D;41 e_Geometry_lfromPosition3D;41 1 0 "fromPosition3D;41"
+.o 2 0
+e_Geometry_lfromPosition3D;41
+	pop_a 1
+.d 1 0
+	jsr ea42
+.o 3 0
+	push_a 2
+	push_a 2
+	push_a 2
+	buildh _Tuple 3
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromPosition3D;41
+.o 1 0
+e_Geometry_nfromPosition3D;41
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea42
+.o 3 0
+	push_a 2
+	push_a 2
+	push_a 2
+	fillh _Tuple 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.o 1 0
+ea42
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromPosition3D;41
+.o 2 0
+s42
+	push_a 1
+	push_r_args 1 2 0
+	pop_a 1
+	push_r_args 2 2 0
+	updatepop_a 0 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	rtn
+.export e_Geometry_stoPosition3D;40
+.descexp e_Geometry_dtoPosition3D;40 e_Geometry_ntoPosition3D;40 e_Geometry_ltoPosition3D;40 1 0 "toPosition3D;40"
+.o 2 0
+e_Geometry_ltoPosition3D;40
+	pop_a 1
+.d 1 0
+	jsr ea41
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoPosition3D;40
+.o 1 0
+e_Geometry_ntoPosition3D;40
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea41
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea41
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoPosition3D;40
+.o 2 0
+s41
+.d 2 0
+	rtn
+.export e_Geometry_stoPosition3D;38
+.descexp e_Geometry_dtoPosition3D;38 e_Geometry_ntoPosition3D;38 e_Geometry_ltoPosition3D;38 1 0 "toPosition3D;38"
+.o 2 0
+e_Geometry_ltoPosition3D;38
+	pop_a 1
+.d 1 0
+	jsr ea39
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoPosition3D;38
+.o 1 0
+e_Geometry_ntoPosition3D;38
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea39
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea39
+	jsr_eval 0
+	repl_args 3 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_stoPosition3D;38
+.o 3 0
+s39
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr s33
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_sfromPosition;37
+.descexp e_Geometry_dfromPosition;37 e_Geometry_nfromPosition;37 e_Geometry_lfromPosition;37 1 0 "fromPosition;37"
+.o 2 0
+e_Geometry_lfromPosition;37
+	pop_a 1
+.d 1 0
+	jsr ea38
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromPosition;37
+.o 1 0
+e_Geometry_nfromPosition;37
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea38
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea38
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromPosition;37
+.o 2 0
+s38
+	build_r e_Geometry_rPosition 2 0 0 0
+	buildh _Nil 0
+	update_a 0 2
+	update_a 0 3
+	pop_a 1
+.d 0 0
+	jsr s28
+.o 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_sfromPosition;36
+.descexp e_Geometry_dfromPosition;36 e_Geometry_nfromPosition;36 e_Geometry_lfromPosition;36 1 0 "fromPosition;36"
+.o 2 0
+e_Geometry_lfromPosition;36
+	pop_a 1
+.d 1 0
+	jsr ea37
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromPosition;36
+.o 1 0
+e_Geometry_nfromPosition;36
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea37
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea37
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromPosition;36
+.o 2 0
+s37
+.d 2 0
+	rtn
+.export e_Geometry_sfromPosition;35
+.descexp e_Geometry_dfromPosition;35 e_Geometry_nfromPosition;35 e_Geometry_lfromPosition;35 1 0 "fromPosition;35"
+.o 2 0
+e_Geometry_lfromPosition;35
+	pop_a 1
+.d 1 0
+	jsr ea36
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dfromPosition;35
+.o 1 0
+e_Geometry_nfromPosition;35
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea36
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea36
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_sfromPosition;35
+.o 2 0
+s36
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_stoPosition;34
+.descexp e_Geometry_dtoPosition;34 e_Geometry_ntoPosition;34 e_Geometry_ltoPosition;34 1 0 "toPosition;34"
+.o 2 0
+e_Geometry_ltoPosition;34
+	pop_a 1
+.d 1 0
+	jsr ea35
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoPosition;34
+.o 1 0
+e_Geometry_ntoPosition;34
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea35
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea35
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoPosition;34
+.o 2 0
+s35
+	updatepop_a 0 1
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.export e_Geometry_stoPosition;33
+.descexp e_Geometry_dtoPosition;33 e_Geometry_ntoPosition;33 e_Geometry_ltoPosition;33 1 0 "toPosition;33"
+.o 2 0
+e_Geometry_ltoPosition;33
+	pop_a 1
+.d 1 0
+	jsr ea34
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoPosition;33
+.o 1 0
+e_Geometry_ntoPosition;33
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea34
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea34
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoPosition;33
+.o 2 0
+s34
+.d 2 0
+	rtn
+.export e_Geometry_stoString;31
+.descexp e_Geometry_dtoString;31 e_Geometry_ntoString;31 e_Geometry_ltoString;31 1 0 "toString;31"
+.o 2 0
+e_Geometry_ltoString;31
+	pop_a 1
+.d 1 0
+	jsr ea32
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;31
+.o 1 0
+e_Geometry_ntoString;31
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea32
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea32
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoString;31
+.o 2 0
+s32
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s25
+.o 1 0
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC ",pz="
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_r_args 1 2 0
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 0
+	jsr s31
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "{pxy="
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_Geometry_stoString;30
+.descexp e_Geometry_dtoString;30 e_Geometry_ntoString;30 e_Geometry_ltoString;30 1 0 "toString;30"
+.o 2 0
+e_Geometry_ltoString;30
+	pop_a 1
+.d 1 0
+	jsr ea31
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;30
+.o 1 0
+e_Geometry_ntoString;30
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea31
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea31
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoString;30
+.o 2 0
+s31
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s25
+.o 1 0
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC ",py="
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr s25
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "{px="
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_Geometry_s==;29
+.descexp e_Geometry_d==;29 e_Geometry_n==;29 e_Geometry_l==;29 2 0 "==;29"
+.a 0 a30
+.o 2 0
+e_Geometry_l==;29
+	repl_args 1 1
+.o 2 0
+a30
+.d 2 0
+	jsr ea30
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;29
+.o 1 0
+e_Geometry_n==;29
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea30
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea30
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s==;29
+.o 4 0
+s30
+	push_r_args 2 2 0
+	push_r_args 2 2 0
+.d 4 0
+	jsr s29
+.o 0 1 b
+	jmp_false else.3
+	push_a 3
+	push_a 2
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jmp s22
+else.3
+	pop_a 4
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Geometry_s==;28
+.descexp e_Geometry_d==;28 e_Geometry_n==;28 e_Geometry_l==;28 2 0 "==;28"
+.a 0 a29
+.o 2 0
+e_Geometry_l==;28
+	repl_args 1 1
+.o 2 0
+a29
+.d 2 0
+	jsr ea29
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;28
+.o 1 0
+e_Geometry_n==;28
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea29
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea29
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_s==;28
+.o 4 0
+s29
+	push_a 2
+	push_a 1
+.d 2 0
+	jsr s22
+.o 0 1 b
+	jmp_false else.4
+	push_a 3
+	push_a 2
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jmp s22
+else.4
+	pop_a 4
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Geometry_stoString;24
+.descexp e_Geometry_dtoString;24 e_Geometry_ntoString;24 e_Geometry_ltoString;24 1 0 "toString;24"
+.o 2 0
+e_Geometry_ltoString;24
+	pop_a 1
+.d 1 0
+	jsr ea25
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoString;24
+.o 1 0
+e_Geometry_ntoString;24
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea25
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea25
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoString;24
+.o 1 0
+s25
+	repl_r_args 0 1
+	buildh e_StdString_dtoString;7 0
+	buildAC " m."
+	buildR_b 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+.d 3 0
+	jmp e_StdEnvExt_s+++>
+.export e_Geometry_s~;20
+.export e_Geometry_ea~;20
+.descexp e_Geometry_d~;20 e_Geometry_n~;20 e_Geometry_l~;20 1 0 "~;20"
+.o 2 0
+e_Geometry_l~;20
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_ea~;20
+.n 1 e_Geometry_d~;20 e_Geometry_ea~;20
+.o 1 0
+e_Geometry_n~;20
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_ea~;20
+	jsr_eval 0
+.o 2 0
+e_Geometry_s~;20
+.o 2 0
+s21
+	repl_r_args 0 1
+	push_b 0
+	negR
+	fill_r k172 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_ssign;19
+.descexp e_Geometry_dsign;19 e_Geometry_nsign;19 e_Geometry_lsign;19 1 0 "sign;19"
+.o 2 0
+e_Geometry_lsign;19
+	pop_a 1
+.d 1 0
+	jsr ea20
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dsign;19
+.o 1 0
+e_Geometry_nsign;19
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea20
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea20
+	jsr_eval 0
+.o 1 0
+e_Geometry_ssign;19
+.o 1 0
+s20
+	repl_r_args 0 1
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 r
+	jmp e_StdReal_ssign;9
+.export e_Geometry_sms
+.export e_Geometry_eams
+.descexp e_Geometry_dms e_Geometry_nms e_Geometry_lms 1 0 "ms"
+.o 2 0
+e_Geometry_lms
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eams
+.n 1 e_Geometry_dms e_Geometry_eams
+.o 1 0
+e_Geometry_nms
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eams
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Geometry_sms
+.o 1 1 r
+s15
+	push_b 0
+	fill_r k173 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_spoint_to_rectangle
+.descexp e_Geometry_dpoint_to_rectangle e_Geometry_npoint_to_rectangle e_Geometry_lpoint_to_rectangle 2 0 "point_to_rectangle"
+.a 0 a13
+.o 2 0
+e_Geometry_lpoint_to_rectangle
+	repl_args 1 1
+.o 2 0
+a13
+.d 2 0
+	jsr ea13
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_dpoint_to_rectangle
+.o 1 0
+e_Geometry_npoint_to_rectangle
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea13
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea13
+	jsr_eval 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 2 0
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	pop_a 3
+.o 6 0
+e_Geometry_spoint_to_rectangle
+.o 6 0
+s13
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 9
+	push_a 9
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.d 6 0
+	jsr s14
+.o 0 1 b
+	jmp_false else.5
+	pop_a 4
+.d 2 0
+	rtn
+else.5
+	push_a 3
+	push_a 2
+	buildh e_Geometry_d<;22 0
+	build _ 3 n176
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 4
+	push_a 3
+	buildh e_Geometry_d<;22 0
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jsr e_StdEnvExt_sminmax
+.o 2 0
+	push_a 1
+	push_a 4
+	build d_S.2 -1 n_S.2
+	push_a 7
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n179
+	push_a 7
+	push_a 4
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 7
+	pop_a 1
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	push_a 7
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n178
+	push_a 9
+	push_a 7
+	build _ 2 n177
+	build_r e_Geometry_rPosition 2 0 9 0
+	push_a 6
+	push_a 5
+	push_a 7
+	push_a 11
+	push_a 6
+	update_a 4 7
+	update_a 2 4
+	update_a 1 2
+	update_a 5 1
+	update_a 0 5
+	update_a 6 0
+	update_a 3 6
+	update_a 0 3
+	pop_a 1
+	update_a 7 15
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 8 1 b
+	jsr s175
+.o 2 0
+.d 2 0
+	jmp s33
+.n 2 _ ea179
+.o 1 0
+n179
+	push_node _cycle_in_spine 2
+.o 3 0
+ea179
+.o 3 0
+s179
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea178
+.o 1 0
+n178
+	push_node _cycle_in_spine 2
+.o 3 0
+ea178
+.o 3 0
+s178
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea177
+.o 1 0
+n177
+	push_node _cycle_in_spine 2
+.o 3 0
+ea177
+.o 3 0
+s177
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea176
+.o 1 0
+n176
+	push_node _cycle_in_spine 3
+.o 4 0
+ea176
+.o 4 0
+s176
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_sminmax
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Geometry_stoPosition;32
+.descexp e_Geometry_dtoPosition;32 e_Geometry_ntoPosition;32 e_Geometry_ltoPosition;32 1 0 "toPosition;32"
+.o 2 0
+e_Geometry_ltoPosition;32
+	pop_a 1
+.d 1 0
+	jsr ea33
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoPosition;32
+.o 1 0
+e_Geometry_ntoPosition;32
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea33
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea33
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_stoPosition;32
+.o 2 0
+s33
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_spoint_in_rectangle
+.descexp e_Geometry_dpoint_in_rectangle e_Geometry_npoint_in_rectangle e_Geometry_lpoint_in_rectangle 2 0 "point_in_rectangle"
+.a 0 a14
+.o 2 0
+e_Geometry_lpoint_in_rectangle
+	repl_args 1 1
+.o 2 0
+a14
+.d 2 0
+	jsr ea14
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_dpoint_in_rectangle
+.o 1 0
+e_Geometry_npoint_in_rectangle
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea14
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea14
+	jsr_eval 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 2 0
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	pop_a 3
+.o 6 0
+e_Geometry_spoint_in_rectangle
+.o 6 0
+s14
+	push_a 2
+	push_a 1
+	buildh e_Geometry_d<;22 0
+.d 3 0
+	jsr e_StdEnvExt_sminmax
+.o 2 0
+	push_a 6
+	buildh e_Geometry_d<;22 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jsr e_StdEnvExt_sisbetween
+.o 0 1 b
+	jmp_false else.6
+	push_a 3
+	push_a 2
+	buildh e_Geometry_d<;22 0
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jsr e_StdEnvExt_sminmax
+.o 2 0
+	push_a 3
+	buildh e_Geometry_d<;22 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jmp e_StdEnvExt_sisbetween
+else.6
+	pop_a 6
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Geometry_sattract
+.descexp e_Geometry_dattract e_Geometry_nattract e_Geometry_lattract 3 0 "attract"
+.a 0 a12
+.o 2 0
+e_Geometry_lattract
+	repl_args 2 2
+.o 3 0
+a12
+.d 3 0
+	jsr ea12
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_Geometry_dattract
+.o 1 0
+e_Geometry_nattract
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea12
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea12
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	pop_a 2
+.o 5 0
+e_Geometry_sattract
+.o 5 0
+s12
+	create
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 5 0
+	jsr s116
+.o 1 0
+	push_a 0
+	push_a 2
+.d 2 0
+	jsr s23
+.o 0 1 b
+	jmp_false else.7
+	push_a 3
+	push_a 6
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_a 3
+	push_a 6
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr s24
+.o 0 1 r
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 1 0
+	jsr s24
+.o 0 1 r
+	divR
+	update_a 5 7
+	update_a 4 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 1 r
+	jsr s75
+.o 2 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s9
+else.7
+	pop_a 4
+.d 2 0
+	rtn
+.export e_Geometry_srepell
+.descexp e_Geometry_drepell e_Geometry_nrepell e_Geometry_lrepell 3 0 "repell"
+.a 0 a11
+.o 2 0
+e_Geometry_lrepell
+	repl_args 2 2
+.o 3 0
+a11
+.d 3 0
+	jsr ea11
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_Geometry_drepell
+.o 1 0
+e_Geometry_nrepell
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea11
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea11
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	pop_a 2
+.o 5 0
+e_Geometry_srepell
+.o 5 0
+s11
+	create
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 5 0
+	jsr s116
+.o 1 0
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	push_a 1
+.d 2 0
+	jsr s22
+.o 0 1 b
+	jmp_false else.8
+	update_a 1 3
+	pop_a 3
+.d 0 0
+	jsr s69
+.o 2 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 4
+	push_a 4
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s9
+else.8
+	push_a 1
+	push_a 1
+.d 2 0
+	jsr s23
+.o 0 1 b
+	jmp_false else.9
+	push_a 3
+	push_a 6
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_a 3
+	push_a 6
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr s24
+.o 0 1 r
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 1 0
+	jsr s24
+.o 0 1 r
+	divR
+	update_a 5 7
+	update_a 4 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 1 r
+	jsr s75
+.o 2 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s9
+else.9
+	pop_a 4
+.d 2 0
+	rtn
+.export e_Geometry_sscale;74
+.descexp e_Geometry_dscale;74 e_Geometry_nscale;74 e_Geometry_lscale;74 2 0 "scale;74"
+.a 0 a75
+.o 2 0
+e_Geometry_lscale;74
+	repl_args 1 1
+.o 2 0
+a75
+.d 2 0
+	jsr ea75
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_dscale;74
+.o 1 0
+e_Geometry_nscale;74
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea75
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea75
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	pushR_a 2
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 2 1 r
+e_Geometry_sscale;74
+.o 2 1 r
+s75
+	create
+	push_a 2
+	push_b 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 r
+	jsr s26
+.o 1 0
+	create
+	push_a 2
+	push_b 0
+	updatepop_b 0 1
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 1 r
+	jsr s26
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_sscale;25
+.export e_Geometry_eascale;25
+.descexp e_Geometry_dscale;25 e_Geometry_nscale;25 e_Geometry_lscale;25 2 0 "scale;25"
+.a 2 e_Geometry_eascale;25
+.o 2 0
+e_Geometry_lscale;25
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_eascale;25
+.n 2 e_Geometry_dscale;25 e_Geometry_eascale;25
+.o 1 0
+e_Geometry_nscale;25
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_eascale;25
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 2 1 r
+e_Geometry_sscale;25
+.o 2 1 r
+s26
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	mulR
+	fill_r k172 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Geometry_s==;21
+.descexp e_Geometry_d==;21 e_Geometry_n==;21 e_Geometry_l==;21 2 0 "==;21"
+.a 0 a22
+.o 2 0
+e_Geometry_l==;21
+	repl_args 1 1
+.o 2 0
+a22
+.d 2 0
+	jsr ea22
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d==;21
+.o 1 0
+e_Geometry_n==;21
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea22
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea22
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_s==;21
+.o 2 0
+s22
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	eqR
+.d 0 1 b
+	rtn
+.export e_Geometry_smove_point3D
+.descexp e_Geometry_dmove_point3D e_Geometry_nmove_point3D e_Geometry_lmove_point3D 2 0 "move_point3D"
+.a 0 a10
+.o 2 0
+e_Geometry_lmove_point3D
+	repl_args 1 1
+.o 2 0
+a10
+.d 2 0
+	jsr ea10
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_dmove_point3D
+.o 1 0
+e_Geometry_nmove_point3D
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea10
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea10
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_smove_point3D
+.o 4 0
+s10
+	create
+	push_a 2
+	push_a 5
+	update_a 5 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr s17
+.o 1 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	pop_a 1
+.d 4 0
+	jsr s9
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_smove_point
+.descexp e_Geometry_dmove_point e_Geometry_nmove_point e_Geometry_lmove_point 2 0 "move_point"
+.a 0 a9
+.o 2 0
+e_Geometry_lmove_point
+	repl_args 1 1
+.o 2 0
+a9
+.d 2 0
+	jsr ea9
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_Geometry_dmove_point
+.o 1 0
+e_Geometry_nmove_point
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea9
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea9
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_Geometry_smove_point
+.o 4 0
+s9
+	create
+	push_a 2
+	push_a 5
+	update_a 5 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr s17
+.o 1 0
+	create
+	push_a 2
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr s17
+.o 1 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_s+;16
+.export e_Geometry_ea+;16
+.descexp e_Geometry_d+;16 e_Geometry_n+;16 e_Geometry_l+;16 2 0 "+;16"
+.a 2 e_Geometry_ea+;16
+.o 2 0
+e_Geometry_l+;16
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_ea+;16
+.n 2 e_Geometry_d+;16 e_Geometry_ea+;16
+.o 1 0
+e_Geometry_n+;16
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_ea+;16
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_s+;16
+.o 3 0
+s17
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	addR
+	fill_r k172 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Geometry_ssize_vector3D
+.export e_Geometry_easize_vector3D
+.descexp e_Geometry_dsize_vector3D e_Geometry_nsize_vector3D e_Geometry_lsize_vector3D 1 0 "size_vector3D"
+.o 2 0
+e_Geometry_lsize_vector3D
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_easize_vector3D
+.n 1 e_Geometry_dsize_vector3D e_Geometry_easize_vector3D
+.o 1 0
+e_Geometry_nsize_vector3D
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_easize_vector3D
+	jsr_eval 0
+	repl_r_args 2 0
+.o 3 0
+e_Geometry_ssize_vector3D
+.o 3 0
+s8
+.d 0 0
+	jsr s105
+.o 2 0
+	push_a 3
+	push_a 3
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jsr s120
+.o 0 1 r
+	fill_r k172 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 4 0
+s120
+	build_r e_Geometry_rRVector3D 2 0 2 0
+	build _ 1 n108
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s108
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jsr s112
+.o 1 0
+.d 1 0
+	jsr e_StdList_ssum;73
+.o 0 1 r
+	sqrtR
+.d 0 1 r
+	rtn
+.n 1 _ ea108
+.o 1 0
+n108
+	push_node _cycle_in_spine 1
+.o 2 0
+ea108
+	repl_r_args 2 0
+.o 3 0
+s108
+	push_args_u 0 2 2
+	buildh _Nil 0
+	push_a 4
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	push_a 1
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+.o 0 0
+s105
+.d 0 0
+	jmp s70
+.export e_Geometry_szero;69
+.descexp e_Geometry_dzero;69 e_Geometry_nzero;69 e_Geometry_lzero;69 0 0 "zero;69"
+.o 1 0
+e_Geometry_lzero;69
+	halt
+.n 0 e_Geometry_dzero;69
+.o 1 0
+e_Geometry_nzero;69
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea70
+.o 2 0
+	fill_r e_Geometry_rRVector3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea70
+.o 0 0
+e_Geometry_szero;69
+.o 0 0
+s70
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 0 0
+	jsr s69
+.o 2 0
+	build_r e_Geometry_rRVector 2 0 0 0
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_ssize_vector
+.export e_Geometry_easize_vector
+.descexp e_Geometry_dsize_vector e_Geometry_nsize_vector e_Geometry_lsize_vector 1 0 "size_vector"
+.o 2 0
+e_Geometry_lsize_vector
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_easize_vector
+.n 1 e_Geometry_dsize_vector e_Geometry_easize_vector
+.o 1 0
+e_Geometry_nsize_vector
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_easize_vector
+	jsr_eval 0
+	repl_r_args 2 0
+.o 3 0
+e_Geometry_ssize_vector
+.o 3 0
+s7
+.d 0 0
+	jsr s104
+.o 2 0
+	push_a 3
+	push_a 3
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jsr s118
+.o 0 1 r
+	fill_r k172 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 4 0
+s118
+	build_r e_Geometry_rRVector 2 0 2 0
+	build _ 1 n107
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s107
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jsr s112
+.o 1 0
+.d 1 0
+	jsr e_StdList_ssum;73
+.o 0 1 r
+	sqrtR
+.d 0 1 r
+	rtn
+.n 1 _ ea107
+.o 1 0
+n107
+	push_node _cycle_in_spine 1
+.o 2 0
+ea107
+	repl_r_args 2 0
+.o 3 0
+s107
+	buildh _Nil 0
+	push_a 2
+	buildh _Cons 2
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+s104
+.d 0 0
+	jmp s69
+.export e_Geometry_szero;68
+.descexp e_Geometry_dzero;68 e_Geometry_nzero;68 e_Geometry_lzero;68 0 0 "zero;68"
+.o 1 0
+e_Geometry_lzero;68
+	halt
+.n 0 e_Geometry_dzero;68
+.o 1 0
+e_Geometry_nzero;68
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea69
+.o 2 0
+	fill_r e_Geometry_rRVector 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea69
+.o 0 0
+e_Geometry_szero;68
+.o 0 0
+s69
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 2 0
+	rtn
+.export e_Geometry_sbearing
+.export e_Geometry_eabearing
+.descexp e_Geometry_dbearing e_Geometry_nbearing e_Geometry_lbearing 5 0 "bearing"
+.a 5 e_Geometry_eabearing
+.o 2 0
+e_Geometry_lbearing
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.d 6 0
+	jmp e_Geometry_eabearing
+.n 5 e_Geometry_dbearing e_Geometry_eabearing
+.o 1 0
+e_Geometry_nbearing
+	push_node _cycle_in_spine 5
+.o 6 0
+e_Geometry_eabearing
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 0
+	push_r_args 1 1 0
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 6 0
+e_Geometry_sbearing
+.o 6 0
+s6
+	create
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+	update_a 7 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jsr s101
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s47
+.o 5 0
+s101
+	push_a 1
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 4
+	pop_a 1
+	jsr_ap 1
+	push_a 1
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 4
+	pop_a 1
+	jsr_ap 1
+	push_r_args_a 0 2 0 2 1
+	push_r_args_a 2 2 0 2 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_r_args_a 1 2 0 1 1
+	push_r_args_a 3 2 0 1 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s18
+.o 1 0
+	push_r_args 3 2 0
+	push_r_args 4 2 0
+	create
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 5 0
+	jsr s116
+.o 1 0
+.d 1 0
+	jsr s24
+.o 0 1 r
+	push_a 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr s19
+.o 1 0
+.d 1 0
+	jsr s24
+.o 0 1 r
+	divR
+	push_b 0
+	absR
+	pushR 1.0
+	ltR
+	jmp_false else.10
+	pushR 0.0
+	fill_r k174 0 1 8 0 0
+	pop_a 8
+	pop_b 2
+.d 1 0
+	rtn
+else.10
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	push_a 1
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.11
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	push_a 2
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.11
+	push_b 0
+	acosR
+	fill_r k174 0 1 8 0 0
+	pop_a 8
+	pop_b 2
+.d 1 0
+	rtn
+else.11
+	push_a 0
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.13
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	push_a 2
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.13
+	push_b 0
+	acosR
+	pushR 3.1415926535897932384
+	subR
+	fill_r k174 0 1 8 0 0
+	pop_a 8
+	pop_b 2
+.d 1 0
+	rtn
+else.13
+	push_a 0
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.15
+	push_a 1
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.15
+	push_b 0
+	acosR
+	pushR 3.1415926535897932384
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subR
+	fill_r k174 0 1 8 0 0
+	pop_a 8
+	pop_b 2
+.d 1 0
+	rtn
+else.15
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	push_a 1
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	jmp_false else.17
+	push_a 1
+	create
+	buildh _Nil 0
+	update_a 0 3
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr s16
+.o 1 0
+	update_a 1 9
+	updatepop_a 0 8
+.d 2 0
+	jsr s23
+.o 0 1 b
+	notB
+	buildh _Nil 0
+	push_a 0
+	push_a 1
+	push_a 2
+	push_a 3
+	push_a 4
+	push_a 5
+	push_a 6
+	jmp_false else.17
+	push_b 0
+	acosR
+	negR
+	fill_r k174 0 1 8 0 0
+	pop_a 8
+	pop_b 2
+.d 1 0
+	rtn
+else.17
+	pop_a 4
+	pop_b 1
+	jmp s101.1
+s101.1
+	pop_a 5
+	pushD m_Geometry
+	pushD x_101
+.d 0 2 ii
+	jmp _match_error
+.string x_101 "px_bearing"
+.o 5 0
+s116
+	push_a 3
+	push_a 3
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr s40
+.o 2 0
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr s40
+.o 2 0
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jsr s114
+.o 0 1 r
+	fill_r k172 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_stoPosition3D;39
+.descexp e_Geometry_dtoPosition3D;39 e_Geometry_ntoPosition3D;39 e_Geometry_ltoPosition3D;39 1 0 "toPosition3D;39"
+.o 2 0
+e_Geometry_ltoPosition3D;39
+	pop_a 1
+.d 1 0
+	jsr ea40
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoPosition3D;39
+.o 1 0
+e_Geometry_ntoPosition3D;39
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea40
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea40
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Geometry_stoPosition3D;39
+.o 2 0
+s40
+	build_r e_Geometry_rPosition 2 0 0 0
+	buildh _Nil 0
+	update_a 0 2
+	update_a 0 3
+	pop_a 1
+.d 0 0
+	jsr s28
+.o 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_szero;27
+.descexp e_Geometry_dzero;27 e_Geometry_nzero;27 e_Geometry_lzero;27 0 0 "zero;27"
+.o 1 0
+e_Geometry_lzero;27
+	halt
+.n 0 e_Geometry_dzero;27
+.o 1 0
+e_Geometry_nzero;27
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea28
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea28
+.o 0 0
+e_Geometry_szero;27
+.o 0 0
+s28
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 0 0
+	jsr s27
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.export e_Geometry_szero;26
+.descexp e_Geometry_dzero;26 e_Geometry_nzero;26 e_Geometry_lzero;26 0 0 "zero;26"
+.o 1 0
+e_Geometry_lzero;26
+	halt
+.n 0 e_Geometry_dzero;26
+.o 1 0
+e_Geometry_nzero;26
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea27
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea27
+.o 0 0
+e_Geometry_szero;26
+.o 0 0
+s27
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+	create
+.d 1 0
+	jsr s16
+.o 1 0
+.d 2 0
+	rtn
+.export e_Geometry_s<;22
+.descexp e_Geometry_d<;22 e_Geometry_n<;22 e_Geometry_l<;22 2 0 "<;22"
+.a 0 a23
+.o 2 0
+e_Geometry_l<;22
+	repl_args 1 1
+.o 2 0
+a23
+.d 2 0
+	jsr ea23
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Geometry_d<;22
+.o 1 0
+e_Geometry_n<;22
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea23
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea23
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Geometry_s<;22
+.o 2 0
+s23
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	ltR
+.d 0 1 b
+	rtn
+.export e_Geometry_sabs;18
+.export e_Geometry_eaabs;18
+.descexp e_Geometry_dabs;18 e_Geometry_nabs;18 e_Geometry_labs;18 1 0 "abs;18"
+.o 2 0
+e_Geometry_labs;18
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eaabs;18
+.n 1 e_Geometry_dabs;18 e_Geometry_eaabs;18
+.o 1 0
+e_Geometry_nabs;18
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eaabs;18
+	jsr_eval 0
+.o 2 0
+e_Geometry_sabs;18
+.o 2 0
+s19
+	repl_r_args 0 1
+	push_b 0
+	absR
+	fill_r k172 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Geometry_s-;17
+.export e_Geometry_ea-;17
+.descexp e_Geometry_d-;17 e_Geometry_n-;17 e_Geometry_l-;17 2 0 "-;17"
+.a 2 e_Geometry_ea-;17
+.o 2 0
+e_Geometry_l-;17
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_ea-;17
+.n 2 e_Geometry_d-;17 e_Geometry_ea-;17
+.o 1 0
+e_Geometry_n-;17
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_ea-;17
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_s-;17
+.o 3 0
+s18
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	subR
+	fill_r k172 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Geometry_szero;15
+.export e_Geometry_eazero;15
+.descexp e_Geometry_dzero;15 e_Geometry_nzero;15 e_Geometry_lzero;15 0 0 "zero;15"
+.o 1 0
+e_Geometry_lzero;15
+	halt
+.n 0 e_Geometry_dzero;15 e_Geometry_eazero;15
+.o 1 0
+e_Geometry_nzero;15
+	push_node _cycle_in_spine 0
+.o 1 0
+e_Geometry_eazero;15
+.o 1 0
+e_Geometry_szero;15
+.o 1 0
+s16
+	pushR 0.0
+	fill_r k172 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_sorthogonal
+.descexp e_Geometry_dorthogonal e_Geometry_northogonal e_Geometry_lorthogonal 1 0 "orthogonal"
+.o 2 0
+e_Geometry_lorthogonal
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Geometry_dorthogonal
+.o 1 0
+e_Geometry_northogonal
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea5
+	jsr_eval 0
+.o 1 0
+e_Geometry_sorthogonal
+.o 1 0
+s5
+	pushR 3.1415926535897932384
+	pushR 0.25
+	mulR
+	create
+.d 1 1 r
+	jsr s3
+.o 1 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr s47
+.o 1 0
+	pushR 3.1415926535897932384
+	pushR 0.25
+	mulR
+	create
+.d 1 1 r
+	jsr s3
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr s46
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Geometry_s-;46
+.export e_Geometry_ea-;46
+.descexp e_Geometry_d-;46 e_Geometry_n-;46 e_Geometry_l-;46 2 0 "-;46"
+.a 2 e_Geometry_ea-;46
+.o 2 0
+e_Geometry_l-;46
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_ea-;46
+.n 2 e_Geometry_d-;46 e_Geometry_ea-;46
+.o 1 0
+e_Geometry_n-;46
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_ea-;46
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_s-;46
+.o 3 0
+s47
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	subR
+	updatepop_b 0 2
+.d 0 1 r
+	jsr s98
+.o 0 1 r
+	fill_r k174 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_s+;45
+.export e_Geometry_ea+;45
+.descexp e_Geometry_d+;45 e_Geometry_n+;45 e_Geometry_l+;45 2 0 "+;45"
+.a 2 e_Geometry_ea+;45
+.o 2 0
+e_Geometry_l+;45
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Geometry_ea+;45
+.n 2 e_Geometry_d+;45 e_Geometry_ea+;45
+.o 1 0
+e_Geometry_n+;45
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Geometry_ea+;45
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Geometry_s+;45
+.o 3 0
+s46
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	addR
+	updatepop_b 0 2
+.d 0 1 r
+	jsr s98
+.o 0 1 r
+	fill_r k174 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_sdegree
+.export e_Geometry_eadegree
+.descexp e_Geometry_ddegree e_Geometry_ndegree e_Geometry_ldegree 1 0 "degree"
+.o 2 0
+e_Geometry_ldegree
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eadegree
+.n 1 e_Geometry_ddegree e_Geometry_eadegree
+.o 1 0
+e_Geometry_ndegree
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eadegree
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 1 1 i
+e_Geometry_sdegree
+.o 1 1 i
+s4
+	push_b 0
+	ItoR
+	pushR 3.1415926535897932384
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulR
+	pushR 180.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	updatepop_b 0 1
+.d 1 1 r
+	jmp s3
+.export e_Geometry_srad
+.export e_Geometry_earad
+.descexp e_Geometry_drad e_Geometry_nrad e_Geometry_lrad 1 0 "rad"
+.o 2 0
+e_Geometry_lrad
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_earad
+.n 1 e_Geometry_drad e_Geometry_earad
+.o 1 0
+e_Geometry_nrad
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_earad
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Geometry_srad
+.o 1 1 r
+s3
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 r
+	jsr s98
+.o 0 1 r
+	fill_r k174 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 1 r
+s98
+	pushI 100
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 2 ri
+	jmp s102
+.o 0 2 ri
+s102
+	eqI_b 0 1
+	jmp_true case.19
+	jmp case.20
+case.19
+	buildAC "Loop in normalize_radian. Mail p.achten@cs.ru.nl"
+	pop_b 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	pushR_a 0
+	pop_a 1
+.d 0 1 r
+	rtn
+case.20
+	pushR 3.1415926535897932384
+	negR
+	push_b 1
+	ltR
+	jmp_false else.21
+	pushI 1
+	push_b 2
+	subI
+	pushR 3.1415926535897932384
+	pushR 2.0
+	mulR
+	push_b 2
+	addR
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 2 ri
+	jmp s102
+else.21
+	push_b 0
+	pushR 3.1415926535897932384
+	ltR
+	jmp_false else.22
+	pushI 1
+	push_b 2
+	subI
+	pushR 3.1415926535897932384
+	pushR 2.0
+	mulR
+	push_b 2
+	subR
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 2 ri
+	jmp s102
+else.22
+	update_b 0 1
+	pop_b 1
+.d 0 1 r
+	rtn
+.export e_Geometry_sdist
+.export e_Geometry_eadist
+.descexp e_Geometry_ddist e_Geometry_ndist e_Geometry_ldist 4 0 "dist"
+.a 4 e_Geometry_eadist
+.o 2 0
+e_Geometry_ldist
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_Geometry_eadist
+.n 4 e_Geometry_ddist e_Geometry_eadist
+.o 1 0
+e_Geometry_ndist
+	push_node _cycle_in_spine 4
+.o 5 0
+e_Geometry_eadist
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 0
+	push_r_args 1 1 0
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 5 0
+e_Geometry_sdist
+.o 5 0
+s2
+	push_a 1
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 4 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 1
+	repl_r_args 2 0
+	push_a 2
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 5
+	pop_a 1
+	jsr_ap 1
+	repl_r_args 2 0
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jsr s114
+.o 0 1 r
+	fill_r k172 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 4 0
+s114
+	build_r e_Geometry_rPosition3D 2 0 2 0
+	build _ 1 n110
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s110
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jsr s112
+.o 1 0
+.d 1 0
+	jsr e_StdList_ssum;73
+.o 0 1 r
+	sqrtR
+.d 0 1 r
+	rtn
+.n 1 _ ea110
+.o 1 0
+n110
+	push_node _cycle_in_spine 1
+.o 2 0
+ea110
+	repl_r_args 2 0
+.o 3 0
+s110
+	push_args_u 0 2 2
+	buildh _Nil 0
+	push_a 4
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	push_a 1
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+.n 2 _ ea112
+.o 1 0
+n112
+	push_node _cycle_in_spine 2
+.o 3 0
+ea112
+	jsr_eval 0
+.o 3 0
+s112
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s126
+.o 3 0
+s126
+	eq_desc _Cons 2 0
+	jmp_true case.23
+	jmp case.24
+case.23
+	repl_args 2 2
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s125
+case.24
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.o 4 0
+s125
+	eq_desc _Cons 2 0
+	jmp_true case.25
+	jmp case.26
+case.25
+	repl_args 2 2
+	push_a 1
+	push_a 4
+	build _ 2 n112
+	push_a 1
+	push_a 4
+	build _ 2 n180
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+case.26
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.n 2 _ ea180
+.o 1 0
+n180
+	push_node _cycle_in_spine 2
+.o 3 0
+ea180
+.o 3 0
+s180
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s24
+.o 0 1 r
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s24
+.o 0 1 r
+	subR
+	pushR 2.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	powR
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Geometry_stoReal;23
+.descexp e_Geometry_dtoReal;23 e_Geometry_ntoReal;23 e_Geometry_ltoReal;23 1 0 "toReal;23"
+.o 2 0
+e_Geometry_ltoReal;23
+	pop_a 1
+.d 1 0
+	jsr ea24
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Geometry_dtoReal;23
+.o 1 0
+e_Geometry_ntoReal;23
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea24
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea24
+	jsr_eval 0
+.o 1 0
+e_Geometry_stoReal;23
+.o 1 0
+s24
+	repl_r_args 0 1
+.d 0 1 r
+	rtn
+.export e_Geometry_sm
+.export e_Geometry_eam
+.descexp e_Geometry_dm e_Geometry_nm e_Geometry_lm 1 0 "m"
+.o 2 0
+e_Geometry_lm
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Geometry_eam
+.n 1 e_Geometry_dm e_Geometry_eam
+.o 1 0
+e_Geometry_nm
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Geometry_eam
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Geometry_sm
+.o 1 1 r
+s1
+	push_b 0
+	fill_r k172 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.o 8 1 b
+s175
+	push_b 0
+	jmp_false else.27
+	push_a 7
+	jsr_eval 0
+	pushB_a 8
+	pop_a 1
+	jmp_false else.27
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.27
+	push_a 4
+	jsr_eval 0
+	pushB_a 5
+	pop_a 1
+	jmp_false else.29
+	push_a 7
+	jsr_eval 0
+	pushB_a 8
+	pop_a 1
+	jmp_false else.29
+	push_a 5
+	jsr_eval 0
+	push_a 4
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.29
+	push_b 0
+	jmp_false else.31
+	push_a 2
+	jsr_eval 0
+	pushB_a 3
+	pop_a 1
+	jmp_false else.31
+	push_a 1
+	jsr_eval 0
+	push_a 7
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.31
+	push_a 4
+	jsr_eval 0
+	pushB_a 5
+	pop_a 1
+	jmp_false else.33
+	push_a 2
+	jsr_eval 0
+	pushB_a 3
+	pop_a 1
+	jmp_false else.33
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.33
+	push_a 7
+	jsr_eval 0
+	pushB_a 8
+	pop_a 1
+	jmp_false else.35
+	push_a 5
+	jsr_eval 0
+	push_r_args_a 1 2 0 1 1
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.35
+	push_a 2
+	jsr_eval 0
+	pushB_a 3
+	pop_a 1
+	jmp_false else.36
+	push_a 1
+	jsr_eval 0
+	push_r_args_a 1 2 0 1 1
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.36
+	push_b 0
+	jmp_false else.37
+	push_r_args_a 0 2 0 2 1
+	push_a 7
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.37
+	push_a 4
+	jsr_eval 0
+	pushB_a 5
+	pop_a 1
+	jmp_false else.38
+	push_r_args_a 0 2 0 2 1
+	push_a 4
+	update_a 1 9
+	updatepop_a 0 8
+	pop_b 1
+.d 2 0
+	rtn
+else.38
+	buildAC "unsuspected error; please rotate with angles between pi and -pi\n"
+	updatepop_a 0 8
+	pop_b 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+.d 2 0
+	rtn

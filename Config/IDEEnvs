@@ -108,3 +108,28 @@ Environments
 		EnvironmentCompileMethod:	Pers
 		EnvironmentProcessor:	I386
 		Environment64BitProcessor:	True
+	Environment
+		EnvironmentName:	SoccerFun64
+		EnvironmentPaths
+			Path:	{Application}\Libraries\StdEnv
+			Path:	{Application}\Libraries\StdLib
+			Path:	{Application}\Libraries\ObjectIO
+			Path:	{Application}\Libraries\ObjectIO\OS Windows
+			Path:	{Application}\Libraries\Parsers
+			Path:	{Application}\Libraries\Parsers\LanguageDependent
+			Path:	{Application}\Libraries\Parsers\LanguageDependent\English
+			Path:	{Application}\Examples\ObjectIO Examples\gui utilities
+			Path:	{Application}\Examples\SoccerFun\src\Game
+			Path:	{Application}\Examples\SoccerFun\src\Gui
+			Path:	{Application}\Examples\SoccerFun\src\StdLibExt
+			Path:	{Application}\Examples\SoccerFun\src\StdReferee
+			Path:	{Application}\Examples\SoccerFun\src\StdTeam
+		EnvironmentCompiler:	Tools\Clean System 64\CleanCompiler64.exe
+		EnvironmentCodeGen:	Tools\Clean System 64\CodeGenerator.exe
+		EnvironmentLinker:	Tools\Clean System 64\StaticLinker.exe: -h 40M
+		EnvironmentDynLink:	Tools\Dynamics\DynamicLinker.exe
+		EnvironmentVersion:	920
+		EnvironmentRedirect:	False
+		EnvironmentCompileMethod:	Pers
+		EnvironmentProcessor:	I386
+		Environment64BitProcessor:	True

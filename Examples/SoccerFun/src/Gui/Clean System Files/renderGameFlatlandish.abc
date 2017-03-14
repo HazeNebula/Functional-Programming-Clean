@@ -1,0 +1,3263 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "render" "20170314161737"
+.depend "guiInterface" "20170314161737"
+.depend "matchLog" "20170314161737"
+.depend "matchGame" "20170314161737"
+.depend "GamePicture" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.depend "Referee" "20170314161737"
+.depend "matchControl" "20170314161737"
+.depend "renderGameFlatlandish" "20170314161737"
+.module m_renderGameFlatlandish "renderGameFlatlandish" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_render_dWestColour
+.implab e_render_nWestColour e_render_eaWestColour
+.impdesc e_render_dEastColour
+.implab e_render_nEastColour e_render_eaEastColour
+.impdesc e_render_rRenderStyle
+.implab e_Geometry_sm
+.implab e_Geometry_smove_point
+.implab e_Geometry_s+;16
+.implab e_Geometry_s-;17
+.implab e_Geometry_s~;20
+.implab e_Geometry_stoReal;23
+.implab e_Geometry_sscale;25
+.implab e_Geometry_szero;26
+.implab e_Geometry_ssinus;56
+.implab e_Geometry_scosinus;57
+.implab e_Geometry_szero;68
+.implab e_Geometry_sone;70
+.implab e_Geometry_sscale;74
+.impdesc e_Geometry_rPosition
+.impdesc e_Geometry_rRVector
+.implab e_Football_sgetFootball
+.implab e_StdPicture_ssetPenSize
+.implab e_StdPicture_sgetPenSize
+.implab e_StdPicture_ssetPenColour
+.implab e_StdPicture_sdrawLine
+.implab e_StdPicture_sdrawAt;62
+.implab e_StdPicture_sdraw;65
+.implab e_StdPicture_sdrawAt;70
+.implab e_StdPicture_sdrawAt;74
+.implab e_StdPicture_sfillAt;78
+.implab e_StdPicture_sdrawAt;82
+.implab e_StdPicture_sdraw;97
+.implab e_StdPicture_sfill;101
+.implab e_StdPicture_sunfill;103
+.implab e_StdIOBasic_srectangleSize
+.implab e_StdIOBasic_smovePoint
+.implab e_StdIOBasic_szero;11
+.impdesc e_StdIOBasic_rVector2
+.impdesc e_StdIOBasic_rPoint2
+.impdesc e_StdIOBasic_rRectangle
+.impdesc e_StdPictureDef_rLine2
+.impdesc e_StdPictureDef_rOval
+.impdesc e_StdPictureDef_rCurve
+.implab e_StdList_s++
+.implab e_StdReal_s+;1
+.implab e_StdReal_s-;2
+.implab e_StdReal_s*;4
+.implab e_StdReal_s/;5
+.implab e_StdReal_s~;10
+.implab e_StdReal_s<;12
+.implab e_StdReal_stoReal;13
+.implab e_StdInt_s+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_szero;8
+.implab e_StdInt_s/;10
+.implab e_StdInt_stoInt;22
+.implab e_StdEnvExt_sperhaps
+.implab e_StdEnvExt_ssinus;54
+.implab e_StdEnvExt_sarccosinus;58
+.implab e_Footballer_sgoal_poles
+.impdesc e_Footballer_disOnTheGround
+.export e_renderGameFlatlandish_srenderFlatland
+.descexp e_renderGameFlatlandish_drenderFlatland e_renderGameFlatlandish_nrenderFlatland e_renderGameFlatlandish_lrenderFlatland 0 0 "renderFlatland"
+.o 1 0
+e_renderGameFlatlandish_lrenderFlatland
+	halt
+.n 0 e_renderGameFlatlandish_drenderFlatland
+.o 1 0
+e_renderGameFlatlandish_nrenderFlatland
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea1
+.o 2 0
+	fill_r e_render_rRenderStyle 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea1
+.o 0 0
+e_renderGameFlatlandish_srenderFlatland
+.o 0 0
+s1
+	buildh d2 0
+	buildAC "Flatland"
+.d 2 0
+	rtn
+.desc d2 _hnf l2 4 0 "flatland"
+.a 4 ea2
+.o 2 0
+l2
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea2
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 3 11 2
+	update_a 13 16
+	update_a 15 13
+	update_a 12 15
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 11 14
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	pop_a 2
+.o 17 2 ii
+s2
+	push_r_args 13 2 0
+	pop_b 2
+	buildh _Nil 0
+	update_a 0 16
+	pop_a 1
+.d 2 0
+	jsr e_StdIOBasic_srectangleSize
+.o 0 2 ii
+	push_b 0
+	push_r_args_a 3 2 0 2 1
+	push_a 0
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_b 1
+	ItoR
+	divR
+	push_b 3
+	push_r_args_a 4 2 0 1 1
+	push_a 0
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_b 1
+	ItoR
+	divR
+	push_b 0
+	push_b 3
+	ltR
+	push_b 1
+	push_b 4
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 3 brr
+	jsr s37
+.o 0 1 r
+	push_a 1
+	push_b 0
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	push_a 0
+	push_b 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	push_r_args 5 2 0
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 2 0
+	jsr e_Footballer_sgoal_poles
+.o 2 0
+	create
+	push_a 3
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 5
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 0
+	push_b 3
+	push_b 3
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	create
+	push_a 4
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 6
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 0
+	push_b 3
+	push_b 3
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	buildh e_StdPictureDef_dBlack 0
+	create
+	push_a 23
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 25
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 0
+	push_b 6
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	pushI 0
+	push_b 2
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sfill;101
+.o 1 0
+	push_b 3
+	push_b 6
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	pushI 0
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sfill;101
+.o 1 0
+	create
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sunfill;103
+.o 1 0
+	buildh e_StdPictureDef_dWhite 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	create
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jsr e_StdPicture_sdraw;97
+.o 1 0
+	create
+	push_a 4
+	push_b 2
+	push_b 1
+	push_b 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 3 iir
+	jsr s15
+.o 1 0
+	create
+	push_a 5
+	push_a 3
+	push_a 5
+	push_b 2
+	push_b 1
+	push_b 3
+	push_a 4
+	update_a 4 5
+	update_a 0 4
+	pop_a 1
+.d 5 3 iir
+	jsr s16
+.o 1 0
+	create
+	push_a 5
+	push_a 3
+	push_a 5
+	push_b 2
+	push_b 1
+	push_b 3
+	push_a 4
+	update_a 4 5
+	update_a 0 4
+	pop_a 1
+.d 5 3 iir
+	jsr s17
+.o 1 0
+	create
+	push_a 5
+	push_a 3
+	push_a 5
+	push_b 2
+	push_b 1
+	push_b 3
+	push_a 4
+	update_a 4 5
+	update_a 0 4
+	pop_a 1
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 3 iir
+	jsr s18
+.o 1 0
+	create
+	push_a 3
+	push_a 3
+	push_b 0
+	push_b 3
+	push_b 3
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 3 iri
+	jsr s19
+.o 1 0
+	build e_render_dWestColour 0 e_render_nWestColour
+	create
+	push_a 3
+	push_b 2
+	push_b 1
+	push_b 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+.d 4 3 iir
+	jsr s35
+.o 1 0
+	build e_render_dEastColour 0 e_render_nEastColour
+	create
+	push_a 4
+	push_b 2
+	push_b 1
+	push_b 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+.d 4 3 iir
+	jsr s36
+.o 1 0
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr e_Football_sgetFootball
+.o 2 0
+	push_b 0
+	push_b 3
+	push_b 3
+	update_a 2 18
+	update_a 1 17
+	updatepop_a 0 16
+	update_b 2 10
+	update_b 1 9
+	updatepop_b 0 8
+.d 4 3 iri
+	jmp s20
+.o 0 3 brr
+s37
+	eqB_b TRUE 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	update_b 1 2
+	pop_b 2
+.d 0 1 r
+	rtn
+case.2
+	pop_b 2
+.d 0 1 r
+	rtn
+.o 4 3 iir
+s36
+	eq_desc _Nil 0 2
+	jmp_true case.3
+	jmp case.4
+case.3
+	pop_b 3
+	fill_a 1 3
+	pop_a 3
+.d 1 0
+	rtn
+case.4
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	create
+	push_a 5
+	push_a 5
+	push_b 2
+	push_b 2
+	push_b 2
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	update_a 6 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 3 iir
+	jsr s36
+.o 1 0
+	push_a 1
+	jsr_eval 0
+	repl_r_args 11 2
+	push_a 13
+	jsr_eval 0
+	push_b 4
+	push_b 4
+	push_b 4
+	update_a 12 14
+	update_a 11 13
+	update_a 10 12
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 4 7
+	update_b 3 6
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 14 5 iirrr
+	jmp s14
+.o 4 3 iir
+s35
+	eq_desc _Nil 0 2
+	jmp_true case.5
+	jmp case.6
+case.5
+	pop_b 3
+	fill_a 1 3
+	pop_a 3
+.d 1 0
+	rtn
+case.6
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	create
+	push_a 5
+	push_a 5
+	push_b 2
+	push_b 2
+	push_b 2
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	update_a 6 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 3 iir
+	jsr s35
+.o 1 0
+	push_a 1
+	jsr_eval 0
+	repl_r_args 11 2
+	push_a 13
+	jsr_eval 0
+	push_b 4
+	push_b 4
+	push_b 4
+	update_a 12 14
+	update_a 11 13
+	update_a 10 12
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_b 4 7
+	update_b 3 6
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 14 5 iirrr
+	jmp s14
+.o 4 3 iri
+s20
+	push_r_args 0 2 0
+	pop_a 1
+	create
+	pushR 0.2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 1.0
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 0.113
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	pushR 2.8
+	mulR
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	buildh e_StdPictureDef_dBlack 0
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 0
+	push_b 1
+	push_r_args 1 2 0
+	updatepop_a 0 1
+	repl_r_args 2 0
+	push_b 5
+	push_b 5
+	push_b 5
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	updatepop_a 0 3
+	update_b 3 7
+	update_b 2 6
+	update_b 1 5
+	updatepop_b 0 4
+.d 2 4 iiii
+	jmp e_StdPicture_sfillAt;78
+.o 14 5 iirrr
+s14
+	buildh e_Footballer_disOnTheGround 0
+	push_a 11
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr e_StdEnvExt_sperhaps
+.o 0 1 b
+	jmp_false else.7
+	create
+	pushR 0.3
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 2
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	push_r_args 4 2 0
+	create
+	push_a 15
+	push_a 6
+	push_b 2
+	push_b 4
+	push_b 3
+	push_a 4
+	update_a 3 5
+	update_a 1 3
+	update_a 4 1
+	update_a 2 4
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 18
+	pop_a 1
+.d 5 3 iri
+	jsr s27
+.o 1 0
+	create
+	pushR 0.5
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	pushI -1
+	pushI -1
+	push_b 2
+	push_b 3
+	push_a 8
+.d 1 0
+	jsr e_Geometry_ssinus;56
+.o 0 1 r
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_a 9
+.d 1 0
+	jsr e_Geometry_scosinus;57
+.o 0 1 r
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_r_args 8 2 0
+	push_a 17
+	push_b 9
+	push_b 9
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_b 8
+	push_b 10
+	push_b 9
+	push_a 16
+	update_a 12 17
+	update_a 7 12
+	update_a 2 7
+	update_a 14 2
+	update_a 9 14
+	update_a 4 9
+	update_a 15 4
+	update_a 10 15
+	update_a 5 10
+	update_a 16 5
+	update_a 11 16
+	update_a 6 11
+	update_a 0 6
+	update_a 13 0
+	update_a 8 13
+	update_a 3 8
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	push_b 8
+	update_b 5 9
+	update_b 7 5
+	update_b 0 7
+	update_b 8 0
+	update_b 4 8
+	update_b 6 4
+	update_b 0 6
+	pop_b 1
+	update_a 17 30
+	update_a 16 29
+	update_a 15 28
+	update_a 14 27
+	update_a 13 26
+	update_a 12 25
+	update_a 11 24
+	update_a 10 23
+	update_a 9 22
+	update_a 8 21
+	update_a 7 20
+	update_a 6 19
+	update_a 5 18
+	update_a 4 17
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+	update_b 8 14
+	update_b 7 13
+	update_b 6 12
+	update_b 5 11
+	update_b 4 10
+	update_b 3 9
+	update_b 2 8
+	update_b 1 7
+	updatepop_b 0 6
+.d 19 9 iriiiiirr
+	jmp s32
+else.7
+	create
+	pushR 0.3
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 2
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	pushR 0.5
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 3
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	push_r_args 4 2 0
+	create
+	push_a 15
+	push_a 6
+	push_b 3
+	push_b 5
+	push_b 4
+	push_a 4
+	update_a 3 5
+	update_a 1 3
+	update_a 4 1
+	update_a 2 4
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 18
+	pop_a 1
+.d 5 3 iri
+	jsr s27
+.o 1 0
+	build_r e_Footballer_rFootballer 11 2 2 5
+	push_b 0
+	push_b 1
+	push_b 3
+	push_b 4
+	push_a 8
+	buildh _Nil 0
+	update_a 0 15
+	update_a 0 14
+	update_a 0 11
+	update_a 0 12
+	update_a 0 13
+	update_a 0 9
+	update_a 0 7
+	update_a 0 6
+	update_a 0 5
+	pop_a 1
+.d 1 0
+	jsr e_Geometry_ssinus;56
+.o 0 1 r
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_a 9
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 1 0
+	jsr e_Geometry_scosinus;57
+.o 0 1 r
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_r_args 8 2 0
+	push_a 6
+	push_b 7
+	push_b 9
+	push_b 8
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 6 19
+	update_a 5 18
+	update_a 4 17
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+	update_b 6 13
+	update_b 5 12
+	update_b 4 11
+	update_b 3 10
+	update_b 2 9
+	update_b 1 8
+	updatepop_b 0 7
+.d 8 7 iriiiii
+	jmp s34
+.o 8 7 iriiiii
+s34
+	create
+	push_a 7
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_a 2
+	push_a 2
+	push_b 2
+	push_b 2
+	push_b 2
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 8
+	push_b 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sfillAt;78
+.o 1 0
+	pushR 1.0
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+.d 4 1 r
+	jsr s4
+.o 2 0
+	push_b 2
+	push_b 2
+	push_b 2
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 6
+	push_b 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sfillAt;78
+.o 1 0
+	buildh e_StdPictureDef_dBlack 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_a 2
+	push_a 2
+	push_b 2
+	push_b 2
+	push_b 2
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 8
+	push_b 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;74
+.o 1 0
+	pushR 1.0
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 4 1 r
+	jsr s4
+.o 2 0
+	push_b 2
+	push_b 2
+	push_b 2
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	updatepop_a 0 7
+	update_b 3 7
+	update_b 2 6
+	update_b 1 5
+	updatepop_b 0 4
+.d 2 4 iiii
+	jmp e_StdPicture_sdrawAt;74
+.o 19 9 iriiiiirr
+s32
+	push_a 17
+	buildh _Nil 0
+	update_a 0 19
+	pop_a 1
+.d 1 0
+	jsr e_StdPicture_sgetPenSize
+.o 1 1 i
+	push_a 6
+	push_b 2
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 i
+	jsr e_StdPicture_ssetPenSize
+.o 1 0
+	buildh e_StdPictureDef_dBlack 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_b 7
+	push_b 7
+	push_a 9
+	push_a 6
+	push_a 6
+	push_a 5
+	push_a 5
+	push_b 5
+	push_b 5
+	push_b 5
+.d 5 5 iriii
+	jsr s26
+.o 2 0
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sdraw;65
+.o 1 0
+	push_a 6
+	push_b 2
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 i
+	jsr e_StdPicture_ssetPenSize
+.o 1 0
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr e_StdIOBasic_szero;11
+.o 0 2 ii
+	push_a 9
+	push_a 6
+	push_a 6
+	push_a 5
+	push_a 5
+	push_b 5
+	push_b 5
+	push_b 5
+.d 5 5 iriii
+	jsr s26
+.o 2 0
+	create
+	push_a 3
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sdraw;65
+.o 1 0
+	create
+	push_b 0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+.d 2 1 i
+	jsr e_StdPicture_ssetPenSize
+.o 1 0
+	push_a 9
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	pushR 0.2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addR
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+.d 4 1 r
+	jsr s4
+.o 2 0
+	push_b 2
+	push_b 2
+	push_b 2
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 6
+	push_b 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sfillAt;78
+.o 1 0
+	buildh e_StdPictureDef_dBlack 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+	push_a 9
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	pushR 0.2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addR
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 4 1 r
+	jsr s4
+.o 2 0
+	push_b 2
+	push_b 2
+	push_b 2
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	updatepop_a 0 18
+	update_b 3 9
+	update_b 2 8
+	update_b 1 7
+	updatepop_b 0 6
+.d 2 4 iiii
+	jmp e_StdPicture_sdrawAt;74
+.o 5 3 iri
+s27
+	buildh e_StdPictureDef_dWhite 0
+	create
+	push_a 5
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 3 0
+	jsr e_StdPicture_ssetPenColour
+.o 1 0
+.d 0 0
+	jsr e_Geometry_sone;70
+.o 2 0
+	push_a 4
+	push_a 4
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	pop_a 1
+.d 4 0
+	jsr e_Geometry_smove_point
+.o 2 0
+	push_b 2
+	push_b 2
+	push_b 2
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_a 3
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 2 ii
+	jmp e_StdPicture_sdrawAt;62
+.o 5 5 iriii
+s26
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 r
+	jsr s4
+.o 2 0
+	push_b 2
+	push_b 2
+	push_b 2
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_b 6
+	push_b 6
+.d 0 4 iiii
+	jsr e_StdIOBasic_smovePoint
+.o 0 2 ii
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	push_a 2
+	push_a 2
+	push_b 2
+	push_b 2
+	push_b 2
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_b 3
+	push_b 3
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 4 iiii
+	jsr e_StdIOBasic_smovePoint
+.o 0 2 ii
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.o 4 1 r
+s4
+	push_a 3
+	push_a 3
+	push_b 0
+	updatepop_b 0 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;74
+.o 2 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_Geometry_smove_point
+.o 4 3 iri
+s19
+	pushR 3.1415926535897932384
+	pushR 1.5
+	mulR
+	pushB TRUE
+	pushR 0.0
+	push_b 4
+	push_b 3
+	update_b 3 4
+	update_b 0 3
+	pop_b 1
+.d 0 4 rrrb
+	jsr s8
+.o 1 3 rrb
+	create
+	push_a 2
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 0.90
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 5
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	push_b 5
+	push_b 5
+	push_b 5
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 3 5 iirrb
+	jsr e_StdPicture_sdrawAt;82
+.o 1 0
+	pushR 3.1415926535897932384
+	pushR 0.5
+	mulR
+	pushB FALSE
+	pushR 0.0
+	push_b 4
+	push_b 3
+	update_b 3 4
+	update_b 0 3
+	pop_b 1
+.d 0 4 rrrb
+	jsr s8
+.o 1 3 rrb
+	create
+	push_a 3
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 0.90
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 6
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	push_b 5
+	push_b 5
+	push_b 5
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 5 iirrb
+	jsr e_StdPicture_sdrawAt;82
+.o 1 0
+	pushR 3.1415926535897932384
+	pushR 1.5
+	mulR
+	pushB FALSE
+	pushR 3.1415926535897932384
+	push_b 4
+	push_b 3
+	update_b 3 4
+	update_b 0 3
+	pop_b 1
+.d 0 4 rrrb
+	jsr s8
+.o 1 3 rrb
+	create
+	push_a 3
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 0.90
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 6
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 5
+	push_b 5
+	push_b 5
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 5 iirrb
+	jsr e_StdPicture_sdrawAt;82
+.o 1 0
+	pushR 3.1415926535897932384
+	pushR 0.5
+	mulR
+	pushB TRUE
+	pushR 3.1415926535897932384
+	push_b 4
+	push_b 3
+	update_b 3 4
+	update_b 0 3
+	pop_b 1
+.d 0 4 rrrb
+	jsr s8
+.o 1 3 rrb
+	create
+	push_a 3
+	pushR -0.5
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 0.90
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 6
+	pushR 0.5
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 5
+	push_b 5
+	push_b 5
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	update_a 1 4
+	updatepop_a 0 3
+	update_b 4 7
+	update_b 3 6
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+.d 3 5 iirrb
+	jmp e_StdPicture_sdrawAt;82
+.o 0 4 rrrb
+s8
+	create
+	pushR 0.90
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 0
+	updatepop_b 0 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	push_b 0
+	push_b 1
+	build_r e_StdPictureDef_rOval 0 2 0 0
+	pop_b 2
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 6
+	update_b 1 5
+	updatepop_b 0 4
+.d 1 3 rrb
+	rtn
+.o 5 3 iir
+s18
+	create
+	pushR 11.00
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_a 0
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	divR
+.d 0 1 r
+	jsr e_StdEnvExt_sarccosinus;58
+.o 0 1 r
+	create
+	pushR 11.00
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 5
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 3
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	pushR 0.3
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 4
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	pushR 7.32
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 2.0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;68
+.o 2 0
+	update_a 2 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 5
+.d 2 1 r
+	jsr s13
+.o 0 2 ii
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;68
+.o 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 7
+.d 2 1 r
+	jsr s13
+.o 0 2 ii
+	create
+	pushR 11.00
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 7
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 9
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	pushR 0.3
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 10
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 8
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 10
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 10
+	push_b 12
+	push_b 11
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 9
+	push_b 5
+	push_b 5
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 8
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 11
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 10
+	push_b 12
+	push_b 11
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 5
+	push_b 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 9
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 11
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 10
+	push_b 12
+	push_b 11
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 7
+	push_b 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	push_b 0
+	push_b 1
+	push_a 2
+	push_a 2
+	push_b 12
+	push_b 14
+	push_b 13
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;74
+.o 1 0
+	push_b 7
+	pushR 3.1415926535897932384
+	subR
+	push_b 8
+	pushR 3.1415926535897932384
+	addR
+	push_b 2
+	push_b 3
+	build_r e_StdPictureDef_rOval 0 2 0 0
+	pop_b 2
+	pushB TRUE
+	push_b 2
+	update_b 1 3
+	update_b 2 1
+	update_b 0 2
+	pop_b 1
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 10
+.d 0 1 r
+	jsr e_StdEnvExt_ssinus;54
+.o 0 1 r
+	negR
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 8
+.d 2 0
+	jsr e_Geometry_s~;20
+.o 1 0
+	push_a 5
+	push_a 5
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 4 0
+	jsr e_Geometry_smove_point
+.o 2 0
+	push_b 12
+	push_b 14
+	push_b 13
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 5 iirrb
+	jsr e_StdPicture_sdrawAt;82
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	push_a 8
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 8
+	push_b 10
+	push_b 9
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 6
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	create
+	push_a 8
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 8
+	push_b 10
+	push_b 9
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 9
+	pushR -0.5
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	push_b 6
+	push_b 8
+	push_b 7
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	push_b 0
+	push_b 1
+	push_a 2
+	push_a 2
+	push_b 6
+	push_b 8
+	push_b 7
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;74
+.o 1 0
+	push_b 1
+	negR
+	push_b 1
+	push_b 2
+	build_r e_StdPictureDef_rOval 0 2 0 0
+	pop_b 2
+	pushB FALSE
+	push_b 3
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 4
+.d 0 1 r
+	jsr e_StdEnvExt_ssinus;54
+.o 0 1 r
+	negR
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 4 0
+	jsr e_Geometry_smove_point
+.o 2 0
+	push_b 6
+	push_b 8
+	push_b 7
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	update_a 1 8
+	updatepop_a 0 7
+	update_b 4 9
+	update_b 3 8
+	update_b 2 7
+	update_b 1 6
+	updatepop_b 0 5
+.d 3 5 iirrb
+	jmp e_StdPicture_sdrawAt;82
+.o 5 3 iir
+s17
+	create
+	pushR 7.32
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 2.0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;68
+.o 2 0
+	update_a 2 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 2
+.d 2 1 r
+	jsr s13
+.o 0 2 ii
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;68
+.o 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 4
+.d 2 1 r
+	jsr s13
+.o 0 2 ii
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 5
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 4
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 6
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 6
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 5
+	push_b 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	push_a 5
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	create
+	push_a 5
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 5.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 5
+	pushR -0.5
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	push_b 3
+	push_b 5
+	push_b 4
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	updatepop_a 0 3
+	update_b 3 8
+	update_b 2 7
+	update_b 1 6
+	updatepop_b 0 5
+.d 2 4 iiii
+	jmp e_StdPicture_sdrawAt;70
+.o 5 3 iir
+s16
+	create
+	pushR 1.0
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;68
+.o 2 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 2
+.d 2 1 r
+	jsr s13
+.o 0 2 ii
+	create
+	push_a 4
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	push_b 5
+	push_b 4
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 5
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	push_a 5
+	pushR 0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	push_b 5
+	push_b 4
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	push_a 4
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	push_b 5
+	push_b 4
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_b 3
+	push_b 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;70
+.o 1 0
+	create
+	push_a 3
+	pushR -0.5
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_b 3
+	push_b 5
+	push_b 4
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	push_b 3
+	push_b 3
+	push_b 3
+	update_b 2 4
+	update_b 0 2
+	update_b 3 0
+	update_b 1 3
+	update_b 0 1
+	pop_b 1
+	updatepop_a 0 3
+	update_b 3 8
+	update_b 2 7
+	update_b 1 6
+	updatepop_b 0 5
+.d 2 4 iiii
+	jmp e_StdPicture_sdrawAt;70
+.o 2 1 r
+s13
+	push_a 1
+	push_b 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	push_a 0
+	push_b 1
+	updatepop_a 0 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 2 ii
+	rtn
+.o 3 3 iir
+s15
+	create
+	pushR 0.3
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 2
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_b 3
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	create
+	push_a 1
+	pushR -0.5
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	update_a 2 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 3
+	push_b 5
+	push_b 4
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 1
+	pushR 0.5
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	update_a 2 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawLine
+.o 1 0
+	push_b 0
+	push_b 1
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	push_b 5
+	push_b 7
+	push_b 6
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 2 4 iiii
+	jsr e_StdPicture_sdrawAt;74
+.o 1 0
+	push_b 0
+	push_b 1
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	push_b 4
+	push_b 6
+	push_b 5
+.d 2 3 iri
+	jsr s12
+.o 0 2 ii
+	update_b 3 7
+	update_b 2 6
+	update_b 1 5
+	updatepop_b 0 4
+.d 2 4 iiii
+	jmp e_StdPicture_sdrawAt;74
+.o 2 3 iri
+s12
+	push_a 1
+	push_b 2
+	push_b 2
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 2 ri
+	jsr s25
+.o 0 1 i
+	push_a 0
+	push_b 1
+	push_b 3
+	updatepop_a 0 1
+.d 1 2 ri
+	jsr s23
+.o 0 1 i
+	update_b 1 4
+	updatepop_b 0 3
+.d 0 2 ii
+	rtn
+.o 1 2 ri
+s23
+	push_a 0
+	push_b 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	pushI 2
+	push_b 2
+	divI
+	update_b 1 2
+	updatepop_b 0 1
+	addI
+.d 0 1 i
+	rtn
+.o 1 2 ri
+s25
+	push_a 0
+	push_b 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 r
+	jsr s24
+.o 0 1 i
+	pushI 2
+	push_b 2
+	divI
+	update_b 1 2
+	updatepop_b 0 1
+	subI
+.d 0 1 i
+	rtn
+.o 1 1 r
+s24
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_b 1
+	mulR
+	updatepop_b 0 1
+	RtoI
+.d 0 1 i
+	rtn

@@ -1,0 +1,9397 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "FootballerFunctions" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.module m_Footballer "Footballer" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_FootballerFunctions_sreturnAI
+.impdesc e_Geometry_dm
+.implab e_Geometry_sm
+.implab e_Geometry_nm e_Geometry_eam
+.implab e_Geometry_srad
+.implab e_Geometry_sms
+.implab e_Geometry_s+;16
+.implab e_Geometry_s-;17
+.implab e_Geometry_s~;20
+.impdesc e_Geometry_d<;22
+.implab e_Geometry_s<;22
+.implab e_Geometry_stoReal;23
+.impdesc e_Geometry_dscale;25
+.implab e_Geometry_sscale;25
+.implab e_Geometry_nscale;25 e_Geometry_eascale;25
+.impdesc e_Geometry_dzero;26
+.implab e_Geometry_szero;26
+.implab e_Geometry_nzero;26
+.impdesc e_Geometry_dtoString;30
+.implab e_Geometry_stoPosition3D;39
+.impdesc e_Geometry_dzero;44
+.implab e_Geometry_szero;44
+.implab e_Geometry_nzero;44 e_Geometry_eazero;44
+.implab e_Geometry_s==;50
+.impdesc e_Geometry_dtoString;54
+.implab e_Geometry_s+;77
+.implab e_Geometry_s==;82
+.implab e_Geometry_stoReal;84
+.impdesc e_Geometry_dtoString;85
+.implab e_Geometry_sscale;86
+.impdesc e_Geometry_dzero;87
+.implab e_Geometry_szero;87
+.implab e_Geometry_nzero;87
+.implab e_Geometry_s==;89
+.implab e_Geometry_s==;90
+.impdesc e_Geometry_dtoString;91
+.impdesc e_Geometry_dtoString;92
+.impdesc e_Geometry_rPosition
+.impdesc e_Geometry_tPosition
+.implab e_Geometry_cPosition
+.implab e_StdMisc_sabort
+.implab e_StdList_sisMember
+.implab e_StdList_savg;77
+.impdesc e_StdClass_rEq;
+.impdesc e_StdClass_rOrd;
+.implab e_StdString_s==;2
+.impdesc e_StdString_dtoString;5
+.implab e_StdString_stoString;5
+.impdesc e_StdString_dtoString;9
+.implab e_StdString_s+++;11
+.implab e_StdReal_s+;1
+.implab e_StdReal_s-;2
+.implab e_StdReal_szero;3
+.implab e_StdReal_s*;4
+.implab e_StdReal_s/;5
+.implab e_StdReal_s^;7
+.implab e_StdReal_sabs;8
+.implab e_StdReal_s==;11
+.implab e_StdReal_s<;12
+.implab e_StdReal_stoReal;13
+.implab e_StdInt_s/;10
+.implab e_StdInt_s==;16
+.implab e_StdInt_s<;17
+.implab e_StdInt_stoInt;22
+.implab e_StdBool_snot
+.implab e_StdEnvExt_s<+++
+.implab e_StdEnvExt_sshowList
+.implab e_StdEnvExt_sisbetween
+.impdesc e_StdEnvExt_dtoString;48
+.impdesc e_StdEnvExt_dtoString;50
+.implab e_StdEnvExt_smod;51
+.impdesc e_StdOverloaded_r==;
+.impdesc e_StdOverloaded_r<;
+.impdesc e_StdOverloaded_rtoString;
+.impdesc e_StdOverloaded_ttoString;
+.implab e_StdOverloaded_ctoString;
+.implab e_StdMaybe_sisJust
+.implab e_StdMaybe_sfromJust
+.export e_Footballer_rFootballer
+.record e_Footballer_rFootballer aaaaaa(a,a,a)arra 11 2 "Footballer"
+.descexp e_Footballer_tFootballer e_Footballer_cFootballer _hnf 11 1 "Footballer"
+.n 11 e_Footballer_tFootballer
+.o 1 0
+e_Footballer_cFootballer
+	push_node _cycle_in_spine 11
+	jsr_eval 10
+	jsr_eval 9
+	jsr_eval 8
+	jsr_eval 7
+	push_a 6
+	jsr_eval 0
+	repl_args 3 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	jsr_eval 8
+	jsr_eval 7
+	jsr_eval 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	pushR_a 12
+	pushR_a 11
+	push_array 4
+	update_a 11 13
+	update_a 2 11
+	update_a 3 12
+	update_a 1 10
+	update_a 0 5
+	pop_a 4
+	fill_r e_Footballer_rFootballer 11 2 11 0 0
+	pop_a 11
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.playerID
+.export e_Footballer_nFootballer.playerID
+.descs e_Footballer_dFootballer.playerID e_Footballer_nFootballer.playerID _ 1 0 "Footballer.playerID"
+.n -4 e_Footballer_dFootballer.playerID
+.o 1 0
+e_Footballer_nFootballer.playerID
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 11 2 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.name
+.export e_Footballer_nFootballer.name
+.desc e_Footballer_dFootballer.name e_Footballer_nFootballer.name _hnf 1 0 "Footballer.name"
+.n 1 e_Footballer_dFootballer.name
+.o 1 0
+e_Footballer_nFootballer.name
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 11 2 2 1
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.length
+.export e_Footballer_nFootballer.length
+.export e_Footballer_eaFootballer.length
+.descs e_Footballer_dFootballer.length e_Footballer_nFootballer.length _ 4 0 "Footballer.length"
+.n -4 e_Footballer_dFootballer.length e_Footballer_eaFootballer.length
+.o 1 0
+e_Footballer_nFootballer.length
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFootballer.length
+	jsr_eval 0
+	repl_r_args_a 11 2 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.pos
+.export e_Footballer_nFootballer.pos
+.descs e_Footballer_dFootballer.pos e_Footballer_nFootballer.pos _ 5 0 "Footballer.pos"
+.n -4 e_Footballer_dFootballer.pos
+.o 1 0
+e_Footballer_nFootballer.pos
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 11 2 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.speed
+.export e_Footballer_nFootballer.speed
+.descs e_Footballer_dFootballer.speed e_Footballer_nFootballer.speed _ 6 0 "Footballer.speed"
+.n -4 e_Footballer_dFootballer.speed
+.o 1 0
+e_Footballer_nFootballer.speed
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 11 2 5 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.nose
+.export e_Footballer_nFootballer.nose
+.export e_Footballer_eaFootballer.nose
+.descs e_Footballer_dFootballer.nose e_Footballer_nFootballer.nose _ 7 0 "Footballer.nose"
+.n -4 e_Footballer_dFootballer.nose e_Footballer_eaFootballer.nose
+.o 1 0
+e_Footballer_nFootballer.nose
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFootballer.nose
+	jsr_eval 0
+	repl_r_args_a 11 2 6 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.skills
+.export e_Footballer_nFootballer.skills
+.desc e_Footballer_dFootballer.skills e_Footballer_nFootballer.skills _hnf 1 0 "Footballer.skills"
+.n 1 e_Footballer_dFootballer.skills
+.o 1 0
+e_Footballer_nFootballer.skills
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 11 2 7 3
+	push_a 2
+	push_a 2
+	push_a 2
+	fillh _Tuple 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.effect
+.export e_Footballer_nFootballer.effect
+.export e_Footballer_eaFootballer.effect
+.descs e_Footballer_dFootballer.effect e_Footballer_nFootballer.effect _ 11 0 "Footballer.effect"
+.n -4 e_Footballer_dFootballer.effect e_Footballer_eaFootballer.effect
+.o 1 0
+e_Footballer_nFootballer.effect
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFootballer.effect
+	jsr_eval 0
+	repl_r_args_a 11 2 10 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.stamina
+.export e_Footballer_nFootballer.stamina
+.descs e_Footballer_dFootballer.stamina e_Footballer_nFootballer.stamina REAL 13 0 "Footballer.stamina"
+.n -3 e_Footballer_dFootballer.stamina
+.o 1 0
+e_Footballer_nFootballer.stamina
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 11 2 1 1
+	pop_a 1
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.health
+.export e_Footballer_nFootballer.health
+.descs e_Footballer_dFootballer.health e_Footballer_nFootballer.health REAL 14 0 "Footballer.health"
+.n -3 e_Footballer_dFootballer.health
+.o 1 0
+e_Footballer_nFootballer.health
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 11 2 2 1
+	pop_a 1
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballer.brain
+.export e_Footballer_nFootballer.brain
+.descs e_Footballer_dFootballer.brain e_Footballer_nFootballer.brain _ 12 0 "Footballer.brain"
+.n -4 e_Footballer_dFootballer.brain
+.o 1 0
+e_Footballer_nFootballer.brain
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 11 2 11 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_rFootballerID
+.record e_Footballer_rFootballerID ai 1 1 "FootballerID"
+.descexp e_Footballer_tFootballerID e_Footballer_cFootballerID _hnf 2 1 "FootballerID"
+.n 2 e_Footballer_tFootballerID
+.o 1 0
+e_Footballer_cFootballerID
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	push_array 0
+	update_a 0 2
+	pop_a 2
+	fill_r e_Footballer_rFootballerID 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballerID.clubName
+.export e_Footballer_nFootballerID.clubName
+.desc e_Footballer_dFootballerID.clubName e_Footballer_nFootballerID.clubName _hnf 1 0 "FootballerID.clubName"
+.n 1 e_Footballer_dFootballerID.clubName
+.o 1 0
+e_Footballer_nFootballerID.clubName
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 1 1 1 1
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballerID.playerNr
+.export e_Footballer_nFootballerID.playerNr
+.descs e_Footballer_dFootballerID.playerNr e_Footballer_nFootballerID.playerNr INT 2 0 "FootballerID.playerNr"
+.n -3 e_Footballer_dFootballerID.playerNr
+.o 1 0
+e_Footballer_nFootballerID.playerNr
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 1 1 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_dRunning
+.desc0 e_Footballer_dRunning 0 "Running"
+.export e_Footballer_dDribbling
+.desc0 e_Footballer_dDribbling 1 "Dribbling"
+.export e_Footballer_dRotating
+.desc0 e_Footballer_dRotating 2 "Rotating"
+.export e_Footballer_dGaining
+.desc0 e_Footballer_dGaining 3 "Gaining"
+.export e_Footballer_dKicking
+.desc0 e_Footballer_dKicking 4 "Kicking"
+.export e_Footballer_dHeading
+.desc0 e_Footballer_dHeading 5 "Heading"
+.export e_Footballer_dFeinting
+.desc0 e_Footballer_dFeinting 6 "Feinting"
+.export e_Footballer_dJumping
+.desc0 e_Footballer_dJumping 7 "Jumping"
+.export e_Footballer_dCatching
+.desc0 e_Footballer_dCatching 8 "Catching"
+.export e_Footballer_dTackling
+.desc0 e_Footballer_dTackling 9 "Tackling"
+.export e_Footballer_rBrainInput
+.record e_Footballer_rBrainInput aaaa 4 0 "BrainInput"
+.export e_Footballer_dBrainInput.referee
+.export e_Footballer_nBrainInput.referee
+.export e_Footballer_eaBrainInput.referee
+.descs e_Footballer_dBrainInput.referee e_Footballer_nBrainInput.referee _ 1 0 "BrainInput.referee"
+.n -4 e_Footballer_dBrainInput.referee e_Footballer_eaBrainInput.referee
+.o 1 0
+e_Footballer_nBrainInput.referee
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaBrainInput.referee
+	jsr_eval 0
+	repl_r_args_a 4 0 1 1
+	jmp_eval_upd
+.export e_Footballer_dBrainInput.football
+.export e_Footballer_nBrainInput.football
+.export e_Footballer_eaBrainInput.football
+.descs e_Footballer_dBrainInput.football e_Footballer_nBrainInput.football _ 3 0 "BrainInput.football"
+.n -4 e_Footballer_dBrainInput.football e_Footballer_eaBrainInput.football
+.o 1 0
+e_Footballer_nBrainInput.football
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaBrainInput.football
+	jsr_eval 0
+	repl_r_args_a 4 0 2 1
+	jmp_eval_upd
+.export e_Footballer_dBrainInput.others
+.export e_Footballer_nBrainInput.others
+.export e_Footballer_eaBrainInput.others
+.descs e_Footballer_dBrainInput.others e_Footballer_nBrainInput.others _ 4 0 "BrainInput.others"
+.n -4 e_Footballer_dBrainInput.others e_Footballer_eaBrainInput.others
+.o 1 0
+e_Footballer_nBrainInput.others
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaBrainInput.others
+	jsr_eval 0
+	repl_r_args_a 4 0 3 1
+	jmp_eval_upd
+.export e_Footballer_dBrainInput.me
+.export e_Footballer_nBrainInput.me
+.descs e_Footballer_dBrainInput.me e_Footballer_nBrainInput.me _ 5 0 "BrainInput.me"
+.n -4 e_Footballer_dBrainInput.me
+.o 1 0
+e_Footballer_nBrainInput.me
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 4 0 4 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFirstHalf
+.desc0 e_Footballer_dFirstHalf 0 "FirstHalf"
+.export e_Footballer_dSecondHalf
+.desc0 e_Footballer_dSecondHalf 1 "SecondHalf"
+.export e_Footballer_dWest
+.desc0 e_Footballer_dWest 0 "West"
+.export e_Footballer_dEast
+.desc0 e_Footballer_dEast 1 "East"
+.export e_Footballer_rBrain
+.record e_Footballer_rBrain aa 2 0 "Brain"
+.descexp e_Footballer_tBrain e_Footballer_cBrain _hnf 2 1 "Brain"
+.n 2 e_Footballer_tBrain
+.o 1 0
+e_Footballer_cBrain
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_rBrain 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_dBrain.ai
+.export e_Footballer_nBrain.ai
+.export e_Footballer_eaBrain.ai
+.descs e_Footballer_dBrain.ai e_Footballer_nBrain.ai _ 1 0 "Brain.ai"
+.n -4 e_Footballer_dBrain.ai e_Footballer_eaBrain.ai
+.o 1 0
+e_Footballer_nBrain.ai
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaBrain.ai
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dBrain.memory
+.export e_Footballer_nBrain.memory
+.export e_Footballer_eaBrain.memory
+.descs e_Footballer_dBrain.memory e_Footballer_nBrain.memory _ 2 0 "Brain.memory"
+.n -4 e_Footballer_dBrain.memory e_Footballer_eaBrain.memory
+.o 1 0
+e_Footballer_nBrain.memory
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaBrain.memory
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_rFootballField
+.record e_Footballer_rFootballField aa 2 0 "FootballField"
+.descexp e_Footballer_tFootballField e_Footballer_cFootballField _hnf 2 1 "FootballField"
+.n 2 e_Footballer_tFootballField
+.o 1 0
+e_Footballer_cFootballField
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_rFootballField 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_dFootballField.fwidth
+.export e_Footballer_nFootballField.fwidth
+.export e_Footballer_eaFootballField.fwidth
+.descs e_Footballer_dFootballField.fwidth e_Footballer_nFootballField.fwidth _ 1 0 "FootballField.fwidth"
+.n -4 e_Footballer_dFootballField.fwidth e_Footballer_eaFootballField.fwidth
+.o 1 0
+e_Footballer_nFootballField.fwidth
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFootballField.fwidth
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dFootballField.flength
+.export e_Footballer_nFootballField.flength
+.export e_Footballer_eaFootballField.flength
+.descs e_Footballer_dFootballField.flength e_Footballer_nFootballField.flength _ 2 0 "FootballField.flength"
+.n -4 e_Footballer_dFootballField.flength e_Footballer_eaFootballField.flength
+.o 1 0
+e_Footballer_nFootballField.flength
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFootballField.flength
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kMove
+.record e_Footballer_kMove daa 2 0 "Move"
+.export e_Footballer_eaMove
+.descexp e_Footballer_dMove e_Footballer_nMove e_Footballer_lMove 2 0 "Move"
+.a 2 e_Footballer_eaMove
+.o 2 0
+e_Footballer_lMove
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaMove
+.n 2 e_Footballer_dMove e_Footballer_eaMove
+.o 1 0
+e_Footballer_nMove
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaMove
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kMove 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kFeint
+.record e_Footballer_kFeint da 1 0 "Feint"
+.export e_Footballer_eaFeint
+.descexp e_Footballer_dFeint e_Footballer_nFeint e_Footballer_lFeint 1 0 "Feint"
+.o 2 0
+e_Footballer_lFeint
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaFeint
+.n 1 e_Footballer_dFeint e_Footballer_eaFeint
+.o 1 0
+e_Footballer_nFeint
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFeint
+	jsr_eval 0
+	fill_r e_Footballer_kFeint 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kKickBall
+.record e_Footballer_kKickBall d(aa) 2 0 "KickBall"
+.export e_Footballer_eaKickBall
+.descexp e_Footballer_dKickBall e_Footballer_nKickBall e_Footballer_lKickBall 1 0 "KickBall"
+.o 2 0
+e_Footballer_lKickBall
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaKickBall
+.n 1 e_Footballer_dKickBall e_Footballer_eaKickBall
+.o 1 0
+e_Footballer_nKickBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaKickBall
+	jsr_eval 0
+	repl_r_args 2 0
+	fill_r e_Footballer_kKickBall 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kHeadBall
+.record e_Footballer_kHeadBall d(aa) 2 0 "HeadBall"
+.export e_Footballer_eaHeadBall
+.descexp e_Footballer_dHeadBall e_Footballer_nHeadBall e_Footballer_lHeadBall 1 0 "HeadBall"
+.o 2 0
+e_Footballer_lHeadBall
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaHeadBall
+.n 1 e_Footballer_dHeadBall e_Footballer_eaHeadBall
+.o 1 0
+e_Footballer_nHeadBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaHeadBall
+	jsr_eval 0
+	repl_r_args 2 0
+	fill_r e_Footballer_kHeadBall 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_dGainBall
+.desc e_Footballer_dGainBall _hnf _hnf 0 0 "GainBall"
+.export e_Footballer_dCatchBall
+.desc e_Footballer_dCatchBall _hnf _hnf 0 0 "CatchBall"
+.export e_Footballer_kTackle
+.record e_Footballer_kTackle daa 2 0 "Tackle"
+.export e_Footballer_eaTackle
+.descexp e_Footballer_dTackle e_Footballer_nTackle e_Footballer_lTackle 2 0 "Tackle"
+.a 2 e_Footballer_eaTackle
+.o 2 0
+e_Footballer_lTackle
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaTackle
+.n 2 e_Footballer_dTackle e_Footballer_eaTackle
+.o 1 0
+e_Footballer_nTackle
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaTackle
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kTackle 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_dFeintLeft
+.desc0 e_Footballer_dFeintLeft 0 "FeintLeft"
+.export e_Footballer_dFeintRight
+.desc0 e_Footballer_dFeintRight 1 "FeintRight"
+.export e_Footballer_kMoved
+.record e_Footballer_kMoved daa 2 0 "Moved"
+.export e_Footballer_eaMoved
+.descexp e_Footballer_dMoved e_Footballer_nMoved e_Footballer_lMoved 2 0 "Moved"
+.a 2 e_Footballer_eaMoved
+.o 2 0
+e_Footballer_lMoved
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaMoved
+.n 2 e_Footballer_dMoved e_Footballer_eaMoved
+.o 1 0
+e_Footballer_nMoved
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaMoved
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kMoved 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kFeinted
+.record e_Footballer_kFeinted da 1 0 "Feinted"
+.export e_Footballer_eaFeinted
+.descexp e_Footballer_dFeinted e_Footballer_nFeinted e_Footballer_lFeinted 1 0 "Feinted"
+.o 2 0
+e_Footballer_lFeinted
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaFeinted
+.n 1 e_Footballer_dFeinted e_Footballer_eaFeinted
+.o 1 0
+e_Footballer_nFeinted
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaFeinted
+	jsr_eval 0
+	fill_r e_Footballer_kFeinted 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kKickedBall
+.record e_Footballer_kKickedBall da 1 0 "KickedBall"
+.export e_Footballer_eaKickedBall
+.descexp e_Footballer_dKickedBall e_Footballer_nKickedBall e_Footballer_lKickedBall 1 0 "KickedBall"
+.o 2 0
+e_Footballer_lKickedBall
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaKickedBall
+.n 1 e_Footballer_dKickedBall e_Footballer_eaKickedBall
+.o 1 0
+e_Footballer_nKickedBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaKickedBall
+	jsr_eval 0
+	fill_r e_Footballer_kKickedBall 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kHeadedBall
+.record e_Footballer_kHeadedBall da 1 0 "HeadedBall"
+.export e_Footballer_eaHeadedBall
+.descexp e_Footballer_dHeadedBall e_Footballer_nHeadedBall e_Footballer_lHeadedBall 1 0 "HeadedBall"
+.o 2 0
+e_Footballer_lHeadedBall
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaHeadedBall
+.n 1 e_Footballer_dHeadedBall e_Footballer_eaHeadedBall
+.o 1 0
+e_Footballer_nHeadedBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaHeadedBall
+	jsr_eval 0
+	fill_r e_Footballer_kHeadedBall 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kGainedBall
+.record e_Footballer_kGainedBall da 1 0 "GainedBall"
+.export e_Footballer_eaGainedBall
+.descexp e_Footballer_dGainedBall e_Footballer_nGainedBall e_Footballer_lGainedBall 1 0 "GainedBall"
+.o 2 0
+e_Footballer_lGainedBall
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaGainedBall
+.n 1 e_Footballer_dGainedBall e_Footballer_eaGainedBall
+.o 1 0
+e_Footballer_nGainedBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaGainedBall
+	jsr_eval 0
+	fill_r e_Footballer_kGainedBall 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kCaughtBall
+.record e_Footballer_kCaughtBall da 1 0 "CaughtBall"
+.export e_Footballer_eaCaughtBall
+.descexp e_Footballer_dCaughtBall e_Footballer_nCaughtBall e_Footballer_lCaughtBall 1 0 "CaughtBall"
+.o 2 0
+e_Footballer_lCaughtBall
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaCaughtBall
+.n 1 e_Footballer_dCaughtBall e_Footballer_eaCaughtBall
+.o 1 0
+e_Footballer_nCaughtBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaCaughtBall
+	jsr_eval 0
+	fill_r e_Footballer_kCaughtBall 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kTackled
+.record e_Footballer_kTackled daaa 3 0 "Tackled"
+.export e_Footballer_eaTackled
+.descexp e_Footballer_dTackled e_Footballer_nTackled e_Footballer_lTackled 3 0 "Tackled"
+.a 3 e_Footballer_eaTackled
+.o 2 0
+e_Footballer_lTackled
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_Footballer_eaTackled
+.n 3 e_Footballer_dTackled e_Footballer_eaTackled
+.o 1 0
+e_Footballer_nTackled
+	push_node _cycle_in_spine 3
+.o 4 0
+e_Footballer_eaTackled
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kTackled 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.export e_Footballer_kOnTheGround
+.record e_Footballer_kOnTheGround di 0 1 "OnTheGround"
+.export e_Footballer_eaOnTheGround
+.descexp e_Footballer_dOnTheGround e_Footballer_nOnTheGround e_Footballer_lOnTheGround 1 0 "OnTheGround"
+.o 2 0
+e_Footballer_lOnTheGround
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaOnTheGround
+.n 1 e_Footballer_dOnTheGround e_Footballer_eaOnTheGround
+.o 1 0
+e_Footballer_nOnTheGround
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaOnTheGround
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	fill_r e_Footballer_kOnTheGround 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_dWarning
+.desc0 e_Footballer_dWarning 0 "Warning"
+.export e_Footballer_dYellowCard
+.desc0 e_Footballer_dYellowCard 1 "YellowCard"
+.export e_Footballer_dRedCard
+.desc0 e_Footballer_dRedCard 2 "RedCard"
+.export e_Footballer_dSuccess
+.desc0 e_Footballer_dSuccess 0 "Success"
+.export e_Footballer_dFail
+.desc0 e_Footballer_dFail 1 "Fail"
+.export e_Footballer_kReprimandPlayer
+.record e_Footballer_kReprimandPlayer daa 2 0 "ReprimandPlayer"
+.export e_Footballer_eaReprimandPlayer
+.descexp e_Footballer_dReprimandPlayer e_Footballer_nReprimandPlayer e_Footballer_lReprimandPlayer 2 0 "ReprimandPlayer"
+.a 2 e_Footballer_eaReprimandPlayer
+.o 2 0
+e_Footballer_lReprimandPlayer
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaReprimandPlayer
+.n 2 e_Footballer_dReprimandPlayer e_Footballer_eaReprimandPlayer
+.o 1 0
+e_Footballer_nReprimandPlayer
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaReprimandPlayer
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kReprimandPlayer 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kHands
+.record e_Footballer_kHands d(ai) 1 1 "Hands"
+.export e_Footballer_eaHands
+.descexp e_Footballer_dHands e_Footballer_nHands e_Footballer_lHands 1 0 "Hands"
+.o 2 0
+e_Footballer_lHands
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaHands
+.n 1 e_Footballer_dHands e_Footballer_eaHands
+.o 1 0
+e_Footballer_nHands
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaHands
+	jsr_eval 0
+	repl_r_args 1 1
+	fill_r e_Footballer_kHands 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_kTackleDetected
+.record e_Footballer_kTackleDetected d(ai) 1 1 "TackleDetected"
+.export e_Footballer_eaTackleDetected
+.descexp e_Footballer_dTackleDetected e_Footballer_nTackleDetected e_Footballer_lTackleDetected 1 0 "TackleDetected"
+.o 2 0
+e_Footballer_lTackleDetected
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaTackleDetected
+.n 1 e_Footballer_dTackleDetected e_Footballer_eaTackleDetected
+.o 1 0
+e_Footballer_nTackleDetected
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaTackleDetected
+	jsr_eval 0
+	repl_r_args 1 1
+	fill_r e_Footballer_kTackleDetected 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_kDangerousPlay
+.record e_Footballer_kDangerousPlay d(ai) 1 1 "DangerousPlay"
+.export e_Footballer_eaDangerousPlay
+.descexp e_Footballer_dDangerousPlay e_Footballer_nDangerousPlay e_Footballer_lDangerousPlay 1 0 "DangerousPlay"
+.o 2 0
+e_Footballer_lDangerousPlay
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaDangerousPlay
+.n 1 e_Footballer_dDangerousPlay e_Footballer_eaDangerousPlay
+.o 1 0
+e_Footballer_nDangerousPlay
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaDangerousPlay
+	jsr_eval 0
+	repl_r_args 1 1
+	fill_r e_Footballer_kDangerousPlay 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_dGameOver
+.desc e_Footballer_dGameOver _hnf _hnf 0 0 "GameOver"
+.export e_Footballer_kGameCancelled
+.record e_Footballer_kGameCancelled da 1 0 "GameCancelled"
+.export e_Footballer_eaGameCancelled
+.descexp e_Footballer_dGameCancelled e_Footballer_nGameCancelled e_Footballer_lGameCancelled 1 0 "GameCancelled"
+.o 2 0
+e_Footballer_lGameCancelled
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaGameCancelled
+.n 1 e_Footballer_dGameCancelled e_Footballer_eaGameCancelled
+.o 1 0
+e_Footballer_nGameCancelled
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaGameCancelled
+	jsr_eval 0
+	fill_r e_Footballer_kGameCancelled 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dPauseGame
+.desc e_Footballer_dPauseGame _hnf _hnf 0 0 "PauseGame"
+.export e_Footballer_kAddTime
+.record e_Footballer_kAddTime da 1 0 "AddTime"
+.export e_Footballer_eaAddTime
+.descexp e_Footballer_dAddTime e_Footballer_nAddTime e_Footballer_lAddTime 1 0 "AddTime"
+.o 2 0
+e_Footballer_lAddTime
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaAddTime
+.n 1 e_Footballer_dAddTime e_Footballer_eaAddTime
+.o 1 0
+e_Footballer_nAddTime
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaAddTime
+	jsr_eval 0
+	fill_r e_Footballer_kAddTime 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dEndHalf
+.desc e_Footballer_dEndHalf _hnf _hnf 0 0 "EndHalf"
+.export e_Footballer_kGoal
+.record e_Footballer_kGoal da 1 0 "Goal"
+.export e_Footballer_eaGoal
+.descexp e_Footballer_dGoal e_Footballer_nGoal e_Footballer_lGoal 1 0 "Goal"
+.o 2 0
+e_Footballer_lGoal
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaGoal
+.n 1 e_Footballer_dGoal e_Footballer_eaGoal
+.o 1 0
+e_Footballer_nGoal
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaGoal
+	jsr_eval 0
+	fill_r e_Footballer_kGoal 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kOffside
+.record e_Footballer_kOffside d(ai) 1 1 "Offside"
+.export e_Footballer_eaOffside
+.descexp e_Footballer_dOffside e_Footballer_nOffside e_Footballer_lOffside 1 0 "Offside"
+.o 2 0
+e_Footballer_lOffside
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaOffside
+.n 1 e_Footballer_dOffside e_Footballer_eaOffside
+.o 1 0
+e_Footballer_nOffside
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaOffside
+	jsr_eval 0
+	repl_r_args 1 1
+	fill_r e_Footballer_kOffside 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_kDirectFreeKick
+.record e_Footballer_kDirectFreeKick daa 2 0 "DirectFreeKick"
+.export e_Footballer_eaDirectFreeKick
+.descexp e_Footballer_dDirectFreeKick e_Footballer_nDirectFreeKick e_Footballer_lDirectFreeKick 2 0 "DirectFreeKick"
+.a 2 e_Footballer_eaDirectFreeKick
+.o 2 0
+e_Footballer_lDirectFreeKick
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaDirectFreeKick
+.n 2 e_Footballer_dDirectFreeKick e_Footballer_eaDirectFreeKick
+.o 1 0
+e_Footballer_nDirectFreeKick
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaDirectFreeKick
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kDirectFreeKick 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kGoalKick
+.record e_Footballer_kGoalKick da 1 0 "GoalKick"
+.export e_Footballer_eaGoalKick
+.descexp e_Footballer_dGoalKick e_Footballer_nGoalKick e_Footballer_lGoalKick 1 0 "GoalKick"
+.o 2 0
+e_Footballer_lGoalKick
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaGoalKick
+.n 1 e_Footballer_dGoalKick e_Footballer_eaGoalKick
+.o 1 0
+e_Footballer_nGoalKick
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaGoalKick
+	jsr_eval 0
+	fill_r e_Footballer_kGoalKick 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kCorner
+.record e_Footballer_kCorner daa 2 0 "Corner"
+.export e_Footballer_eaCorner
+.descexp e_Footballer_dCorner e_Footballer_nCorner e_Footballer_lCorner 2 0 "Corner"
+.a 2 e_Footballer_eaCorner
+.o 2 0
+e_Footballer_lCorner
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaCorner
+.n 2 e_Footballer_dCorner e_Footballer_eaCorner
+.o 1 0
+e_Footballer_nCorner
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaCorner
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kCorner 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kThrowIn
+.record e_Footballer_kThrowIn daa 2 0 "ThrowIn"
+.export e_Footballer_eaThrowIn
+.descexp e_Footballer_dThrowIn e_Footballer_nThrowIn e_Footballer_lThrowIn 2 0 "ThrowIn"
+.a 2 e_Footballer_eaThrowIn
+.o 2 0
+e_Footballer_lThrowIn
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eaThrowIn
+.n 2 e_Footballer_dThrowIn e_Footballer_eaThrowIn
+.o 1 0
+e_Footballer_nThrowIn
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eaThrowIn
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Footballer_kThrowIn 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_Footballer_kPenalty
+.record e_Footballer_kPenalty da 1 0 "Penalty"
+.export e_Footballer_eaPenalty
+.descexp e_Footballer_dPenalty e_Footballer_nPenalty e_Footballer_lPenalty 1 0 "Penalty"
+.o 2 0
+e_Footballer_lPenalty
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaPenalty
+.n 1 e_Footballer_dPenalty e_Footballer_eaPenalty
+.o 1 0
+e_Footballer_nPenalty
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaPenalty
+	jsr_eval 0
+	fill_r e_Footballer_kPenalty 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kCenterKick
+.record e_Footballer_kCenterKick da 1 0 "CenterKick"
+.export e_Footballer_eaCenterKick
+.descexp e_Footballer_dCenterKick e_Footballer_nCenterKick e_Footballer_lCenterKick 1 0 "CenterKick"
+.o 2 0
+e_Footballer_lCenterKick
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaCenterKick
+.n 1 e_Footballer_dCenterKick e_Footballer_eaCenterKick
+.o 1 0
+e_Footballer_nCenterKick
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaCenterKick
+	jsr_eval 0
+	fill_r e_Footballer_kCenterKick 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kAdvantage
+.record e_Footballer_kAdvantage da 1 0 "Advantage"
+.export e_Footballer_eaAdvantage
+.descexp e_Footballer_dAdvantage e_Footballer_nAdvantage e_Footballer_lAdvantage 1 0 "Advantage"
+.o 2 0
+e_Footballer_lAdvantage
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaAdvantage
+.n 1 e_Footballer_dAdvantage e_Footballer_eaAdvantage
+.o 1 0
+e_Footballer_nAdvantage
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaAdvantage
+	jsr_eval 0
+	fill_r e_Footballer_kAdvantage 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_kOwnBallIllegally
+.record e_Footballer_kOwnBallIllegally d(ai) 1 1 "OwnBallIllegally"
+.export e_Footballer_eaOwnBallIllegally
+.descexp e_Footballer_dOwnBallIllegally e_Footballer_nOwnBallIllegally e_Footballer_lOwnBallIllegally 1 0 "OwnBallIllegally"
+.o 2 0
+e_Footballer_lOwnBallIllegally
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaOwnBallIllegally
+.n 1 e_Footballer_dOwnBallIllegally e_Footballer_eaOwnBallIllegally
+.o 1 0
+e_Footballer_nOwnBallIllegally
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaOwnBallIllegally
+	jsr_eval 0
+	repl_r_args 1 1
+	fill_r e_Footballer_kOwnBallIllegally 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_kDisplacePlayers
+.record e_Footballer_kDisplacePlayers da 1 0 "DisplacePlayers"
+.export e_Footballer_eaDisplacePlayers
+.descexp e_Footballer_dDisplacePlayers e_Footballer_nDisplacePlayers e_Footballer_lDisplacePlayers 1 0 "DisplacePlayers"
+.o 2 0
+e_Footballer_lDisplacePlayers
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaDisplacePlayers
+.n 1 e_Footballer_dDisplacePlayers e_Footballer_eaDisplacePlayers
+.o 1 0
+e_Footballer_nDisplacePlayers
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaDisplacePlayers
+	jsr_eval 0
+	fill_r e_Footballer_kDisplacePlayers 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dContinueGame
+.desc e_Footballer_dContinueGame _hnf _hnf 0 0 "ContinueGame"
+.export e_Footballer_kTellMessage
+.record e_Footballer_kTellMessage da 1 0 "TellMessage"
+.export e_Footballer_eaTellMessage
+.descexp e_Footballer_dTellMessage e_Footballer_nTellMessage e_Footballer_lTellMessage 1 0 "TellMessage"
+.o 2 0
+e_Footballer_lTellMessage
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaTellMessage
+.n 1 e_Footballer_dTellMessage e_Footballer_eaTellMessage
+.o 1 0
+e_Footballer_nTellMessage
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaTellMessage
+	jsr_eval 0
+	push_array 0
+	update_a 0 1
+	pop_a 1
+	fill_r e_Footballer_kTellMessage 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dNorth
+.desc0 e_Footballer_dNorth 0 "North"
+.export e_Footballer_dSouth
+.desc0 e_Footballer_dSouth 1 "South"
+.record k237 dr 0 1 "Minutes"
+.export e_Footballer_rsameClub;
+.record e_Footballer_rsameClub; a 1 0 "sameClub;"
+.descexp e_Footballer_tsameClub; e_Footballer_csameClub; _hnf 1 1 "sameClub;"
+.n 1 e_Footballer_tsameClub;
+.o 1 0
+e_Footballer_csameClub;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Footballer_rsameClub; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dsameClub;.sameClub
+.export e_Footballer_nsameClub;.sameClub
+.export e_Footballer_easameClub;.sameClub
+.descs e_Footballer_dsameClub;.sameClub e_Footballer_nsameClub;.sameClub _ 1 0 "sameClub;.sameClub"
+.n -4 e_Footballer_dsameClub;.sameClub e_Footballer_easameClub;.sameClub
+.o 1 0
+e_Footballer_nsameClub;.sameClub
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_easameClub;.sameClub
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_rnameOf;
+.record e_Footballer_rnameOf; a 1 0 "nameOf;"
+.descexp e_Footballer_tnameOf; e_Footballer_cnameOf; _hnf 1 1 "nameOf;"
+.n 1 e_Footballer_tnameOf;
+.o 1 0
+e_Footballer_cnameOf;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Footballer_rnameOf; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dnameOf;.nameOf
+.export e_Footballer_nnameOf;.nameOf
+.export e_Footballer_eanameOf;.nameOf
+.descs e_Footballer_dnameOf;.nameOf e_Footballer_nnameOf;.nameOf _ 1 0 "nameOf;.nameOf"
+.n -4 e_Footballer_dnameOf;.nameOf e_Footballer_eanameOf;.nameOf
+.o 1 0
+e_Footballer_nnameOf;.nameOf
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eanameOf;.nameOf
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_rminutes;
+.record e_Footballer_rminutes; a 1 0 "minutes;"
+.descexp e_Footballer_tminutes; e_Footballer_cminutes; _hnf 1 1 "minutes;"
+.n 1 e_Footballer_tminutes;
+.o 1 0
+e_Footballer_cminutes;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_Footballer_rminutes; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_dminutes;.minutes
+.export e_Footballer_nminutes;.minutes
+.export e_Footballer_eaminutes;.minutes
+.descs e_Footballer_dminutes;.minutes e_Footballer_nminutes;.minutes _ 1 0 "minutes;.minutes"
+.n -4 e_Footballer_dminutes;.minutes e_Footballer_eaminutes;.minutes
+.o 1 0
+e_Footballer_nminutes;.minutes
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaminutes;.minutes
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_sminutes;105
+.export e_Footballer_eaminutes;105
+.descexp e_Footballer_dminutes;105 e_Footballer_nminutes;105 e_Footballer_lminutes;105 1 0 "minutes;105"
+.o 2 0
+e_Footballer_lminutes;105
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaminutes;105
+.n 1 e_Footballer_dminutes;105 e_Footballer_eaminutes;105
+.o 1 0
+e_Footballer_nminutes;105
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaminutes;105
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+e_Footballer_sminutes;105
+.o 1 1 r
+s106
+	push_b 0
+	fill_r k237 0 1 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Footballer_stoReal;104
+.descexp e_Footballer_dtoReal;104 e_Footballer_ntoReal;104 e_Footballer_ltoReal;104 1 0 "toReal;104"
+.o 2 0
+e_Footballer_ltoReal;104
+	pop_a 1
+.d 1 0
+	jsr ea105
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoReal;104
+.o 1 0
+e_Footballer_ntoReal;104
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea105
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea105
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoReal;104
+.o 1 0
+s105
+	repl_r_args 0 1
+.d 0 1 r
+	rtn
+.export e_Footballer_sscale;102
+.export e_Footballer_eascale;102
+.descexp e_Footballer_dscale;102 e_Footballer_nscale;102 e_Footballer_lscale;102 2 0 "scale;102"
+.a 2 e_Footballer_eascale;102
+.o 2 0
+e_Footballer_lscale;102
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eascale;102
+.n 2 e_Footballer_dscale;102 e_Footballer_eascale;102
+.o 1 0
+e_Footballer_nscale;102
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eascale;102
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 2 1 r
+e_Footballer_sscale;102
+.o 2 1 r
+s103
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	mulR
+	fill_r k237 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Footballer_s-;101
+.export e_Footballer_ea-;101
+.descexp e_Footballer_d-;101 e_Footballer_n-;101 e_Footballer_l-;101 2 0 "-;101"
+.a 2 e_Footballer_ea-;101
+.o 2 0
+e_Footballer_l-;101
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_ea-;101
+.n 2 e_Footballer_d-;101 e_Footballer_ea-;101
+.o 1 0
+e_Footballer_n-;101
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_ea-;101
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Footballer_s-;101
+.o 3 0
+s102
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	subR
+	fill_r k237 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Footballer_s+;100
+.export e_Footballer_ea+;100
+.descexp e_Footballer_d+;100 e_Footballer_n+;100 e_Footballer_l+;100 2 0 "+;100"
+.a 2 e_Footballer_ea+;100
+.o 2 0
+e_Footballer_l+;100
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_ea+;100
+.n 2 e_Footballer_d+;100 e_Footballer_ea+;100
+.o 1 0
+e_Footballer_n+;100
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_ea+;100
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+e_Footballer_s+;100
+.o 3 0
+s101
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	addR
+	fill_r k237 0 1 0 0 0
+	pop_b 3
+.d 1 0
+	rtn
+.export e_Footballer_s==;99
+.descexp e_Footballer_d==;99 e_Footballer_n==;99 e_Footballer_l==;99 2 0 "==;99"
+.a 0 a100
+.o 2 0
+e_Footballer_l==;99
+	repl_args 1 1
+.o 2 0
+a100
+.d 2 0
+	jsr ea100
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;99
+.o 1 0
+e_Footballer_n==;99
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea100
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea100
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;99
+.o 2 0
+s100
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	eqR
+.d 0 1 b
+	rtn
+.export e_Footballer_s<;98
+.descexp e_Footballer_d<;98 e_Footballer_n<;98 e_Footballer_l<;98 2 0 "<;98"
+.a 0 a99
+.o 2 0
+e_Footballer_l<;98
+	repl_args 1 1
+.o 2 0
+a99
+.d 2 0
+	jsr ea99
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d<;98
+.o 1 0
+e_Footballer_n<;98
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea99
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea99
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s<;98
+.o 2 0
+s99
+	repl_r_args 0 1
+	repl_r_args 0 1
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	ltR
+.d 0 1 b
+	rtn
+.export e_Footballer_szero;97
+.export e_Footballer_eazero;97
+.descexp e_Footballer_dzero;97 e_Footballer_nzero;97 e_Footballer_lzero;97 0 0 "zero;97"
+.o 1 0
+e_Footballer_lzero;97
+	halt
+.n 0 e_Footballer_dzero;97 e_Footballer_eazero;97
+.o 1 0
+e_Footballer_nzero;97
+	push_node _cycle_in_spine 0
+.o 1 0
+e_Footballer_eazero;97
+.o 1 0
+e_Footballer_szero;97
+.o 1 0
+s98
+	pushR 0.0
+	fill_r k237 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_sother;96
+.export e_Footballer_eaother;96
+.descexp e_Footballer_dother;96 e_Footballer_nother;96 e_Footballer_lother;96 1 0 "other;96"
+.o 2 0
+e_Footballer_lother;96
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaother;96
+.n 1 e_Footballer_dother;96 e_Footballer_eaother;96
+.o 1 0
+e_Footballer_nother;96
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaother;96
+	jsr_eval 0
+.o 2 0
+e_Footballer_sother;96
+.o 2 0
+s97
+	eq_desc e_Footballer_dNorth 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	fillh e_Footballer_dSouth 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.2
+	fillh e_Footballer_dNorth 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_stoString;93
+.descexp e_Footballer_dtoString;93 e_Footballer_ntoString;93 e_Footballer_ltoString;93 1 0 "toString;93"
+.o 2 0
+e_Footballer_ltoString;93
+	pop_a 1
+.d 1 0
+	jsr ea94
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;93
+.o 1 0
+e_Footballer_ntoString;93
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea94
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea94
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;93
+.o 1 0
+s94
+	pushD_a 0
+	eqD_b e_Footballer_kReprimandPlayer 0
+	jmp_true case.3
+	eqD_b e_Footballer_kHands 0
+	jmp_true case.4
+	eqD_b e_Footballer_kTackleDetected 0
+	jmp_true case.5
+	eqD_b e_Footballer_kDangerousPlay 0
+	jmp_true case.6
+	eqD_b e_Footballer_dGameOver 0
+	jmp_true case.7
+	eqD_b e_Footballer_kGameCancelled 0
+	jmp_true case.8
+	eqD_b e_Footballer_dPauseGame 0
+	jmp_true case.9
+	eqD_b e_Footballer_kAddTime 0
+	jmp_true case.10
+	eqD_b e_Footballer_dEndHalf 0
+	jmp_true case.11
+	eqD_b e_Footballer_kGoal 0
+	jmp_true case.12
+	eqD_b e_Footballer_kOffside 0
+	jmp_true case.13
+	eqD_b e_Footballer_kDirectFreeKick 0
+	jmp_true case.14
+	eqD_b e_Footballer_kGoalKick 0
+	jmp_true case.15
+	eqD_b e_Footballer_kCorner 0
+	jmp_true case.16
+	eqD_b e_Footballer_kThrowIn 0
+	jmp_true case.17
+	eqD_b e_Footballer_kPenalty 0
+	jmp_true case.18
+	eqD_b e_Footballer_kCenterKick 0
+	jmp_true case.19
+	eqD_b e_Footballer_kAdvantage 0
+	jmp_true case.20
+	eqD_b e_Footballer_kOwnBallIllegally 0
+	jmp_true case.21
+	eqD_b e_Footballer_kDisplacePlayers 0
+	jmp_true case.22
+	eqD_b e_Footballer_dContinueGame 0
+	jmp_true case.23
+	jmp case.24
+case.3
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;69 0
+	push_a 1
+	buildAC "(ReprimandPlayer "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Footballer_dtoString;89 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.4
+	pop_b 1
+	repl_r_args 1 1
+	build_r e_Footballer_rFootballerID 1 1 0 0
+	buildh e_Footballer_dtoString;69 0
+	buildAC "(Hands "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.5
+	pop_b 1
+	repl_r_args 1 1
+	build_r e_Footballer_rFootballerID 1 1 0 0
+	buildh e_Footballer_dtoString;69 0
+	buildAC "(TackleDetected "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.6
+	pop_b 1
+	repl_r_args 1 1
+	build_r e_Footballer_rFootballerID 1 1 0 0
+	buildh e_Footballer_dtoString;69 0
+	buildAC "(DangerousPlay "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.7
+	pop_b 1
+	pop_a 1
+	buildAC "GameOver"
+.d 1 0
+	rtn
+case.8
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	build e_StdOverloaded_ttoString; 1 e_StdOverloaded_ctoString;
+	buildh e_StdEnvExt_dtoString;50 1
+	push_a 1
+	buildAC "(GameCancelled "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.9
+	pop_b 1
+	pop_a 1
+	buildAC "PauseGame"
+.d 1 0
+	rtn
+case.10
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;103 0
+	push_a 1
+	buildAC "(AddTime "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.11
+	pop_b 1
+	pop_a 1
+	buildAC "EndHalf"
+.d 1 0
+	rtn
+case.12
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Goal "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.13
+	pop_b 1
+	repl_r_args 1 1
+	build_r e_Footballer_rFootballerID 1 1 0 0
+	buildh e_Footballer_dtoString;69 0
+	buildAC "(Offside "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.14
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(DirectFreeKick "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;30 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.15
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(GoalKick "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.16
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Corner "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Footballer_dtoString;95 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.17
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(ThrowIn "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;30 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.18
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Penalty "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.19
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(CenterKick "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.20
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Advantage "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.21
+	pop_b 1
+	repl_r_args 1 1
+	build_r e_Footballer_rFootballerID 1 1 0 0
+	buildh e_Footballer_dtoString;69 0
+	buildAC "(OwnBallIllegally "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.22
+	pop_b 1
+	repl_args 1 1
+	buildh e_Geometry_dtoString;30 0
+	build e_StdOverloaded_ttoString; 1 e_StdOverloaded_ctoString;
+	buildh e_Footballer_dtoString;69 0
+	build e_StdOverloaded_ttoString; 1 e_StdOverloaded_ctoString;
+	buildh e_StdEnvExt_dtoString;48 2
+	push_a 1
+	buildAC ","
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_sshowList
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "(DisplacePlayers ["
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "])"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.23
+	pop_b 1
+	pop_a 1
+	buildAC "ContinueGame"
+.d 1 0
+	rtn
+case.24
+	pop_b 1
+	repl_args 1 1
+	buildh e_StdString_dtoString;9 0
+	push_a 1
+	buildh ARRAY 1
+	buildAC "(TellMessage \""
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.export e_Footballer_stoString;95
+.descexp e_Footballer_dtoString;95 e_Footballer_ntoString;95 e_Footballer_ltoString;95 1 0 "toString;95"
+.o 2 0
+e_Footballer_ltoString;95
+	pop_a 1
+.d 1 0
+	jsr ea96
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;95
+.o 1 0
+e_Footballer_ntoString;95
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea96
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea96
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;95
+.o 1 0
+s96
+	eq_desc e_Footballer_dNorth 0 0
+	jmp_true case.25
+	jmp case.26
+case.25
+	pop_a 1
+	buildAC "North"
+.d 1 0
+	rtn
+case.26
+	pop_a 1
+	buildAC "South"
+.d 1 0
+	rtn
+.export e_Footballer_s==;92
+.descexp e_Footballer_d==;92 e_Footballer_n==;92 e_Footballer_l==;92 2 0 "==;92"
+.a 0 a93
+.o 2 0
+e_Footballer_l==;92
+	repl_args 1 1
+.o 2 0
+a93
+.d 2 0
+	jsr ea93
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;92
+.o 1 0
+e_Footballer_n==;92
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea93
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea93
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;92
+.o 2 0
+s93
+	eq_desc e_Footballer_dSuccess 0 0
+	jmp_true case.27
+	jmp case.28
+case.27
+	eq_desc e_Footballer_dSuccess 0 1
+	jmp_true case.30
+	jmp case.29
+case.30
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.28
+	eq_desc e_Footballer_dFail 0 1
+	jmp_true case.31
+	jmp case.29
+case.31
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.29
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_stoString;91
+.descexp e_Footballer_dtoString;91 e_Footballer_ntoString;91 e_Footballer_ltoString;91 1 0 "toString;91"
+.o 2 0
+e_Footballer_ltoString;91
+	pop_a 1
+.d 1 0
+	jsr ea92
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;91
+.o 1 0
+e_Footballer_ntoString;91
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea92
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea92
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;91
+.o 1 0
+s92
+	eq_desc e_Footballer_dSuccess 0 0
+	jmp_true case.32
+	jmp case.33
+case.32
+	pop_a 1
+	buildAC "Success"
+.d 1 0
+	rtn
+case.33
+	pop_a 1
+	buildAC "Fail"
+.d 1 0
+	rtn
+.export e_Footballer_s==;90
+.descexp e_Footballer_d==;90 e_Footballer_n==;90 e_Footballer_l==;90 2 0 "==;90"
+.a 0 a91
+.o 2 0
+e_Footballer_l==;90
+	repl_args 1 1
+.o 2 0
+a91
+.d 2 0
+	jsr ea91
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;90
+.o 1 0
+e_Footballer_n==;90
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea91
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea91
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;90
+.o 2 0
+s91
+	pushD_a 0
+	eqD_b e_Footballer_dWarning 0
+	jmp_true case.34
+	eqD_b e_Footballer_dYellowCard 0
+	jmp_true case.35
+	jmp case.36
+case.34
+	pop_b 1
+	eq_desc e_Footballer_dWarning 0 1
+	jmp_true case.38
+	jmp case.37
+case.38
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.35
+	pop_b 1
+	eq_desc e_Footballer_dYellowCard 0 1
+	jmp_true case.39
+	jmp case.37
+case.39
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.36
+	pop_b 1
+	eq_desc e_Footballer_dRedCard 0 1
+	jmp_true case.40
+	jmp case.37
+case.40
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.37
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_stoString;86
+.descexp e_Footballer_dtoString;86 e_Footballer_ntoString;86 e_Footballer_ltoString;86 1 0 "toString;86"
+.o 2 0
+e_Footballer_ltoString;86
+	pop_a 1
+.d 1 0
+	jsr ea87
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;86
+.o 1 0
+e_Footballer_ntoString;86
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea87
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea87
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;86
+.o 1 0
+s87
+	pushD_a 0
+	eqD_b e_Footballer_kMove 0
+	jmp_true case.41
+	eqD_b e_Footballer_dGainBall 0
+	jmp_true case.42
+	eqD_b e_Footballer_kKickBall 0
+	jmp_true case.43
+	eqD_b e_Footballer_kHeadBall 0
+	jmp_true case.44
+	eqD_b e_Footballer_kFeint 0
+	jmp_true case.45
+	eqD_b e_Footballer_kTackle 0
+	jmp_true case.46
+	jmp case.47
+case.41
+	pop_b 1
+	repl_args 2 2
+	buildh e_Geometry_dtoString;91 0
+	push_a 1
+	buildAC "(Move "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;54 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.42
+	pop_b 1
+	pop_a 1
+	buildAC "GainBall"
+.d 1 0
+	rtn
+case.43
+	pop_b 1
+	repl_args 2 2
+	build_r e_Geometry_rSpeed3D 2 0 0 0
+	buildh e_Geometry_dtoString;92 0
+	buildAC "(KickBall "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.44
+	pop_b 1
+	repl_args 2 2
+	build_r e_Geometry_rSpeed3D 2 0 0 0
+	buildh e_Geometry_dtoString;92 0
+	buildAC "(HeadBall "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.45
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;88 0
+	push_a 1
+	buildAC "(Feint "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.46
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;69 0
+	push_a 1
+	buildAC "(Tackle "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;85 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.47
+	pop_b 1
+	pop_a 1
+	buildAC "CatchBall"
+.d 1 0
+	rtn
+.export e_Footballer_stoString;88
+.descexp e_Footballer_dtoString;88 e_Footballer_ntoString;88 e_Footballer_ltoString;88 1 0 "toString;88"
+.o 2 0
+e_Footballer_ltoString;88
+	pop_a 1
+.d 1 0
+	jsr ea89
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;88
+.o 1 0
+e_Footballer_ntoString;88
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea89
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea89
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;88
+.o 1 0
+s89
+	eq_desc e_Footballer_dFeintLeft 0 0
+	jmp_true case.48
+	jmp case.49
+case.48
+	pop_a 1
+	buildAC "FeintLeft"
+.d 1 0
+	rtn
+case.49
+	pop_a 1
+	buildAC "FeintRight"
+.d 1 0
+	rtn
+.export e_Footballer_s==;85
+.descexp e_Footballer_d==;85 e_Footballer_n==;85 e_Footballer_l==;85 2 0 "==;85"
+.a 0 a86
+.o 2 0
+e_Footballer_l==;85
+	repl_args 1 1
+.o 2 0
+a86
+.d 2 0
+	jsr ea86
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;85
+.o 1 0
+e_Footballer_n==;85
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea86
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea86
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;85
+.o 2 0
+s86
+	pushD_a 0
+	eqD_b e_Footballer_kMove 0
+	jmp_true case.50
+	eqD_b e_Footballer_dGainBall 0
+	jmp_true case.51
+	eqD_b e_Footballer_kKickBall 0
+	jmp_true case.52
+	eqD_b e_Footballer_kHeadBall 0
+	jmp_true case.53
+	eqD_b e_Footballer_kFeint 0
+	jmp_true case.54
+	eqD_b e_Footballer_kTackle 0
+	jmp_true case.55
+	jmp case.56
+case.50
+	pop_b 1
+	repl_args 2 2
+	eq_desc e_Footballer_kMove 0 2
+	jmp_true case.58
+	pop_a 1
+	jmp case.57
+case.58
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_r_args 0 2 0
+	push_r_args 4 2 0
+	update_a 7 8
+	update_a 5 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr e_Geometry_s==;89
+.o 0 1 b
+	jmp_false else.59
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp e_Geometry_s==;50
+else.59
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+case.51
+	pop_b 1
+	eq_desc e_Footballer_dGainBall 0 1
+	jmp_true case.60
+	jmp case.57
+case.60
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.52
+	pop_b 1
+	repl_args 2 2
+	eq_desc e_Footballer_kKickBall 0 2
+	jmp_true case.61
+	pop_a 1
+	jmp case.57
+case.61
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	push_a 1
+	push_a 5
+	push_a 5
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 0
+	jmp e_Geometry_s==;90
+case.53
+	pop_b 1
+	repl_args 2 2
+	eq_desc e_Footballer_kHeadBall 0 2
+	jmp_true case.62
+	pop_a 1
+	jmp case.57
+case.62
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	push_a 1
+	push_a 5
+	push_a 5
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 0
+	jmp e_Geometry_s==;90
+case.54
+	pop_b 1
+	repl_args 1 1
+	eq_desc e_Footballer_kFeint 0 1
+	jmp_true case.63
+	jmp case.57
+case.63
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	push_a 0
+	push_a 2
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jmp s88
+case.55
+	pop_b 1
+	repl_args 2 2
+	eq_desc e_Footballer_kTackle 0 2
+	jmp_true case.64
+	pop_a 1
+	jmp case.57
+case.64
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_r_args 0 1 1
+	push_r_args 3 1 1
+	update_a 5 6
+	update_a 3 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 2 ii
+	jsr s69
+.o 0 1 b
+	jmp_false else.65
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp e_Geometry_s==;82
+else.65
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+case.56
+	pop_b 1
+	eq_desc e_Footballer_dCatchBall 0 1
+	jmp_true case.66
+	jmp case.57
+case.66
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.57
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_s==;87
+.descexp e_Footballer_d==;87 e_Footballer_n==;87 e_Footballer_l==;87 2 0 "==;87"
+.a 0 a88
+.o 2 0
+e_Footballer_l==;87
+	repl_args 1 1
+.o 2 0
+a88
+.d 2 0
+	jsr ea88
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;87
+.o 1 0
+e_Footballer_n==;87
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea88
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea88
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;87
+.o 2 0
+s88
+	eq_desc e_Footballer_dFeintLeft 0 0
+	jmp_true case.67
+	jmp case.68
+case.67
+	eq_desc e_Footballer_dFeintLeft 0 1
+	jmp_true case.70
+	jmp case.69
+case.70
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.68
+	eq_desc e_Footballer_dFeintRight 0 1
+	jmp_true case.71
+	jmp case.69
+case.71
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.69
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_snameOf;84
+.descexp e_Footballer_dnameOf;84 e_Footballer_nnameOf;84 e_Footballer_lnameOf;84 1 0 "nameOf;84"
+.o 2 0
+e_Footballer_lnameOf;84
+	pop_a 1
+.d 1 0
+	jsr ea85
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dnameOf;84
+.o 1 0
+e_Footballer_nnameOf;84
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea85
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea85
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_snameOf;84
+.o 11 2 rr
+s85
+	updatepop_a 1 10
+	pop_b 2
+.d 1 0
+	rtn
+.export e_Footballer_sother;83
+.export e_Footballer_eaother;83
+.descexp e_Footballer_dother;83 e_Footballer_nother;83 e_Footballer_lother;83 1 0 "other;83"
+.o 2 0
+e_Footballer_lother;83
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaother;83
+.n 1 e_Footballer_dother;83 e_Footballer_eaother;83
+.o 1 0
+e_Footballer_nother;83
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaother;83
+	jsr_eval 0
+.o 2 0
+e_Footballer_sother;83
+.o 2 0
+s84
+	eq_desc e_Footballer_dWest 0 0
+	jmp_true case.72
+	jmp case.73
+case.72
+	fillh e_Footballer_dEast 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.73
+	fillh e_Footballer_dWest 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_sother;80
+.export e_Footballer_eaother;80
+.descexp e_Footballer_dother;80 e_Footballer_nother;80 e_Footballer_lother;80 1 0 "other;80"
+.o 2 0
+e_Footballer_lother;80
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eaother;80
+.n 1 e_Footballer_dother;80 e_Footballer_eaother;80
+.o 1 0
+e_Footballer_nother;80
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eaother;80
+	jsr_eval 0
+.o 2 0
+e_Footballer_sother;80
+.o 2 0
+s81
+	eq_desc e_Footballer_dFirstHalf 0 0
+	jmp_true case.74
+	jmp case.75
+case.74
+	fillh e_Footballer_dSecondHalf 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.75
+	fillh e_Footballer_dFirstHalf 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_stoString;79
+.descexp e_Footballer_dtoString;79 e_Footballer_ntoString;79 e_Footballer_ltoString;79 1 0 "toString;79"
+.o 2 0
+e_Footballer_ltoString;79
+	pop_a 1
+.d 1 0
+	jsr ea80
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;79
+.o 1 0
+e_Footballer_ntoString;79
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea80
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea80
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;79
+.o 1 0
+s80
+	eq_desc e_Footballer_dFirstHalf 0 0
+	jmp_true case.76
+	jmp case.77
+case.76
+	pop_a 1
+	buildAC "FirstHalf"
+.d 1 0
+	rtn
+case.77
+	pop_a 1
+	buildAC "SecondHalf"
+.d 1 0
+	rtn
+.export e_Footballer_s==;78
+.descexp e_Footballer_d==;78 e_Footballer_n==;78 e_Footballer_l==;78 2 0 "==;78"
+.a 0 a79
+.o 2 0
+e_Footballer_l==;78
+	repl_args 1 1
+.o 2 0
+a79
+.d 2 0
+	jsr ea79
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;78
+.o 1 0
+e_Footballer_n==;78
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea79
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea79
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;78
+.o 2 0
+s79
+	eq_desc e_Footballer_dFirstHalf 0 0
+	jmp_true case.78
+	jmp case.79
+case.78
+	eq_desc e_Footballer_dFirstHalf 0 1
+	jmp_true case.81
+	jmp case.80
+case.81
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.79
+	eq_desc e_Footballer_dSecondHalf 0 1
+	jmp_true case.82
+	jmp case.80
+case.82
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.80
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_stoPosition3D;77
+.descexp e_Footballer_dtoPosition3D;77 e_Footballer_ntoPosition3D;77 e_Footballer_ltoPosition3D;77 1 0 "toPosition3D;77"
+.o 2 0
+e_Footballer_ltoPosition3D;77
+	pop_a 1
+.d 1 0
+	jsr ea78
+.o 2 0
+	build_r e_Geometry_rPosition3D 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoPosition3D;77
+.o 1 0
+e_Footballer_ntoPosition3D;77
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea78
+.o 2 0
+	fill_r e_Geometry_rPosition3D 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea78
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_stoPosition3D;77
+.o 11 2 rr
+s78
+	push_r_args 3 2 0
+	update_a 1 12
+	updatepop_a 0 11
+	pop_b 2
+.d 2 0
+	jmp e_Geometry_stoPosition3D;39
+.export e_Footballer_stoPosition;76
+.descexp e_Footballer_dtoPosition;76 e_Footballer_ntoPosition;76 e_Footballer_ltoPosition;76 1 0 "toPosition;76"
+.o 2 0
+e_Footballer_ltoPosition;76
+	pop_a 1
+.d 1 0
+	jsr ea77
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoPosition;76
+.o 1 0
+e_Footballer_ntoPosition;76
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea77
+.o 2 0
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea77
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_stoPosition;76
+.o 11 2 rr
+s77
+	pop_b 2
+	updatepop_a 3 10
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.export e_Footballer_s==;75
+.descexp e_Footballer_d==;75 e_Footballer_n==;75 e_Footballer_l==;75 2 0 "==;75"
+.a 0 a76
+.o 2 0
+e_Footballer_l==;75
+	repl_args 1 1
+.o 2 0
+a76
+.d 2 0
+	jsr ea76
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;75
+.o 1 0
+e_Footballer_n==;75
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea76
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea76
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 11 2
+	push_r_args 11 11 2
+	update_a 21 23
+	update_a 19 21
+	update_a 17 19
+	update_a 15 17
+	update_a 13 15
+	update_a 11 13
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 20 22
+	update_a 18 20
+	update_a 16 18
+	update_a 14 16
+	update_a 12 14
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 22 4 rrrr
+e_Footballer_s==;75
+.o 22 4 rrrr
+s76
+	push_r_args 11 1 1
+	push_r_args 1 1 1
+	update_a 1 23
+	updatepop_a 0 22
+	update_b 1 5
+	updatepop_b 0 4
+.d 2 2 ii
+	jmp s69
+.export e_Footballer_ssameClub;72
+.descexp e_Footballer_dsameClub;72 e_Footballer_nsameClub;72 e_Footballer_lsameClub;72 2 0 "sameClub;72"
+.a 0 a73
+.o 2 0
+e_Footballer_lsameClub;72
+	repl_args 1 1
+.o 2 0
+a73
+.d 2 0
+	jsr ea73
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_dsameClub;72
+.o 1 0
+e_Footballer_nsameClub;72
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea73
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea73
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 11 2
+	push_r_args 11 11 2
+	update_a 21 23
+	update_a 19 21
+	update_a 17 19
+	update_a 15 17
+	update_a 13 15
+	update_a 11 13
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 20 22
+	update_a 18 20
+	update_a 16 18
+	update_a 14 16
+	update_a 12 14
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 22 4 rrrr
+e_Footballer_ssameClub;72
+.o 22 4 rrrr
+s73
+	push_r_args 11 1 1
+	push_r_args 1 1 1
+	update_a 1 23
+	updatepop_a 0 22
+	update_b 1 5
+	updatepop_b 0 4
+.d 2 2 ii
+	jmp s72
+.export e_Footballer_ssameClub;71
+.descexp e_Footballer_dsameClub;71 e_Footballer_nsameClub;71 e_Footballer_lsameClub;71 2 0 "sameClub;71"
+.a 0 a72
+.o 2 0
+e_Footballer_lsameClub;71
+	repl_args 1 1
+.o 2 0
+a72
+.d 2 0
+	jsr ea72
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_dsameClub;71
+.o 1 0
+e_Footballer_nsameClub;71
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea72
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea72
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 1
+	push_r_args 1 1 1
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 2 2 ii
+e_Footballer_ssameClub;71
+.o 2 2 ii
+s72
+	push_b 1
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s71
+.o 1 0
+	push_b 0
+	push_a 1
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 1 i
+	jsr s71
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+.d 0 1 b
+	rtn
+.export e_Footballer_stoString;69
+.descexp e_Footballer_dtoString;69 e_Footballer_ntoString;69 e_Footballer_ltoString;69 1 0 "toString;69"
+.o 2 0
+e_Footballer_ltoString;69
+	pop_a 1
+.d 1 0
+	jsr ea70
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;69
+.o 1 0
+e_Footballer_ntoString;69
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea70
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea70
+	jsr_eval 0
+	repl_r_args 1 1
+.o 1 1 i
+e_Footballer_stoString;69
+.o 1 1 i
+s70
+	buildI_b 0
+	buildh e_StdString_dtoString;5 0
+	buildAC ",playerNr="
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	buildh ARRAY 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "{clubName="
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_Footballer_sgetKickPos
+.export e_Footballer_eagetKickPos
+.descexp e_Footballer_dgetKickPos e_Footballer_ngetKickPos e_Footballer_lgetKickPos 3 0 "getKickPos"
+.a 3 e_Footballer_eagetKickPos
+.o 2 0
+e_Footballer_lgetKickPos
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_Footballer_eagetKickPos
+.n 3 e_Footballer_dgetKickPos e_Footballer_eagetKickPos
+.o 1 0
+e_Footballer_ngetKickPos
+	push_node _cycle_in_spine 3
+.o 4 0
+e_Footballer_eagetKickPos
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 2 0
+.o 5 0
+e_Footballer_sgetKickPos
+.o 5 0
+s68
+	pushD_a 3
+	eqD_b e_Footballer_kGoalKick 0
+	jmp_true case.83
+	eqD_b e_Footballer_kCorner 0
+	jmp_true case.84
+	eqD_b e_Footballer_kPenalty 0
+	jmp_true case.85
+	eqD_b e_Footballer_kCenterKick 0
+	jmp_true case.86
+	eqD_b e_Footballer_kDirectFreeKick 0
+	jmp_true case.87
+	eqD_b e_Footballer_kThrowIn 0
+	jmp_true case.88
+	pop_b 1
+	jmp case.89
+case.83
+	pop_b 1
+	push_args 3 1 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	build_r e_Footballer_rFootballField 2 0 1 0
+	push_a 1
+	build _ 2 n238
+	build e_Geometry_dzero;26 0 e_Geometry_nzero;26
+	build _ 2 n242
+	fillh e_StdMaybe_dJust 1 6
+	pop_a 5
+.d 1 0
+	rtn
+case.84
+	pop_b 1
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	buildR 0.90
+	build e_Geometry_dm 1 e_Geometry_nm
+	buildR 0.5
+	build e_Geometry_dscale;25 2 e_Geometry_nscale;25
+	build_r e_Footballer_rFootballField 2 0 3 0
+	push_a 1
+	push_a 4
+	build _ 3 n240
+	build_r e_Footballer_rFootballField 2 0 4 0
+	push_a 2
+	push_a 4
+	build _ 3 n239
+	build e_Geometry_tPosition 2 e_Geometry_cPosition
+	fillh e_StdMaybe_dJust 1 8
+	pop_a 7
+.d 1 0
+	rtn
+case.85
+	pop_b 1
+	push_args 3 1 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	build_r e_Footballer_rFootballField 2 0 1 0
+	push_a 1
+	build _ 2 n241
+	build e_Geometry_dzero;26 0 e_Geometry_nzero;26
+	build _ 2 n243
+	fillh e_StdMaybe_dJust 1 6
+	pop_a 5
+.d 1 0
+	rtn
+case.86
+	pop_b 1
+	push_args 3 1 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	pop_a 1
+	build e_Geometry_dzero;26 0 e_Geometry_nzero;26
+	fillh e_StdMaybe_dJust 1 5
+	pop_a 4
+.d 1 0
+	rtn
+case.87
+	pop_b 1
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	pop_a 1
+	push_a 0
+	fillh e_StdMaybe_dJust 1 6
+	pop_a 5
+.d 1 0
+	rtn
+case.88
+	pop_b 1
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	pop_a 1
+	push_a 0
+	fillh e_StdMaybe_dJust 1 6
+	pop_a 5
+.d 1 0
+	rtn
+case.89
+	fillh e_StdMaybe_dNothing 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n242
+	push_node _cycle_in_spine 2
+.o 2 0
+ea242
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	repl_r_args 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n243
+	push_node _cycle_in_spine 2
+.o 2 0
+ea243
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	repl_r_args 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	fill_r e_Geometry_rPosition 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _ ea241
+.o 1 0
+n241
+	push_node _cycle_in_spine 2
+.o 3 0
+ea241
+.o 3 0
+s241
+	push_r_args 1 2 0
+	buildh e_Footballer_dEast 0
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr s82
+.o 0 1 b
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s131
+.n 3 _ ea240
+.o 1 0
+n240
+	push_node _cycle_in_spine 3
+.o 4 0
+ea240
+.o 4 0
+s240
+	push_r_args 2 2 0
+	push_a 3
+	jsr_eval 0
+	buildh e_Footballer_dNorth 0
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 2 0
+	jsr s95
+.o 0 1 b
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jmp s130
+.n 3 _ ea239
+.o 1 0
+n239
+	push_node _cycle_in_spine 3
+.o 4 0
+ea239
+.o 4 0
+s239
+	push_r_args 2 2 0
+	push_a 3
+	jsr_eval 0
+	buildh e_Footballer_dEast 0
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 2 0
+	jsr s82
+.o 0 1 b
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jmp s129
+.n 2 _ ea238
+.o 1 0
+n238
+	push_node _cycle_in_spine 2
+.o 3 0
+ea238
+.o 3 0
+s238
+	push_r_args 1 2 0
+	buildh e_Footballer_dWest 0
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr s82
+.o 0 1 b
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s128
+.o 3 1 b
+s131
+	eqB_b TRUE 0
+	jmp_true case.90
+	jmp case.91
+case.90
+	push_a 1
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 11.00
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 3 0
+	jmp e_Geometry_s-;17
+case.91
+	create
+	pushR 11.00
+	updatepop_b 0 1
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_Geometry_s-;17
+.o 4 1 b
+s130
+	eqB_b TRUE 0
+	jmp_true case.92
+	jmp case.93
+case.92
+	push_a 1
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_Geometry_s-;17
+case.93
+	push_a 1
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_Geometry_s-;17
+.o 4 1 b
+s129
+	eqB_b TRUE 0
+	jmp_true case.94
+	jmp case.95
+case.94
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_Geometry_s-;17
+case.95
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_Geometry_s-;17
+.o 3 1 b
+s128
+	eqB_b TRUE 0
+	jmp_true case.96
+	jmp case.97
+case.96
+	push_a 1
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	updatepop_b 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 3 0
+	jmp e_Geometry_s-;17
+case.97
+	create
+	pushR 16.50
+	updatepop_b 0 1
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_Geometry_s-;17
+.export e_Footballer_s==;94
+.descexp e_Footballer_d==;94 e_Footballer_n==;94 e_Footballer_l==;94 2 0 "==;94"
+.a 0 a95
+.o 2 0
+e_Footballer_l==;94
+	repl_args 1 1
+.o 2 0
+a95
+.d 2 0
+	jsr ea95
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;94
+.o 1 0
+e_Footballer_n==;94
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea95
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea95
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;94
+.o 2 0
+s95
+	eq_desc e_Footballer_dNorth 0 0
+	jmp_true case.98
+	jmp case.99
+case.98
+	eq_desc e_Footballer_dNorth 0 1
+	jmp_true case.101
+	jmp case.100
+case.101
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.99
+	eq_desc e_Footballer_dSouth 0 1
+	jmp_true case.102
+	jmp case.100
+case.102
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.100
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisTellMessage
+.descexp e_Footballer_disTellMessage e_Footballer_nisTellMessage e_Footballer_lisTellMessage 1 0 "isTellMessage"
+.o 2 0
+e_Footballer_lisTellMessage
+	pop_a 1
+.d 1 0
+	jsr ea67
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disTellMessage
+.o 1 0
+e_Footballer_nisTellMessage
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea67
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea67
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisTellMessage
+.o 1 0
+s67
+	eq_desc e_Footballer_kTellMessage 0 0
+	jmp_true case.103
+	jmp case.104
+case.103
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.104
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisContinueGame
+.descexp e_Footballer_disContinueGame e_Footballer_nisContinueGame e_Footballer_lisContinueGame 1 0 "isContinueGame"
+.o 2 0
+e_Footballer_lisContinueGame
+	pop_a 1
+.d 1 0
+	jsr ea66
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disContinueGame
+.o 1 0
+e_Footballer_nisContinueGame
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea66
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea66
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisContinueGame
+.o 1 0
+s66
+	eq_desc e_Footballer_dContinueGame 0 0
+	jmp_true case.105
+	jmp case.106
+case.105
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.106
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisDisplacePlayers
+.descexp e_Footballer_disDisplacePlayers e_Footballer_nisDisplacePlayers e_Footballer_lisDisplacePlayers 1 0 "isDisplacePlayers"
+.o 2 0
+e_Footballer_lisDisplacePlayers
+	pop_a 1
+.d 1 0
+	jsr ea65
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disDisplacePlayers
+.o 1 0
+e_Footballer_nisDisplacePlayers
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea65
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea65
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisDisplacePlayers
+.o 1 0
+s65
+	eq_desc e_Footballer_kDisplacePlayers 0 0
+	jmp_true case.107
+	jmp case.108
+case.107
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.108
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisOwnBallIllegally
+.descexp e_Footballer_disOwnBallIllegally e_Footballer_nisOwnBallIllegally e_Footballer_lisOwnBallIllegally 1 0 "isOwnBallIllegally"
+.o 2 0
+e_Footballer_lisOwnBallIllegally
+	pop_a 1
+.d 1 0
+	jsr ea64
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disOwnBallIllegally
+.o 1 0
+e_Footballer_nisOwnBallIllegally
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea64
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea64
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisOwnBallIllegally
+.o 1 0
+s64
+	eq_desc e_Footballer_kOwnBallIllegally 0 0
+	jmp_true case.109
+	jmp case.110
+case.109
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.110
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisAdvantage
+.descexp e_Footballer_disAdvantage e_Footballer_nisAdvantage e_Footballer_lisAdvantage 1 0 "isAdvantage"
+.o 2 0
+e_Footballer_lisAdvantage
+	pop_a 1
+.d 1 0
+	jsr ea63
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disAdvantage
+.o 1 0
+e_Footballer_nisAdvantage
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea63
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea63
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisAdvantage
+.o 1 0
+s63
+	eq_desc e_Footballer_kAdvantage 0 0
+	jmp_true case.111
+	jmp case.112
+case.111
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.112
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisCenterKick
+.descexp e_Footballer_disCenterKick e_Footballer_nisCenterKick e_Footballer_lisCenterKick 1 0 "isCenterKick"
+.o 2 0
+e_Footballer_lisCenterKick
+	pop_a 1
+.d 1 0
+	jsr ea62
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disCenterKick
+.o 1 0
+e_Footballer_nisCenterKick
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea62
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea62
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisCenterKick
+.o 1 0
+s62
+	eq_desc e_Footballer_kCenterKick 0 0
+	jmp_true case.113
+	jmp case.114
+case.113
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.114
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisPenalty
+.descexp e_Footballer_disPenalty e_Footballer_nisPenalty e_Footballer_lisPenalty 1 0 "isPenalty"
+.o 2 0
+e_Footballer_lisPenalty
+	pop_a 1
+.d 1 0
+	jsr ea61
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disPenalty
+.o 1 0
+e_Footballer_nisPenalty
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea61
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea61
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisPenalty
+.o 1 0
+s61
+	eq_desc e_Footballer_kPenalty 0 0
+	jmp_true case.115
+	jmp case.116
+case.115
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.116
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisThrowIn
+.descexp e_Footballer_disThrowIn e_Footballer_nisThrowIn e_Footballer_lisThrowIn 1 0 "isThrowIn"
+.o 2 0
+e_Footballer_lisThrowIn
+	pop_a 1
+.d 1 0
+	jsr ea60
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disThrowIn
+.o 1 0
+e_Footballer_nisThrowIn
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea60
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea60
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisThrowIn
+.o 1 0
+s60
+	eq_desc e_Footballer_kThrowIn 0 0
+	jmp_true case.117
+	jmp case.118
+case.117
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.118
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisCorner
+.descexp e_Footballer_disCorner e_Footballer_nisCorner e_Footballer_lisCorner 1 0 "isCorner"
+.o 2 0
+e_Footballer_lisCorner
+	pop_a 1
+.d 1 0
+	jsr ea59
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disCorner
+.o 1 0
+e_Footballer_nisCorner
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea59
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea59
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisCorner
+.o 1 0
+s59
+	eq_desc e_Footballer_kCorner 0 0
+	jmp_true case.119
+	jmp case.120
+case.119
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.120
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisGoalKick
+.descexp e_Footballer_disGoalKick e_Footballer_nisGoalKick e_Footballer_lisGoalKick 1 0 "isGoalKick"
+.o 2 0
+e_Footballer_lisGoalKick
+	pop_a 1
+.d 1 0
+	jsr ea58
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disGoalKick
+.o 1 0
+e_Footballer_nisGoalKick
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea58
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea58
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisGoalKick
+.o 1 0
+s58
+	eq_desc e_Footballer_kGoalKick 0 0
+	jmp_true case.121
+	jmp case.122
+case.121
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.122
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisDirectFreeKick
+.descexp e_Footballer_disDirectFreeKick e_Footballer_nisDirectFreeKick e_Footballer_lisDirectFreeKick 1 0 "isDirectFreeKick"
+.o 2 0
+e_Footballer_lisDirectFreeKick
+	pop_a 1
+.d 1 0
+	jsr ea57
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disDirectFreeKick
+.o 1 0
+e_Footballer_nisDirectFreeKick
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea57
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea57
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisDirectFreeKick
+.o 1 0
+s57
+	eq_desc e_Footballer_kDirectFreeKick 0 0
+	jmp_true case.123
+	jmp case.124
+case.123
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.124
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisOffside
+.descexp e_Footballer_disOffside e_Footballer_nisOffside e_Footballer_lisOffside 1 0 "isOffside"
+.o 2 0
+e_Footballer_lisOffside
+	pop_a 1
+.d 1 0
+	jsr ea56
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disOffside
+.o 1 0
+e_Footballer_nisOffside
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea56
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea56
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisOffside
+.o 1 0
+s56
+	eq_desc e_Footballer_kOffside 0 0
+	jmp_true case.125
+	jmp case.126
+case.125
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.126
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisGoal
+.descexp e_Footballer_disGoal e_Footballer_nisGoal e_Footballer_lisGoal 1 0 "isGoal"
+.o 2 0
+e_Footballer_lisGoal
+	pop_a 1
+.d 1 0
+	jsr ea55
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disGoal
+.o 1 0
+e_Footballer_nisGoal
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea55
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea55
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisGoal
+.o 1 0
+s55
+	eq_desc e_Footballer_kGoal 0 0
+	jmp_true case.127
+	jmp case.128
+case.127
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.128
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisEndHalf
+.descexp e_Footballer_disEndHalf e_Footballer_nisEndHalf e_Footballer_lisEndHalf 1 0 "isEndHalf"
+.o 2 0
+e_Footballer_lisEndHalf
+	pop_a 1
+.d 1 0
+	jsr ea54
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disEndHalf
+.o 1 0
+e_Footballer_nisEndHalf
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea54
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea54
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisEndHalf
+.o 1 0
+s54
+	eq_desc e_Footballer_dEndHalf 0 0
+	jmp_true case.129
+	jmp case.130
+case.129
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.130
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisAddTime
+.descexp e_Footballer_disAddTime e_Footballer_nisAddTime e_Footballer_lisAddTime 1 0 "isAddTime"
+.o 2 0
+e_Footballer_lisAddTime
+	pop_a 1
+.d 1 0
+	jsr ea53
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disAddTime
+.o 1 0
+e_Footballer_nisAddTime
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea53
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea53
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisAddTime
+.o 1 0
+s53
+	eq_desc e_Footballer_kAddTime 0 0
+	jmp_true case.131
+	jmp case.132
+case.131
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.132
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisPauseGame
+.descexp e_Footballer_disPauseGame e_Footballer_nisPauseGame e_Footballer_lisPauseGame 1 0 "isPauseGame"
+.o 2 0
+e_Footballer_lisPauseGame
+	pop_a 1
+.d 1 0
+	jsr ea52
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disPauseGame
+.o 1 0
+e_Footballer_nisPauseGame
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea52
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea52
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisPauseGame
+.o 1 0
+s52
+	eq_desc e_Footballer_dPauseGame 0 0
+	jmp_true case.133
+	jmp case.134
+case.133
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.134
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisGameCancelled
+.descexp e_Footballer_disGameCancelled e_Footballer_nisGameCancelled e_Footballer_lisGameCancelled 1 0 "isGameCancelled"
+.o 2 0
+e_Footballer_lisGameCancelled
+	pop_a 1
+.d 1 0
+	jsr ea51
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disGameCancelled
+.o 1 0
+e_Footballer_nisGameCancelled
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea51
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea51
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisGameCancelled
+.o 1 0
+s51
+	eq_desc e_Footballer_kGameCancelled 0 0
+	jmp_true case.135
+	jmp case.136
+case.135
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.136
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisGameOver
+.descexp e_Footballer_disGameOver e_Footballer_nisGameOver e_Footballer_lisGameOver 1 0 "isGameOver"
+.o 2 0
+e_Footballer_lisGameOver
+	pop_a 1
+.d 1 0
+	jsr ea50
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disGameOver
+.o 1 0
+e_Footballer_nisGameOver
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea50
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea50
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisGameOver
+.o 1 0
+s50
+	eq_desc e_Footballer_dGameOver 0 0
+	jmp_true case.137
+	jmp case.138
+case.137
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.138
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisDangerousPlay
+.descexp e_Footballer_disDangerousPlay e_Footballer_nisDangerousPlay e_Footballer_lisDangerousPlay 1 0 "isDangerousPlay"
+.o 2 0
+e_Footballer_lisDangerousPlay
+	pop_a 1
+.d 1 0
+	jsr ea49
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disDangerousPlay
+.o 1 0
+e_Footballer_nisDangerousPlay
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea49
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea49
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisDangerousPlay
+.o 1 0
+s49
+	eq_desc e_Footballer_kDangerousPlay 0 0
+	jmp_true case.139
+	jmp case.140
+case.139
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.140
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisTackleDetected
+.descexp e_Footballer_disTackleDetected e_Footballer_nisTackleDetected e_Footballer_lisTackleDetected 1 0 "isTackleDetected"
+.o 2 0
+e_Footballer_lisTackleDetected
+	pop_a 1
+.d 1 0
+	jsr ea48
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disTackleDetected
+.o 1 0
+e_Footballer_nisTackleDetected
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea48
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea48
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisTackleDetected
+.o 1 0
+s48
+	eq_desc e_Footballer_kTackleDetected 0 0
+	jmp_true case.141
+	jmp case.142
+case.141
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.142
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisHands
+.descexp e_Footballer_disHands e_Footballer_nisHands e_Footballer_lisHands 1 0 "isHands"
+.o 2 0
+e_Footballer_lisHands
+	pop_a 1
+.d 1 0
+	jsr ea47
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disHands
+.o 1 0
+e_Footballer_nisHands
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea47
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea47
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisHands
+.o 1 0
+s47
+	eq_desc e_Footballer_kHands 0 0
+	jmp_true case.143
+	jmp case.144
+case.143
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.144
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisReprimandPlayer
+.descexp e_Footballer_disReprimandPlayer e_Footballer_nisReprimandPlayer e_Footballer_lisReprimandPlayer 1 0 "isReprimandPlayer"
+.o 2 0
+e_Footballer_lisReprimandPlayer
+	pop_a 1
+.d 1 0
+	jsr ea46
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disReprimandPlayer
+.o 1 0
+e_Footballer_nisReprimandPlayer
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea46
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea46
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisReprimandPlayer
+.o 1 0
+s46
+	eq_desc e_Footballer_kReprimandPlayer 0 0
+	jmp_true case.145
+	jmp case.146
+case.145
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.146
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sdisplacements
+.export e_Footballer_eadisplacements
+.descexp e_Footballer_ddisplacements e_Footballer_ndisplacements e_Footballer_ldisplacements 1 0 "displacements"
+.o 2 0
+e_Footballer_ldisplacements
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eadisplacements
+.n 1 e_Footballer_ddisplacements e_Footballer_eadisplacements
+.o 1 0
+e_Footballer_ndisplacements
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eadisplacements
+	jsr_eval 0
+.o 2 0
+e_Footballer_sdisplacements
+.o 2 0
+s45
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s108
+.n 1 _ ea108
+.o 1 0
+n108
+	push_node _cycle_in_spine 1
+.o 2 0
+ea108
+	jsr_eval 0
+.o 2 0
+s108
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s127
+.o 2 0
+s127
+	eq_desc _Cons 2 0
+	jmp_true case.147
+	jmp case.148
+case.147
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_r_args 11 2
+	push_a 12
+	push_a 11
+	update_a 1 12
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 9 8
+	update_a 10 9
+	update_a 11 10
+	update_a 0 11
+	pop_a 1
+	update_a 11 13
+	update_a 10 12
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 13 2 rr
+	jmp s126
+case.148
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 13 2 rr
+s126
+	jmp case.149
+case.149
+	push_a 11
+	build _ 1 n108
+	push_a 4
+	push_a 2
+	buildh _Tuple 2
+	fillh _Cons 2 14
+	pop_a 12
+	pop_b 2
+.d 1 0
+	rtn
+case.150
+	push_a 11
+	jsr_eval 0
+	updatepop_a 0 12
+	pop_b 2
+.d 2 0
+	jmp s108
+.export e_Footballer_sshowSuccintRefereeAction
+.descexp e_Footballer_dshowSuccintRefereeAction e_Footballer_nshowSuccintRefereeAction e_Footballer_lshowSuccintRefereeAction 1 0 "showSuccintRefereeAction"
+.o 2 0
+e_Footballer_lshowSuccintRefereeAction
+	pop_a 1
+.d 1 0
+	jsr ea44
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dshowSuccintRefereeAction
+.o 1 0
+e_Footballer_nshowSuccintRefereeAction
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea44
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea44
+	jsr_eval 0
+.o 1 0
+e_Footballer_sshowSuccintRefereeAction
+.o 1 0
+s44
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s125
+.o 1 0
+s125
+	pushD_a 0
+	eqD_b e_Footballer_kReprimandPlayer 0
+	jmp_true case.151
+	eqD_b e_Footballer_kHands 0
+	jmp_true case.152
+	eqD_b e_Footballer_kTackleDetected 0
+	jmp_true case.153
+	eqD_b e_Footballer_kDangerousPlay 0
+	jmp_true case.154
+	eqD_b e_Footballer_dGameOver 0
+	jmp_true case.155
+	eqD_b e_Footballer_kGameCancelled 0
+	jmp_true case.156
+	eqD_b e_Footballer_dPauseGame 0
+	jmp_true case.157
+	eqD_b e_Footballer_kAddTime 0
+	jmp_true case.158
+	eqD_b e_Footballer_dEndHalf 0
+	jmp_true case.159
+	eqD_b e_Footballer_kGoal 0
+	jmp_true case.160
+	eqD_b e_Footballer_kOffside 0
+	jmp_true case.161
+	eqD_b e_Footballer_kDirectFreeKick 0
+	jmp_true case.162
+	eqD_b e_Footballer_kGoalKick 0
+	jmp_true case.163
+	eqD_b e_Footballer_kCorner 0
+	jmp_true case.164
+	eqD_b e_Footballer_kThrowIn 0
+	jmp_true case.165
+	eqD_b e_Footballer_kPenalty 0
+	jmp_true case.166
+	eqD_b e_Footballer_kCenterKick 0
+	jmp_true case.167
+	eqD_b e_Footballer_kAdvantage 0
+	jmp_true case.168
+	eqD_b e_Footballer_kOwnBallIllegally 0
+	jmp_true case.169
+	eqD_b e_Footballer_kDisplacePlayers 0
+	jmp_true case.170
+	eqD_b e_Footballer_dContinueGame 0
+	jmp_true case.171
+	jmp case.172
+case.151
+	pop_b 1
+	repl_args 2 2
+	push_r_args 0 1 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s109
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " receives "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Footballer_dtoString;89 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.152
+	pop_b 1
+	repl_r_args 1 1
+	push_b 0
+	push_a 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s109
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "Hands by "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.153
+	pop_b 1
+	repl_r_args 1 1
+	push_b 0
+	push_a 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s109
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "Tackle by "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.154
+	pop_b 1
+	repl_r_args 1 1
+	push_b 0
+	push_a 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s109
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "Dangerous play by "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.155
+	pop_b 1
+	pop_a 1
+	buildAC "Game ended"
+.d 1 0
+	rtn
+case.156
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+.d 1 0
+	jsr e_StdMaybe_sisJust
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 b
+	jsr s124
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "Game cancelled"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.157
+	pop_b 1
+	pop_a 1
+	buildAC "Game paused"
+.d 1 0
+	rtn
+case.158
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;103 0
+	push_a 1
+	buildAC "Extra time added: "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.159
+	pop_b 1
+	pop_a 1
+	buildAC "First half ended"
+.d 1 0
+	rtn
+case.160
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Goal for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.161
+	pop_b 1
+	repl_r_args 1 1
+	push_b 0
+	push_a 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s109
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "Offside by "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.162
+	pop_b 1
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Direct free kick for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.163
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Goal kick for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.164
+	pop_b 1
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Corner for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.165
+	pop_b 1
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Throw in for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.166
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Penalty for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.167
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Center kick for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.168
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "Advantage for "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.169
+	pop_b 1
+	repl_r_args 1 1
+	push_b 0
+	push_a 0
+	updatepop_b 0 1
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s109
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "Illegal ball possession by "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.170
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "Players displaced"
+.d 1 0
+	rtn
+case.171
+	pop_b 1
+	pop_a 1
+	buildAC "Game continued"
+.d 1 0
+	rtn
+case.172
+	pop_b 1
+	repl_args 1 1
+.d 1 0
+	rtn
+.o 1 1 b
+s124
+	eqB_b TRUE 0
+	jmp_true case.173
+	jmp case.174
+case.173
+	push_a 0
+	pop_b 1
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdMaybe_sfromJust
+.o 1 0
+	buildh e_Footballer_dtoString;82 0
+	buildAC " winner is "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.174
+	pop_a 1
+	pop_b 1
+	buildAC ""
+.d 1 0
+	rtn
+.export e_Footballer_stoString;103
+.descexp e_Footballer_dtoString;103 e_Footballer_ntoString;103 e_Footballer_ltoString;103 1 0 "toString;103"
+.o 2 0
+e_Footballer_ltoString;103
+	pop_a 1
+.d 1 0
+	jsr ea104
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;103
+.o 1 0
+e_Footballer_ntoString;103
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea104
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea104
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;103
+.o 1 0
+s104
+	repl_r_args 0 1
+	pushR 100.0
+	push_b 1
+	mulR
+	RtoI
+	ItoR
+	pushR 100.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	pushR 60.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulR
+	updatepop_b 0 1
+	RtoI
+	pushI 60
+	push_b 1
+.d 0 2 ii
+	jsr e_StdEnvExt_smod;51
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	pushI 60
+	push_b 1
+.d 0 2 ii
+	jsr e_StdEnvExt_smod;51
+.o 0 1 i
+	pushI 10
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	ltI
+.d 0 1 b
+	jsr s123
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	pushI 60
+	push_b 1
+	divI
+	updatepop_b 0 1
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ":"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " min"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.o 0 1 b
+s123
+	eqB_b TRUE 0
+	jmp_true case.175
+	jmp case.176
+case.175
+	pop_b 1
+	buildAC "0"
+.d 1 0
+	rtn
+case.176
+	pop_b 1
+	buildAC ""
+.d 1 0
+	rtn
+.export e_Footballer_stoString;89
+.descexp e_Footballer_dtoString;89 e_Footballer_ntoString;89 e_Footballer_ltoString;89 1 0 "toString;89"
+.o 2 0
+e_Footballer_ltoString;89
+	pop_a 1
+.d 1 0
+	jsr ea90
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;89
+.o 1 0
+e_Footballer_ntoString;89
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea90
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea90
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;89
+.o 1 0
+s90
+	pushD_a 0
+	eqD_b e_Footballer_dWarning 0
+	jmp_true case.177
+	eqD_b e_Footballer_dYellowCard 0
+	jmp_true case.178
+	jmp case.179
+case.177
+	pop_b 1
+	pop_a 1
+	buildAC "Warning"
+.d 1 0
+	rtn
+case.178
+	pop_b 1
+	pop_a 1
+	buildAC "YellowCard"
+.d 1 0
+	rtn
+case.179
+	pop_b 1
+	pop_a 1
+	buildAC "RedCard"
+.d 1 0
+	rtn
+.export e_Footballer_stoString;82
+.descexp e_Footballer_dtoString;82 e_Footballer_ntoString;82 e_Footballer_ltoString;82 1 0 "toString;82"
+.o 2 0
+e_Footballer_ltoString;82
+	pop_a 1
+.d 1 0
+	jsr ea83
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;82
+.o 1 0
+e_Footballer_ntoString;82
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea83
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea83
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;82
+.o 1 0
+s83
+	eq_desc e_Footballer_dWest 0 0
+	jmp_true case.180
+	jmp case.181
+case.180
+	pop_a 1
+	buildAC "West"
+.d 1 0
+	rtn
+case.181
+	pop_a 1
+	buildAC "East"
+.d 1 0
+	rtn
+.o 1 1 i
+s109
+	buildh e_StdString_dtoString;9 0
+	buildAC "["
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 0
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	pop_b 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "]"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.export e_Footballer_sfailFootballerAction
+.export e_Footballer_eafailFootballerAction
+.descexp e_Footballer_dfailFootballerAction e_Footballer_nfailFootballerAction e_Footballer_lfailFootballerAction 1 0 "failFootballerAction"
+.o 2 0
+e_Footballer_lfailFootballerAction
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eafailFootballerAction
+.n 1 e_Footballer_dfailFootballerAction e_Footballer_eafailFootballerAction
+.o 1 0
+e_Footballer_nfailFootballerAction
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eafailFootballerAction
+	jsr_eval 0
+.o 2 0
+e_Footballer_sfailFootballerAction
+.o 2 0
+s43
+	pushD_a 0
+	eqD_b e_Footballer_kMove 0
+	jmp_true case.182
+	eqD_b e_Footballer_dGainBall 0
+	jmp_true case.183
+	eqD_b e_Footballer_dCatchBall 0
+	jmp_true case.184
+	eqD_b e_Footballer_kKickBall 0
+	jmp_true case.185
+	eqD_b e_Footballer_kHeadBall 0
+	jmp_true case.186
+	eqD_b e_Footballer_kFeint 0
+	jmp_true case.187
+	jmp case.188
+case.182
+	pop_b 1
+	repl_args 2 2
+	push_a 1
+	push_a 1
+	fill_r e_Footballer_kMoved 2 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+case.183
+	pop_b 1
+	buildh e_Footballer_dFail 0
+	fill_r e_Footballer_kGainedBall 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+case.184
+	pop_b 1
+	buildh e_Footballer_dFail 0
+	fill_r e_Footballer_kCaughtBall 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+case.185
+	pop_b 1
+	repl_args 2 2
+	pop_a 2
+	buildh e_StdMaybe_dNothing 0
+	fill_r e_Footballer_kKickedBall 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+case.186
+	pop_b 1
+	repl_args 2 2
+	pop_a 2
+	buildh e_StdMaybe_dNothing 0
+	fill_r e_Footballer_kHeadedBall 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+case.187
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+	fill_r e_Footballer_kFeinted 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+case.188
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dFail 0
+	push_a 2
+	push_a 2
+	fill_r e_Footballer_kTackled 3 0 5 0 0
+	pop_a 5
+.d 1 0
+	rtn
+case.189
+	buildAC "failFootballerAction: unknown action failed"
+	updatepop_a 0 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Footballer_sisOnTheGround
+.descexp e_Footballer_disOnTheGround e_Footballer_nisOnTheGround e_Footballer_lisOnTheGround 1 0 "isOnTheGround"
+.o 2 0
+e_Footballer_lisOnTheGround
+	pop_a 1
+.d 1 0
+	jsr ea42
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disOnTheGround
+.o 1 0
+e_Footballer_nisOnTheGround
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea42
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea42
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisOnTheGround
+.o 1 0
+s42
+	eq_desc e_Footballer_kOnTheGround 0 0
+	jmp_true case.190
+	jmp case.191
+case.190
+	repl_r_args 0 1
+	pop_b 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.191
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisCaughtBall
+.descexp e_Footballer_disCaughtBall e_Footballer_nisCaughtBall e_Footballer_lisCaughtBall 1 0 "isCaughtBall"
+.o 2 0
+e_Footballer_lisCaughtBall
+	pop_a 1
+.d 1 0
+	jsr ea41
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disCaughtBall
+.o 1 0
+e_Footballer_nisCaughtBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea41
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea41
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisCaughtBall
+.o 1 0
+s41
+	eq_desc e_Footballer_kCaughtBall 0 0
+	jmp_true case.192
+	jmp case.193
+case.192
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.193
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisTackled
+.descexp e_Footballer_disTackled e_Footballer_nisTackled e_Footballer_lisTackled 1 0 "isTackled"
+.o 2 0
+e_Footballer_lisTackled
+	pop_a 1
+.d 1 0
+	jsr ea40
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disTackled
+.o 1 0
+e_Footballer_nisTackled
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea40
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea40
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisTackled
+.o 1 0
+s40
+	eq_desc e_Footballer_kTackled 0 0
+	jmp_true case.194
+	jmp case.195
+case.194
+	repl_args 3 3
+	pop_a 3
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.195
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisFeinted
+.descexp e_Footballer_disFeinted e_Footballer_nisFeinted e_Footballer_lisFeinted 1 0 "isFeinted"
+.o 2 0
+e_Footballer_lisFeinted
+	pop_a 1
+.d 1 0
+	jsr ea39
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disFeinted
+.o 1 0
+e_Footballer_nisFeinted
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea39
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea39
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisFeinted
+.o 1 0
+s39
+	eq_desc e_Footballer_kFeinted 0 0
+	jmp_true case.196
+	jmp case.197
+case.196
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.197
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisHeadedBall
+.descexp e_Footballer_disHeadedBall e_Footballer_nisHeadedBall e_Footballer_lisHeadedBall 1 0 "isHeadedBall"
+.o 2 0
+e_Footballer_lisHeadedBall
+	pop_a 1
+.d 1 0
+	jsr ea38
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disHeadedBall
+.o 1 0
+e_Footballer_nisHeadedBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea38
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea38
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisHeadedBall
+.o 1 0
+s38
+	eq_desc e_Footballer_kHeadedBall 0 0
+	jmp_true case.198
+	jmp case.199
+case.198
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.199
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisKickedBall
+.descexp e_Footballer_disKickedBall e_Footballer_nisKickedBall e_Footballer_lisKickedBall 1 0 "isKickedBall"
+.o 2 0
+e_Footballer_lisKickedBall
+	pop_a 1
+.d 1 0
+	jsr ea37
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disKickedBall
+.o 1 0
+e_Footballer_nisKickedBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea37
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea37
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisKickedBall
+.o 1 0
+s37
+	eq_desc e_Footballer_kKickedBall 0 0
+	jmp_true case.200
+	jmp case.201
+case.200
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.201
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisGainedBall
+.descexp e_Footballer_disGainedBall e_Footballer_nisGainedBall e_Footballer_lisGainedBall 1 0 "isGainedBall"
+.o 2 0
+e_Footballer_lisGainedBall
+	pop_a 1
+.d 1 0
+	jsr ea36
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disGainedBall
+.o 1 0
+e_Footballer_nisGainedBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea36
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea36
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisGainedBall
+.o 1 0
+s36
+	eq_desc e_Footballer_kGainedBall 0 0
+	jmp_true case.202
+	jmp case.203
+case.202
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.203
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisMoved
+.descexp e_Footballer_disMoved e_Footballer_nisMoved e_Footballer_lisMoved 1 0 "isMoved"
+.o 2 0
+e_Footballer_lisMoved
+	pop_a 1
+.d 1 0
+	jsr ea35
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disMoved
+.o 1 0
+e_Footballer_nisMoved
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea35
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea35
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisMoved
+.o 1 0
+s35
+	eq_desc e_Footballer_kMoved 0 0
+	jmp_true case.204
+	jmp case.205
+case.204
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.205
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisActionOnBall
+.descexp e_Footballer_disActionOnBall e_Footballer_nisActionOnBall e_Footballer_lisActionOnBall 1 0 "isActionOnBall"
+.o 2 0
+e_Footballer_lisActionOnBall
+	pop_a 1
+.d 1 0
+	jsr ea34
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disActionOnBall
+.o 1 0
+e_Footballer_nisActionOnBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea34
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea34
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisActionOnBall
+.o 1 0
+s34
+	pushD_a 0
+	eqD_b e_Footballer_dGainBall 0
+	jmp_true case.206
+	eqD_b e_Footballer_dCatchBall 0
+	jmp_true case.207
+	eqD_b e_Footballer_kKickBall 0
+	jmp_true case.208
+	eqD_b e_Footballer_kHeadBall 0
+	jmp_true case.209
+	pop_b 1
+	jmp case.210
+case.206
+	pop_b 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.207
+	pop_b 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.208
+	pop_b 1
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.209
+	pop_b 1
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.210
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisFootballerTackle
+.descexp e_Footballer_disFootballerTackle e_Footballer_nisFootballerTackle e_Footballer_lisFootballerTackle 1 0 "isFootballerTackle"
+.o 2 0
+e_Footballer_lisFootballerTackle
+	pop_a 1
+.d 1 0
+	jsr ea33
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disFootballerTackle
+.o 1 0
+e_Footballer_nisFootballerTackle
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea33
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea33
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisFootballerTackle
+.o 1 0
+s33
+	eq_desc e_Footballer_kTackle 0 0
+	jmp_true case.211
+	jmp case.212
+case.211
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.212
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisFeint
+.descexp e_Footballer_disFeint e_Footballer_nisFeint e_Footballer_lisFeint 1 0 "isFeint"
+.o 2 0
+e_Footballer_lisFeint
+	pop_a 1
+.d 1 0
+	jsr ea32
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disFeint
+.o 1 0
+e_Footballer_nisFeint
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea32
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea32
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisFeint
+.o 1 0
+s32
+	eq_desc e_Footballer_kFeint 0 0
+	jmp_true case.213
+	jmp case.214
+case.213
+	repl_args 1 1
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.214
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisHeadBall
+.descexp e_Footballer_disHeadBall e_Footballer_nisHeadBall e_Footballer_lisHeadBall 1 0 "isHeadBall"
+.o 2 0
+e_Footballer_lisHeadBall
+	pop_a 1
+.d 1 0
+	jsr ea31
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disHeadBall
+.o 1 0
+e_Footballer_nisHeadBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea31
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea31
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisHeadBall
+.o 1 0
+s31
+	eq_desc e_Footballer_kHeadBall 0 0
+	jmp_true case.215
+	jmp case.216
+case.215
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.216
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisKickBall
+.descexp e_Footballer_disKickBall e_Footballer_nisKickBall e_Footballer_lisKickBall 1 0 "isKickBall"
+.o 2 0
+e_Footballer_lisKickBall
+	pop_a 1
+.d 1 0
+	jsr ea30
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disKickBall
+.o 1 0
+e_Footballer_nisKickBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea30
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea30
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisKickBall
+.o 1 0
+s30
+	eq_desc e_Footballer_kKickBall 0 0
+	jmp_true case.217
+	jmp case.218
+case.217
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.218
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisCatchBall
+.descexp e_Footballer_disCatchBall e_Footballer_nisCatchBall e_Footballer_lisCatchBall 1 0 "isCatchBall"
+.o 2 0
+e_Footballer_lisCatchBall
+	pop_a 1
+.d 1 0
+	jsr ea29
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disCatchBall
+.o 1 0
+e_Footballer_nisCatchBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea29
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea29
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisCatchBall
+.o 1 0
+s29
+	eq_desc e_Footballer_dCatchBall 0 0
+	jmp_true case.219
+	jmp case.220
+case.219
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.220
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisGainBall
+.descexp e_Footballer_disGainBall e_Footballer_nisGainBall e_Footballer_lisGainBall 1 0 "isGainBall"
+.o 2 0
+e_Footballer_lisGainBall
+	pop_a 1
+.d 1 0
+	jsr ea28
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disGainBall
+.o 1 0
+e_Footballer_nisGainBall
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea28
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea28
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisGainBall
+.o 1 0
+s28
+	eq_desc e_Footballer_dGainBall 0 0
+	jmp_true case.221
+	jmp case.222
+case.221
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.222
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sisMove
+.descexp e_Footballer_disMove e_Footballer_nisMove e_Footballer_lisMove 1 0 "isMove"
+.o 2 0
+e_Footballer_lisMove
+	pop_a 1
+.d 1 0
+	jsr ea27
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disMove
+.o 1 0
+e_Footballer_nisMove
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea27
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea27
+	jsr_eval 0
+.o 1 0
+e_Footballer_sisMove
+.o 1 0
+s27
+	eq_desc e_Footballer_kMove 0 0
+	jmp_true case.223
+	jmp case.224
+case.223
+	repl_args 2 2
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.224
+	pop_a 1
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sinPenaltyArea
+.descexp e_Footballer_dinPenaltyArea e_Footballer_ninPenaltyArea e_Footballer_linPenaltyArea 3 0 "inPenaltyArea"
+.a 0 a25
+.o 2 0
+e_Footballer_linPenaltyArea
+	repl_args 2 2
+.o 3 0
+a25
+.d 3 0
+	jsr ea25
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 e_Footballer_dinPenaltyArea
+.o 1 0
+e_Footballer_ninPenaltyArea
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea25
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea25
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 2 2 0
+	update_a 3 6
+	update_a 1 3
+	update_a 5 4
+	update_a 2 5
+	update_a 0 2
+	pop_a 2
+.o 5 0
+e_Footballer_sinPenaltyArea
+.o 5 0
+s25
+	push_a 1
+	push_a 1
+.d 2 0
+	jsr s26
+.o 2 0
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	create
+	pushR 9.15
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_a 7
+	buildh e_Geometry_d<;22 0
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 4 0
+	jsr e_StdEnvExt_sisbetween
+.o 0 1 b
+	jmp_false else.225
+	buildh e_Footballer_dWest 0
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 2 0
+	jsr s82
+.o 0 1 b
+	jmp_false else.226
+	push_a 3
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	jsr e_Geometry_s<;22
+.o 0 1 b
+	notB
+.d 0 1 b
+	rtn
+else.226
+	create
+	pushR 16.50
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_Geometry_s<;22
+.o 0 1 b
+	notB
+.d 0 1 b
+	rtn
+else.225
+	pop_a 5
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_s==;81
+.descexp e_Footballer_d==;81 e_Footballer_n==;81 e_Footballer_l==;81 2 0 "==;81"
+.a 0 a82
+.o 2 0
+e_Footballer_l==;81
+	repl_args 1 1
+.o 2 0
+a82
+.d 2 0
+	jsr ea82
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;81
+.o 1 0
+e_Footballer_n==;81
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea82
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea82
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;81
+.o 2 0
+s82
+	eq_desc e_Footballer_dWest 0 0
+	jmp_true case.227
+	jmp case.228
+case.227
+	eq_desc e_Footballer_dWest 0 1
+	jmp_true case.230
+	jmp case.229
+case.230
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.228
+	eq_desc e_Footballer_dEast 0 1
+	jmp_true case.231
+	jmp case.229
+case.231
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.229
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sgoal_poles
+.descexp e_Footballer_dgoal_poles e_Footballer_ngoal_poles e_Footballer_lgoal_poles 1 0 "goal_poles"
+.o 2 0
+e_Footballer_lgoal_poles
+	pop_a 1
+.d 1 0
+	jsr ea26
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_Footballer_dgoal_poles
+.o 1 0
+e_Footballer_ngoal_poles
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea26
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea26
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_Footballer_sgoal_poles
+.o 2 0
+s26
+	create
+	pushR 7.32
+	updatepop_a 0 2
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	create
+	push_a 1
+.d 2 0
+	jsr e_Geometry_s~;20
+.o 1 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_Footballer_sgetDefaultField
+.descexp e_Footballer_dgetDefaultField e_Footballer_ngetDefaultField e_Footballer_lgetDefaultField 0 0 "getDefaultField"
+.o 1 0
+e_Footballer_lgetDefaultField
+	halt
+.n 0 e_Footballer_dgetDefaultField
+.o 1 0
+e_Footballer_ngetDefaultField
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea24
+.o 2 0
+	fill_r e_Footballer_rFootballField 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 0 0
+ea24
+.o 0 0
+e_Footballer_sgetDefaultField
+.o 0 0
+s24
+	create
+	pushR 110.0
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	create
+	pushR 75.0
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+.d 2 0
+	rtn
+.export e_Footballer_smaxFeintStep
+.export e_Footballer_eamaxFeintStep
+.descexp e_Footballer_dmaxFeintStep e_Footballer_nmaxFeintStep e_Footballer_lmaxFeintStep 1 0 "maxFeintStep"
+.o 2 0
+e_Footballer_lmaxFeintStep
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxFeintStep
+.n 1 e_Footballer_dmaxFeintStep e_Footballer_eamaxFeintStep
+.o 1 0
+e_Footballer_nmaxFeintStep
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxFeintStep
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxFeintStep
+.o 12 2 rr
+s22
+	create
+	push_a 11
+	push_b 1
+	push_b 1
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 11 22
+	update_a 10 21
+	update_a 9 20
+	update_a 8 19
+	update_a 7 18
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dFeinting 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s122
+.o 0 1 r
+.d 1 1 r
+	jmp e_Geometry_sm
+.o 0 1 b
+s122
+	eqB_b TRUE 0
+	jmp_true case.232
+	jmp case.233
+case.232
+	pop_b 1
+	pushR 0.75
+.d 0 1 r
+	rtn
+case.233
+	pop_b 1
+	pushR 0.5
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxRotateAngle
+.export e_Footballer_eamaxRotateAngle
+.descexp e_Footballer_dmaxRotateAngle e_Footballer_nmaxRotateAngle e_Footballer_lmaxRotateAngle 1 0 "maxRotateAngle"
+.o 2 0
+e_Footballer_lmaxRotateAngle
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxRotateAngle
+.n 1 e_Footballer_dmaxRotateAngle e_Footballer_eamaxRotateAngle
+.o 1 0
+e_Footballer_nmaxRotateAngle
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxRotateAngle
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxRotateAngle
+.o 12 2 rr
+s21
+	push_r_args_a 4 2 0 2 1
+	pop_b 2
+	update_a 3 11
+	updatepop_a 0 10
+.d 1 0
+	jsr e_Geometry_stoReal;84
+.o 0 1 r
+	absR
+	pushR 1.0
+	push_b 1
+	ltR
+	jmp_false else.234
+	pushR 3.1415926535897932384
+	updatepop_b 0 1
+	pop_a 1
+.d 1 1 r
+	jmp e_Geometry_srad
+else.234
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	pushR 2.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	push_b 1
+	pushR 5.0
+	divR
+	mulR
+	pushR 18.0
+	pushR 3.1415926535897932384
+	divR
+	mulR
+	updatepop_b 0 1
+.d 1 1 r
+	jmp e_Geometry_srad
+.export e_Footballer_smaxHeadingDeviation
+.export e_Footballer_eamaxHeadingDeviation
+.descexp e_Footballer_dmaxHeadingDeviation e_Footballer_nmaxHeadingDeviation e_Footballer_lmaxHeadingDeviation 1 0 "maxHeadingDeviation"
+.o 2 0
+e_Footballer_lmaxHeadingDeviation
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxHeadingDeviation
+.n 1 e_Footballer_dmaxHeadingDeviation e_Footballer_eamaxHeadingDeviation
+.o 1 0
+e_Footballer_nmaxHeadingDeviation
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxHeadingDeviation
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxHeadingDeviation
+.o 12 2 rr
+s20
+	pushR 3.1415926535897932384
+	pushR 0.25
+	mulR
+	updatepop_b 0 2
+	pop_a 11
+.d 1 1 r
+	jmp e_Geometry_srad
+.export e_Footballer_smaxKickingDeviation
+.export e_Footballer_eamaxKickingDeviation
+.descexp e_Footballer_dmaxKickingDeviation e_Footballer_nmaxKickingDeviation e_Footballer_lmaxKickingDeviation 1 0 "maxKickingDeviation"
+.o 2 0
+e_Footballer_lmaxKickingDeviation
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxKickingDeviation
+.n 1 e_Footballer_dmaxKickingDeviation e_Footballer_eamaxKickingDeviation
+.o 1 0
+e_Footballer_nmaxKickingDeviation
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxKickingDeviation
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxKickingDeviation
+.o 12 2 rr
+s19
+	pushR 3.1415926535897932384
+	pushR 0.5
+	mulR
+	updatepop_b 0 2
+	pop_a 11
+.d 1 1 r
+	jmp e_Geometry_srad
+.export e_Footballer_smaxVelocityBallHead
+.export e_Footballer_eamaxVelocityBallHead
+.descexp e_Footballer_dmaxVelocityBallHead e_Footballer_nmaxVelocityBallHead e_Footballer_lmaxVelocityBallHead 2 0 "maxVelocityBallHead"
+.a 2 e_Footballer_eamaxVelocityBallHead
+.o 2 0
+e_Footballer_lmaxVelocityBallHead
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eamaxVelocityBallHead
+.n 2 e_Footballer_dmaxVelocityBallHead e_Footballer_eamaxVelocityBallHead
+.o 1 0
+e_Footballer_nmaxVelocityBallHead
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eamaxVelocityBallHead
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 11 2
+.o 13 2 rr
+e_Footballer_smaxVelocityBallHead
+.o 13 2 rr
+s18
+	create
+	push_a 11
+	push_b 1
+	push_b 1
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dHeading 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s121
+.o 0 1 r
+	create
+.d 1 1 r
+	jsr e_Geometry_sms
+.o 1 0
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 2
+	update_a 0 3
+	update_a 0 4
+	update_a 0 5
+	update_a 0 6
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	update_a 0 10
+	update_a 0 11
+	update_a 0 12
+	pop_a 1
+.d 0 2 rr
+	jsr s23
+.o 0 1 r
+	pushR 0.1
+	mulR
+	pushR 0.9
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addR
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 12
+	updatepop_a 0 11
+.d 2 1 r
+	jsr e_Geometry_sscale;86
+.o 1 0
+	create
+	push_a 2
+	pushR 0.7
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 1 r
+	jsr e_Geometry_sscale;86
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_Geometry_s+;77
+.o 0 1 b
+s121
+	eqB_b TRUE 0
+	jmp_true case.235
+	jmp case.236
+case.235
+	pop_b 1
+	pushR 7.0
+.d 0 1 r
+	rtn
+case.236
+	pop_b 1
+	pushR 5.0
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxVelocityBallKick
+.export e_Footballer_eamaxVelocityBallKick
+.descexp e_Footballer_dmaxVelocityBallKick e_Footballer_nmaxVelocityBallKick e_Footballer_lmaxVelocityBallKick 1 0 "maxVelocityBallKick"
+.o 2 0
+e_Footballer_lmaxVelocityBallKick
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxVelocityBallKick
+.n 1 e_Footballer_dmaxVelocityBallKick e_Footballer_eamaxVelocityBallKick
+.o 1 0
+e_Footballer_nmaxVelocityBallKick
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxVelocityBallKick
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxVelocityBallKick
+.o 12 2 rr
+s17
+	push_b 0
+	push_b 2
+.d 0 2 rr
+	jsr s23
+.o 0 1 r
+	pushR 0.2
+	mulR
+	pushR 0.8
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addR
+	push_a 2
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	pushR 2.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	create
+	push_a 11
+	push_b 3
+	push_b 3
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	update_a 11 22
+	update_a 10 21
+	update_a 9 20
+	update_a 8 19
+	update_a 7 18
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dKicking 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s120
+.o 0 1 r
+	addR
+	mulR
+	updatepop_b 0 2
+.d 1 1 r
+	jmp e_Geometry_sms
+.o 0 1 b
+s120
+	eqB_b TRUE 0
+	jmp_true case.237
+	jmp case.238
+case.237
+	pop_b 1
+	pushR 27.0
+.d 0 1 r
+	rtn
+case.238
+	pop_b 1
+	pushR 25.0
+.d 0 1 r
+	rtn
+.export e_Footballer_sgetHealthStaminaFactor
+.descexp e_Footballer_dgetHealthStaminaFactor e_Footballer_ngetHealthStaminaFactor e_Footballer_lgetHealthStaminaFactor 2 0 "getHealthStaminaFactor"
+.a 0 a23
+.o 2 0
+e_Footballer_lgetHealthStaminaFactor
+	repl_args 1 1
+.o 2 0
+a23
+.d 2 0
+	jsr ea23
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_dgetHealthStaminaFactor
+.o 1 0
+e_Footballer_ngetHealthStaminaFactor
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea23
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea23
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 1
+	pushR_a 0
+	pop_a 2
+.o 0 2 rr
+e_Footballer_sgetHealthStaminaFactor
+.o 0 2 rr
+s23
+	push_b 1
+	push_b 1
+	ltR
+	notB
+	jmp_false else.239
+	pop_b 1
+.d 0 1 r
+	rtn
+else.239
+	buildh _Nil 0
+	buildR_b 0
+	buildh _Cons 2
+	buildR_b 1
+	buildh _Cons 2
+	pop_b 2
+.d 1 0
+	jmp e_StdList_savg;77
+.export e_Footballer_smaxTackleReach
+.export e_Footballer_eamaxTackleReach
+.descexp e_Footballer_dmaxTackleReach e_Footballer_nmaxTackleReach e_Footballer_lmaxTackleReach 1 0 "maxTackleReach"
+.o 2 0
+e_Footballer_lmaxTackleReach
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxTackleReach
+.n 1 e_Footballer_dmaxTackleReach e_Footballer_eamaxTackleReach
+.o 1 0
+e_Footballer_nmaxTackleReach
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxTackleReach
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxTackleReach
+.o 12 2 rr
+s16
+	push_a 2
+	create
+	push_a 12
+	push_b 1
+	push_b 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	pop_a 1
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dTackling 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s119
+.o 0 1 r
+	updatepop_a 0 11
+.d 2 1 r
+	jmp e_Geometry_sscale;25
+.o 0 1 b
+s119
+	eqB_b TRUE 0
+	jmp_true case.240
+	jmp case.241
+case.240
+	pop_b 1
+	pushR 0.33
+.d 0 1 r
+	rtn
+case.241
+	pop_b 1
+	pushR 0.25
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxCatchReach
+.export e_Footballer_eamaxCatchReach
+.descexp e_Footballer_dmaxCatchReach e_Footballer_nmaxCatchReach e_Footballer_lmaxCatchReach 1 0 "maxCatchReach"
+.o 2 0
+e_Footballer_lmaxCatchReach
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxCatchReach
+.n 1 e_Footballer_dmaxCatchReach e_Footballer_eamaxCatchReach
+.o 1 0
+e_Footballer_nmaxCatchReach
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxCatchReach
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxCatchReach
+.o 12 2 rr
+s15
+	push_a 2
+	create
+	push_a 12
+	push_b 1
+	push_b 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	pop_a 1
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dCatching 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s118
+.o 0 1 r
+	updatepop_a 0 11
+.d 2 1 r
+	jmp e_Geometry_sscale;25
+.o 0 1 b
+s118
+	eqB_b TRUE 0
+	jmp_true case.242
+	jmp case.243
+case.242
+	pop_b 1
+	pushR 1.8
+.d 0 1 r
+	rtn
+case.243
+	pop_b 1
+	pushR 1.5
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxHeadReach
+.export e_Footballer_eamaxHeadReach
+.descexp e_Footballer_dmaxHeadReach e_Footballer_nmaxHeadReach e_Footballer_lmaxHeadReach 1 0 "maxHeadReach"
+.o 2 0
+e_Footballer_lmaxHeadReach
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxHeadReach
+.n 1 e_Footballer_dmaxHeadReach e_Footballer_eamaxHeadReach
+.o 1 0
+e_Footballer_nmaxHeadReach
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxHeadReach
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxHeadReach
+.o 12 2 rr
+s14
+	push_a 2
+	create
+	push_a 12
+	push_b 1
+	push_b 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	pop_a 1
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dHeading 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s117
+.o 0 1 r
+	updatepop_a 0 11
+.d 2 1 r
+	jmp e_Geometry_sscale;25
+.o 0 1 b
+s117
+	eqB_b TRUE 0
+	jmp_true case.244
+	jmp case.245
+case.244
+	pop_b 1
+	pushR 0.4
+.d 0 1 r
+	rtn
+case.245
+	pop_b 1
+	pushR 0.2
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxKickReach
+.export e_Footballer_eamaxKickReach
+.descexp e_Footballer_dmaxKickReach e_Footballer_nmaxKickReach e_Footballer_lmaxKickReach 1 0 "maxKickReach"
+.o 2 0
+e_Footballer_lmaxKickReach
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxKickReach
+.n 1 e_Footballer_dmaxKickReach e_Footballer_eamaxKickReach
+.o 1 0
+e_Footballer_nmaxKickReach
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxKickReach
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxKickReach
+.o 12 2 rr
+s13
+	push_a 2
+	create
+	push_a 12
+	push_b 1
+	push_b 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	pop_a 1
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dKicking 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s116
+.o 0 1 r
+	updatepop_a 0 11
+.d 2 1 r
+	jmp e_Geometry_sscale;25
+.o 0 1 b
+s116
+	eqB_b TRUE 0
+	jmp_true case.246
+	jmp case.247
+case.246
+	pop_b 1
+	pushR 0.6
+.d 0 1 r
+	rtn
+case.247
+	pop_b 1
+	pushR 0.4
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxCatchVelocityDifference
+.export e_Footballer_eamaxCatchVelocityDifference
+.descexp e_Footballer_dmaxCatchVelocityDifference e_Footballer_nmaxCatchVelocityDifference e_Footballer_lmaxCatchVelocityDifference 2 0 "maxCatchVelocityDifference"
+.a 2 e_Footballer_eamaxCatchVelocityDifference
+.o 2 0
+e_Footballer_lmaxCatchVelocityDifference
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eamaxCatchVelocityDifference
+.n 2 e_Footballer_dmaxCatchVelocityDifference e_Footballer_eamaxCatchVelocityDifference
+.o 1 0
+e_Footballer_nmaxCatchVelocityDifference
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eamaxCatchVelocityDifference
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 11 2
+.o 13 2 rr
+e_Footballer_smaxCatchVelocityDifference
+.o 13 2 rr
+s12
+	pushR 0.0
+	push_a 2
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_a 11
+	buildh _Nil 0
+	update_a 0 13
+	pop_a 1
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	push_b 1
+	pushR 0.8
+	mulR
+	pushR 4.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	powR
+	update_b 1 2
+	updatepop_b 0 1
+	mulR
+	push_b 0
+	push_b 2
+	ltR
+	push_b 2
+	push_b 2
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 3 brr
+	jsr s115
+.o 0 1 r
+	create
+	push_a 11
+	push_b 2
+	push_b 2
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	update_a 11 23
+	update_a 10 22
+	update_a 9 21
+	update_a 8 20
+	update_a 7 19
+	update_a 6 18
+	update_a 5 17
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dGaining 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s114
+.o 0 1 r
+	subR
+	updatepop_b 0 2
+.d 1 1 r
+	jmp e_Geometry_sms
+.o 0 3 brr
+s115
+	eqB_b TRUE 0
+	jmp_true case.248
+	jmp case.249
+case.248
+	update_b 1 2
+	pop_b 2
+.d 0 1 r
+	rtn
+case.249
+	pop_b 2
+.d 0 1 r
+	rtn
+.o 0 1 b
+s114
+	eqB_b TRUE 0
+	jmp_true case.250
+	jmp case.251
+case.250
+	pop_b 1
+	pushR 20.0
+.d 0 1 r
+	rtn
+case.251
+	pop_b 1
+	pushR 17.0
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxGainVelocityDifference
+.export e_Footballer_eamaxGainVelocityDifference
+.descexp e_Footballer_dmaxGainVelocityDifference e_Footballer_nmaxGainVelocityDifference e_Footballer_lmaxGainVelocityDifference 2 0 "maxGainVelocityDifference"
+.a 2 e_Footballer_eamaxGainVelocityDifference
+.o 2 0
+e_Footballer_lmaxGainVelocityDifference
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Footballer_eamaxGainVelocityDifference
+.n 2 e_Footballer_dmaxGainVelocityDifference e_Footballer_eamaxGainVelocityDifference
+.o 1 0
+e_Footballer_nmaxGainVelocityDifference
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Footballer_eamaxGainVelocityDifference
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 11 2
+.o 13 2 rr
+e_Footballer_smaxGainVelocityDifference
+.o 13 2 rr
+s11
+	pushR 0.0
+	push_a 2
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_a 11
+	buildh _Nil 0
+	update_a 0 13
+	pop_a 1
+.d 1 0
+	jsr e_Geometry_stoReal;23
+.o 0 1 r
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divR
+	push_b 1
+	pushR 0.8
+	mulR
+	pushR 4.0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	powR
+	update_b 1 2
+	updatepop_b 0 1
+	mulR
+	push_b 0
+	push_b 2
+	ltR
+	push_b 2
+	push_b 2
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 0 3 brr
+	jsr s113
+.o 0 1 r
+	create
+	push_a 11
+	push_b 2
+	push_b 2
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	push_a 11
+	update_a 11 23
+	update_a 10 22
+	update_a 9 21
+	update_a 8 20
+	update_a 7 19
+	update_a 6 18
+	update_a 5 17
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dGaining 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s112
+.o 0 1 r
+	subR
+	updatepop_b 0 2
+.d 1 1 r
+	jmp e_Geometry_sms
+.o 0 3 brr
+s113
+	eqB_b TRUE 0
+	jmp_true case.252
+	jmp case.253
+case.252
+	update_b 1 2
+	pop_b 2
+.d 0 1 r
+	rtn
+case.253
+	pop_b 2
+.d 0 1 r
+	rtn
+.o 0 1 b
+s112
+	eqB_b TRUE 0
+	jmp_true case.254
+	jmp case.255
+case.254
+	pop_b 1
+	pushR 15.0
+.d 0 1 r
+	rtn
+case.255
+	pop_b 1
+	pushR 10.0
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxJumpReach
+.export e_Footballer_eamaxJumpReach
+.descexp e_Footballer_dmaxJumpReach e_Footballer_nmaxJumpReach e_Footballer_lmaxJumpReach 1 0 "maxJumpReach"
+.o 2 0
+e_Footballer_lmaxJumpReach
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxJumpReach
+.n 1 e_Footballer_dmaxJumpReach e_Footballer_eamaxJumpReach
+.o 1 0
+e_Footballer_nmaxJumpReach
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxJumpReach
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxJumpReach
+.o 12 2 rr
+s10
+	push_a 2
+	create
+	push_a 12
+	push_b 1
+	push_b 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	pop_a 1
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dJumping 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s111
+.o 0 1 r
+	updatepop_a 0 11
+.d 2 1 r
+	jmp e_Geometry_sscale;25
+.o 0 1 b
+s111
+	eqB_b TRUE 0
+	jmp_true case.256
+	jmp case.257
+case.256
+	pop_b 1
+	pushR 0.6
+.d 0 1 r
+	rtn
+case.257
+	pop_b 1
+	pushR 0.4
+.d 0 1 r
+	rtn
+.export e_Footballer_smaxGainReach
+.export e_Footballer_eamaxGainReach
+.descexp e_Footballer_dmaxGainReach e_Footballer_nmaxGainReach e_Footballer_lmaxGainReach 1 0 "maxGainReach"
+.o 2 0
+e_Footballer_lmaxGainReach
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_eamaxGainReach
+.n 1 e_Footballer_dmaxGainReach e_Footballer_eamaxGainReach
+.o 1 0
+e_Footballer_nmaxGainReach
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_eamaxGainReach
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_smaxGainReach
+.o 12 2 rr
+s9
+	push_a 2
+	create
+	push_a 12
+	push_b 1
+	push_b 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	pop_a 1
+.d 12 2 rr
+	jsr s3
+.o 1 0
+	buildh e_Footballer_dGaining 0
+	buildh e_Footballer_d==;73 0
+.d 3 0
+	jsr e_StdList_sisMember
+.o 0 1 b
+.d 0 1 b
+	jsr s110
+.o 0 1 r
+	updatepop_a 0 11
+.d 2 1 r
+	jmp e_Geometry_sscale;25
+.o 0 1 b
+s110
+	eqB_b TRUE 0
+	jmp_true case.258
+	jmp case.259
+case.258
+	pop_b 1
+	pushR 0.5
+.d 0 1 r
+	rtn
+case.259
+	pop_b 1
+	pushR 0.3
+.d 0 1 r
+	rtn
+.export e_Footballer_s==;73
+.descexp e_Footballer_d==;73 e_Footballer_n==;73 e_Footballer_l==;73 2 0 "==;73"
+.a 0 a74
+.o 2 0
+e_Footballer_l==;73
+	repl_args 1 1
+.o 2 0
+a74
+.d 2 0
+	jsr ea74
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;73
+.o 1 0
+e_Footballer_n==;73
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea74
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea74
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_Footballer_s==;73
+.o 2 0
+s74
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s75
+.o 1 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr s75
+.o 1 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+.d 0 1 b
+	rtn
+.export e_Footballer_stoString;74
+.descexp e_Footballer_dtoString;74 e_Footballer_ntoString;74 e_Footballer_ltoString;74 1 0 "toString;74"
+.o 2 0
+e_Footballer_ltoString;74
+	pop_a 1
+.d 1 0
+	jsr ea75
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dtoString;74
+.o 1 0
+e_Footballer_ntoString;74
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea75
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea75
+	jsr_eval 0
+.o 1 0
+e_Footballer_stoString;74
+.o 1 0
+s75
+	pushD_a 0
+	eqD_b e_Footballer_dRunning 0
+	jmp_true case.260
+	eqD_b e_Footballer_dDribbling 0
+	jmp_true case.261
+	eqD_b e_Footballer_dRotating 0
+	jmp_true case.262
+	eqD_b e_Footballer_dGaining 0
+	jmp_true case.263
+	eqD_b e_Footballer_dKicking 0
+	jmp_true case.264
+	eqD_b e_Footballer_dHeading 0
+	jmp_true case.265
+	eqD_b e_Footballer_dFeinting 0
+	jmp_true case.266
+	eqD_b e_Footballer_dJumping 0
+	jmp_true case.267
+	eqD_b e_Footballer_dCatching 0
+	jmp_true case.268
+	jmp case.269
+case.260
+	pop_b 1
+	pop_a 1
+	buildAC "Running"
+.d 1 0
+	rtn
+case.261
+	pop_b 1
+	pop_a 1
+	buildAC "Dribbling"
+.d 1 0
+	rtn
+case.262
+	pop_b 1
+	pop_a 1
+	buildAC "Rotating"
+.d 1 0
+	rtn
+case.263
+	pop_b 1
+	pop_a 1
+	buildAC "Gaining"
+.d 1 0
+	rtn
+case.264
+	pop_b 1
+	pop_a 1
+	buildAC "Kicking"
+.d 1 0
+	rtn
+case.265
+	pop_b 1
+	pop_a 1
+	buildAC "Heading"
+.d 1 0
+	rtn
+case.266
+	pop_b 1
+	pop_a 1
+	buildAC "Feinting"
+.d 1 0
+	rtn
+case.267
+	pop_b 1
+	pop_a 1
+	buildAC "Jumping"
+.d 1 0
+	rtn
+case.268
+	pop_b 1
+	pop_a 1
+	buildAC "Catching"
+.d 1 0
+	rtn
+case.269
+	pop_b 1
+	pop_a 1
+	buildAC "Tackling"
+.d 1 0
+	rtn
+.export e_Footballer_sisFielder
+.descexp e_Footballer_disFielder e_Footballer_nisFielder e_Footballer_lisFielder 1 0 "isFielder"
+.o 2 0
+e_Footballer_lisFielder
+	pop_a 1
+.d 1 0
+	jsr ea8
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disFielder
+.o 1 0
+e_Footballer_nisFielder
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea8
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea8
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_sisFielder
+.o 11 2 rr
+s8
+	push_a 10
+	push_b 1
+	push_b 1
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 10 21
+	update_a 9 20
+	update_a 8 19
+	update_a 7 18
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 11 2 rr
+	jsr s7
+.o 0 1 b
+	notB
+.d 0 1 b
+	rtn
+.export e_Footballer_sisKeeper
+.descexp e_Footballer_disKeeper e_Footballer_nisKeeper e_Footballer_lisKeeper 1 0 "isKeeper"
+.o 2 0
+e_Footballer_lisKeeper
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_disKeeper
+.o 1 0
+e_Footballer_nisKeeper
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea7
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_sisKeeper
+.o 11 2 rr
+s7
+	push_r_args 0 1 1
+	pop_a 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 11
+	eqI
+.d 0 1 b
+	rtn
+.export e_Footballer_sgetClubName
+.descexp e_Footballer_dgetClubName e_Footballer_ngetClubName e_Footballer_lgetClubName 1 0 "getClubName"
+.o 2 0
+e_Footballer_lgetClubName
+	pop_a 1
+.d 1 0
+	jsr ea6
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dgetClubName
+.o 1 0
+e_Footballer_ngetClubName
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea6
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea6
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_sgetClubName
+.o 11 2 rr
+s6
+	push_r_args 0 1 1
+	updatepop_a 0 11
+	updatepop_b 0 2
+.d 1 1 i
+	jmp s71
+.export e_Footballer_snameOf;70
+.descexp e_Footballer_dnameOf;70 e_Footballer_nnameOf;70 e_Footballer_lnameOf;70 1 0 "nameOf;70"
+.o 2 0
+e_Footballer_lnameOf;70
+	pop_a 1
+.d 1 0
+	jsr ea71
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dnameOf;70
+.o 1 0
+e_Footballer_nnameOf;70
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea71
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea71
+	jsr_eval 0
+	repl_r_args 1 1
+.o 1 1 i
+e_Footballer_snameOf;70
+.o 1 1 i
+s71
+	pop_b 1
+.d 1 0
+	rtn
+.export e_Footballer_splayer_identity
+.descexp e_Footballer_dplayer_identity e_Footballer_nplayer_identity e_Footballer_lplayer_identity 1 0 "player_identity"
+.o 2 0
+e_Footballer_lplayer_identity
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 1 1 i
+	build_r e_Footballer_rFootballerID 1 1 0 0
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_Footballer_dplayer_identity
+.o 1 0
+e_Footballer_nplayer_identity
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 1 1 i
+	fill_r e_Footballer_rFootballerID 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea5
+	jsr_eval 0
+	repl_r_args 11 2
+.o 11 2 rr
+e_Footballer_splayer_identity
+.o 11 2 rr
+s5
+	pop_b 2
+	updatepop_a 0 10
+	repl_r_args 1 1
+.d 1 1 i
+	rtn
+.export e_Footballer_sidentify_player
+.descexp e_Footballer_didentify_player e_Footballer_nidentify_player e_Footballer_lidentify_player 2 0 "identify_player"
+.a 0 a4
+.o 2 0
+e_Footballer_lidentify_player
+	repl_args 1 1
+.o 2 0
+a4
+.d 2 0
+	jsr ea4
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_didentify_player
+.o 1 0
+e_Footballer_nidentify_player
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea4
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea4
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 11 2
+	push_r_args 11 1 1
+	update_a 11 13
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 12 3 irr
+e_Footballer_sidentify_player
+.o 12 3 irr
+s4
+	push_r_args 1 1 1
+	push_b 1
+	push_a 1
+	update_a 1 13
+	updatepop_a 0 12
+	update_b 1 4
+	updatepop_b 0 3
+.d 2 2 ii
+	jmp s69
+.export e_Footballer_s==;68
+.descexp e_Footballer_d==;68 e_Footballer_n==;68 e_Footballer_l==;68 2 0 "==;68"
+.a 0 a69
+.o 2 0
+e_Footballer_l==;68
+	repl_args 1 1
+.o 2 0
+a69
+.d 2 0
+	jsr ea69
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_d==;68
+.o 1 0
+e_Footballer_n==;68
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea69
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea69
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 1
+	push_r_args 1 1 1
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 2 2 ii
+e_Footballer_s==;68
+.o 2 2 ii
+s69
+	push_a 1
+	push_a 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.270
+	push_b 1
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 2
+	eqI
+.d 0 1 b
+	rtn
+else.270
+	pop_a 2
+	pop_b 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sskillsAsList
+.export e_Footballer_easkillsAsList
+.descexp e_Footballer_dskillsAsList e_Footballer_nskillsAsList e_Footballer_lskillsAsList 1 0 "skillsAsList"
+.o 2 0
+e_Footballer_lskillsAsList
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Footballer_easkillsAsList
+.n 1 e_Footballer_dskillsAsList e_Footballer_easkillsAsList
+.o 1 0
+e_Footballer_nskillsAsList
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Footballer_easkillsAsList
+	jsr_eval 0
+	repl_r_args 11 2
+.o 12 2 rr
+e_Footballer_sskillsAsList
+.o 12 2 rr
+s3
+	push_a 8
+	push_a 8
+	push_a 8
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	pop_b 2
+.d 4 0
+	jmp s107
+.o 4 0
+s107
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	push_a 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.export e_Footballer_sinRadiusOfFootballer
+.descexp e_Footballer_dinRadiusOfFootballer e_Footballer_ninRadiusOfFootballer e_Footballer_linRadiusOfFootballer 2 0 "inRadiusOfFootballer"
+.a 0 a2
+.o 2 0
+e_Footballer_linRadiusOfFootballer
+	repl_args 1 1
+.o 2 0
+a2
+.d 2 0
+	jsr ea2
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_Footballer_dinRadiusOfFootballer
+.o 1 0
+e_Footballer_ninRadiusOfFootballer
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea2
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 11 2
+	push_r_args 11 2 0
+	update_a 12 14
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 11 13
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	pop_a 2
+.o 13 2 rr
+e_Footballer_sinRadiusOfFootballer
+.o 13 2 rr
+s2
+	pushR 2.0
+	pushR 0.7
+	divR
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_r_args 6 2 0
+	updatepop_a 0 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	pushR 2.0
+	pushR 0.7
+	divR
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_r_args 7 2 0
+	updatepop_a 0 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_a 2
+	buildh e_Geometry_d<;22 0
+.d 4 0
+	jsr e_StdEnvExt_sisbetween
+.o 0 1 b
+	jmp_false else.271
+	pushR 2.0
+	pushR 0.4
+	divR
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_r_args 6 2 0
+	pop_a 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s+;16
+.o 1 0
+	pushR 2.0
+	pushR 0.4
+	divR
+	create
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	push_r_args 7 2 0
+	pop_a 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	pop_b 2
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	update_a 0 10
+	update_a 0 11
+	update_a 0 12
+	update_a 0 13
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	pop_a 1
+.d 3 0
+	jsr e_Geometry_s-;17
+.o 1 0
+	push_a 3
+	buildh e_Geometry_d<;22 0
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+.d 4 0
+	jmp e_StdEnvExt_sisbetween
+else.271
+	pop_a 13
+	pop_b 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_Footballer_sdefaultFootballer
+.descexp e_Footballer_ddefaultFootballer e_Footballer_ndefaultFootballer e_Footballer_ldefaultFootballer 1 0 "defaultFootballer"
+.o 2 0
+e_Footballer_ldefaultFootballer
+	pop_a 1
+.d 1 0
+	jsr ea1
+.o 11 2 rr
+	build_r e_Footballer_rFootballer 11 2 0 0
+	updatepop_a 0 11
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 e_Footballer_ddefaultFootballer
+.o 1 0
+e_Footballer_ndefaultFootballer
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea1
+.o 11 2 rr
+	fill_r e_Footballer_rFootballer 11 2 11 0 0
+	pop_a 11
+	pop_b 2
+.d 1 0
+	rtn
+.o 1 0
+ea1
+	jsr_eval 0
+	repl_r_args 1 1
+.o 1 1 i
+e_Footballer_sdefaultFootballer
+.o 1 1 i
+s1
+	buildh e_StdIOBasic_dVoid 0
+	build e_Geometry_dzero;44 0 e_Geometry_nzero;44
+	build e_Geometry_dzero;87 0 e_Geometry_nzero;87
+	build e_Footballer_dMove 2 e_Footballer_nMove
+	create
+.d 1 0
+	jsr e_FootballerFunctions_sreturnAI
+.o 1 0
+	jsr_ap 1
+	build_r e_Footballer_rBrain 2 0 0 0
+	updatepop_a 0 2
+	buildh e_StdMaybe_dNothing 0
+	buildh e_Footballer_dDribbling 0
+	buildh e_Footballer_dKicking 0
+	buildh e_Footballer_dRunning 0
+	create
+.d 1 0
+	jsr e_Geometry_szero;44
+.o 1 0
+.d 0 0
+	jsr e_Geometry_szero;87
+.o 2 0
+	build_r e_Geometry_rSpeed 2 0 0 0
+	updatepop_a 0 2
+.d 0 0
+	jsr e_Geometry_szero;26
+.o 2 0
+	build_r e_Geometry_rPosition 2 0 0 0
+	updatepop_a 0 2
+	create
+	pushR 1.6
+.d 1 1 r
+	jsr e_Geometry_sm
+.o 1 0
+	build_r e_Footballer_rFootballerID 1 1 9 0
+	pushR 1.0
+	pushR 1.0
+	buildAC "default"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	update_b 1 2
+	updatepop_b 0 1
+.d 11 2 rr
+	rtn

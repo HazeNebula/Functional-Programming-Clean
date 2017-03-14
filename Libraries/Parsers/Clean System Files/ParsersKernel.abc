@@ -1,0 +1,4794 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "ParserLanguage" "20170131202634"
+.depend "ParsersAccessories" "20170131202634"
+.depend "ParsersDerived" "20170131202634"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "ParsersKernel" "20170131202634"
+.module m_ParsersKernel "ParsersKernel" "20170131202634"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_ParserLanguage_sendOf
+.implab e_ParsersAccessories_stoString;13
+.implab e_ParsersDerived_s<&
+.impdesc e_StdMisc_dabort
+.implab e_StdMisc_sabort
+.implab e_StdMisc_nabort _
+.implab e_StdTuple_s==;4
+.implab e_StdOrdList_ssortBy
+.impdesc e_StdList_d++
+.implab e_StdList_n++ e_StdList_ea++
+.implab e_StdList_sisEmpty
+.impdesc e_StdList_dreverse
+.impdesc e_StdList_dsplitAt
+.implab e_StdList_ssplitAt
+.implab e_StdList_nsplitAt
+.impdesc e_StdList_dmap
+.implab e_StdList_smap
+.implab e_StdList_nmap e_StdList_eamap
+.impdesc e_StdList_d==;45
+.implab e_StdList_s==;45
+.implab e_StdList_slength;47
+.implab e_StdList_s<;82
+.implab e_StdList_s==;85
+.impdesc e_StdClass_rEq;
+.impdesc e_StdString_d==;2
+.implab e_StdString_s+++;11
+.implab e_StdInt_s<<
+.impdesc e_StdInt_d>>
+.implab e_StdInt_s>>
+.implab e_StdInt_n>>
+.impdesc e_StdInt_d+;6
+.implab e_StdInt_s+;6
+.implab e_StdInt_n+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_s==;16
+.implab e_StdInt_s<;17
+.implab e_StdInt_sisEven;18
+.impdesc e_StdOverloaded_r==;
+.impdesc e_StdOverloaded_t==;
+.implab e_StdOverloaded_c==;
+.export e_ParsersKernel_dWhole
+.desc e_ParsersKernel_dWhole _hnf _add_arg 1 0 "Whole"
+.export e_ParsersKernel_dSlice
+.desc e_ParsersKernel_dSlice _hnf _add_arg 2 0 "Slice"
+.export e_ParsersKernel_dAt
+.desc e_ParsersKernel_dAt _hnf _add_arg 1 0 "At"
+.export e_ParsersKernel_dEndAt
+.desc e_ParsersKernel_dEndAt _hnf _add_arg 1 0 "EndAt"
+.export e_ParsersKernel_d<&->
+.desc e_ParsersKernel_d<&-> _hnf _add_arg 2 0 "<&->"
+.export e_ParsersKernel_d<++->
+.desc e_ParsersKernel_d<++-> _hnf _add_arg 2 0 "<++->"
+.export e_ParsersKernel_dErr
+.desc e_ParsersKernel_dErr _hnf _add_arg 3 0 "Err"
+.export e_ParsersKernel_dSucc
+.desc e_ParsersKernel_dSucc _hnf _add_arg 1 0 "Succ"
+.export e_ParsersKernel_dRoseLeaf
+.desc e_ParsersKernel_dRoseLeaf _hnf _hnf 0 0 "RoseLeaf"
+.export e_ParsersKernel_dRoseTwig
+.desc e_ParsersKernel_dRoseTwig _hnf _add_arg 2 0 "RoseTwig"
+.export e_ParsersKernel_rOrr;
+.record e_ParsersKernel_rOrr; a 1 0 "Orr;"
+.descexp e_ParsersKernel_tOrr; e_ParsersKernel_cOrr; _hnf 1 1 "Orr;"
+.n 1 e_ParsersKernel_tOrr;
+.o 1 0
+e_ParsersKernel_cOrr;
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	fill_r e_ParsersKernel_rOrr; 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_dOrr;.<-!>
+.export e_ParsersKernel_nOrr;.<-!>
+.export e_ParsersKernel_eaOrr;.<-!>
+.descs e_ParsersKernel_dOrr;.<-!> e_ParsersKernel_nOrr;.<-!> _ 1 0 "Orr;.<-!>"
+.n -4 e_ParsersKernel_dOrr;.<-!> e_ParsersKernel_eaOrr;.<-!>
+.o 1 0
+e_ParsersKernel_nOrr;.<-!>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_eaOrr;.<-!>
+	jsr_eval 0
+	repl_r_args_a 1 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d147 _hnf _add_arg 2 0 "@"
+.export e_ParsersKernel_s<-!>;30
+.export e_ParsersKernel_ea<-!>;30
+.descexp e_ParsersKernel_d<-!>;30 e_ParsersKernel_n<-!>;30 e_ParsersKernel_l<-!>;30 2 0 "<-!>;30"
+.a 2 e_ParsersKernel_ea<-!>;30
+.o 2 0
+e_ParsersKernel_l<-!>;30
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea<-!>;30
+.n 2 e_ParsersKernel_d<-!>;30 e_ParsersKernel_ea<-!>;30
+.o 1 0
+e_ParsersKernel_n<-!>;30
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea<-!>;30
+	jsr_eval 0
+.o 3 0
+e_ParsersKernel_s<-!>;30
+.o 3 0
+s31
+	repl_args 2 2
+	push_a 0
+	push_a 2
+	push_a 4
+	fillh d107 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.desc d107 _hnf l107 9 0 "<lambda>[line:166];35;108"
+.a 0 ea107
+.o 2 0
+l107
+	repl_args 8 8
+.o 9 0
+ea107
+	jsr_eval 2
+.o 9 0
+s107
+	push_a 8
+	push_a 8
+	push_a 10
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 7
+	buildh d106 6
+	push_a 8
+	buildh d39 1
+	push_a 10
+	push_a 8
+	push_a 10
+	push_a 8
+	buildh d105 4
+	push_a 8
+	push_a 8
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+	jmp_ap 6
+.desc d105 _hnf l105 7 0 "<lambda>[line:166];64;106"
+.a 0 ea105
+.o 2 0
+l105
+	repl_args 6 6
+.o 7 0
+ea105
+	jsr_eval 0
+.o 7 0
+s105
+	push_a 3
+	push_a 6
+	push_a 6
+	push_a 4
+	buildh d104 2
+	push_a 5
+	push_a 4
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 4
+.desc d104 _hnf l104 3 0 "<lambda>[line:166];85;105"
+.a 0 ea104
+.o 2 0
+l104
+	repl_args 2 2
+.o 3 0
+ea104
+	jsr_eval 0
+.o 3 0
+s104
+	push_a 2
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+	jmp_ap 1
+.desc d106 _hnf l106 7 0 "<lambda>[line:167];82;107"
+.a 0 ea106
+.o 2 0
+l106
+	repl_args 6 6
+.o 7 0
+ea106
+	jsr_eval 0
+.o 7 0
+s106
+	push_a 5
+	push_a 7
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 6
+.export e_ParsersKernel_s<-!>;29
+.export e_ParsersKernel_ea<-!>;29
+.descexp e_ParsersKernel_d<-!>;29 e_ParsersKernel_n<-!>;29 e_ParsersKernel_l<-!>;29 2 0 "<-!>;29"
+.a 2 e_ParsersKernel_ea<-!>;29
+.o 2 0
+e_ParsersKernel_l<-!>;29
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea<-!>;29
+.n 2 e_ParsersKernel_d<-!>;29 e_ParsersKernel_ea<-!>;29
+.o 1 0
+e_ParsersKernel_n<-!>;29
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea<-!>;29
+	jsr_eval 0
+.o 3 0
+e_ParsersKernel_s<-!>;29
+.o 3 0
+s30
+	repl_args 2 2
+	push_a 0
+	push_a 2
+	push_a 4
+	fillh d103 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.desc d103 _hnf l103 9 0 "<lambda>[line:161];35;104"
+.a 0 ea103
+.o 2 0
+l103
+	repl_args 8 8
+.o 9 0
+ea103
+	jsr_eval 2
+.o 9 0
+s103
+	push_a 8
+	push_a 8
+	push_a 10
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 7
+	buildh d102 6
+	push_a 8
+	buildh d39 1
+	push_a 10
+	push_a 9
+	push_a 9
+	push_a 8
+	buildh d101 4
+	push_a 8
+	push_a 8
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+	jmp_ap 6
+.desc d101 _hnf l101 7 0 "<lambda>[line:161];64;102"
+.a 0 ea101
+.o 2 0
+l101
+	repl_args 6 6
+.o 7 0
+ea101
+	jsr_eval 0
+.o 7 0
+s101
+	push_a 3
+	push_a 6
+	push_a 4
+	push_a 4
+	push_a 8
+	push_a 5
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 5
+.desc d102 _hnf l102 7 0 "<lambda>[line:162];82;103"
+.a 0 ea102
+.o 2 0
+l102
+	repl_args 6 6
+.o 7 0
+ea102
+	jsr_eval 0
+.o 7 0
+s102
+	push_a 5
+	push_a 7
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 6
+.export e_ParsersKernel_sparse
+.export e_ParsersKernel_eaparse
+.descexp e_ParsersKernel_dparse e_ParsersKernel_nparse e_ParsersKernel_lparse 4 0 "parse"
+.a 4 e_ParsersKernel_eaparse
+.o 2 0
+e_ParsersKernel_lparse
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_ParsersKernel_eaparse
+.n 4 e_ParsersKernel_dparse e_ParsersKernel_eaparse
+.o 1 0
+e_ParsersKernel_nparse
+	push_node _cycle_in_spine 4
+.o 5 0
+e_ParsersKernel_eaparse
+	jsr_eval 0
+.o 5 0
+e_ParsersKernel_sparse
+.o 5 0
+s28
+	push_a 2
+	push_a 4
+	build _ 2 n99
+	build _ 0 n35
+	buildh _Nil 0
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 3
+	push_a 5
+	build _ 2 n98
+	build _ 0 n97
+	push_a 3
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr s148
+.o 2 0
+.d 3 0
+	jmp s100
+.o 3 0
+s100
+	eq_desc _Nil 0 1
+	jmp_true case.1
+	jmp case.2
+case.1
+	push_a 0
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	buildh d37 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	push_a 1
+	build d_S.2 -1 n_S.2
+	buildh e_StdList_dreverse 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	buildh d38 0
+	buildh e_StdList_dmap 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build _ 1 n114
+	push_a 2
+	build d_S.1 -1 n_S.1
+	fillh e_ParsersKernel_dErr 3 7
+	pop_a 4
+.d 1 0
+	rtn
+case.2
+	buildh d112 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	fillh e_ParsersKernel_dSucc 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea114
+.o 1 0
+n114
+	push_node _cycle_in_spine 1
+.o 2 0
+ea114
+	jsr_eval 0
+.o 2 0
+s114
+	buildh _Nil 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s115
+.o 3 0
+s115
+	eq_desc _Nil 0 1
+	jmp_true case.3
+	jmp case.4
+case.3
+	fill_a 0 2
+	pop_a 2
+.d 1 0
+	rtn
+case.4
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	create
+	push_a 5
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 3 0
+	jsr s116
+.o 1 0
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jmp s115
+.n 2 _ ea116
+.o 1 0
+n116
+	push_node _cycle_in_spine 2
+.o 3 0
+ea116
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+s116
+	eq_desc _Nil 0 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	eq_desc _Cons 2 1
+	jmp_true case.7
+	jmp case.6
+case.7
+	push_args 1 2 2
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n116
+	push_a 2
+	buildh e_ParsersKernel_dRoseTwig 2
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+case.6
+	eq_desc _Nil 0 1
+	jmp_true case.8
+	jmp case.9
+case.8
+	buildh e_ParsersKernel_dRoseLeaf 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.9
+	push_args 1 2 2
+	eq_desc _Cons 2 2
+	jmp_true case.11
+	pop_a 2
+	jmp case.10
+case.11
+	push_args 2 2 2
+	jsr_eval 0
+	eq_desc e_ParsersKernel_dRoseTwig 2 0
+	jmp_true case.12
+	pop_a 4
+	jmp case.10
+case.12
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 5
+	jsr_eval 0
+	repl_args 2 2
+	buildh e_ParsersKernel_d==;28 0
+	build e_StdOverloaded_t==; 1 e_StdOverloaded_c==;
+	buildh e_StdList_d==;45 1
+	buildh e_StdString_d==;2 0
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 6 0
+	jsr e_StdTuple_s==;4
+.o 0 1 b
+	jmp_false else.13
+	push_a 4
+	push_a 2
+	build _ 2 n116
+	push_a 1
+	buildh e_ParsersKernel_dRoseTwig 2
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+else.13
+	pop_a 5
+	jmp case.10
+case.10
+	eq_desc _Cons 2 0
+	jmp_true case.14
+	jmp s116.1
+case.14
+	repl_args 2 2
+	push_a 2
+	push_a 2
+	build _ 2 n116
+	push_a 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+s116.1
+	pop_a 3
+	pushD m_ParsersKernel
+	pushD x_116
+.d 0 2 ii
+	jmp _match_error
+.string x_116 "addPath;117"
+.export e_ParsersKernel_s==;28
+.descexp e_ParsersKernel_d==;28 e_ParsersKernel_n==;28 e_ParsersKernel_l==;28 2 0 "==;28"
+.a 0 a29
+.o 2 0
+e_ParsersKernel_l==;28
+	repl_args 1 1
+.o 2 0
+a29
+.d 2 0
+	jsr ea29
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_ParsersKernel_d==;28
+.o 1 0
+e_ParsersKernel_n==;28
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea29
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea29
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_ParsersKernel_s==;28
+.o 2 0
+s29
+	eq_desc e_ParsersKernel_dAt 1 0
+	jmp_true case.15
+	jmp case.16
+case.15
+	repl_args 1 1
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s122
+case.16
+	repl_args 1 1
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s123
+.o 2 0
+s123
+	eq_desc e_ParsersKernel_dEndAt 1 0
+	jmp_true case.17
+	jmp case.18
+case.17
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	pop_a 2
+	eqI
+.d 0 1 b
+	rtn
+case.18
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.o 2 0
+s122
+	eq_desc e_ParsersKernel_dAt 1 0
+	jmp_true case.19
+	jmp case.20
+case.19
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	pop_a 2
+	eqI
+.d 0 1 b
+	rtn
+case.20
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d38 _hnf l38 1 0 "toSugPos`"
+.o 2 0
+l38
+	pop_a 1
+.o 1 0
+ea38
+	jsr_eval 0
+	repl_args 2 2
+	buildh d37 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.desc d37 _hnf l37 1 0 "toSugPos"
+.o 2 0
+l37
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea37
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 1 1 i
+s37
+	push_b 0
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	jmp_false else.21
+	buildI 1
+	buildI_b 0
+	build _ 2 e_StdInt_n>>
+	fillh e_ParsersKernel_dAt 1 1
+	pop_b 1
+.d 1 0
+	rtn
+else.21
+	buildI 1
+	buildI_b 0
+	build _ 2 e_StdInt_n>>
+	fillh e_ParsersKernel_dEndAt 1 1
+	pop_b 1
+.d 1 0
+	rtn
+.desc d112 _hnf l112 1 0 "snd;113"
+.o 2 0
+l112
+	pop_a 1
+.o 1 0
+ea112
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+.o 2 0
+s112
+	pop_a 1
+.d 1 0
+	rtn
+.n 0 _ ea97
+.o 1 0
+n97
+	push_node _cycle_in_spine 0
+.o 1 0
+ea97
+.o 1 0
+s97
+	fillh _Nil 0 0
+.d 1 0
+	rtn
+.n 2 _ ea98
+.o 1 0
+n98
+	push_node _cycle_in_spine 2
+.o 3 0
+ea98
+.o 3 0
+s98
+	build _ 0 n36
+	buildh _Nil 0
+	push_a 3
+	push_a 3
+	build _ 2 n99
+	buildh _Tuple 2
+	fillh d147 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.n 0 _ ea36
+.o 1 0
+n36
+	push_node _cycle_in_spine 0
+.o 1 0
+ea36
+.o 1 0
+s36
+	testcaf c36
+	jmp_false m.22
+	pushcaf c36 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.caf c36 1 0
+m.22
+.d 1 0
+	jsr s36.1
+.o 1 0
+	fillcaf c36 1 0
+.d 1 0
+	rtn
+.o 1 0
+s36.1
+	buildh _Nil 0
+	build _ 0 n35
+	fillh _Cons 2 2
+.d 1 0
+	rtn
+.n 2 _ ea99
+.o 1 0
+n99
+	push_node _cycle_in_spine 2
+.o 3 0
+ea99
+.o 3 0
+s99
+	buildh _Nil 0
+	push_a 2
+	buildh e_ParsersKernel_dWhole 1
+	buildh _Cons 2
+	push_a 1
+	buildh e_ParsersKernel_dWhole 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.export e_ParsersKernel_s:=>
+.export e_ParsersKernel_ea:=>
+.descexp e_ParsersKernel_d:=> e_ParsersKernel_n:=> e_ParsersKernel_l:=> 2 0 ":=>"
+.a 2 e_ParsersKernel_ea:=>
+.o 2 0
+e_ParsersKernel_l:=>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea:=>
+.n 2 e_ParsersKernel_d:=> e_ParsersKernel_ea:=>
+.o 1 0
+e_ParsersKernel_n:=>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea:=>
+.o 3 0
+e_ParsersKernel_s:=>
+.o 3 0
+s27
+	push_a 1
+	push_a 1
+	fillh d90 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d90 _hnf l90 3 0 "<lambda>[line:320];17;89"
+.a 3 ea90
+.o 2 0
+l90
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea90
+.o 4 0
+s90
+	push_a 2
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 3
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp s26
+.export e_ParsersKernel_slongest
+.export e_ParsersKernel_ealongest
+.descexp e_ParsersKernel_dlongest e_ParsersKernel_nlongest e_ParsersKernel_llongest 1 0 "longest"
+.o 2 0
+e_ParsersKernel_llongest
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_ealongest
+.n 1 e_ParsersKernel_dlongest e_ParsersKernel_ealongest
+.o 1 0
+e_ParsersKernel_nlongest
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_ealongest
+.o 2 0
+e_ParsersKernel_slongest
+.o 2 0
+s25
+	push_a 0
+	fillh d88 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d88 _hnf l88 7 0 "p1;87"
+.a 0 a88
+.o 2 0
+l88
+	repl_args 6 6
+.o 7 0
+a88
+.d 7 0
+	jsr ea88
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 7 0
+ea88
+	jsr_eval 0
+.o 7 0
+s88
+	push_a 6
+	push_a 6
+	push_a 3
+	push_a 3
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 4 0
+	jsr s148
+.o 2 0
+	buildh d44 0
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr s43
+.o 1 0
+	push_a 1
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 5 0
+	jmp s42
+.desc d44 _hnf l44 2 0 "fstLonger"
+.a 0 a44
+.o 2 0
+l44
+	repl_args 1 1
+.o 2 0
+a44
+.d 2 0
+	jsr ea44
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea44
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 0
+	push_a 5
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 0
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 10 0
+s44
+	push_a 5
+	push_a 1
+.d 2 0
+	jsr e_StdList_s==;85
+.o 0 1 b
+	jmp_false else.23
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 6
+	jsr_eval 0
+	pushI_a 7
+	pop_a 1
+	ltI
+	jmp_false else.23
+	pop_a 10
+	pushB TRUE
+.d 0 1 b
+	rtn
+else.23
+	push_a 0
+	push_a 6
+	update_a 1 11
+	updatepop_a 0 10
+.d 2 0
+	jmp e_StdList_s<;82
+.export e_ParsersKernel_sminResultBy
+.export e_ParsersKernel_eaminResultBy
+.descexp e_ParsersKernel_dminResultBy e_ParsersKernel_nminResultBy e_ParsersKernel_lminResultBy 2 0 "minResultBy"
+.a 2 e_ParsersKernel_eaminResultBy
+.o 2 0
+e_ParsersKernel_lminResultBy
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eaminResultBy
+.n 2 e_ParsersKernel_dminResultBy e_ParsersKernel_eaminResultBy
+.o 1 0
+e_ParsersKernel_nminResultBy
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eaminResultBy
+.o 3 0
+e_ParsersKernel_sminResultBy
+.o 3 0
+s24
+	push_a 1
+	push_a 1
+	fillh d87 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d87 _hnf l87 8 0 "p1;86"
+.a 0 a87
+.o 2 0
+l87
+	repl_args 7 7
+.o 8 0
+a87
+.d 8 0
+	jsr ea87
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 8 0
+ea87
+	jsr_eval 1
+.o 8 0
+s87
+	push_a 7
+	push_a 7
+	push_a 4
+	push_a 4
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr s148
+.o 2 0
+	push_a 2
+	buildh d86 1
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr s43
+.o 1 0
+	push_a 1
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s42
+.o 3 0
+s43
+	eq_desc _Cons 2 1
+	jmp_true case.25
+	jmp case.26
+case.25
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s85
+case.26
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.o 5 0
+s85
+	eq_desc _Cons 2 3
+	jmp_true case.27
+	jmp case.28
+case.27
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	push_a 0
+	push_a 3
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.29
+	push_a 1
+	jsr_eval 0
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 5 0
+	jmp s85
+else.29
+	push_a 3
+	push_a 1
+	push_a 4
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.30
+	push_a 1
+	jsr_eval 0
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 5 0
+	jmp s85
+else.30
+	push_a 1
+	jsr_eval 0
+	push_a 5
+	push_a 2
+	buildh _Cons 2
+	push_a 5
+	push_a 5
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 5 0
+	jmp s85
+case.28
+	push_a 2
+	push_a 2
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+.desc d86 _hnf l86 3 0 "<lambda>[line:292];52;85"
+.a 0 ea86
+.o 2 0
+l86
+	repl_args 2 2
+.o 3 0
+ea86
+	push_a 2
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	pop_a 2
+.o 5 0
+s86
+	push_a 4
+	push_a 3
+	push_a 2
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	jmp_ap 2
+.export e_ParsersKernel_ssortResultBy
+.export e_ParsersKernel_easortResultBy
+.descexp e_ParsersKernel_dsortResultBy e_ParsersKernel_nsortResultBy e_ParsersKernel_lsortResultBy 2 0 "sortResultBy"
+.a 2 e_ParsersKernel_easortResultBy
+.o 2 0
+e_ParsersKernel_lsortResultBy
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_easortResultBy
+.n 2 e_ParsersKernel_dsortResultBy e_ParsersKernel_easortResultBy
+.o 1 0
+e_ParsersKernel_nsortResultBy
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_easortResultBy
+.o 3 0
+e_ParsersKernel_ssortResultBy
+.o 3 0
+s23
+	push_a 1
+	push_a 1
+	fillh d84 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d84 _hnf l84 8 0 "p1;83"
+.a 0 a84
+.o 2 0
+l84
+	repl_args 7 7
+.o 8 0
+a84
+.d 8 0
+	jsr ea84
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 8 0
+ea84
+	jsr_eval 1
+.o 8 0
+s84
+	push_a 7
+	push_a 7
+	push_a 4
+	push_a 4
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr s148
+.o 2 0
+	push_a 2
+	buildh d83 1
+	create
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdOrdList_ssortBy
+.o 1 0
+	push_a 1
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s42
+.desc d83 _hnf l83 3 0 "<lambda>[line:277];46;82"
+.a 0 ea83
+.o 2 0
+l83
+	repl_args 2 2
+.o 3 0
+ea83
+	push_a 2
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	pop_a 2
+.o 5 0
+s83
+	push_a 4
+	push_a 3
+	push_a 2
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	jmp_ap 2
+.n 0 _ ea94
+.o 1 0
+n94
+	push_node _cycle_in_spine 0
+.o 1 0
+ea94
+.o 1 0
+s94
+	fillh d92 0 0
+.d 1 0
+	rtn
+.desc d92 _hnf l92 5 0 "<lambda>[line:346];15;91"
+.a 0 a92
+.o 2 0
+l92
+	repl_args 4 4
+.o 5 0
+a92
+.o 5 0
+ea92
+	push_a 3
+	push_a 3
+	push_a 3
+	build _ 3 n162
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 2
+	push_a 7
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	update_a 1 7
+	updatepop_a 0 6
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 _ ea162
+.o 1 0
+n162
+	push_node _cycle_in_spine 3
+.o 4 0
+ea162
+.o 4 0
+s162
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 0 _ ea95
+.o 1 0
+n95
+	push_node _cycle_in_spine 0
+.o 1 0
+ea95
+.o 1 0
+s95
+	fillh d93 0 0
+.d 1 0
+	rtn
+.desc d93 _hnf l93 2 0 "<lambda>[line:348];15;92"
+.a 0 ea93
+.o 2 0
+l93
+	repl_args 1 1
+.o 2 0
+ea93
+	jsr_eval 0
+.o 2 0
+s93
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	jmp_ap 1
+.n 0 _ ea96
+.o 1 0
+n96
+	push_node _cycle_in_spine 0
+.o 1 0
+ea96
+.o 1 0
+s96
+.d 1 0
+	jmp s32
+.export e_ParsersKernel_sdrill
+.export e_ParsersKernel_eadrill
+.descexp e_ParsersKernel_ddrill e_ParsersKernel_ndrill e_ParsersKernel_ldrill 2 0 "drill"
+.a 2 e_ParsersKernel_eadrill
+.o 2 0
+e_ParsersKernel_ldrill
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eadrill
+.n 2 e_ParsersKernel_ddrill e_ParsersKernel_eadrill
+.o 1 0
+e_ParsersKernel_ndrill
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eadrill
+.o 3 0
+e_ParsersKernel_sdrill
+.o 3 0
+s22
+	push_a 1
+	push_a 1
+	fillh d81 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d81 _hnf l81 8 0 "p1;80"
+.a 0 a81
+.o 2 0
+l81
+	repl_args 7 7
+.o 8 0
+a81
+.d 8 0
+	jsr ea81
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 8 0
+ea81
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 3
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s81
+case.31
+	eq_desc _Cons 2 10
+	jmp_true case.33
+	jmp case.32
+case.33
+	push_args 10 2 2
+	update_a 0 1
+	pop_a 1
+	push_a 10
+	build _ 1 n121
+	push_a 12
+	push_a 4
+	buildh e_ParsersKernel_dWhole 1
+	buildh _Cons 2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	build _ 0 n35
+	buildh _Nil 0
+	push_a 14
+	buildh _Cons 2
+	push_a 13
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Tuple 4
+	push_a 9
+	build _ 0 n32
+	buildh d79 0
+	buildh d78 0
+	build e_ParsersKernel_dempty 0 e_ParsersKernel_nempty
+	push_a 7
+	build _ 1 n159
+	build e_ParsersKernel_d:> 2 e_ParsersKernel_n:>
+	create
+	push_a 9
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 10
+	update_a 0 17
+	update_a 0 12
+	update_a 0 20
+	pop_a 1
+.d 3 0
+	jsr e_ParsersDerived_s<&
+.o 1 0
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 7 11
+	update_a 6 10
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	jsr_ap 6
+	push_arg 0 2 2
+	jsr_eval 0
+	push_a 2
+	build d_S.2 -1 n_S.2
+	push_a 8
+	push_a 10
+	push_a 13
+	buildh d80 4
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 7 12
+	update_a 6 11
+	update_a 5 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 3 0
+	jsr e_StdList_smap
+.o 1 0
+	push_arg 1 2 1
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s42
+case.32
+	buildAC "parser-transformer 'drill' called with empty symbol types"
+	updatepop_a 0 11
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_args 2 2
+.d 2 0
+	rtn
+.n 1 _ ea159
+.o 1 0
+n159
+	push_node _cycle_in_spine 1
+.o 2 0
+ea159
+.o 2 0
+s159
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_ParsersAccessories_stoString;13
+.o 1 0
+	buildAC " "
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 0 0
+	jsr e_ParserLanguage_sendOf
+.o 1 0
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _
+.o 1 0
+n121
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea121
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea121
+	jsr_eval 0
+.o 1 0
+s121
+	eq_desc _Nil 0 0
+	jmp_true case.34
+	jmp case.35
+case.34
+	buildh _Nil 0
+	buildh _Nil 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+case.35
+	repl_args 2 2
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.desc d79 _hnf l79 2 0 "<lambda>[line:264];35;78"
+.a 0 ea79
+.o 2 0
+l79
+	repl_args 1 1
+.o 2 0
+ea79
+	jsr_eval 0
+.o 2 0
+s79
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	jmp_ap 1
+.desc d78 _hnf l78 5 0 "<lambda>[line:263];35;77"
+.a 0 a78
+.o 2 0
+l78
+	repl_args 4 4
+.o 5 0
+a78
+.o 5 0
+ea78
+	push_a 3
+	push_a 3
+	push_a 3
+	build _ 3 n161
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 2
+	push_a 7
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	update_a 1 7
+	updatepop_a 0 6
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 _ ea161
+.o 1 0
+n161
+	push_node _cycle_in_spine 3
+.o 4 0
+ea161
+.o 4 0
+s161
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_s:>
+.export e_ParsersKernel_ea:>
+.descexp e_ParsersKernel_d:> e_ParsersKernel_n:> e_ParsersKernel_l:> 2 0 ":>"
+.a 2 e_ParsersKernel_ea:>
+.o 2 0
+e_ParsersKernel_l:>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea:>
+.n 2 e_ParsersKernel_d:> e_ParsersKernel_ea:>
+.o 1 0
+e_ParsersKernel_n:>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea:>
+.o 3 0
+e_ParsersKernel_s:>
+.o 3 0
+s26
+	push_a 0
+	push_a 2
+	fillh d89 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d89 _hnf l89 8 0 "<lambda>[line:315];14;88"
+.a 0 ea89
+.o 2 0
+l89
+	repl_args 7 7
+.o 8 0
+ea89
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 4
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s89
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	buildh _Tuple 4
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	buildh _Nil 0
+	push_a 15
+	buildh _Cons 2
+	push_a 14
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 8
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 6
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 6
+.n 0 _
+.o 1 0
+n35
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea35
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 0
+ea35
+.o 0 0
+s35
+	testcaf c35
+	jmp_false m.36
+	pushcaf c35 0 1
+.d 0 1 i
+	rtn
+.caf c35 0 1
+m.36
+.d 0 0
+	jsr s35.1
+.o 0 1 i
+	fillcaf c35 0 1
+.d 0 1 i
+	rtn
+.o 0 0
+s35.1
+.d 0 0
+	jmp s33
+.desc d82 _hnf l82 5 0 "<lambda>[line:270];45;81"
+.a 0 a82
+.o 2 0
+l82
+	repl_args 4 4
+.o 5 0
+a82
+.d 5 0
+	jsr ea82
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 5 0
+ea82
+	jsr_eval 2
+.o 5 0
+s82
+	push_a 2
+	push_a 5
+	push_a 5
+	push_a 4
+	push_a 4
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 5 0
+	jmp s42
+.o 5 0
+s42
+	eq_desc _Cons 2 4
+	jmp_true case.37
+	jmp case.38
+case.37
+	push_args 4 2 2
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 0
+	push_a 7
+	build _ 0 n32
+	push_a 5
+	push_a 8
+	push_a 8
+	buildh d82 3
+	push_a 7
+	jsr_eval 0
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+	jsr_ap 5
+	repl_args 2 2
+.d 2 0
+	rtn
+case.38
+	push_a 3
+	push_a 2
+	jsr_eval 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	jsr_ap 2
+	repl_args 2 2
+.d 2 0
+	rtn
+.desc d80 _hnf l80 5 0 "f;79"
+.a 0 a80
+.o 2 0
+l80
+	repl_args 4 4
+.o 5 0
+a80
+.o 5 0
+ea80
+	push_a 4
+	jsr_eval 0
+	repl_args 2 2
+	update_a 1 6
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	build _ 1 n160
+	push_a 1
+	push_a 5
+	push_a 5
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 7
+	updatepop_a 0 6
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 _ ea160
+.o 1 0
+n160
+	push_node _cycle_in_spine 1
+.o 2 0
+ea160
+.o 2 0
+s160
+.d 0 0
+	jsr s33
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_satMost
+.export e_ParsersKernel_eaatMost
+.descexp e_ParsersKernel_datMost e_ParsersKernel_natMost e_ParsersKernel_latMost 2 0 "atMost"
+.a 2 e_ParsersKernel_eaatMost
+.o 2 0
+e_ParsersKernel_latMost
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eaatMost
+.n 2 e_ParsersKernel_datMost e_ParsersKernel_eaatMost
+.o 1 0
+e_ParsersKernel_natMost
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eaatMost
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 2 1 i
+e_ParsersKernel_satMost
+.o 2 1 i
+s21
+	buildI_b 0
+	push_a 1
+	fillh d76 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.desc d76 _hnf l76 8 0 "p1;75"
+.a 0 ea76
+.o 2 0
+l76
+	repl_args 7 7
+.o 8 0
+ea76
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 3
+	pushI_a 5
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 8 5
+	update_a 0 8
+	push_a 10
+	update_a 3 11
+	update_a 5 3
+	update_a 8 5
+	update_a 0 8
+	pop_a 3
+.o 10 1 i
+s76
+case.39
+	eq_desc _Cons 2 9
+	jmp_true case.41
+	jmp case.40
+case.41
+	push_args 9 2 2
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.42
+	pop_a 2
+	jmp case.40
+case.42
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	pushI 0
+	push_b 1
+	ltI
+	jmp_false else.43
+	buildh _Nil 0
+	push_a 12
+	buildh _Cons 2
+	push_a 11
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 7
+	buildh _Cons 2
+	push_a 15
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 10
+	build _ 2 n108
+	push_a 8
+	jsr_eval 0
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 16
+	update_a 1 15
+	updatepop_a 0 14
+	pop_b 1
+	jmp_ap 2
+else.43
+	push_a 12
+	buildI_b 0
+	build e_StdList_dsplitAt 2 e_StdList_nsplitAt
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 15
+	push_a 4
+	push_a 4
+	push_a 7
+	push_b 0
+	push_a 4
+	build_u _ 5 1 n157
+	push_a 1
+	push_a 15
+	push_a 15
+	buildh _Tuple 4
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 5
+	build d_S.2 -1 n_S.2
+	push_a 20
+	push_a 14
+	buildh d75 3
+	push_a 11
+	jsr_eval 0
+	push_a 13
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 6 22
+	update_a 5 21
+	update_a 4 20
+	update_a 3 19
+	update_a 2 18
+	update_a 1 17
+	updatepop_a 0 16
+	pop_b 1
+	jmp_ap 6
+case.40
+	buildAC "parser-transformer 'atMost' called with fewer than two symboltype-levels"
+	updatepop_a 0 10
+	pop_b 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+.d 1 0
+	rtn
+.nu 5 1 _ _
+.o 1 0
+n157
+	push_node_u _cycle_in_spine 5 1
+.o 6 1 i
+ea157
+.o 6 1 i
+s157
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	push_a 3
+	push_a 3
+	push_b 1
+	push_a 3
+	push_a 3
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	update_b 1 2
+	updatepop_b 0 1
+.d 5 2 bi
+	jmp s120
+.o 5 2 bi
+s120
+	eqB_b TRUE 0
+	jmp_true case.44
+	jmp case.45
+case.44
+	push_a 2
+	buildI_b 1
+	push_a 3
+	build _ 2 n77
+	buildh _Cons 2
+	push_a 1
+	fillh _Cons 2 6
+	pop_a 4
+	pop_b 2
+.d 1 0
+	rtn
+case.45
+	pop_b 2
+	fill_a 3 4
+	pop_a 4
+.d 1 0
+	rtn
+.n 2 _ ea77
+.o 1 0
+n77
+	push_node _cycle_in_spine 2
+.o 3 0
+ea77
+	jsr_eval 0
+.o 3 0
+s77
+	eq_desc e_ParsersKernel_dWhole 1 0
+	jmp_true case.46
+	jmp case.47
+case.46
+	repl_args 1 1
+	push_a 1
+	push_a 1
+	fillh e_ParsersKernel_dSlice 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.47
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n158
+	push_a 1
+	fillh e_ParsersKernel_dSlice 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.n 2 _ ea158
+.o 1 0
+n158
+	push_node _cycle_in_spine 2
+.o 3 0
+ea158
+.o 3 0
+s158
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	ltI
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 1 b
+	jsr s119
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 1 b
+s119
+	eqB_b TRUE 0
+	jmp_true case.48
+	jmp case.49
+case.48
+	pop_b 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 2
+.d 0 1 i
+	rtn
+case.49
+	pop_b 1
+	pop_a 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.d 0 1 i
+	rtn
+.desc d75 _hnf l75 8 0 "<lambda>[line:238];31;74"
+.a 0 ea75
+.o 2 0
+l75
+	repl_args 7 7
+.o 8 0
+ea75
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 4
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s75
+	push_a 2
+	push_a 10
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 2
+	push_a 10
+	push_a 10
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	buildh _Tuple 4
+	push_a 7
+	build _ 0 n32
+	push_a 7
+	push_a 7
+	push_a 5
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 5
+.export e_ParsersKernel_sdropCheck
+.export e_ParsersKernel_eadropCheck
+.descexp e_ParsersKernel_ddropCheck e_ParsersKernel_ndropCheck e_ParsersKernel_ldropCheck 2 0 "dropCheck"
+.a 2 e_ParsersKernel_eadropCheck
+.o 2 0
+e_ParsersKernel_ldropCheck
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eadropCheck
+.n 2 e_ParsersKernel_ddropCheck e_ParsersKernel_eadropCheck
+.o 1 0
+e_ParsersKernel_ndropCheck
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eadropCheck
+.o 3 0
+e_ParsersKernel_sdropCheck
+.o 3 0
+s20
+	push_a 0
+	push_a 2
+	fillh d73 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d73 _hnf l73 8 0 "p2;72"
+.a 0 ea73
+.o 2 0
+l73
+	repl_args 7 7
+.o 8 0
+ea73
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 4
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s73
+	buildI 0
+	push_a 10
+	push_a 3
+	build _ 3 n74
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	push_a 11
+	build _ 2 e_StdInt_n+;6
+	push_a 13
+	push_a 11
+	push_a 3
+	update_a 2 4
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+	buildh _Tuple 4
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 7
+	update_a 6 18
+	update_a 5 17
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+	jmp_ap 6
+.n 3 _
+.o 1 0
+n74
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea74
+.o 1 1 i
+	buildI_b 0
+	push_a 1
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea74
+	jsr_eval 1
+	pushI_a 2
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.o 2 1 i
+s74
+	eq_desc _Cons 2 1
+	jmp_true case.50
+	jmp case.51
+case.50
+	push_args 1 2 2
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	jsr_ap 1
+	pushB_a 0
+	pop_a 1
+	jmp_false else.52
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 0 0
+	jsr s33
+.o 0 1 i
+	push_b 1
+	addI
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	update_a 1 4
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 2 1 i
+	jmp s74
+else.52
+	push_b 0
+	push_a 2
+	updatepop_a 0 3
+	updatepop_b 0 1
+.d 1 1 i
+	rtn
+case.51
+	push_b 0
+	push_a 1
+	updatepop_a 0 2
+	updatepop_b 0 1
+.d 1 1 i
+	rtn
+.export e_ParsersKernel_srewind
+.export e_ParsersKernel_earewind
+.descexp e_ParsersKernel_drewind e_ParsersKernel_nrewind e_ParsersKernel_lrewind 1 0 "rewind"
+.o 2 0
+e_ParsersKernel_lrewind
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_earewind
+.n 1 e_ParsersKernel_drewind e_ParsersKernel_earewind
+.o 1 0
+e_ParsersKernel_nrewind
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_earewind
+.o 2 0
+e_ParsersKernel_srewind
+.o 2 0
+s19
+	push_a 0
+	buildh d72 1
+	build e_ParsersKernel_dgetParsable 0 e_ParsersKernel_ngetParsable
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s14
+.desc d72 _hnf l72 2 0 "<lambda>[line:219];28;71"
+.a 2 ea72
+.o 2 0
+l72
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea72
+.o 3 0
+s72
+	push_a 1
+	build e_ParsersKernel_dsetParsable 1 e_ParsersKernel_nsetParsable
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_ParsersDerived_s<&
+.export e_ParsersKernel_scheckExplain
+.export e_ParsersKernel_eacheckExplain
+.descexp e_ParsersKernel_dcheckExplain e_ParsersKernel_ncheckExplain e_ParsersKernel_lcheckExplain 2 0 "checkExplain"
+.a 2 e_ParsersKernel_eacheckExplain
+.o 2 0
+e_ParsersKernel_lcheckExplain
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eacheckExplain
+.n 2 e_ParsersKernel_dcheckExplain e_ParsersKernel_eacheckExplain
+.o 1 0
+e_ParsersKernel_ncheckExplain
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eacheckExplain
+.o 3 0
+e_ParsersKernel_scheckExplain
+.o 3 0
+s18
+	push_a 1
+	build _ 1 n41
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s14
+.n 1 _ ea41
+.o 1 0
+n41
+	push_node _cycle_in_spine 1
+.o 2 0
+ea41
+.o 2 0
+s41
+	push_a 0
+	fillh d71 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d71 _hnf l71 8 0 "wp;70"
+.a 0 ea71
+.o 2 0
+l71
+	repl_args 7 7
+.o 8 0
+ea71
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 4
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s71
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 10
+	buildh _Tuple 4
+	push_a 2
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 13
+	pop_a 1
+	jsr_ap 1
+	push_a 4
+	push_a 11
+	push_a 11
+	push_a 15
+	push_a 11
+	push_a 13
+	push_a 12
+	push_a 10
+	push_a 13
+	push_a 10
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 10 1
+	update_a 8 10
+	update_a 6 8
+	update_a 0 6
+	pop_a 1
+	update_a 10 21
+	update_a 9 20
+	update_a 8 19
+	update_a 7 18
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 11 0
+	jmp s118
+.o 11 0
+s118
+	eq_desc e_StdMaybe_dNothing 0 0
+	jmp_true case.53
+	jmp case.54
+case.53
+	push_a 5
+	push_a 5
+	build _ 0 n32
+	push_a 6
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 5
+case.54
+	repl_args 1 1
+	buildh _Nil 0
+	push_a 10
+	build _ 1 n156
+	buildh _Cons 2
+	push_a 9
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 12
+	buildh _Cons 2
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 13
+	build _ 1 n155
+	buildh _Cons 2
+	push_a 12
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 4
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildh _Cons 2
+	push_a 9
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 5
+	build _ 2 n108
+	push_a 4
+	jsr_eval 0
+	push_a 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 2
+.n 1 _ ea156
+.o 1 0
+n156
+	push_node _cycle_in_spine 1
+.o 2 0
+ea156
+.o 2 0
+s156
+.d 0 0
+	jsr s34
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	subI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea155
+.o 1 0
+n155
+	push_node _cycle_in_spine 1
+.o 2 0
+ea155
+.o 2 0
+s155
+.d 0 0
+	jsr s34
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	subI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_scheckIf
+.export e_ParsersKernel_eacheckIf
+.descexp e_ParsersKernel_dcheckIf e_ParsersKernel_ncheckIf e_ParsersKernel_lcheckIf 2 0 "checkIf"
+.a 2 e_ParsersKernel_eacheckIf
+.o 2 0
+e_ParsersKernel_lcheckIf
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eacheckIf
+.n 2 e_ParsersKernel_dcheckIf e_ParsersKernel_eacheckIf
+.o 1 0
+e_ParsersKernel_ncheckIf
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eacheckIf
+.o 3 0
+e_ParsersKernel_scheckIf
+.o 3 0
+s17
+	push_a 1
+	build _ 1 n40
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s14
+.n 1 _ ea40
+.o 1 0
+n40
+	push_node _cycle_in_spine 1
+.o 2 0
+ea40
+.o 2 0
+s40
+	push_a 0
+	fillh d70 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d70 _hnf l70 8 0 "wp;69"
+.a 0 ea70
+.o 2 0
+l70
+	repl_args 7 7
+.o 8 0
+ea70
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 4
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s70
+	push_a 1
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	jsr_ap 1
+	pushB_a 0
+	pop_a 1
+	jmp_false else.55
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	buildh _Tuple 4
+	push_a 6
+	build _ 0 n32
+	push_a 6
+	push_a 6
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 15
+	update_a 4 14
+	update_a 3 13
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+	jmp_ap 5
+else.55
+	buildh _Nil 0
+	push_a 8
+	build _ 1 n154
+	buildh _Cons 2
+	push_a 7
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	push_a 11
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 6
+	build _ 2 n108
+	push_a 4
+	jsr_eval 0
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+	jmp_ap 2
+.n 1 _ ea154
+.o 1 0
+n154
+	push_node _cycle_in_spine 1
+.o 2 0
+ea154
+.o 2 0
+s154
+.d 0 0
+	jsr s34
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	subI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 0
+s34
+	pushI 1
+.d 0 1 i
+	rtn
+.export e_ParsersKernel_sfirst
+.export e_ParsersKernel_eafirst
+.descexp e_ParsersKernel_dfirst e_ParsersKernel_nfirst e_ParsersKernel_lfirst 1 0 "first"
+.o 2 0
+e_ParsersKernel_lfirst
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_eafirst
+.n 1 e_ParsersKernel_dfirst e_ParsersKernel_eafirst
+.o 1 0
+e_ParsersKernel_nfirst
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_eafirst
+.o 2 0
+e_ParsersKernel_sfirst
+.o 2 0
+s16
+	push_a 0
+	fillh d69 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d69 _hnf l69 6 0 "<lambda>[line:178];11;68"
+.a 0 ea69
+.o 2 0
+l69
+	repl_args 5 5
+.o 6 0
+ea69
+	jsr_eval 0
+.o 6 0
+s69
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 6
+	push_a 6
+	buildh d68 2
+	push_a 5
+	push_a 5
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	jmp_ap 5
+.desc d68 _hnf l68 5 0 "<lambda>[line:178];36;67"
+.a 0 ea68
+.o 2 0
+l68
+	repl_args 4 4
+.o 5 0
+ea68
+	jsr_eval 0
+.o 5 0
+s68
+	build _ 0 n32
+	push_a 2
+	push_a 4
+	push_a 3
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	jmp_ap 3
+.export e_ParsersKernel_s<++>
+.export e_ParsersKernel_ea<++>
+.descexp e_ParsersKernel_d<++> e_ParsersKernel_n<++> e_ParsersKernel_l<++> 2 0 "<++>"
+.a 2 e_ParsersKernel_ea<++>
+.o 2 0
+e_ParsersKernel_l<++>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea<++>
+.n 2 e_ParsersKernel_d<++> e_ParsersKernel_ea<++>
+.o 1 0
+e_ParsersKernel_n<++>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea<++>
+.o 3 0
+e_ParsersKernel_s<++>
+.o 3 0
+s15
+	push_a 0
+	push_a 2
+	fillh d65 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d65 _hnf l65 6 0 "<lambda>[line:148];16;64"
+.a 0 ea65
+.o 2 0
+l65
+	repl_args 5 5
+.o 6 0
+ea65
+	jsr_eval 1
+.o 6 0
+s65
+	push_a 5
+	push_a 5
+	push_a 7
+	push_a 5
+	push_a 7
+	push_a 5
+	buildh d64 4
+	push_a 5
+	push_a 5
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	jmp_ap 4
+.desc d64 _hnf l64 7 0 "<lambda>[line:148];39;63"
+.a 0 ea64
+.o 2 0
+l64
+	repl_args 6 6
+.o 7 0
+ea64
+	jsr_eval 0
+.o 7 0
+s64
+	push_a 3
+	push_a 6
+	push_a 6
+	push_a 4
+	buildh d63 2
+	push_a 5
+	push_a 4
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 4
+.desc d63 _hnf l63 3 0 "<lambda>[line:148];60;62"
+.a 0 ea63
+.o 2 0
+l63
+	repl_args 2 2
+.o 3 0
+ea63
+	jsr_eval 0
+.o 3 0
+s63
+	push_a 2
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+	jmp_ap 1
+.export e_ParsersKernel_s<&>
+.export e_ParsersKernel_ea<&>
+.descexp e_ParsersKernel_d<&> e_ParsersKernel_n<&> e_ParsersKernel_l<&> 2 0 "<&>"
+.a 2 e_ParsersKernel_ea<&>
+.o 2 0
+e_ParsersKernel_l<&>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea<&>
+.n 2 e_ParsersKernel_d<&> e_ParsersKernel_ea<&>
+.o 1 0
+e_ParsersKernel_n<&>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea<&>
+.o 3 0
+e_ParsersKernel_s<&>
+.o 3 0
+s14
+	push_a 0
+	push_a 2
+	fillh d62 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d62 _hnf l62 6 0 "<lambda>[line:145];14;61"
+.a 0 ea62
+.o 2 0
+l62
+	repl_args 5 5
+.o 6 0
+ea62
+	jsr_eval 1
+.o 6 0
+s62
+	push_a 5
+	push_a 5
+	push_a 7
+	push_a 6
+	push_a 6
+	push_a 5
+	buildh d61 4
+	push_a 5
+	push_a 5
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	jmp_ap 4
+.desc d61 _hnf l61 7 0 "<lambda>[line:145];36;60"
+.a 0 ea61
+.o 2 0
+l61
+	repl_args 6 6
+.o 7 0
+ea61
+	jsr_eval 0
+.o 7 0
+s61
+	push_a 3
+	push_a 6
+	push_a 4
+	push_a 4
+	push_a 8
+	push_a 5
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 5
+.export e_ParsersKernel_s<!>
+.export e_ParsersKernel_ea<!>
+.descexp e_ParsersKernel_d<!> e_ParsersKernel_n<!> e_ParsersKernel_l<!> 2 0 "<!>"
+.a 2 e_ParsersKernel_ea<!>
+.o 2 0
+e_ParsersKernel_l<!>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea<!>
+.n 2 e_ParsersKernel_d<!> e_ParsersKernel_ea<!>
+.o 1 0
+e_ParsersKernel_n<!>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea<!>
+.o 3 0
+e_ParsersKernel_s<!>
+.o 3 0
+s13
+	push_a 0
+	push_a 2
+	fillh d67 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d67 _hnf l67 8 0 "<lambda>[line:157];35;66"
+.a 0 ea67
+.o 2 0
+l67
+	repl_args 7 7
+.o 8 0
+ea67
+	jsr_eval 1
+.o 8 0
+s67
+	push_a 7
+	push_a 7
+	push_a 9
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 7
+	buildh d66 6
+	push_a 7
+	buildh d39 1
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+	jmp_ap 6
+.desc d39 _hnf l39 3 0 "choose"
+.a 0 a39
+.o 2 0
+l39
+	repl_args 2 2
+.o 3 0
+a39
+.d 3 0
+	jsr ea39
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 3 0
+ea39
+	jsr_eval 1
+.o 3 0
+s39
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 1
+	push_arg 0 2 2
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.56
+	push_arg 0 2 1
+	build _ 0 n32
+	push_a 3
+	jsr_eval 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 2
+	repl_args 2 2
+.d 2 0
+	rtn
+else.56
+	updatepop_a 0 1
+	repl_args 2 2
+.d 2 0
+	rtn
+.desc d66 _hnf l66 7 0 "<lambda>[line:157];82;65"
+.a 0 ea66
+.o 2 0
+l66
+	repl_args 6 6
+.o 7 0
+ea66
+	jsr_eval 0
+.o 7 0
+s66
+	push_a 5
+	push_a 7
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 6
+.export e_ParsersKernel_s<|>
+.export e_ParsersKernel_ea<|>
+.descexp e_ParsersKernel_d<|> e_ParsersKernel_n<|> e_ParsersKernel_l<|> 2 0 "<|>"
+.a 2 e_ParsersKernel_ea<|>
+.o 2 0
+e_ParsersKernel_l<|>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_ea<|>
+.n 2 e_ParsersKernel_d<|> e_ParsersKernel_ea<|>
+.o 1 0
+e_ParsersKernel_n<|>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_ea<|>
+.o 3 0
+e_ParsersKernel_s<|>
+.o 3 0
+s12
+	push_a 0
+	push_a 2
+	fillh d60 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d60 _hnf l60 8 0 "<lambda>[line:142];15;59"
+.a 0 ea60
+.o 2 0
+l60
+	repl_args 7 7
+.o 8 0
+ea60
+	jsr_eval 1
+.o 8 0
+s60
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 10
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 7
+	buildh d59 5
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+	jmp_ap 6
+.desc d59 _hnf l59 7 0 "<lambda>[line:142];47;58"
+.a 0 ea59
+.o 2 0
+l59
+	repl_args 6 6
+.o 7 0
+ea59
+	jsr_eval 0
+.o 7 0
+s59
+	push_a 4
+	push_a 7
+	push_a 7
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jmp_ap 6
+.export e_ParsersKernel_sempty
+.export e_ParsersKernel_eaempty
+.descexp e_ParsersKernel_dempty e_ParsersKernel_nempty e_ParsersKernel_lempty 0 0 "empty"
+.o 1 0
+e_ParsersKernel_lempty
+	halt
+.n 0 e_ParsersKernel_dempty e_ParsersKernel_eaempty
+.o 1 0
+e_ParsersKernel_nempty
+	push_node _cycle_in_spine 0
+.o 1 0
+e_ParsersKernel_eaempty
+.o 1 0
+e_ParsersKernel_sempty
+.o 1 0
+s11
+	buildAC "undefined rest-input of parser-constructor 'empty' accessed"
+	buildh ARRAY 1
+	build _ 1 e_StdMisc_nabort
+	buildAC "undefined result of parser-constructor 'empty' accessed"
+	buildh ARRAY 1
+	build _ 1 e_StdMisc_nabort
+	fillh d58 2 2
+.d 1 0
+	rtn
+.desc d58 _hnf l58 8 0 "p;57"
+.a 0 ea58
+.o 2 0
+l58
+	repl_args 7 7
+.o 8 0
+ea58
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 2
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 4 1
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 1
+.o 11 0
+s58
+	push_a 8
+	push_a 8
+	push_a 4
+	push_a 13
+	push_a 9
+	push_a 6
+	push_a 12
+	push_a 11
+	push_a 8
+	push_a 12
+	push_a 19
+	update_a 10 21
+	update_a 9 20
+	update_a 8 19
+	update_a 7 18
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 11 0
+	jmp s117
+.o 11 0
+s117
+	eq_desc _Nil 0 0
+	jmp_true case.57
+	jmp case.58
+case.57
+	push_a 5
+	push_a 5
+	build _ 0 n32
+	push_a 6
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 5
+case.58
+	buildh _Nil 0
+	push_a 11
+	buildh _Cons 2
+	push_a 10
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 10
+	buildh _Cons 2
+	push_a 9
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 5
+	build _ 2 n108
+	push_a 4
+	jsr_eval 0
+	push_a 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 2
+.export e_ParsersKernel_stoken
+.export e_ParsersKernel_eatoken
+.descexp e_ParsersKernel_dtoken e_ParsersKernel_ntoken e_ParsersKernel_ltoken 2 0 "token"
+.a 2 e_ParsersKernel_eatoken
+.o 2 0
+e_ParsersKernel_ltoken
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_eatoken
+.n 2 e_ParsersKernel_dtoken e_ParsersKernel_eatoken
+.o 1 0
+e_ParsersKernel_ntoken
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_eatoken
+	jsr_eval 0
+	repl_r_args 1 0
+.o 3 0
+e_ParsersKernel_stoken
+.o 3 0
+s10
+	build_r e_StdOverloaded_r==; 1 0 0 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh d57 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d57 _hnf l57 8 0 "p;56"
+.a 0 ea57
+.o 2 0
+l57
+	repl_args 7 7
+.o 8 0
+ea57
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 5
+	push_r_args 4 1 0
+	update_a 4 12
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 0 2
+	update_a 8 5
+	update_a 11 8
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	pop_a 2
+.o 11 0
+s57
+	push_a 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_a 9
+	push_b 0
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 1 1 i
+	jsr e_StdList_ssplitAt
+.o 2 0
+	push_a 0
+	jsr_eval 0
+	push_a 4
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 4 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdList_s==;45
+.o 0 1 b
+	jmp_false else.59
+	push_b 0
+	push_a 8
+	build_u _ 1 1 n153
+	push_a 11
+	push_a 2
+	push_a 10
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 7
+	build _ 0 n32
+	push_a 7
+	push_a 7
+	jsr_eval 0
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	pop_b 1
+	jmp_ap 5
+else.59
+	buildh _Nil 0
+	push_a 9
+	buildh _Cons 2
+	push_a 8
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 4
+	buildh _Cons 2
+	push_a 12
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 7
+	build _ 2 n108
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	pop_b 1
+	jmp_ap 2
+.nu 1 1 _ _
+.o 1 0
+n153
+	push_node_u _cycle_in_spine 1 1
+.o 2 1 i
+ea153
+.o 2 1 i
+s153
+	pushI 1
+	push_b 1
+	shiftl%
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_ssetParsable
+.export e_ParsersKernel_easetParsable
+.descexp e_ParsersKernel_dsetParsable e_ParsersKernel_nsetParsable e_ParsersKernel_lsetParsable 1 0 "setParsable"
+.o 2 0
+e_ParsersKernel_lsetParsable
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_easetParsable
+.n 1 e_ParsersKernel_dsetParsable e_ParsersKernel_easetParsable
+.o 1 0
+e_ParsersKernel_nsetParsable
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_easetParsable
+.o 2 0
+e_ParsersKernel_ssetParsable
+.o 2 0
+s9
+	buildAC "undefined result of parser-constructor 'setParsable' accessed"
+	buildh ARRAY 1
+	build _ 1 e_StdMisc_nabort
+	push_a 1
+	fillh d56 2 3
+	pop_a 1
+.d 1 0
+	rtn
+.desc d56 _hnf l56 8 0 "<lambda>[line:120];18;55"
+.a 0 ea56
+.o 2 0
+l56
+	repl_args 7 7
+.o 8 0
+ea56
+	jsr_eval 3
+.o 8 0
+s56
+	push_a 0
+	push_a 7
+	build _ 0 n32
+	push_a 7
+	push_a 5
+	push_a 8
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+	jmp_ap 5
+.export e_ParsersKernel_sgetParsable
+.export e_ParsersKernel_eagetParsable
+.descexp e_ParsersKernel_dgetParsable e_ParsersKernel_ngetParsable e_ParsersKernel_lgetParsable 0 0 "getParsable"
+.o 1 0
+e_ParsersKernel_lgetParsable
+	halt
+.n 0 e_ParsersKernel_dgetParsable e_ParsersKernel_eagetParsable
+.o 1 0
+e_ParsersKernel_ngetParsable
+	push_node _cycle_in_spine 0
+.o 1 0
+e_ParsersKernel_eagetParsable
+.o 1 0
+e_ParsersKernel_sgetParsable
+.o 1 0
+s8
+	fillh d55 0 0
+.d 1 0
+	rtn
+.desc d55 _hnf l55 6 0 "<lambda>[line:117];15;54"
+.a 0 ea55
+.o 2 0
+l55
+	repl_args 5 5
+.o 6 0
+ea55
+	jsr_eval 1
+.o 6 0
+s55
+	push_a 5
+	push_a 5
+	build _ 0 n32
+	push_a 5
+	push_a 9
+	push_a 6
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	jmp_ap 5
+.export e_ParsersKernel_sadvancePosition
+.export e_ParsersKernel_eaadvancePosition
+.descexp e_ParsersKernel_dadvancePosition e_ParsersKernel_nadvancePosition e_ParsersKernel_ladvancePosition 1 0 "advancePosition"
+.o 2 0
+e_ParsersKernel_ladvancePosition
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_eaadvancePosition
+.n 1 e_ParsersKernel_dadvancePosition e_ParsersKernel_eaadvancePosition
+.o 1 0
+e_ParsersKernel_nadvancePosition
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_eaadvancePosition
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 1 1 i
+e_ParsersKernel_sadvancePosition
+.o 1 1 i
+s7
+	buildAC "undefined result of parser-constructor 'advancePosition' accessed"
+	buildh ARRAY 1
+	build _ 1 e_StdMisc_nabort
+	buildI_b 0
+	fillh d54 2 2
+	pop_b 1
+.d 1 0
+	rtn
+.desc d54 _hnf l54 8 0 "p;53"
+.a 0 ea54
+.o 2 0
+l54
+	repl_args 7 7
+.o 8 0
+ea54
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	pushI_a 4
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 5 2
+	update_a 8 5
+	update_a 0 8
+	pop_a 2
+.o 10 1 i
+s54
+	pushI 0
+	push_b 1
+	ltI
+	jmp_false else.60
+	buildh _Nil 0
+	push_a 8
+	buildh _Cons 2
+	push_a 7
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	push_a 11
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 6
+	build _ 2 n108
+	push_a 4
+	jsr_eval 0
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+	pop_b 1
+	jmp_ap 2
+else.60
+	push_a 8
+	push_b 0
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 1 1 i
+	jsr e_StdList_ssplitAt
+.o 2 0
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	jmp_false else.61
+	push_b 0
+	push_a 8
+	build_u _ 1 1 n152
+	push_a 11
+	push_a 2
+	push_a 10
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 7
+	build _ 0 n32
+	push_a 7
+	push_a 7
+	jsr_eval 0
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	pop_b 1
+	jmp_ap 5
+else.61
+	buildh _Nil 0
+	push_a 9
+	buildh _Cons 2
+	push_a 8
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 4
+	buildh _Cons 2
+	push_a 12
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 7
+	build _ 2 n108
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	pop_b 1
+	jmp_ap 2
+.nu 1 1 _ _
+.o 1 0
+n152
+	push_node_u _cycle_in_spine 1 1
+.o 2 1 i
+ea152
+.o 2 1 i
+s152
+	pushI 1
+	push_b 1
+	shiftl%
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_sgetPosition
+.export e_ParsersKernel_eagetPosition
+.descexp e_ParsersKernel_dgetPosition e_ParsersKernel_ngetPosition e_ParsersKernel_lgetPosition 0 0 "getPosition"
+.o 1 0
+e_ParsersKernel_lgetPosition
+	halt
+.n 0 e_ParsersKernel_dgetPosition e_ParsersKernel_eagetPosition
+.o 1 0
+e_ParsersKernel_ngetPosition
+	push_node _cycle_in_spine 0
+.o 1 0
+e_ParsersKernel_eagetPosition
+.o 1 0
+e_ParsersKernel_sgetPosition
+.o 1 0
+s6
+	fillh d53 0 0
+.d 1 0
+	rtn
+.desc d53 _hnf l53 6 0 "<lambda>[line:104];15;52"
+.a 0 ea53
+.o 2 0
+l53
+	repl_args 5 5
+.o 6 0
+ea53
+	push_a 5
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 5
+	update_a 3 9
+	update_a 6 3
+	update_a 0 6
+	push_a 8
+	update_a 3 9
+	update_a 6 3
+	update_a 0 6
+	update_a 8 0
+	update_a 2 8
+	update_a 5 2
+	update_a 0 5
+	pop_a 2
+.o 9 0
+s53
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	buildh _Tuple 4
+	push_a 5
+	build _ 0 n32
+	push_a 5
+	buildh _Nil 0
+	push_a 11
+	buildh _Cons 2
+	push_a 10
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh d110 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	push_a 6
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+	jmp_ap 5
+.desc d110 _hnf l110 1 0 "fromPos;111"
+.o 2 0
+l110
+	pop_a 1
+.d 1 0
+	jsr ea110
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea110
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+.o 0 1 i
+s110
+	pushI 1
+	push_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	shiftr%
+.d 0 1 i
+	rtn
+.export e_ParsersKernel_ssatisfy
+.export e_ParsersKernel_easatisfy
+.descexp e_ParsersKernel_dsatisfy e_ParsersKernel_nsatisfy e_ParsersKernel_lsatisfy 1 0 "satisfy"
+.o 2 0
+e_ParsersKernel_lsatisfy
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_easatisfy
+.n 1 e_ParsersKernel_dsatisfy e_ParsersKernel_easatisfy
+.o 1 0
+e_ParsersKernel_nsatisfy
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_easatisfy
+.o 2 0
+e_ParsersKernel_ssatisfy
+.o 2 0
+s5
+	push_a 0
+	fillh d52 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d52 _hnf l52 7 0 "p;51"
+.a 0 ea52
+.o 2 0
+l52
+	repl_args 6 6
+.o 7 0
+ea52
+	push_a 6
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 2
+	update_a 3 10
+	update_a 6 3
+	update_a 9 6
+	update_a 2 9
+	update_a 5 2
+	update_a 8 5
+	update_a 1 8
+	update_a 4 1
+	update_a 7 4
+	update_a 0 7
+	pop_a 1
+.o 10 0
+s52
+	eq_desc _Cons 2 8
+	jmp_true case.62
+	jmp case.63
+case.62
+	push_args 8 2 2
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	jsr_ap 1
+	pushB_a 0
+	pop_a 1
+	jmp_false else.64
+	push_a 9
+	build _ 1 n151
+	push_a 12
+	push_a 3
+	push_a 11
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 8
+	build _ 0 n32
+	push_a 8
+	push_a 8
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 17
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+	jmp_ap 5
+else.64
+	pop_a 2
+	jmp case.63
+case.63
+	buildh _Nil 0
+	push_a 8
+	buildh _Cons 2
+	push_a 7
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	push_a 11
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 6
+	build _ 2 n108
+	push_a 4
+	jsr_eval 0
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+	jmp_ap 2
+.n 1 _ ea151
+.o 1 0
+n151
+	push_node _cycle_in_spine 1
+.o 2 0
+ea151
+.o 2 0
+s151
+.d 0 0
+	jsr s33
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_ssymbol
+.export e_ParsersKernel_easymbol
+.descexp e_ParsersKernel_dsymbol e_ParsersKernel_nsymbol e_ParsersKernel_lsymbol 2 0 "symbol"
+.a 2 e_ParsersKernel_easymbol
+.o 2 0
+e_ParsersKernel_lsymbol
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersKernel_easymbol
+.n 2 e_ParsersKernel_dsymbol e_ParsersKernel_easymbol
+.o 1 0
+e_ParsersKernel_nsymbol
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersKernel_easymbol
+	jsr_eval 0
+	repl_r_args 1 0
+.o 3 0
+e_ParsersKernel_ssymbol
+.o 3 0
+s4
+	build_r e_StdOverloaded_r==; 1 0 0 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh d51 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d51 _hnf l51 8 0 "p;50"
+.a 0 ea51
+.o 2 0
+l51
+	repl_args 7 7
+.o 8 0
+ea51
+	push_a 7
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 2
+	push_r_args 4 1 0
+	update_a 4 12
+	update_a 7 4
+	update_a 10 7
+	update_a 2 10
+	update_a 0 2
+	update_a 8 5
+	update_a 11 8
+	update_a 3 11
+	update_a 6 3
+	update_a 9 6
+	update_a 1 9
+	pop_a 2
+.o 11 0
+s51
+	eq_desc _Cons 2 9
+	jmp_true case.65
+	jmp case.66
+case.65
+	push_args 9 2 2
+	buildh _Nil 0
+	update_a 0 12
+	pop_a 1
+	push_a 0
+	push_a 3
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 6
+	pop_a 1
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.67
+	push_a 10
+	build _ 1 n150
+	push_a 13
+	push_a 3
+	push_a 12
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 9
+	build _ 0 n32
+	push_a 9
+	push_a 9
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 18
+	update_a 4 17
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+	jmp_ap 5
+else.67
+	pop_a 2
+	jmp case.66
+case.66
+	buildh _Nil 0
+	push_a 9
+	buildh _Cons 2
+	push_a 8
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 4
+	buildh _Cons 2
+	push_a 12
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 7
+	build _ 2 n108
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 2
+.n 1 _ ea150
+.o 1 0
+n150
+	push_node _cycle_in_spine 1
+.o 2 0
+ea150
+.o 2 0
+s150
+.d 0 0
+	jsr s33
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_ParsersKernel_sanySymbol
+.export e_ParsersKernel_eaanySymbol
+.descexp e_ParsersKernel_danySymbol e_ParsersKernel_nanySymbol e_ParsersKernel_lanySymbol 0 0 "anySymbol"
+.o 1 0
+e_ParsersKernel_lanySymbol
+	halt
+.n 0 e_ParsersKernel_danySymbol e_ParsersKernel_eaanySymbol
+.o 1 0
+e_ParsersKernel_nanySymbol
+	push_node _cycle_in_spine 0
+.o 1 0
+e_ParsersKernel_eaanySymbol
+.o 1 0
+e_ParsersKernel_sanySymbol
+.o 1 0
+s3
+	fillh d50 0 0
+.d 1 0
+	rtn
+.desc d50 _hnf l50 6 0 "p;49"
+.a 0 ea50
+.o 2 0
+l50
+	repl_args 5 5
+.o 6 0
+ea50
+	push_a 5
+	jsr_eval 0
+	repl_args 4 4
+	jsr_eval 2
+	update_a 3 9
+	update_a 6 3
+	update_a 0 6
+	push_a 8
+	update_a 3 9
+	update_a 6 3
+	update_a 0 6
+	update_a 8 0
+	update_a 2 8
+	update_a 5 2
+	update_a 0 5
+	pop_a 2
+.o 9 0
+s50
+	eq_desc _Cons 2 7
+	jmp_true case.68
+	jmp case.69
+case.68
+	push_args 7 2 2
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+	push_a 8
+	build _ 1 n149
+	push_a 11
+	push_a 3
+	push_a 10
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Tuple 4
+	push_a 7
+	build _ 0 n32
+	push_a 7
+	push_a 7
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	jmp_ap 5
+case.69
+	buildh _Nil 0
+	push_a 7
+	buildh _Cons 2
+	push_a 6
+	build e_StdList_d++ 2 e_StdList_n++
+	buildh _Nil 0
+	push_a 2
+	buildh _Cons 2
+	push_a 10
+	buildh _Tuple 2
+	buildh d147 2
+	push_a 5
+	build _ 2 n108
+	push_a 3
+	jsr_eval 0
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+	jmp_ap 2
+.n 1 _ ea149
+.o 1 0
+n149
+	push_node _cycle_in_spine 1
+.o 2 0
+ea149
+.o 2 0
+s149
+.d 0 0
+	jsr s33
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea108
+.o 1 0
+n108
+	push_node _cycle_in_spine 2
+.o 3 0
+ea108
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+s108
+	push_args 0 2 2
+	jsr_eval 0
+	repl_args 2 2
+	push_args 4 2 2
+	jsr_eval 0
+	repl_args 2 2
+	pop_a 1
+	push_a 4
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+.d 2 0
+	jsr e_StdList_s<;82
+.o 0 1 b
+	jmp_false else.70
+	fill_a 5 7
+	pop_a 7
+.d 1 0
+	rtn
+else.70
+	push_a 1
+	push_a 5
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdList_s<;82
+.o 0 1 b
+	jmp_false else.71
+	fill_a 5 6
+	pop_a 6
+.d 1 0
+	rtn
+else.71
+	push_a 0
+	push_a 3
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 2
+	buildh _Tuple 2
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	fillh d147 2 8
+	pop_a 6
+.d 1 0
+	rtn
+.o 0 0
+s33
+	pushI 2
+.d 0 1 i
+	rtn
+.export e_ParsersKernel_syield
+.export e_ParsersKernel_eayield
+.descexp e_ParsersKernel_dyield e_ParsersKernel_nyield e_ParsersKernel_lyield 1 0 "yield"
+.o 2 0
+e_ParsersKernel_lyield
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersKernel_eayield
+.n 1 e_ParsersKernel_dyield e_ParsersKernel_eayield
+.o 1 0
+e_ParsersKernel_nyield
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersKernel_eayield
+.o 2 0
+e_ParsersKernel_syield
+.o 2 0
+s2
+	push_a 0
+	fillh d49 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d49 _hnf l49 5 0 "<lambda>[line:85];11;48"
+.a 0 ea49
+.o 2 0
+l49
+	repl_args 4 4
+.o 5 0
+ea49
+	jsr_eval 2
+.o 5 0
+s49
+	build _ 0 n32
+	push_a 4
+	push_a 2
+	push_a 5
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	jmp_ap 3
+.n 0 _ ea32
+.o 1 0
+n32
+	push_node _cycle_in_spine 0
+.o 1 0
+ea32
+.o 1 0
+s32
+	fillh d47 0 0
+.d 1 0
+	rtn
+.desc d47 _hnf l47 1 0 "<lambda>[line:21];12;46"
+.o 2 0
+l47
+	pop_a 1
+.o 1 0
+ea47
+	buildh _Nil 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.export e_ParsersKernel_sfail
+.export e_ParsersKernel_eafail
+.descexp e_ParsersKernel_dfail e_ParsersKernel_nfail e_ParsersKernel_lfail 0 0 "fail"
+.o 1 0
+e_ParsersKernel_lfail
+	halt
+.n 0 e_ParsersKernel_dfail e_ParsersKernel_eafail
+.o 1 0
+e_ParsersKernel_nfail
+	push_node _cycle_in_spine 0
+.o 1 0
+e_ParsersKernel_eafail
+.o 1 0
+e_ParsersKernel_sfail
+.o 1 0
+s1
+	fillh d48 0 0
+.d 1 0
+	rtn
+.desc d48 _hnf l48 6 0 "<lambda>[line:82];8;47"
+.a 0 ea48
+.o 2 0
+l48
+	repl_args 5 5
+.o 6 0
+ea48
+	jsr_eval 2
+.o 6 0
+s48
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	jmp_ap 2
+.o 4 0
+s148
+	push_a 3
+	push_a 3
+	build _ 0 n96
+	build _ 0 n95
+	build _ 0 n94
+	push_a 6
+	push_a 6
+	update_a 6 10
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	jsr_ap 6
+	repl_args 2 2
+	jsr_eval 1
+.d 2 0
+	rtn

@@ -1,0 +1,1085 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "ParsersKernel" "20170131202634"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "ParsersDerived" "20170131202634"
+.module m_ParsersDerived "ParsersDerived" "20170131202634"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_ParsersKernel_dyield
+.implab e_ParsersKernel_syield
+.implab e_ParsersKernel_nyield e_ParsersKernel_eayield
+.impdesc e_ParsersKernel_danySymbol
+.implab e_ParsersKernel_nanySymbol e_ParsersKernel_eaanySymbol
+.impdesc e_ParsersKernel_dadvancePosition
+.implab e_ParsersKernel_nadvancePosition e_ParsersKernel_eaadvancePosition
+.impdesc e_ParsersKernel_dgetParsable
+.implab e_ParsersKernel_ngetParsable e_ParsersKernel_eagetParsable
+.impdesc e_ParsersKernel_dsetParsable
+.implab e_ParsersKernel_nsetParsable e_ParsersKernel_easetParsable
+.impdesc e_ParsersKernel_d<|>
+.implab e_ParsersKernel_s<|>
+.implab e_ParsersKernel_n<|> e_ParsersKernel_ea<|>
+.impdesc e_ParsersKernel_d<&>
+.implab e_ParsersKernel_s<&>
+.implab e_ParsersKernel_n<&> e_ParsersKernel_ea<&>
+.implab e_ParsersKernel_sfirst
+.impdesc e_ParsersKernel_drewind
+.implab e_ParsersKernel_nrewind e_ParsersKernel_earewind
+.implab e_ParsersKernel_s<-!>;29
+.impdesc e_StdMisc_dabort
+.implab e_StdMisc_nabort _
+.impdesc e_StdFunc_did
+.impdesc e_StdFunc_dconst
+.export e_ParsersDerived_sscrape
+.export e_ParsersDerived_eascrape
+.descexp e_ParsersDerived_dscrape e_ParsersDerived_nscrape e_ParsersDerived_lscrape 3 0 "scrape"
+.a 3 e_ParsersDerived_eascrape
+.o 2 0
+e_ParsersDerived_lscrape
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_ParsersDerived_eascrape
+.n 3 e_ParsersDerived_dscrape e_ParsersDerived_eascrape
+.o 1 0
+e_ParsersDerived_nscrape
+	push_node _cycle_in_spine 3
+.o 4 0
+e_ParsersDerived_eascrape
+.o 4 0
+e_ParsersDerived_sscrape
+.o 4 0
+s22
+	push_a 0
+	push_a 3
+	push_a 3
+	buildh d39 3
+	build e_ParsersKernel_dgetParsable 0 e_ParsersKernel_ngetParsable
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d39 _hnf l39 4 0 "<lambda>[line:97];37;38"
+.a 4 ea39
+.o 2 0
+l39
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea39
+.o 5 0
+s39
+	push_a 3
+	push_a 2
+	push_a 2
+	buildh d38 3
+	push_a 3
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d38 _hnf l38 4 0 "<lambda>[line:98];21;37"
+.a 4 ea38
+.o 2 0
+l38
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea38
+.o 5 0
+s38
+	push_a 3
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	buildh e_StdFunc_dconst 1
+	push_a 4
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	build e_ParsersKernel_dadvancePosition 1 e_ParsersKernel_nadvancePosition
+	build e_ParsersKernel_d<&> 2 e_ParsersKernel_n<&>
+	buildh e_StdFunc_dconst 1
+	push_a 3
+	build e_ParsersKernel_dsetParsable 1 e_ParsersKernel_nsetParsable
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.export e_ParsersDerived_sskipOnce
+.export e_ParsersDerived_easkipOnce
+.descexp e_ParsersDerived_dskipOnce e_ParsersDerived_nskipOnce e_ParsersDerived_lskipOnce 1 0 "skipOnce"
+.o 2 0
+e_ParsersDerived_lskipOnce
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_easkipOnce
+.n 1 e_ParsersDerived_dskipOnce e_ParsersDerived_easkipOnce
+.o 1 0
+e_ParsersDerived_nskipOnce
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_easkipOnce
+.o 2 0
+e_ParsersDerived_sskipOnce
+.o 2 0
+s21
+	push_a 0
+	build e_ParsersDerived_dskipTo 1 e_ParsersDerived_nskipTo
+	updatepop_a 0 1
+.d 2 0
+	jmp e_ParsersKernel_sfirst
+.export e_ParsersDerived_sskipOver
+.export e_ParsersDerived_easkipOver
+.descexp e_ParsersDerived_dskipOver e_ParsersDerived_nskipOver e_ParsersDerived_lskipOver 1 0 "skipOver"
+.o 2 0
+e_ParsersDerived_lskipOver
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_easkipOver
+.n 1 e_ParsersDerived_dskipOver e_ParsersDerived_easkipOver
+.o 1 0
+e_ParsersDerived_nskipOver
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_easkipOver
+.o 2 0
+e_ParsersDerived_sskipOver
+.o 2 0
+s20
+	push_a 1
+	buildh e_StdFunc_dconst 1
+	build e_ParsersKernel_danySymbol 0 e_ParsersKernel_nanySymbol
+	build e_ParsersKernel_d<&> 2 e_ParsersKernel_n<&>
+	buildAC "result of until-parser accessed in skipOver"
+	buildh ARRAY 1
+	build _ 1 e_StdMisc_nabort
+	buildh e_StdFunc_dconst 1
+	push_a 2
+	build e_ParsersDerived_d<@ 2 e_ParsersDerived_n<@
+	fill e_ParsersKernel_d<|> 2 e_ParsersKernel_n<|> 3
+	pop_a 1
+	jmp_eval
+.export e_ParsersDerived_sskipTo
+.export e_ParsersDerived_easkipTo
+.descexp e_ParsersDerived_dskipTo e_ParsersDerived_nskipTo e_ParsersDerived_lskipTo 1 0 "skipTo"
+.o 2 0
+e_ParsersDerived_lskipTo
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_easkipTo
+.n 1 e_ParsersDerived_dskipTo e_ParsersDerived_easkipTo
+.o 1 0
+e_ParsersDerived_nskipTo
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_easkipTo
+.o 2 0
+e_ParsersDerived_sskipTo
+.o 2 0
+s19
+	push_a 1
+	buildh e_StdFunc_dconst 1
+	build e_ParsersKernel_danySymbol 0 e_ParsersKernel_nanySymbol
+	build e_ParsersKernel_d<&> 2 e_ParsersKernel_n<&>
+	buildAC "result of rewind-parser constructor accessed in skipTo"
+	buildh ARRAY 1
+	build _ 1 e_StdMisc_nabort
+	buildh e_StdFunc_dconst 1
+	push_a 2
+	build e_ParsersKernel_drewind 1 e_ParsersKernel_nrewind
+	build e_ParsersDerived_d<@ 2 e_ParsersDerived_n<@
+	fill e_ParsersKernel_d<|> 2 e_ParsersKernel_n<|> 3
+	pop_a 1
+	jmp_eval
+.export e_ParsersDerived_sgrazeOnce
+.export e_ParsersDerived_eagrazeOnce
+.descexp e_ParsersDerived_dgrazeOnce e_ParsersDerived_ngrazeOnce e_ParsersDerived_lgrazeOnce 1 0 "grazeOnce"
+.o 2 0
+e_ParsersDerived_lgrazeOnce
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_eagrazeOnce
+.n 1 e_ParsersDerived_dgrazeOnce e_ParsersDerived_eagrazeOnce
+.o 1 0
+e_ParsersDerived_ngrazeOnce
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_eagrazeOnce
+.o 2 0
+e_ParsersDerived_sgrazeOnce
+.o 2 0
+s18
+	push_a 0
+	build e_ParsersDerived_dgrazeTo 1 e_ParsersDerived_ngrazeTo
+	updatepop_a 0 1
+.d 2 0
+	jmp e_ParsersKernel_sfirst
+.export e_ParsersDerived_sgrazeOver
+.export e_ParsersDerived_eagrazeOver
+.descexp e_ParsersDerived_dgrazeOver e_ParsersDerived_ngrazeOver e_ParsersDerived_lgrazeOver 1 0 "grazeOver"
+.o 2 0
+e_ParsersDerived_lgrazeOver
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_eagrazeOver
+.n 1 e_ParsersDerived_dgrazeOver e_ParsersDerived_eagrazeOver
+.o 1 0
+e_ParsersDerived_ngrazeOver
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_eagrazeOver
+.o 2 0
+e_ParsersDerived_sgrazeOver
+.o 2 0
+s17
+	build e_ParsersKernel_danySymbol 0 e_ParsersKernel_nanySymbol
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_ParsersDerived_d<:&> 2 e_ParsersDerived_n<:&>
+	buildh _Nil 0
+	buildh e_StdFunc_dconst 1
+	push_a 2
+	build e_ParsersDerived_d<@ 2 e_ParsersDerived_n<@
+	fill e_ParsersKernel_d<|> 2 e_ParsersKernel_n<|> 3
+	pop_a 1
+	jmp_eval
+.export e_ParsersDerived_sgrazeTo
+.export e_ParsersDerived_eagrazeTo
+.descexp e_ParsersDerived_dgrazeTo e_ParsersDerived_ngrazeTo e_ParsersDerived_lgrazeTo 1 0 "grazeTo"
+.o 2 0
+e_ParsersDerived_lgrazeTo
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_eagrazeTo
+.n 1 e_ParsersDerived_dgrazeTo e_ParsersDerived_eagrazeTo
+.o 1 0
+e_ParsersDerived_ngrazeTo
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_eagrazeTo
+.o 2 0
+e_ParsersDerived_sgrazeTo
+.o 2 0
+s16
+	build e_ParsersKernel_danySymbol 0 e_ParsersKernel_nanySymbol
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_ParsersDerived_d<:&> 2 e_ParsersDerived_n<:&>
+	buildh _Nil 0
+	buildh e_StdFunc_dconst 1
+	push_a 2
+	build e_ParsersKernel_drewind 1 e_ParsersKernel_nrewind
+	build e_ParsersDerived_d<@ 2 e_ParsersDerived_n<@
+	fill e_ParsersKernel_d<|> 2 e_ParsersKernel_n<|> 3
+	pop_a 1
+	jmp_eval
+.export e_ParsersDerived_s<!?>
+.export e_ParsersDerived_ea<!?>
+.descexp e_ParsersDerived_d<!?> e_ParsersDerived_n<!?> e_ParsersDerived_l<!?> 3 0 "<!?>"
+.a 3 e_ParsersDerived_ea<!?>
+.o 2 0
+e_ParsersDerived_l<!?>
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_ParsersDerived_ea<!?>
+.n 3 e_ParsersDerived_d<!?> e_ParsersDerived_ea<!?>
+.o 1 0
+e_ParsersDerived_n<!?>
+	push_node _cycle_in_spine 3
+.o 4 0
+e_ParsersDerived_ea<!?>
+.o 4 0
+e_ParsersDerived_s<!?>
+.o 4 0
+s14
+	push_a 2
+	push_a 2
+	push_a 2
+	build e_ParsersDerived_d<?> 3 e_ParsersDerived_n<?>
+	updatepop_a 0 3
+.d 2 0
+	jmp e_ParsersKernel_sfirst
+.export e_ParsersDerived_s<?>
+.export e_ParsersDerived_ea<?>
+.descexp e_ParsersDerived_d<?> e_ParsersDerived_n<?> e_ParsersDerived_l<?> 3 0 "<?>"
+.a 3 e_ParsersDerived_ea<?>
+.o 2 0
+e_ParsersDerived_l<?>
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_ParsersDerived_ea<?>
+.n 3 e_ParsersDerived_d<?> e_ParsersDerived_ea<?>
+.o 1 0
+e_ParsersDerived_n<?>
+	push_node _cycle_in_spine 3
+.o 4 0
+e_ParsersDerived_ea<?>
+.o 4 0
+e_ParsersDerived_s<?>
+.o 4 0
+s13
+	push_a 2
+	build e_ParsersKernel_dyield 1 e_ParsersKernel_nyield
+	push_a 2
+	push_a 2
+	build e_ParsersDerived_d<@ 2 e_ParsersDerived_n<@
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_ParsersKernel_s<|>
+.export e_ParsersDerived_s<!+:>
+.export e_ParsersDerived_ea<!+:>
+.descexp e_ParsersDerived_d<!+:> e_ParsersDerived_n<!+:> e_ParsersDerived_l<!+:> 1 0 "<!+:>"
+.o 2 0
+e_ParsersDerived_l<!+:>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<!+:>
+.n 1 e_ParsersDerived_d<!+:> e_ParsersDerived_ea<!+:>
+.o 1 0
+e_ParsersDerived_n<!+:>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<!+:>
+.o 2 0
+e_ParsersDerived_s<!+:>
+.o 2 0
+s12
+	push_a 0
+	build e_ParsersDerived_d<!+:> 1 e_ParsersDerived_n<!+:>
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s4
+.export e_ParsersDerived_s<!+>
+.export e_ParsersDerived_ea<!+>
+.descexp e_ParsersDerived_d<!+> e_ParsersDerived_n<!+> e_ParsersDerived_l<!+> 1 0 "<!+>"
+.o 2 0
+e_ParsersDerived_l<!+>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<!+>
+.n 1 e_ParsersDerived_d<!+> e_ParsersDerived_ea<!+>
+.o 1 0
+e_ParsersDerived_n<!+>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<!+>
+.o 2 0
+e_ParsersDerived_s<!+>
+.o 2 0
+s11
+	push_a 0
+	build e_ParsersDerived_d<!*> 1 e_ParsersDerived_n<!*>
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s3
+.desc d36 _hnf l36 2 0 "<lambda>[line:41];19;35"
+.a 2 ea36
+.o 2 0
+l36
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea36
+.o 3 0
+s36
+	push_a 1
+	buildh d35 1
+	push_a 1
+	build e_ParsersDerived_d<!*:> 1 e_ParsersDerived_n<!*:>
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s15
+.export e_ParsersDerived_s<!*:>
+.export e_ParsersDerived_ea<!*:>
+.descexp e_ParsersDerived_d<!*:> e_ParsersDerived_n<!*:> e_ParsersDerived_l<!*:> 1 0 "<!*:>"
+.o 2 0
+e_ParsersDerived_l<!*:>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<!*:>
+.n 1 e_ParsersDerived_d<!*:> e_ParsersDerived_ea<!*:>
+.o 1 0
+e_ParsersDerived_n<!*:>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<!*:>
+.o 2 0
+e_ParsersDerived_s<!*:>
+.o 2 0
+s10
+	buildh e_StdFunc_did 0
+	build e_ParsersKernel_dyield 1 e_ParsersKernel_nyield
+	push_a 1
+	buildh d36 1
+	push_a 2
+	buildh e_ParsersKernel_d<&-> 2
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_ParsersKernel_s<-!>;29
+.desc d35 _hnf l35 2 0 "<lambda>[line:41];36;34"
+.a 2 ea35
+.o 2 0
+l35
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea35
+.o 3 0
+s35
+	push_a 1
+	push_a 1
+	fillh d34 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d34 _hnf l34 3 0 "<lambda>[line:41];43;33"
+.a 3 ea34
+.o 2 0
+l34
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea34
+.o 4 0
+s34
+	push_a 2
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.desc d33 _hnf l33 2 0 "<lambda>[line:38];18;32"
+.a 2 ea33
+.o 2 0
+l33
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea33
+.o 3 0
+s33
+	push_a 1
+	buildh d32 1
+	push_a 1
+	build e_ParsersDerived_d<!*> 1 e_ParsersDerived_n<!*>
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s15
+.export e_ParsersDerived_s<!*>
+.export e_ParsersDerived_ea<!*>
+.descexp e_ParsersDerived_d<!*> e_ParsersDerived_n<!*> e_ParsersDerived_l<!*> 1 0 "<!*>"
+.o 2 0
+e_ParsersDerived_l<!*>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<!*>
+.n 1 e_ParsersDerived_d<!*> e_ParsersDerived_ea<!*>
+.o 1 0
+e_ParsersDerived_n<!*>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<!*>
+.o 2 0
+e_ParsersDerived_s<!*>
+.o 2 0
+s9
+	buildh _Nil 0
+	build e_ParsersKernel_dyield 1 e_ParsersKernel_nyield
+	push_a 1
+	buildh d33 1
+	push_a 2
+	buildh e_ParsersKernel_d<&-> 2
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_ParsersKernel_s<-!>;29
+.desc d32 _hnf l32 2 0 "<lambda>[line:38];34;31"
+.a 2 ea32
+.o 2 0
+l32
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea32
+.o 3 0
+s32
+	push_a 1
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.export e_ParsersDerived_s<+:>
+.export e_ParsersDerived_ea<+:>
+.descexp e_ParsersDerived_d<+:> e_ParsersDerived_n<+:> e_ParsersDerived_l<+:> 1 0 "<+:>"
+.o 2 0
+e_ParsersDerived_l<+:>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<+:>
+.n 1 e_ParsersDerived_d<+:> e_ParsersDerived_ea<+:>
+.o 1 0
+e_ParsersDerived_n<+:>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<+:>
+.o 2 0
+e_ParsersDerived_s<+:>
+.o 2 0
+s8
+	push_a 0
+	build e_ParsersDerived_d<*:> 1 e_ParsersDerived_n<*:>
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s4
+.export e_ParsersDerived_s<+>
+.export e_ParsersDerived_ea<+>
+.descexp e_ParsersDerived_d<+> e_ParsersDerived_n<+> e_ParsersDerived_l<+> 1 0 "<+>"
+.o 2 0
+e_ParsersDerived_l<+>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<+>
+.n 1 e_ParsersDerived_d<+> e_ParsersDerived_ea<+>
+.o 1 0
+e_ParsersDerived_n<+>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<+>
+.o 2 0
+e_ParsersDerived_s<+>
+.o 2 0
+s7
+	push_a 0
+	build e_ParsersDerived_d<*> 1 e_ParsersDerived_n<*>
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s3
+.export e_ParsersDerived_s<*:>
+.export e_ParsersDerived_ea<*:>
+.descexp e_ParsersDerived_d<*:> e_ParsersDerived_n<*:> e_ParsersDerived_l<*:> 1 0 "<*:>"
+.o 2 0
+e_ParsersDerived_l<*:>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<*:>
+.n 1 e_ParsersDerived_d<*:> e_ParsersDerived_ea<*:>
+.o 1 0
+e_ParsersDerived_n<*:>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<*:>
+.o 2 0
+e_ParsersDerived_s<*:>
+.o 2 0
+s6
+	buildh e_StdFunc_did 0
+	build e_ParsersKernel_dyield 1 e_ParsersKernel_nyield
+	push_a 1
+	build e_ParsersDerived_d<*:> 1 e_ParsersDerived_n<*:>
+	push_a 2
+	build e_ParsersDerived_d<:&:> 2 e_ParsersDerived_n<:&:>
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_ParsersKernel_s<|>
+.export e_ParsersDerived_s<*>
+.export e_ParsersDerived_ea<*>
+.descexp e_ParsersDerived_d<*> e_ParsersDerived_n<*> e_ParsersDerived_l<*> 1 0 "<*>"
+.o 2 0
+e_ParsersDerived_l<*>
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_ParsersDerived_ea<*>
+.n 1 e_ParsersDerived_d<*> e_ParsersDerived_ea<*>
+.o 1 0
+e_ParsersDerived_n<*>
+	push_node _cycle_in_spine 1
+.o 2 0
+e_ParsersDerived_ea<*>
+.o 2 0
+e_ParsersDerived_s<*>
+.o 2 0
+s5
+	buildh _Nil 0
+	build e_ParsersKernel_dyield 1 e_ParsersKernel_nyield
+	push_a 1
+	build e_ParsersDerived_d<*> 1 e_ParsersDerived_n<*>
+	push_a 2
+	build e_ParsersDerived_d<:&> 2 e_ParsersDerived_n<:&>
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_ParsersKernel_s<|>
+.export e_ParsersDerived_s<:&:>
+.export e_ParsersDerived_ea<:&:>
+.descexp e_ParsersDerived_d<:&:> e_ParsersDerived_n<:&:> e_ParsersDerived_l<:&:> 2 0 "<:&:>"
+.a 2 e_ParsersDerived_ea<:&:>
+.o 2 0
+e_ParsersDerived_l<:&:>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersDerived_ea<:&:>
+.n 2 e_ParsersDerived_d<:&:> e_ParsersDerived_ea<:&:>
+.o 1 0
+e_ParsersDerived_n<:&:>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersDerived_ea<:&:>
+.o 3 0
+e_ParsersDerived_s<:&:>
+.o 3 0
+s4
+	push_a 1
+	buildh d31 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d31 _hnf l31 2 0 "<lambda>[line:21];24;30"
+.a 2 ea31
+.o 2 0
+l31
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea31
+.o 3 0
+s31
+	push_a 1
+	buildh d30 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s15
+.desc d30 _hnf l30 2 0 "<lambda>[line:21];37;29"
+.a 2 ea30
+.o 2 0
+l30
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea30
+.o 3 0
+s30
+	push_a 1
+	push_a 1
+	fillh d29 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d29 _hnf l29 3 0 "<lambda>[line:21];44;28"
+.a 3 ea29
+.o 2 0
+l29
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea29
+.o 4 0
+s29
+	push_a 2
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.export e_ParsersDerived_s<:&>
+.export e_ParsersDerived_ea<:&>
+.descexp e_ParsersDerived_d<:&> e_ParsersDerived_n<:&> e_ParsersDerived_l<:&> 2 0 "<:&>"
+.a 2 e_ParsersDerived_ea<:&>
+.o 2 0
+e_ParsersDerived_l<:&>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersDerived_ea<:&>
+.n 2 e_ParsersDerived_d<:&> e_ParsersDerived_ea<:&>
+.o 1 0
+e_ParsersDerived_n<:&>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersDerived_ea<:&>
+.o 3 0
+e_ParsersDerived_s<:&>
+.o 3 0
+s3
+	push_a 1
+	buildh d28 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d28 _hnf l28 2 0 "<lambda>[line:18];23;27"
+.a 2 ea28
+.o 2 0
+l28
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea28
+.o 3 0
+s28
+	push_a 1
+	buildh d27 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s15
+.desc d27 _hnf l27 2 0 "<lambda>[line:18];36;26"
+.a 2 ea27
+.o 2 0
+l27
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea27
+.o 3 0
+s27
+	push_a 1
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.export e_ParsersDerived_s<&&>
+.export e_ParsersDerived_ea<&&>
+.descexp e_ParsersDerived_d<&&> e_ParsersDerived_n<&&> e_ParsersDerived_l<&&> 2 0 "<&&>"
+.a 2 e_ParsersDerived_ea<&&>
+.o 2 0
+e_ParsersDerived_l<&&>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersDerived_ea<&&>
+.n 2 e_ParsersDerived_d<&&> e_ParsersDerived_ea<&&>
+.o 1 0
+e_ParsersDerived_n<&&>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersDerived_ea<&&>
+.o 3 0
+e_ParsersDerived_s<&&>
+.o 3 0
+s2
+	push_a 1
+	buildh d26 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d26 _hnf l26 2 0 "<lambda>[line:15];23;25"
+.a 2 ea26
+.o 2 0
+l26
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea26
+.o 3 0
+s26
+	push_a 1
+	buildh d25 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s15
+.desc d25 _hnf l25 2 0 "<lambda>[line:15];36;24"
+.a 0 a25
+.o 2 0
+l25
+	repl_args 1 1
+.o 2 0
+a25
+.o 2 0
+ea25
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.export e_ParsersDerived_s<&
+.export e_ParsersDerived_ea<&
+.descexp e_ParsersDerived_d<& e_ParsersDerived_n<& e_ParsersDerived_l<& 2 0 "<&"
+.a 2 e_ParsersDerived_ea<&
+.o 2 0
+e_ParsersDerived_l<&
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersDerived_ea<&
+.n 2 e_ParsersDerived_d<& e_ParsersDerived_ea<&
+.o 1 0
+e_ParsersDerived_n<&
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersDerived_ea<&
+.o 3 0
+e_ParsersDerived_s<&
+.o 3 0
+s1
+	push_a 1
+	buildh d24 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d24 _hnf l24 2 0 "<lambda>[line:9];21;23"
+.a 2 ea24
+.o 2 0
+l24
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea24
+.o 3 0
+s24
+	push_a 1
+	buildh e_StdFunc_dconst 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s15
+.export e_ParsersDerived_s<@
+.export e_ParsersDerived_ea<@
+.descexp e_ParsersDerived_d<@ e_ParsersDerived_n<@ e_ParsersDerived_l<@ 2 0 "<@"
+.a 2 e_ParsersDerived_ea<@
+.o 2 0
+e_ParsersDerived_l<@
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_ParsersDerived_ea<@
+.n 2 e_ParsersDerived_d<@ e_ParsersDerived_ea<@
+.o 1 0
+e_ParsersDerived_n<@
+	push_node _cycle_in_spine 2
+.o 3 0
+e_ParsersDerived_ea<@
+.o 3 0
+e_ParsersDerived_s<@
+.o 3 0
+s15
+	push_a 1
+	buildh d41 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_ParsersKernel_s<&>
+.desc d41 _hnf l41 2 0 "<lambda>[line:15];13;42"
+.a 2 ea41
+.o 2 0
+l41
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea41
+.o 3 0
+s41
+	push_a 1
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	updatepop_a 0 2
+.d 2 0
+	jmp e_ParsersKernel_syield

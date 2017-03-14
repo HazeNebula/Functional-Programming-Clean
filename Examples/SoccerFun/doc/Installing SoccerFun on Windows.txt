@@ -1,0 +1,87 @@
+To install SoccerFun on a Windows machine:
+
+(1) You need a Clean 2.4 distribution. You can download this for 
+    free at:
+
+        http://wiki.clean.cs.ru.nl/Clean
+
+(2) Unpack the Clean 2.4 distribution. 
+
+(3) In the Clean 2.4 distribution you find the CleanIDE.exe and a number 
+    of directories: Config, Examples, Help, Libraries, Temp, and Tools.
+    
+    Move the unpacked SoccerFun distribution to Examples. 
+
+    After this action the Examples folder of your Clean distribution should
+    contain a SoccerFun folder with the following content:
+
+    Examples\
+        ...
+        SoccerFun\
+            doc\
+                EN\
+                    About SoccerFun.pdf              // powerpoint slides that highlight part of SoccerFun (English)
+                    About SoccerFun.pptx             // powerpoint slides that highlight part of SoccerFun (English)
+                    quickstart_SoccerFun.pdf         // more detailed overview of SoccerFun (English)
+                NL\
+                    Over SoccerFun.pdf               // powerpoint slides that highlight part of SoccerFun (Dutch)
+                    Over SoccerFun.pptx              // powerpoint slides that highlight part of SoccerFun (Dutch)
+                    quickstart_SoccerFun.pdf         // more detailed overview of SoccerFun (Dutch)
+                Installing SoccerFun on Windows.txt  // the document you're reading right now
+            src\
+                afbeeldingen\
+                Game\
+                Gui\
+                sound\
+                StdLibExt\
+                StdReferee\
+                StdTeam\
+                SoccerFun.env                        // see step 5 below
+                SoccerFun64.env                      // see step 5 below
+                SoccerFun.icl
+                SoccerFun.prj                        // see step 6 below
+    
+
+(4) Run the CleanIDE. If it is the first time that you run it, it will ask you 
+    if it can integrate itself in the Windows system. 
+    Choose "Yes" if you want this, "No" if you want to defer. 
+    Note: choose "Never" only if you are very certain about this, 
+          because it means truely never.
+
+(5) In the CleanIDE choose the command "Environment:Import...".
+    On a 32bit Windows machine, direct the file selector dialog to 
+       SoccerFun\src\SoccerFun.env 
+    and import the environment.
+    On a 64bit Windows machine, direct the file selector dialog to
+       SoccerFun\src\SoccerFun64.env
+    and import the environment.
+
+    This will set the default paths for the compiler.
+
+    You need to do this only once for your Clean distribution. 
+
+    This step was successful if the CleanIDE has added "SoccerFun" to its list of
+    environments (command "Environment").
+
+(6) In the folder StdTeam you find a sparring team, created by Marc Schoolderman, that you can play against:
+    - Team_Harmless32.zip
+    - Team_Harmless64.zip
+    On a 32bit Windows machine, unzip Team_Harmless32.zip; on a 64bit Windows machine, unzip Team_Harmless64.zip.
+    - In both versions, you find a file Team_Harmless.dcl. Move it to the StdTeam folder.
+    - In both versions, you find a Clean System Files folder, containing Team_Harmless.abc. Move the folder to the 
+      StdTeam folder. If you already had a Clean System Files folder, then the file Team_Harmless.abc will be moved
+      into that folder.
+    
+(7) Now you can open (command "File:Open...") the project file at 
+    Examples\SoccerFun\src\SoccerFun.prj.
+
+(8) Make sure the Environment of the CleanIDE is set to "SoccerFun".
+    Do this with the command "Environment:SoccerFun".
+
+(9) Bring the project up to date with "Project:Bring Up To Date".
+    Now all modules are compiled and an executable is created.
+    The executable can be launched with "Project:Run".
+
+    Note that "Project:Update and Run" combines the latter commands.
+
+(10) If all went well, Soccer-Fun should have started. Have fun!

@@ -1,0 +1,1555 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "randomstream" "20170314161737"
+.module m_randomstream "randomstream" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_RandomExt_srandom
+.implab e__SystemEnum_s_from_then
+.implab e_StdMisc_sabort
+.implab e_StdOrdList_ssortBy
+.implab e_StdOrdList_ssort;9
+.implab e_StdList_s!!
+.impdesc e_StdList_dtakeWhile
+.implab e_StdList_ntakeWhile e_StdList_eatakeWhile
+.implab e_StdList_sfilter
+.implab e_StdList_slength;47
+.impdesc e_StdClass_rIncDec;
+.impdesc e_StdClass_rEnum;
+.impdesc e_StdClass_rOrd;
+.impdesc e_StdString_dtoString;5
+.impdesc e_StdString_dtoString;9
+.implab e_StdReal_sentier
+.impdesc e_StdReal_d+;1
+.impdesc e_StdReal_d-;2
+.implab e_StdReal_s-;2
+.implab e_StdReal_szero;3
+.implab e_StdReal_s*;4
+.implab e_StdReal_s/;5
+.impdesc e_StdReal_done;6
+.implab e_StdReal_sone;6
+.implab e_StdReal_none;6
+.implab e_StdReal_s^;7
+.implab e_StdReal_s==;11
+.impdesc e_StdReal_d<;12
+.implab e_StdReal_s<;12
+.implab e_StdReal_stoReal;13
+.implab e_StdReal_stoReal;15
+.implab e_StdInt_s-;7
+.implab e_StdInt_s*;9
+.impdesc e_StdInt_dabs;13
+.implab e_StdInt_sabs;13
+.implab e_StdInt_nabs;13
+.implab e_StdInt_s==;16
+.impdesc e_StdInt_d<;17
+.implab e_StdInt_sisEven;18
+.implab e_StdInt_sisOdd;19
+.implab e_StdInt_srem;28
+.implab e_StdEnvExt_s<+++
+.implab e_StdEnvExt_sminmax
+.impdesc e_StdOverloaded_r+;
+.impdesc e_StdOverloaded_r-;
+.impdesc e_StdOverloaded_rzero;
+.impdesc e_StdOverloaded_rone;
+.impdesc e_StdOverloaded_r<;
+.impdesc e_StdOverloaded_rtoString;
+.export e_randomstream_sselectMostProbableAction
+.descexp e_randomstream_dselectMostProbableAction e_randomstream_nselectMostProbableAction e_randomstream_lselectMostProbableAction 2 0 "selectMostProbableAction"
+.a 0 a13
+.o 2 0
+e_randomstream_lselectMostProbableAction
+	repl_args 1 1
+.o 2 0
+a13
+.d 2 0
+	jsr ea13
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_randomstream_dselectMostProbableAction
+.o 1 0
+e_randomstream_nselectMostProbableAction
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea13
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea13
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_randomstream_sselectMostProbableAction
+.o 2 0
+s13
+	buildh d27 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdList_sfilter
+.o 1 0
+	buildh d24 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdOrdList_ssortBy
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jmp s34
+.o 2 0
+s34
+	eq_desc _Nil 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	buildh e_StdMaybe_dNothing 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+case.2
+	push_args 0 2 2
+	update_a 0 1
+	pop_a 1
+	jsr_eval 0
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr s9
+.o 1 1 r
+	push_a 1
+	buildh d28 1
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_dtakeWhile 2 e_StdList_ntakeWhile
+	buildR_b 0
+	push_a 4
+	build _ 3 n37
+	build d_S.2 -1 n_S.2
+	buildh e_StdMaybe_dJust 1
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 5
+	updatepop_a 0 4
+	pop_b 1
+.d 2 0
+	rtn
+.n 3 _ ea37
+.o 1 0
+n37
+	push_node _cycle_in_spine 3
+.o 4 0
+ea37
+.o 4 0
+s37
+	push_a 2
+	jsr_eval 0
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	ItoR
+	push_a 1
+	jsr_eval 0
+	pushR_a 2
+	pop_a 1
+	mulR
+	entierR
+	push_a 0
+	updatepop_a 0 3
+.d 1 1 i
+	jsr e_StdList_s!!
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d28 _hnf l28 2 0 "<lambda>[line:15];13;27"
+.a 0 a28
+.o 2 0
+l28
+	repl_args 1 1
+.o 2 0
+a28
+.d 2 0
+	jsr ea28
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea28
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	jsr_eval 2
+	pushR_a 0
+	pushR_a 2
+	update_a 1 3
+	pop_a 3
+.o 1 2 rr
+s28
+	push_a 0
+	buildR_b 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s22
+.o 1 0
+	pushR_a 0
+	pop_a 1
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	eqR
+.d 0 1 b
+	rtn
+.desc d27 _hnf l27 1 0 "<lambda>[line:96];56;26"
+.o 2 0
+l27
+	pop_a 1
+.d 1 0
+	jsr ea27
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea27
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 1 1 r
+s27
+	pushR 0.0
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+	ltR
+.d 0 1 b
+	rtn
+.desc d24 _hnf l24 2 0 "<lambda>[line:96];20;23"
+.a 0 a24
+.o 2 0
+l24
+	repl_args 1 1
+.o 2 0
+a24
+.d 2 0
+	jsr ea24
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea24
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	pushR_a 2
+	pushR_a 0
+	update_a 3 5
+	update_a 1 4
+	pop_a 4
+.o 2 2 rr
+s24
+	push_b 0
+	push_b 2
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 2
+	ltR
+.d 0 1 b
+	rtn
+.o 2 0
+s22
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.export e_randomstream_smakeRandomRealisticSkilled
+.descexp e_randomstream_dmakeRandomRealisticSkilled e_randomstream_nmakeRandomRealisticSkilled e_randomstream_lmakeRandomRealisticSkilled 1 0 "makeRandomRealisticSkilled"
+.o 2 0
+e_randomstream_lmakeRandomRealisticSkilled
+	pop_a 1
+.d 1 0
+	jsr ea12
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dmakeRandomRealisticSkilled
+.o 1 0
+e_randomstream_nmakeRandomRealisticSkilled
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea12
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea12
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 0 1 r
+e_randomstream_smakeRandomRealisticSkilled
+.o 0 1 r
+s12
+	pushR 10.0
+	push_b 1
+	powR
+	pushR 1.0
+	update_b 1 2
+	updatepop_b 0 1
+	subR
+.d 0 1 r
+	rtn
+.export e_randomstream_smakeRandomRealistic
+.descexp e_randomstream_dmakeRandomRealistic e_randomstream_nmakeRandomRealistic e_randomstream_lmakeRandomRealistic 1 0 "makeRandomRealistic"
+.o 2 0
+e_randomstream_lmakeRandomRealistic
+	pop_a 1
+.d 1 0
+	jsr ea11
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dmakeRandomRealistic
+.o 1 0
+e_randomstream_nmakeRandomRealistic
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea11
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea11
+	jsr_eval 0
+	pushR_a 0
+	pop_a 1
+.o 0 1 r
+e_randomstream_smakeRandomRealistic
+.o 0 1 r
+s11
+	pushR 4.0
+	push_b 1
+	powR
+	pushR 1.0
+	update_b 1 2
+	updatepop_b 0 1
+	subR
+.d 0 1 r
+	rtn
+.export e_randomstream_snext1
+.descexp e_randomstream_dnext1 e_randomstream_nnext1 e_randomstream_lnext1 1 0 "next1"
+.o 2 0
+e_randomstream_lnext1
+	pop_a 1
+.d 1 0
+	jsr ea10
+.o 1 1 r
+	push_a 0
+	buildR_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dnext1
+.o 1 0
+e_randomstream_nnext1
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea10
+.o 1 1 r
+	push_a 0
+	buildR_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea10
+	jsr_eval 0
+.o 1 0
+e_randomstream_snext1
+.o 1 0
+s10
+	push_a 0
+	pushR 1.0
+	updatepop_a 0 1
+.d 1 1 r
+	rtn
+.export e_randomstream_snextRandomP
+.descexp e_randomstream_dnextRandomP e_randomstream_nnextRandomP e_randomstream_lnextRandomP 1 0 "nextRandomP"
+.o 2 0
+e_randomstream_lnextRandomP
+	pop_a 1
+.d 1 0
+	jsr ea9
+.o 1 1 r
+	push_a 0
+	buildR_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dnextRandomP
+.o 1 0
+e_randomstream_nnextRandomP
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea9
+.o 1 1 r
+	push_a 0
+	buildR_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea9
+	jsr_eval 0
+.o 1 0
+e_randomstream_snextRandomP
+.o 1 0
+s9
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	pushI 0
+	push_b 1
+	eqI
+	push_b 1
+	push_b 3
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+.d 0 3 bii
+	jsr s33
+.o 0 1 r
+	push_a 0
+	updatepop_a 0 1
+	updatepop_b 0 2
+.d 1 1 r
+	rtn
+.o 0 3 bii
+s33
+	eqB_b TRUE 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	pop_b 3
+	pushR 1.0
+.d 0 1 r
+	rtn
+case.4
+	push_b 2
+	updatepop_b 0 1
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	push_b 0
+	updatepop_b 0 2
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	buildh e_StdInt_d<;17 0
+.d 3 0
+	jsr e_StdEnvExt_sminmax
+.o 2 0
+	pushI_a 1
+	ItoR
+	pushI_a 0
+	ItoR
+	pop_a 2
+	divR
+.d 0 1 r
+	rtn
+.export e_randomstream_snextRandomBool
+.descexp e_randomstream_dnextRandomBool e_randomstream_nnextRandomBool e_randomstream_lnextRandomBool 1 0 "nextRandomBool"
+.o 2 0
+e_randomstream_lnextRandomBool
+	pop_a 1
+.d 1 0
+	jsr ea8
+.o 1 1 b
+	push_a 0
+	buildB_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dnextRandomBool
+.o 1 0
+e_randomstream_nnextRandomBool
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea8
+.o 1 1 b
+	push_a 0
+	buildB_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea8
+	jsr_eval 0
+.o 1 0
+e_randomstream_snextRandomBool
+.o 1 0
+s8
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_b 0
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	push_a 0
+	updatepop_a 0 1
+	updatepop_b 0 1
+.d 1 1 b
+	rtn
+.export e_randomstream_snextRandomReal
+.descexp e_randomstream_dnextRandomReal e_randomstream_nnextRandomReal e_randomstream_lnextRandomReal 1 0 "nextRandomReal"
+.o 2 0
+e_randomstream_lnextRandomReal
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 1 1 r
+	push_a 0
+	buildR_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dnextRandomReal
+.o 1 0
+e_randomstream_nnextRandomReal
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea7
+.o 1 1 r
+	push_a 0
+	buildR_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+.o 1 0
+e_randomstream_snextRandomReal
+.o 1 0
+s7
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	pushI 100
+	push_b 1
+	remI
+	buildI_b 0
+	pop_b 1
+	push_b 1
+	updatepop_b 0 2
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	push_b 0
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	notB
+	updatepop_b 0 1
+.d 0 1 b
+	jsr s32
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "."
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "E"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 1 0
+	jsr e_StdReal_stoReal;15
+.o 0 1 r
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 r
+	rtn
+.o 0 1 b
+s32
+	eqB_b TRUE 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	pop_b 1
+	buildAC "-"
+.d 1 0
+	rtn
+case.6
+	pop_b 1
+	buildAC ""
+.d 1 0
+	rtn
+.export e_randomstream_snextRandomInt
+.descexp e_randomstream_dnextRandomInt e_randomstream_nnextRandomInt e_randomstream_lnextRandomInt 1 0 "nextRandomInt"
+.o 2 0
+e_randomstream_lnextRandomInt
+	pop_a 1
+.d 1 0
+	jsr ea6
+.o 1 1 i
+	push_a 0
+	buildI_b 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_randomstream_dnextRandomInt
+.o 1 0
+e_randomstream_nnextRandomInt
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea6
+.o 1 1 i
+	push_a 0
+	buildI_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea6
+	jsr_eval 0
+.o 1 0
+e_randomstream_snextRandomInt
+.o 1 0
+s6
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_b 1
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	notB
+.d 0 1 b
+	jsr s31
+.o 0 1 i
+	mulI
+	push_a 0
+	updatepop_a 0 1
+	updatepop_b 0 1
+.d 1 1 i
+	rtn
+.o 0 1 b
+s31
+	eqB_b TRUE 0
+	jmp_true case.7
+	jmp case.8
+case.7
+	pop_b 1
+	pushI -1
+.d 0 1 i
+	rtn
+case.8
+	pop_b 1
+	pushI 1
+.d 0 1 i
+	rtn
+.export e_randomstream_sonesStream
+.export e_randomstream_eaonesStream
+.descexp e_randomstream_donesStream e_randomstream_nonesStream e_randomstream_lonesStream 0 0 "onesStream"
+.o 1 0
+e_randomstream_lonesStream
+	halt
+.n 0 e_randomstream_donesStream e_randomstream_eaonesStream
+.o 1 0
+e_randomstream_nonesStream
+	push_node _cycle_in_spine 0
+.o 1 0
+e_randomstream_eaonesStream
+.o 1 0
+e_randomstream_sonesStream
+.o 1 0
+s5
+	build _ 0 e_StdReal_none;6
+	build _ 0 e_StdReal_none;6
+	pushR 0.0
+	buildR_b 0
+	pop_b 1
+	pushR 1.0
+	buildR_b 0
+	pop_b 1
+	buildh e_StdReal_d-;2 0
+	buildh e_StdReal_d+;1 0
+	build_r e_StdClass_rIncDec; 4 0 0 0
+	updatepop_a 0 4
+	buildh e_StdReal_d<;12 0
+.d 5 0
+	jmp e__SystemEnum_s_from_then
+.export e_randomstream_sprobabilityRandomStream
+.export e_randomstream_eaprobabilityRandomStream
+.descexp e_randomstream_dprobabilityRandomStream e_randomstream_nprobabilityRandomStream e_randomstream_lprobabilityRandomStream 1 0 "probabilityRandomStream"
+.o 2 0
+e_randomstream_lprobabilityRandomStream
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_randomstream_eaprobabilityRandomStream
+.n 1 e_randomstream_dprobabilityRandomStream e_randomstream_eaprobabilityRandomStream
+.o 1 0
+e_randomstream_nprobabilityRandomStream
+	push_node _cycle_in_spine 1
+.o 2 0
+e_randomstream_eaprobabilityRandomStream
+	jsr_eval 0
+.o 2 0
+e_randomstream_sprobabilityRandomStream
+.o 2 0
+s4
+	buildh d19 0
+	push_a 1
+	pushI 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 1 i
+	jmp s14
+.desc d19 _hnf l19 1 0 "createProbability;18"
+.o 2 0
+l19
+	pop_a 1
+.d 1 0
+	jsr ea19
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea19
+	jsr_eval 0
+.o 1 0
+s19
+	eq_desc _Cons 2 0
+	jmp_true case.9
+	jmp case.10
+case.9
+	repl_args 2 2
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.11
+	pop_a 1
+	jmp case.10
+case.11
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.12
+	pop_a 3
+	jmp case.10
+case.12
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 0
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	jmp_false else.13
+	pop_a 4
+	pushR 1.0
+.d 0 1 r
+	rtn
+else.13
+	buildh _Nil 0
+	push_a 1
+	build _ 1 e_StdInt_nabs;13
+	buildh _Cons 2
+	push_a 3
+	build _ 1 e_StdInt_nabs;13
+	buildh _Cons 2
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jsr e_StdOrdList_ssort;9
+.o 1 0
+	eq_desc _Cons 2 0
+	exit_false selector_m_error
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	push_a 0
+	eq_desc _Cons 2 0
+	exit_false selector_m_error
+	repl_args 2 2
+	jsr_eval 0
+	pushI_a 0
+	pop_a 2
+	ItoR
+	push_b 1
+	ItoR
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 1
+	divR
+.d 0 1 r
+	rtn
+case.10
+	buildAC "Fatal error: probabilityRandomStream applied to unexpected number of integers.\n"
+	updatepop_a 0 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	pushR_a 0
+	pop_a 1
+.d 0 1 r
+	rtn
+.export e_randomstream_sboolRandomStream
+.export e_randomstream_eaboolRandomStream
+.descexp e_randomstream_dboolRandomStream e_randomstream_nboolRandomStream e_randomstream_lboolRandomStream 1 0 "boolRandomStream"
+.o 2 0
+e_randomstream_lboolRandomStream
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_randomstream_eaboolRandomStream
+.n 1 e_randomstream_dboolRandomStream e_randomstream_eaboolRandomStream
+.o 1 0
+e_randomstream_nboolRandomStream
+	push_node _cycle_in_spine 1
+.o 2 0
+e_randomstream_eaboolRandomStream
+	jsr_eval 0
+.o 2 0
+e_randomstream_sboolRandomStream
+.o 2 0
+s3
+	buildh d18 0
+	push_a 1
+	pushI 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 1 i
+	jmp s14
+.desc d18 _hnf l18 1 0 "createBool;17"
+.o 2 0
+l18
+	pop_a 1
+.d 1 0
+	jsr ea18
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea18
+	jsr_eval 0
+.o 1 0
+s18
+	eq_desc _Cons 2 0
+	jmp_true case.14
+	jmp case.15
+case.14
+	repl_args 2 2
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.16
+	pop_a 1
+	jmp case.15
+case.16
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 2
+	pushI 1
+	and%
+	pushI 0
+	eqI
+.d 0 1 b
+	rtn
+case.15
+	buildAC "Fatal error: boolRandomStream applied to unexpected number of integers.\n"
+	updatepop_a 0 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	pushB_a 0
+	pop_a 1
+.d 0 1 b
+	rtn
+.export e_randomstream_srealRandomStream
+.export e_randomstream_earealRandomStream
+.descexp e_randomstream_drealRandomStream e_randomstream_nrealRandomStream e_randomstream_lrealRandomStream 1 0 "realRandomStream"
+.o 2 0
+e_randomstream_lrealRandomStream
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_randomstream_earealRandomStream
+.n 1 e_randomstream_drealRandomStream e_randomstream_earealRandomStream
+.o 1 0
+e_randomstream_nrealRandomStream
+	push_node _cycle_in_spine 1
+.o 2 0
+e_randomstream_earealRandomStream
+	jsr_eval 0
+.o 2 0
+e_randomstream_srealRandomStream
+.o 2 0
+s2
+	buildh d17 0
+	push_a 1
+	pushI 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 1 i
+	jmp s14
+.desc d17 _hnf l17 1 0 "createReal;16"
+.o 2 0
+l17
+	pop_a 1
+.d 1 0
+	jsr ea17
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea17
+	jsr_eval 0
+.o 1 0
+s17
+	eq_desc _Cons 2 0
+	jmp_true case.17
+	jmp case.18
+case.17
+	repl_args 2 2
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.19
+	pop_a 1
+	jmp case.18
+case.19
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.20
+	pop_a 3
+	jmp case.18
+case.20
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.21
+	pop_a 5
+	jmp case.18
+case.21
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.22
+	pop_a 7
+	jmp case.18
+case.22
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 100
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	remI
+	buildI_b 0
+	pop_b 1
+	push_a 3
+	jsr_eval 0
+	pushI_a 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 2
+	pop_a 1
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	push_a 6
+	jsr_eval 0
+	pushI_a 7
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+	push_a 9
+	jsr_eval 0
+	pushI_a 10
+	pop_a 1
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	notB
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 0 1 b
+	jsr s30
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "."
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "E"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 1 0
+	jmp e_StdReal_stoReal;15
+case.18
+	buildAC "Fatal error: realRandomStream applied to unexpected number of integers.\n"
+	updatepop_a 0 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	pushR_a 0
+	pop_a 1
+.d 0 1 r
+	rtn
+.o 0 1 b
+s30
+	eqB_b TRUE 0
+	jmp_true case.23
+	jmp case.24
+case.23
+	pop_b 1
+	buildAC "-"
+.d 1 0
+	rtn
+case.24
+	pop_b 1
+	buildAC ""
+.d 1 0
+	rtn
+.export e_randomstream_sintRandomStream
+.export e_randomstream_eaintRandomStream
+.descexp e_randomstream_dintRandomStream e_randomstream_nintRandomStream e_randomstream_lintRandomStream 1 0 "intRandomStream"
+.o 2 0
+e_randomstream_lintRandomStream
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_randomstream_eaintRandomStream
+.n 1 e_randomstream_dintRandomStream e_randomstream_eaintRandomStream
+.o 1 0
+e_randomstream_nintRandomStream
+	push_node _cycle_in_spine 1
+.o 2 0
+e_randomstream_eaintRandomStream
+	jsr_eval 0
+.o 2 0
+e_randomstream_sintRandomStream
+.o 2 0
+s1
+	buildh d16 0
+	push_a 1
+	pushI 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 1 i
+	jmp s14
+.nu 2 1 _ _
+.o 1 0
+n14
+	push_node_u _cycle_in_spine 2 1
+.o 3 1 i
+ea14
+	jsr_eval 1
+.o 3 1 i
+s14
+	push_a 1
+	push_b 0
+	build_u _ 1 1 n15
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 2
+	push_b 0
+	build_u _ 2 1 n14
+	push_a 1
+	build d_S.1 -1 n_S.1
+	push_a 3
+	build e_system_dAP 2 e_system_nAP
+	fillh _Cons 2 5
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.nu 1 1 _
+.o 1 0
+n15
+	push_node_u _cycle_in_spine 1 1
+.d 1 1 i
+	jsr ea15
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 1 i
+ea15
+.o 1 1 i
+s15
+	eqI_b 0 0
+	jmp_true case.25
+	jmp case.26
+case.25
+	buildh _Nil 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+	pop_b 1
+.d 2 0
+	rtn
+case.26
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	pushI 1
+	push_b 2
+	subI
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 i
+	jsr s15
+.o 2 0
+	push_a 0
+	buildI_b 0
+	buildh _Cons 2
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	pop_b 2
+.d 2 0
+	rtn
+.desc d16 _hnf l16 1 0 "createInt;15"
+.o 2 0
+l16
+	pop_a 1
+.d 1 0
+	jsr ea16
+.o 0 1 i
+	buildI_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea16
+	jsr_eval 0
+.o 1 0
+s16
+	eq_desc _Cons 2 0
+	jmp_true case.27
+	jmp case.28
+case.27
+	repl_args 2 2
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.29
+	pop_a 1
+	jmp case.28
+case.29
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.30
+	pop_a 3
+	jmp case.28
+case.30
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	update_a 2 3
+	pop_a 3
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	notB
+	pop_a 1
+.d 0 1 b
+	jsr s29
+.o 0 1 i
+	mulI
+.d 0 1 i
+	rtn
+case.28
+	buildAC "Fatal error: intRandomStream applied to unexpected number of integers.\n"
+	updatepop_a 0 1
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	pushI_a 0
+	pop_a 1
+.d 0 1 i
+	rtn
+.o 0 1 b
+s29
+	eqB_b TRUE 0
+	jmp_true case.31
+	jmp case.32
+case.31
+	pop_b 1
+	pushI -1
+.d 0 1 i
+	rtn
+case.32
+	pop_b 1
+	pushI 1
+.d 0 1 i
+	rtn

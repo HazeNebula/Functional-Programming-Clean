@@ -1,0 +1,9157 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdDebug" "20170131202634"
+.depend "RangeSlider" "20170314161737"
+.depend "textdisplay" "20170314161737"
+.depend "digitdisplay" "20170314161737"
+.depend "StdIOExt" "20170314161737"
+.depend "fileIO" "20170314161737"
+.depend "StdWindow" "20170131202631"
+.depend "StdWindowAttribute" "20170131202631"
+.depend "StdTimer" "20170131202631"
+.depend "StdTimerReceiver" "20170131202631"
+.depend "StdTimerElementClass" "20170131202631"
+.depend "StdTimerAttribute" "20170131202631"
+.depend "StdReceiver" "20170131202630"
+.depend "StdReceiverAttribute" "20170131202630"
+.depend "StdMenu" "20170131202630"
+.depend "StdMenuElement" "20170131202630"
+.depend "StdMenuReceiver" "20170131202630"
+.depend "StdMenuElementClass" "20170131202630"
+.depend "StdMenuAttribute" "20170131202630"
+.depend "StdControl" "20170131202630"
+.depend "StdReceiverDef" "20170131202630"
+.depend "StdControlReceiver" "20170131202630"
+.depend "StdControlClass" "20170131202630"
+.depend "StdControlAttribute" "20170131202630"
+.depend "StdPrintText" "20170131202630"
+.depend "osprint" "20170131202632"
+.depend "StdPrint" "20170131202630"
+.depend "StdClipboard" "20170131202630"
+.depend "StdProcess" "20170131202630"
+.depend "StdProcessAttribute" "20170131202630"
+.depend "StdProcessDef" "20170131202630"
+.depend "StdSystem" "20170131202631"
+.depend "StdFileSelect" "20170131202630"
+.depend "StdPStClass" "20170131202630"
+.depend "StdId" "20170131202630"
+.depend "StdIO" "20170131202630"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "render" "20170314161737"
+.depend "guiInterface" "20170314161737"
+.depend "matchLog" "20170314161737"
+.depend "matchGame" "20170314161737"
+.depend "GamePicture" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.depend "Referee" "20170314161737"
+.depend "matchControl" "20170314161737"
+.depend "Gui2D" "20170314161737"
+.module m_Gui2D "Gui2D" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_StdDebug_strace_n;6
+.implab e_RangeSlider_sopenRangeSliderId
+.impdesc e_RangeSlider_dcontrolToHandles;5
+.impdesc e_RangeSlider_dgetControlType;6
+.impdesc e_RangeSlider_rRange
+.impdesc e_RangeSlider_tRange
+.implab e_RangeSlider_cRange
+.impdesc e_textdisplay_dopenTextDisplayId
+.implab e_textdisplay_sopenTextDisplayId
+.implab e_textdisplay_ssetTextDisplayText
+.impdesc e_textdisplay_dcontrolToHandles;3
+.impdesc e_textdisplay_dgetControlType;4
+.impdesc e_digitdisplay_dopenDigitDisplayId
+.implab e_digitdisplay_ssetDigitDisplayValue
+.impdesc e_digitdisplay_dcontrolToHandles;3
+.impdesc e_digitdisplay_dgetControlType;4
+.impdesc e_digitdisplay_kIntegerFormat
+.implab e_StdIOExt_smakeSound
+.impdesc e_StdWindow_dcloseWindow
+.implab e_StdWindow_scloseWindow
+.impdesc e_StdWindow_dcloseActiveWindow
+.impdesc e_StdWindow_dsetWindowViewSize
+.implab e_StdWindow_sopenWindow;55
+.implab e_StdWindow_sopenModalDialog;58
+.impdesc e_StdTimer_dcloseTimer
+.impdesc e_StdTimer_denableTimer
+.impdesc e_StdTimer_ddisableTimer
+.impdesc e_StdTimer_dsetTimerInterval
+.implab e_StdTimer_sopenTimer;8
+.impdesc e_StdTimerElementClass_dgetTimerElementType;6
+.impdesc e_StdTimerElementClass_dtimerElementToHandles;7
+.impdesc e_StdTimerElementClass_rTimerElements;
+.implab e_StdMenu_sopenMenu;18
+.impdesc e_StdMenuElement_dmarkMenuItems
+.impdesc e_StdMenuElement_dunmarkMenuItems
+.impdesc e_StdMenuElementClass_dgetMenuElementType;8
+.impdesc e_StdMenuElementClass_dmenuElementToHandles;9
+.impdesc e_StdMenuElementClass_dgetMenuElementType;10
+.impdesc e_StdMenuElementClass_dmenuElementToHandles;11
+.impdesc e_StdMenuElementClass_dgetMenuElementType;12
+.impdesc e_StdMenuElementClass_dmenuElementToHandles;13
+.impdesc e_StdMenuElementClass_dgetMenuElementType;14
+.impdesc e_StdMenuElementClass_dmenuElementToHandles;15
+.impdesc e_StdMenuElementClass_dgetMenuElementType;16
+.impdesc e_StdMenuElementClass_dmenuElementToHandles;17
+.impdesc e_StdMenuElementClass_rMenuElements;
+.impdesc e_StdMenuElementClass_tMenuElements;
+.implab e_StdMenuElementClass_cMenuElements;
+.implab e_StdControl_sopenControls
+.impdesc e_StdControl_dcloseAllControls
+.implab e_StdControl_smarkCheckControlItems
+.implab e_StdControl_sunmarkCheckControlItems
+.impdesc e_StdControl_dsetControlText
+.implab e_StdControl_ssetControlText
+.implab e_StdControl_ssetControlLook
+.impdesc e_StdControl_dgetWindow
+.implab e_StdControl_sgetCheckControlSelection
+.impdesc e_StdControlClass_dcontrolToHandles;4
+.impdesc e_StdControlClass_dgetControlType;5
+.impdesc e_StdControlClass_dcontrolToHandles;8
+.impdesc e_StdControlClass_dgetControlType;9
+.impdesc e_StdControlClass_dcontrolToHandles;10
+.impdesc e_StdControlClass_dgetControlType;11
+.impdesc e_StdControlClass_dcontrolToHandles;12
+.impdesc e_StdControlClass_dgetControlType;13
+.impdesc e_StdControlClass_dcontrolToHandles;14
+.impdesc e_StdControlClass_dgetControlType;15
+.impdesc e_StdControlClass_dcontrolToHandles;18
+.impdesc e_StdControlClass_dgetControlType;19
+.impdesc e_StdControlClass_dcontrolToHandles;22
+.impdesc e_StdControlClass_dgetControlType;23
+.impdesc e_StdControlClass_dcontrolToHandles;26
+.impdesc e_StdControlClass_dgetControlType;27
+.impdesc e_StdControlClass_dcontrolToHandles;30
+.impdesc e_StdControlClass_dgetControlType;31
+.impdesc e_StdControlClass_rControls;
+.impdesc e_StdControlClass_tControls;
+.implab e_StdControlClass_cControls;
+.implab e_StdProcess_sstartIO
+.impdesc e_StdProcess_dcloseProcess
+.implab e_StdProcess_scloseProcess
+.impdesc e_StdSystem_dticksPerSecond
+.implab e_StdSystem_sticksPerSecond
+.implab e_StdSystem_nticksPerSecond
+.impdesc e_StdPStClass_dfclose;0
+.implab e_StdPStClass_sfclose;0
+.impdesc e_StdPStClass_dfopen;1
+.implab e_StdPStClass_sfopen;1
+.impdesc e_StdPStClass_dsfopen;2
+.impdesc e_StdPStClass_dstdio;3
+.impdesc e_StdPStClass_dfclose;4
+.impdesc e_StdPStClass_dfopen;5
+.impdesc e_StdPStClass_dsfopen;6
+.impdesc e_StdPStClass_dstdio;7
+.impdesc e_StdId_dopenId;1
+.impdesc e_StdId_dopenIds;2
+.implab e_StdId_sopenIds;2
+.impdesc e_StdId_dopenR2Id;3
+.impdesc e_StdId_dopenR2Ids;4
+.impdesc e_StdId_dopenRId;5
+.impdesc e_StdId_dopenRIds;6
+.impdesc e_StdId_dopenId;13
+.implab e_StdId_sopenId;13
+.impdesc e_StdId_dopenIds;14
+.impdesc e_StdId_dopenR2Id;15
+.impdesc e_StdId_dopenR2Ids;16
+.impdesc e_StdId_dopenRId;17
+.impdesc e_StdId_dopenRIds;18
+.impdesc e_StdId_rIds;
+.impdesc e_StdId_tIds;
+.implab e_StdId_cIds;
+.impdesc e_iostate_rPSt
+.impdesc e_StdPSt_dappPIO
+.implab e_StdPSt_sappPIO
+.implab e_StdPSt_nappPIO
+.implab e_StdPSt_saccPIO
+.impdesc e_StdPSt_daccScreenPicture;13
+.impdesc e_StdPSt_raccScreenPicture;
+.impdesc e_StdPSt_taccScreenPicture;
+.implab e_StdPSt_caccScreenPicture;
+.impdesc e_render_dallRenderStyles
+.implab e_render_nallRenderStyles e_render_eaallRenderStyles
+.impdesc e_render_drenderAttributes
+.impdesc e_render_dWestColour
+.implab e_render_nWestColour e_render_eaWestColour
+.impdesc e_render_dEastColour
+.implab e_render_nEastColour e_render_eaEastColour
+.impdesc e_render_dnameOf;4
+.implab e_render_nnameOf;4
+.impdesc e_render_dRenderStyle.look
+.implab e_render_nRenderStyle.look e_render_eaRenderStyle.look
+.implab e_guiInterface_sgetSplashImageForGui
+.implab e_guiInterface_sstepMatchForGui
+.implab e_guiInterface_sintervalFactor
+.impdesc e_guiInterface_d==;6
+.implab e_matchLog_sgetWhatToLog
+.implab e_matchGame_sincFrames
+.implab e_matchGame_sgetOptions
+.implab e_matchGame_ssetOptions
+.implab e_matchGame_scompetition
+.impdesc e_matchGame_dranking
+.implab e_matchGame_nranking e_matchGame_earanking
+.implab e_matchGame_scheckCompetitionFile
+.implab e_matchGame_sappendMatchToCompetitionFile
+.implab e_matchGame_supdateMatchToCompetitionFile
+.implab e_matchGame_s<;17
+.impdesc e_matchGame_rFootballGame
+.impdesc e_matchGame_dFootballGame.match
+.implab e_matchGame_nFootballGame.match
+.impdesc e_matchGame_dFootballGame.options
+.implab e_matchGame_nFootballGame.options
+.impdesc e_matchGame_rOptions
+.impdesc e_matchGame_dOptions.showSplash
+.implab e_matchGame_nOptions.showSplash
+.impdesc e_matchGame_dOptions.displaySpeed
+.implab e_matchGame_nOptions.displaySpeed e_matchGame_eaOptions.displaySpeed
+.impdesc e_matchGame_dOptions.showReferee
+.implab e_matchGame_nOptions.showReferee
+.impdesc e_matchGame_dOptions.renderStyle
+.implab e_matchGame_nOptions.renderStyle
+.impdesc e_matchGame_rHistory
+.impdesc e_matchGame_dCompetition.west
+.implab e_matchGame_nCompetition.west e_matchGame_eaCompetition.west
+.impdesc e_matchGame_dCompetition.usedRandomSeed
+.implab e_matchGame_nCompetition.usedRandomSeed e_matchGame_eaCompetition.usedRandomSeed
+.impdesc e_matchGame_dRank.matchpoints
+.implab e_matchGame_nRank.matchpoints
+.impdesc e_matchGame_dRank.goals_scored
+.implab e_matchGame_nRank.goals_scored
+.impdesc e_matchGame_dRank.goals_against
+.implab e_matchGame_nRank.goals_against
+.impdesc e_GamePicture_dGamePicture.img
+.implab e_GamePicture_nGamePicture.img e_GamePicture_eaGamePicture.img
+.impdesc e_GamePicture_rActionPics
+.implab e_Team_sallAvailableTeams
+.impdesc e_Team_dnameOf;6
+.implab e_Team_snameOf;6
+.implab e_Team_nnameOf;6
+.impdesc e_StdTime_dgetBlinkInterval;4
+.impdesc e_StdTime_dgetCurrentDate;5
+.impdesc e_StdTime_dgetCurrentTick;6
+.impdesc e_StdTime_dgetCurrentTime;7
+.impdesc e_StdTime_rTimeEnv;
+.implab e_RandomExt_sgetNewRandomSeed
+.impdesc e_randomstream_dnextRandomP
+.impdesc e_randomstream_dnext1
+.implab e_Football_szero;4
+.impdesc e_Football_kFree
+.impdesc e_StdPicture_dopenFont
+.impdesc e_StdIOBasic_dnoLS
+.impdesc e_StdIOBasic_dnoLS1
+.impdesc e_StdIOBasic_dzero;11
+.implab e_StdIOBasic_nzero;11
+.impdesc e_StdIOBasic_dzero;21
+.implab e_StdIOBasic_nzero;21
+.impdesc e_StdIOBasic_rVector2
+.impdesc e_StdIOBasic_tVector2
+.implab e_StdIOBasic_cVector2
+.impdesc e_StdIOBasic_rSize
+.impdesc e_StdIOBasic_tSize
+.implab e_StdIOBasic_cSize
+.impdesc e_StdPictureDef_rFontDef
+.impdesc e_StdBitmap_dgetBitmapSize
+.implab e_StdBitmap_ngetBitmapSize
+.impdesc e_StdBitmap_ddrawAt;4
+.impdesc e_StdIOCommon_dstdUnfillNewFrameLook
+.impdesc e_StdIOCommon_dzero;32
+.implab e_StdIOCommon_nzero;32 e_StdIOCommon_eazero;32
+.implab e_StdIOCommon_s==;42
+.implab e__SystemEnum_s_from_then_to
+.implab e__SystemEnum_s_from_to;6
+.implab e_StdMisc_sabort
+.impdesc e_StdMisc_dundef
+.implab e_StdMisc_nundef _
+.impdesc e_StdOrdList_dsortBy
+.implab e_StdOrdList_ssortBy
+.implab e_StdOrdList_nsortBy e_StdOrdList_easortBy
+.implab e_StdOrdList_smaxList
+.impdesc e_StdList_d!!
+.implab e_StdList_n!! _
+.implab e_StdList_sisEmpty
+.implab e_StdList_shd
+.impdesc e_StdList_dmap
+.implab e_StdList_nmap e_StdList_eamap
+.implab e_StdList_srepeatn
+.implab e_StdList_sunzip
+.implab e_StdList_sor
+.implab e_StdList_slength;47
+.implab e_StdList_sisMember;51
+.impdesc e_StdClass_rIncDec;
+.impdesc e_StdClass_tIncDec;
+.implab e_StdClass_cIncDec;
+.impdesc e_StdClass_rEnum;
+.impdesc e_StdClass_rOrd;
+.implab e_StdFile_sfwrites
+.impdesc e_StdFile_dfclose;30
+.impdesc e_StdFile_dfopen;31
+.impdesc e_StdFile_dsfopen;32
+.impdesc e_StdFile_dstdio;33
+.impdesc e_StdFile_rFileSystem;
+.impdesc e_StdFile_tFileSystem;
+.implab e_StdFile_cFileSystem;
+.impdesc e_StdString_d==;2
+.implab e_StdString_s==;2
+.impdesc e_StdString_dtoString;5
+.implab e_StdString_ntoString;5
+.impdesc e_StdString_dtoString;9
+.implab e_StdString_s+++;11
+.impdesc e_StdReal_d+;1
+.impdesc e_StdReal_d-;2
+.impdesc e_StdReal_dzero;3
+.implab e_StdReal_nzero;3
+.implab e_StdReal_s*;4
+.implab e_StdReal_s/;5
+.impdesc e_StdReal_done;6
+.implab e_StdReal_none;6
+.impdesc e_StdReal_d<;12
+.implab e_StdReal_stoReal;13
+.impdesc e_StdInt_d+;6
+.implab e_StdInt_s+;6
+.implab e_StdInt_n+;6
+.impdesc e_StdInt_d-;7
+.implab e_StdInt_s-;7
+.implab e_StdInt_n-;7
+.impdesc e_StdInt_dzero;8
+.implab e_StdInt_nzero;8
+.implab e_StdInt_s*;9
+.implab e_StdInt_s/;10
+.implab e_StdInt_sone;11
+.impdesc e_StdInt_d~;15
+.implab e_StdInt_n~;15
+.implab e_StdInt_s<;17
+.implab e_StdInt_stoInt;22
+.implab e_StdBool_snot
+.impdesc e_StdBool_d==;3
+.impdesc e_StdEnvExt_dconst2
+.implab e_StdEnvExt_ssseqList
+.impdesc e_StdEnvExt_dapply
+.implab e_StdEnvExt_sapply
+.implab e_StdEnvExt_napply e_StdEnvExt_eaapply
+.implab e_StdEnvExt_s??
+.implab e_StdEnvExt_s<+++
+.implab e_StdEnvExt_s+++>
+.implab e_StdEnvExt_stoString;48
+.impdesc e_StdOverloaded_r+;
+.impdesc e_StdOverloaded_t+;
+.implab e_StdOverloaded_c+;
+.impdesc e_StdOverloaded_r-;
+.impdesc e_StdOverloaded_t-;
+.implab e_StdOverloaded_c-;
+.impdesc e_StdOverloaded_rzero;
+.impdesc e_StdOverloaded_tzero;
+.implab e_StdOverloaded_czero;
+.impdesc e_StdOverloaded_rone;
+.impdesc e_StdOverloaded_tone;
+.implab e_StdOverloaded_cone;
+.impdesc e_StdOverloaded_r==;
+.impdesc e_StdOverloaded_r<;
+.impdesc e_StdOverloaded_rtoString;
+.impdesc e_StdFunc_did
+.impdesc e_StdFunc_dconst
+.implab e_StdMaybe_sisNothing
+.implab e_StdMaybe_sfromJust
+.implab e_Footballer_sgetDefaultField
+.impdesc e_Footballer_dshowSuccintRefereeAction
+.implab e_Footballer_nshowSuccintRefereeAction
+.implab e_Footballer_sisGameOver
+.impdesc e_Footballer_disPauseGame
+.impdesc e_Footballer_disAddTime
+.impdesc e_Footballer_disDirectFreeKick
+.impdesc e_Footballer_disCenterKick
+.impdesc e_Footballer_disDisplacePlayers
+.impdesc e_Footballer_disContinueGame
+.implab e_Footballer_s==;78
+.implab e_Footballer_s==;81
+.impdesc e_Footballer_d<;98
+.impdesc e_Footballer_d==;99
+.impdesc e_Footballer_dtoString;103
+.implab e_Footballer_stoString;103
+.implab e_Footballer_ntoString;103
+.impdesc e_Footballer_dminutes;105
+.impdesc e_Referee_dallAvailableReferees
+.implab e_Referee_sallAvailableReferees
+.implab e_Referee_nallAvailableReferees e_Referee_eaallAvailableReferees
+.impdesc e_Referee_ddefaultImage
+.implab e_Referee_sdefaultSoundFile
+.impdesc e_Referee_dnameOf;7
+.implab e_Referee_snameOf;7
+.implab e_Referee_nnameOf;7
+.implab e_matchControl_ss
+.implab e_matchControl_ssetMatchStart
+.implab e_matchControl_stoReal;10
+.impdesc e_matchControl_rMatch
+.impdesc e_matchControl_dMatch.team1
+.implab e_matchControl_nMatch.team1 e_matchControl_eaMatch.team1
+.impdesc e_matchControl_dMatch.team2
+.implab e_matchControl_nMatch.team2 e_matchControl_eaMatch.team2
+.impdesc e_matchControl_dMatch.theField
+.implab e_matchControl_nMatch.theField
+.impdesc e_matchControl_dMatch.theReferee
+.implab e_matchControl_nMatch.theReferee
+.impdesc e_matchControl_dMatch.playingHalf
+.implab e_matchControl_nMatch.playingHalf e_matchControl_eaMatch.playingHalf
+.impdesc e_matchControl_dMatch.playingTime
+.implab e_matchControl_nMatch.playingTime e_matchControl_eaMatch.playingTime
+.impdesc e_matchControl_dMatch.unittime
+.implab e_matchControl_nMatch.unittime e_matchControl_eaMatch.unittime
+.export e_Gui2D_sSoccerFunGUI2D
+.export e_Gui2D_eaSoccerFunGUI2D
+.descexp e_Gui2D_dSoccerFunGUI2D e_Gui2D_nSoccerFunGUI2D e_Gui2D_lSoccerFunGUI2D 1 0 "SoccerFunGUI2D"
+.o 2 0
+e_Gui2D_lSoccerFunGUI2D
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Gui2D_eaSoccerFunGUI2D
+.n 1 e_Gui2D_dSoccerFunGUI2D e_Gui2D_eaSoccerFunGUI2D
+.o 1 0
+e_Gui2D_nSoccerFunGUI2D
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Gui2D_eaSoccerFunGUI2D
+	jsr_eval 0
+.o 2 0
+e_Gui2D_sSoccerFunGUI2D
+.o 2 0
+s1
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s124
+.o 6 1 i
+	push_a 5
+	pushI 4
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 1 1 i
+	jsr e_StdId_sopenIds;2
+.o 2 0
+	buildh e_StdId_dopenRIds;6 0
+	buildh e_StdId_dopenRId;5 0
+	buildh e_StdId_dopenR2Ids;4 0
+	buildh e_StdId_dopenR2Id;3 0
+	buildh e_StdId_dopenIds;2 0
+	buildh e_StdId_dopenId;1 0
+	build e_StdId_tIds; 6 e_StdId_cIds;
+	buildh e_digitdisplay_dopenDigitDisplayId 1
+	create
+	pushI 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 i
+	jsr e_StdList_srepeatn
+.o 1 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdEnvExt_ssseqList
+.o 2 0
+	buildh e_StdId_dopenRIds;6 0
+	buildh e_StdId_dopenRId;5 0
+	buildh e_StdId_dopenR2Ids;4 0
+	buildh e_StdId_dopenR2Id;3 0
+	buildh e_StdId_dopenIds;2 0
+	buildh e_StdId_dopenId;1 0
+	build e_StdId_tIds; 6 e_StdId_cIds;
+	buildh e_textdisplay_dopenTextDisplayId 1
+	create
+	pushI 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 1 i
+	jsr e_StdList_srepeatn
+.o 1 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdEnvExt_ssseqList
+.o 2 0
+	buildh e_StdId_dopenRIds;6 0
+	buildh e_StdId_dopenRId;5 0
+	buildh e_StdId_dopenR2Ids;4 0
+	buildh e_StdId_dopenR2Id;3 0
+	buildh e_StdId_dopenIds;2 0
+	buildh e_StdId_dopenId;1 0
+	push_a 7
+	push_a 6
+	update_a 1 7
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 7 0
+	jsr e_textdisplay_sopenTextDisplayId
+.o 3 0
+	buildh _Nil 0
+	buildh e_StdProcess_dcloseProcess 0
+	buildh e_StdIOCommon_dProcessClose 1
+	buildh _Cons 2
+	build_r e_textdisplay_rTextDisplayId 2 0 1 0
+	push_a 5
+	push_a 7
+	push_a 9
+	buildh _Tuple 4
+	buildh d29 1
+	build_r e_matchGame_rFootballGame 5 1 8 0
+	buildh e_StdIOCommon_dSDI 0
+	push_a 6
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+	pop_b 1
+.d 6 0
+	jmp e_StdProcess_sstartIO
+.o 1 0
+s124
+	create
+.d 1 0
+	jsr e_Team_sallAvailableTeams
+.o 1 0
+	push_a 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.1
+	buildAC "There are no teams.\nPlease add teams to \"allAvailableTeams\" in the \"Team\"-module\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 5 1
+.d 6 1 i
+	rtn
+else.1
+	create
+.d 1 0
+	jsr e_Referee_sallAvailableReferees
+.o 1 0
+	push_a 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.2
+	buildAC "There are no referees.\nPlease add referees to \"allAvailableReferees\" in the \"Referee\"-module\n"
+	updatepop_a 0 3
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 5 1
+.d 6 1 i
+	rtn
+else.2
+.d 0 0
+	jsr e_Footballer_sgetDefaultField
+.o 2 0
+	buildh e_StdFile_dstdio;33 0
+	buildh e_StdFile_dsfopen;32 0
+	buildh e_StdFile_dfopen;31 0
+	buildh e_StdFile_dfclose;30 0
+	push_a 8
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 5 0
+	jsr e_matchLog_sgetWhatToLog
+.o 1 4 bbbb
+	buildh e_StdFile_dstdio;33 0
+	buildh e_StdFile_dsfopen;32 0
+	buildh e_StdFile_dfopen;31 0
+	buildh e_StdFile_dfclose;30 0
+	push_a 4
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 5 0
+	jsr e_matchGame_sgetOptions
+.o 4 3 bbb
+	buildh e_StdTime_dgetCurrentTime;7 0
+	buildh e_StdTime_dgetCurrentTick;6 0
+	buildh e_StdTime_dgetCurrentDate;5 0
+	buildh e_StdTime_dgetBlinkInterval;4 0
+	push_a 7
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+.d 5 0
+	jsr e_RandomExt_sgetNewRandomSeed
+.o 2 0
+	build_r e_matchLog_rWhatToLog 0 4 0 3
+	build_r e_matchGame_rOptions 3 3 3 0
+	buildh _Nil 0
+	create
+	pushR 2.0
+.d 1 1 r
+	jsr e_matchControl_ss
+.o 1 0
+	build_r e_matchGame_rHistory 2 0 0 0
+	updatepop_a 0 2
+	buildh _Nil 0
+	push_a 7
+	build_r e_Footballer_rFootballField 2 0 11 0
+	push_a 14
+	buildh _Nil 0
+	update_a 0 16
+	update_a 0 10
+	update_a 0 11
+	update_a 0 12
+	pop_a 1
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	jsr_ap 1
+	repl_r_args 3 0
+	build_r e_Footballer_rFootballField 2 0 14 0
+	buildh e_Footballer_dEast 0
+	push_a 19
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	jsr_ap 2
+	build_r e_Footballer_rFootballField 2 0 15 0
+	buildh e_Footballer_dWest 0
+	push_a 20
+	buildh _Nil 0
+	update_a 0 22
+	pop_a 1
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	jsr_ap 2
+	push_a 10
+	push_a 18
+	push_a 18
+	push_a 8
+	update_a 3 9
+	update_a 1 3
+	update_a 4 1
+	update_a 2 4
+	update_a 5 2
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 0 8
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 20
+	update_a 0 21
+	update_a 0 14
+	pop_a 1
+.d 9 0
+	jsr e_matchControl_ssetMatchStart
+.o 11 2 ii
+	build_r e_matchControl_rMatch 11 2 0 0
+	updatepop_a 0 11
+	pop_b 2
+	pushI 0
+	push_a 6
+	push_a 5
+	update_a 1 6
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 0 5
+	pop_a 1
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	updatepop_b 0 7
+.d 6 1 i
+	rtn
+.desc d29 _hnf l29 2 0 "initGUI;28"
+.a 0 a29
+.o 2 0
+l29
+	repl_args 1 1
+.o 2 0
+a29
+.d 2 0
+	jsr ea29
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 2 0
+ea29
+	jsr_eval 1
+	repl_args 4 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 4 2 0
+	push_r_args 5 2 0
+	update_a 3 8
+	update_a 5 3
+	update_a 0 5
+	update_a 2 7
+	update_a 4 2
+	update_a 6 4
+	update_a 1 6
+	pop_a 2
+.o 7 0
+s29
+	eq_desc _Cons 2 0
+	jmp_true case.3
+	jmp s29.1
+case.3
+	repl_args 2 2
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.4
+	pop_a 1
+	jmp s29.1
+case.4
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.5
+	pop_a 3
+	jmp s29.1
+case.5
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.6
+	pop_a 5
+	jmp s29.1
+case.6
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.7
+	pop_a 7
+	jmp s29.1
+case.7
+	eq_desc _Cons 2 8
+	jmp_true case.8
+	pop_a 7
+	jmp s29.1
+case.8
+	push_args 8 2 2
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.9
+	pop_a 9
+	jmp s29.1
+case.9
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.10
+	pop_a 11
+	jmp s29.1
+case.10
+	eq_desc _Cons 2 13
+	jmp_true case.11
+	pop_a 11
+	jmp s29.1
+case.11
+	push_args 13 2 2
+	buildh _Nil 0
+	update_a 0 16
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.12
+	pop_a 13
+	jmp s29.1
+case.12
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.13
+	pop_a 15
+	jmp s29.1
+case.13
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.14
+	pop_a 17
+	jmp s29.1
+case.14
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Cons 2 1
+	jmp_true case.15
+	pop_a 19
+	jmp s29.1
+case.15
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 1
+	eq_desc _Nil 0 1
+	jmp_true case.16
+	pop_a 21
+	jmp s29.1
+case.16
+	push_r_args 26 5 1
+	update_a 3 4
+	update_a 0 3
+	pop_a 3
+	pop_b 1
+	buildh e_textdisplay_dgetControlType;4 0
+	buildh e_textdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_digitdisplay_dgetControlType;4 0
+	buildh e_digitdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_digitdisplay_dgetControlType;4 0
+	buildh e_digitdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_textdisplay_dgetControlType;4 0
+	buildh e_textdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 4
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 5
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 6
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 7
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_textdisplay_dgetControlType;4 0
+	buildh e_textdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;19 0
+	buildh e_StdControlClass_dcontrolToHandles;18 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_textdisplay_dgetControlType;4 0
+	buildh e_textdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_textdisplay_dgetControlType;4 0
+	buildh e_textdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_textdisplay_dgetControlType;4 0
+	buildh e_textdisplay_dcontrolToHandles;3 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 4
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 5
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 6
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 7
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 8
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 9
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdPSt_daccScreenPicture;13 0
+	build e_StdPSt_taccScreenPicture; 1 e_StdPSt_caccScreenPicture;
+	buildh e_render_drenderAttributes 1
+	push_a 47
+	push_a 47
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 34 35
+	update_a 32 34
+	update_a 30 33
+	update_a 28 32
+	update_a 26 31
+	update_a 24 30
+	update_a 22 29
+	update_a 21 28
+	update_a 20 27
+	update_a 12 26
+	update_a 3 25
+	update_a 2 24
+	update_a 1 23
+	updatepop_a 0 22
+	buildh _Nil 0
+	update_a 0 28
+	pop_a 1
+.d 3 0
+	jsr e_StdPSt_saccPIO
+.o 3 0
+	buildh _Nil 0
+	buildAC "Bold"
+	buildh ARRAY 1
+	buildh _Cons 2
+	pushI 32
+	buildAC "Courier New"
+	build_r e_StdPictureDef_rFontDef 2 1 0 0
+	update_a 0 2
+	pop_a 2
+	pop_b 1
+	buildh e_StdPicture_dopenFont 1
+	buildh e_StdPSt_daccScreenPicture;13 1
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPSt_saccPIO
+.o 3 0
+	push_a 0
+	buildh _Nil 0
+	buildAC "Bold"
+	buildh ARRAY 1
+	buildh _Cons 2
+	pushI 16
+	buildAC "Courier New"
+	build_r e_StdPictureDef_rFontDef 2 1 0 0
+	update_a 0 2
+	pop_a 2
+	pop_b 1
+	buildh e_StdPicture_dopenFont 1
+	buildh e_StdPSt_daccScreenPicture;13 1
+	push_a 4
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdPSt_saccPIO
+.o 3 0
+	buildh _Nil 0
+	buildAC "Bold"
+	buildh ARRAY 1
+	buildh _Cons 2
+	pushI 12
+	buildAC "Courier New"
+	build_r e_StdPictureDef_rFontDef 2 1 0 0
+	update_a 0 2
+	pop_a 2
+	pop_b 1
+	buildh e_StdPicture_dopenFont 1
+	buildh e_StdPSt_daccScreenPicture;13 1
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPSt_saccPIO
+.o 3 0
+	push_a 0
+	push_r_args_a 9 11 2 5 1
+	build e_Referee_dnameOf;7 1 e_Referee_nnameOf;7
+	buildh _Nil 0
+	push_a 22
+	buildh e_StdWindowDef_dWindowId 1
+	buildh _Cons 2
+	buildh _Nil 0
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	buildh e_StdWindowDef_dWindowPen 1
+	buildh _Cons 2
+	buildh e_StdIOCommon_dstdUnfillNewFrameLook 0
+	buildB FALSE
+	buildh e_StdWindowDef_dWindowLook 2
+	buildh _Cons 2
+	buildI 36
+	buildI 400
+	build _ 2 e_StdInt_n+;6
+	buildI 1
+	buildI 640
+	build _ 2 e_StdInt_n-;7
+	build e_StdIOBasic_tSize 2 e_StdIOBasic_cSize
+	buildh e_StdWindowDef_dWindowViewSize 1
+	buildh _Cons 2
+	buildh _Nil 0
+	buildI 7
+	build _ 1 e_StdInt_n~;15
+	build _ 0 e_StdInt_nzero;8
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh e_StdIOCommon_dOffsetVector 1
+	buildh e_StdIOCommon_dRightBottom 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_arg 4 2 2
+	buildh e_StdPictureDef_dPenFont 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dWhite 0
+	buildh e_StdPictureDef_dPenColour 1
+	buildh _Cons 2
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	push_a 2
+	build _ 1 n169
+	buildI 15
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdIOBasic_tSize 2 e_StdIOBasic_cSize
+	push_a 3
+	push_a 16
+	buildh e_textdisplay_dTextDisplay 4
+	buildh _Nil 0
+	build _ 0 e_StdInt_nzero;8
+	build _ 0 e_StdInt_nzero;8
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh e_StdIOCommon_dOffsetVector 1
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_arg 5 2 2
+	buildh e_StdPictureDef_dPenFont 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dWhite 0
+	buildh e_StdPictureDef_dPenColour 1
+	buildh _Cons 2
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	pushI 15
+	pushI 100
+	build_r e_StdIOBasic_rSize 0 2 0 0
+	pop_b 2
+	push_r_args_a 14 11 2 7 1
+	build e_Footballer_dtoString;103 1 e_Footballer_ntoString;103
+	push_a 18
+	buildh e_textdisplay_dTextDisplay 4
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildI 7
+	build _ 1 e_StdInt_n~;15
+	buildI 10
+	build e_StdIOBasic_tVector2 2 e_StdIOBasic_cVector2
+	buildh e_StdIOCommon_dOffsetVector 1
+	buildh e_StdIOCommon_dLeftBottom 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_arg 5 2 2
+	buildh e_StdPictureDef_dPenFont 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dWhite 0
+	buildh e_StdPictureDef_dPenColour 1
+	buildh _Cons 2
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	pushI 15
+	pushI 80
+	build_r e_StdIOBasic_rSize 0 2 0 0
+	pop_b 2
+	push_r_args_a 14 11 2 6 1
+	build _ 1 n24
+	push_a 19
+	buildh e_textdisplay_dTextDisplay 4
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh d26 0
+	buildh e_StdControlDef_dControlResize 1
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 10
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	push_a 26
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	push_r_args_a 34 5 1 1 1
+	push_r_args_a 15 3 3 3 1
+	repl_r_args_a 2 0 2 1
+	build e_system_dAP 2 e_system_nAP
+	build _ 0 n3
+	buildh e_StdControlDef_dCustomControl 3
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdPictureDef_dGreen 0
+	push_arg 8 2 2
+	build_r e_textdisplay_rTextDisplayId 2 0 33 0
+	buildAC "Rounds/sec: "
+	buildh ARRAY 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 4 n5
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	build e_render_dEastColour 0 e_render_nEastColour
+	push_arg 10 2 2
+	push_r_args_a 15 11 2 2 1
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	push_a 21
+	build _ 4 n4
+	buildh _Nil 0
+	build e_render_dEastColour 0 e_render_nEastColour
+	build _ 0 n2
+	pushI 2
+	build_r e_digitdisplay_kIntegerFormat 0 1 0 0
+	pop_b 1
+	push_a 25
+	buildh e_digitdisplay_dDigitDisplay 5
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_render_dWestColour 0 e_render_nWestColour
+	build _ 0 n2
+	pushI 2
+	build_r e_digitdisplay_kIntegerFormat 0 1 0 0
+	pop_b 1
+	push_a 26
+	buildh e_digitdisplay_dDigitDisplay 5
+	buildh e_StdIOBasic_d:+: 2
+	build e_render_dWestColour 0 e_render_nWestColour
+	push_arg 11 2 2
+	push_r_args_a 16 11 2 1 1
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	push_a 23
+	build _ 4 n4
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildAC "SoccerFun: Van Gaal's Electronic Notebook"
+	buildh ARRAY 1
+	buildh e_StdWindowDef_dWindow 3
+	build _ 0 e_StdMisc_nundef
+	push_a 10
+	push_a 12
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 11
+	push_a 13
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 8
+	push_a 8
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 15
+	update_a 4 14
+	update_a 3 13
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+.d 6 0
+	jsr e_StdWindow_sopenWindow;55
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.17
+	buildAC "Could not create window.\n"
+	updatepop_a 0 25
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.17
+	push_r_args_a 23 5 1 1 1
+	repl_r_args 11 2
+	pop_a 11
+	update_b 0 1
+	pop_b 1
+	push_a 10
+	jsr_eval 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 i
+	jsr e_digitdisplay_ssetDigitDisplayValue
+.o 2 0
+	push_r_args_a 23 5 1 1 1
+	repl_r_args 11 2
+	pop_a 11
+	pop_b 1
+	push_a 9
+	jsr_eval 0
+.d 3 1 i
+	jsr e_digitdisplay_ssetDigitDisplayValue
+.o 2 0
+	buildh _Nil 0
+	buildh e_StdIOCommon_dUnable 0
+	buildh e_StdTimerDef_dTimerSelectState 1
+	buildh _Cons 2
+	push_a 18
+	buildh e_StdTimerDef_dTimerId 1
+	buildh _Cons 2
+	push_a 10
+	push_a 12
+	push_a 18
+	push_a 21
+	buildh d11 4
+	buildh e_StdFunc_dconst 1
+	buildh e_StdIOBasic_dnoLS1 1
+	buildh e_StdTimerDef_dTimerFunction 1
+	buildh _Cons 2
+	buildh e_StdIOBasic_dNilLS 0
+	push_r_args_a 25 5 1 4 1
+	repl_r_args_a 3 3 1 1
+	push_r_args_a 5 11 2 10 1
+	build _ 2 n165
+	buildh e_StdTimerDef_dTimer 3
+	build _ 0 e_StdMisc_nundef
+	buildh e_StdTimerElementClass_dtimerElementToHandles;7 0
+	buildh e_StdTimerElementClass_dgetTimerElementType;6 0
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	buildh _Nil 0
+	update_a 0 27
+	pop_a 1
+.d 6 0
+	jsr e_StdTimer_sopenTimer;8
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.18
+	buildAC "Could not create step timer.\n"
+	updatepop_a 0 24
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.18
+	buildh _Nil 0
+	build_r e_textdisplay_rTextDisplayId 2 0 21 0
+	push_a 7
+	push_a 7
+	buildh d21 3
+	buildh e_StdFunc_dconst 1
+	buildh e_StdIOBasic_dnoLS1 1
+	buildh e_StdTimerDef_dTimerFunction 1
+	buildh _Cons 2
+	buildh e_StdIOBasic_dNilLS 0
+	build e_StdSystem_dticksPerSecond 0 e_StdSystem_nticksPerSecond
+	buildh e_StdTimerDef_dTimer 3
+	build _ 0 e_StdMisc_nundef
+	buildh e_StdTimerElementClass_dtimerElementToHandles;7 0
+	buildh e_StdTimerElementClass_dgetTimerElementType;6 0
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 25
+	update_a 0 26
+	pop_a 1
+.d 6 0
+	jsr e_StdTimer_sopenTimer;8
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.19
+	buildAC "Could not open frame rate timer.\n"
+	updatepop_a 0 24
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.19
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh d7 0
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildC 'q'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	buildAC "E&xit"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildAC "&File"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenu 3
+	build _ 0 e_StdMisc_nundef
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 6 0
+	jsr e_StdMenu_sopenMenu;18
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.20
+	buildAC "Could not create File menu.\n"
+	updatepop_a 0 24
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.20
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;17 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;16 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;17 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;16 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;11 1
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dgetMenuElementType;10 1
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;11 1
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dgetMenuElementType;10 1
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;11 1
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dgetMenuElementType;10 1
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;11 1
+	buildh e_StdMenuElementClass_dmenuElementToHandles;13 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;12 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dgetMenuElementType;10 1
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh e_StdMenuElementClass_dmenuElementToHandles;15 0
+	buildh e_StdMenuElementClass_dgetMenuElementType;14 0
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 2
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 4
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 5
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 6
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 7
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 8
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 9
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 10
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 11
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 12
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 13
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 14
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 15
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 16
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 17
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 18
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 19
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 20
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 21
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	push_a 0
+	push_a 22
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 1
+	push_a 23
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	build e_StdMenuElementClass_tMenuElements; 2 e_StdMenuElementClass_cMenuElements;
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 36
+	buildh e_StdMenuDef_dMenuId 1
+	buildh _Cons 2
+	push_r_args_b 28 3 3 2 1
+	buildB_b 0
+	pop_b 1
+	build _ 1 n162
+	buildh e_StdMenuDef_dMenuMarkState 1
+	buildh _Cons 2
+	push_a 36
+	buildh d6 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildAC "Splash screen"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh _Nil 0
+	buildC 't'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	push_a 31
+	push_a 42
+	push_a 37
+	push_a 39
+	buildh d13 4
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildAC "&Playing Time..."
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 30 3 3 3 1
+	build e_render_dnameOf;4 1 e_render_nnameOf;4
+	build e_render_dallRenderStyles 0 e_render_nallRenderStyles
+	buildh e_render_dnameOf;4 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	buildh e_StdString_d==;2 0
+	build _ 3 n168
+	build e_render_dallRenderStyles 0 e_render_nallRenderStyles
+	push_a 44
+	build _ 2 n27
+	buildh e_StdMenuDef_dRadioMenu 3
+	buildAC "R&ender"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dSubMenu 3
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_b 30 3 3 3 1
+	buildB_b 0
+	pop_b 1
+	buildh _Nil 0
+	buildB FALSE
+	buildh _Cons 2
+	buildB TRUE
+	buildh _Cons 2
+	buildh e_StdBool_d==;3 0
+	build _ 3 n167
+	buildh _Nil 0
+	buildB FALSE
+	buildh d12 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '-'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "&NoShow"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildB TRUE
+	buildh d12 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '+'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "&Show"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_StdMenuDef_dRadioMenu 3
+	buildAC "Re&feree"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dSubMenu 3
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 30 3 3 1 1
+	buildh _Nil 0
+	buildh e_guiInterface_dFastest 0
+	buildh _Cons 2
+	buildh e_guiInterface_dFaster 0
+	buildh _Cons 2
+	buildh e_guiInterface_dNormal 0
+	buildh _Cons 2
+	buildh e_guiInterface_dSlower 0
+	buildh _Cons 2
+	buildh e_guiInterface_dSlowest 0
+	buildh _Cons 2
+	buildh e_guiInterface_d==;6 0
+	build _ 3 n166
+	buildh _Nil 0
+	buildh e_guiInterface_dFastest 0
+	push_a 47
+	buildh d18 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '5'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "Fas&test"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_guiInterface_dFaster 0
+	push_a 47
+	buildh d18 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '4'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "&Faster"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_guiInterface_dFast 0
+	push_a 47
+	buildh d18 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '3'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "F&ast"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_guiInterface_dNormal 0
+	push_a 47
+	buildh d18 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '2'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "N&ormal"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_guiInterface_dSlower 0
+	push_a 47
+	buildh d18 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '1'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "S&lower"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_guiInterface_dSlowest 0
+	push_a 47
+	buildh d18 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildC '`'
+	buildh e_StdMaybe_dJust 1
+	buildh e_StdMaybe_dNothing 0
+	buildAC "&Slowest"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_StdMenuDef_dRadioMenu 3
+	buildAC "Sp&eed"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dSubMenu 3
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh _Nil 0
+	buildI 0
+	buildh _Nil 0
+	buildh d20 0
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	buildh e_StdMaybe_dNothing 0
+	buildAC "&Predictable"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh d19 0
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	buildh e_StdMaybe_dNothing 0
+	buildAC "&Realistic"
+	buildh ARRAY 1
+	buildh _Tuple 4
+	buildh _Cons 2
+	buildh e_StdMenuDef_dRadioMenu 3
+	buildAC "&Mode"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dSubMenu 3
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh e_StdMenuDef_dMenuSeparator 1
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	push_a 43
+	buildh d9 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildC 'h'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	buildAC "&Halt"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	push_a 35
+	push_a 37
+	push_a 43
+	push_a 46
+	build _ 4 n10
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildC 's'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	buildAC "&Step"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	push_a 43
+	buildh d8 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildC 'r'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	buildAC "&Run"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh e_StdMenuDef_dMenuSeparator 1
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	push_a 30
+	push_a 44
+	buildh d23 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildC 'u'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	buildAC "Competition"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	push_a 33
+	push_a 35
+	push_a 32
+	push_a 46
+	push_a 45
+	push_a 40
+	push_a 42
+	buildh d22 7
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMenuDef_dMenuFunction 1
+	buildh _Cons 2
+	buildC 'm'
+	buildh e_StdMenuDef_dMenuShortKey 1
+	buildh _Cons 2
+	buildAC "&Match"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenuItem 2
+	buildh e_StdIOBasic_d:+: 2
+	buildAC "&Game"
+	buildh ARRAY 1
+	buildh e_StdMenuDef_dMenu 3
+	build _ 0 e_StdMisc_nundef
+	push_a 2
+	push_a 26
+	buildh e_StdMenuElementClass_dmenuElementToHandles;9 2
+	push_a 3
+	push_a 27
+	buildh e_StdMenuElementClass_dgetMenuElementType;8 2
+	push_a 29
+	push_a 29
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 42 53
+	update_a 5 52
+	update_a 4 51
+	update_a 3 50
+	update_a 2 49
+	update_a 1 48
+	updatepop_a 0 47
+.d 6 0
+	jsr e_StdMenu_sopenMenu;18
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.21
+	buildAC "Could not create Game menu.\n"
+	updatepop_a 0 3
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.21
+	pushI 550
+	pushI 640
+	build_r e_StdIOBasic_rSize 0 2 0 0
+	pop_b 2
+	push_a 3
+	buildh e_StdWindow_dsetWindowViewSize 2
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdPSt_sappPIO
+.o 2 0
+.d 2 0
+	jmp s30
+s29.1
+	pop_a 7
+	pushD m_Gui2D
+	pushD d29
+.d 0 2 ii
+	jmp _match_error
+.n 1 _ ea169
+.o 1 0
+n169
+	push_node _cycle_in_spine 1
+.o 2 0
+ea169
+.o 2 0
+s169
+	push_a 0
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	updatepop_a 0 1
+	push_arraysize CHAR 0 1
+	pushI 12
+	mulI
+	pushI 80
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea168
+.o 1 0
+n168
+	push_node _cycle_in_spine 3
+.o 4 0
+ea168
+.o 4 0
+s168
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea167
+.o 1 0
+n167
+	push_node _cycle_in_spine 3
+.o 4 0
+ea167
+.o 4 0
+s167
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea166
+.o 1 0
+n166
+	push_node _cycle_in_spine 3
+.o 4 0
+ea166
+.o 4 0
+s166
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea165
+.o 1 0
+n165
+	push_node _cycle_in_spine 2
+.o 3 0
+ea165
+.o 3 0
+s165
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_guiInterface_sintervalFactor
+.o 0 1 r
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_matchControl_stoReal;10
+.o 0 1 r
+.d 0 0
+	jsr e_StdSystem_sticksPerSecond
+.o 0 1 i
+	ItoR
+	mulR
+	mulR
+	RtoI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea162
+.o 1 0
+n162
+	push_node _cycle_in_spine 1
+.o 2 0
+ea162
+	pushB_a 0
+	pop_a 1
+.o 1 1 b
+s162
+	eqB_b TRUE 0
+	jmp_true case.22
+	jmp case.23
+case.22
+	fillh e_StdIOCommon_dMark 0 0
+	pop_b 1
+.d 1 0
+	rtn
+case.23
+	fillh e_StdIOCommon_dNoMark 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+s30
+	push_r_args_a 0 5 1 4 1
+	repl_r_args 3 3
+	updatepop_b 1 2
+	pop_a 3
+	notB
+	jmp_false else.24
+.d 2 0
+	rtn
+else.24
+	build_r e_iostate_rPSt 2 0 0 0
+	buildh e_StdPStClass_dstdio;3 0
+	buildh e_StdPStClass_dsfopen;2 0
+	buildh e_StdPStClass_dfopen;1 0
+	buildh e_StdPStClass_dfclose;0 0
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 0
+	jsr e_guiInterface_sgetSplashImageForGui
+.o 3 0
+	build_r e_GamePicture_rGamePicture 2 0 0 0
+	push_r_args 3 2 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 2 0 1 1
+	build e_StdBitmap_dgetBitmapSize 1 e_StdBitmap_ngetBitmapSize
+	buildh e_StdControlDef_dControlViewSize 1
+	buildh _Cons 2
+	push_r_args_a 4 2 0 1 1
+	build e_StdIOBasic_dzero;21 0 e_StdIOBasic_nzero;21
+	buildh e_StdBitmap_ddrawAt;4 2
+	buildh e_StdEnvExt_dconst2 1
+	buildB TRUE
+	buildh e_StdControlDef_dControlLook 2
+	buildh _Cons 2
+	buildh _Nil 0
+	buildh e_StdWindow_dcloseActiveWindow 0
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "&Close"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh e_StdControlDef_dCompoundControl 2
+	buildAC "The Footballer's Mind"
+	buildh ARRAY 1
+	buildh e_StdWindowDef_dDialog 3
+	build _ 0 e_StdMisc_nundef
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;15 1
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;14 1
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 6 0
+	jsr e_StdWindow_sopenModalDialog;58
+.o 4 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.25
+	buildAC "Could not open splash screen.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.25
+.d 2 0
+	rtn
+.desc d22 _hnf l22 8 0 "matchDialogf"
+.a 0 a22
+.o 2 0
+l22
+	repl_args 7 7
+.o 8 0
+a22
+.d 8 0
+	jsr ea22
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 8 0
+ea22
+	jsr_eval 7
+	push_r_args 7 2 0
+	update_a 1 9
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 0 8
+	pop_a 1
+.o 9 0
+s22
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;23 1
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;23 1
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;23 1
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 7
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 8
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_r_args_a 22 5 1 1 1
+	repl_r_args_a 11 2 4 1
+	push_a 24
+	push_a 24
+	update_a 25 26
+	update_a 24 25
+	update_a 23 24
+	update_a 22 23
+	update_a 21 22
+	update_a 20 21
+	update_a 19 20
+	update_a 18 19
+	update_a 14 18
+	update_a 3 17
+	update_a 2 16
+	update_a 1 15
+	updatepop_a 0 14
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	buildh _Nil 0
+	push_a 1
+	buildh e_StdWindowDef_dWindowId 1
+	buildh _Cons 2
+	push_a 1
+	push_a 11
+	push_a 11
+	push_a 11
+	build _ 4 n44
+	buildh e_StdWindowDef_dWindowClose 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRight 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 2
+	push_a 12
+	push_a 12
+	push_a 12
+	build _ 4 n44
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "Ok"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_r_args_a 19 5 1 1 1
+	repl_r_args_a 11 2 5 1
+	build e_Referee_dnameOf;7 1 e_Referee_nnameOf;7
+	build e_Referee_dallAvailableReferees 0 e_Referee_nallAvailableReferees
+	push_a 11
+	build e_StdEnvExt_dapply 2 e_StdEnvExt_napply
+	buildh e_Referee_dnameOf;7 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	buildh e_StdString_d==;2 0
+	build _ 3 n192
+	buildI 1
+	buildh e_StdControlDef_dColumns 1
+	build e_Referee_dallAvailableReferees 0 e_Referee_nallAvailableReferees
+	push_a 12
+	build e_StdEnvExt_dapply 2 e_StdEnvExt_napply
+	push_a 19
+	push_a 19
+	build _ 3 n42
+	buildh e_StdControlDef_dRadioControl 4
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildAC "Choose Referee"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_r_args_a 19 5 1 1 1
+	repl_r_args_a 11 2 2 1
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	buildh e_Footballer_dEast 0
+	push_a 11
+	build _ 2 n43
+	buildh e_Team_dnameOf;6 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	buildh e_StdString_d==;2 0
+	build _ 3 n191
+	buildI 1
+	buildh e_StdControlDef_dColumns 1
+	buildh e_Footballer_dEast 0
+	push_a 12
+	build _ 2 n43
+	push_a 21
+	push_a 21
+	push_a 19
+	push_a 19
+	push_a 19
+	build _ 6 n41
+	buildh e_StdControlDef_dRadioControl 4
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildAC "Choose Team East"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_r_args_a 19 5 1 1 1
+	repl_r_args_a 11 2 1 1
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	buildh e_Footballer_dWest 0
+	push_a 11
+	build _ 2 n43
+	buildh e_Team_dnameOf;6 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	buildh e_StdString_d==;2 0
+	build _ 3 n190
+	buildI 1
+	buildh e_StdControlDef_dColumns 1
+	buildh e_Footballer_dWest 0
+	push_a 12
+	build _ 2 n43
+	push_a 21
+	push_a 21
+	push_a 19
+	push_a 19
+	push_a 19
+	build _ 6 n40
+	buildh e_StdControlDef_dRadioControl 4
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildAC "Choose Team West"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildAC "Choose Match"
+	buildh ARRAY 1
+	buildh e_StdWindowDef_dDialog 3
+	build _ 0 e_StdMisc_nundef
+	push_a 7
+	push_a 9
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 8
+	push_a 10
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 7
+	push_a 7
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 20
+	update_a 4 19
+	update_a 3 18
+	update_a 2 17
+	update_a 1 16
+	updatepop_a 0 15
+.d 6 0
+	jsr e_StdWindow_sopenModalDialog;58
+.o 4 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.26
+	buildAC "Could not open match dialog.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.26
+.d 2 0
+	rtn
+.n 3 _ ea192
+.o 1 0
+n192
+	push_node _cycle_in_spine 3
+.o 4 0
+ea192
+.o 4 0
+s192
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea191
+.o 1 0
+n191
+	push_node _cycle_in_spine 3
+.o 4 0
+ea191
+.o 4 0
+s191
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 _ ea190
+.o 1 0
+n190
+	push_node _cycle_in_spine 3
+.o 4 0
+ea190
+.o 4 0
+s190
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 6 _ ea40
+.o 1 0
+n40
+	push_node _cycle_in_spine 6
+.o 7 0
+ea40
+	jsr_eval 5
+.o 7 0
+s40
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 10
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 7 0
+	jmp s161
+.o 7 0
+s161
+	eq_desc _Cons 2 0
+	jmp_true case.27
+	jmp case.28
+case.27
+	repl_args 2 2
+	push_a 1
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	build _ 6 n40
+	buildh e_Footballer_dWest 0
+	push_a 2
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 6
+	update_a 6 7
+	update_a 0 6
+	pop_a 1
+	buildh d14 7
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	push_a 3
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	buildh _Tuple 3
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.28
+	fillh _Nil 0 6
+	pop_a 6
+.d 1 0
+	rtn
+.n 6 _ ea41
+.o 1 0
+n41
+	push_node _cycle_in_spine 6
+.o 7 0
+ea41
+	jsr_eval 5
+.o 7 0
+s41
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 10
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 7 0
+	jmp s160
+.o 7 0
+s160
+	eq_desc _Cons 2 0
+	jmp_true case.29
+	jmp case.30
+case.29
+	repl_args 2 2
+	push_a 1
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	build _ 6 n41
+	buildh e_Footballer_dEast 0
+	push_a 2
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 6
+	update_a 6 7
+	update_a 0 6
+	pop_a 1
+	buildh d14 7
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	push_a 3
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	buildh _Tuple 3
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.30
+	fillh _Nil 0 6
+	pop_a 6
+.d 1 0
+	rtn
+.desc d14 _hnf l14 8 0 "changeteamf"
+.a 0 a14
+.o 2 0
+l14
+	repl_args 7 7
+.o 8 0
+a14
+.d 8 0
+	jsr ea14
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 8 0
+ea14
+	jsr_eval 7
+	jsr_eval 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 7 2 0
+	push_r_args 6 2 0
+	push_r_args 7 2 0
+	update_a 5 13
+	update_a 8 5
+	update_a 2 8
+	update_a 11 10
+	update_a 12 11
+	update_a 4 12
+	update_a 7 4
+	update_a 1 7
+	update_a 3 9
+	update_a 6 3
+	update_a 0 6
+	pop_a 3
+.o 11 0
+s14
+	push_r_args_u 9 5 1
+	update_a 0 4
+	pop_a 4
+	pop_b 1
+	buildh e_Footballer_dEast 0
+	push_a 9
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+	create
+	push_a 1
+	push_a 11
+.d 3 1 b
+	jsr s159
+.o 1 0
+	buildh e_Footballer_dWest 0
+	push_a 10
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+	create
+	push_a 2
+	push_a 12
+.d 3 1 b
+	jsr s158
+.o 1 0
+	push_r_args 2 11 2
+	update_a 11 0
+	update_a 12 1
+	update_a 10 12
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args 11 5 1
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 12
+	push_a 12
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 11
+	buildh _Nil 0
+	update_a 0 13
+	update_a 0 15
+	update_a 0 14
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr e_Team_snameOf;6
+.o 1 0
+	build_r e_textdisplay_rTextDisplayId 2 0 9 0
+	build_r e_textdisplay_rTextDisplayId 2 0 8 0
+	buildh e_Footballer_dWest 0
+	push_a 14
+	buildh _Nil 0
+	update_a 0 16
+	update_a 0 12
+	update_a 0 13
+	update_a 0 14
+	update_a 0 15
+	pop_a 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+.d 2 1 b
+	jsr s157
+.o 2 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 5 0
+	jsr e_textdisplay_ssetTextDisplayText
+.o 2 0
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 5 0
+	jmp s16
+.o 3 1 b
+s159
+	eqB_b TRUE 0
+	jmp_true case.31
+	jmp case.32
+case.31
+	pop_b 1
+	fill_a 0 2
+	pop_a 2
+.d 1 0
+	rtn
+case.32
+	push_r_args_a 1 11 2 2 1
+	pop_b 1
+	fill_a 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.o 3 1 b
+s158
+	eqB_b TRUE 0
+	jmp_true case.33
+	jmp case.34
+case.33
+	pop_b 1
+	fill_a 0 2
+	pop_a 2
+.d 1 0
+	rtn
+case.34
+	push_r_args_a 1 11 2 1 1
+	pop_b 1
+	fill_a 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.o 2 1 b
+s157
+	eqB_b TRUE 0
+	jmp_true case.35
+	jmp case.36
+case.35
+	pop_b 1
+	updatepop_a 0 1
+	repl_r_args 2 0
+.d 2 0
+	rtn
+case.36
+	pop_b 1
+	pop_a 1
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.n 2 _ ea43
+.o 1 0
+n43
+	push_node _cycle_in_spine 2
+.o 3 0
+ea43
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 2 0
+.o 4 0
+s43
+	push_a 1
+	push_a 1
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s25
+.n 3 _ ea42
+.o 1 0
+n42
+	push_node _cycle_in_spine 3
+.o 4 0
+ea42
+	jsr_eval 2
+.o 4 0
+s42
+	push_a 1
+	push_a 1
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s156
+.o 4 0
+s156
+	eq_desc _Cons 2 0
+	jmp_true case.37
+	jmp case.38
+case.37
+	repl_args 2 2
+	push_a 1
+	push_a 4
+	push_a 4
+	build _ 3 n42
+	push_a 1
+	push_a 5
+	push_a 5
+	buildh d15 3
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	push_a 3
+	build e_Referee_dnameOf;7 1 e_Referee_nnameOf;7
+	buildh _Tuple 3
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+case.38
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.n 4 _ ea44
+.o 1 0
+n44
+	push_node _cycle_in_spine 4
+.o 5 0
+ea44
+.o 5 0
+s44
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	buildh d122 4
+	fillh e_StdIOBasic_dnoLS 1 5
+	pop_a 4
+.d 1 0
+	rtn
+.desc d122 _hnf l122 5 0 "<lambda>[line:15];13;122"
+.a 0 a122
+.o 2 0
+l122
+	repl_args 4 4
+.o 5 0
+a122
+.d 5 0
+	jsr ea122
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 5 0
+ea122
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 4 2 0
+	update_a 1 6
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 0 5
+	pop_a 1
+.o 6 0
+s122
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdWindow_scloseWindow
+.o 2 0
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 5 0
+	jmp s16
+.desc d23 _hnf l23 3 0 "competitionDialogf"
+.a 0 a23
+.o 2 0
+l23
+	repl_args 2 2
+.o 3 0
+a23
+.d 3 0
+	jsr ea23
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 3 0
+ea23
+	jsr_eval 2
+	push_r_args 2 2 0
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.o 4 0
+s23
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;13 0
+	buildh e_StdControlClass_dcontrolToHandles;12 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;23 1
+	buildh e_StdControlClass_dgetControlType;13 0
+	buildh e_StdControlClass_dcontrolToHandles;12 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 4
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 5
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 6
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 7
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;23 1
+	buildh e_StdControlClass_dgetControlType;27 0
+	buildh e_StdControlClass_dcontrolToHandles;26 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_r_args_a 16 5 1 1 1
+	repl_r_args_a 11 2 4 1
+	buildh e_Footballer_dWest 0
+	push_a 1
+	build _ 2 n63
+	push_a 19
+	push_a 19
+	update_a 19 21
+	update_a 18 20
+	update_a 10 19
+	update_a 4 18
+	update_a 3 17
+	update_a 2 16
+	update_a 1 15
+	updatepop_a 0 14
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	push_a 5
+	build _ 1 n174
+	buildh _Nil 0
+	push_a 6
+	buildh _Nil 0
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	buildI 100
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n196
+	buildh e_StdIOCommon_dOffsetVector 1
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdWindowDef_dWindowPos 1
+	buildh _Cons 2
+	push_a 1
+	buildh e_StdWindowDef_dWindowId 1
+	buildh _Cons 2
+	push_a 1
+	buildh e_StdWindow_dcloseWindow 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdWindowDef_dWindowClose 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRight 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	buildh d65 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "Ok"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	buildI 1
+	buildI 1
+	buildh e_StdControlDef_dColumns 1
+	build e_Referee_dallAvailableReferees 0 e_Referee_nallAvailableReferees
+	push_a 17
+	build e_StdEnvExt_dapply 2 e_StdEnvExt_napply
+	push_a 21
+	push_a 21
+	build _ 3 n46
+	buildh e_StdControlDef_dRadioControl 4
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildAC "Choose Referee"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 6
+	push_a 6
+	push_a 9
+	build _ 3 n176
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "Cl&ear All"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 6
+	push_a 8
+	push_a 10
+	build _ 3 n175
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "Select &All"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 9
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	buildI 1
+	buildh e_StdControlDef_dColumns 1
+	push_a 15
+	build _ 1 n120
+	buildh e_StdControlDef_dCheckControl 3
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildAC "Choose Teams West"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildAC "Competition"
+	buildh ARRAY 1
+	buildh e_StdWindowDef_dDialog 3
+	build _ 0 e_StdMisc_nundef
+	push_a 12
+	push_a 14
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 13
+	push_a 15
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 10
+	push_a 10
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 19
+	update_a 4 18
+	update_a 3 17
+	update_a 2 16
+	update_a 1 15
+	updatepop_a 0 14
+.d 6 0
+	jsr e_StdWindow_sopenModalDialog;58
+.o 4 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.39
+	buildAC "Could not open competition dialog.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.39
+.d 2 0
+	rtn
+.n 2 _
+.o 1 0
+n196
+	push_node _cycle_in_spine 2
+.o 2 0
+ea196
+	jsr_eval 1
+	pushI_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 3 _ ea176
+.o 1 0
+n176
+	push_node _cycle_in_spine 3
+.o 4 0
+ea176
+.o 4 0
+s176
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s64
+.n 3 _ ea175
+.o 1 0
+n175
+	push_node _cycle_in_spine 3
+.o 4 0
+ea175
+.o 4 0
+s175
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s64
+.n 1 _ ea174
+.o 1 0
+n174
+	push_node _cycle_in_spine 1
+.o 2 0
+ea174
+.o 2 0
+s174
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 1
+.d 1 2 ii
+	jmp e__SystemEnum_s_from_to;6
+.n 1 _ ea120
+.o 1 0
+n120
+	push_node _cycle_in_spine 1
+.o 2 0
+ea120
+	jsr_eval 0
+.o 2 0
+s120
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s155
+.o 2 0
+s155
+	eq_desc _Cons 2 0
+	jmp_true case.40
+	jmp case.41
+case.40
+	repl_args 2 2
+	push_a 1
+	build _ 1 n120
+	buildh e_StdFunc_did 0
+	buildh e_StdIOCommon_dMark 0
+	buildh e_StdMaybe_dNothing 0
+	push_a 4
+	build e_Team_dnameOf;6 1 e_Team_nnameOf;6
+	buildh _Tuple 4
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.41
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea63
+.o 1 0
+n63
+	push_node _cycle_in_spine 2
+.o 3 0
+ea63
+	repl_r_args 2 0
+.o 4 0
+s63
+	push_a 1
+	push_a 1
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s25
+.o 4 0
+s64
+	push_a 2
+	push_a 1
+	push_a 3
+	push_a 3
+	buildh d119 4
+	fillh e_StdPSt_dappPIO 1 4
+	pop_a 3
+.d 1 0
+	rtn
+.desc d119 _hnf l119 5 0 "<lambda>[line:15];13;119"
+.a 5 ea119
+.o 2 0
+l119
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.o 6 0
+ea119
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 6 0
+s119
+	create
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr e_StdControl_sunmarkCheckControlItems
+.o 1 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_StdControl_smarkCheckControlItems
+.n 3 _ ea46
+.o 1 0
+n46
+	push_node _cycle_in_spine 3
+.o 4 0
+ea46
+	jsr_eval 2
+.o 4 0
+s46
+	push_a 1
+	push_a 1
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s153
+.o 4 0
+s153
+	eq_desc _Cons 2 0
+	jmp_true case.42
+	jmp case.43
+case.42
+	repl_args 2 2
+	push_a 1
+	push_a 4
+	push_a 4
+	build _ 3 n46
+	push_a 1
+	push_a 5
+	push_a 5
+	buildh d15 3
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	push_a 3
+	build e_Referee_dnameOf;7 1 e_Referee_nnameOf;7
+	buildh _Tuple 3
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+case.43
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.desc d15 _hnf l15 4 0 "changereff"
+.a 0 a15
+.o 2 0
+l15
+	repl_args 3 3
+.o 4 0
+a15
+.d 4 0
+	jsr ea15
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 4 0
+ea15
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 2 0
+	push_r_args 4 3 0
+	push_r_args 6 2 0
+	update_a 6 10
+	update_a 2 6
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	pop_a 4
+.o 8 0
+s15
+	push_a 7
+	push_a 7
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 10 12
+	update_a 9 11
+	update_a 8 10
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jsr e_textdisplay_ssetTextDisplayText
+.o 2 0
+	build_r e_Referee_rReferee 3 0 3 0
+	push_r_args 1 5 1
+	updatepop_a 0 4
+	pop_b 1
+	repl_r_args 11 2
+	update_a 11 4
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args 1 5 1
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 2
+	push_a 2
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 4
+	buildh e_StdTimer_ddisableTimer 1
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 3 0
+	jmp e_StdPSt_sappPIO
+.desc d65 _hnf l65 3 0 "startCompetition;64"
+.a 0 a65
+.o 2 0
+l65
+	repl_args 2 2
+.o 3 0
+a65
+.d 3 0
+	jsr ea65
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 3 0
+ea65
+	jsr_eval 2
+	push_r_args 2 2 0
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.o 4 0
+s65
+	push_a 1
+	buildh e_StdControl_dgetWindow 1
+	push_a 4
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdPSt_saccPIO
+.o 3 0
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 0
+	jmp s152
+.o 5 0
+s152
+	eq_desc e_StdMaybe_dNothing 0 0
+	jmp_true case.44
+	jmp case.45
+case.44
+	buildAC "Fatal error: could not retrieve competition dialog data.\n"
+	updatepop_a 0 5
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+case.45
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	push_a 4
+	update_a 1 2
+	updatepop_a 0 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 2 0
+	jsr e_StdControl_sgetCheckControlSelection
+.o 2 0
+	jsr_eval 1
+	push_a 2
+	push_a 4
+	push_a 4
+	push_a 8
+	push_a 5
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 5 0
+	update_a 3 5
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 6 0
+	jmp s151
+.o 6 0
+s151
+	eq_desc e_StdMaybe_dNothing 0 1
+	jmp_true case.46
+	jmp case.47
+case.46
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 3 0
+	jmp e_StdWindow_scloseWindow
+case.47
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	create
+	update_a 1 3
+	updatepop_a 0 2
+.d 1 0
+	jsr e_Team_sallAvailableTeams
+.o 1 0
+	create
+	buildI 1
+	push_a 3
+	push_a 8
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 5 0
+	jsr s117
+.o 1 0
+.d 1 0
+	jsr e_StdList_sunzip
+.o 2 0
+	build_r e_iostate_rPSt 2 0 3 0
+	push_r_args_a 6 5 1 1 1
+	repl_r_args 11 2
+	updatepop_a 8 10
+	pop_b 2
+	push_a 3
+	jsr_eval 0
+	buildh e_StdPStClass_dstdio;3 0
+	buildh e_StdPStClass_dsfopen;2 0
+	buildh e_StdPStClass_dfopen;1 0
+	buildh e_StdPStClass_dfclose;0 0
+	update_a 9 11
+	update_a 7 10
+	update_a 6 9
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 7 0
+	jsr e_matchGame_scheckCompetitionFile
+.o 3 0
+	push_a 1
+	push_a 1
+	push_a 0
+	push_r_args_a 8 5 1 1 1
+	repl_r_args 11 2
+	update_a 11 8
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args 8 5 1
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_r_args 5 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_r_args_a 9 5 1 1 1
+	repl_r_args 11 2
+	updatepop_a 6 10
+	pop_b 2
+	push_r_args_a 10 5 1 1 1
+	repl_r_args 11 2
+	updatepop_a 4 10
+	pop_b 2
+	repl_r_args 3 0
+	push_r_args_a 13 5 1 1 1
+	repl_r_args 11 2
+	updatepop_a 3 10
+	pop_b 2
+	repl_r_args 2 0
+	push_a 13
+	jsr_eval 0
+	push_a 9
+	push_a 7
+	update_a 1 8
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 7 6
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 16
+	update_a 0 18
+	update_a 0 15
+	update_a 0 13
+	update_a 0 14
+	pop_a 1
+.d 8 0
+	jsr e_matchGame_scompetition
+.o 4 0
+	push_a 7
+	push_a 13
+	push_a 5
+	update_a 2 6
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 0 5
+	pop_a 1
+	update_a 7 15
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 8 0
+	jmp s66
+.n 4 _ ea117
+.o 1 0
+n117
+	push_node _cycle_in_spine 4
+.o 5 0
+ea117
+	jsr_eval 2
+.o 5 0
+s117
+	push_a 0
+	push_a 2
+	push_a 5
+	push_a 5
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s150
+.o 5 0
+s150
+	eq_desc _Cons 2 0
+	jmp_true case.48
+	jmp case.49
+case.48
+	repl_args 2 2
+	push_a 3
+	jsr_eval 0
+	push_a 3
+.d 2 0
+	jsr e_StdList_sisMember;51
+.o 0 1 b
+	jmp_false else.50
+	push_a 2
+	build _ 1 n188
+	push_a 2
+	push_a 5
+	push_a 7
+	build _ 4 n117
+	push_a 5
+	build e_matchGame_dFootballGame.match -4 e_matchGame_nFootballGame.match
+	build e_matchControl_dMatch.theField -4 e_matchControl_nMatch.theField
+	push_a 2
+	build _ 2 n187
+	push_a 2
+	buildh _Tuple 2
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+else.50
+	push_a 2
+	build _ 1 n189
+	push_a 2
+	jsr_eval 0
+	push_a 5
+	push_a 7
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 5 0
+	jmp s117
+case.49
+	fillh _Nil 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.n 1 _ ea189
+.o 1 0
+n189
+	push_node _cycle_in_spine 1
+.o 2 0
+ea189
+.o 2 0
+s189
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea188
+.o 1 0
+n188
+	push_node _cycle_in_spine 1
+.o 2 0
+ea188
+.o 2 0
+s188
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea187
+.o 1 0
+n187
+	push_node _cycle_in_spine 2
+.o 3 0
+ea187
+.o 3 0
+s187
+	push_a 1
+	buildh e_Footballer_dWest 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 2
+.d 1 0
+	jsr e_Team_snameOf;6
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 8 0
+s66
+	push_a 3
+	push_a 3
+	build _ 2 n177
+	push_a 1
+	buildh e_StdControl_dcloseAllControls 1
+	push_a 9
+	push_a 9
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 12
+	pop_a 1
+.d 3 0
+	jsr e_StdPSt_sappPIO
+.o 2 0
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	push_a 3
+	push_a 3
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	push_a 3
+	push_a 3
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dBelowPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 7
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	push_a 9
+	push_a 10
+	build _ 2 n111
+	buildh e_StdControlDef_dContentWidth 1
+	buildh e_StdControlDef_dControlWidth 1
+	buildh _Cons 2
+	buildAC ""
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh _Nil 0
+	build e_StdIOBasic_dzero;11 0 e_StdIOBasic_nzero;11
+	buildI 100
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n197
+	buildh e_StdIOCommon_dOffsetVector 1
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 9
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	buildI 99
+	buildI 99
+	buildh _Tuple 2
+	buildh e_StdMaybe_dJust 1
+	push_a 15
+	push_a 15
+	build _ 3 n179
+	buildh e_StdControlDef_dContentWidth 1
+	buildh e_StdControlDef_dControlWidth 1
+	buildh _Cons 2
+	buildAC ""
+	buildh ARRAY 1
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	build _ 0 e_StdMisc_nundef
+	push_a 2
+	push_a 4
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 3
+	push_a 5
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 9
+	push_a 9
+	push_a 15
+	push_a 6
+	update_a 3 7
+	update_a 1 3
+	update_a 4 1
+	update_a 6 4
+	update_a 2 6
+	update_a 5 2
+	update_a 0 5
+	pop_a 1
+	update_a 9 12
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 7 0
+	jsr e_StdControl_sopenControls
+.o 3 0
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	buildh e_StdTimerDef_dTimerId 1
+	buildh _Cons 2
+	build_r e_matchGame_rCompetition 4 0 8 0
+	push_a 4
+	push_a 6
+	push_a 8
+	push_a 10
+	push_a 12
+	buildh d109 6
+	buildh e_StdTimerDef_dTimerFunction 1
+	buildh _Cons 2
+	buildh e_StdIOBasic_dNilLS 0
+	buildI 0
+	buildh e_StdTimerDef_dTimer 3
+	push_a 9
+	build_r e_matchGame_rCompetition 4 0 9 0
+	build _ 2 n178
+	push_a 13
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	buildh e_StdTimerElementClass_dtimerElementToHandles;7 0
+	buildh e_StdTimerElementClass_dgetTimerElementType;6 0
+	update_a 5 17
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+.d 6 0
+	jsr e_StdTimer_sopenTimer;8
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.51
+	buildAC "Could not open timer to display matches.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.51
+.d 2 0
+	rtn
+.n 2 _
+.o 1 0
+n197
+	push_node _cycle_in_spine 2
+.o 2 0
+ea197
+	jsr_eval 1
+	pushI_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rVector2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 3 _ ea179
+.o 1 0
+n179
+	push_node _cycle_in_spine 3
+.o 4 0
+ea179
+.o 4 0
+s179
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 1 0
+	jsr s97
+.o 1 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr s97
+.o 1 0
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr s99
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea178
+.o 1 0
+n178
+	push_node _cycle_in_spine 2
+.o 3 0
+ea178
+.o 3 0
+s178
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	push_a 0
+	updatepop_a 0 1
+.d 2 2 ii
+	jmp s112
+.n 2 _ ea177
+.o 1 0
+n177
+	push_node _cycle_in_spine 2
+.o 3 0
+ea177
+.o 3 0
+s177
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 5 2 ii
+s113
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.52
+	push_b 1
+	push_b 1
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	build_u _ 4 2 n180
+	buildI_b 0
+	push_a 5
+	buildh _Tuple 2
+	fillh _Cons 2 6
+	pop_a 4
+	pop_b 2
+.d 1 0
+	rtn
+else.52
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	pushI 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	addI
+	push_a 0
+	updatepop_a 0 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp s112
+.nu 4 2 _ _
+.o 1 0
+n180
+	push_node_u _cycle_in_spine 4 2
+.o 5 2 ii
+ea180
+.o 5 2 ii
+s180
+	pushI 1
+	push_b 1
+	addI
+	push_b 2
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	update_b 1 3
+	updatepop_b 0 2
+.d 5 2 ii
+	jmp s113
+.o 2 2 ii
+s112
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.53
+	jsr_eval 0
+	push_r_args_a 0 4 0 3 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 0
+	buildI_b 2
+	buildI_b 3
+	buildI_b 2
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 5 2 ii
+	jmp s113
+else.53
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n111
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea111
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+ea111
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	pushI_a 0
+	pop_a 2
+.o 0 2 ii
+s111
+	push_b 1
+	ItoR
+	push_b 1
+	ItoR
+	divR
+	pushR 100.0
+	mulR
+	RtoI
+	buildI_b 0
+	pop_b 1
+	buildh e_StdString_dtoString;5 0
+	buildI_b 1
+	buildAC " out of "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " ("
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "%)"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 2
+.d 3 0
+	jmp e_StdEnvExt_s+++>
+.desc d109 _hnf l109 8 0 "showNextMatch;109"
+.a 0 a109
+.o 2 0
+l109
+	repl_args 7 7
+.o 8 0
+a109
+.d 8 0
+	jsr ea109
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 8 0
+ea109
+	push_a 7
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	update_a 2 10
+	update_a 4 2
+	update_a 6 4
+	update_a 8 6
+	update_a 0 8
+	push_a 9
+	update_a 2 10
+	update_a 4 2
+	update_a 6 4
+	update_a 8 6
+	update_a 0 8
+	pop_a 2
+.o 10 0
+s109
+case.54
+	eq_desc _Cons 2 7
+	jmp_true case.56
+	jmp case.55
+case.56
+	push_args 7 2 2
+	jsr_eval 10
+	eq_desc _Cons 2 10
+	jmp_true case.57
+	jmp case.58
+case.57
+	push_args 10 2 2
+	buildh _Nil 0
+	update_a 0 13
+	pop_a 1
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_a 14
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	push_a 12
+	update_a 9 22
+	update_a 8 21
+	update_a 7 20
+	update_a 6 19
+	update_a 5 18
+	update_a 4 17
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+.d 10 0
+	jmp s109
+case.58
+	jsr_eval 7
+	push_args 7 4 4
+	buildh _Nil 0
+	update_a 0 12
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	jsr_eval 3
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	push_a 0
+	push_a 3
+	build e_StdList_d!! 2 e_StdList_n!!
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdList_d!! 2 e_StdList_n!!
+	push_a 2
+	push_a 6
+	build e_StdList_d!! 2 e_StdList_n!!
+	push_a 2
+	push_a 6
+	build e_StdList_d!! 2 e_StdList_n!!
+	buildh _Tuple 3
+	push_arg 0 3 1
+	push_arg 1 3 2
+	push_arg 2 3 3
+	buildh e_StdPStClass_dstdio;3 0
+	buildh e_StdPStClass_dsfopen;2 0
+	buildh e_StdPStClass_dfopen;1 0
+	buildh e_StdPStClass_dfclose;0 0
+	push_a 24
+	push_a 6
+	push_a 8
+	push_a 6
+	update_a 3 7
+	update_a 6 3
+	update_a 2 6
+	update_a 5 2
+	update_a 1 5
+	update_a 4 1
+	update_a 0 4
+	pop_a 1
+	build _ 7 n181
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	buildh e_StdPStClass_dstdio;3 0
+	buildh e_StdPStClass_dsfopen;2 0
+	buildh e_StdPStClass_dfopen;1 0
+	buildh e_StdPStClass_dfclose;0 0
+	push_a 19
+	push_a 13
+	push_a 16
+	push_a 14
+	build _ 4 n183
+	push_a 8
+	push_a 10
+	push_a 12
+	build _ 3 n92
+	push_a 23
+	push_a 23
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh d96 4
+	push_a 8
+	push_a 10
+	push_a 12
+	push_a 7
+	update_a 3 8
+	update_a 6 3
+	update_a 1 6
+	update_a 4 1
+	update_a 7 4
+	update_a 2 7
+	update_a 5 2
+	update_a 0 5
+	pop_a 1
+	build _ 10 n182
+	push_a 21
+	push_a 13
+	buildh _Tuple 2
+	update_a 1 23
+	updatepop_a 0 22
+.d 2 0
+	rtn
+case.55
+	push_a 4
+	buildh e_StdTimer_dcloseTimer 1
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdPSt_dappPIO 2 e_StdPSt_nappPIO
+	push_a 6
+	build e_matchGame_dCompetition.usedRandomSeed -4 e_matchGame_nCompetition.usedRandomSeed
+	push_a 7
+	build e_matchGame_dCompetition.west -4 e_matchGame_nCompetition.west
+	buildh e_StdPStClass_dstdio;3 0
+	buildh e_StdPStClass_dsfopen;2 0
+	buildh e_StdPStClass_dfopen;1 0
+	buildh e_StdPStClass_dfclose;0 0
+	build _ 7 n184
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	build d_S.2 -1 n_S.2
+	push_a 8
+	build e_matchGame_dCompetition.west -4 e_matchGame_nCompetition.west
+	build e_matchGame_dranking 2 e_matchGame_nranking
+	push_a 3
+	build _ 3 n67
+	push_a 10
+	push_a 10
+	buildh _Tuple 2
+	update_a 1 12
+	updatepop_a 0 11
+.d 2 0
+	rtn
+.n 7 _ ea184
+.o 1 0
+n184
+	push_node _cycle_in_spine 7
+.o 8 0
+ea184
+.o 8 0
+s184
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 7 0
+	jsr e_matchGame_scheckCompetitionFile
+.o 3 0
+	push_a 2
+	push_a 2
+	push_a 2
+	buildh _Tuple 2
+	fillh _Tuple 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.n 4 _ ea183
+.o 1 0
+n183
+	push_node _cycle_in_spine 4
+.o 5 0
+ea183
+.o 5 0
+s183
+	push_a 3
+	jsr_eval 0
+	pushI_a 4
+	pop_a 1
+	push_a 2
+	jsr_eval 0
+	pushI_a 3
+	pop_a 1
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	mulI
+	addI
+	pop_a 1
+.d 0 2 ii
+	jsr s110
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 10 _ ea182
+.o 1 0
+n182
+	push_node _cycle_in_spine 10
+.o 11 0
+ea182
+.o 11 0
+s182
+	push_a 9
+	jsr_eval 0
+	push_a 9
+	jsr_eval 0
+	pushI_a 10
+	pop_a 1
+	push_a 8
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 8
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 8
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	update_a 8 17
+	update_a 7 16
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 8 1 i
+	jsr e_matchGame_supdateMatchToCompetitionFile
+.o 1 0
+	repl_r_args 2 0
+	push_a 2
+	jsr_eval 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPSt_sappPIO
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.n 7 _ ea181
+.o 1 0
+n181
+	push_node _cycle_in_spine 7
+.o 8 0
+ea181
+.o 8 0
+s181
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 6
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	push_a 6
+	jsr_eval 0
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 7 0
+	jsr e_matchGame_sappendMatchToCompetitionFile
+.o 1 1 i
+	push_a 0
+	buildI_b 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.o 0 2 ii
+s110
+	push_b 1
+	ItoR
+	push_b 1
+	ItoR
+	divR
+	pushR 100.0
+	mulR
+	RtoI
+	buildI_b 0
+	pop_b 1
+	buildh e_StdString_dtoString;5 0
+	buildI_b 1
+	buildAC " out of "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " ("
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "%)"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 2
+.d 3 0
+	jmp e_StdEnvExt_s+++>
+.o 3 0
+s99
+	push_a 2
+.d 1 0
+	jsr e_StdMaybe_sisNothing
+.o 0 1 b
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 1 b
+	jsr s146
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC ": "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "-"
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.o 1 1 b
+s146
+	eqB_b TRUE 0
+	jmp_true case.59
+	jmp case.60
+case.59
+	pop_a 1
+	pop_b 1
+	buildAC "no result"
+.d 1 0
+	rtn
+case.60
+	push_a 0
+	pop_b 1
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdMaybe_sfromJust
+.o 1 0
+	repl_args 2 2
+	buildh e_StdString_dtoString;5 0
+	buildh e_StdString_dtoString;5 0
+.d 4 0
+	jmp e_StdEnvExt_stoString;48
+.o 1 0
+s97
+	buildh d105 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdOrdList_ssortBy
+.o 1 0
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	push_array 0
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.desc d105 _hnf l105 2 0 "<lambda>[line:510];51;105"
+.a 0 a105
+.o 2 0
+l105
+	repl_args 1 1
+.o 2 0
+a105
+.d 2 0
+	jsr ea105
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea105
+	jsr_eval 1
+	jsr_eval 0
+	push_array 1
+	push_array 1
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 2 0
+s105
+	push_a 0
+	updatepop_a 0 1
+	push_arraysize CHAR 0 1
+	push_a 0
+	updatepop_a 0 1
+	push_arraysize CHAR 0 1
+	ltI
+.d 0 1 b
+	rtn
+.desc d96 _hnf l96 5 0 "<lambda>[line:15];13;96"
+.a 5 ea96
+.o 2 0
+l96
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.o 6 0
+ea96
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_array 3
+	push_array 2
+	update_a 1 5
+	update_a 0 3
+	pop_a 2
+.o 6 0
+s96
+	create
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr e_StdControl_ssetControlText
+.o 1 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_StdControl_ssetControlText
+.n 3 _
+.o 1 0
+n92
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea92
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 3 0
+ea92
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_array 1
+	push_array 1
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 3 0
+s92
+	push_a 2
+.d 1 0
+	jsr e_StdMaybe_sisNothing
+.o 0 1 b
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 1 b
+	jsr s145
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC ": "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "-"
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.o 1 1 b
+s145
+	eqB_b TRUE 0
+	jmp_true case.61
+	jmp case.62
+case.61
+	pop_a 1
+	pop_b 1
+	buildAC "no result"
+.d 1 0
+	rtn
+case.62
+	push_a 0
+	pop_b 1
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdMaybe_sfromJust
+.o 1 0
+	repl_args 2 2
+	buildh e_StdString_dtoString;5 0
+	buildh e_StdString_dtoString;5 0
+.d 4 0
+	jmp e_StdEnvExt_stoString;48
+.n 3 _
+.o 1 0
+n67
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea67
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea67
+	jsr_eval 2
+	jsr_eval 0
+	push_r_args 2 2 0
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.o 4 0
+s67
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;5 1
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;4 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;5 1
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;4 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;5 1
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;4 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;5 1
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;4 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;5 1
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dcontrolToHandles;4 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	buildh e_StdControlClass_dgetControlType;23 1
+	push_a 1
+	buildh e_StdControlClass_dcontrolToHandles;22 1
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 5
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 6
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 8
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 9
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 11
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 12
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh d86 0
+	push_a 17
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdOrdList_dsortBy 2 e_StdOrdList_nsortBy
+	push_a 19
+	push_a 19
+	push_a 2
+	update_a 19 22
+	update_a 17 21
+	update_a 4 20
+	update_a 3 19
+	update_a 2 18
+	update_a 1 17
+	updatepop_a 0 16
+.d 3 0
+	jsr s88
+.o 2 0
+	push_a 5
+	buildh e_StdControl_dcloseAllControls 1
+.d 3 0
+	jsr e_StdPSt_sappPIO
+.o 2 0
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRight 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 6
+	buildh e_StdWindow_dcloseWindow 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "Ok"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh _Nil 0
+	buildI 0
+	buildI 4
+	buildh e_StdControlDef_dControlItemSpace 2
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 4
+	build _ 1 n60
+	buildh e_StdIOBasic_dListLS 1
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildI 0
+	buildI 4
+	buildh e_StdControlDef_dControlItemSpace 2
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 4
+	build _ 1 n59
+	buildh e_StdIOBasic_dListLS 1
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildI 0
+	buildI 4
+	buildh e_StdControlDef_dControlItemSpace 2
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 4
+	build _ 1 n58
+	buildh e_StdIOBasic_dListLS 1
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildI 0
+	buildI 4
+	buildh e_StdControlDef_dControlItemSpace 2
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRightToPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 4
+	build _ 1 n57
+	buildh e_StdIOBasic_dListLS 1
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildI 0
+	buildI 4
+	buildh e_StdControlDef_dControlItemSpace 2
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeftTop 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 4
+	build _ 1 n185
+	buildh e_StdIOBasic_dListLS 1
+	buildh e_StdControlDef_dLayoutControl 2
+	buildh e_StdIOBasic_d:+: 2
+	build _ 0 e_StdMisc_nundef
+	push_a 5
+	push_a 7
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 6
+	push_a 8
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 9
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 6 10
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 7 0
+	jsr e_StdControl_sopenControls
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.63
+	buildAC "Could not refill dialog with result list.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.63
+.d 2 0
+	rtn
+.n 1 _ ea185
+.o 1 0
+n185
+	push_node _cycle_in_spine 1
+.o 2 0
+ea185
+.o 2 0
+s185
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 1
+.d 1 2 ii
+	jmp s91
+.o 1 2 ii
+s91
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.64
+	push_b 1
+	push_b 1
+	build_u _ 0 2 n186
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildI_b 0
+	build e_StdString_dtoString;5 1 e_StdString_ntoString;5
+	buildh e_StdControlDef_dTextControl 2
+	fillh _Cons 2 2
+	pop_b 2
+.d 1 0
+	rtn
+else.64
+	fillh _Nil 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.nu 0 2 _ _
+.o 1 0
+n186
+	push_node_u _cycle_in_spine 0 2
+.o 1 2 ii
+ea186
+.o 1 2 ii
+s186
+	pushI 1
+	push_b 1
+	addI
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 1 2 ii
+	jmp s91
+.o 3 0
+s88
+	push_a 2
+	push_a 2
+	pushI 1
+	buildAC "ranking.txt"
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 i
+	jsr e_StdPStClass_sfopen;1
+.o 2 3 bf
+	push_b 0
+	notB
+	jmp_false else.65
+	build_r e_iostate_rPSt 2 0 0 0
+	buildAC "Could not output ranking to ranking.txt"
+	update_a 1 4
+	updatepop_a 0 3
+	pop_b 3
+.d 2 0
+	jsr e_StdDebug_strace_n;6
+.o 1 0
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.65
+	push_a 2
+	jsr_eval 0
+	push_b 2
+	push_b 2
+	update_b 1 4
+	updatepop_b 0 3
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 2 f
+	jsr s85
+.o 0 2 f
+	push_a 1
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 2 f
+	jsr e_StdPStClass_sfclose;0
+.o 2 1 b
+	push_b 0
+	notB
+	jmp_false else.66
+	build_r e_iostate_rPSt 2 0 0 0
+	buildAC "Could not close ranking.txt"
+	update_a 1 3
+	updatepop_a 0 2
+	pop_b 1
+.d 2 0
+	jsr e_StdDebug_strace_n;6
+.o 1 0
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.66
+	pop_b 1
+.d 2 0
+	rtn
+.desc d86 _hnf l86 2 0 "<lambda>[line:538];47;86"
+.a 0 a86
+.o 2 0
+l86
+	repl_args 1 1
+.o 2 0
+a86
+.d 2 0
+	jsr ea86
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea86
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_a 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_r_args 3 0 3
+	push_r_args 1 0 3
+	update_a 2 5
+	update_a 0 4
+	pop_a 4
+.o 2 6 iiiiii
+s86
+	push_b 2
+	push_b 2
+	push_b 2
+	push_b 8
+	push_b 8
+	push_b 8
+	update_b 5 11
+	update_b 4 10
+	update_b 3 9
+	update_b 2 8
+	update_b 1 7
+	updatepop_b 0 6
+	pop_a 2
+.d 0 6 iiiiii
+	jmp e_matchGame_s<;17
+.n 1 _ ea57
+.o 1 0
+n57
+	push_node _cycle_in_spine 1
+.o 2 0
+ea57
+	jsr_eval 0
+.o 2 0
+s57
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s144
+.o 2 0
+s144
+	eq_desc _Cons 2 0
+	jmp_true case.67
+	jmp case.68
+case.67
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s143
+case.68
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s143
+case.69
+	push_a 2
+	build _ 1 n57
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 2
+	buildh e_StdControlDef_dTextControl 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.70
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s57
+.n 1 _ ea58
+.o 1 0
+n58
+	push_node _cycle_in_spine 1
+.o 2 0
+ea58
+	jsr_eval 0
+.o 2 0
+s58
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s142
+.o 2 0
+s142
+	eq_desc _Cons 2 0
+	jmp_true case.71
+	jmp case.72
+case.71
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s141
+case.72
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s141
+case.73
+	push_a 2
+	build _ 1 n58
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 3
+	build e_matchGame_dRank.matchpoints -3 e_matchGame_nRank.matchpoints
+	build e_StdString_dtoString;5 1 e_StdString_ntoString;5
+	buildh e_StdControlDef_dTextControl 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.74
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s58
+.n 1 _ ea59
+.o 1 0
+n59
+	push_node _cycle_in_spine 1
+.o 2 0
+ea59
+	jsr_eval 0
+.o 2 0
+s59
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s140
+.o 2 0
+s140
+	eq_desc _Cons 2 0
+	jmp_true case.75
+	jmp case.76
+case.75
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s139
+case.76
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s139
+case.77
+	push_a 2
+	build _ 1 n59
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 3
+	build e_matchGame_dRank.goals_scored -3 e_matchGame_nRank.goals_scored
+	build e_StdString_dtoString;5 1 e_StdString_ntoString;5
+	buildh e_StdControlDef_dTextControl 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.78
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s59
+.n 1 _ ea60
+.o 1 0
+n60
+	push_node _cycle_in_spine 1
+.o 2 0
+ea60
+	jsr_eval 0
+.o 2 0
+s60
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s138
+.o 2 0
+s138
+	eq_desc _Cons 2 0
+	jmp_true case.79
+	jmp case.80
+case.79
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s137
+case.80
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s137
+case.81
+	push_a 2
+	build _ 1 n60
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dLeft 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 3
+	build e_matchGame_dRank.goals_against -3 e_matchGame_nRank.goals_against
+	build e_StdString_dtoString;5 1 e_StdString_ntoString;5
+	buildh e_StdControlDef_dTextControl 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.82
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s60
+.o 1 2 f
+s85
+	eq_desc _Nil 0 0
+	jmp_true case.83
+	jmp case.84
+case.83
+	pop_a 1
+.d 0 2 f
+	rtn
+case.84
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 0 3
+	push_array 0
+	update_a 0 2
+	pop_a 2
+	push_b 4
+	push_b 4
+	update_b 4 6
+	update_b 3 5
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+	buildh _Nil 0
+	update_a 0 3
+	update_a 0 4
+	pop_a 1
+.d 1 5 fiii
+	jsr s61
+.o 0 2 f
+	updatepop_a 0 2
+.d 1 2 f
+	jmp s85
+.o 1 5 fiii
+s61
+	buildh e_StdString_dtoString;9 0
+	buildAC "\t"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\t"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\t"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	push_b 1
+	push_b 1
+	update_b 1 6
+	updatepop_b 0 5
+.d 1 2 f
+	jsr writeFS
+.o 0 2 f
+.d 0 2 f
+	rtn
+.n 4 _ ea10
+.o 1 0
+n10
+	push_node _cycle_in_spine 4
+.o 5 0
+ea10
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 5 0
+s10
+	push_a 0
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	fillh d84 5 9
+	pop_a 4
+.d 1 0
+	rtn
+.desc d84 _hnf l84 6 0 "<lambda>[line:15];13;84"
+.a 0 a84
+.o 2 0
+l84
+	repl_args 5 5
+.o 6 0
+a84
+.d 6 0
+	jsr ea84
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 6 0
+ea84
+	jsr_eval 5
+	push_r_args 5 2 0
+	update_a 1 7
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+.o 7 0
+s84
+	push_a 6
+	push_a 6
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s9
+.o 2 0
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 6 0
+	jmp s11
+.desc d19 _hnf l19 1 0 "realisticf"
+.o 2 0
+l19
+	pop_a 1
+.o 1 0
+ea19
+	jsr_eval 0
+	repl_r_args 2 0
+	push_r_args_u 0 5 1
+	update_a 0 4
+	pop_a 4
+	pop_b 1
+	buildh e_randomstream_dnextRandomP 0
+	push_r_args 1 11 2
+	update_a 11 7
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args 2 5 1
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 3
+	push_a 3
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.desc d20 _hnf l20 1 0 "predictablef"
+.o 2 0
+l20
+	pop_a 1
+.o 1 0
+ea20
+	jsr_eval 0
+	repl_r_args 2 0
+	push_r_args_u 0 5 1
+	update_a 0 4
+	pop_a 4
+	pop_b 1
+	buildh e_randomstream_dnext1 0
+	push_r_args 1 11 2
+	update_a 11 7
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args 2 5 1
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 3
+	push_a 3
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.desc d18 _hnf l18 3 0 "changeSpeedf"
+.a 0 a18
+.o 2 0
+l18
+	repl_args 2 2
+.o 3 0
+a18
+.d 3 0
+	jsr ea18
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 3 0
+ea18
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	update_a 1 4
+	update_a 2 1
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+.o 4 0
+s18
+	push_a 1
+	push_r_args_a 3 5 1 4 1
+	repl_r_args 3 3
+	update_a 3 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rOptions 3 3 0 0
+	update_a 0 3
+	pop_a 3
+	pop_b 3
+	push_r_args 3 5 1
+	update_a 5 3
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 4
+	push_a 4
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_r_args_a 4 5 1 1 1
+	repl_r_args_a 11 2 10 1
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n173
+	push_a 3
+	buildh e_StdTimer_dsetTimerInterval 2
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jmp e_StdPSt_sappPIO
+.n 2 _ ea173
+.o 1 0
+n173
+	push_node _cycle_in_spine 2
+.o 3 0
+ea173
+.o 3 0
+s173
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_guiInterface_sintervalFactor
+.o 0 1 r
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_matchControl_stoReal;10
+.o 0 1 r
+.d 0 0
+	jsr e_StdSystem_sticksPerSecond
+.o 0 1 i
+	ItoR
+	mulR
+	mulR
+	RtoI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d12 _hnf l12 2 0 "showReff"
+.a 0 a12
+.o 2 0
+l12
+	repl_args 1 1
+.o 2 0
+a12
+.o 2 0
+ea12
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	pushB_a 2
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+	push_b 0
+	push_r_args 0 5 1
+	updatepop_a 3 4
+	pop_b 1
+	repl_r_args 3 3
+	update_b 3 2
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	build_r e_matchGame_rOptions 3 3 0 0
+	update_a 0 3
+	pop_a 3
+	pop_b 3
+	push_r_args 1 5 1
+	update_a 5 3
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	pop_b 1
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 _ ea27
+.o 1 0
+n27
+	push_node _cycle_in_spine 2
+.o 3 0
+ea27
+	jsr_eval 1
+.o 3 0
+s27
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s134
+.o 3 0
+s134
+	eq_desc _Cons 2 0
+	jmp_true case.85
+	jmp case.86
+case.85
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n27
+	push_a 1
+	push_a 4
+	buildh d17 2
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdMaybe_dNothing 0
+	buildh e_StdMaybe_dNothing 0
+	push_a 4
+	build e_render_dnameOf;4 1 e_render_nnameOf;4
+	buildh _Tuple 4
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.86
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.desc d17 _hnf l17 3 0 "setfieldlook"
+.a 0 a17
+.o 2 0
+l17
+	repl_args 2 2
+.o 3 0
+a17
+.o 3 0
+ea17
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	pop_a 2
+	push_r_args_u 3 5 1
+	update_a 3 4
+	update_a 0 3
+	pop_a 3
+	pop_b 1
+	push_a 0
+	push_a 5
+	build e_system_dAP 2 e_system_nAP
+	buildB FALSE
+	buildh _Tuple 2
+	create
+	push_a 8
+	pushB TRUE
+	push_a 5
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 5 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 1 b
+	jsr e_StdControl_ssetControlLook
+.o 1 0
+	build_r e_render_rRenderStyle 2 0 2 0
+	push_r_args 2 3 3
+	update_a 3 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rOptions 3 3 0 0
+	update_a 0 3
+	pop_a 3
+	pop_b 3
+	push_r_args 5 5 1
+	update_a 5 3
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 6
+	push_a 6
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	update_a 2 0
+	update_a 3 1
+	update_a 1 3
+	updatepop_a 0 2
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.desc d13 _hnf l13 5 0 "playtimef"
+.a 0 a13
+.o 2 0
+l13
+	repl_args 4 4
+.o 5 0
+a13
+.d 5 0
+	jsr ea13
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 5 0
+ea13
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 4 2 0
+	push_r_args 5 2 0
+	update_a 3 8
+	update_a 5 3
+	update_a 0 5
+	update_a 2 7
+	update_a 4 2
+	update_a 6 4
+	update_a 1 6
+	pop_a 2
+.o 7 0
+s13
+	push_r_args_u 5 5 1
+	update_a 3 4
+	pop_a 4
+	pop_b 1
+	repl_r_args 3 3
+	update_a 1 2
+	pop_a 2
+	pop_b 3
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_RangeSlider_dgetControlType;6 0
+	buildh e_RangeSlider_dcontrolToHandles;5 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;11 0
+	buildh e_StdControlClass_dcontrolToHandles;10 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 0
+	push_a 2
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 1
+	push_a 3
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 11
+	push_a 11
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	buildh _Nil 0
+	update_a 0 12
+	update_a 0 11
+	pop_a 1
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	build _ 0 e_StdReal_nzero;3
+	build e_StdOverloaded_tzero; 1 e_StdOverloaded_czero;
+	build _ 0 e_StdReal_none;6
+	build e_StdOverloaded_tone; 1 e_StdOverloaded_cone;
+	buildh e_StdReal_d-;2 0
+	build e_StdOverloaded_t-; 1 e_StdOverloaded_c-;
+	buildh e_StdReal_d+;1 0
+	build e_StdOverloaded_t+; 1 e_StdOverloaded_c+;
+	build e_StdClass_tIncDec; 4 e_StdClass_cIncDec;
+	buildh e_StdReal_d<;12 0
+	build _ 2 n170
+	buildh e_Footballer_dminutes;105 0
+	build e_StdList_dmap 2 e_StdList_nmap
+	build_r e_iostate_rPSt 2 0 3 0
+	buildh e_StdId_dopenRIds;18 0
+	buildh e_StdId_dopenRId;17 0
+	buildh e_StdId_dopenR2Ids;16 0
+	buildh e_StdId_dopenR2Id;15 0
+	buildh e_StdId_dopenIds;14 0
+	buildh e_StdId_dopenId;13 0
+	update_a 8 11
+	update_a 7 10
+	update_a 6 9
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 7 0
+	jsr e_RangeSlider_sopenRangeSliderId
+.o 2 0
+	push_a 4
+	push_r_args 2 2 0
+	buildh _Nil 0
+	push_a 3
+	buildh e_StdWindowDef_dWindowId 1
+	buildh _Cons 2
+	push_a 3
+	buildh e_StdWindow_dcloseWindow 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdWindowDef_dWindowClose 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dRight 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 4
+	buildh e_StdWindow_dcloseWindow 1
+	buildh e_StdIOBasic_dnoLS 1
+	buildh e_StdControlDef_dControlFunction 1
+	buildh _Cons 2
+	buildAC "Close"
+	buildh ARRAY 1
+	buildh e_StdControlDef_dButtonControl 2
+	buildh _Nil 0
+	build_r e_textdisplay_rTextDisplayId 2 0 17 0
+	push_a 10
+	push_a 17
+	push_a 17
+	push_a 20
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh d35 5
+	buildh e_StdIOBasic_dnoLS1 1
+	buildh e_Footballer_d==;99 0
+	push_a 15
+	push_a 11
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 3 n172
+	push_a 10
+	build e_RangeSlider_tRange 2 e_RangeSlider_cRange
+	buildI 16
+	buildh e_StdControlDef_dPixelWidth 1
+	buildh e_StdIOCommon_dHorizontal 0
+	push_a 10
+	buildh e_RangeSlider_dRangeSlider 6
+	buildh e_StdIOBasic_d:+: 2
+	buildh _Nil 0
+	buildh e_Footballer_d<;98 0
+	push_a 9
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n171
+	build e_Footballer_dtoString;103 1 e_Footballer_ntoString;103
+	buildh e_StdControlDef_dContentWidth 1
+	buildh e_StdControlDef_dControlWidth 1
+	buildh _Cons 2
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	push_a 9
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	push_a 13
+	build e_Footballer_dtoString;103 1 e_Footballer_ntoString;103
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildAC "Playing Time"
+	buildh ARRAY 1
+	buildh e_StdWindowDef_dDialog 3
+	build _ 0 e_StdMisc_nundef
+	push_a 10
+	push_a 12
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 11
+	push_a 13
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	update_a 5 21
+	update_a 4 20
+	update_a 3 19
+	update_a 2 18
+	update_a 1 17
+	updatepop_a 0 16
+.d 6 0
+	jsr e_StdWindow_sopenModalDialog;58
+.o 4 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.87
+	buildAC "Could not open Playing Time dialog.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.87
+.d 2 0
+	rtn
+.n 3 _ ea172
+.o 1 0
+n172
+	push_node _cycle_in_spine 3
+.o 4 0
+ea172
+.o 4 0
+s172
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_s??
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea171
+.o 1 0
+n171
+	push_node _cycle_in_spine 2
+.o 3 0
+ea171
+.o 3 0
+s171
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdOrdList_smaxList
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea170
+.o 1 0
+n170
+	push_node _cycle_in_spine 2
+.o 3 0
+ea170
+.o 3 0
+s170
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	buildR 10.0
+	buildR 1.0
+	buildR 0.5
+	push_a 4
+	update_a 3 5
+	update_a 1 3
+	update_a 4 1
+	update_a 2 4
+	update_a 0 2
+	pop_a 1
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 6 0
+	jmp e__SystemEnum_s_from_then_to
+.desc d35 _hnf l35 7 0 "setPlayingTime;34"
+.a 0 a35
+.o 2 0
+l35
+	repl_args 6 6
+.o 7 0
+a35
+.d 7 0
+	jsr ea35
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 7 0
+ea35
+	jsr_eval 6
+	jsr_eval 5
+	push_r_args 6 2 0
+	push_r_args 3 2 0
+	update_a 3 10
+	update_a 0 3
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 9 8
+	update_a 2 9
+	update_a 4 2
+	update_a 1 4
+	pop_a 2
+.o 9 0
+s35
+	push_a 6
+.d 1 0
+	jsr e_Footballer_stoString;103
+.o 1 0
+	push_a 7
+	push_r_args_a 9 5 1 4 1
+	repl_r_args 3 3
+	update_a 3 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rOptions 3 3 0 0
+	update_a 0 3
+	pop_a 3
+	pop_b 3
+	push_a 8
+	push_r_args_a 10 5 1 1 1
+	repl_r_args 11 2
+	update_a 11 6
+	update_a 10 11
+	update_a 9 10
+	update_a 8 9
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args 10 5 1
+	update_a 5 0
+	update_a 6 3
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 10
+	push_a 10
+	push_a 3
+	push_a 7
+	push_a 7
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	update_a 0 16
+	update_a 0 15
+	update_a 0 14
+	pop_a 1
+.d 5 0
+	jsr e_textdisplay_ssetTextDisplayText
+.o 2 0
+	push_a 3
+	buildh ARRAY 1
+	push_a 10
+	buildh e_StdControl_dsetControlText 2
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 5
+	pop_a 1
+.d 3 0
+	jsr e_StdPSt_sappPIO
+.o 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 3
+	push_a 8
+	push_a 8
+	update_a 4 14
+	update_a 3 13
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+.d 5 0
+	jmp s16
+.o 5 0
+s16
+	push_r_args_u 3 5 1
+	update_a 3 4
+	update_a 0 3
+	pop_a 3
+	pop_b 1
+	pushI 0
+	pushI 0
+	push_r_args_a 1 3 3 2 1
+	buildh e_Footballer_dFirstHalf 0
+	push_r_args_a 2 11 2 5 1
+	repl_r_args 3 0
+.d 3 0
+	jsr e_Referee_snameOf;7
+.o 1 0
+	push_r_args_a 3 11 2 4 1
+	repl_r_args 2 0
+.d 3 0
+	jsr s38
+.o 3 0
+	build_r e_Referee_rReferee 3 0 0 0
+	updatepop_a 0 3
+.d 0 0
+	jsr e_Football_szero;4
+.o 2 0
+	build_r e_Football_kFree 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	push_r_args_a 4 11 2 2 1
+.d 1 0
+	jsr e_Team_snameOf;6
+.o 1 0
+	push_r_args_a 5 11 2 4 1
+	repl_r_args 2 0
+	buildh e_Footballer_dEast 0
+	create
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+.d 5 0
+	jsr s39
+.o 1 0
+	push_r_args_a 5 11 2 1 1
+.d 1 0
+	jsr e_Team_snameOf;6
+.o 1 0
+	push_r_args_a 6 11 2 4 1
+	repl_r_args 2 0
+	buildh e_Footballer_dWest 0
+	create
+	push_a 4
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+.d 5 0
+	jsr s39
+.o 1 0
+	push_r_args 6 11 2
+	update_a 11 0
+	update_a 12 1
+	update_a 13 2
+	update_a 14 4
+	update_a 15 5
+	update_a 16 6
+	update_b 2 0
+	update_b 3 1
+	update_a 10 16
+	update_a 9 15
+	update_a 8 14
+	update_a 7 13
+	update_a 6 12
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	update_b 1 3
+	updatepop_b 0 2
+	build_r e_matchControl_rMatch 11 2 0 0
+	update_a 0 11
+	pop_a 11
+	pop_b 2
+	push_r_args_a 2 3 3 3 1
+	repl_r_args_a 2 0 2 1
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_system_dAP 2 e_system_nAP
+	buildB FALSE
+	buildh _Tuple 2
+	create
+	push_a 9
+	pushB TRUE
+	push_a 8
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 8 9
+	update_a 7 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 1 b
+	jsr e_StdControl_ssetControlLook
+.o 1 0
+	push_a 1
+	push_r_args 5 5 1
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 6
+	push_a 6
+	pushI 0
+	push_a 5
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 10
+	update_a 0 9
+	update_a 0 6
+	pop_a 1
+.d 3 1 i
+	jsr e_digitdisplay_ssetDigitDisplayValue
+.o 2 0
+	pushI 0
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 3 1 i
+	jsr e_digitdisplay_ssetDigitDisplayValue
+.o 2 0
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	update_a 2 0
+	update_a 3 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.o 3 0
+s38
+	create
+.d 1 0
+	jsr e_Referee_sallAvailableReferees
+.o 1 0
+	build_r e_Footballer_rFootballField 2 0 1 0
+	create
+	push_a 5
+	buildh ARRAY 1
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr s82
+.o 1 0
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	repl_r_args 3 0
+.d 3 0
+	rtn
+.n 3 _ ea82
+.o 1 0
+n82
+	push_node _cycle_in_spine 3
+.o 4 0
+ea82
+	jsr_eval 2
+.o 4 0
+s82
+	push_a 1
+	push_a 1
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s133
+.o 4 0
+s133
+	eq_desc _Cons 2 0
+	jmp_true case.88
+	jmp case.89
+case.88
+	repl_args 2 2
+	push_a 3
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	jsr_ap 1
+	repl_r_args 3 0
+.d 3 0
+	jsr e_Referee_snameOf;7
+.o 1 0
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.90
+	push_a 1
+	push_a 4
+	push_a 4
+	build _ 3 n82
+	push_a 3
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+else.90
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	push_a 4
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jmp s82
+case.89
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.o 5 0
+s39
+	create
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr s25
+.o 1 0
+	create
+	push_a 2
+	buildh ARRAY 1
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr s81
+.o 1 0
+.d 1 0
+	jsr e_StdList_shd
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea81
+.o 1 0
+n81
+	push_node _cycle_in_spine 2
+.o 3 0
+ea81
+	jsr_eval 1
+.o 3 0
+s81
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s131
+.o 3 0
+s131
+	eq_desc _Cons 2 0
+	jmp_true case.91
+	jmp case.92
+case.91
+	repl_args 2 2
+	push_a 2
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+.d 1 0
+	jsr e_Team_snameOf;6
+.o 1 0
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.93
+	push_a 1
+	push_a 3
+	build _ 2 n81
+	push_a 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+else.93
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp s81
+case.92
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.o 4 0
+s25
+	create
+.d 1 0
+	jsr e_Team_sallAvailableTeams
+.o 1 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_sapply
+.o 1 0
+	build_r e_Footballer_rFootballField 2 0 1 0
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdEnvExt_sapply
+.desc d6 _hnf l6 2 0 "setSplashScreenf"
+.a 0 a6
+.o 2 0
+l6
+	repl_args 1 1
+.o 2 0
+a6
+.d 2 0
+	jsr ea6
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 2 0
+ea6
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.o 3 0
+s6
+	push_r_args_a 1 5 1 4 1
+	repl_r_args 3 3
+	updatepop_b 1 2
+	pop_a 3
+	jmp_false else.94
+	pushB FALSE
+	push_r_args_a 1 5 1 4 1
+	repl_r_args 3 3
+	update_b 3 1
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	build_r e_matchGame_rOptions 3 3 0 0
+	update_a 0 3
+	pop_a 3
+	pop_b 3
+	push_r_args 2 5 1
+	update_a 5 3
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 3
+	push_a 3
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildh e_StdMenuElement_dunmarkMenuItems 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_StdPSt_sappPIO
+else.94
+	pushB TRUE
+	push_r_args_a 1 5 1 4 1
+	repl_r_args 3 3
+	update_b 3 1
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	build_r e_matchGame_rOptions 3 3 0 0
+	update_a 0 3
+	pop_a 3
+	pop_b 3
+	push_r_args 2 5 1
+	update_a 5 3
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 3
+	push_a 3
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildh e_StdMenuElement_dmarkMenuItems 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_StdPSt_sappPIO
+.desc d7 _hnf l7 1 0 "quitf"
+.o 2 0
+l7
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+s7
+	build_r e_iostate_rPSt 2 0 0 0
+	push_r_args_a 1 5 1 4 1
+	repl_r_args 3 3
+	buildh e_StdPStClass_dstdio;3 0
+	buildh e_StdPStClass_dsfopen;2 0
+	buildh e_StdPStClass_dfopen;1 0
+	buildh e_StdPStClass_dfclose;0 0
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 8 3 bbb
+	jsr e_matchGame_ssetOptions
+.o 1 0
+	repl_r_args 2 0
+.d 2 0
+	jmp e_StdProcess_scloseProcess
+.desc d21 _hnf l21 4 0 "frameRatef"
+.a 0 a21
+.o 2 0
+l21
+	repl_args 3 3
+.o 4 0
+a21
+.d 4 0
+	jsr ea21
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 4 0
+ea21
+	jsr_eval 3
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 2 0
+	push_r_args 4 2 0
+	push_r_args 5 2 0
+	push_r_args 6 2 0
+	update_a 7 11
+	update_a 3 7
+	update_a 6 10
+	update_a 2 6
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	pop_a 4
+.o 8 0
+s21
+	push_r_args_u 6 5 1
+	update_a 0 4
+	pop_a 4
+	repl_r_args 11 2
+	update_a 6 10
+	update_a 5 9
+	pop_a 9
+	pop_b 2
+	pushI 0
+	push_r_args 8 5 1
+	update_b 1 0
+	updatepop_b 0 1
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	update_a 0 5
+	pop_a 5
+	pop_b 1
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 1 0
+	jsr e_Footballer_stoString;103
+.o 1 0
+	push_a 11
+	push_a 11
+	push_a 7
+	push_a 7
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	update_a 0 16
+	update_a 0 15
+	pop_a 1
+.d 5 0
+	jsr e_textdisplay_ssetTextDisplayText
+.o 2 0
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 1 0
+	jsr s24
+.o 1 0
+	push_a 9
+	push_a 9
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 12
+	pop_a 1
+.d 5 0
+	jsr e_textdisplay_ssetTextDisplayText
+.o 2 0
+	update_a 2 0
+	update_a 1 2
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;5 0
+	buildI_b 0
+	buildAC "Rounds/sec: "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	push_a 10
+	push_a 10
+	update_a 4 14
+	update_a 3 13
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+.d 5 0
+	jmp e_textdisplay_ssetTextDisplayText
+.desc d11 _hnf l11 5 0 "nextstep"
+.a 0 a11
+.o 2 0
+l11
+	repl_args 4 4
+.o 5 0
+a11
+.d 5 0
+	jsr ea11
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 5 0
+ea11
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 4 2 0
+	update_a 1 6
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 0 5
+	pop_a 1
+.o 6 0
+s11
+	push_r_args 4 5 1
+	buildh e_StdPStClass_dstdio;7 0
+	buildh e_StdPStClass_dsfopen;6 0
+	buildh e_StdPStClass_dfopen;5 0
+	buildh e_StdPStClass_dfclose;4 0
+	push_a 14
+	push_a 9
+	update_a 1 10
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 9 8
+	update_a 0 9
+	pop_a 1
+.d 10 1 i
+	jsr e_guiInterface_sstepMatchForGui
+.o 7 1 i
+	push_a 1
+	push_a 5
+	repl_r_args_a 3 3 3 1
+	repl_r_args_a 2 0 2 1
+	build e_system_dAP 2 e_system_nAP
+	buildB FALSE
+	buildh _Tuple 2
+	create
+	push_a 8
+	pushB TRUE
+	push_a 11
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 13
+	update_a 0 11
+	pop_a 1
+.d 4 1 b
+	jsr e_StdControl_ssetControlLook
+.o 1 0
+	push_a 6
+	push_a 6
+	push_b 0
+	push_a 6
+	push_a 6
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 9
+	update_a 0 10
+	update_a 0 11
+	update_a 0 12
+	pop_a 1
+.d 5 1 i
+	jsr e_matchGame_sincFrames
+.o 5 1 i
+	build_r e_matchGame_rFootballGame 5 1 0 0
+	updatepop_a 0 5
+	pop_b 1
+	push_a 14
+	push_a 14
+	update_a 2 0
+	update_a 3 1
+	update_a 1 3
+	updatepop_a 0 2
+	push_a 2
+	push_a 10
+	push_a 14
+	push_a 14
+	update_a 5 18
+	update_a 4 17
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+	pop_b 1
+.d 6 0
+	jmp s34
+.o 6 0
+s34
+	push_a 3
+	push_a 6
+	push_a 6
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 6 0
+	jmp s80
+.o 6 0
+s80
+	eq_desc _Nil 0 5
+	jmp_true case.95
+	jmp case.96
+case.95
+	update_a 4 5
+	updatepop_a 3 4
+.d 2 0
+	rtn
+case.96
+	push_args 5 2 2
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	buildh _Nil 0
+	update_a 0 13
+	update_a 0 14
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 6 0
+	jsr s32
+.o 2 0
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 6 0
+	jmp s80
+.o 6 0
+s32
+	push_r_args_u 3 5 1
+	update_a 0 4
+	pop_a 4
+	pop_b 1
+	repl_r_args 11 2
+	update_a 5 10
+	pop_a 10
+	buildh _Nil 0
+	buildh e_Footballer_disAddTime 0
+	buildh _Cons 2
+	buildh e_Footballer_disPauseGame 0
+	buildh _Cons 2
+	buildh e_Footballer_disCenterKick 0
+	buildh _Cons 2
+	buildh e_Footballer_disDirectFreeKick 0
+	buildh _Cons 2
+	buildh e_Footballer_disDisplacePlayers 0
+	buildh _Cons 2
+	buildh e_Footballer_disContinueGame 0
+	buildh _Cons 2
+	create
+	push_a 8
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_sapply
+.o 1 0
+.d 1 0
+	jsr e_StdList_sor
+.o 0 1 b
+	jmp_false else.97
+	update_a 5 6
+	updatepop_a 4 5
+	pop_b 2
+.d 2 0
+	rtn
+else.97
+	buildI_b 1
+	buildI_b 0
+	buildh _Tuple 2
+	push_a 3
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 6
+	push_a 6
+	push_a 13
+	push_a 7
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 0 4
+	pop_a 1
+	update_a 7 14
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	pop_b 2
+.d 8 0
+	jmp s129
+.o 8 0
+s129
+	pushD_a 0
+	eqD_b e_Footballer_kGoal 0
+	jmp_true case.98
+	eqD_b e_Footballer_kGameCancelled 0
+	jmp_true case.99
+	pop_b 1
+	jmp case.100
+case.98
+	pop_b 1
+	push_args 0 1 1
+	buildh e_Footballer_dWest 0
+	push_a 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+	jmp_false else.102
+	buildh e_Footballer_dFirstHalf 0
+	push_a 3
+.d 2 0
+	jsr e_Footballer_s==;78
+.o 0 1 b
+	jmp_true then.101
+else.102
+	buildh e_Footballer_dEast 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+	jmp_true then.104
+	buildh _Nil 0
+	jmp else.101
+then.104
+	buildh e_Footballer_dSecondHalf 0
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 0
+	jsr e_Footballer_s==;78
+.o 0 1 b
+	buildh _Nil 0
+	jmp_false else.101
+then.101
+	push_a 1
+	update_a 2 3
+	updatepop_a 0 2
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 1 0
+	jsr e_Footballer_sisGameOver
+.o 0 1 b
+	push_a 5
+	push_a 5
+	push_a 2
+	push_a 6
+	update_a 6 10
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 1 b
+	jsr s126
+.o 2 0
+	push_arg 3 2 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 i
+	jmp e_digitdisplay_ssetDigitDisplayValue
+else.101
+	push_a 1
+	update_a 2 4
+	updatepop_a 0 3
+.d 1 0
+	jsr e_Footballer_sisGameOver
+.o 0 1 b
+	push_a 4
+	push_a 4
+	push_a 2
+	push_a 5
+	update_a 5 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 1 b
+	jsr s127
+.o 2 0
+	push_arg 2 2 2
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	push_a 3
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 i
+	jmp e_digitdisplay_ssetDigitDisplayValue
+case.99
+	pop_b 1
+	push_args 0 1 1
+	pop_a 1
+	push_a 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr e_Footballer_sisGameOver
+.o 0 1 b
+	push_a 5
+	push_a 5
+	push_a 2
+	push_a 6
+	update_a 6 9
+	update_a 5 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 1 b
+	jsr s128
+.o 2 0
+	push_arg 3 2 2
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+.d 3 1 i
+	jsr e_digitdisplay_ssetDigitDisplayValue
+.o 2 0
+	push_arg 3 2 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	push_a 2
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 1 i
+	jmp e_digitdisplay_ssetDigitDisplayValue
+case.100
+	push_a 0
+	update_a 7 8
+	update_a 6 7
+	update_a 5 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 1 0
+	jsr e_Footballer_sisGameOver
+.o 0 1 b
+	jmp_false else.105
+	push_a 3
+	push_a 3
+	push_a 2
+	push_a 4
+	update_a 5 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr s33
+.o 2 0
+	push_a 2
+	buildh e_StdTimer_ddisableTimer 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdPSt_sappPIO
+else.105
+	push_a 3
+	push_a 3
+	push_a 2
+	push_a 4
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jmp s33
+.o 4 1 b
+s128
+	eqB_b TRUE 0
+	jmp_true case.106
+	jmp case.107
+case.106
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	pop_b 1
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr s33
+.o 2 0
+	push_a 2
+	buildh e_StdTimer_ddisableTimer 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdPSt_sappPIO
+case.107
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	pop_b 1
+.d 4 0
+	jmp s33
+.o 4 1 b
+s127
+	eqB_b TRUE 0
+	jmp_true case.108
+	jmp case.109
+case.108
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	pop_b 1
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr s33
+.o 2 0
+	push_a 2
+	buildh e_StdTimer_ddisableTimer 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdPSt_sappPIO
+case.109
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	pop_b 1
+.d 4 0
+	jmp s33
+.o 4 1 b
+s126
+	eqB_b TRUE 0
+	jmp_true case.110
+	jmp case.111
+case.110
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	pop_b 1
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jsr s33
+.o 2 0
+	push_a 2
+	buildh e_StdTimer_ddisableTimer 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdPSt_sappPIO
+case.111
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	pop_b 1
+.d 4 0
+	jmp s33
+.o 4 0
+s33
+	push_r_args_u 2 5 1
+	update_a 0 4
+	pop_a 4
+	pop_b 1
+	push_r_args 0 11 2
+	update_a 4 10
+	pop_a 10
+	pop_b 2
+	repl_args 3 3
+	update_a 0 2
+	pop_a 2
+	push_r_args 4 5 1
+	updatepop_a 3 4
+	pop_b 1
+	repl_r_args 3 3
+	pop_b 2
+	pop_a 3
+	notB
+	jmp_false else.112
+	pop_a 4
+.d 2 0
+	rtn
+else.112
+	create
+	push_a 4
+.d 2 0
+	jsr e_Referee_sdefaultSoundFile
+.o 1 0
+	push_a 6
+	push_a 6
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s125
+.o 2 0
+	push_a 4
+	jsr_eval 0
+.d 3 0
+	jsr s9
+.o 2 0
+	buildh e_StdPStClass_dstdio;7 0
+	buildh e_StdPStClass_dsfopen;6 0
+	buildh e_StdPStClass_dfopen;5 0
+	buildh e_StdPStClass_dfclose;4 0
+	build e_StdFile_tFileSystem; 4 e_StdFile_cFileSystem;
+	push_a 6
+	push_a 5
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh e_Referee_ddefaultImage 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdPSt_saccPIO
+.o 3 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdId_sopenId;13
+.o 3 0
+	push_a 0
+	push_a 4
+	buildh _Nil 0
+	push_a 1
+	buildh e_StdTimerDef_dTimerId 1
+	buildh _Cons 2
+	push_a 1
+	buildh e_StdTimer_dcloseTimer 1
+	push_a 3
+	push_a 11
+	buildh d79 3
+	buildh e_StdFunc_dconst 1
+	buildh e_StdIOBasic_dnoLS1 1
+	buildh e_StdTimerDef_dTimerFunction 1
+	buildh _Cons 2
+	buildh e_StdIOBasic_dNilLS 0
+	build _ 0 n193
+	buildh e_StdTimerDef_dTimer 3
+	build _ 0 e_StdMisc_nundef
+	buildh e_StdTimerElementClass_dtimerElementToHandles;7 0
+	buildh e_StdTimerElementClass_dgetTimerElementType;6 0
+	push_a 8
+	push_a 8
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 15 17
+	update_a 13 16
+	update_a 12 15
+	update_a 7 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 6 0
+	jsr e_StdTimer_sopenTimer;8
+.o 3 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.113
+	buildAC "Could not open referee dialog timer.\n"
+	updatepop_a 0 6
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.113
+	buildh e_StdControlClass_dgetControlType;31 0
+	buildh e_StdControlClass_dcontrolToHandles;30 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlClass_dgetControlType;19 0
+	buildh e_StdControlClass_dcontrolToHandles;18 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 5
+	buildh _Nil 0
+	push_a 6
+	buildh e_StdWindowDef_dWindowId 1
+	buildh _Cons 2
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dBelowPrev 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	build e_StdIOBasic_dzero;21 0 e_StdIOBasic_nzero;21
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh e_StdBitmap_ddrawAt;4 2
+	buildh e_StdEnvExt_dconst2 1
+	push_a 3
+	build e_StdBitmap_dgetBitmapSize 1 e_StdBitmap_ngetBitmapSize
+	buildh e_StdControlDef_dCustomControl 3
+	buildh _Nil 0
+	buildI 200
+	buildh e_StdControlDef_dPixelWidth 1
+	buildh e_StdControlDef_dControlWidth 1
+	buildh _Cons 2
+	push_a 11
+	build e_Footballer_dshowSuccintRefereeAction 1 e_Footballer_nshowSuccintRefereeAction
+	buildh e_StdControlDef_dTextControl 2
+	buildh e_StdIOBasic_d:+: 2
+	buildh e_StdString_dtoString;9 0
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n194
+	buildh e_StdWindowDef_dDialog 3
+	build _ 0 e_StdMisc_nundef
+	push_a 3
+	push_a 5
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 4
+	push_a 6
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 8
+	push_a 8
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 6 0
+	jsr e_StdWindow_sopenModalDialog;58
+.o 4 0
+	buildh e_StdIOCommon_dNoError 0
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr e_StdIOCommon_s==;42
+.o 0 1 b
+	notB
+	jmp_false else.114
+	buildAC "Could not open referee dialog.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_r_args 2 0
+.d 2 0
+	rtn
+else.114
+.d 2 0
+	rtn
+.n 2 _ ea194
+.o 1 0
+n194
+	push_node _cycle_in_spine 2
+.o 3 0
+ea194
+.o 3 0
+s194
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	buildh ARRAY 1
+	buildAC "Referee "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 0 _ ea193
+.o 1 0
+n193
+	push_node _cycle_in_spine 0
+.o 1 0
+ea193
+.o 1 0
+s193
+.d 0 0
+	jsr e_StdSystem_sticksPerSecond
+.o 0 1 i
+	pushI 5
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+s125
+	eq_desc e_StdMaybe_dJust 1 0
+	jmp_true case.115
+	jmp case.116
+case.115
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdIOExt_smakeSound
+.o 1 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdPSt_sappPIO
+case.116
+	pop_a 1
+.d 2 0
+	rtn
+.desc d79 _hnf l79 4 0 "<lambda>[line:15];13;79"
+.a 0 a79
+.o 2 0
+l79
+	repl_args 3 3
+.o 4 0
+a79
+.d 4 0
+	jsr ea79
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 4 0
+ea79
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 0
+	push_r_args 3 2 0
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+.o 5 0
+s79
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr s78
+.o 2 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s8
+.o 4 0
+s78
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdPSt_sappPIO
+.o 2 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdWindow_scloseWindow
+.desc d8 _hnf l8 2 0 "continuef"
+.a 0 a8
+.o 2 0
+l8
+	repl_args 1 1
+.o 2 0
+a8
+.d 2 0
+	jsr ea8
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 2 0
+ea8
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.o 3 0
+s8
+	push_a 0
+	buildh e_StdTimer_denableTimer 1
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_StdPSt_sappPIO
+.desc d9 _hnf l9 2 0 "haltf"
+.a 0 a9
+.o 2 0
+l9
+	repl_args 1 1
+.o 2 0
+a9
+.d 2 0
+	jsr ea9
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 2 0
+ea9
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.o 3 0
+s9
+	push_a 0
+	buildh e_StdTimer_ddisableTimer 1
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_StdPSt_sappPIO
+.n 4 _ ea4
+.o 1 0
+n4
+	push_node _cycle_in_spine 4
+.o 5 0
+ea4
+.o 5 0
+s4
+	buildh _Nil 0
+	buildh d31 0
+	buildh e_StdEnvExt_dconst2 1
+	buildh e_StdControlDef_dControlResize 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 4
+	buildh e_StdPictureDef_dPenFont 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	push_a 5
+	buildh e_StdPictureDef_dPenColour 1
+	buildh _Cons 2
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	build _ 0 n195
+	push_a 3
+	push_a 3
+	fillh e_textdisplay_dTextDisplay 4 8
+	pop_a 4
+.d 1 0
+	rtn
+.n 0 _ ea195
+.o 1 0
+n195
+	push_node _cycle_in_spine 0
+.o 1 0
+ea195
+.o 1 0
+s195
+.d 0 0
+	jsr s3
+.o 0 2 ii
+.d 0 2 ii
+	jsr s31
+.o 0 2 ii
+	fill_r e_StdIOBasic_rSize 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.desc d31 _hnf l31 1 0 "teamSize;30"
+.o 2 0
+l31
+	pop_a 1
+.d 1 0
+	jsr ea31
+.o 0 2 ii
+	build_r e_StdIOBasic_rSize 0 2 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.o 1 0
+ea31
+	jsr_eval 0
+	repl_r_args 0 2
+.o 0 2 ii
+s31
+	pushI 4
+	pushI 24
+	mulI
+	push_b 1
+	subI
+	pushI 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	divI
+.d 0 0
+	jsr s2
+.o 0 2 ii
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+	update_b 2 0
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 2 ii
+	rtn
+.n 4 _ ea5
+.o 1 0
+n5
+	push_node _cycle_in_spine 4
+.o 5 0
+ea5
+.o 5 0
+s5
+	buildh _Nil 0
+	build e_StdIOCommon_dzero;32 0 e_StdIOCommon_nzero;32
+	buildh e_StdIOCommon_dCenter 0
+	buildh _Tuple 2
+	buildh e_StdControlDef_dControlPos 1
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 4
+	buildh e_StdPictureDef_dPenFont 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	push_a 5
+	buildh e_StdPictureDef_dPenColour 1
+	buildh _Cons 2
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	build _ 0 n2
+	buildI 300
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n198
+	push_a 3
+	push_a 3
+	fillh e_textdisplay_dTextDisplay 4 8
+	pop_a 4
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n198
+	push_node _cycle_in_spine 2
+.o 2 0
+ea198
+	jsr_eval 1
+	pushI_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 0
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rSize 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.desc d26 _hnf l26 3 0 "<lambda>[line:58];70;25"
+.a 0 a26
+.o 2 0
+l26
+	repl_args 2 2
+.o 3 0
+a26
+.o 3 0
+ea26
+	jsr_eval 2
+	push_r_args 2 0 2
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pushI 36
+	push_b 2
+	subI
+	pushI 60
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	push_b 2
+	push_b 2
+	update_b 2 4
+	update_b 1 3
+	updatepop_b 0 2
+	pop_a 2
+	update_b 2 1
+	update_b 1 2
+	updatepop_b 0 1
+	build_r e_StdIOBasic_rSize 0 2 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _
+.o 1 0
+n24
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea24
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea24
+.o 1 0
+s24
+	eq_desc e_Footballer_dFirstHalf 0 0
+	jmp_true case.117
+	jmp case.118
+case.117
+	pop_a 1
+	buildAC "1st half"
+.d 1 0
+	rtn
+case.118
+	pop_a 1
+	buildAC "2nd half"
+.d 1 0
+	rtn
+.n 0 _
+.o 1 0
+n2
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea2
+.o 0 2 ii
+	fill_r e_StdIOBasic_rSize 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.o 0 0
+ea2
+.o 0 0
+s2
+	pushI 36
+	pushI 24
+.d 0 2 ii
+	rtn
+.n 0 _
+.o 1 0
+n3
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea3
+.o 0 2 ii
+	fill_r e_StdIOBasic_rSize 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.o 0 0
+ea3
+.o 0 0
+s3
+	pushI 400
+	pushI 640
+.d 0 2 ii
+	rtn

@@ -1,0 +1,3855 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "fileIO" "20170314161737"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "render" "20170314161737"
+.depend "guiInterface" "20170314161737"
+.depend "matchGame" "20170314161737"
+.depend "GamePicture" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.depend "Referee" "20170314161737"
+.depend "matchControl" "20170314161737"
+.depend "matchLog" "20170314161737"
+.module m_matchLog "matchLog" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_fileIO_swriteFile
+.implab e_fileIO_sreadFile
+.impdesc e_Geometry_dtoString;30
+.impdesc e_Geometry_dtoString;31
+.implab e_Football_sgetFootball
+.impdesc e_StdMisc_dundef
+.implab e_StdMisc_nundef _
+.implab e_StdList_s++
+.implab e_StdString_s==;2
+.impdesc e_StdString_dtoString;5
+.impdesc e_StdString_dtoString;8
+.impdesc e_StdString_dtoString;9
+.implab e_StdString_s%;10
+.implab e_StdString_s+++;11
+.implab e_StdInt_s-;7
+.implab e_StdEnvExt_sfind1
+.implab e_StdEnvExt_s<+++
+.implab e_StdEnvExt_sstringStarts
+.implab e_StdEnvExt_sreplaceInString
+.impdesc e_StdEnvExt_dtoString;50
+.impdesc e_StdOverloaded_rtoString;
+.impdesc e_StdOverloaded_ttoString;
+.implab e_StdOverloaded_ctoString;
+.impdesc e_Footballer_didentify_player
+.impdesc e_Footballer_dtoString;82
+.implab e_Footballer_snameOf;84
+.impdesc e_Footballer_dtoString;86
+.implab e_Footballer_ntoString;86
+.impdesc e_Footballer_dtoString;89
+.impdesc e_Footballer_dtoString;95
+.impdesc e_Footballer_dtoString;103
+.export e_matchLog_rWhatToLog
+.record e_matchLog_rWhatToLog bbbb 0 4 "WhatToLog"
+.descexp e_matchLog_tWhatToLog e_matchLog_cWhatToLog _hnf 4 1 "WhatToLog"
+.n 4 e_matchLog_tWhatToLog
+.o 1 0
+e_matchLog_cWhatToLog
+	push_node _cycle_in_spine 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushB_a 3
+	pushB_a 2
+	pushB_a 1
+	pushB_a 0
+	pop_a 4
+	fill_r e_matchLog_rWhatToLog 0 4 0 0 0
+	pop_b 4
+.d 1 0
+	rtn
+.export e_matchLog_dWhatToLog.footballerActions
+.export e_matchLog_nWhatToLog.footballerActions
+.descs e_matchLog_dWhatToLog.footballerActions e_matchLog_nWhatToLog.footballerActions BOOL 1 0 "WhatToLog.footballerActions"
+.n -3 e_matchLog_dWhatToLog.footballerActions
+.o 1 0
+e_matchLog_nWhatToLog.footballerActions
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 1 1
+	pop_a 1
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_matchLog_dWhatToLog.fbPositions
+.export e_matchLog_nWhatToLog.fbPositions
+.descs e_matchLog_dWhatToLog.fbPositions e_matchLog_nWhatToLog.fbPositions BOOL 3 0 "WhatToLog.fbPositions"
+.n -3 e_matchLog_dWhatToLog.fbPositions
+.o 1 0
+e_matchLog_nWhatToLog.fbPositions
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 2 1
+	pop_a 1
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_matchLog_dWhatToLog.refEvents
+.export e_matchLog_nWhatToLog.refEvents
+.descs e_matchLog_dWhatToLog.refEvents e_matchLog_nWhatToLog.refEvents BOOL 4 0 "WhatToLog.refEvents"
+.n -3 e_matchLog_dWhatToLog.refEvents
+.o 1 0
+e_matchLog_nWhatToLog.refEvents
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 3 1
+	pop_a 1
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_matchLog_dWhatToLog.ballPosition
+.export e_matchLog_nWhatToLog.ballPosition
+.descs e_matchLog_dWhatToLog.ballPosition e_matchLog_nWhatToLog.ballPosition BOOL 5 0 "WhatToLog.ballPosition"
+.n -3 e_matchLog_dWhatToLog.ballPosition
+.o 1 0
+e_matchLog_nWhatToLog.ballPosition
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 0 4 4 1
+	pop_a 1
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_matchLog_stoString;3
+.descexp e_matchLog_dtoString;3 e_matchLog_ntoString;3 e_matchLog_ltoString;3 1 0 "toString;3"
+.o 2 0
+e_matchLog_ltoString;3
+	pop_a 1
+.d 1 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_matchLog_dtoString;3
+.o 1 0
+e_matchLog_ntoString;3
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea4
+	jsr_eval 0
+	repl_r_args 0 4
+.o 0 4 bbbb
+e_matchLog_stoString;3
+.o 0 4 bbbb
+s4
+	buildB_b 3
+	buildh e_StdString_dtoString;8 0
+	buildAC ",ballPosition="
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildB_b 2
+	buildh e_StdString_dtoString;8 0
+	buildAC ",refEvents="
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildB_b 1
+	buildh e_StdString_dtoString;8 0
+	buildAC ",fbPositions="
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildB_b 0
+	buildh e_StdString_dtoString;8 0
+	buildAC "{footballerActions="
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 4
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.export e_matchLog_slogMatch
+.descexp e_matchLog_dlogMatch e_matchLog_nlogMatch e_matchLog_llogMatch 6 0 "logMatch"
+.a 0 ea3
+.o 2 0
+e_matchLog_llogMatch
+	repl_args 5 5
+.d 6 0
+	jmp ea3
+.n 6 e_matchLog_dlogMatch _
+.o 1 0
+e_matchLog_nlogMatch
+	push_node _cycle_in_spine 6
+.d 6 0
+	jsr ea3
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 6 0
+ea3
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 11 2
+	push_r_args 12 0 4
+	push_r_args 11 4 0
+	update_a 14 17
+	update_a 11 14
+	update_a 8 11
+	update_a 5 8
+	update_a 2 5
+	update_a 13 16
+	update_a 10 13
+	update_a 7 10
+	update_a 4 7
+	update_a 1 4
+	update_a 12 15
+	update_a 9 12
+	update_a 6 9
+	update_a 3 6
+	update_a 0 3
+	pop_a 3
+.o 18 6 bbbbii
+e_matchLog_slogMatch
+.o 18 6 bbbbii
+s3
+	push_b 0
+	jmp_true then.1
+	push_b 1
+	jmp_true then.1
+	push_b 2
+	jmp_true then.1
+	push_b 3
+	jmp_false else.1
+then.1
+	push_b 3
+	push_a 17
+	push_a 11
+	push_a 18
+	push_a 18
+	push_b 4
+	push_b 4
+	push_b 4
+	push_b 4
+	push_a 10
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 14
+	push_a 14
+	push_b 4
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 4 10
+	update_b 3 9
+	update_b 2 8
+	update_b 1 7
+	updatepop_b 0 6
+	update_a 21 28
+	update_a 14 27
+	update_a 13 26
+	update_a 12 25
+	update_a 11 24
+	update_a 10 23
+	update_a 9 22
+	update_a 8 21
+	update_a 7 20
+	update_a 6 19
+	update_a 5 18
+	update_a 4 17
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+.d 11 5 bbbbb
+	jsr s32
+.o 1 0
+	buildh e_Footballer_dtoString;103 0
+	push_a 6
+	buildAC "END STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.1
+	pop_b 6
+	pop_a 17
+.d 1 0
+	rtn
+.o 11 5 bbbbb
+s32
+	eqB_b TRUE 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	create
+	push_a 2
+	push_a 2
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	push_b 2
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 3
+	push_b 4
+	push_b 4
+	push_b 4
+	push_b 4
+	push_a 10
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_b 4
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 4 8
+	update_b 3 7
+	update_b 2 6
+	update_b 1 5
+	updatepop_b 0 4
+	buildh _Nil 0
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	pop_a 1
+.d 9 5 bbbbb
+	jsr s28
+.o 1 0
+	push_a 1
+	push_a 7
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 4
+	pop_a 1
+.d 2 0
+	jsr e_Football_sgetFootball
+.o 2 0
+	updatepop_a 0 1
+	buildh e_Geometry_dtoString;31 0
+	buildAC "BallPos: "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildAC "\n"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 6 16
+	update_a 5 15
+	update_a 4 14
+	update_a 3 13
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.6
+	push_b 3
+	jmp_false else.7
+	push_b 2
+	push_a 10
+	push_a 10
+	push_a 10
+	push_b 5
+	push_b 5
+	push_b 5
+	push_b 5
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_b 4
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 4 9
+	update_b 3 8
+	update_b 2 7
+	update_b 1 6
+	updatepop_b 0 5
+	update_a 8 10
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	buildh _Nil 0
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	pop_a 1
+.d 9 5 bbbbb
+	jsr s30
+.o 1 0
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 1 0
+	jsr s11
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.7
+	push_b 2
+	jmp_false else.8
+	create
+	push_a 2
+	push_a 2
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	push_b 0
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 3
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	updatepop_b 0 4
+	update_a 12 17
+	update_a 11 16
+	update_a 10 15
+	update_a 9 14
+	update_a 8 13
+	update_a 7 12
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 8 1 b
+	jsr s31
+.o 1 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr s10
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.8
+	push_b 1
+	jmp_false else.9
+	buildh e_Footballer_dtoString;103 0
+	push_a 10
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	buildh _Nil 0
+	update_a 0 13
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 12
+	pushB TRUE
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 18
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 11
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 13
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.9
+	buildh e_Footballer_dtoString;103 0
+	push_a 10
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	update_a 8 12
+	update_a 7 11
+	update_a 6 10
+	update_a 5 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 6
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 8 1 b
+s31
+	eqB_b TRUE 0
+	jmp_true case.10
+	jmp case.11
+case.10
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 15
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 7
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.11
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 9 5 bbbbb
+s30
+	eqB_b TRUE 0
+	jmp_true case.12
+	jmp case.13
+case.12
+	create
+	push_a 2
+	push_a 2
+	pop_b 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	push_b 0
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 3
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	updatepop_b 0 4
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	pop_a 1
+.d 8 1 b
+	jsr s29
+.o 1 0
+	push_a 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr s10
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.13
+	push_b 1
+	jmp_false else.14
+	buildh e_Footballer_dtoString;103 0
+	push_a 8
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 10
+	pushB TRUE
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 16
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 9
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.14
+	buildh e_Footballer_dtoString;103 0
+	push_a 8
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 8
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 8 1 b
+s29
+	eqB_b TRUE 0
+	jmp_true case.15
+	jmp case.16
+case.15
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 15
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 7
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.16
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 9 5 bbbbb
+s28
+	eqB_b TRUE 0
+	jmp_true case.17
+	jmp case.18
+case.17
+	push_b 2
+	push_a 8
+	push_a 8
+	push_a 8
+	push_b 5
+	push_b 5
+	push_b 5
+	push_b 5
+	push_a 8
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_b 4
+	update_b 4 5
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 4 9
+	update_b 3 8
+	update_b 2 7
+	update_b 1 6
+	updatepop_b 0 5
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	pop_a 1
+.d 8 5 bbbbb
+	jsr s26
+.o 1 0
+	push_a 5
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 1 0
+	jsr s11
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.18
+	push_b 2
+	jmp_false else.19
+	push_b 1
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 8
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	updatepop_b 0 5
+	buildh _Nil 0
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	pop_a 1
+.d 8 1 b
+	jsr s27
+.o 1 0
+	push_a 6
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+.d 1 0
+	jsr s10
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.19
+	push_b 1
+	jmp_false else.20
+	buildh e_Footballer_dtoString;103 0
+	push_a 8
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	buildh _Nil 0
+	update_a 0 11
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 10
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 16
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 8
+	push_a 8
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 11
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 15
+	update_a 5 14
+	update_a 4 13
+	update_a 3 12
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.20
+	buildh e_Footballer_dtoString;103 0
+	push_a 8
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	update_a 6 10
+	update_a 5 9
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 6
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 8 1 b
+s27
+	eqB_b TRUE 0
+	jmp_true case.21
+	jmp case.22
+case.21
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 15
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 7
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.22
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 8 5 bbbbb
+s26
+	eqB_b TRUE 0
+	jmp_true case.23
+	jmp case.24
+case.23
+	push_b 1
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	updatepop_b 0 5
+	buildh _Nil 0
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	pop_a 1
+.d 8 1 b
+	jsr s25
+.o 1 0
+	push_a 5
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 1 0
+	jsr s10
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.24
+	push_b 1
+	jmp_false else.25
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 15
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 7
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+else.25
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 5
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.o 8 1 b
+s25
+	eqB_b TRUE 0
+	jmp_true case.26
+	jmp case.27
+case.26
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 15
+	pop_a 1
+.d 7 1 b
+	jsr e_fileIO_swriteFile
+.o 1 0
+	buildAC "\""
+	buildh ARRAY 1
+	buildAC "\\\""
+	buildh ARRAY 1
+	buildAC "{"
+	buildh ARRAY 1
+	buildAC "\"{"
+	buildh ARRAY 1
+	buildAC "}"
+	buildh ARRAY 1
+	buildAC "}\""
+	buildh ARRAY 1
+	buildh d23 6
+	push_a 7
+	push_a 7
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 10
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+case.27
+	buildh e_Footballer_dtoString;103 0
+	push_a 7
+	buildAC "BEGIN STEP "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 8
+	update_a 0 9
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+.d 0 0
+	jsr s2
+.o 1 0
+	push_a 9
+	pushB TRUE
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 5 7
+	update_a 6 5
+	update_a 0 6
+	pop_a 1
+	update_a 6 14
+	update_a 5 13
+	update_a 4 12
+	update_a 3 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 7 1 b
+	jmp e_fileIO_swriteFile
+.desc d23 _hnf l23 7 0 "<lambda>[line:15];13;22"
+.a 0 a23
+.o 2 0
+l23
+	repl_args 6 6
+.o 7 0
+a23
+.d 7 0
+	jsr ea23
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.o 7 0
+ea23
+	jsr_eval 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_array 6
+	push_array 6
+	push_array 6
+	push_array 6
+	push_array 6
+	push_array 6
+	push_array 6
+	update_a 6 13
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	update_a 0 7
+	pop_a 7
+.o 7 0
+s23
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 5 0
+	jsr s22
+.o 1 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdEnvExt_sreplaceInString
+.o 5 0
+s22
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdEnvExt_sreplaceInString
+.o 1 0
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_StdEnvExt_sreplaceInString
+.o 3 0
+s21
+	eq_desc _Nil 0 2
+	jmp_true case.28
+	jmp case.29
+case.28
+	pop_a 3
+	buildAC ""
+.d 1 0
+	rtn
+case.29
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	push_r_args 0 1 1
+	push_a 3
+	jsr_eval 0
+	push_a 6
+	push_a 6
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 3 0
+	jsr s21
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 3
+	build e_Footballer_dtoString;86 1 e_Footballer_ntoString;86
+	push_a 6
+	jsr_eval 0
+	buildh _Nil 0
+	update_a 0 8
+	update_a 0 6
+	pop_a 1
+	jsr_ap 1
+	push_a 3
+	buildh e_Footballer_didentify_player 1
+	push_a 8
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr e_StdEnvExt_sfind1
+.o 1 0
+	repl_r_args 11 2
+.d 11 2 rr
+	jsr e_Footballer_snameOf;84
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	push_a 4
+	buildh ARRAY 1
+	buildAC "FootballerWithAction\n\tTeam: "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n\tNumber: "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 0
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	pop_b 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n\tName: "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n\tAction: "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.o 1 0
+s11
+	eq_desc _Nil 0 0
+	jmp_true case.30
+	jmp case.31
+case.30
+	pop_a 1
+	buildAC ""
+.d 1 0
+	rtn
+case.31
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s7
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "REFEREE_ACTIONS:"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.o 1 0
+s7
+	eq_desc _Nil 0 0
+	jmp_true case.32
+	jmp case.33
+case.32
+	pop_a 1
+	buildAC ""
+.d 1 0
+	rtn
+case.33
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s7
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+.d 1 0
+	jsr s8
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n\t"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.o 1 0
+s8
+	pushD_a 0
+	eqD_b e_Footballer_kReprimandPlayer 0
+	jmp_true case.34
+	eqD_b e_Footballer_kHands 0
+	jmp_true case.35
+	eqD_b e_Footballer_kTackleDetected 0
+	jmp_true case.36
+	eqD_b e_Footballer_kDangerousPlay 0
+	jmp_true case.37
+	eqD_b e_Footballer_dGameOver 0
+	jmp_true case.38
+	eqD_b e_Footballer_kGameCancelled 0
+	jmp_true case.39
+	eqD_b e_Footballer_dPauseGame 0
+	jmp_true case.40
+	eqD_b e_Footballer_kAddTime 0
+	jmp_true case.41
+	eqD_b e_Footballer_dEndHalf 0
+	jmp_true case.42
+	eqD_b e_Footballer_kGoal 0
+	jmp_true case.43
+	eqD_b e_Footballer_kOffside 0
+	jmp_true case.44
+	eqD_b e_Footballer_kDirectFreeKick 0
+	jmp_true case.45
+	eqD_b e_Footballer_kGoalKick 0
+	jmp_true case.46
+	eqD_b e_Footballer_kCorner 0
+	jmp_true case.47
+	eqD_b e_Footballer_kThrowIn 0
+	jmp_true case.48
+	eqD_b e_Footballer_kPenalty 0
+	jmp_true case.49
+	eqD_b e_Footballer_kCenterKick 0
+	jmp_true case.50
+	eqD_b e_Footballer_kAdvantage 0
+	jmp_true case.51
+	eqD_b e_Footballer_kOwnBallIllegally 0
+	jmp_true case.52
+	eqD_b e_Footballer_kDisplacePlayers 0
+	jmp_true case.53
+	eqD_b e_Footballer_dContinueGame 0
+	jmp_true case.54
+	jmp case.55
+case.34
+	pop_b 1
+	repl_args 2 2
+	push_r_args_b 0 1 1 1 1
+	buildI_b 0
+	pop_b 1
+	buildh e_StdString_dtoString;5 0
+	buildAC "(ReprimandPlayer "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Footballer_dtoString;89 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.35
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	buildh e_StdString_dtoString;5 0
+	buildAC "(Hands "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.36
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	buildh e_StdString_dtoString;5 0
+	buildAC "(TackleDetected "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.37
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	buildh e_StdString_dtoString;5 0
+	buildAC "(DangerousPlay "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.38
+	pop_b 1
+	pop_a 1
+	buildAC "GameOver"
+.d 1 0
+	rtn
+case.39
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	build e_StdOverloaded_ttoString; 1 e_StdOverloaded_ctoString;
+	buildh e_StdEnvExt_dtoString;50 1
+	push_a 1
+	buildAC "(GameCancelled "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.40
+	pop_b 1
+	pop_a 1
+	buildAC "PauseGame"
+.d 1 0
+	rtn
+case.41
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;103 0
+	push_a 1
+	buildAC "(AddTime "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.42
+	pop_b 1
+	pop_a 1
+	buildAC "EndHalf"
+.d 1 0
+	rtn
+case.43
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Goal "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.44
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	buildh e_StdString_dtoString;5 0
+	buildAC "(Offside "
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.45
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(DirectFreeKick "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;30 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.46
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(GoalKick "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.47
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Corner "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Footballer_dtoString;95 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.48
+	pop_b 1
+	repl_args 2 2
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(ThrowIn "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC " "
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;30 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.49
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Penalty "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.50
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(CenterKick "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.51
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dtoString;82 0
+	push_a 1
+	buildAC "(Advantage "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.52
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	buildh e_StdString_dtoString;5 0
+	buildAC "(OwnBallIllegally"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+case.53
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "DisplacePlayers"
+.d 1 0
+	rtn
+case.54
+	pop_b 1
+	pop_a 1
+	buildAC "ContinueGame"
+.d 1 0
+	rtn
+case.55
+	pop_b 1
+	repl_args 1 1
+	buildh e_StdString_dtoString;9 0
+	push_a 1
+	buildh ARRAY 1
+	buildAC "(TellMessage "
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.o 1 0
+s10
+	push_a 0
+	buildAC ""
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s18
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "POSITIONS:\n"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.o 2 0
+s18
+	eq_desc _Nil 0 1
+	jmp_true case.56
+	jmp case.57
+case.56
+	updatepop_a 0 1
+.d 1 0
+	rtn
+case.57
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	repl_r_args 11 2
+	push_a 14
+	buildh _Nil 0
+	update_a 0 16
+	update_a 0 14
+	update_a 0 15
+	pop_a 1
+.d 12 2 rr
+	jsr s6
+.o 1 0
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jmp s18
+.o 12 2 rr
+s6
+	push_r_args_u 1 1 1
+	buildh e_StdString_dtoString;9 0
+	buildAC "\t("
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	push_a 2
+	buildh ARRAY 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 4 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ",("
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;5 0
+	buildI_b 0
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	pop_b 3
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ","
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	push_a 2
+	buildh ARRAY 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 4 11
+	update_a 2 10
+	update_a 1 9
+	updatepop_a 0 8
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC ")):\t"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_Geometry_dtoString;30 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdEnvExt_s<+++
+.o 1 0
+	buildh e_StdString_dtoString;9 0
+	buildAC "\n"
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jmp e_StdEnvExt_s<+++
+.export e_matchLog_slogFile
+.descexp e_matchLog_dlogFile e_matchLog_nlogFile e_matchLog_llogFile 0 0 "logFile"
+.o 1 0
+e_matchLog_llogFile
+	halt
+.n 0 e_matchLog_dlogFile
+.o 1 0
+e_matchLog_nlogFile
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea2
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea2
+.o 0 0
+e_matchLog_slogFile
+.o 0 0
+s2
+	buildAC "SoccerFun.log"
+.d 1 0
+	rtn
+.export e_matchLog_sgetWhatToLog
+.descexp e_matchLog_dgetWhatToLog e_matchLog_ngetWhatToLog e_matchLog_lgetWhatToLog 2 0 "getWhatToLog"
+.a 0 a1
+.o 2 0
+e_matchLog_lgetWhatToLog
+	repl_args 1 1
+.o 2 0
+a1
+.d 2 0
+	jsr ea1
+.o 1 4 bbbb
+	push_a 0
+	build_r e_matchLog_rWhatToLog 0 4 0 0
+	buildh _Tuple 2
+	updatepop_a 0 1
+	pop_b 4
+.d 1 0
+	rtn
+.n 2 e_matchLog_dgetWhatToLog
+.o 1 0
+e_matchLog_ngetWhatToLog
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea1
+.o 1 4 bbbb
+	push_a 0
+	build_r e_matchLog_rWhatToLog 0 4 0 0
+	fillh _Tuple 2 3
+	pop_a 1
+	pop_b 4
+.d 1 0
+	rtn
+.o 2 0
+ea1
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 4 0
+.o 5 0
+e_matchLog_sgetWhatToLog
+.o 5 0
+s1
+	push_a 4
+	buildAC "logMatch.conf"
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 6 0
+	jsr e_fileIO_sreadFile
+.o 2 0
+	jsr_eval 1
+.d 2 0
+	jmp s24
+.o 2 0
+s24
+	eq_desc e_StdMaybe_dJust 1 0
+	jmp_true case.58
+	jmp case.59
+case.58
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	updatepop_a 0 1
+.d 1 0
+	jsr s14
+.o 0 4 bbbb
+	push_a 0
+	updatepop_a 0 1
+.d 1 4 bbbb
+	rtn
+case.59
+	pop_a 1
+.d 0 0
+	jsr s5
+.o 0 4 bbbb
+	push_a 0
+	updatepop_a 0 1
+.d 1 4 bbbb
+	rtn
+.o 1 0
+s14
+	push_a 0
+	buildAC "{footballerActions="
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s12
+.o 1 0
+.d 1 0
+	jsr s40
+.o 2 1 b
+	push_a 1
+	build _ 1 n41
+	push_a 0
+	build d_S.3 -1 n_S.3
+	build _ 1 n42
+	push_a 0
+	build d_S.3 -1 n_S.3
+	build _ 1 n43
+	push_b 0
+	jmp_false else.60
+	jsr_eval 0
+	push_arg 0 3 1
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+	push_b 0
+	jmp_true then.62
+	pop_b 1
+	jmp else.60
+then.62
+	jsr_eval 1
+	push_arg 1 3 1
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+	jmp_true then.63
+	pop_b 1
+	jmp else.60
+then.63
+	push_b 0
+	jmp_true then.64
+	pop_b 1
+	jmp else.60
+then.64
+	push_arg 0 3 3
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	buildAC "}"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 2
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	pushI 0
+	update_b 1 0
+	jmp_false else.60
+	jsr_eval 0
+	push_arg 0 3 2
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+	jsr_eval 1
+	push_arg 1 3 2
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+	jsr_eval 2
+	push_arg 2 3 2
+	jsr_eval 0
+	pushB_a 0
+	pop_a 1
+	push_a 3
+	jsr_eval 0
+	pushB_a 4
+	pop_a 1
+	update_b 3 4
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+	pop_a 5
+.d 0 4 bbbb
+	rtn
+else.60
+	pop_a 5
+	pop_b 1
+.d 0 0
+	jmp s5
+.n 1 _ ea43
+.o 1 0
+n43
+	push_node _cycle_in_spine 1
+.o 2 0
+ea43
+.o 2 0
+s43
+	push_a 0
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	buildAC ",ballPosition="
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s12
+.o 1 0
+.d 1 0
+	jsr s13
+.o 3 0
+	push_a 2
+	push_a 2
+	push_a 2
+	fillh _Tuple 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.n 1 _ ea42
+.o 1 0
+n42
+	push_node _cycle_in_spine 1
+.o 2 0
+ea42
+.o 2 0
+s42
+	push_a 0
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	buildAC ",refEvents="
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s12
+.o 1 0
+.d 1 0
+	jsr s13
+.o 3 0
+	push_a 2
+	push_a 2
+	push_a 2
+	fillh _Tuple 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.n 1 _ ea41
+.o 1 0
+n41
+	push_node _cycle_in_spine 1
+.o 2 0
+ea41
+.o 2 0
+s41
+	push_a 0
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	buildAC ",fbPositions="
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s12
+.o 1 0
+.d 1 0
+	jsr s13
+.o 3 0
+	push_a 2
+	push_a 2
+	push_a 2
+	fillh _Tuple 3 6
+	pop_a 3
+.d 1 0
+	rtn
+.o 1 0
+s13
+	buildAC "True"
+	push_a 1
+.d 2 0
+	jsr e_StdEnvExt_sstringStarts
+.o 0 1 b
+	jmp_false else.65
+	push_a 0
+	build _ 1 n44
+	buildB TRUE
+	buildB TRUE
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	rtn
+else.65
+	buildAC "False"
+	push_a 1
+.d 2 0
+	jsr e_StdEnvExt_sstringStarts
+.o 0 1 b
+	jmp_false else.66
+	push_a 0
+	build _ 1 n45
+	buildB FALSE
+	buildB TRUE
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	rtn
+else.66
+	build _ 0 e_StdMisc_nundef
+	push_a 1
+	buildh ARRAY 1
+	buildB FALSE
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	rtn
+.n 1 _ ea45
+.o 1 0
+n45
+	push_node _cycle_in_spine 1
+.o 2 0
+ea45
+.o 2 0
+s45
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 5
+	push_a 0
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea44
+.o 1 0
+n44
+	push_node _cycle_in_spine 1
+.o 2 0
+ea44
+.o 2 0
+s44
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 4
+	push_a 0
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+s12
+	push_a 0
+	push_a 2
+.d 2 0
+	jsr e_StdEnvExt_sstringStarts
+.o 0 1 b
+	jmp_false else.67
+	push_a 1
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	push_a 0
+	updatepop_a 0 1
+	push_arraysize CHAR 0 1
+	push_a 0
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+.d 1 0
+	rtn
+else.67
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+s5
+	pushB FALSE
+	pushB FALSE
+	pushB FALSE
+	pushB FALSE
+.d 0 4 bbbb
+	rtn
+.o 1 0
+s40
+	buildAC "True"
+	push_a 1
+.d 2 0
+	jsr e_StdEnvExt_sstringStarts
+.o 0 1 b
+	jmp_false else.68
+	push_a 0
+	build _ 1 n46
+	buildB TRUE
+	pushB TRUE
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 b
+	rtn
+else.68
+	buildAC "False"
+	push_a 1
+.d 2 0
+	jsr e_StdEnvExt_sstringStarts
+.o 0 1 b
+	jmp_false else.69
+	push_a 0
+	build _ 1 n47
+	buildB FALSE
+	pushB TRUE
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 b
+	rtn
+else.69
+	build _ 0 e_StdMisc_nundef
+	push_a 1
+	buildh ARRAY 1
+	pushB FALSE
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 1 b
+	rtn
+.n 1 _ ea47
+.o 1 0
+n47
+	push_node _cycle_in_spine 1
+.o 2 0
+ea47
+.o 2 0
+s47
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 5
+	push_a 0
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea46
+.o 1 0
+n46
+	push_node _cycle_in_spine 1
+.o 2 0
+ea46
+.o 2 0
+s46
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	pushI 4
+	push_a 0
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr sliceAC
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn

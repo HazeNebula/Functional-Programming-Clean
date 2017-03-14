@@ -1,0 +1,1 @@
+{closeReferee=True,showSplash=False,displaySpeed=Normal,showReferee=True,playingTime=4:00 min,renderStyle=Flatland}

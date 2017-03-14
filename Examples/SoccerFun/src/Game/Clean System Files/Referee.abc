@@ -1,0 +1,1163 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "RefereeCoach_Keeper_Assignment" "20170314161737"
+.depend "RefereeCoach_DeepPass_Assignment" "20170314161737"
+.depend "RefereeCoach_Passing_Assignment" "20170314161737"
+.depend "RefereeCoach_Slalom_Assignment" "20170314161737"
+.depend "RefereeCoach_Rounds_Assignment" "20170314161737"
+.depend "NoReferee" "20170314161737"
+.depend "Umpire" "20170314161738"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "render" "20170314161737"
+.depend "guiInterface" "20170314161737"
+.depend "matchLog" "20170314161737"
+.depend "matchGame" "20170314161737"
+.depend "GamePicture" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.depend "matchControl" "20170314161737"
+.depend "Referee" "20170314161737"
+.module m_Referee "Referee" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_RefereeCoach_Keeper_Assignment_dRefereeCoach_Keeper
+.impdesc e_RefereeCoach_DeepPass_Assignment_dRefereeCoach_DeepPass
+.impdesc e_RefereeCoach_Passing_Assignment_dRefereeCoach_Passing
+.impdesc e_RefereeCoach_Slalom_Assignment_dRefereeCoach_Slalom
+.impdesc e_RefereeCoach_Rounds_Assignment_dRefereeCoach_Rounds
+.impdesc e_NoReferee_dNoReferee
+.impdesc e_Umpire_dumpire
+.implab e_Geometry_szero;15
+.implab e_Geometry_s<;22
+.implab e_StdBitmap_sopenBitmap
+.implab e_StdMisc_sabort
+.implab e_StdList_s++
+.implab e_StdString_s==;2
+.impdesc e_StdString_d+++;11
+.implab e_StdString_s+++;11
+.implab e_StdString_n+++;11
+.implab e_Footballer_s==;81
+.impdesc e_Footballer_rBrain
+.export e_Referee_rReferee
+.record e_Referee_rReferee aaa 3 0 "Referee"
+.descexp e_Referee_tReferee e_Referee_cReferee _hnf 3 1 "Referee"
+.n 3 e_Referee_tReferee
+.o 1 0
+e_Referee_cReferee
+	push_node _cycle_in_spine 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_array 0
+	update_a 0 1
+	pop_a 1
+	fill_r e_Referee_rReferee 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.export e_Referee_dReferee.name
+.export e_Referee_nReferee.name
+.desc e_Referee_dReferee.name e_Referee_nReferee.name _hnf 1 0 "Referee.name"
+.n 1 e_Referee_dReferee.name
+.o 1 0
+e_Referee_nReferee.name
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 1 1
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dReferee.brain
+.export e_Referee_nReferee.brain
+.descs e_Referee_dReferee.brain e_Referee_nReferee.brain _ 3 0 "Referee.brain"
+.n -4 e_Referee_dReferee.brain
+.o 1 0
+e_Referee_nReferee.brain
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dReferee.refActionPics
+.export e_Referee_nReferee.refActionPics
+.export e_Referee_eaReferee.refActionPics
+.descs e_Referee_dReferee.refActionPics e_Referee_nReferee.refActionPics _ 4 0 "Referee.refActionPics"
+.n -4 e_Referee_dReferee.refActionPics e_Referee_eaReferee.refActionPics
+.o 1 0
+e_Referee_nReferee.refActionPics
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaReferee.refActionPics
+	jsr_eval 0
+	repl_r_args_a 3 0 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_rRefereeInput
+.record e_Referee_rRefereeInput aaaaaaa 7 0 "RefereeInput"
+.descexp e_Referee_tRefereeInput e_Referee_cRefereeInput _hnf 7 1 "RefereeInput"
+.n 7 e_Referee_tRefereeInput
+.o 1 0
+e_Referee_cRefereeInput
+	push_node _cycle_in_spine 7
+	jsr_eval 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_Referee_rRefereeInput 7 0 7 0 0
+	pop_a 7
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.playingTime
+.export e_Referee_nRefereeInput.playingTime
+.export e_Referee_eaRefereeInput.playingTime
+.descs e_Referee_dRefereeInput.playingTime e_Referee_nRefereeInput.playingTime _ 1 0 "RefereeInput.playingTime"
+.n -4 e_Referee_dRefereeInput.playingTime e_Referee_eaRefereeInput.playingTime
+.o 1 0
+e_Referee_nRefereeInput.playingTime
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.playingTime
+	jsr_eval 0
+	repl_r_args_a 7 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.unittime
+.export e_Referee_nRefereeInput.unittime
+.export e_Referee_eaRefereeInput.unittime
+.descs e_Referee_dRefereeInput.unittime e_Referee_nRefereeInput.unittime _ 3 0 "RefereeInput.unittime"
+.n -4 e_Referee_dRefereeInput.unittime e_Referee_eaRefereeInput.unittime
+.o 1 0
+e_Referee_nRefereeInput.unittime
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.unittime
+	jsr_eval 0
+	repl_r_args_a 7 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.theBall
+.export e_Referee_nRefereeInput.theBall
+.export e_Referee_eaRefereeInput.theBall
+.descs e_Referee_dRefereeInput.theBall e_Referee_nRefereeInput.theBall _ 4 0 "RefereeInput.theBall"
+.n -4 e_Referee_dRefereeInput.theBall e_Referee_eaRefereeInput.theBall
+.o 1 0
+e_Referee_nRefereeInput.theBall
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.theBall
+	jsr_eval 0
+	repl_r_args_a 7 0 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.playingHalf
+.export e_Referee_nRefereeInput.playingHalf
+.export e_Referee_eaRefereeInput.playingHalf
+.descs e_Referee_dRefereeInput.playingHalf e_Referee_nRefereeInput.playingHalf _ 5 0 "RefereeInput.playingHalf"
+.n -4 e_Referee_dRefereeInput.playingHalf e_Referee_eaRefereeInput.playingHalf
+.o 1 0
+e_Referee_nRefereeInput.playingHalf
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.playingHalf
+	jsr_eval 0
+	repl_r_args_a 7 0 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.team1
+.export e_Referee_nRefereeInput.team1
+.export e_Referee_eaRefereeInput.team1
+.descs e_Referee_dRefereeInput.team1 e_Referee_nRefereeInput.team1 _ 6 0 "RefereeInput.team1"
+.n -4 e_Referee_dRefereeInput.team1 e_Referee_eaRefereeInput.team1
+.o 1 0
+e_Referee_nRefereeInput.team1
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.team1
+	jsr_eval 0
+	repl_r_args_a 7 0 5 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.team2
+.export e_Referee_nRefereeInput.team2
+.export e_Referee_eaRefereeInput.team2
+.descs e_Referee_dRefereeInput.team2 e_Referee_nRefereeInput.team2 _ 7 0 "RefereeInput.team2"
+.n -4 e_Referee_dRefereeInput.team2 e_Referee_eaRefereeInput.team2
+.o 1 0
+e_Referee_nRefereeInput.team2
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.team2
+	jsr_eval 0
+	repl_r_args_a 7 0 6 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_dRefereeInput.lastContact
+.export e_Referee_nRefereeInput.lastContact
+.export e_Referee_eaRefereeInput.lastContact
+.descs e_Referee_dRefereeInput.lastContact e_Referee_nRefereeInput.lastContact _ 8 0 "RefereeInput.lastContact"
+.n -4 e_Referee_dRefereeInput.lastContact e_Referee_eaRefereeInput.lastContact
+.o 1 0
+e_Referee_nRefereeInput.lastContact
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaRefereeInput.lastContact
+	jsr_eval 0
+	repl_r_args_a 7 0 7 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Referee_snameOf;7
+.descexp e_Referee_dnameOf;7 e_Referee_nnameOf;7 e_Referee_lnameOf;7 1 0 "nameOf;7"
+.o 2 0
+e_Referee_lnameOf;7
+	pop_a 1
+.d 1 0
+	jsr ea8
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Referee_dnameOf;7
+.o 1 0
+e_Referee_nnameOf;7
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea8
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea8
+	jsr_eval 0
+	repl_r_args 3 0
+.o 3 0
+e_Referee_snameOf;7
+.o 3 0
+s8
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.export e_Referee_switlessRefereeAI
+.export e_Referee_eawitlessRefereeAI
+.descexp e_Referee_dwitlessRefereeAI e_Referee_nwitlessRefereeAI e_Referee_lwitlessRefereeAI 1 0 "witlessRefereeAI"
+.o 2 0
+e_Referee_lwitlessRefereeAI
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Referee_eawitlessRefereeAI
+.n 1 e_Referee_dwitlessRefereeAI e_Referee_eawitlessRefereeAI
+.o 1 0
+e_Referee_nwitlessRefereeAI
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eawitlessRefereeAI
+.o 2 0
+e_Referee_switlessRefereeAI
+.o 2 0
+s7
+	push_a 0
+	fillh d15 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d15 _hnf l15 2 0 "<lambda>[line:83];27;14"
+.a 0 a15
+.o 2 0
+l15
+	repl_args 1 1
+.o 2 0
+a15
+.o 2 0
+ea15
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	push_a 1
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 4
+	updatepop_a 0 3
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.export e_Referee_samnesiaRefereeAI
+.export e_Referee_eaamnesiaRefereeAI
+.descexp e_Referee_damnesiaRefereeAI e_Referee_namnesiaRefereeAI e_Referee_lamnesiaRefereeAI 1 0 "amnesiaRefereeAI"
+.o 2 0
+e_Referee_lamnesiaRefereeAI
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Referee_eaamnesiaRefereeAI
+.n 1 e_Referee_damnesiaRefereeAI e_Referee_eaamnesiaRefereeAI
+.o 1 0
+e_Referee_namnesiaRefereeAI
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eaamnesiaRefereeAI
+.o 2 0
+e_Referee_samnesiaRefereeAI
+.o 2 0
+s6
+	push_a 0
+	fillh d14 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d14 _hnf l14 2 0 "<lambda>[line:80];27;13"
+.a 0 a14
+.o 2 0
+l14
+	repl_args 1 1
+.o 2 0
+a14
+.o 2 0
+ea14
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	update_a 1 5
+	update_a 2 3
+	update_a 4 2
+	update_a 0 4
+	pop_a 2
+	push_a 3
+	push_a 2
+	buildh _Tuple 2
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 4
+	buildh _Tuple 2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	update_a 1 6
+	updatepop_a 0 5
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.export e_Referee_srandomlessRefereeAI
+.export e_Referee_earandomlessRefereeAI
+.descexp e_Referee_drandomlessRefereeAI e_Referee_nrandomlessRefereeAI e_Referee_lrandomlessRefereeAI 1 0 "randomlessRefereeAI"
+.o 2 0
+e_Referee_lrandomlessRefereeAI
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Referee_earandomlessRefereeAI
+.n 1 e_Referee_drandomlessRefereeAI e_Referee_earandomlessRefereeAI
+.o 1 0
+e_Referee_nrandomlessRefereeAI
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_earandomlessRefereeAI
+.o 2 0
+e_Referee_srandomlessRefereeAI
+.o 2 0
+s5
+	push_a 0
+	fillh d13 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d13 _hnf l13 2 0 "<lambda>[line:77];27;12"
+.a 0 a13
+.o 2 0
+l13
+	repl_args 1 1
+.o 2 0
+a13
+.o 2 0
+ea13
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	update_a 1 5
+	update_a 2 3
+	update_a 4 2
+	update_a 0 4
+	pop_a 2
+	push_a 2
+	push_a 2
+	buildh _Tuple 2
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	push_a 0
+	build d_S.2 -1 n_S.2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Tuple 2
+	push_a 1
+	build d_S.1 -1 n_S.1
+	update_a 1 6
+	updatepop_a 0 5
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.export e_Referee_sdefaultSoundFile
+.export e_Referee_eadefaultSoundFile
+.descexp e_Referee_ddefaultSoundFile e_Referee_ndefaultSoundFile e_Referee_ldefaultSoundFile 1 0 "defaultSoundFile"
+.o 2 0
+e_Referee_ldefaultSoundFile
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Referee_eadefaultSoundFile
+.n 1 e_Referee_ddefaultSoundFile e_Referee_eadefaultSoundFile
+.o 1 0
+e_Referee_ndefaultSoundFile
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Referee_eadefaultSoundFile
+	jsr_eval 0
+.o 2 0
+e_Referee_sdefaultSoundFile
+.o 2 0
+s4
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s12
+.o 1 0
+	buildAC ""
+	push_a 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.1
+	fillh e_StdMaybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+else.1
+	push_a 0
+	buildh ARRAY 1
+	buildAC "sound\\"
+	buildh ARRAY 1
+	build _ 2 e_StdString_n+++;11
+	fillh e_StdMaybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+s12
+	pushD_a 0
+	eqD_b e_Footballer_kHands 0
+	jmp_true case.2
+	eqD_b e_Footballer_kTackleDetected 0
+	jmp_true case.3
+	eqD_b e_Footballer_kDangerousPlay 0
+	jmp_true case.4
+	eqD_b e_Footballer_dGameOver 0
+	jmp_true case.5
+	eqD_b e_Footballer_kGameCancelled 0
+	jmp_true case.6
+	eqD_b e_Footballer_dEndHalf 0
+	jmp_true case.7
+	eqD_b e_Footballer_kOffside 0
+	jmp_true case.8
+	eqD_b e_Footballer_kGoalKick 0
+	jmp_true case.9
+	eqD_b e_Footballer_kCorner 0
+	jmp_true case.10
+	eqD_b e_Footballer_kThrowIn 0
+	jmp_true case.11
+	eqD_b e_Footballer_kGoal 0
+	jmp_true case.12
+	eqD_b e_Footballer_kOwnBallIllegally 0
+	jmp_true case.13
+	pop_b 1
+	jmp case.14
+case.2
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "stopBecauseOfFoul.wav"
+.d 1 0
+	rtn
+case.3
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "tackles_ed.wav"
+.d 1 0
+	rtn
+case.4
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "tackles_ed.wav"
+.d 1 0
+	rtn
+case.5
+	pop_b 1
+	pop_a 1
+	buildAC "endGameOrHalf.wav"
+.d 1 0
+	rtn
+case.6
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "endGameOrHalf.wav"
+.d 1 0
+	rtn
+case.7
+	pop_b 1
+	pop_a 1
+	buildAC "endGameOrHalf.wav"
+.d 1 0
+	rtn
+case.8
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "offside.wav"
+.d 1 0
+	rtn
+case.9
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "ballOut.wav"
+.d 1 0
+	rtn
+case.10
+	pop_b 1
+	repl_args 2 2
+	pop_a 2
+	buildAC "ballOut.wav"
+.d 1 0
+	rtn
+case.11
+	pop_b 1
+	repl_args 2 2
+	pop_a 2
+	buildAC "ballOut.wav"
+.d 1 0
+	rtn
+case.12
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "CenterKick.wav"
+.d 1 0
+	rtn
+case.13
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "wrongPosition2restartFrom.wav"
+.d 1 0
+	rtn
+case.14
+	pop_a 1
+	buildAC ""
+.d 1 0
+	rtn
+.export e_Referee_sdefaultImage
+.descexp e_Referee_ddefaultImage e_Referee_ndefaultImage e_Referee_ldefaultImage 4 0 "defaultImage"
+.a 0 a3
+.o 2 0
+e_Referee_ldefaultImage
+	repl_args 3 3
+.o 4 0
+a3
+.d 4 0
+	jsr ea3
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 4 e_Referee_ddefaultImage
+.o 1 0
+e_Referee_ndefaultImage
+	push_node _cycle_in_spine 4
+.d 4 0
+	jsr ea3
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 4 0
+ea3
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 11 2
+	push_r_args 11 4 0
+	update_a 14 16
+	update_a 12 14
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 13 15
+	update_a 11 13
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	pop_a 2
+.o 17 2 ii
+e_Referee_sdefaultImage
+.o 17 2 ii
+s3
+	push_a 15
+	pop_b 2
+	update_a 4 16
+	update_a 3 15
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+.d 1 0
+	jsr s18
+.o 1 0
+	buildAC "afbeeldingen\\"
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 5 6
+	update_a 0 5
+	pop_a 1
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 6 0
+	jsr e_StdBitmap_sopenBitmap
+.o 2 0
+.d 2 0
+	jmp s19
+.o 2 0
+s19
+case.15
+	eq_desc e_StdMaybe_dJust 1 0
+	jmp_true case.17
+	jmp case.16
+case.17
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+case.16
+	buildAC "defaultImage: unable to load default picture.\n"
+	updatepop_a 0 2
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+.d 2 0
+	rtn
+.o 1 0
+s18
+	pushD_a 0
+	eqD_b e_Footballer_kReprimandPlayer 0
+	jmp_true case.18
+	eqD_b e_Footballer_kHands 0
+	jmp_true case.19
+	eqD_b e_Footballer_kOwnBallIllegally 0
+	jmp_true case.20
+	eqD_b e_Footballer_kTellMessage 0
+	jmp_true case.21
+	eqD_b e_Footballer_kDirectFreeKick 0
+	jmp_true case.22
+	eqD_b e_Footballer_kGoalKick 0
+	jmp_true case.23
+	eqD_b e_Footballer_kCorner 0
+	jmp_true case.24
+	eqD_b e_Footballer_kThrowIn 0
+	jmp_true case.25
+	eqD_b e_Footballer_kPenalty 0
+	jmp_true case.26
+	eqD_b e_Footballer_kAdvantage 0
+	jmp_true case.27
+	pop_b 1
+	jmp case.28
+case.18
+	pop_b 1
+	repl_args 2 2
+	pop_a 1
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr s10
+.o 1 0
+	buildAC ".bmp"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "ivanov_"
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+case.19
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "hands.bmp"
+.d 1 0
+	rtn
+case.20
+	pop_b 1
+	repl_r_args 1 1
+	pop_a 1
+	pop_b 1
+	buildAC "ivanov_badluck.bmp"
+.d 1 0
+	rtn
+case.21
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "ivanov_look.bmp"
+.d 1 0
+	rtn
+case.22
+	pop_b 1
+	repl_args 2 2
+	pop_a 1
+	create
+.d 1 0
+	jsr e_Geometry_szero;15
+.o 1 0
+	push_r_args_a 1 2 0 1 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_Geometry_s<;22
+.o 0 1 b
+.d 0 1 b
+	jmp s11
+case.23
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dWest 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+.d 0 1 b
+	jmp s11
+case.24
+	pop_b 1
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	buildh e_Footballer_dWest 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+.d 0 1 b
+	jmp s11
+case.25
+	pop_b 1
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	buildh e_Footballer_dWest 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+.d 0 1 b
+	jmp s11
+case.26
+	pop_b 1
+	repl_args 1 1
+	buildh e_Footballer_dWest 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_Footballer_s==;81
+.o 0 1 b
+.d 0 1 b
+	jmp s11
+case.27
+	pop_b 1
+	repl_args 1 1
+	pop_a 1
+	buildAC "ivanov_badluck.bmp"
+.d 1 0
+	rtn
+case.28
+	pop_a 1
+	buildAC "ivanov_fluit.bmp"
+.d 1 0
+	rtn
+.o 1 0
+s10
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s17
+.o 1 0
+s17
+	pushD_a 0
+	eqD_b e_Footballer_dWarning 0
+	jmp_true case.29
+	eqD_b e_Footballer_dYellowCard 0
+	jmp_true case.30
+	jmp case.31
+case.29
+	pop_b 1
+	pop_a 1
+	buildAC "warning"
+.d 1 0
+	rtn
+case.30
+	pop_b 1
+	pop_a 1
+	buildAC "yellow"
+.d 1 0
+	rtn
+case.31
+	pop_b 1
+	pop_a 1
+	buildAC "red"
+.d 1 0
+	rtn
+.o 0 1 b
+s11
+	push_b 0
+	updatepop_b 0 1
+.d 0 1 b
+	jsr s16
+.o 1 0
+	buildAC ".bmp"
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "ivanov_wijst_"
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	rtn
+.o 0 1 b
+s16
+	eqB_b TRUE 0
+	jmp_true case.32
+	jmp case.33
+case.32
+	pop_b 1
+	buildAC "links"
+.d 1 0
+	rtn
+case.33
+	pop_b 1
+	buildAC "rechts"
+.d 1 0
+	rtn
+.export e_Referee_sallAvailableReferees
+.export e_Referee_eaallAvailableReferees
+.descexp e_Referee_dallAvailableReferees e_Referee_nallAvailableReferees e_Referee_lallAvailableReferees 0 0 "allAvailableReferees"
+.o 1 0
+e_Referee_lallAvailableReferees
+	halt
+.n 0 e_Referee_dallAvailableReferees e_Referee_eaallAvailableReferees
+.o 1 0
+e_Referee_nallAvailableReferees
+	push_node _cycle_in_spine 0
+.o 1 0
+e_Referee_eaallAvailableReferees
+.o 1 0
+e_Referee_sallAvailableReferees
+.o 1 0
+s2
+	buildh _Nil 0
+	buildh e_RefereeCoach_Keeper_Assignment_dRefereeCoach_Keeper 0
+	buildh _Cons 2
+	buildh e_RefereeCoach_DeepPass_Assignment_dRefereeCoach_DeepPass 0
+	buildh _Cons 2
+	buildh e_RefereeCoach_Passing_Assignment_dRefereeCoach_Passing 0
+	buildh _Cons 2
+	buildh e_RefereeCoach_Slalom_Assignment_dRefereeCoach_Slalom 0
+	buildh _Cons 2
+	buildh e_RefereeCoach_Rounds_Assignment_dRefereeCoach_Rounds 0
+	buildh _Cons 2
+	buildh _Nil 0
+	buildh e_NoReferee_dNoReferee 0
+	buildh _Cons 2
+	buildh e_Umpire_dumpire 0
+	buildh _Cons 2
+.d 3 0
+	jmp e_StdList_s++
+.export e_Referee_sdefaultReferee
+.descexp e_Referee_ddefaultReferee e_Referee_ndefaultReferee e_Referee_ldefaultReferee 0 0 "defaultReferee"
+.o 1 0
+e_Referee_ldefaultReferee
+	halt
+.n 0 e_Referee_ddefaultReferee
+.o 1 0
+e_Referee_ndefaultReferee
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea1
+.o 3 0
+	fill_r e_Referee_rReferee 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 0 0
+ea1
+.o 0 0
+e_Referee_sdefaultReferee
+.o 0 0
+s1
+	buildh _Nil 0
+	buildh e_StdIOBasic_dVoid 0
+	buildh d9 0
+	build_r e_Footballer_rBrain 2 0 0 0
+	updatepop_a 0 2
+	buildAC "Default"
+.d 3 0
+	rtn
+.desc d9 _hnf l9 1 0 "<lambda>[line:29];67;8"
+.o 2 0
+l9
+	pop_a 1
+.o 1 0
+ea9
+	jsr_eval 0
+	repl_args 2 2
+	buildh _Nil 0
+	buildh e_Footballer_dContinueGame 0
+	buildh _Cons 2
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn

@@ -1,0 +1,467 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "RefereeFunctions" "20170314161737"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "render" "20170314161737"
+.depend "guiInterface" "20170314161737"
+.depend "matchLog" "20170314161737"
+.depend "matchGame" "20170314161737"
+.depend "GamePicture" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.depend "Referee" "20170314161737"
+.depend "matchControl" "20170314161737"
+.depend "NoReferee" "20170314161737"
+.module m_NoReferee "NoReferee" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_RefereeFunctions_sball_left_field_at
+.implab e_Geometry_sabs;18
+.implab e_Geometry_s<;22
+.implab e_Geometry_sscale;25
+.implab e_RandomExt_srandom
+.implab e_StdInt_sisEven;18
+.implab e_StdBool_snot
+.implab e_StdMaybe_sisJust
+.implab e_StdMaybe_sfromJust
+.implab e_Footballer_szero;97
+.implab e_Footballer_s<;98
+.impdesc e_Footballer_rBrain
+.impdesc e_Footballer_kGoalKick
+.impdesc e_Footballer_dGoalKick
+.implab e_Footballer_nGoalKick e_Footballer_eaGoalKick
+.impdesc e_Footballer_kThrowIn
+.impdesc e_Footballer_dThrowIn
+.implab e_Footballer_nThrowIn e_Footballer_eaThrowIn
+.implab e_Referee_samnesiaRefereeAI
+.impdesc e_Referee_rReferee
+.desc0 d9 0 "Memory"
+.export e_NoReferee_sNoReferee
+.descexp e_NoReferee_dNoReferee e_NoReferee_nNoReferee e_NoReferee_lNoReferee 1 0 "NoReferee"
+.o 2 0
+e_NoReferee_lNoReferee
+	pop_a 1
+.d 1 0
+	jsr ea1
+.o 3 0
+	build_r e_Referee_rReferee 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 1 e_NoReferee_dNoReferee
+.o 1 0
+e_NoReferee_nNoReferee
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea1
+.o 3 0
+	fill_r e_Referee_rReferee 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 1 0
+ea1
+	jsr_eval 0
+	repl_r_args 2 0
+.o 2 0
+e_NoReferee_sNoReferee
+.o 2 0
+s1
+	buildh _Nil 0
+	buildh d9 0
+	build_r e_Footballer_rFootballField 2 0 2 0
+	buildh d2 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 5
+	update_a 0 6
+	pop_a 1
+.d 2 0
+	jsr e_Referee_samnesiaRefereeAI
+.o 1 0
+	build_r e_Footballer_rBrain 2 0 0 0
+	updatepop_a 0 2
+	buildAC "NoReferee"
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	rtn
+.desc d2 _hnf l2 2 0 "brain"
+.a 0 a2
+.o 2 0
+l2
+	repl_args 1 1
+.o 2 0
+a2
+.d 2 0
+	jsr ea2
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 2 0
+ea2
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 7 0
+	push_r_args 8 2 0
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 10 0
+s2
+	jmp case.1
+case.1
+	create
+.d 1 0
+	jsr e_Footballer_szero;97
+.o 1 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr e_Footballer_s<;98
+.o 0 1 b
+	notB
+	jmp_false else.3
+	buildh _Nil 0
+	buildh e_Footballer_dGameOver 0
+	buildh _Cons 2
+	push_a 10
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 11
+	updatepop_a 0 10
+.d 2 0
+	rtn
+else.3
+	jmp case.2
+case.2
+	build_r e_Referee_rRefereeInput 7 0 2 0
+	create
+	push_a 3
+	push_a 3
+	buildh _Nil 0
+	update_a 0 13
+	update_a 0 12
+	update_a 0 11
+	update_a 0 10
+	update_a 0 9
+	update_a 0 8
+	update_a 0 7
+	pop_a 1
+.d 3 0
+	jsr e_RefereeFunctions_sball_left_field_at
+.o 1 0
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jsr_ap 1
+	push_a 0
+.d 1 0
+	jsr e_StdMaybe_sisJust
+.o 0 1 b
+	jmp_false else.4
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdMaybe_sfromJust
+.o 1 0
+	push_a 3
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+.d 1 0
+	jsr e_RandomExt_srandom
+.o 1 1 i
+	push_a 2
+	create
+	pushR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 1 r
+	jsr e_Geometry_sscale;25
+.o 1 0
+	push_r_args_a 2 2 0 2 1
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr e_Geometry_sabs;18
+.o 1 0
+.d 2 0
+	jsr e_Geometry_s<;22
+.o 0 1 b
+	notB
+	create
+	push_a 2
+	push_b 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 1 2
+	updatepop_b 0 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 2 bi
+	jsr s5
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+else.4
+	buildh _Nil 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	rtn
+.o 2 2 bi
+s5
+	eqB_b TRUE 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	buildh _Nil 0
+	buildI_b 1
+	build _ 1 n10
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_Footballer_dThrowIn 2 e_Footballer_nThrowIn
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 2
+.d 1 0
+	rtn
+case.6
+	buildh _Nil 0
+	buildI_b 1
+	build _ 1 n11
+	build e_Footballer_dGoalKick 1 e_Footballer_nGoalKick
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _ ea11
+.o 1 0
+n11
+	push_node _cycle_in_spine 1
+.o 2 0
+ea11
+.o 2 0
+s11
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	pop_a 1
+.d 1 1 b
+	jmp s4
+.n 1 _ ea10
+.o 1 0
+n10
+	push_node _cycle_in_spine 1
+.o 2 0
+ea10
+.o 2 0
+s10
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pushI 1
+	and%
+	pushI 0
+	eqI
+	pop_a 1
+.d 1 1 b
+	jmp s3
+.o 1 1 b
+s4
+	eqB_b TRUE 0
+	jmp_true case.7
+	jmp case.8
+case.7
+	fillh e_Footballer_dWest 0 0
+	pop_b 1
+.d 1 0
+	rtn
+case.8
+	fillh e_Footballer_dEast 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 1 b
+s3
+	eqB_b TRUE 0
+	jmp_true case.9
+	jmp case.10
+case.9
+	fillh e_Footballer_dWest 0 0
+	pop_b 1
+.d 1 0
+	rtn
+case.10
+	fillh e_Footballer_dEast 0 0
+	pop_b 1
+.d 1 0
+	rtn

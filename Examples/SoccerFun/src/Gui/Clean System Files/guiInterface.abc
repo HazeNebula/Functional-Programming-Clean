@@ -1,0 +1,910 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "fileIO" "20170314161737"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "render" "20170314161737"
+.depend "matchLog" "20170314161737"
+.depend "matchGame" "20170314161737"
+.depend "GamePicture" "20170314161737"
+.depend "Team" "20170314161737"
+.depend "Geometry" "20170314161737"
+.depend "StdLibMisc" "20170131202635"
+.depend "ostick" "20170131202632"
+.depend "StdTime" "20170131202631"
+.depend "RandomExt" "20170314161737"
+.depend "randomstream" "20170314161737"
+.depend "Football" "20170314161737"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "Footballer" "20170314161737"
+.depend "Referee" "20170314161737"
+.depend "matchControl" "20170314161737"
+.depend "guiInterface" "20170314161737"
+.module m_guiInterface "guiInterface" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_fileIO_sgetImage
+.implab e_matchLog_slogMatch
+.implab e_matchGame_stimeLeft
+.impdesc e_GamePicture_rGamePicture
+.impdesc e_GamePicture_rActionPics
+.implab e_StdList_smap
+.implab e_StdString_s+++;11
+.implab e_StdReal_szero;3
+.implab e_StdReal_s/;5
+.implab e_StdEnvExt_ssseqList
+.implab e_matchControl_sstepMatch
+.export e_guiInterface_dSlowest
+.desc0 e_guiInterface_dSlowest 0 "Slowest"
+.export e_guiInterface_dSlower
+.desc0 e_guiInterface_dSlower 1 "Slower"
+.export e_guiInterface_dNormal
+.desc0 e_guiInterface_dNormal 2 "Normal"
+.export e_guiInterface_dFast
+.desc0 e_guiInterface_dFast 3 "Fast"
+.export e_guiInterface_dFaster
+.desc0 e_guiInterface_dFaster 4 "Faster"
+.export e_guiInterface_dFastest
+.desc0 e_guiInterface_dFastest 5 "Fastest"
+.export e_guiInterface_s==;6
+.descexp e_guiInterface_d==;6 e_guiInterface_n==;6 e_guiInterface_l==;6 2 0 "==;6"
+.a 0 a7
+.o 2 0
+e_guiInterface_l==;6
+	repl_args 1 1
+.o 2 0
+a7
+.d 2 0
+	jsr ea7
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_guiInterface_d==;6
+.o 1 0
+e_guiInterface_n==;6
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea7
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea7
+	jsr_eval 1
+	jsr_eval 0
+.o 2 0
+e_guiInterface_s==;6
+.o 2 0
+s7
+	pushD_a 0
+	eqD_b e_guiInterface_dSlowest 0
+	jmp_true case.1
+	eqD_b e_guiInterface_dSlower 0
+	jmp_true case.2
+	eqD_b e_guiInterface_dNormal 0
+	jmp_true case.3
+	eqD_b e_guiInterface_dFast 0
+	jmp_true case.4
+	eqD_b e_guiInterface_dFaster 0
+	jmp_true case.5
+	jmp case.6
+case.1
+	pop_b 1
+	eq_desc e_guiInterface_dSlowest 0 1
+	jmp_true case.8
+	jmp case.7
+case.8
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.2
+	pop_b 1
+	eq_desc e_guiInterface_dSlower 0 1
+	jmp_true case.9
+	jmp case.7
+case.9
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.3
+	pop_b 1
+	eq_desc e_guiInterface_dNormal 0 1
+	jmp_true case.10
+	jmp case.7
+case.10
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.4
+	pop_b 1
+	eq_desc e_guiInterface_dFast 0 1
+	jmp_true case.11
+	jmp case.7
+case.11
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.5
+	pop_b 1
+	eq_desc e_guiInterface_dFaster 0 1
+	jmp_true case.12
+	jmp case.7
+case.12
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.6
+	pop_b 1
+	eq_desc e_guiInterface_dFastest 0 1
+	jmp_true case.13
+	jmp case.7
+case.13
+	pop_a 2
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.7
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_guiInterface_sfromString;5
+.export e_guiInterface_eafromString;5
+.descexp e_guiInterface_dfromString;5 e_guiInterface_nfromString;5 e_guiInterface_lfromString;5 1 0 "fromString;5"
+.o 2 0
+e_guiInterface_lfromString;5
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_guiInterface_eafromString;5
+.n 1 e_guiInterface_dfromString;5 e_guiInterface_eafromString;5
+.o 1 0
+e_guiInterface_nfromString;5
+	push_node _cycle_in_spine 1
+.o 2 0
+e_guiInterface_eafromString;5
+	jsr_eval 0
+	push_array 0
+	update_a 0 1
+	pop_a 1
+.o 2 0
+e_guiInterface_sfromString;5
+.o 2 0
+s6
+	push_a 0
+	eqAC_a "Slowest"
+	jmp_true case.14
+	push_a 0
+	eqAC_a "Slower"
+	jmp_true case.15
+	push_a 0
+	eqAC_a "Normal"
+	jmp_true case.16
+	push_a 0
+	eqAC_a "Fast"
+	jmp_true case.17
+	push_a 0
+	eqAC_a "Faster"
+	jmp_true case.18
+	push_a 0
+	eqAC_a "Fastest"
+	jmp_true case.19
+	jmp s6.1
+case.14
+	fillh e_guiInterface_dSlowest 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.15
+	fillh e_guiInterface_dSlower 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.16
+	fillh e_guiInterface_dNormal 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.17
+	fillh e_guiInterface_dFast 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.18
+	fillh e_guiInterface_dFaster 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.19
+	fillh e_guiInterface_dFastest 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s6.1
+	pop_a 2
+	pushD m_guiInterface
+	pushD e_guiInterface_dfromString;5
+.d 0 2 ii
+	jmp _match_error
+.export e_guiInterface_stoString;4
+.descexp e_guiInterface_dtoString;4 e_guiInterface_ntoString;4 e_guiInterface_ltoString;4 1 0 "toString;4"
+.o 2 0
+e_guiInterface_ltoString;4
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_guiInterface_dtoString;4
+.o 1 0
+e_guiInterface_ntoString;4
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea5
+	jsr_eval 0
+.o 1 0
+e_guiInterface_stoString;4
+.o 1 0
+s5
+	pushD_a 0
+	eqD_b e_guiInterface_dSlowest 0
+	jmp_true case.20
+	eqD_b e_guiInterface_dSlower 0
+	jmp_true case.21
+	eqD_b e_guiInterface_dNormal 0
+	jmp_true case.22
+	eqD_b e_guiInterface_dFast 0
+	jmp_true case.23
+	eqD_b e_guiInterface_dFaster 0
+	jmp_true case.24
+	jmp case.25
+case.20
+	pop_b 1
+	pop_a 1
+	buildAC "Slowest"
+.d 1 0
+	rtn
+case.21
+	pop_b 1
+	pop_a 1
+	buildAC "Slower"
+.d 1 0
+	rtn
+case.22
+	pop_b 1
+	pop_a 1
+	buildAC "Normal"
+.d 1 0
+	rtn
+case.23
+	pop_b 1
+	pop_a 1
+	buildAC "Fast"
+.d 1 0
+	rtn
+case.24
+	pop_b 1
+	pop_a 1
+	buildAC "Faster"
+.d 1 0
+	rtn
+case.25
+	pop_b 1
+	pop_a 1
+	buildAC "Fastest"
+.d 1 0
+	rtn
+.export e_guiInterface_sintervalFactor
+.descexp e_guiInterface_dintervalFactor e_guiInterface_nintervalFactor e_guiInterface_lintervalFactor 1 0 "intervalFactor"
+.o 2 0
+e_guiInterface_lintervalFactor
+	pop_a 1
+.d 1 0
+	jsr ea4
+.o 0 1 r
+	buildR_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 e_guiInterface_dintervalFactor
+.o 1 0
+e_guiInterface_nintervalFactor
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea4
+.o 0 1 r
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea4
+	jsr_eval 0
+.o 1 0
+e_guiInterface_sintervalFactor
+.o 1 0
+s4
+	pushD_a 0
+	eqD_b e_guiInterface_dSlowest 0
+	jmp_true case.26
+	eqD_b e_guiInterface_dSlower 0
+	jmp_true case.27
+	eqD_b e_guiInterface_dNormal 0
+	jmp_true case.28
+	eqD_b e_guiInterface_dFast 0
+	jmp_true case.29
+	eqD_b e_guiInterface_dFaster 0
+	jmp_true case.30
+	jmp case.31
+case.26
+	pop_b 1
+	pushR 0.2
+	pushR 1.0
+	pop_a 1
+	divR
+.d 0 1 r
+	rtn
+case.27
+	pop_b 1
+	pushR 0.5
+	pushR 1.0
+	pop_a 1
+	divR
+.d 0 1 r
+	rtn
+case.28
+	pop_b 1
+	pop_a 1
+	pushR 1.0
+.d 0 1 r
+	rtn
+case.29
+	pop_b 1
+	pushR 2.0
+	pushR 1.0
+	pop_a 1
+	divR
+.d 0 1 r
+	rtn
+case.30
+	pop_b 1
+	pushR 5.0
+	pushR 1.0
+	pop_a 1
+	divR
+.d 0 1 r
+	rtn
+case.31
+	pop_b 1
+	pop_a 1
+	pushR 0.0
+.d 0 1 r
+	rtn
+.export e_guiInterface_sstepMatchForGui
+.descexp e_guiInterface_dstepMatchForGui e_guiInterface_nstepMatchForGui e_guiInterface_lstepMatchForGui 3 0 "stepMatchForGui"
+.a 0 a3
+.o 2 0
+e_guiInterface_lstepMatchForGui
+	repl_args 2 2
+.o 3 0
+a3
+.d 3 0
+	jsr ea3
+.o 7 1 i
+	push_a 6
+	build_r e_matchGame_rFootballGame 5 1 2 0
+	push_a 2
+	buildh _Tuple 3
+	updatepop_a 0 7
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 e_guiInterface_dstepMatchForGui
+.o 1 0
+e_guiInterface_nstepMatchForGui
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea3
+.o 7 1 i
+	push_a 6
+	build_r e_matchGame_rFootballGame 5 1 2 0
+	push_a 2
+	fillh _Tuple 3 10
+	pop_a 7
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 5 1
+	push_r_args 5 4 0
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	pop_a 2
+.o 10 1 i
+e_guiInterface_sstepMatchForGui
+.o 10 1 i
+s3
+	push_a 8
+	push_a 8
+	push_b 0
+	push_a 8
+	push_a 8
+	push_a 8
+.d 5 1 i
+	jsr e_matchGame_stimeLeft
+.o 0 1 b
+	jmp_false else.32
+	push_r_args 4 11 2
+.d 11 2 ii
+	jsr e_matchControl_sstepMatch
+.o 13 2 ii
+	push_a 1
+	push_a 1
+	push_r_args 23 0 4
+	push_a 24
+	push_a 2
+	push_a 2
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_b 5
+	push_b 5
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 32
+	push_a 32
+	push_a 32
+	push_a 32
+	push_b 5
+	update_b 2 6
+	update_b 4 2
+	update_b 0 4
+	update_b 5 0
+	update_b 1 5
+	update_b 3 1
+	update_b 0 3
+	pop_b 1
+	update_a 18 21
+	update_a 17 20
+	update_a 16 19
+	update_a 15 18
+	update_a 14 17
+	update_a 13 16
+	update_a 12 15
+	update_a 11 14
+	update_a 10 13
+	update_a 9 12
+	update_a 8 11
+	update_a 7 10
+	update_a 6 9
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	buildh _Nil 0
+	update_a 0 31
+	update_a 0 32
+	update_a 0 33
+	update_a 0 34
+	update_a 0 40
+	pop_a 1
+.d 18 6 bbbbii
+	jsr e_matchLog_slogMatch
+.o 1 0
+	build_r e_matchControl_rMatch 11 2 2 0
+	push_a 22
+	push_a 22
+	push_b 2
+	push_a 22
+	push_a 22
+	push_a 22
+	update_a 5 0
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	push_a 6
+	update_a 6 28
+	update_a 5 27
+	update_a 4 26
+	update_a 3 25
+	update_a 2 24
+	update_a 1 23
+	updatepop_a 0 22
+	updatepop_b 0 3
+.d 7 1 i
+	rtn
+else.32
+	buildh _Nil 0
+	buildh e_Footballer_dGameOver 0
+	buildh _Cons 2
+	push_a 10
+	push_a 10
+	push_a 10
+	push_b 0
+	push_a 10
+	push_a 10
+	push_a 10
+	push_a 6
+	update_a 6 7
+	update_a 5 6
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 6 16
+	update_a 5 15
+	update_a 4 14
+	update_a 3 13
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+	updatepop_b 0 1
+.d 7 1 i
+	rtn
+.export e_guiInterface_sgetActionPicsForGui
+.descexp e_guiInterface_dgetActionPicsForGui e_guiInterface_ngetActionPicsForGui e_guiInterface_lgetActionPicsForGui 3 0 "getActionPicsForGui"
+.a 0 a2
+.o 2 0
+e_guiInterface_lgetActionPicsForGui
+	repl_args 2 2
+.o 3 0
+a2
+.d 3 0
+	jsr ea2
+.o 2 0
+	push_a 1
+	build_r e_GamePicture_rActionPics 1 0 1 0
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_guiInterface_dgetActionPicsForGui
+.o 1 0
+e_guiInterface_ngetActionPicsForGui
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea2
+.o 2 0
+	push_a 1
+	build_r e_GamePicture_rActionPics 1 0 1 0
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea2
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 11 2
+	push_r_args 11 4 0
+	update_a 14 16
+	update_a 12 14
+	update_a 10 12
+	update_a 8 10
+	update_a 6 8
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 13 15
+	update_a 11 13
+	update_a 9 11
+	update_a 7 9
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	pop_a 2
+.o 16 2 ii
+e_guiInterface_sgetActionPicsForGui
+.o 16 2 ii
+s2
+	push_r_args 8 3 0
+	pop_a 2
+	build_r e_StdFile_rFileSystem; 4 0 1 0
+	buildh d8 1
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	pop_b 2
+	update_a 2 17
+	update_a 1 16
+	updatepop_a 0 15
+.d 3 0
+	jsr e_StdList_smap
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdEnvExt_ssseqList
+.o 2 0
+	push_a 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+.desc d8 _hnf l8 3 0 "fillWithPics`;7"
+.a 0 a8
+.o 2 0
+l8
+	repl_args 2 2
+.o 3 0
+a8
+.o 3 0
+ea8
+	jsr_eval 2
+	jsr_eval 1
+	push_array 1
+	push_r_args 1 4 0
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	update_a 3 5
+	update_a 1 3
+	pop_a 2
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	update_a 10 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 6 0
+	jsr e_fileIO_sgetImage
+.o 2 0
+	push_a 2
+	push_a 1
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	push_a 2
+	build_r e_GamePicture_rGamePicture 2 0 1 0
+	buildh _Tuple 2
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.export e_guiInterface_sgetSplashImageForGui
+.descexp e_guiInterface_dgetSplashImageForGui e_guiInterface_ngetSplashImageForGui e_guiInterface_lgetSplashImageForGui 2 0 "getSplashImageForGui"
+.a 0 a1
+.o 2 0
+e_guiInterface_lgetSplashImageForGui
+	repl_args 1 1
+.o 2 0
+a1
+.d 2 0
+	jsr ea1
+.o 3 0
+	push_a 2
+	build_r e_GamePicture_rGamePicture 2 0 1 0
+	buildh _Tuple 2
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 2 e_guiInterface_dgetSplashImageForGui
+.o 1 0
+e_guiInterface_ngetSplashImageForGui
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea1
+.o 3 0
+	push_a 2
+	build_r e_GamePicture_rGamePicture 2 0 1 0
+	fillh _Tuple 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.o 2 0
+ea1
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 4 0
+.o 5 0
+e_guiInterface_sgetSplashImageForGui
+.o 5 0
+s1
+	buildAC ".bmp"
+	buildAC "AmsterdamArenA"
+.d 2 0
+	jsr catAC
+.o 1 0
+	buildAC "afbeeldingen\\"
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_a 5
+	push_a 1
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	update_a 6 11
+	update_a 5 10
+	update_a 4 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 6 0
+	jsr e_fileIO_sgetImage
+.o 2 0
+	push_a 2
+	push_a 1
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	rtn

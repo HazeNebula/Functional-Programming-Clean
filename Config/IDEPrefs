@@ -41,8 +41,8 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	300
-		VY:	300
+		VX:	113
+		VY:	334
 	EWSiz
 		W:	500
 		H:	300
@@ -159,6 +159,11 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\SoccerFun.prj
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\AnyAndAll.prj
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\FQL.prj
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Origami.prj
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Cards.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\FQL.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Origami.prj
 	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Cards.prj
@@ -166,18 +171,18 @@ ProjHist
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 FileHist
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\FQL.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Origami.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Cards.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Card.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdStack.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.icl
-	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Frags.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdSet.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\StdSortList.icl
-	Path:	C:\Users\Niels-laptop\Documents\2016-2017 2nd semester\Functional Programming\Exercises\Frags.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\Team_Harmless.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamMiniEffie.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\SoccerFun64.env
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\ProofMapFlatten.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\AnyAndAll.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\FQL.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Origami.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\NotationZF.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Cards.icl
+	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Card.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0

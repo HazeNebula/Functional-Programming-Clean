@@ -1,0 +1,2477 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdReceiver" "20170131202630"
+.depend "StdControl" "20170131202630"
+.depend "StdReceiverDef" "20170131202630"
+.depend "StdControlReceiver" "20170131202630"
+.depend "StdControlClass" "20170131202630"
+.depend "StdControlAttribute" "20170131202630"
+.depend "StdId" "20170131202630"
+.depend "roundrobin" "20170131202630"
+.depend "processstack" "20170131202629"
+.depend "timerhandle" "20170131202631"
+.depend "processhandle" "20170131202629"
+.depend "osmenu" "20170131202632"
+.depend "StdMenuDef" "20170131202630"
+.depend "menuhandle" "20170131202629"
+.depend "devicesystemstate" "20170131202629"
+.depend "keyfocus" "20170131202629"
+.depend "commondef" "20170131202628"
+.depend "receiverhandle" "20170131202629"
+.depend "StdWindowDef" "20170131202631"
+.depend "StdControlDef" "20170131202630"
+.depend "windowhandle" "20170131202631"
+.depend "StdTimerDef" "20170131202631"
+.depend "timertable" "20170131202631"
+.depend "semidynamic" "20170131202630"
+.depend "receivertable" "20170131202630"
+.depend "receivermessage" "20170131202630"
+.depend "deviceevents" "20170131202629"
+.depend "devicefunctions" "20170131202629"
+.depend "ossystem" "20170131202632"
+.depend "osguishare" "20170131202632"
+.depend "ostime" "20170131202632"
+.depend "clCrossCall_12" "20170131202631"
+.depend "osevent" "20170131202632"
+.depend "ostoolbar" "20170131202632"
+.depend "menuCrossCall_12" "20170131202631"
+.depend "osdocumentinterface" "20170131202632"
+.depend "osactivaterequests" "20170131202632"
+.depend "iostate" "20170131202629"
+.depend "StdPSt" "20170131202630"
+.depend "systemid" "20170131202631"
+.depend "device" "20170131202629"
+.depend "id" "20170131202629"
+.depend "oskey" "20170131202632"
+.depend "StdKey" "20170131202630"
+.depend "StdPicture" "20170131202630"
+.depend "StdIOBasic" "20170131202630"
+.depend "StdPictureDef" "20170131202630"
+.depend "osfont" "20170131202632"
+.depend "ostypes" "20170131202632"
+.depend "ostoolbox" "20170131202632"
+.depend "osrgn" "20170131202632"
+.depend "ospicture" "20170131202632"
+.depend "osbitmap" "20170131202632"
+.depend "StdBitmap" "20170131202630"
+.depend "StdIOCommon" "20170131202630"
+.depend "_SystemEnum" "20170131202635"
+.depend "StdEnum" "20170131202634"
+.depend "StdMisc" "20170131202634"
+.depend "StdCharList" "20170131202634"
+.depend "StdTuple" "20170131202635"
+.depend "StdOrdList" "20170131202634"
+.depend "StdList" "20170131202634"
+.depend "StdClass" "20170131202634"
+.depend "StdFile" "20170131202634"
+.depend "StdString" "20170131202635"
+.depend "_SystemArray" "20170131202635"
+.depend "StdArray" "20170131202634"
+.depend "StdChar" "20170131202634"
+.depend "StdReal" "20170131202635"
+.depend "StdInt" "20170131202634"
+.depend "StdBool" "20170131202634"
+.depend "StdEnv" "20170131202634"
+.depend "StdEnvExt" "20170314161737"
+.depend "StdOverloaded" "20170131202634"
+.depend "StdFunc" "20170131202634"
+.depend "StdMaybe" "20170131202635"
+.depend "digitdisplay" "20170314161737"
+.module m_digitdisplay "digitdisplay" "20170314161737"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_StdReceiver_ssyncSend2
+.impdesc e_StdControl_dsetControlLook
+.implab e_StdControl_nsetControlLook e_StdControl_easetControlLook
+.impdesc e_StdControlReceiver_dcontrolToHandles;2
+.impdesc e_StdControlReceiver_dgetControlType;3
+.implab e_StdControlClass_scontrolToHandles;2
+.impdesc e_StdControlClass_dcontrolToHandles;8
+.impdesc e_StdControlClass_dgetControlType;9
+.impdesc e_StdControlClass_dcontrolToHandles;18
+.impdesc e_StdControlClass_dgetControlType;19
+.impdesc e_StdControlClass_rControls;
+.impdesc e_StdControlClass_tControls;
+.implab e_StdControlClass_cControls;
+.implab e_StdControlAttribute_sisControlPos
+.implab e_StdControlAttribute_sisControlTip
+.impdesc e_iostate_rPSt
+.impdesc e_iostate_tPSt
+.implab e_iostate_cPSt
+.implab e_StdPicture_sunfill;103
+.impdesc e_StdPicture_dfillAt;110
+.implab e_StdIOBasic_s+;19
+.implab e_StdIOBasic_szero;26
+.impdesc e_StdIOBasic_rNewLS
+.impdesc e_StdIOBasic_rVector2
+.impdesc e_StdIOBasic_rSize
+.impdesc e_StdIOBasic_tSize
+.implab e_StdIOBasic_cSize
+.impdesc e_StdIOBasic_dSize.w
+.implab e_StdIOBasic_nSize.w
+.impdesc e_StdIOBasic_rPoint2
+.impdesc e_StdIOBasic_tPoint2
+.implab e_StdIOBasic_cPoint2
+.impdesc e_StdPictureDef_rPolygon
+.impdesc e_StdPictureDef_tPolygon
+.implab e_StdPictureDef_cPolygon
+.implab e_StdMisc_sabort
+.implab e_StdList_s++
+.impdesc e_StdList_dflatten
+.implab e_StdList_nflatten e_StdList_eaflatten
+.impdesc e_StdList_dmap
+.implab e_StdList_nmap e_StdList_eamap
+.impdesc e_StdClass_rOrd;
+.implab e_StdString_s+++;11
+.impdesc e_StdReal_d+;1
+.implab e_StdReal_s+;1
+.implab e_StdReal_n+;1
+.impdesc e_StdReal_d-;2
+.implab e_StdReal_n-;2
+.implab e_StdReal_s*;4
+.impdesc e_StdReal_d~;10
+.implab e_StdReal_n~;10
+.implab e_StdReal_stoReal;13
+.implab e_StdReal_slog10;20
+.implab e_StdInt_s+;6
+.implab e_StdInt_s-;7
+.impdesc e_StdInt_d*;9
+.implab e_StdInt_s*;9
+.implab e_StdInt_n*;9
+.implab e_StdInt_s/;10
+.implab e_StdInt_sone;11
+.implab e_StdInt_s^;12
+.implab e_StdInt_sabs;13
+.impdesc e_StdInt_d<;17
+.implab e_StdInt_s<;17
+.implab e_StdInt_stoInt;22
+.impdesc e_StdInt_drem;28
+.implab e_StdInt_nrem;28
+.implab e_StdEnvExt_ssseq
+.implab e_StdEnvExt_ssetbetween
+.impdesc e_StdOverloaded_r<;
+.export e_digitdisplay_dDigitDisplay
+.desc e_digitdisplay_dDigitDisplay _hnf _add_arg 5 0 "DigitDisplay"
+.export e_digitdisplay_rDigitDisplayId
+.record e_digitdisplay_rDigitDisplayId aa 2 0 "DigitDisplayId"
+.descexp e_digitdisplay_tDigitDisplayId e_digitdisplay_cDigitDisplayId _hnf 2 1 "DigitDisplayId"
+.n 2 e_digitdisplay_tDigitDisplayId
+.o 1 0
+e_digitdisplay_cDigitDisplayId
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_digitdisplay_rDigitDisplayId 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_digitdisplay_kIntegerFormat
+.record e_digitdisplay_kIntegerFormat di 0 1 "IntegerFormat"
+.export e_digitdisplay_eaIntegerFormat
+.descexp e_digitdisplay_dIntegerFormat e_digitdisplay_nIntegerFormat e_digitdisplay_lIntegerFormat 1 0 "IntegerFormat"
+.o 2 0
+e_digitdisplay_lIntegerFormat
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_digitdisplay_eaIntegerFormat
+.n 1 e_digitdisplay_dIntegerFormat e_digitdisplay_eaIntegerFormat
+.o 1 0
+e_digitdisplay_nIntegerFormat
+	push_node _cycle_in_spine 1
+.o 2 0
+e_digitdisplay_eaIntegerFormat
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	fill_r e_digitdisplay_kIntegerFormat 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d74 _hnf _add_arg 1 0 "SetDigitValueIn"
+.desc d75 _hnf _hnf 0 0 "GetDigitValueIn"
+.desc d76 _hnf _hnf 0 0 "SetDigitValueOut"
+.desc d77 _hnf _add_arg 1 0 "GetDigitValueOut"
+.record r56 i 0 1 "DigitDisplaySt"
+.descn t56 c56 1 1 "DigitDisplaySt"
+.n 1 t56
+.o 1 0
+c56
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	fill_r r56 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.record r58 aa 2 0 "DigitShapeTT"
+.record r61 aa 2 0 "DigitBarTT"
+.descs d62 n62 _ 1 0 "DigitBarTT.horDigitBar"
+.n -4 d62 ea62
+.o 1 0
+n62
+	push_node _cycle_in_spine 1
+.o 2 0
+ea62
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.descs d63 n63 _ 2 0 "DigitBarTT.verDigitBar"
+.n -4 d63 ea63
+.o 1 0
+n63
+	push_node _cycle_in_spine 1
+.o 2 0
+ea63
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.record r64 rr 0 2 "RPoint2"
+.descn t64 c64 2 1 "RPoint2"
+.n 2 t64
+.o 1 0
+c64
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 1
+	pushR_a 0
+	pop_a 2
+	fill_r r64 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.record r67 rr 0 2 "RVector2"
+.descn t67 c67 2 1 "RVector2"
+.n 2 t67
+.o 1 0
+c67
+	push_node _cycle_in_spine 2
+	jsr_eval 1
+	jsr_eval 0
+	pushR_a 1
+	pushR_a 0
+	pop_a 2
+	fill_r r67 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.export e_digitdisplay_sgetControlType;4
+.descexp e_digitdisplay_dgetControlType;4 e_digitdisplay_ngetControlType;4 e_digitdisplay_lgetControlType;4 1 0 "getControlType;4"
+.o 2 0
+e_digitdisplay_lgetControlType;4
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_digitdisplay_dgetControlType;4
+.o 1 0
+e_digitdisplay_ngetControlType;4
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea5
+.o 1 0
+e_digitdisplay_sgetControlType;4
+.o 1 0
+s5
+	pop_a 1
+	buildAC "DigitDisplay"
+.d 1 0
+	rtn
+.export e_digitdisplay_scontrolToHandles;3
+.descexp e_digitdisplay_dcontrolToHandles;3 e_digitdisplay_ncontrolToHandles;3 e_digitdisplay_lcontrolToHandles;3 2 0 "controlToHandles;3"
+.a 0 a4
+.o 2 0
+e_digitdisplay_lcontrolToHandles;3
+	repl_args 1 1
+.o 2 0
+a4
+.d 2 0
+	jsr ea4
+.o 3 0
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 2 e_digitdisplay_dcontrolToHandles;3
+.o 1 0
+e_digitdisplay_ncontrolToHandles;3
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea4
+.o 3 0
+	build_r e_iostate_rPSt 2 0 1 0
+	push_a 1
+	fillh _Tuple 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.o 2 0
+ea4
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.o 3 0
+e_digitdisplay_scontrolToHandles;3
+.o 3 0
+s4
+	repl_args 5 5
+	jsr_eval 0
+	push_args_u 0 2 2
+	buildh e_StdControlClass_dgetControlType;19 0
+	buildh e_StdControlClass_dcontrolToHandles;18 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	buildh e_StdControlReceiver_dgetControlType;3 0
+	buildh e_StdControlReceiver_dcontrolToHandles;2 0
+	build e_StdControlClass_tControls; 2 e_StdControlClass_cControls;
+	push_a 6
+	build _ 1 n9
+	push_a 0
+	build e_StdIOBasic_dSize.w -3 e_StdIOBasic_nSize.w
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n78
+	push_a 1
+	build _ 2 n84
+	buildR 0.12
+	buildR 0.12
+	buildh _Tuple 2
+	push_arg 0 2 1
+	push_arg 1 2 2
+	buildh _Nil 0
+	push_a 2
+	buildR 1.0
+	build _ 2 e_StdReal_n-;2
+	buildR 0.5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build t64 2 c64
+	buildh _Cons 2
+	push_a 2
+	buildR 1.0
+	build _ 2 e_StdReal_n-;2
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build t64 2 c64
+	buildh _Cons 2
+	push_a 1
+	buildR 1.0
+	build _ 2 e_StdReal_n-;2
+	push_a 3
+	build t64 2 c64
+	buildh _Cons 2
+	buildR 0.5
+	push_a 3
+	build t64 2 c64
+	buildh _Cons 2
+	push_a 1
+	push_a 3
+	build t64 2 c64
+	buildh _Cons 2
+	build _ 1 n85
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	build _ 1 n86
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	build _ 1 n87
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	build _ 1 n88
+	push_a 0
+	build d_S.1 -1 n_S.1
+	push_a 1
+	build d_S.2 -1 n_S.2
+	build _ 1 n89
+	build d_S.1 -1 n_S.1
+	buildh _Nil 0
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	push_a 8
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 5
+	buildh _Cons 2
+	push_a 7
+	buildh _Cons 2
+	push_a 9
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 2
+	buildh _Cons 2
+	push_a 3
+	buildh _Cons 2
+	push_a 7
+	buildh _Cons 2
+	push_a 9
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 6
+	buildh _Cons 2
+	push_a 8
+	buildh _Cons 2
+	push_a 10
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	push_a 4
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 11
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 4
+	buildh _Cons 2
+	push_a 9
+	buildh _Cons 2
+	push_a 11
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 8
+	buildh _Cons 2
+	push_a 10
+	buildh _Cons 2
+	push_a 12
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 5
+	buildh _Cons 2
+	push_a 12
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 9
+	buildh _Cons 2
+	push_a 11
+	buildh _Cons 2
+	push_a 13
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 6
+	buildh _Cons 2
+	push_a 7
+	buildh _Cons 2
+	push_a 13
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 12
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 7
+	buildh _Cons 2
+	push_a 8
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 11
+	buildh _Cons 2
+	push_a 13
+	buildh _Cons 2
+	push_a 15
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 9
+	buildh _Cons 2
+	push_a 13
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 12
+	buildh _Cons 2
+	push_a 14
+	buildh _Cons 2
+	push_a 16
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 9
+	buildh _Cons 2
+	push_a 10
+	buildh _Cons 2
+	buildh _Nil 0
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Nil 0
+	push_a 10
+	buildh _Cons 2
+	push_a 11
+	buildh _Cons 2
+	push_a 15
+	buildh _Cons 2
+	push_a 17
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 14
+	buildh _Cons 2
+	push_a 18
+	buildh _Cons 2
+	build_r r58 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildR 0.06
+	buildR 0.06
+	buildh _Tuple 2
+	push_arg 0 2 1
+	push_arg 1 2 2
+	push_a 0
+	push_a 23
+	build _ 2 e_StdReal_n+;1
+	push_a 2
+	push_a 25
+	build _ 2 n79
+	buildh _Tuple 2
+	push_arg 0 2 1
+	push_arg 1 2 2
+	buildh _Nil 0
+	push_a 4
+	build _ 1 e_StdReal_n~;10
+	push_a 6
+	build t67 2 c67
+	buildh _Cons 2
+	buildR 0.5
+	push_a 2
+	build _ 2 e_StdReal_n-;2
+	buildR 0.0
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 4
+	build _ 1 e_StdReal_n~;10
+	push_a 6
+	build _ 1 e_StdReal_n~;10
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 5
+	build _ 1 e_StdReal_n~;10
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 1
+	buildR 0.5
+	build _ 2 e_StdReal_n-;2
+	buildR 0.0
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 4
+	push_a 6
+	build t67 2 c67
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 5
+	build _ 1 e_StdReal_n~;10
+	push_a 7
+	build _ 1 e_StdReal_n~;10
+	build t67 2 c67
+	buildh _Cons 2
+	buildR 1.0
+	push_a 4
+	build _ 2 e_StdReal_n-;2
+	buildR 0.0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 6
+	build _ 1 e_StdReal_n~;10
+	push_a 6
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 5
+	push_a 7
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 3
+	buildR 1.0
+	build _ 2 e_StdReal_n-;2
+	buildR 0.0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build t67 2 c67
+	buildh _Cons 2
+	push_a 5
+	build _ 1 e_StdReal_n~;10
+	push_a 7
+	build t67 2 c67
+	buildh _Cons 2
+	build_r r61 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	push_a 36
+	build _ 1 n7
+	buildh _Nil 0
+	push_a 1
+	push_a 32
+	push_a 34
+	push_a 5
+	push_a 13
+	push_a 15
+	push_a 17
+	push_a 19
+	push_a 21
+	push_a 23
+	push_a 25
+	push_a 27
+	push_a 29
+	push_a 31
+	push_a 49
+	buildh d23 15
+	push_a 37
+	buildh e_StdReceiverDef_dReceiver2 3
+	buildh _Nil 0
+	push_a 42
+	build _ 1 n17
+	build _ 1 n46
+	buildh _Cons 2
+	push_a 42
+	build _ 1 n16
+	build _ 1 n45
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	buildh _Nil 0
+	push_a 42
+	buildh e_StdPictureDef_dPenColour 1
+	buildh _Cons 2
+	buildh e_StdPictureDef_dBlack 0
+	buildh e_StdPictureDef_dPenBack 1
+	buildh _Cons 2
+	buildh e_StdControlDef_dControlPen 1
+	buildh _Cons 2
+	push_a 36
+	buildh e_StdControlDef_dControlId 1
+	buildh _Cons 2
+	buildI 0
+	push_a 3
+	build _ 2 n26
+	push_a 33
+	push_a 35
+	push_a 6
+	push_a 14
+	push_a 16
+	push_a 18
+	push_a 20
+	push_a 22
+	push_a 24
+	push_a 26
+	push_a 28
+	push_a 30
+	push_a 32
+	buildh d24 14
+	push_a 33
+	buildh e_StdControlDef_dCustomControl 3
+	buildh e_StdIOBasic_d:+: 2
+	pushI 0
+	build_r r56 0 1 0 0
+	pop_b 1
+	push_a 34
+	push_a 36
+	buildh e_StdControlClass_dgetControlType;9 2
+	push_a 35
+	push_a 37
+	buildh e_StdControlClass_dcontrolToHandles;8 2
+	push_a 46
+	push_a 46
+	push_a 5
+	update_a 2 6
+	update_a 4 2
+	update_a 0 4
+	update_a 5 0
+	update_a 1 5
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	update_a 5 48
+	update_a 4 47
+	update_a 3 46
+	update_a 2 45
+	update_a 1 44
+	updatepop_a 0 43
+.d 6 0
+	jmp e_StdControlClass_scontrolToHandles;2
+.n 2 _
+.o 1 0
+n84
+	push_node _cycle_in_spine 2
+.o 2 0
+ea84
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 2
+	update_b 2 0
+	update_b 1 2
+	updatepop_b 0 1
+	fill_r e_StdIOBasic_rSize 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 1 _ ea85
+.o 1 0
+n85
+	push_node _cycle_in_spine 1
+.o 2 0
+ea85
+	jsr_eval 0
+.o 2 0
+s85
+	eq_desc _Cons 2 0
+	jmp_true case.1
+	jmp s85.1
+case.1
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s85.1
+	pop_a 2
+	pushD m_digitdisplay
+	pushD x_85
+.d 0 2 ii
+	jmp _match_error
+.string x_85 "_match0"
+.n 1 _ ea86
+.o 1 0
+n86
+	push_node _cycle_in_spine 1
+.o 2 0
+ea86
+	jsr_eval 0
+.o 2 0
+s86
+	eq_desc _Cons 2 0
+	jmp_true case.2
+	jmp s86.1
+case.2
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s86.1
+	pop_a 2
+	pushD m_digitdisplay
+	pushD x_86
+.d 0 2 ii
+	jmp _match_error
+.string x_86 "_match1"
+.n 1 _ ea87
+.o 1 0
+n87
+	push_node _cycle_in_spine 1
+.o 2 0
+ea87
+	jsr_eval 0
+.o 2 0
+s87
+	eq_desc _Cons 2 0
+	jmp_true case.3
+	jmp s87.1
+case.3
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s87.1
+	pop_a 2
+	pushD m_digitdisplay
+	pushD x_87
+.d 0 2 ii
+	jmp _match_error
+.string x_87 "_match2"
+.n 1 _ ea88
+.o 1 0
+n88
+	push_node _cycle_in_spine 1
+.o 2 0
+ea88
+	jsr_eval 0
+.o 2 0
+s88
+	eq_desc _Cons 2 0
+	jmp_true case.4
+	jmp s88.1
+case.4
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s88.1
+	pop_a 2
+	pushD m_digitdisplay
+	pushD x_88
+.d 0 2 ii
+	jmp _match_error
+.string x_88 "_match3"
+.n 1 _ ea89
+.o 1 0
+n89
+	push_node _cycle_in_spine 1
+.o 2 0
+ea89
+	jsr_eval 0
+.o 2 0
+s89
+	eq_desc _Cons 2 0
+	jmp_true case.5
+	jmp s89.1
+case.5
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s89.1
+	pop_a 2
+	pushD m_digitdisplay
+	pushD x_89
+.d 0 2 ii
+	jmp _match_error
+.string x_89 "_match4"
+.n 2 _ ea79
+.o 1 0
+n79
+	push_node _cycle_in_spine 2
+.o 3 0
+ea79
+.o 3 0
+s79
+	push_a 1
+	jsr_eval 0
+	pushR_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushR_a 1
+	pop_a 1
+	addR
+	pushR 2.0
+	pop_a 2
+	mulR
+	fillR_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea78
+.o 1 0
+n78
+	push_node _cycle_in_spine 2
+.o 3 0
+ea78
+.o 3 0
+s78
+	push_a 1
+	jsr_eval 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 0
+	jsr s8
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	mulI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea46
+.o 1 0
+n46
+	push_node _cycle_in_spine 1
+.o 2 0
+ea46
+	jsr_eval 0
+.o 2 0
+s46
+	eq_desc _Cons 2 0
+	jmp_true case.6
+	jmp case.7
+case.6
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	jsr_eval 0
+	eq_desc e_StdControlDef_dControlTip 1 0
+	jmp_true case.8
+	jmp case.7
+case.8
+	repl_args 1 1
+	buildh _Nil 0
+	push_a 1
+	buildh e_StdControlDef_dControlTip 1
+	fillh _Cons 2 3
+	pop_a 1
+.d 1 0
+	rtn
+case.7
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea45
+.o 1 0
+n45
+	push_node _cycle_in_spine 1
+.o 2 0
+ea45
+	jsr_eval 0
+.o 2 0
+s45
+	eq_desc _Cons 2 0
+	jmp_true case.9
+	jmp case.10
+case.9
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	jsr_eval 0
+	eq_desc e_StdControlDef_dControlPos 1 0
+	jmp_true case.11
+	jmp case.10
+case.11
+	repl_args 1 1
+	buildh _Nil 0
+	push_a 1
+	buildh e_StdControlDef_dControlPos 1
+	fillh _Cons 2 3
+	pop_a 1
+.d 1 0
+	rtn
+case.10
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea17
+.o 1 0
+n17
+	push_node _cycle_in_spine 1
+.o 2 0
+ea17
+	jsr_eval 0
+.o 2 0
+s17
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s44
+.o 2 0
+s44
+	eq_desc _Cons 2 0
+	jmp_true case.12
+	jmp case.13
+case.12
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdControlAttribute_sisControlTip
+.o 0 1 b
+	jmp_false else.14
+	push_a 1
+	build _ 1 n17
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.14
+	push_a 1
+	jsr_eval 0
+	updatepop_a 0 2
+.d 2 0
+	jmp s17
+case.13
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea16
+.o 1 0
+n16
+	push_node _cycle_in_spine 1
+.o 2 0
+ea16
+	jsr_eval 0
+.o 2 0
+s16
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s43
+.o 2 0
+s43
+	eq_desc _Cons 2 0
+	jmp_true case.15
+	jmp case.16
+case.15
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdControlAttribute_sisControlPos
+.o 0 1 b
+	jmp_false else.17
+	push_a 1
+	build _ 1 n16
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.17
+	push_a 1
+	jsr_eval 0
+	updatepop_a 0 2
+.d 2 0
+	jmp s16
+case.16
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d23 _hnf l23 17 0 "receiverfun;22"
+.a 0 a23
+.o 2 0
+l23
+	repl_args 16 16
+.o 17 0
+a23
+.d 17 0
+	jsr ea23
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 17 0
+ea23
+	push_a 16
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 17
+	update_a 1 18
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 9 8
+	update_a 10 9
+	update_a 11 10
+	update_a 12 11
+	update_a 13 12
+	update_a 14 13
+	update_a 15 14
+	update_a 16 15
+	update_a 17 16
+	update_a 0 17
+	pop_a 1
+.o 18 0
+s23
+	eq_desc d74 1 15
+	jmp_true case.18
+	jmp case.19
+case.18
+	push_args 15 1 1
+	buildh _Nil 0
+	update_a 0 17
+	pop_a 1
+	jsr_eval 18
+	push_args_u 18 2 2
+	pop_a 1
+	push_a 1
+	push_a 17
+	build _ 2 n10
+	push_a 0
+	push_a 18
+	build _ 2 n26
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	push_a 17
+	buildh d24 14
+	buildB TRUE
+	buildh _Tuple 2
+	push_a 2
+	buildB TRUE
+	push_a 6
+	push_a 3
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	build e_StdControl_dsetControlLook 4 e_StdControl_nsetControlLook
+	push_a 21
+	build _ 2 n90
+	push_a 1
+	push_a 21
+	build _ 2 n91
+	buildh _Tuple 2
+	buildh d76 0
+	update_a 1 22
+	updatepop_a 0 21
+.d 2 0
+	rtn
+case.19
+	jsr_eval 16
+	push_r_args_u 16 0 1
+	push_a 17
+	push_a 17
+	buildh _Tuple 2
+	buildI_b 0
+	buildh d77 1
+	update_a 1 19
+	updatepop_a 0 18
+	pop_b 1
+.d 2 0
+	rtn
+.n 2 _
+.o 1 0
+n90
+	push_node _cycle_in_spine 2
+.o 2 0
+ea90
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	update_a 2 1
+	update_a 1 2
+	updatepop_a 0 1
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n91
+	push_node _cycle_in_spine 2
+.o 2 0
+ea91
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 1
+	pop_a 2
+	update_b 1 0
+	updatepop_b 0 1
+	fill_r r56 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea26
+.o 1 0
+n26
+	push_node _cycle_in_spine 2
+.o 3 0
+ea26
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 2 1 i
+s26
+	repl_r_args 0 1
+	buildh _Nil 0
+	push_b 1
+.d 0 1 i
+	jsr e_StdInt_sabs;13
+.o 0 1 i
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp s25
+.o 2 2 ii
+s25
+	eqI_b 0 0
+	jmp_true case.20
+	jmp case.21
+case.20
+	pop_b 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.21
+	push_a 0
+	buildI 10
+	buildI_b 1
+	build _ 2 e_StdInt_nrem;28
+	buildh _Cons 2
+	pushI 10
+	push_b 2
+	divI
+	pushI 1
+	push_b 2
+	subI
+	updatepop_a 0 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp s25
+.desc d24 _hnf l24 17 0 "displaylook;23"
+.a 17 ea24
+.o 2 0
+l24
+	push_args 0 16 16
+	update_a 17 16
+	create
+	update_a 0 18
+	pop_a 1
+.o 18 0
+ea24
+	jsr_eval 16
+	jsr_eval 15
+	jsr_eval 14
+	jsr_eval 13
+	jsr_eval 12
+	push_r_args 15 3 0
+	push_r_args 15 0 2
+	update_a 2 18
+	update_a 3 2
+	update_a 4 3
+	update_a 5 4
+	update_a 6 5
+	update_a 7 6
+	update_a 8 7
+	update_a 9 8
+	update_a 10 9
+	update_a 11 10
+	update_a 12 11
+	update_a 13 12
+	update_a 14 13
+	update_a 16 14
+	update_a 0 16
+	update_a 17 15
+	update_a 1 17
+	pop_a 2
+.o 19 2 ii
+s24
+	push_b 1
+	push_b 1
+	build_r e_StdIOBasic_rPoint2 0 2 0 0
+	pop_b 2
+	pop_b 2
+.d 0 0
+	jsr e_StdIOBasic_szero;26
+.o 2 0
+	update_a 2 1
+	update_a 1 2
+	updatepop_a 0 1
+	create
+	push_a 20
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 22
+	pop_a 1
+.d 4 0
+	jsr e_StdPicture_sunfill;103
+.o 1 0
+	create
+	buildI 0
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	push_a 15
+	buildh _Nil 0
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	update_a 0 25
+	update_a 0 26
+	update_a 0 27
+	update_a 0 28
+	update_a 0 29
+	pop_a 1
+.d 15 0
+	jsr s18
+.o 1 0
+	update_a 1 19
+	updatepop_a 0 18
+.d 2 0
+	jsr e_StdEnvExt_ssseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 14 _ ea18
+.o 1 0
+n18
+	push_node _cycle_in_spine 14
+.o 15 0
+ea18
+	jsr_eval 12
+.o 15 0
+s18
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 9
+	push_a 23
+	push_a 21
+	push_a 23
+	push_a 25
+	update_a 13 27
+	update_a 12 26
+	update_a 11 25
+	update_a 10 24
+	update_a 9 23
+	update_a 8 22
+	update_a 7 21
+	update_a 6 20
+	update_a 5 19
+	update_a 4 18
+	update_a 3 17
+	update_a 2 16
+	update_a 1 15
+	updatepop_a 0 14
+.d 15 0
+	jmp s42
+.o 15 0
+s42
+	eq_desc _Cons 2 0
+	jmp_true case.22
+	jmp case.23
+case.22
+	repl_args 2 2
+	push_a 4
+	build _ 1 n81
+	push_a 2
+	push_a 4
+	push_a 6
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	push_a 18
+	build _ 14 n18
+	push_a 1
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	push_a 16
+	build _ 11 n80
+	push_a 4
+	build e_StdIOBasic_dSize.w -3 e_StdIOBasic_nSize.w
+	push_a 7
+	build _ 2 e_StdInt_n*;9
+	buildI 0
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_StdIOBasic_tPoint2 2 e_StdIOBasic_cPoint2
+	push_a 6
+	push_a 6
+	buildh d21 4
+	fillh _Cons 2 17
+	pop_a 15
+.d 1 0
+	rtn
+case.23
+	fillh _Nil 0 14
+	pop_a 14
+.d 1 0
+	rtn
+.n 1 _ ea81
+.o 1 0
+n81
+	push_node _cycle_in_spine 1
+.o 2 0
+ea81
+.o 2 0
+s81
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 11 _ ea80
+.o 1 0
+n80
+	push_node _cycle_in_spine 11
+.o 12 0
+ea80
+.o 12 0
+s80
+	push_a 10
+	jsr_eval 0
+	pushI_a 11
+	pop_a 1
+	push_a 9
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 10
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 11
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 12
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 13
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 14
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 15
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 16
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 17
+	jsr_eval 0
+	repl_r_args 2 0
+	push_a 18
+	jsr_eval 0
+	repl_r_args 2 0
+	update_a 19 30
+	update_a 18 29
+	update_a 17 28
+	update_a 16 27
+	update_a 15 26
+	update_a 14 25
+	update_a 13 24
+	update_a 12 23
+	update_a 11 22
+	update_a 10 21
+	update_a 9 20
+	update_a 8 19
+	update_a 7 18
+	update_a 6 17
+	update_a 5 16
+	update_a 4 15
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+.d 20 0
+	jsr s22
+.o 1 0
+	select _ 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d21 _hnf l21 5 0 "fillPolygons;20"
+.a 5 ea21
+.o 2 0
+l21
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.o 6 0
+ea21
+	jsr_eval 4
+	jsr_eval 3
+	push_r_args 3 2 0
+	update_a 1 5
+	update_a 2 1
+	update_a 3 2
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+.o 7 0
+s21
+	push_a 4
+	push_a 3
+	push_a 3
+	push_a 3
+	build _ 4 n20
+	create
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	update_a 0 10
+	update_a 0 11
+	pop_a 1
+.d 5 0
+	jsr s19
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_StdList_s++
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdEnvExt_ssseq
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 4 _ ea19
+.o 1 0
+n19
+	push_node _cycle_in_spine 4
+.o 5 0
+ea19
+	jsr_eval 3
+.o 5 0
+s19
+	push_a 1
+	push_a 1
+	push_a 4
+	push_a 6
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s41
+.o 5 0
+s41
+	eq_desc _Cons 2 0
+	jmp_true case.24
+	jmp case.25
+case.24
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	push_a 6
+	push_a 6
+	build _ 4 n19
+	push_a 5
+	build d62 -4 n62
+	push_a 5
+	buildh d12 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdPictureDef_tPolygon 1 e_StdPictureDef_cPolygon
+	push_a 2
+	push_a 6
+	push_a 6
+	build _ 3 n83
+	buildh e_StdPicture_dfillAt;110 2
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+case.25
+	fillh _Nil 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.n 3 _ ea83
+.o 1 0
+n83
+	push_node _cycle_in_spine 3
+.o 4 0
+ea83
+.o 4 0
+s83
+	push_a 2
+	jsr_eval 0
+	repl_r_args 0 2
+	push_a 1
+	jsr_eval 0
+	repl_r_args 0 2
+	update_a 0 2
+	pop_a 2
+.d 0 4 iirr
+	jsr s13
+.o 0 2 ii
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 1
+.d 0 4 iiii
+	jsr e_StdIOBasic_s+;19
+.o 0 2 ii
+	fill_r e_StdIOBasic_rPoint2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 4 _ ea20
+.o 1 0
+n20
+	push_node _cycle_in_spine 4
+.o 5 0
+ea20
+	jsr_eval 3
+.o 5 0
+s20
+	push_a 1
+	push_a 1
+	push_a 4
+	push_a 6
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s40
+.o 5 0
+s40
+	eq_desc _Cons 2 0
+	jmp_true case.26
+	jmp case.27
+case.26
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	push_a 6
+	push_a 6
+	build _ 4 n20
+	push_a 5
+	build d63 -4 n63
+	push_a 5
+	buildh d12 1
+	build e_StdList_dmap 2 e_StdList_nmap
+	build e_StdPictureDef_tPolygon 1 e_StdPictureDef_cPolygon
+	push_a 2
+	push_a 6
+	push_a 6
+	build _ 3 n82
+	buildh e_StdPicture_dfillAt;110 2
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+case.27
+	fillh _Nil 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.n 3 _ ea82
+.o 1 0
+n82
+	push_node _cycle_in_spine 3
+.o 4 0
+ea82
+.o 4 0
+s82
+	push_a 2
+	jsr_eval 0
+	repl_r_args 0 2
+	push_a 1
+	jsr_eval 0
+	repl_r_args 0 2
+	update_a 0 2
+	pop_a 2
+.d 0 4 iirr
+	jsr s13
+.o 0 2 ii
+	push_a 0
+	jsr_eval 0
+	repl_r_args 0 2
+	pop_a 1
+.d 0 4 iiii
+	jsr e_StdIOBasic_s+;19
+.o 0 2 ii
+	fill_r e_StdIOBasic_rPoint2 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.o 20 0
+s22
+	build_r r58 2 0 18 0
+	build_r r58 2 0 17 0
+	build_r r58 2 0 16 0
+	build_r r58 2 0 15 0
+	build_r r58 2 0 14 0
+	build_r r58 2 0 13 0
+	build_r r58 2 0 12 0
+	build_r r58 2 0 11 0
+	build_r r58 2 0 10 0
+	build_r r58 2 0 9 0
+	pushI 10
+	buildh _Nil 0
+	update_a 0 11
+	update_a 0 12
+	update_a 0 13
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	update_a 0 19
+	update_a 0 20
+	update_a 0 21
+	update_a 0 22
+	update_a 0 23
+	update_a 0 24
+	update_a 0 25
+	update_a 0 26
+	update_a 0 27
+	update_a 0 28
+	update_a 0 29
+	update_a 0 30
+	pop_a 1
+	create_array_ _ 1 0
+	pushI 9
+	update _ 1 0
+	pushI 8
+	update _ 1 0
+	pushI 7
+	update _ 1 0
+	pushI 6
+	update _ 1 0
+	pushI 5
+	update _ 1 0
+	pushI 4
+	update _ 1 0
+	pushI 3
+	update _ 1 0
+	pushI 2
+	update _ 1 0
+	pushI 1
+	update _ 1 0
+	pushI 0
+	update_a 1 21
+	updatepop_a 0 20
+	update _ 1 0
+.d 1 0
+	rtn
+.o 0 4 iirr
+s13
+	push_b 1
+	ItoR
+	push_b 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulR
+	RtoI
+	push_b 1
+	ItoR
+	push_b 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulR
+	RtoI
+	update_b 1 5
+	updatepop_b 0 4
+.d 0 2 ii
+	rtn
+.desc d12 _hnf l12 2 0 "scaleRVector2"
+.a 0 a12
+.o 2 0
+l12
+	repl_args 1 1
+.o 2 0
+a12
+.o 2 0
+ea12
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 0 2
+	repl_r_args 0 2
+	pop_a 1
+	push_b 1
+	ItoR
+	push_b 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulR
+	RtoI
+	push_b 1
+	ItoR
+	push_b 4
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	mulR
+	RtoI
+	update_b 1 5
+	updatepop_b 0 4
+	build_r e_StdIOBasic_rVector2 0 2 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n10
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea10
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea10
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+.o 1 1 i
+s10
+	repl_r_args 0 1
+	push_b 0
+	pushI 10
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 2 ii
+	jsr e_StdInt_s^;12
+.o 0 1 i
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	buildI_b 0
+	pop_b 1
+	buildh e_StdInt_d<;17 0
+	buildI 0
+	buildI_b 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+.d 4 0
+	jsr e_StdEnvExt_ssetbetween
+.o 1 0
+	pushI_a 0
+	pop_a 1
+.d 0 1 i
+	rtn
+.n 1 _
+.o 1 0
+n9
+	push_node _cycle_in_spine 1
+.o 1 0
+ea9
+	jsr_eval 0
+	repl_r_args 0 2
+	pushI 1
+	pushI 1
+	push_b 3
+	push_b 1
+	ltI
+	push_b 1
+	push_b 5
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	update_b 2 3
+	update_b 1 2
+	updatepop_b 0 1
+.d 0 3 bii
+	jsr s34
+.o 0 1 i
+	push_b 2
+	push_b 2
+	ltI
+	push_b 2
+	push_b 4
+	push_b 2
+	update_b 2 3
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+.d 0 3 bii
+	jsr s33
+.o 0 1 i
+	update_b 1 4
+	updatepop_b 0 3
+	fill_r e_StdIOBasic_rSize 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
+.o 0 3 bii
+s34
+	eqB_b TRUE 0
+	jmp_true case.28
+	jmp case.29
+case.28
+	update_b 1 2
+	pop_b 2
+.d 0 1 i
+	rtn
+case.29
+	pop_b 2
+.d 0 1 i
+	rtn
+.o 0 3 bii
+s33
+	eqB_b TRUE 0
+	jmp_true case.30
+	jmp case.31
+case.30
+	update_b 1 2
+	pop_b 2
+.d 0 1 i
+	rtn
+case.31
+	pop_b 2
+.d 0 1 i
+	rtn
+.o 1 0
+s8
+	repl_r_args 0 1
+.d 0 1 i
+	rtn
+.n 1 _ ea7
+.o 1 0
+n7
+	push_node _cycle_in_spine 1
+.o 2 0
+ea7
+	jsr_eval 0
+.o 2 0
+s7
+	repl_r_args 0 1
+	pushI 2147483647
+	ItoR
+	log10R
+	RtoI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	buildI_b 0
+	pop_b 1
+	buildh e_StdInt_d<;17 0
+	buildI 1
+	buildI_b 0
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 1
+.d 4 0
+	jsr e_StdEnvExt_ssetbetween
+.o 1 0
+	pushI_a 0
+	pop_a 1
+	fill_r e_digitdisplay_kIntegerFormat 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_digitdisplay_ssetDigitDisplayValue
+.descexp e_digitdisplay_dsetDigitDisplayValue e_digitdisplay_nsetDigitDisplayValue e_digitdisplay_lsetDigitDisplayValue 3 0 "setDigitDisplayValue"
+.a 0 a3
+.o 2 0
+e_digitdisplay_lsetDigitDisplayValue
+	repl_args 2 2
+.o 3 0
+a3
+.d 3 0
+	jsr ea3
+.o 2 0
+	build_r e_iostate_rPSt 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_digitdisplay_dsetDigitDisplayValue
+.o 1 0
+e_digitdisplay_nsetDigitDisplayValue
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea3
+.o 2 0
+	fill_r e_iostate_rPSt 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 1 i
+e_digitdisplay_ssetDigitDisplayValue
+	push_r_args 0 2 0
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 4 1 i
+	jmp s3
+.o 3 0
+ea3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	pushI_a 3
+	push_r_args 2 2 0
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 1 4
+	pop_a 3
+.o 4 1 i
+s3
+	buildI_b 0
+	buildh d74 1
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	pop_b 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+.d 4 0
+	jmp s32
+.o 4 0
+s32
+case.32
+	eq_desc e_StdReceiver_dSendOk 0 0
+	jmp_true case.34
+	jmp case.33
+case.34
+	eq_desc e_StdMaybe_dJust 1 1
+	jmp_true case.35
+	jmp case.33
+case.35
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 0
+	eq_desc d76 0 0
+	jmp_true case.36
+	pop_a 1
+	jmp case.33
+case.36
+	pop_a 3
+.d 2 0
+	rtn
+case.33
+	buildAC "setDigitDisplayValue"
+	updatepop_a 0 4
+.d 1 0
+	jsr s6
+.o 1 0
+	repl_r_args 2 0
+.d 2 0
+	rtn
+.export e_digitdisplay_sgetDigitDisplayValue
+.descexp e_digitdisplay_dgetDigitDisplayValue e_digitdisplay_ngetDigitDisplayValue e_digitdisplay_lgetDigitDisplayValue 2 0 "getDigitDisplayValue"
+.a 0 a2
+.o 2 0
+e_digitdisplay_lgetDigitDisplayValue
+	repl_args 1 1
+.o 2 0
+a2
+.d 2 0
+	jsr ea2
+.o 2 1 i
+	build_r e_iostate_rPSt 2 0 0 0
+	buildI_b 0
+	buildh _Tuple 2
+	updatepop_a 0 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 e_digitdisplay_dgetDigitDisplayValue
+.o 1 0
+e_digitdisplay_ngetDigitDisplayValue
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea2
+.o 2 1 i
+	build_r e_iostate_rPSt 2 0 0 0
+	buildI_b 0
+	fillh _Tuple 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+e_digitdisplay_sgetDigitDisplayValue
+	push_r_args 0 2 0
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 4 0
+	jmp s2
+.o 2 0
+ea2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 2 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+s2
+	buildh d75 0
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr e_StdReceiver_ssyncSend2
+.o 4 0
+.d 4 0
+	jmp s31
+.o 4 0
+s31
+case.37
+	eq_desc e_StdReceiver_dSendOk 0 0
+	jmp_true case.39
+	jmp case.38
+case.39
+	eq_desc e_StdMaybe_dJust 1 1
+	jmp_true case.40
+	jmp case.38
+case.40
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 0
+	eq_desc d77 1 0
+	jmp_true case.41
+	pop_a 1
+	jmp case.38
+case.41
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	push_a 4
+	push_a 4
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 1 i
+	rtn
+case.38
+	buildAC "getDigitDisplayValue"
+	updatepop_a 0 4
+.d 1 0
+	jsr s6
+.o 1 0
+	repl_args 2 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	pushI_a 2
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.d 2 1 i
+	rtn
+.o 1 0
+s6
+	buildAC ": wrong reply from DigitDisplay.\n"
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr catAC
+.o 1 0
+.d 1 0
+	jsr print_string_
+.o 0 0
+	halt
+.d 1 0
+	rtn
+.export e_digitdisplay_sopenDigitDisplayId
+.descexp e_digitdisplay_dopenDigitDisplayId e_digitdisplay_nopenDigitDisplayId e_digitdisplay_lopenDigitDisplayId 2 0 "openDigitDisplayId"
+.a 0 a1
+.o 2 0
+e_digitdisplay_lopenDigitDisplayId
+	repl_args 1 1
+.o 2 0
+a1
+.d 2 0
+	jsr ea1
+.o 3 0
+	push_a 2
+	build_r e_digitdisplay_rDigitDisplayId 2 0 1 0
+	buildh _Tuple 2
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 2 e_digitdisplay_dopenDigitDisplayId
+.o 1 0
+e_digitdisplay_nopenDigitDisplayId
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea1
+.o 3 0
+	push_a 2
+	build_r e_digitdisplay_rDigitDisplayId 2 0 1 0
+	fillh _Tuple 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.o 7 0
+e_digitdisplay_sopenDigitDisplayId
+.d 7 0
+	jsr s1
+.o 3 0
+	build_r e_digitdisplay_rDigitDisplayId 2 0 0 0
+	update_a 0 2
+	pop_a 2
+.d 2 0
+	rtn
+.o 2 0
+ea1
+	jsr_eval 1
+	jsr_eval 0
+	repl_r_args 6 0
+.o 7 0
+s1
+	push_a 0
+	push_a 7
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+	jsr_ap 1
+	push_arg 0 2 2
+	push_a 4
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jsr_ap 1
+	push_arg 0 2 2
+	jsr_eval 0
+	push_arg 1 2 1
+	jsr_eval 0
+	push_arg 3 2 1
+	jsr_eval 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	rtn

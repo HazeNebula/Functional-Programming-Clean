@@ -1,0 +1,286 @@
+.comp 920 00011101001
+.start _nostart_
+.depend "StdString" "20170131202635"
+.depend "StdOverloaded" "20170131202634"
+.depend "ParserLanguage" "20170131202634"
+.module m_ParserLanguage "ParserLanguage" "20170131202634"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.export e_ParserLanguage_sendOf
+.descexp e_ParserLanguage_dendOf e_ParserLanguage_nendOf e_ParserLanguage_lendOf 0 0 "endOf"
+.o 1 0
+e_ParserLanguage_lendOf
+	halt
+.n 0 e_ParserLanguage_dendOf
+.o 1 0
+e_ParserLanguage_nendOf
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea6
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea6
+.o 0 0
+e_ParserLanguage_sendOf
+.o 0 0
+s6
+	testcaf c6
+	jmp_false m.1
+	pushcaf c6 1 0
+.d 1 0
+	rtn
+.caf c6 1 0
+m.1
+.d 0 0
+	jsr s6.1
+.o 1 0
+	fillcaf c6 1 0
+.d 1 0
+	rtn
+.o 0 0
+s6.1
+	buildAC "end of"
+.d 1 0
+	rtn
+.export e_ParserLanguage_ssliceOf
+.descexp e_ParserLanguage_dsliceOf e_ParserLanguage_nsliceOf e_ParserLanguage_lsliceOf 0 0 "sliceOf"
+.o 1 0
+e_ParserLanguage_lsliceOf
+	halt
+.n 0 e_ParserLanguage_dsliceOf
+.o 1 0
+e_ParserLanguage_nsliceOf
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea5
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea5
+.o 0 0
+e_ParserLanguage_ssliceOf
+.o 0 0
+s5
+	testcaf c5
+	jmp_false m.2
+	pushcaf c5 1 0
+.d 1 0
+	rtn
+.caf c5 1 0
+m.2
+.d 0 0
+	jsr s5.1
+.o 1 0
+	fillcaf c5 1 0
+.d 1 0
+	rtn
+.o 0 0
+s5.1
+	buildAC "-pack-of-"
+.d 1 0
+	rtn
+.export e_ParserLanguage_sandWithinThat
+.descexp e_ParserLanguage_dandWithinThat e_ParserLanguage_nandWithinThat e_ParserLanguage_landWithinThat 0 0 "andWithinThat"
+.o 1 0
+e_ParserLanguage_landWithinThat
+	halt
+.n 0 e_ParserLanguage_dandWithinThat
+.o 1 0
+e_ParserLanguage_nandWithinThat
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea4
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea4
+.o 0 0
+e_ParserLanguage_sandWithinThat
+.o 0 0
+s4
+	testcaf c4
+	jmp_false m.3
+	pushcaf c4 1 0
+.d 1 0
+	rtn
+.caf c4 1 0
+m.3
+.d 0 0
+	jsr s4.1
+.o 1 0
+	fillcaf c4 1 0
+.d 1 0
+	rtn
+.o 0 0
+s4.1
+	buildAC "and within that"
+.d 1 0
+	rtn
+.export e_ParserLanguage_soptionsToSolve
+.descexp e_ParserLanguage_doptionsToSolve e_ParserLanguage_noptionsToSolve e_ParserLanguage_loptionsToSolve 0 0 "optionsToSolve"
+.o 1 0
+e_ParserLanguage_loptionsToSolve
+	halt
+.n 0 e_ParserLanguage_doptionsToSolve
+.o 1 0
+e_ParserLanguage_noptionsToSolve
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea3
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea3
+.o 0 0
+e_ParserLanguage_soptionsToSolve
+.o 0 0
+s3
+	testcaf c3
+	jmp_false m.4
+	pushcaf c3 1 0
+.d 1 0
+	rtn
+.caf c3 1 0
+m.4
+.d 0 0
+	jsr s3.1
+.o 1 0
+	fillcaf c3 1 0
+.d 1 0
+	rtn
+.o 0 0
+s3.1
+	buildAC "The options to solve this are"
+.d 1 0
+	rtn
+.export e_ParserLanguage_snoOptions
+.descexp e_ParserLanguage_dnoOptions e_ParserLanguage_nnoOptions e_ParserLanguage_lnoOptions 0 0 "noOptions"
+.o 1 0
+e_ParserLanguage_lnoOptions
+	halt
+.n 0 e_ParserLanguage_dnoOptions
+.o 1 0
+e_ParserLanguage_nnoOptions
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea2
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea2
+.o 0 0
+e_ParserLanguage_snoOptions
+.o 0 0
+s2
+	testcaf c2
+	jmp_false m.5
+	pushcaf c2 1 0
+.d 1 0
+	rtn
+.caf c2 1 0
+m.5
+.d 0 0
+	jsr s2.1
+.o 1 0
+	fillcaf c2 1 0
+.d 1 0
+	rtn
+.o 0 0
+s2.1
+	buildAC "Alas no hints found to solve this"
+.d 1 0
+	rtn
+.export e_ParserLanguage_scantAnalyseAsOf
+.descexp e_ParserLanguage_dcantAnalyseAsOf e_ParserLanguage_ncantAnalyseAsOf e_ParserLanguage_lcantAnalyseAsOf 0 0 "cantAnalyseAsOf"
+.o 1 0
+e_ParserLanguage_lcantAnalyseAsOf
+	halt
+.n 0 e_ParserLanguage_dcantAnalyseAsOf
+.o 1 0
+e_ParserLanguage_ncantAnalyseAsOf
+	push_node _cycle_in_spine 0
+.d 0 0
+	jsr ea1
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 0 0
+ea1
+.o 0 0
+e_ParserLanguage_scantAnalyseAsOf
+.o 0 0
+s1
+	testcaf c1
+	jmp_false m.6
+	pushcaf c1 1 0
+.d 1 0
+	rtn
+.caf c1 1 0
+m.6
+.d 0 0
+	jsr s1.1
+.o 1 0
+	fillcaf c1 1 0
+.d 1 0
+	rtn
+.o 0 0
+s1.1
+	buildAC "Can't analyse as of"
+.d 1 0
+	rtn
