@@ -1,23 +1,24 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "Team_Harmless" "20170314163023"
-.depend "Team_Student_Keeper_Assignment" "20170314161738"
-.depend "Team_Student_DeepPass_Assignment" "20170314161738"
-.depend "Team_Student_Passing_Assignment" "20170314161738"
-.depend "Team_Student_Slalom_Assignment" "20170314161738"
-.depend "Team_Student_Rounds_Assignment" "20170314161738"
-.depend "Team_Opponent_Keeper_Assignment" "20170314161738"
-.depend "Team_Opponent_DeepPass_Assignment" "20170314161738"
-.depend "Team_Opponent_Passing_Assignment" "20170314161738"
-.depend "Team_Opponent_Slalom_Assignment" "20170314161738"
-.depend "TeamMiniEffie" "20170314161738"
-.depend "Geometry" "20170314161737"
+.depend "TeamBoolshit" "20170314225839"
+.depend "Team_Harmless" "20170314182123"
+.depend "Team_Student_Keeper_Assignment" "20170314182123"
+.depend "Team_Student_DeepPass_Assignment" "20170314182123"
+.depend "Team_Student_Passing_Assignment" "20170314182123"
+.depend "Team_Student_Slalom_Assignment" "20170314182123"
+.depend "Team_Student_Rounds_Assignment" "20170314182123"
+.depend "Team_Opponent_Keeper_Assignment" "20170314182123"
+.depend "Team_Opponent_DeepPass_Assignment" "20170314182123"
+.depend "Team_Opponent_Passing_Assignment" "20170314182123"
+.depend "Team_Opponent_Slalom_Assignment" "20170314182123"
+.depend "TeamMiniEffie" "20170314182123"
+.depend "Geometry" "20170314182123"
 .depend "StdLibMisc" "20170131202635"
 .depend "ostick" "20170131202632"
 .depend "StdTime" "20170131202631"
-.depend "RandomExt" "20170314161737"
-.depend "randomstream" "20170314161737"
-.depend "Football" "20170314161737"
+.depend "RandomExt" "20170314182123"
+.depend "randomstream" "20170314182123"
+.depend "Football" "20170314182123"
 .depend "systemid" "20170131202631"
 .depend "device" "20170131202629"
 .depend "id" "20170131202629"
@@ -51,13 +52,13 @@
 .depend "StdInt" "20170131202634"
 .depend "StdBool" "20170131202634"
 .depend "StdEnv" "20170131202634"
-.depend "StdEnvExt" "20170314161737"
+.depend "StdEnvExt" "20170314182123"
 .depend "StdOverloaded" "20170131202634"
 .depend "StdFunc" "20170131202634"
 .depend "StdMaybe" "20170131202635"
-.depend "Footballer" "20170314161737"
-.depend "Team" "20170314161737"
-.module m_Team "Team" "20170314161737"
+.depend "Footballer" "20170314182123"
+.depend "Team" "20170314182123"
+.module m_Team "Team" "20170314221811"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -92,6 +93,7 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
+.impdesc e_TeamBoolshit_dTeam_Boolshit
 .impdesc e_Team_Harmless_dMostlyHarmless
 .impdesc e_Team_Student_Keeper_Assignment_dTeam_Student_Keeper
 .impdesc e_Team_Student_DeepPass_Assignment_dTeam_Student_DeepPass
@@ -859,7 +861,7 @@ case.9
 	pop_b 1
 .d 1 0
 	rtn
-.desc d18 _hnf l18 1 0 "<lambda>[line:69];58;17"
+.desc d18 _hnf l18 1 0 "<lambda>[line:70];58;17"
 .o 2 0
 l18
 	pop_a 1
@@ -904,7 +906,7 @@ s18
 	notB
 .d 0 1 b
 	rtn
-.desc d19 _hnf l19 1 0 "<lambda>[line:70];58;18"
+.desc d19 _hnf l19 1 0 "<lambda>[line:71];58;18"
 .o 2 0
 l19
 	pop_a 1
@@ -1430,6 +1432,8 @@ s1
 	buildh e_Team_Student_Slalom_Assignment_dTeam_Student_Slalom 0
 	buildh _Cons 2
 	buildh e_Team_Student_Rounds_Assignment_dTeam_Student_Rounds 0
+	buildh _Cons 2
+	buildh e_TeamBoolshit_dTeam_Boolshit 0
 	buildh _Cons 2
 	buildh e_Team_Harmless_dAuto 0
 	buildI 11

@@ -880,18 +880,18 @@ OtherModules
 		Dir:	{Project}\Game
 		Dcl
 			WindowPosition
-				X:	10
-				Y:	10
-				SizeX:	800
-				SizeY:	560
-		DclOpen:	True
+				X:	0
+				Y:	0
+				SizeX:	1286
+				SizeY:	459
+		DclOpen:	False
 		Icl
 			WindowPosition
-				X:	10
-				Y:	10
-				SizeX:	800
-				SizeY:	560
-		IclOpen:	False
+				X:	52
+				Y:	52
+				SizeX:	1269
+				SizeY:	459
+		IclOpen:	True
 	Module
 		Name:	matchControl
 		Dir:	{Project}\Game
@@ -1023,14 +1023,37 @@ OtherModules
 		DclOpen:	False
 		IclOpen:	False
 	Module
-		Name:	TeamMiniEffie
+		Name:	TeamBoolshit
 		Dir:	{Project}\StdTeam
-		DclOpen:	False
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
+		DclOpen:	True
 		Icl
 			WindowPosition
 				X:	10
 				Y:	10
 				SizeX:	800
+				SizeY:	560
+		IclOpen:	True
+	Module
+		Name:	TeamMiniEffie
+		Dir:	{Project}\StdTeam
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	799
 				SizeY:	560
 		IclOpen:	False
 	Module

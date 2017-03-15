@@ -15,9 +15,10 @@ import Team_Student_DeepPass_Assignment
 import Team_Student_Keeper_Assignment
 // Marc Schoolderman's team:
 import Team_Harmless
+import TeamBoolshit
 
 allAvailableTeams					:: [Home FootballField -> Team]
-allAvailableTeams					= [ Team_MiniEffies, Harmless
+allAvailableTeams					= [ Team_MiniEffies, Harmless, Team_Boolshit
 									  , Team_Student_Rounds
 									  , Team_Student_Slalom
 									  , Team_Student_Passing

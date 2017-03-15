@@ -102,8 +102,8 @@
 .depend "StdOverloaded" "20170131202634"
 .depend "StdFunc" "20170131202634"
 .depend "StdMaybe" "20170131202635"
-.depend "StdIOExt" "20170314161737"
-.module m_StdIOExt "StdIOExt" "20170314161737"
+.depend "StdIOExt" "20170314182123"
+.module m_StdIOExt "StdIOExt" "20170314182123"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error

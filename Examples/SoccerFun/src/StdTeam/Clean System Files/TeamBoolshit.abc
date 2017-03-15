@@ -109,8 +109,8 @@
 .depend "StdMaybe" "20170131202635"
 .depend "Footballer" "20170314182123"
 .depend "Team" "20170314182123"
-.depend "TeamMiniEffie" "20170314182123"
-.module m_TeamMiniEffie "TeamMiniEffie" "20170314221407"
+.depend "TeamBoolshit" "20170314225839"
+.module m_TeamBoolshit "TeamBoolshit" "20170315123019"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -198,26 +198,26 @@
 .implab e_Team_smirror;7
 .impdesc e_Team_dmirror;8
 .impdesc e_Team_rmirror;
-.record r24 a 1 0 "MiniMemory"
-.export e_TeamMiniEffie_sTeam_MiniEffies
-.export e_TeamMiniEffie_eaTeam_MiniEffies
-.descexp e_TeamMiniEffie_dTeam_MiniEffies e_TeamMiniEffie_nTeam_MiniEffies e_TeamMiniEffie_lTeam_MiniEffies 2 0 "Team_MiniEffies"
-.a 2 e_TeamMiniEffie_eaTeam_MiniEffies
+.record r26 a 1 0 "MiniMemory"
+.export e_TeamBoolshit_sTeam_Boolshit
+.export e_TeamBoolshit_eaTeam_Boolshit
+.descexp e_TeamBoolshit_dTeam_Boolshit e_TeamBoolshit_nTeam_Boolshit e_TeamBoolshit_lTeam_Boolshit 2 0 "Team_Boolshit"
+.a 2 e_TeamBoolshit_eaTeam_Boolshit
 .o 2 0
-e_TeamMiniEffie_lTeam_MiniEffies
+e_TeamBoolshit_lTeam_Boolshit
 	push_args 0 1 1
 	update_a 2 1
 	create
 	update_a 0 3
 	pop_a 1
 .d 3 0
-	jmp e_TeamMiniEffie_eaTeam_MiniEffies
-.n 2 e_TeamMiniEffie_dTeam_MiniEffies e_TeamMiniEffie_eaTeam_MiniEffies
+	jmp e_TeamBoolshit_eaTeam_Boolshit
+.n 2 e_TeamBoolshit_dTeam_Boolshit e_TeamBoolshit_eaTeam_Boolshit
 .o 1 0
-e_TeamMiniEffie_nTeam_MiniEffies
+e_TeamBoolshit_nTeam_Boolshit
 	push_node _cycle_in_spine 2
 .o 3 0
-e_TeamMiniEffie_eaTeam_MiniEffies
+e_TeamBoolshit_eaTeam_Boolshit
 	jsr_eval 1
 	jsr_eval 0
 	push_r_args 1 2 0
@@ -226,7 +226,7 @@ e_TeamMiniEffie_eaTeam_MiniEffies
 	update_a 0 2
 	pop_a 1
 .o 4 0
-e_TeamMiniEffie_sTeam_MiniEffies
+e_TeamBoolshit_sTeam_Boolshit
 .o 4 0
 s1
 	buildh e_Footballer_dWest 0
@@ -236,48 +236,8 @@ s1
 .o 0 1 b
 	jmp_false else.1
 	push_a 0
-	build _ 1 n26
-	buildh _Nil 0
-	buildR -0.05
-	buildR 0.90
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.05
-	buildR 0.90
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR -0.35
-	buildR 0.70
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.35
-	buildR 0.70
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.00
-	buildR 0.60
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR -0.45
-	buildR 0.50
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.45
-	buildR 0.50
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.00
-	buildR 0.23
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR -0.40
-	buildR 0.20
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.40
-	buildR 0.20
-	buildh _Tuple 2
-	buildh _Cons 2
+	build _ 1 n28
+	build _ 0 n4
 	build_r e_Footballer_rFootballField 2 0 3 0
 	buildI 2
 	push_a 3
@@ -288,12 +248,12 @@ s1
 	update_a 4 2
 	update_a 0 4
 	pop_a 1
-	build _ 5 n5
+	build _ 5 n7
 	push_a 4
 	buildR -0.5
 	build e_Geometry_dscale;25 2 e_Geometry_nscale;25
 	build e_Geometry_dzero;26 0 e_Geometry_nzero;26
-	build _ 2 n33
+	build _ 2 n35
 	build_r e_Footballer_rFootballField 2 0 4 0
 	buildI 1
 	push_a 5
@@ -303,55 +263,15 @@ s1
 	update_a 4 3
 	update_a 0 4
 	pop_a 1
-	build _ 5 n3
+	build _ 5 n5
 	fillh _Cons 2 6
 	pop_a 4
 .d 1 0
 	rtn
 else.1
 	push_a 0
-	build _ 1 n27
-	buildh _Nil 0
-	buildR -0.05
-	buildR 0.90
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.05
-	buildR 0.90
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR -0.35
-	buildR 0.70
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.35
-	buildR 0.70
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.00
-	buildR 0.60
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR -0.45
-	buildR 0.50
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.45
-	buildR 0.50
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.00
-	buildR 0.23
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR -0.40
-	buildR 0.20
-	buildh _Tuple 2
-	buildh _Cons 2
-	buildR 0.40
-	buildR 0.20
-	buildh _Tuple 2
-	buildh _Cons 2
+	build _ 1 n29
+	build _ 0 n4
 	build_r e_Footballer_rFootballField 2 0 3 0
 	buildI 2
 	push_a 3
@@ -362,12 +282,12 @@ else.1
 	update_a 4 2
 	update_a 0 4
 	pop_a 1
-	build _ 5 n5
+	build _ 5 n7
 	push_a 4
 	buildR -0.5
 	build e_Geometry_dscale;25 2 e_Geometry_nscale;25
 	build e_Geometry_dzero;26 0 e_Geometry_nzero;26
-	build _ 2 n34
+	build _ 2 n36
 	build_r e_Footballer_rFootballField 2 0 4 0
 	buildI 1
 	push_a 5
@@ -377,7 +297,7 @@ else.1
 	update_a 4 3
 	update_a 0 4
 	pop_a 1
-	build _ 5 n3
+	build _ 5 n5
 	buildh _Cons 2
 	buildh e_Team_dmirror;8 0
 	push_a 5
@@ -395,10 +315,10 @@ else.1
 	jmp e_Team_smirror;7
 .n 2 _
 .o 1 0
-n33
+n35
 	push_node _cycle_in_spine 2
 .o 2 0
-ea33
+ea35
 	push_a 1
 	jsr_eval 0
 	push_a 1
@@ -416,10 +336,10 @@ ea33
 	rtn
 .n 2 _
 .o 1 0
-n34
+n36
 	push_node _cycle_in_spine 2
 .o 2 0
-ea34
+ea36
 	push_a 1
 	jsr_eval 0
 	push_a 1
@@ -435,14 +355,14 @@ ea34
 	pop_a 2
 .d 1 0
 	rtn
-.n 1 _ ea27
+.n 1 _ ea29
 .o 1 0
-n27
+n29
 	push_node _cycle_in_spine 1
 .o 2 0
-ea27
+ea29
 .o 2 0
-s27
+s29
 	buildh e_Footballer_dWest 0
 	push_a 1
 	update_a 1 2
@@ -451,7 +371,7 @@ s27
 	jsr e_Footballer_s==;81
 .o 0 1 b
 .d 0 1 b
-	jsr s21
+	jsr s23
 .o 1 0
 .d 0 0
 	jsr s2
@@ -464,14 +384,14 @@ s27
 	pop_a 1
 .d 1 0
 	rtn
-.n 1 _ ea26
+.n 1 _ ea28
 .o 1 0
-n26
+n28
 	push_node _cycle_in_spine 1
 .o 2 0
-ea26
+ea28
 .o 2 0
-s26
+s28
 	buildh e_Footballer_dWest 0
 	push_a 1
 	update_a 1 2
@@ -480,7 +400,7 @@ s26
 	jsr e_Footballer_s==;81
 .o 0 1 b
 .d 0 1 b
-	jsr s20
+	jsr s22
 .o 1 0
 .d 0 0
 	jsr s2
@@ -494,7 +414,7 @@ s26
 .d 1 0
 	rtn
 .o 0 1 b
-s21
+s23
 	eqB_b TRUE 0
 	jmp_true case.2
 	jmp case.3
@@ -509,7 +429,7 @@ case.3
 .d 1 0
 	rtn
 .o 0 1 b
-s20
+s22
 	eqB_b TRUE 0
 	jmp_true case.4
 	jmp case.5
@@ -523,15 +443,15 @@ case.5
 	buildAC "E"
 .d 1 0
 	rtn
-.n 5 _ ea5
+.n 5 _ ea7
 .o 1 0
-n5
+n7
 	push_node _cycle_in_spine 5
 .o 6 0
-ea5
+ea7
 	jsr_eval 3
 .o 6 0
-s5
+s7
 	push_a 4
 	push_a 2
 	push_a 2
@@ -543,9 +463,9 @@ s5
 	update_a 1 6
 	updatepop_a 0 5
 .d 6 0
-	jmp s19
+	jmp s21
 .o 6 0
-s19
+s21
 	eq_desc _Cons 2 0
 	jmp_true case.6
 	jmp case.7
@@ -576,30 +496,30 @@ case.6
 	update_a 1 7
 	updatepop_a 0 6
 .d 8 0
-	jmp s18
+	jmp s20
 case.7
 	fillh _Nil 0 5
 	pop_a 5
 .d 1 0
 	rtn
 .o 8 0
-s18
+s20
 case.8
 	push_a 5
-	build _ 1 n31
+	build _ 1 n33
 	push_a 7
 	push_a 4
 	push_a 7
 	push_a 7
-	build _ 5 n5
+	build _ 5 n7
 	push_a 5
 	build e_Footballer_dFootballField.fwidth -4 e_Footballer_nFootballField.fwidth
 	push_a 3
-	build _ 2 n30
+	build _ 2 n32
 	push_a 6
 	build e_Footballer_dFootballField.flength -4 e_Footballer_nFootballField.flength
 	push_a 3
-	build _ 2 n29
+	build _ 2 n31
 	push_a 8
 	push_a 8
 	push_a 8
@@ -609,14 +529,14 @@ case.8
 	update_a 5 4
 	update_a 0 5
 	pop_a 1
-	build _ 6 n28
+	build _ 6 n30
 	fillh _Cons 2 9
 	pop_a 7
 .d 1 0
 	rtn
 case.9
 	push_a 5
-	build _ 1 n32
+	build _ 1 n34
 	push_a 7
 	jsr_eval 0
 	push_a 4
@@ -628,53 +548,53 @@ case.9
 	update_a 1 8
 	updatepop_a 0 7
 .d 6 0
-	jmp s5
-.n 1 _ ea32
+	jmp s7
+.n 1 _ ea34
+.o 1 0
+n34
+	push_node _cycle_in_spine 1
+.o 2 0
+ea34
+.o 2 0
+s34
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea33
+.o 1 0
+n33
+	push_node _cycle_in_spine 1
+.o 2 0
+ea33
+.o 2 0
+s33
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 2 _ ea32
 .o 1 0
 n32
-	push_node _cycle_in_spine 1
-.o 2 0
-ea32
-.o 2 0
-s32
-	pushI 1
-	push_a 0
-	jsr_eval 0
-	pushI_a 1
-	pop_a 1
-	pop_a 1
-	addI
-	fillI_b 0 0
-	pop_b 1
-.d 1 0
-	rtn
-.n 1 _ ea31
-.o 1 0
-n31
-	push_node _cycle_in_spine 1
-.o 2 0
-ea31
-.o 2 0
-s31
-	pushI 1
-	push_a 0
-	jsr_eval 0
-	pushI_a 1
-	pop_a 1
-	pop_a 1
-	addI
-	fillI_b 0 0
-	pop_b 1
-.d 1 0
-	rtn
-.n 2 _ ea30
-.o 1 0
-n30
 	push_node _cycle_in_spine 2
 .o 3 0
-ea30
+ea32
 .o 3 0
-s30
+s32
 	push_a 1
 	jsr_eval 0
 	push_a 1
@@ -686,14 +606,14 @@ s30
 	updatepop_a 0 2
 .d 2 1 r
 	jmp e_Geometry_sscale;25
-.n 2 _ ea29
+.n 2 _ ea31
 .o 1 0
-n29
+n31
 	push_node _cycle_in_spine 2
 .o 3 0
-ea29
+ea31
 .o 3 0
-s29
+s31
 	push_a 1
 	jsr_eval 0
 	push_a 1
@@ -705,14 +625,14 @@ s29
 	updatepop_a 0 2
 .d 2 1 r
 	jmp e_Geometry_sscale;25
-.n 6 _ ea28
+.n 6 _ ea30
 .o 1 0
-n28
+n30
 	push_node _cycle_in_spine 6
 .o 7 0
-ea28
+ea30
 .o 7 0
-s28
+s30
 	push_a 5
 	jsr_eval 0
 	pushI_a 6
@@ -737,19 +657,70 @@ s28
 	update_a 1 7
 	updatepop_a 0 6
 .d 6 1 i
-	jsr s3
+	jsr s5
 .o 11 2 rr
 	fill_r e_Footballer_rFootballer 11 2 11 0 0
 	pop_a 11
 	pop_b 2
 .d 1 0
 	rtn
+.n 0 _ ea4
+.o 1 0
+n4
+	push_node _cycle_in_spine 0
+.o 1 0
+ea4
+.o 1 0
+s4
+	buildh _Nil 0
+	buildR -0.05
+	buildR 0.90
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR 0.05
+	buildR 0.90
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR -0.35
+	buildR 0.70
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR 0.35
+	buildR 0.70
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR 0.00
+	buildR 0.60
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR -0.45
+	buildR 0.50
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR 0.45
+	buildR 0.50
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR 0.00
+	buildR 0.23
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR -0.40
+	buildR 0.20
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildR 0.40
+	buildR 0.20
+	buildh _Tuple 2
+	fillh _Cons 2 2
+.d 1 0
+	rtn
 .n 5 _
 .o 1 0
-n3
+n5
 	push_node _cycle_in_spine 5
 .d 5 0
-	jsr ea3
+	jsr ea5
 .o 11 2 rr
 	fill_r e_Footballer_rFootballer 11 2 11 0 0
 	pop_a 11
@@ -757,7 +728,7 @@ n3
 .d 1 0
 	rtn
 .o 5 0
-ea3
+ea5
 	jsr_eval 4
 	jsr_eval 3
 	jsr_eval 2
@@ -775,12 +746,12 @@ ea3
 	update_a 1 6
 	pop_a 4
 .o 6 1 i
-s3
+s5
 	push_a 1
-	build_r r24 1 0 0 0
+	build_r r26 1 0 0 0
 	updatepop_a 0 1
 	build_r e_Footballer_rFootballField 2 0 3 0
-	buildh d4 1
+	buildh d6 1
 	build_r e_Footballer_rBrain 2 0 0 0
 	updatepop_a 0 2
 	buildh e_StdMaybe_dNothing 0
@@ -813,7 +784,7 @@ s3
 .o 1 0
 	buildh e_StdString_dtoString;5 0
 	buildI_b 0
-	buildAC "MiniF."
+	buildAC "Boolshit."
 	push_a 2
 	update_a 2 3
 	update_a 1 2
@@ -844,24 +815,24 @@ s3
 	updatepop_b 0 1
 .d 11 2 rr
 	rtn
-.desc d4 _hnf l4 2 0 "minibrain"
-.a 0 a4
+.desc d6 _hnf l6 2 0 "minibrain"
+.a 0 a6
 .o 2 0
-l4
+l6
 	repl_args 1 1
 .o 2 0
-a4
+a6
 .d 2 0
-	jsr ea4
+	jsr ea6
 .o 2 0
-	build_r r24 1 0 1 0
+	build_r r26 1 0 1 0
 	push_a 1
 	buildh _Tuple 2
 	updatepop_a 0 2
 .d 1 0
 	rtn
 .o 2 0
-ea4
+ea6
 	push_a 1
 	jsr_eval 0
 	repl_args 2 2
@@ -879,7 +850,7 @@ ea4
 	update_a 3 7
 	pop_a 4
 .o 7 0
-s4
+s6
 	push_a 5
 	push_a 5
 	push_a 5
@@ -977,7 +948,7 @@ s4
 	update_a 0 11
 	pop_a 1
 .d 14 2 rr
-	jsr s10
+	jsr s12
 .o 0 1 b
 	jmp_false else.11
 	push_a 3
@@ -995,7 +966,7 @@ s4
 	update_a 1 2
 	updatepop_a 0 1
 .d 2 1 b
-	jsr s14
+	jsr s16
 .o 1 0
 	create
 	pushR 1.0
@@ -1033,7 +1004,7 @@ else.11
 	update_a 0 8
 	pop_a 1
 .d 2 1 b
-	jsr s15
+	jsr s17
 .o 1 0
 	push_r_args 5 11 2
 	create
@@ -1064,7 +1035,7 @@ else.11
 	update_a 0 21
 	pop_a 1
 .d 15 2 rr
-	jsr s11
+	jsr s13
 .o 1 0
 	update_a 1 7
 	updatepop_a 0 6
@@ -1093,7 +1064,7 @@ else.10
 	update_a 0 11
 	pop_a 1
 .d 14 2 rr
-	jsr s12
+	jsr s14
 .o 0 1 b
 	jmp_false else.12
 	push_a 5
@@ -1112,7 +1083,7 @@ else.10
 	update_a 0 6
 	pop_a 1
 .d 2 1 b
-	jsr s16
+	jsr s18
 .o 1 0
 	create
 .d 1 0
@@ -1177,7 +1148,7 @@ else.12
 	update_a 0 7
 	pop_a 1
 .d 2 1 b
-	jsr s17
+	jsr s19
 .o 1 0
 	push_r_args 4 11 2
 	create
@@ -1208,14 +1179,14 @@ else.12
 	update_a 0 20
 	pop_a 1
 .d 15 2 rr
-	jsr s13
+	jsr s15
 .o 1 0
 	update_a 1 6
 	updatepop_a 0 5
 .d 2 0
 	rtn
 .o 2 1 b
-s17
+s19
 	eqB_b TRUE 0
 	jmp_true case.13
 	jmp case.14
@@ -1232,7 +1203,7 @@ case.14
 .d 1 0
 	rtn
 .o 2 1 b
-s16
+s18
 	eqB_b TRUE 0
 	jmp_true case.15
 	jmp case.16
@@ -1249,7 +1220,7 @@ case.16
 .d 1 0
 	rtn
 .o 2 1 b
-s15
+s17
 	eqB_b TRUE 0
 	jmp_true case.17
 	jmp case.18
@@ -1266,7 +1237,7 @@ case.18
 .d 1 0
 	rtn
 .o 2 1 b
-s14
+s16
 	eqB_b TRUE 0
 	jmp_true case.19
 	jmp case.20
@@ -1283,7 +1254,7 @@ case.20
 .d 1 0
 	rtn
 .o 14 2 rr
-s12
+s14
 	pushR 3.1415926535897932384
 	pushR 0.05
 	mulR
@@ -1339,7 +1310,7 @@ s12
 .d 2 0
 	jmp e_Geometry_s<;51
 .o 15 2 rr
-s13
+s15
 	build_r e_Football_rFootball 2 0 12 0
 	build_r e_Footballer_rFootballer 11 2 1 0
 	buildh e_Football_dtoPosition;5 0
@@ -1375,7 +1346,7 @@ s13
 .d 1 0
 	rtn
 .o 14 2 rr
-s10
+s12
 	pushR 3.1415926535897932384
 	pushR 0.05
 	mulR
@@ -1431,7 +1402,7 @@ s10
 .d 2 0
 	jmp e_Geometry_s<;51
 .o 15 2 rr
-s11
+s13
 	build_r e_Geometry_rPosition 2 0 12 0
 	build_r e_Footballer_rFootballer 11 2 1 0
 	buildh e_Geometry_dtoPosition;33 0
@@ -1466,14 +1437,14 @@ s11
 	pop_a 2
 .d 1 0
 	rtn
-.export e_TeamMiniEffie_sbase_TeamName_MiniEffie
-.descexp e_TeamMiniEffie_dbase_TeamName_MiniEffie e_TeamMiniEffie_nbase_TeamName_MiniEffie e_TeamMiniEffie_lbase_TeamName_MiniEffie 0 0 "base_TeamName_MiniEffie"
+.export e_TeamBoolshit_sBASE_TEAMNAME_BOOLSHIT
+.descexp e_TeamBoolshit_dBASE_TEAMNAME_BOOLSHIT e_TeamBoolshit_nBASE_TEAMNAME_BOOLSHIT e_TeamBoolshit_lBASE_TEAMNAME_BOOLSHIT 0 0 "BASE_TEAMNAME_BOOLSHIT"
 .o 1 0
-e_TeamMiniEffie_lbase_TeamName_MiniEffie
+e_TeamBoolshit_lBASE_TEAMNAME_BOOLSHIT
 	halt
-.n 0 e_TeamMiniEffie_dbase_TeamName_MiniEffie
+.n 0 e_TeamBoolshit_dBASE_TEAMNAME_BOOLSHIT
 .o 1 0
-e_TeamMiniEffie_nbase_TeamName_MiniEffie
+e_TeamBoolshit_nBASE_TEAMNAME_BOOLSHIT
 	push_node _cycle_in_spine 0
 .d 0 0
 	jsr ea2
@@ -1486,9 +1457,9 @@ e_TeamMiniEffie_nbase_TeamName_MiniEffie
 .o 0 0
 ea2
 .o 0 0
-e_TeamMiniEffie_sbase_TeamName_MiniEffie
+e_TeamBoolshit_sBASE_TEAMNAME_BOOLSHIT
 .o 0 0
 s2
-	buildAC "MiniEffies"
+	buildAC "BOOLSHIT"
 .d 1 0
 	rtn
