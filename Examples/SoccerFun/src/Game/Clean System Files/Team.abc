@@ -1,5 +1,8 @@
 .comp 920 00011101001
 .start _nostart_
+.depend "TeamVanguard" "20170318094722"
+.depend "TeamDefender" "20170318094739"
+.depend "TeamGoalkeeper" "20170318095654"
 .depend "TeamBoolshit" "20170314225839"
 .depend "Team_Harmless" "20170314182123"
 .depend "Team_Student_Keeper_Assignment" "20170314182123"
@@ -58,7 +61,7 @@
 .depend "StdMaybe" "20170131202635"
 .depend "Footballer" "20170314182123"
 .depend "Team" "20170314182123"
-.module m_Team "Team" "20170314221811"
+.module m_Team "Team" "20170318095622"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -93,6 +96,9 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
+.impdesc e_TeamVanguard_dTeam_Vanguard
+.impdesc e_TeamDefender_dTeam_Defender
+.impdesc e_TeamGoalkeeper_dTeam_Goalkeeper
 .impdesc e_TeamBoolshit_dTeam_Boolshit
 .impdesc e_Team_Harmless_dMostlyHarmless
 .impdesc e_Team_Student_Keeper_Assignment_dTeam_Student_Keeper
@@ -861,7 +867,7 @@ case.9
 	pop_b 1
 .d 1 0
 	rtn
-.desc d18 _hnf l18 1 0 "<lambda>[line:70];58;17"
+.desc d18 _hnf l18 1 0 "<lambda>[line:73];58;17"
 .o 2 0
 l18
 	pop_a 1
@@ -906,7 +912,7 @@ s18
 	notB
 .d 0 1 b
 	rtn
-.desc d19 _hnf l19 1 0 "<lambda>[line:71];58;18"
+.desc d19 _hnf l19 1 0 "<lambda>[line:74];58;18"
 .o 2 0
 l19
 	pop_a 1
@@ -1432,6 +1438,12 @@ s1
 	buildh e_Team_Student_Slalom_Assignment_dTeam_Student_Slalom 0
 	buildh _Cons 2
 	buildh e_Team_Student_Rounds_Assignment_dTeam_Student_Rounds 0
+	buildh _Cons 2
+	buildh e_TeamVanguard_dTeam_Vanguard 0
+	buildh _Cons 2
+	buildh e_TeamDefender_dTeam_Defender 0
+	buildh _Cons 2
+	buildh e_TeamGoalkeeper_dTeam_Goalkeeper 0
 	buildh _Cons 2
 	buildh e_TeamBoolshit_dTeam_Boolshit 0
 	buildh _Cons 2

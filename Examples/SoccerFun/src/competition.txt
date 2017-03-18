@@ -1,6 +1,11 @@
-59609
-,\\TODO:WINW,Golgafrincham-W
-x \\TODO:WINW vs \\TODO:WINE
-0 0 \\TODO:WINW vs Golgafrincham-E
-0 0 Golgafrincham-W vs \\TODO:WINE
+65
+,MiniEffiesW,Golgafrincham-W,BOOLSHITW
+x MiniEffiesW vs MiniEffiesE
+2 5 MiniEffiesW vs Golgafrincham-E
+1 2 MiniEffiesW vs BOOLSHITE
+4 0 Golgafrincham-W vs MiniEffiesE
 x Golgafrincham-W vs Golgafrincham-E
+4 0 Golgafrincham-W vs BOOLSHITE
+1 2 BOOLSHITW vs MiniEffiesE
+2 5 BOOLSHITW vs Golgafrincham-E
+x BOOLSHITW vs BOOLSHITE

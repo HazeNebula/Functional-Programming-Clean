@@ -1010,7 +1010,19 @@ OtherModules
 	Module
 		Name:	Umpire
 		Dir:	{Project}\StdReferee
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
 		IclOpen:	False
 	Module
 		Name:	Buffer
@@ -1021,9 +1033,43 @@ OtherModules
 		Name:	KeeperChallenger
 		Dir:	{Project}\StdTeam
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
 		IclOpen:	False
 	Module
 		Name:	TeamBoolshit
+		Dir:	{Project}\StdTeam
+		Dcl
+			WindowPosition
+				X:	0
+				Y:	374
+				SizeX:	735
+				SizeY:	131
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	0
+				Y:	0
+				SizeX:	1516
+				SizeY:	732
+		IclOpen:	False
+	Module
+		Name:	TeamDefender
+		Dir:	{Project}\StdTeam
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
+		IclOpen:	False
+	Module
+		Name:	TeamGoalkeeper
 		Dir:	{Project}\StdTeam
 		Dcl
 			WindowPosition
@@ -1031,14 +1077,14 @@ OtherModules
 				Y:	10
 				SizeX:	800
 				SizeY:	560
-		DclOpen:	True
+		DclOpen:	False
 		Icl
 			WindowPosition
 				X:	10
 				Y:	10
 				SizeX:	800
 				SizeY:	560
-		IclOpen:	True
+		IclOpen:	False
 	Module
 		Name:	TeamMiniEffie
 		Dir:	{Project}\StdTeam
@@ -1054,6 +1100,17 @@ OtherModules
 				X:	10
 				Y:	10
 				SizeX:	799
+				SizeY:	560
+		IclOpen:	False
+	Module
+		Name:	TeamVanguard
+		Dir:	{Project}\StdTeam
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
 				SizeY:	560
 		IclOpen:	False
 	Module

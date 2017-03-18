@@ -41,11 +41,11 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	113
-		VY:	334
+		VX:	768
+		VY:	561
 	EWSiz
-		W:	500
-		H:	300
+		W:	752
+		H:	129
 	EWFNm:	Arial
 	EWFSz:	10
 	EWFor:	0Black
@@ -65,11 +65,11 @@ SWPrefs
 	EWFor:	0Black
 	EWBak:	RGB 143 :: 219 :: 255
 PWPos
-	VX:	69
-	VY:	10
+	VX:	0
+	VY:	187
 PWSiz
-	W:	752
-	H:	733
+	W:	1536
+	H:	749
 PWTop:	RGB 215 :: 255 :: 229
 PWFor:	RGB 109 :: 0 :: 0
 PWBak:	RGB 210 :: 210 :: 179
@@ -171,18 +171,18 @@ ProjHist
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 FileHist
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamGoalkeeper.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamVanguard.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamGoalkeeper.dcl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamVanguard.dcl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\Team_Harmless.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamMiniEffie.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\SoccerFun64.env
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\ProofMapFlatten.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\AnyAndAll.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\FQL.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Origami.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\NotationZF.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Cards.icl
-	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\Card.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy (3).icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy (2).dcl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0

@@ -1,2 +1,3 @@
-\\TODO:WINW	2	0	0
-Golgafrincham-W	2	0	0
+Golgafrincham-W	12	18	4
+MiniEffiesW	3	5	12
+BOOLSHITW	3	5	12
