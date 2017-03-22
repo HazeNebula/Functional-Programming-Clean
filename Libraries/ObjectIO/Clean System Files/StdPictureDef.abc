@@ -1,13 +1,13 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "StdIOBasic" "20170131202630"
-.depend "osfont" "20170131202632"
-.depend "ostypes" "20170131202632"
-.depend "ostoolbox" "20170131202632"
-.depend "StdString" "20170131202635"
-.depend "StdOverloaded" "20170131202634"
-.depend "StdPictureDef" "20170131202630"
-.module m_StdPictureDef "StdPictureDef" "20170131202630"
+.depend "StdIOBasic" "20170202141542"
+.depend "osfont" "20170202141542"
+.depend "ostypes" "20170202141542"
+.depend "ostoolbox" "20170202141542"
+.depend "StdString" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
+.depend "StdPictureDef" "20170202141542"
+.module m_StdPictureDef "StdPictureDef" "20170202141542"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error

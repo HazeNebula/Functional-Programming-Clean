@@ -1,83 +1,83 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "controlcreate" "20170131202628"
-.depend "windowdevice" "20170131202631"
-.depend "controlpos" "20170131202629"
-.depend "windowvalidate" "20170131202631"
-.depend "windowclipstate" "20170131202631"
-.depend "wstate" "20170131202631"
-.depend "windowupdate" "20170131202631"
-.depend "windowaccess" "20170131202631"
-.depend "oswindow" "20170131202632"
-.depend "menuwindowmenu" "20170131202632"
-.depend "scheduler" "20170131202630"
-.depend "StdWindowAttribute" "20170131202631"
-.depend "StdMenu" "20170131202630"
-.depend "StdMenuElementClass" "20170131202630"
-.depend "StdProcessDef" "20170131202630"
-.depend "StdPSt" "20170131202630"
-.depend "roundrobin" "20170131202630"
-.depend "processstack" "20170131202629"
-.depend "timerhandle" "20170131202631"
-.depend "processhandle" "20170131202629"
-.depend "osmenu" "20170131202632"
-.depend "StdMenuDef" "20170131202630"
-.depend "menuhandle" "20170131202629"
-.depend "devicesystemstate" "20170131202629"
-.depend "keyfocus" "20170131202629"
-.depend "commondef" "20170131202628"
-.depend "receiverhandle" "20170131202629"
-.depend "StdWindowDef" "20170131202631"
-.depend "StdControlDef" "20170131202630"
-.depend "windowhandle" "20170131202631"
-.depend "StdTimerDef" "20170131202631"
-.depend "timertable" "20170131202631"
-.depend "semidynamic" "20170131202630"
-.depend "receivertable" "20170131202630"
-.depend "receivermessage" "20170131202630"
-.depend "deviceevents" "20170131202629"
-.depend "devicefunctions" "20170131202629"
-.depend "ossystem" "20170131202632"
-.depend "osguishare" "20170131202632"
-.depend "ostime" "20170131202632"
-.depend "clCrossCall_12" "20170131202631"
-.depend "osevent" "20170131202632"
-.depend "ostoolbar" "20170131202632"
-.depend "menuCrossCall_12" "20170131202631"
-.depend "oskey" "20170131202632"
-.depend "StdKey" "20170131202630"
-.depend "StdPicture" "20170131202630"
-.depend "StdIOBasic" "20170131202630"
-.depend "StdPictureDef" "20170131202630"
-.depend "osfont" "20170131202632"
-.depend "ostypes" "20170131202632"
-.depend "ostoolbox" "20170131202632"
-.depend "osrgn" "20170131202632"
-.depend "ospicture" "20170131202632"
-.depend "osbitmap" "20170131202632"
-.depend "StdBitmap" "20170131202630"
-.depend "StdIOCommon" "20170131202630"
-.depend "osdocumentinterface" "20170131202632"
-.depend "osactivaterequests" "20170131202632"
-.depend "iostate" "20170131202629"
-.depend "systemid" "20170131202631"
-.depend "device" "20170131202629"
-.depend "id" "20170131202629"
-.depend "StdMaybe" "20170131202635"
-.depend "StdMisc" "20170131202634"
-.depend "StdFunc" "20170131202634"
-.depend "StdTuple" "20170131202635"
-.depend "StdList" "20170131202634"
-.depend "StdClass" "20170131202634"
-.depend "StdFile" "20170131202634"
-.depend "StdString" "20170131202635"
-.depend "StdChar" "20170131202634"
-.depend "StdReal" "20170131202635"
-.depend "StdInt" "20170131202634"
-.depend "StdOverloaded" "20170131202634"
-.depend "StdBool" "20170131202634"
-.depend "windowcreate" "20170131202631"
-.module m_windowcreate "windowcreate" "20170131202631"
+.depend "controlcreate" "20170202141542"
+.depend "windowdevice" "20170202141542"
+.depend "controlpos" "20170202141542"
+.depend "windowvalidate" "20170202141542"
+.depend "windowclipstate" "20170202141542"
+.depend "wstate" "20170202141542"
+.depend "windowupdate" "20170202141542"
+.depend "windowaccess" "20170202141542"
+.depend "oswindow" "20170202141542"
+.depend "menuwindowmenu" "20170202141542"
+.depend "scheduler" "20170202141542"
+.depend "StdWindowAttribute" "20170202141542"
+.depend "StdMenu" "20170202141542"
+.depend "StdMenuElementClass" "20170202141542"
+.depend "StdProcessDef" "20170202141542"
+.depend "roundrobin" "20170202141542"
+.depend "processstack" "20170202141542"
+.depend "timerhandle" "20170202141542"
+.depend "processhandle" "20170202141542"
+.depend "osmenu" "20170202141542"
+.depend "StdMenuDef" "20170202141542"
+.depend "menuhandle" "20170202141542"
+.depend "devicesystemstate" "20170202141542"
+.depend "keyfocus" "20170202141542"
+.depend "commondef" "20170202141542"
+.depend "receiverhandle" "20170202141542"
+.depend "StdWindowDef" "20170202141542"
+.depend "StdControlDef" "20170202141542"
+.depend "windowhandle" "20170202141542"
+.depend "StdTimerDef" "20170202141542"
+.depend "timertable" "20170202141542"
+.depend "semidynamic" "20170202141542"
+.depend "receivertable" "20170202141542"
+.depend "receivermessage" "20170202141542"
+.depend "deviceevents" "20170202141542"
+.depend "devicefunctions" "20170202141542"
+.depend "ossystem" "20170202141542"
+.depend "osguishare" "20170202141542"
+.depend "ostime" "20170202141542"
+.depend "clCrossCall_12" "20170202141542"
+.depend "osevent" "20170202141542"
+.depend "ostoolbar" "20170202141542"
+.depend "menuCrossCall_12" "20170202141542"
+.depend "osdocumentinterface" "20170202141542"
+.depend "osactivaterequests" "20170202141542"
+.depend "iostate" "20170202141542"
+.depend "StdPSt" "20170202141542"
+.depend "systemid" "20170202141542"
+.depend "device" "20170202141542"
+.depend "id" "20170202141542"
+.depend "oskey" "20170202141542"
+.depend "StdKey" "20170202141542"
+.depend "StdPicture" "20170202141542"
+.depend "StdIOBasic" "20170202141542"
+.depend "StdPictureDef" "20170202141542"
+.depend "osfont" "20170202141542"
+.depend "ostypes" "20170202141542"
+.depend "ostoolbox" "20170202141542"
+.depend "osrgn" "20170202141542"
+.depend "ospicture" "20170202141542"
+.depend "osbitmap" "20170202141542"
+.depend "StdBitmap" "20170202141542"
+.depend "StdIOCommon" "20170202141542"
+.depend "StdMisc" "20170202141542"
+.depend "StdTuple" "20170202141542"
+.depend "StdList" "20170202141542"
+.depend "StdClass" "20170202141542"
+.depend "StdFile" "20170202141542"
+.depend "StdString" "20170202141542"
+.depend "StdChar" "20170202141542"
+.depend "StdReal" "20170202141542"
+.depend "StdInt" "20170202141542"
+.depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
+.depend "StdFunc" "20170202141542"
+.depend "StdMaybe" "20170202141542"
+.depend "windowcreate" "20170202141542"
+.module m_windowcreate "windowcreate" "20170202141542"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -168,10 +168,6 @@
 .implab e_StdWindowAttribute_sgetWindowInitFun
 .impdesc e_StdMenu_denableMenuSystem
 .impdesc e_StdMenu_ddisableMenuSystem
-.impdesc e_StdPSt_dappPIO
-.implab e_StdPSt_sappPIO
-.impdesc e_StdPSt_daccPIO
-.implab e_StdPSt_saccPIO
 .implab e_devicesystemstate_swindowSystemStateGetWindowHandles
 .implab e_commondef_sposSizeToRect
 .implab e_commondef_ssizeToRect
@@ -220,24 +216,6 @@
 .implab e_osevent_screateOSDeactivateControlEvent
 .impdesc e_osevent_dcreateOSLooseMouseEvent
 .impdesc e_osevent_dcreateOSLooseKeyEvent
-.implab e_StdIOBasic_smovePoint
-.implab e_StdIOBasic_szero;21
-.impdesc e_StdIOBasic_rSize
-.impdesc e_StdIOBasic_rPoint2
-.impdesc e_StdIOBasic_dPoint2.x
-.implab e_StdIOBasic_nPoint2.x
-.impdesc e_StdIOBasic_dPoint2.y
-.implab e_StdIOBasic_nPoint2.y
-.impdesc e_ostypes_dOSRect.rleft
-.implab e_ostypes_nOSRect.rleft
-.impdesc e_ostypes_dOSRect.rtop
-.implab e_ostypes_nOSRect.rtop
-.impdesc e_ostypes_dOSRect.rright
-.implab e_ostypes_nOSRect.rright
-.impdesc e_ostypes_dOSRect.rbottom
-.implab e_ostypes_nOSRect.rbottom
-.implab e_StdIOCommon_s==;39
-.impdesc e_StdIOCommon_kOtherError
 .implab e_osdocumentinterface_sgetOSDInfoDocumentInterface
 .impdesc e_iostate_dioStGetInputTrack
 .implab e_iostate_nioStGetInputTrack
@@ -284,15 +262,31 @@
 .implab e_iostate_nInputTrackKind.itkMouse
 .impdesc e_iostate_dInputTrackKind.itkKeyboard
 .implab e_iostate_nInputTrackKind.itkKeyboard
+.impdesc e_StdPSt_dappPIO
+.implab e_StdPSt_sappPIO
+.impdesc e_StdPSt_daccPIO
+.implab e_StdPSt_saccPIO
 .implab e_systemid_s==;5
-.implab e_StdMaybe_sisJust
-.implab e_StdMaybe_sisNothing
-.implab e_StdMaybe_sfromJust
-.impdesc e_StdMaybe_dmapMaybe
-.implab e_StdMaybe_nmapMaybe e_StdMaybe_eamapMaybe
+.implab e_StdIOBasic_smovePoint
+.implab e_StdIOBasic_szero;21
+.impdesc e_StdIOBasic_rSize
+.impdesc e_StdIOBasic_rPoint2
+.impdesc e_StdIOBasic_dPoint2.x
+.implab e_StdIOBasic_nPoint2.x
+.impdesc e_StdIOBasic_dPoint2.y
+.implab e_StdIOBasic_nPoint2.y
+.impdesc e_ostypes_dOSRect.rleft
+.implab e_ostypes_nOSRect.rleft
+.impdesc e_ostypes_dOSRect.rtop
+.implab e_ostypes_nOSRect.rtop
+.impdesc e_ostypes_dOSRect.rright
+.implab e_ostypes_nOSRect.rright
+.impdesc e_ostypes_dOSRect.rbottom
+.implab e_ostypes_nOSRect.rbottom
+.implab e_StdIOCommon_s==;39
+.impdesc e_StdIOCommon_kOtherError
 .impdesc e_StdMisc_dundef
 .implab e_StdMisc_nundef _
-.impdesc e_StdFunc_did
 .impdesc e_StdList_d++
 .implab e_StdList_s++
 .implab e_StdList_n++ e_StdList_ea++
@@ -302,6 +296,12 @@
 .implab e_StdInt_s-;7
 .implab e_StdInt_s==;16
 .implab e_StdBool_snot
+.impdesc e_StdFunc_did
+.implab e_StdMaybe_sisJust
+.implab e_StdMaybe_sisNothing
+.implab e_StdMaybe_sfromJust
+.impdesc e_StdMaybe_dmapMaybe
+.implab e_StdMaybe_nmapMaybe e_StdMaybe_eamapMaybe
 .export e_windowcreate_sdecreaseWindowBound
 .export e_windowcreate_eadecreaseWindowBound
 .descexp e_windowcreate_ddecreaseWindowBound e_windowcreate_ndecreaseWindowBound e_windowcreate_ldecreaseWindowBound 1 0 "decreaseWindowBound"

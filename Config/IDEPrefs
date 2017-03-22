@@ -66,9 +66,9 @@ SWPrefs
 	EWBak:	RGB 143 :: 219 :: 255
 PWPos
 	VX:	0
-	VY:	187
+	VY:	116
 PWSiz
-	W:	1536
+	W:	1516
 	H:	749
 PWTop:	RGB 215 :: 255 :: 229
 PWFor:	RGB 109 :: 0 :: 0
@@ -159,6 +159,7 @@ ImpCl
 	col_type:	RGB 195 :: 0 :: 0
 	col_decl:	RGB 195 :: 0 :: 0
 ProjHist
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\SoccerFun.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\SoccerFun.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\AnyAndAll.prj
 	Path:	D:\School\Radboud\Year 1\Functional Programming for AI\Exercises\Unfinished\FQL.prj
@@ -171,6 +172,8 @@ ProjHist
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 FileHist
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.icl
+	Path:	C:\Users\Niels-laptop\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.dcl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamGoalkeeper.icl
@@ -181,8 +184,6 @@ FileHist
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.dcl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.dcl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy (3).icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy (2).dcl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0

@@ -1,78 +1,78 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "menuitems" "20170131202629"
-.depend "menuinternal" "20170131202629"
-.depend "windowaccess" "20170131202631"
-.depend "menudefaccess" "20170131202629"
-.depend "menucreate" "20170131202629"
-.depend "menuaccess" "20170131202629"
-.depend "menuevent" "20170131202632"
-.depend "menudevice" "20170131202629"
-.depend "StdMenuElementClass" "20170131202630"
-.depend "StdMenuAttribute" "20170131202630"
-.depend "StdPSt" "20170131202630"
-.depend "roundrobin" "20170131202630"
-.depend "processstack" "20170131202629"
-.depend "timerhandle" "20170131202631"
-.depend "processhandle" "20170131202629"
-.depend "osmenu" "20170131202632"
-.depend "StdMenuDef" "20170131202630"
-.depend "menuhandle" "20170131202629"
-.depend "devicesystemstate" "20170131202629"
-.depend "keyfocus" "20170131202629"
-.depend "commondef" "20170131202628"
-.depend "receiverhandle" "20170131202629"
-.depend "StdWindowDef" "20170131202631"
-.depend "StdControlDef" "20170131202630"
-.depend "windowhandle" "20170131202631"
-.depend "StdTimerDef" "20170131202631"
-.depend "timertable" "20170131202631"
-.depend "semidynamic" "20170131202630"
-.depend "receivertable" "20170131202630"
-.depend "receivermessage" "20170131202630"
-.depend "deviceevents" "20170131202629"
-.depend "devicefunctions" "20170131202629"
-.depend "ossystem" "20170131202632"
-.depend "osguishare" "20170131202632"
-.depend "ostime" "20170131202632"
-.depend "clCrossCall_12" "20170131202631"
-.depend "osevent" "20170131202632"
-.depend "ostoolbar" "20170131202632"
-.depend "menuCrossCall_12" "20170131202631"
-.depend "oskey" "20170131202632"
-.depend "StdKey" "20170131202630"
-.depend "StdPicture" "20170131202630"
-.depend "StdIOBasic" "20170131202630"
-.depend "StdPictureDef" "20170131202630"
-.depend "osfont" "20170131202632"
-.depend "ostypes" "20170131202632"
-.depend "ostoolbox" "20170131202632"
-.depend "osrgn" "20170131202632"
-.depend "ospicture" "20170131202632"
-.depend "osbitmap" "20170131202632"
-.depend "StdBitmap" "20170131202630"
-.depend "StdIOCommon" "20170131202630"
-.depend "osdocumentinterface" "20170131202632"
-.depend "osactivaterequests" "20170131202632"
-.depend "iostate" "20170131202629"
-.depend "systemid" "20170131202631"
-.depend "device" "20170131202629"
-.depend "id" "20170131202629"
-.depend "StdMaybe" "20170131202635"
-.depend "StdId" "20170131202630"
-.depend "StdFunc" "20170131202634"
-.depend "StdTuple" "20170131202635"
-.depend "StdList" "20170131202634"
-.depend "StdClass" "20170131202634"
-.depend "StdFile" "20170131202634"
-.depend "StdString" "20170131202635"
-.depend "StdChar" "20170131202634"
-.depend "StdReal" "20170131202635"
-.depend "StdInt" "20170131202634"
-.depend "StdOverloaded" "20170131202634"
-.depend "StdBool" "20170131202634"
-.depend "StdMenu" "20170131202630"
-.module m_StdMenu "StdMenu" "20170131202630"
+.depend "menuitems" "20170202141542"
+.depend "menuinternal" "20170202141542"
+.depend "windowaccess" "20170202141542"
+.depend "menudefaccess" "20170202141542"
+.depend "menucreate" "20170202141542"
+.depend "menuaccess" "20170202141542"
+.depend "menuevent" "20170202141542"
+.depend "menudevice" "20170202141542"
+.depend "StdMenuElementClass" "20170202141542"
+.depend "StdMenuAttribute" "20170202141542"
+.depend "StdId" "20170202141542"
+.depend "roundrobin" "20170202141542"
+.depend "processstack" "20170202141542"
+.depend "timerhandle" "20170202141542"
+.depend "processhandle" "20170202141542"
+.depend "osmenu" "20170202141542"
+.depend "StdMenuDef" "20170202141542"
+.depend "menuhandle" "20170202141542"
+.depend "devicesystemstate" "20170202141542"
+.depend "keyfocus" "20170202141542"
+.depend "commondef" "20170202141542"
+.depend "receiverhandle" "20170202141542"
+.depend "StdWindowDef" "20170202141542"
+.depend "StdControlDef" "20170202141542"
+.depend "windowhandle" "20170202141542"
+.depend "StdTimerDef" "20170202141542"
+.depend "timertable" "20170202141542"
+.depend "semidynamic" "20170202141542"
+.depend "receivertable" "20170202141542"
+.depend "receivermessage" "20170202141542"
+.depend "deviceevents" "20170202141542"
+.depend "devicefunctions" "20170202141542"
+.depend "ossystem" "20170202141542"
+.depend "osguishare" "20170202141542"
+.depend "ostime" "20170202141542"
+.depend "clCrossCall_12" "20170202141542"
+.depend "osevent" "20170202141542"
+.depend "ostoolbar" "20170202141542"
+.depend "menuCrossCall_12" "20170202141542"
+.depend "osdocumentinterface" "20170202141542"
+.depend "osactivaterequests" "20170202141542"
+.depend "iostate" "20170202141542"
+.depend "StdPSt" "20170202141542"
+.depend "systemid" "20170202141542"
+.depend "device" "20170202141542"
+.depend "id" "20170202141542"
+.depend "oskey" "20170202141542"
+.depend "StdKey" "20170202141542"
+.depend "StdPicture" "20170202141542"
+.depend "StdIOBasic" "20170202141542"
+.depend "StdPictureDef" "20170202141542"
+.depend "osfont" "20170202141542"
+.depend "ostypes" "20170202141542"
+.depend "ostoolbox" "20170202141542"
+.depend "osrgn" "20170202141542"
+.depend "ospicture" "20170202141542"
+.depend "osbitmap" "20170202141542"
+.depend "StdBitmap" "20170202141542"
+.depend "StdIOCommon" "20170202141542"
+.depend "StdTuple" "20170202141542"
+.depend "StdList" "20170202141542"
+.depend "StdClass" "20170202141542"
+.depend "StdFile" "20170202141542"
+.depend "StdString" "20170202141542"
+.depend "StdChar" "20170202141542"
+.depend "StdReal" "20170202141542"
+.depend "StdInt" "20170202141542"
+.depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
+.depend "StdFunc" "20170202141542"
+.depend "StdMaybe" "20170202141542"
+.depend "StdMenu" "20170202141542"
+.module m_StdMenu "StdMenu" "20170202141542"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -128,7 +128,7 @@
 .impdesc e_menuaccess_dmenuStateHandleGetSelect
 .implab e_menuevent_spopUpMenuEvent
 .implab e_menudevice_smenuFunctions
-.implab e_StdPSt_saccPIO
+.implab e_StdId_sopenId;7
 .implab e_osmenu_sosDisableMenu
 .implab e_osmenu_sosEnableMenu
 .implab e_osmenu_sosDrawMenuBar
@@ -146,7 +146,6 @@
 .implab e_commondef_sfilterMap
 .implab e_commondef_saccessList
 .implab e_commondef_sulength
-.implab e_StdIOCommon_s==;39
 .implab e_osdocumentinterface_sgetOSDInfoDocumentInterface
 .implab e_osdocumentinterface_sgetOSDInfoOSMenuBar
 .implab e_osdocumentinterface_ssetOSDInfoOSMenuBar
@@ -168,6 +167,7 @@
 .impdesc e_iostate_dsetIOToolbox
 .implab e_iostate_ssetIOToolbox
 .implab e_iostate_nsetIOToolbox e_iostate_easetIOToolbox
+.implab e_StdPSt_saccPIO
 .implab e_systemid_s==;5
 .implab e_device_s==;2
 .impdesc e_id_dwindowMenuId
@@ -184,14 +184,7 @@
 .implab e_id_cIdParent
 .impdesc e_id_dIdParent.idpId
 .implab e_id_nIdParent.idpId e_id_eaIdParent.idpId
-.impdesc e_StdMaybe_disJust
-.implab e_StdMaybe_sisJust
-.implab e_StdMaybe_nisJust
-.implab e_StdMaybe_sisNothing
-.impdesc e_StdMaybe_dfromJust
-.implab e_StdMaybe_sfromJust
-.implab e_StdMaybe_nfromJust _
-.implab e_StdId_sopenId;7
+.implab e_StdIOCommon_s==;39
 .implab e_StdList_sisEmpty
 .implab e_StdList_sfilter
 .implab e_StdList_smap
@@ -199,6 +192,13 @@
 .implab e_StdInt_s-;7
 .implab e_StdInt_s<;17
 .implab e_StdBool_snot
+.impdesc e_StdMaybe_disJust
+.implab e_StdMaybe_sisJust
+.implab e_StdMaybe_nisJust
+.implab e_StdMaybe_sisNothing
+.impdesc e_StdMaybe_dfromJust
+.implab e_StdMaybe_sfromJust
+.implab e_StdMaybe_nfromJust _
 .export e_StdMenu_rMenus;
 .record e_StdMenu_rMenus; aa 2 0 "Menus;"
 .descexp e_StdMenu_tMenus; e_StdMenu_cMenus; _hnf 2 1 "Menus;"

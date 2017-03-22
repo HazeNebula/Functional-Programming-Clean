@@ -1060,6 +1060,12 @@ OtherModules
 	Module
 		Name:	TeamDefender
 		Dir:	{Project}\StdTeam
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	560
 		DclOpen:	False
 		Icl
 			WindowPosition
@@ -1067,7 +1073,7 @@ OtherModules
 				Y:	10
 				SizeX:	800
 				SizeY:	560
-		IclOpen:	False
+		IclOpen:	True
 	Module
 		Name:	TeamGoalkeeper
 		Dir:	{Project}\StdTeam

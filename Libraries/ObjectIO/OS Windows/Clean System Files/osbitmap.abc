@@ -1,27 +1,27 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "rgnCCall_12" "20170131202632"
-.depend "pictCCall_12" "20170131202632"
-.depend "StdIOBasic" "20170131202630"
-.depend "StdPictureDef" "20170131202630"
-.depend "osfont" "20170131202632"
-.depend "ostypes" "20170131202632"
-.depend "ostoolbox" "20170131202632"
-.depend "osrgn" "20170131202632"
-.depend "ospicture" "20170131202632"
-.depend "StdFunc" "20170131202634"
-.depend "StdTuple" "20170131202635"
-.depend "StdClass" "20170131202634"
-.depend "StdFile" "20170131202634"
-.depend "StdString" "20170131202635"
-.depend "_SystemArray" "20170131202635"
-.depend "StdArray" "20170131202634"
-.depend "StdChar" "20170131202634"
-.depend "StdInt" "20170131202634"
-.depend "StdOverloaded" "20170131202634"
-.depend "StdBool" "20170131202634"
-.depend "osbitmap" "20170131202632"
-.module m_osbitmap "osbitmap" "20170131202632"
+.depend "rgnCCall_12" "20170202141542"
+.depend "pictCCall_12" "20170202141542"
+.depend "StdIOBasic" "20170202141542"
+.depend "StdPictureDef" "20170202141542"
+.depend "osfont" "20170202141542"
+.depend "ostypes" "20170202141542"
+.depend "ostoolbox" "20170202141542"
+.depend "osrgn" "20170202141542"
+.depend "ospicture" "20170202141542"
+.depend "StdTuple" "20170202141542"
+.depend "StdClass" "20170202141542"
+.depend "StdFile" "20170202141542"
+.depend "StdString" "20170202141542"
+.depend "_SystemArray" "20170202141542"
+.depend "StdArray" "20170202141542"
+.depend "StdChar" "20170202141542"
+.depend "StdInt" "20170202141542"
+.depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
+.depend "StdFunc" "20170202141542"
+.depend "osbitmap" "20170202141542"
+.module m_osbitmap "osbitmap" "20170202141542"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -73,8 +73,8 @@
 .implab e_StdInt_s-;7
 .impdesc e_StdInt_d==;16
 .implab e_StdInt_s==;16
-.impdesc e_StdOverloaded_r==;
 .implab e_StdBool_snot
+.impdesc e_StdOverloaded_r==;
 .record k18 d((i,i)(i,i)ai) 1 5 "OSBitmap"
 .export e_osbitmap_rOSBitmap
 .record e_osbitmap_rOSBitmap (i,i)(i,i)ai 1 5 "OSBitmap"
