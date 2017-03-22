@@ -37,7 +37,7 @@ Boolshit2 :: !ClubName !Home !FootballField !Position !PlayersNumber -> Football
 Boolshit2 club home field position nr
 	= { playerID			= { clubName = club, playerNr = nr}
 	  , name				= toString nr
-	  , length				= max_length
+	  , length				= min_length
 	  , pos					= position
 	  , nose				= zero
 	  , speed				= zero

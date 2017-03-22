@@ -110,7 +110,7 @@
 .depend "Footballer" "20170314182123"
 .depend "Team" "20170314182123"
 .depend "TeamBoolshit2" "20170318170903"
-.module m_TeamBoolshit2 "TeamBoolshit2" "20170322183635"
+.module m_TeamBoolshit2 "TeamBoolshit2" "20170322192237"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -842,7 +842,7 @@ s3
 	updatepop_a 0 2
 	build_r e_Geometry_rPosition 2 0 11 0
 	create
-	pushR 2.1
+	pushR 1.6
 	buildh _Nil 0
 	update_a 0 14
 	update_a 0 15
