@@ -1077,7 +1077,7 @@ OtherModules
 			WindowPosition
 				X:	10
 				Y:	10
-				SizeX:	712
+				SizeX:	800
 				SizeY:	560
 		IclOpen:	True
 	Module
