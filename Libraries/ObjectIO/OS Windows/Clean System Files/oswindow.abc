@@ -1,49 +1,49 @@
 .comp 920 00011101001
 .start _nostart_
-.depend "windowCCall_12" "20170131202632"
-.depend "windowCrossCall_12" "20170131202632"
-.depend "clCCall_12" "20170131202631"
-.depend "rgnCCall_12" "20170131202632"
-.depend "pictCCall_12" "20170131202632"
-.depend "commondef" "20170131202628"
-.depend "ossystem" "20170131202632"
-.depend "ostime" "20170131202632"
-.depend "clCrossCall_12" "20170131202631"
-.depend "osevent" "20170131202632"
-.depend "ostoolbar" "20170131202632"
-.depend "menuCrossCall_12" "20170131202631"
-.depend "oskey" "20170131202632"
-.depend "StdKey" "20170131202630"
-.depend "StdPicture" "20170131202630"
-.depend "StdIOBasic" "20170131202630"
-.depend "StdPictureDef" "20170131202630"
-.depend "osfont" "20170131202632"
-.depend "ostypes" "20170131202632"
-.depend "ostoolbox" "20170131202632"
-.depend "osrgn" "20170131202632"
-.depend "ospicture" "20170131202632"
-.depend "osbitmap" "20170131202632"
-.depend "StdBitmap" "20170131202630"
-.depend "StdIOCommon" "20170131202630"
-.depend "osdocumentinterface" "20170131202632"
-.depend "systemid" "20170131202631"
-.depend "device" "20170131202629"
-.depend "id" "20170131202629"
-.depend "StdMaybe" "20170131202635"
-.depend "StdMisc" "20170131202634"
-.depend "StdFunc" "20170131202634"
-.depend "StdTuple" "20170131202635"
-.depend "StdList" "20170131202634"
-.depend "StdClass" "20170131202634"
-.depend "StdFile" "20170131202634"
-.depend "StdString" "20170131202635"
-.depend "StdChar" "20170131202634"
-.depend "StdReal" "20170131202635"
-.depend "StdInt" "20170131202634"
-.depend "StdOverloaded" "20170131202634"
-.depend "StdBool" "20170131202634"
-.depend "oswindow" "20170131202632"
-.module m_oswindow "oswindow" "20170131202632"
+.depend "windowCCall_12" "20170202141542"
+.depend "windowCrossCall_12" "20170202141542"
+.depend "clCCall_12" "20170202141542"
+.depend "rgnCCall_12" "20170202141542"
+.depend "pictCCall_12" "20170202141542"
+.depend "commondef" "20170202141542"
+.depend "ossystem" "20170202141542"
+.depend "ostime" "20170202141542"
+.depend "clCrossCall_12" "20170202141542"
+.depend "osevent" "20170202141542"
+.depend "ostoolbar" "20170202141542"
+.depend "menuCrossCall_12" "20170202141542"
+.depend "osdocumentinterface" "20170202141542"
+.depend "systemid" "20170202141542"
+.depend "device" "20170202141542"
+.depend "id" "20170202141542"
+.depend "oskey" "20170202141542"
+.depend "StdKey" "20170202141542"
+.depend "StdPicture" "20170202141542"
+.depend "StdIOBasic" "20170202141542"
+.depend "StdPictureDef" "20170202141542"
+.depend "osfont" "20170202141542"
+.depend "ostypes" "20170202141542"
+.depend "ostoolbox" "20170202141542"
+.depend "osrgn" "20170202141542"
+.depend "ospicture" "20170202141542"
+.depend "osbitmap" "20170202141542"
+.depend "StdBitmap" "20170202141542"
+.depend "StdIOCommon" "20170202141542"
+.depend "StdMisc" "20170202141542"
+.depend "StdTuple" "20170202141542"
+.depend "StdList" "20170202141542"
+.depend "StdClass" "20170202141542"
+.depend "StdFile" "20170202141542"
+.depend "StdString" "20170202141542"
+.depend "StdChar" "20170202141542"
+.depend "StdReal" "20170202141542"
+.depend "StdInt" "20170202141542"
+.depend "StdBool" "20170202141542"
+.depend "StdOverloaded" "20170202141542"
+.depend "StdFunc" "20170202141542"
+.depend "StdMaybe" "20170202141542"
+.depend "oswindow" "20170202141542"
+.module m_oswindow "oswindow" "20170202141542"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -131,15 +131,14 @@
 .implab e_osevent_sosIsEmptyEvents
 .implab e_osevent_sosRemoveEvent
 .implab e_osevent_ssetReplyInOSEvent
-.implab e_osfont_sosGetfontstringwidths
-.impdesc e_ostypes_rOSRect
-.implab e_osrgn_sosnewrectrgn
-.implab e_StdIOCommon_s==;39
 .implab e_osdocumentinterface_sgetOSDInfoDocumentInterface
 .implab e_osdocumentinterface_sgetOSDInfoOSInfo
 .implab e_osdocumentinterface_ssetOSDInfoOSInfo
 .impdesc e_osdocumentinterface_rOSInfo
-.implab e_StdMaybe_sfromJust
+.implab e_osfont_sosGetfontstringwidths
+.impdesc e_ostypes_rOSRect
+.implab e_osrgn_sosnewrectrgn
+.implab e_StdIOCommon_s==;39
 .impdesc e_StdMisc_dundef
 .implab e_StdMisc_nundef _
 .implab e_StdList_sisEmpty
@@ -162,6 +161,7 @@
 .implab e_StdInt_stoInt;22
 .implab e_StdBool_snot
 .implab e_StdBool_s==;3
+.implab e_StdMaybe_sfromJust
 .export e_oswindow_dOSModalEventCallback
 .desc e_oswindow_dOSModalEventCallback _hnf _add_arg 3 0 "OSModalEventCallback"
 .export e_oswindow_dOSModalEventLoop
