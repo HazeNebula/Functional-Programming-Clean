@@ -1,3 +1,2 @@
-Golgafrincham-W	12	18	4
-MiniEffiesW	3	5	12
-BOOLSHITW	3	5	12
+Golgafrincham-W	3	1	1
+BoolshitW	3	1	1

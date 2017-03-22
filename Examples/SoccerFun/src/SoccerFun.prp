@@ -3,7 +3,13 @@ MainModule
 	Name:	SoccerFun
 	Dir:	{Project}
 	DclOpen:	False
-	IclOpen:	False
+	Icl
+		WindowPosition
+			X:	10
+			Y:	10
+			SizeX:	800
+			SizeY:	560
+	IclOpen:	True
 OtherModules
 	Module
 		Name:	StdBitmap
@@ -880,8 +886,8 @@ OtherModules
 		Dir:	{Project}\Game
 		Dcl
 			WindowPosition
-				X:	0
-				Y:	0
+				X:	-557
+				Y:	268
 				SizeX:	1286
 				SizeY:	459
 		DclOpen:	False
@@ -891,7 +897,7 @@ OtherModules
 				Y:	52
 				SizeX:	1269
 				SizeY:	459
-		IclOpen:	True
+		IclOpen:	False
 	Module
 		Name:	matchControl
 		Dir:	{Project}\Game
@@ -1052,11 +1058,28 @@ OtherModules
 		DclOpen:	True
 		Icl
 			WindowPosition
-				X:	0
-				Y:	0
+				X:	-804
+				Y:	225
 				SizeX:	1516
 				SizeY:	732
 		IclOpen:	False
+	Module
+		Name:	TeamBoolshit2
+		Dir:	{Project}\StdTeam
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	712
+				SizeY:	560
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	712
+				SizeY:	560
+		IclOpen:	True
 	Module
 		Name:	TeamDefender
 		Dir:	{Project}\StdTeam
@@ -1097,21 +1120,27 @@ OtherModules
 		DclOpen:	False
 		Icl
 			WindowPosition
-				X:	10
-				Y:	10
+				X:	652
+				Y:	60
 				SizeX:	799
 				SizeY:	560
 		IclOpen:	False
 	Module
 		Name:	TeamVanguard
 		Dir:	{Project}\StdTeam
+		Dcl
+			WindowPosition
+				X:	0
+				Y:	18
+				SizeX:	800
+				SizeY:	560
 		DclOpen:	False
 		Icl
 			WindowPosition
 				X:	10
 				Y:	10
-				SizeX:	800
-				SizeY:	560
+				SizeX:	712
+				SizeY:	557
 		IclOpen:	False
 	Module
 		Name:	Team_Harmless

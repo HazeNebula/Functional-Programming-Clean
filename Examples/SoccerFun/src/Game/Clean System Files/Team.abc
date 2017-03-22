@@ -1,5 +1,6 @@
 .comp 920 00011101001
 .start _nostart_
+.depend "TeamBoolshit2" "20170318170903"
 .depend "TeamVanguard" "20170318094722"
 .depend "TeamDefender" "20170318094739"
 .depend "TeamGoalkeeper" "20170318095654"
@@ -61,7 +62,7 @@
 .depend "StdMaybe" "20170131202635"
 .depend "Footballer" "20170314182123"
 .depend "Team" "20170314182123"
-.module m_Team "Team" "20170318095622"
+.module m_Team "Team" "20170318171021"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -96,6 +97,7 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
+.impdesc e_TeamBoolshit2_dTeam_Boolshit2
 .impdesc e_TeamVanguard_dTeam_Vanguard
 .impdesc e_TeamDefender_dTeam_Defender
 .impdesc e_TeamGoalkeeper_dTeam_Goalkeeper
@@ -867,7 +869,7 @@ case.9
 	pop_b 1
 .d 1 0
 	rtn
-.desc d18 _hnf l18 1 0 "<lambda>[line:73];58;17"
+.desc d18 _hnf l18 1 0 "<lambda>[line:74];58;17"
 .o 2 0
 l18
 	pop_a 1
@@ -912,7 +914,7 @@ s18
 	notB
 .d 0 1 b
 	rtn
-.desc d19 _hnf l19 1 0 "<lambda>[line:74];58;18"
+.desc d19 _hnf l19 1 0 "<lambda>[line:75];58;18"
 .o 2 0
 l19
 	pop_a 1
@@ -1438,6 +1440,8 @@ s1
 	buildh e_Team_Student_Slalom_Assignment_dTeam_Student_Slalom 0
 	buildh _Cons 2
 	buildh e_Team_Student_Rounds_Assignment_dTeam_Student_Rounds 0
+	buildh _Cons 2
+	buildh e_TeamBoolshit2_dTeam_Boolshit2 0
 	buildh _Cons 2
 	buildh e_TeamVanguard_dTeam_Vanguard 0
 	buildh _Cons 2

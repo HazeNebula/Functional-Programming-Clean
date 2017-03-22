@@ -41,11 +41,11 @@ CWSync
 	col_decl:	0Black
 EWPrefs
 	EWPos
-		VX:	768
-		VY:	561
+		VX:	26
+		VY:	620
 	EWSiz
-		W:	752
-		H:	129
+		W:	803
+		H:	126
 	EWFNm:	Arial
 	EWFSz:	10
 	EWFor:	0Black
@@ -66,9 +66,9 @@ SWPrefs
 	EWBak:	RGB 143 :: 219 :: 255
 PWPos
 	VX:	0
-	VY:	187
+	VY:	0
 PWSiz
-	W:	1536
+	W:	1516
 	H:	749
 PWTop:	RGB 215 :: 255 :: 229
 PWFor:	RGB 109 :: 0 :: 0
@@ -171,18 +171,18 @@ ProjHist
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\StdSortList.prj
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Exercises\Frags.prj
 FileHist
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamGoalkeeper.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamVanguard.icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamGoalkeeper.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit2.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamMiniEffie.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamVanguard.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit2.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\SoccerFun.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.icl
 	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Team.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamDefender.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy (3).icl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.dcl
-	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy (2).dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy.dcl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit - Copy.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\StdTeam\TeamBoolshit.icl
+	Path:	C:\Users\Jasper\Documents\GitHub\Functional-Programming-Clean\Examples\SoccerFun\src\Game\Footballer.icl
 SwitchClose:	0
 ShowToolbar:	1
 BeVerbose:	0
